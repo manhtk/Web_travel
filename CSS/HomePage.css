@@ -1,0 +1,18 @@
+*{
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	font-family: 'Poppins', sans-serif;
+
+}
+body
+{		
+	font-family:  Poppins;
+}
+/*reponsive*/
+.container
+{
+	width: 100%;
+	height: 460px;
+	padding:0px;
+}
