@@ -1,15 +1,18 @@
-34
+*{
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	font-family: 'Poppins', sans-serif;
 
-
-1 2
-
-hhhhhhhh
-
-345678
-999999
-
-
-
-
-
-tfghjhjkklj
+}
+body
+{		
+	font-family:  Poppins;
+}
+/*reponsive*/
+#background 
+{
+	width: 100%;
+	height: 460px;
+	padding:0px;
+}
