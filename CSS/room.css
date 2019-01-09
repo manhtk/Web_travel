@@ -6,7 +6,7 @@
 {
 	padding:0;
 	margin: 0;
-	font-family: 'Poppins', sans-serif !important;
+	font-family: 'Poppins';
 }
 body
 {
@@ -29,21 +29,11 @@ body
 	margin:20px 50px; 
 	border-bottom: 1px solid #f1f1f1;
 }
-.widgets
-{
-	background: #FFFFFF;
-	border: 1px solid #D7DCE3;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
-	border-radius: 5px;
-	width: 270px;
-	z-index: 9;
-	padding: 12px; 
-	border-top: 5px solid blue;
-}
 
 }
-
-
+.check-like.open .glyphicon{
+	transform: rotate(180deg);
+}
 #slide
 {
 	margin:20px 50px; 
@@ -56,6 +46,7 @@ body
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
 	border-radius: 5px;
 	width: 270px;
+	height: 350px
 	z-index: 9;
 	padding: 12px; 
 	border-top: 5px solid blue;
@@ -67,26 +58,26 @@ body
 }
 #money
 {
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;
 }
 #check
 {
-	height: 84px;
+	height: 50px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;
 }
 #guests
 {
-	height: 84px;
+	height: 75px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
 
 #bt
 {
-	height: 145px;
+	height: 130px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
@@ -158,6 +149,7 @@ p {
 	/*	font-family: Poppins-Regular;*/
 
 }
+
 .description
 {
 	/*font-family: Poppins-Regular;*/
@@ -165,6 +157,27 @@ p {
 	color: #5E6D77;
 	letter-spacing: 0;
 }
+/*rút gọn chữ*/
+a {
+    color: #0254EB
+}
+a:visited {
+    color: #0254EB
+}
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+    width: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding:10px;
+}
+/*end thu gọn*/
 .h2-text
 {
 	/*	font-family: Poppins-Medium;*/
@@ -187,11 +200,25 @@ p {
 {
 	width: 100%;
 }
+.bookphong
+{
+	position: relative;
+	margin-left: 210px;
+	margin-top: -28px;
+	transform: rotate(180deg);
+	cursor: pointer;
+	font-size: 24px;
+}
+.form-group {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
 .field_people_room {
 	padding-left: 0.5px;
 	padding-right: 0.5px;
 	margin-bottom: 15px;
 	width: 200px;
+	position: relative;
 }
 
 .field_people_room .people-inner {
@@ -307,58 +334,42 @@ p {
 }
 /*end số ng*/
 
+/*chọn thêm*/
+.st-flex.space-between 
+{
+    font-size: 17px;
+}
+.form-group .form-more-extra
+{
+	position: relative;
+}
+.chon-adult
+{
+	height: 6%;
+	width: 70%;
+}
+li.item.mt10
+{
+	list-style: none;
+}
+.chon-children
+{
+	height: 6%;
+	width: 70%;	
+}
+.chon-services
+{
+	height: 6%;
+	width: 70%;
+}
+select
+{
+	    -webkit-appearance: none;
+	    cursor: pointer;
+}
+/*end chọn thêm*/
 
-.language-content1
-{
-	/*margin-left: -60px;*/
-	line-height: 10px;
-	font-size: 14px;
-	width: 140px;
-	margin-left: 10px;
-	margin-top: 30px;
-}
-.language-content
-{
-	
-	
-	font-size: 14px;
-	width: 160px;
-	margin-left: 10px;
-	margin-top: 30px;
-}
 
-#check-option1
-{
-	float: right;
-	/*margin-top: 10px;*/
-	margin-left: : 210px;
-	margin-top: -25px;
-	
-}
-#check-option2
-{
-	/*float: right;*/
-	/*margin-top: 10px;*/
-	/*margin-right: 10px;*/
-	margin-top: -25px;
-	margin-left: 210px;
-	
-}
-#check-option3
-{
-	/*float: right;*/
-	/*margin-top: 10px;*/
-	/*margin-right: 10px;*/
-	/*margin-top: -15px;*/
-	margin-left: 210px;
-	margin-top: -35px;
-	
-}
-.select
-{
-	margin-right: 1px;
-}
-/*end book*/
 
 .btn-book{
 	width: 230px;

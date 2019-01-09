@@ -29,6 +29,30 @@ $(document).ready(function(){
 	});
 });
 
+//from chạy
+$(function() {
+	$('.bookphong').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+	});
+
+});
+$(document).ready(function(){
+	$('.formdebook').slideUp();
+	var stt=0;
+	$("img .slide").each(function(){
+		if($(this).is(':visible'))
+			stt=$(this).attr("stt");
+	});
+	$("#next").click(function()
+	{
+		next= ++stt;
+		$(" img .slide").hide();
+		$(" img .slide").eq(next).show();
+	});
+});
+//hết form chạy
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 670) {
         $('.widgets').addClass('fixed');
@@ -170,4 +194,3 @@ jQuery(document).ready(function($){
 		    	});
 		    })
 });
-
