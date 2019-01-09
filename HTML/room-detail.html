@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
   <title>Room Detail</title>
   <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../CSS/room.css">  
+  <link rel="stylesheet" href="..//CSS/room.css">  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,15 +14,16 @@
   <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-
-  <script type="text/javascript" src="../JS/jquery.shorten.1.0.js" ></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
   <script type="text/javascript" src="..//JS/khanh.js" ></script>
+  <script type="text/javascript" src="../JS/jquery.shorten.1.0.js" ></script>
   <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
 <!-- chon ngay -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -139,7 +139,7 @@
           </div>
         </div>
         <details>
-          <summary style="color:#5191FA;text-decoration: underline;font-size: 14px">Show all</summary>
+          <summary style="color:#5191FA;text-decoration: underline;font-size: 14px ;cursor: pointer;">Show all</summary>
           <div class="row">
             <div class="col-md-4" id="park">
               <div class="icon">
@@ -234,12 +234,10 @@
                   <div class="date">11/12/2018</div>
                 </div>
               </div>
-              <div class="like">
-                <span>3</span> likes this
-                <div class="dangky">
-                  <i class="far fa-thumbs-up"></i>
+              <div class="form-group check-like">
+                  <span class="number"><span class="like">0</span> Like</span>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
                 </div>
-              </div>
             </div>
             <div class="comment-item-body">
               <div class="st-cmt">
@@ -269,12 +267,12 @@
                     <div class="date">07/12/2018</div>
                   </div>
                 </div>
-                <div class="like">
-                  <span>2</span> likes this                                                <div class="dangky">
-                  <i class="far fa-thumbs-up"></i>
-                </div>
-                </div>
-              </div>
+                <div
+                  <div class="form-group check-like">
+                    <span class="number"><span class="like">0</span> Like</span>
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                  </div>
+            </div>
               <div class="comment-item-body">
                 <h4 class="title">
                   "Nice place, not too far from city central."
@@ -326,7 +324,6 @@
               <div class="field_people_room">
                 <div class="people-inner">
                   <i class="fa fa-user-o"></i>
-                  
                     <div class="people-group">
                     <span class="label">
                       <span class="value">
@@ -334,12 +331,10 @@
                         <span class="child">0 Child</span>
                       </span>
                     </span>
-                    <i class="fa ml5 fa-angle-up"></i>  
-
-                   
-<div class="dangky icon1">
-                 
-                  
+                                        
+                    <div class="bookphong">
+                      <i class="fa ml5 fa-angle-up"></i>
+                    </div>
                   <div class="formdebook">
                   <div class="people-dropdown" style="display: block;">
                     <div class="item gmz-number-wrapper">
@@ -372,50 +367,77 @@
               </div>
             </label>
         </div>            
-      </div>
       <div class="" id="bt">
-        <div class="col-md-12">
-          <p  class="dropdown-toggle" data-toggle="dropdown">
-            More option 
-             <span class="caret"></span>
-          </p>
-          <ul class="dropdown-menu form-check" role="menu" aria-labelledby="menu1">
-              <li role="presentation"><p class ="language-content1">Adult(€280.00)</p>
-                <div id="check-option1">
-                 <select>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+        <div class="form-group form-more-extra">
+          <a href="#dropdown-more-extra" class="dropdown">
+            More Option
+          <i class="fa fa-caret-down"></i></a>
+          <ul class="extras" style="display: block;">
+          <div class="row">
+            <li class="item mt10">
+              <div class="st-flex space-between">
+                <div class="col-sm-9">
+                <span>Adult(€280.00)</span>
               </div>
-              </li> 
-
-              <li role="presentation"><p class ="language-content1">Children(€245.00)</p>
-                
-                <div id="check-option2">
-                 <select>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              </li> 
-
-              <li role="presentation"><p class="language-content">Vip services(€175.00)</p>
-                <div id="check-option3">
-                 <select>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+              <div class="col-sm-3">
+                <div class="select-wrapper" style="width: 50px;">
+                  <select class="chon-adult" data-extra-price="280">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
                 </div>
-              </li> 
+              </div>
+              </div>
+              <input type="hidden" name="extra_price[price][extra_adult]" value="280">
+              <input type="hidden" name="extra_price[title][extra_adult]" value="Adult">
+            </li>
+          </div>
+            <div class="row">
+            <li class="item mt10">
+              <div class="st-flex space-between">
+                <div class="col-sm-9">
+                <span>Children(€245.00)</span>
+              </div>
+                <div class="col-sm-3">
+                <div class="select-wrapper" style="width: 50px;">
+                  <select class="chon-children" data-extra-price="245">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+              <input type="hidden" name="extra_price[price][extra_children]" value="245">
+              <input type="hidden" name="extra_price[title][extra_children]" value="Children">
+            </li>
+          </div>
+          </div>
+          <div class="row">
+            <li class="item mt10">
+              <div class="st-flex space-between">
+                <div class="col-sm-9">
+                <span>Vip services(€175.00)</span>
+              </div>
+              <div class="col-sm-3">
+                <div class="select-wrapper" style="width: 50px;">
+                  <select class="chon-services" data-extra-price="175">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+              <input type="hidden" name="extra_price[price][extra_service]" value="175">
+              <input type="hidden" name="extra_price[title][extra_service]" value="Vip services">
+            </li>
+          </div>
           </ul>
         </div>
       </div>
@@ -638,35 +660,6 @@
       </div>
     </div>
   </div>
-    
-
-
-
 </div>
-<script type="text/javascript">
- $(".description").shorten({
-  "showChars" : 10,
-  "moreText"  : "Thu Gọn",
-  "lessText"  : "Xem Thêm",
-});
-</script>
-<style>
-.description a {
-  color: #0254EB
-}
-.description a:visited {
-  color: #0254EB
-}
-.description a.morelink {
-  text-decoration:none;
-  outline: none;
-}
-.description .morecontent span {
-  display: none;
-}
-</style>
-
 </body>
 </html>
-=======
->>>>>>> 1e5619393a92844bb33dc9a4a19061153a123723
