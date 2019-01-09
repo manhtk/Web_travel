@@ -75,15 +75,12 @@ body{
 
 }
 }
-@media (min-width: 992px)
-{
 
-}
 
 #footer_content
 {
 	padding-top: 61.3px;
-	padding-left: 100px;
+	padding-left: 40px;
 	min-height: 450px;
 
 }
@@ -92,9 +89,10 @@ body{
 
 #footer_content .footer_content_header
 {
-	font-family:Poppins-SemiBold;
-	 font-size: 16px;
+	
+	 font-size: 14px;
 	 color: #1A2B48;
+	 
 
 }
 #footer_content .footer_content_element 
