@@ -4,6 +4,12 @@
 }
 
 @media  screen and (min-width:1200px){
+	.st-hotel-content .hotel-target-book-mobile
+	{
+		
+		display: none;
+		
+	}
 	.container
 	{
 		width:1170px;
@@ -224,6 +230,8 @@
 	.widgets #check input
 	{
 		border: none;
+		color: #5191FA;
+		text-align:center;
 	}
 	.widgets #guests
 	{
@@ -231,6 +239,11 @@
 		width: 100%;
 		border-bottom: 1px solid #f1f1f1;	
 		background: #fff;
+
+	}
+	.widgets #guests a
+	{
+		color:#5191FA;
 	}
 	.widgets #bt
 	{
@@ -259,7 +272,13 @@
 	}
 	/* end widget*/
 }
-@media  screen and (max-width: 1199px){
+@media  screen and (max-width: 1199px) and (min-width: 992px){
+	.st-hotel-content .hotel-target-book-mobile
+	{
+		
+		display: none;
+		
+	}
 	.container
 	{
 		width:970px;
@@ -480,6 +499,8 @@
 	.widgets #check input
 	{
 		border: none;
+		color: #5191FA;
+		text-align:center;
 	}
 	.widgets #guests
 	{
@@ -487,6 +508,11 @@
 		width: 100%;
 		border-bottom: 1px solid #f1f1f1;	
 		background: #fff;
+
+	}
+	.widgets #guests a
+	{
+		color:#5191FA;
 	}
 	.widgets #bt
 	{
@@ -586,6 +612,13 @@
 	.hotel-target-book-mobile .price-wrapper 
 	{
 		float: left;
+		color: #5E6D77;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.hotel-target-book-mobile .price-wrapper .price {
+		color: #1A2B48;
+		font-size: 20px;
 	}
 	.hotel-target-book-mobile a
 	{
