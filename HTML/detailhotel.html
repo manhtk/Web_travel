@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Detail hotel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
 	<link rel="stylesheet" type="text/css" href="../CSS/hoteldetail.css" />
@@ -19,10 +20,11 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<!-- end date time -->
+	<script src="../JS/jquery.shorten.1.0.js"></script>
 	<script src="../JS/script.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<!-- content wrap -->
 		<div id="st-content-wrapper">
 			<div class="st-breadcrumb">
@@ -36,7 +38,7 @@
 			</div>
 		</div>
 		<!-- end content-wrap -->
-
+		<div class="clear"></div>
 		<!-- content -->
 		<div class="container">
 			<!-- st-content-hotel -->
@@ -68,7 +70,7 @@
 					<div class="review-score">
 						<div class="head clearfix">
 							<div class="left">
-								<span class="head-rating">Excellent</span>
+								<span class="head-rating" style="font-size: 24px">Excellent</span>
 								<span class="text-rating">from 2 reviews</span>
 							</div>
 							<div class="score">
@@ -83,7 +85,7 @@
 			</div>
 			<!-- end  st-hotel-header -->
 			<div class="clear"></div>
-			<div class="row">
+			<div class="row" >
 				<div class="col-md-9">
 					<!-- slide -->
 						<div class="st-gallery" data-width="54%">
@@ -102,14 +104,74 @@
 					width: 100%;">
 					<!-- description -->
 					<div>
-					<h2 class="st-heading-section">Description</h2>	
+					<h2 class="st-heading-section">Description
+						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+					</h2>	
+
 					</div>
+					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
+						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
+						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
+						<div class="cut-gradient"></div>
+					</div>
+					<a href="#" class="st-link block" data-show-target="st-description" data-text-less="View Less" data-text-more="View More">
+						<span class="text">View More</span><i class="fas fa-sort-down"></i>
+					</a>
+					<script type="text/javascript">
+						$(".st-description").shorten({
+							"showChars" : 20,
+							"moreText"  : "View less",
+							"lessText"  : "View more",
+						});
+					</script>
 					<!-- description -->
+					<hr style="
+					width: 100%;">
+					<div>
+						<h2 class="st-heading-section">Rooms
+						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+					</h2>
+					</div>
+					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
+						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
+						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
+						<div class="cut-gradient"></div>
+					</div>
+					<div>
+						<h2 class="st-heading-section">Rooms
+						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+					</h2>
+					</div>
+					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
+						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
+						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
+						<div class="cut-gradient"></div>
+					</div>
+					<div>
+						<h2 class="st-heading-section">Rooms
+						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+					</h2>
+					</div>
+					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
+						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
+						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
+						<div class="cut-gradient"></div>
+					</div>
+					<div>
+						<h2 class="st-heading-section">Rooms
+						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+					</h2>
+					</div>
+					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
+						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
+						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
+						<div class="cut-gradient"></div>
+					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 fixed3 abc"  >
 					<!-- widget -->
-					<div class="container-fluid">
-						<div class="widgets" id="content-right"  >
+					<div class="container-fluid widget">
+						<div class="widgets" >
 							<div class="row" id="money">
 								<div class="col-md-12" >
 									from <strong style="color: #00001E;font-size: 24px">$565</strong> per night
@@ -134,7 +196,6 @@
 							</div>
 							<div class="row" id="bt">
 								<div class="col-md-12">
-									<a href="">More option</a><br>
 									<label >
 										<button>Check availability</button>
 									</label>
@@ -151,16 +212,9 @@
 							</div>
 						</div>
 					</div>
+					
 					<!-- end widget -->
-					<!-- widget mobile -->
-					<!-- <div class="hotel-target-book-mobile">
-						<div class="price-wrapper">
-							from <span class="price">€150.00</span>
-						</div>
-						<a href="" class="btn btn-green">Check Availability</a>
-					</div> -->
-					<!-- end widget mobile -->
-				</div>
+					
 			</div>
 			
 		</div>

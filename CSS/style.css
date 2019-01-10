@@ -92,7 +92,7 @@ body{
 	
 	 font-size: 14px;
 	 color: #1A2B48;
-	 
+	 font-weight: 500;
 
 }
 #footer_content .footer_content_element 
@@ -130,7 +130,7 @@ font-family:Poppins-Regular;
 	padding-top: 30px;
 	font-size: 15px; 
 	color: #768092;
-	 padding-left: 50px;
+	 padding-left: 25px;
 }
 .footer_sub .footer_sub_R 
 {
