@@ -17,7 +17,7 @@ body
 	color: #1A2B48;
 	font-size: 13px;
 }
-@media screen end(min-width: 992px)
+@media screen and(min-width: 992px)
 {
 	#slide
 	{
@@ -46,7 +46,7 @@ body
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
 	border-radius: 5px;
 	width: 270px;
-	height: 350px
+	height: 480px;
 	z-index: 9;
 	padding: 12px; 
 	border-top: 5px solid blue;
@@ -55,6 +55,7 @@ body
 .fixed{
 	position: fixed;
 	top: 0px;
+
 }
 #money
 {
@@ -74,14 +75,38 @@ body
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
-
+svg.svg-inline--fa.fa-user-o.fa-w-16 {
+    display: none;
+}
+a.dropdown {
+    float: right;
+    margin-right: 12%;
+}
 #bt
 {
-	height: 130px;
+	height: 195px;
+	border : 1px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
-
+.extras
+{
+	display: none;
+	z-index: 1;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	font-size: 1.3em;
+	color: gray;
+	min-width: 240px;
+	position: absolute;
+	background: #fff;
+	top: 245px;
+	left: 17px;
+	right:10px;
+}
 .icon
 {
 	margin-top: 20px;
@@ -177,6 +202,10 @@ a.morelink {
     margin: 10px;
     padding:10px;
 }
+.people-inner
+{
+	cursor: pointer;
+}
 /*end thu gọn*/
 .h2-text
 {
@@ -205,7 +234,6 @@ a.morelink {
 	position: relative;
 	margin-left: 210px;
 	margin-top: -28px;
-	transform: rotate(180deg);
 	cursor: pointer;
 	font-size: 24px;
 }
@@ -332,8 +360,7 @@ a.morelink {
 	-o-user-select: none;
 	user-select: none;
 }
-/*end số ng*/
-
+/*end số ng*/	
 /*chọn thêm*/
 .st-flex.space-between 
 {
@@ -378,7 +405,7 @@ select
 	color: #fff;
 	background: #5191FA;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 16px;
 	margin-bottom: 30px;
 	display: block;
 	text-align: center;
@@ -413,7 +440,6 @@ select
 	color: yellow;
 }
 .like {
-	float: right;
 	margin-top: -35px;
 	color: #1C48E7;
 }
