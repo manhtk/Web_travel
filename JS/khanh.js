@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 //from chạy
 $(function() {
-	$('.bookphong').click(function(event) {
+	$('.people-inner').click(function(event) {
 		/* Act on the event */
 		$(this).toggleClass('daonguoc');
 		$(this).next().slideToggle();
