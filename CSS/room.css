@@ -46,7 +46,7 @@ body
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
 	border-radius: 5px;
 	width: 270px;
-	height: 350px
+	height: 430px;
 	z-index: 9;
 	padding: 12px; 
 	border-top: 5px solid blue;
@@ -74,14 +74,24 @@ body
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
-
+svg.svg-inline--fa.fa-user-o.fa-w-16 {
+    display: none;
+}
+a.dropdown {
+    float: right;
+    margin-right: 12%;
+}
 #bt
 {
-	height: 130px;
+	height: 120px;
+	border : 1px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
-
+.extras
+{
+	border: 1px;
+}
 .icon
 {
 	margin-top: 20px;
@@ -177,6 +187,10 @@ a.morelink {
     margin: 10px;
     padding:10px;
 }
+.people-inner
+{
+	cursor: pointer;
+}
 /*end thu gọn*/
 .h2-text
 {
@@ -205,7 +219,6 @@ a.morelink {
 	position: relative;
 	margin-left: 210px;
 	margin-top: -28px;
-	transform: rotate(180deg);
 	cursor: pointer;
 	font-size: 24px;
 }
