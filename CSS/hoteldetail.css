@@ -698,6 +698,33 @@ body
 	{
 		color:#5191FA;
 	}
+	#guests .people-group .label
+	{
+		display: inline;
+		padding: .2em .6em .3em;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1;
+		color: #6aa1fa;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: .25em;
+	}
+	#guests .people-dropdown {
+		z-index: 1;
+		padding: 20px 20px;
+		border: none;
+		border-radius: 0px;
+		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+		font-size: 14px;
+		color: gray;
+		min-width: 240px;
+		position: absolute;
+		background: #fff;
+		left: -0.6em;
+		bottom: -8em;
+	}
 	.widgets #bt
 	{
 		height: 145px;
@@ -732,6 +759,7 @@ body
 		position: fixed;
 		top: 0px;
 	}
+
 	/* end widget*/
 	/*description*/
 	.st-heading-section
@@ -1134,6 +1162,33 @@ body
 		position: relative;
 		top:20px;
 		right: -20px;
+	}
+	.people-group .label
+	{
+		display: inline;
+		padding: .2em .6em .3em;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1;
+		color: #6aa1fa;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: .25em;
+	}
+	.people-dropdown {
+		z-index: 1;
+		padding: 20px 20px;
+		border: none;
+		border-radius: 0px;
+		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+		font-size: 14px;
+		color: gray;
+		min-width: 240px;
+		position: absolute;
+		background: #fff;
+		left: -0.6em;
+		bottom: -8em;
 	}
 	.icon
 	{
