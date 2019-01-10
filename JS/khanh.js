@@ -39,7 +39,7 @@ $(function() {
 
 });
 $(document).ready(function(){
-	$('.formdebook').slideUp();
+	$('.extras').slideUp();
 	var stt=0;
 	$("img .slide").each(function(){
 		if($(this).is(':visible'))
@@ -53,6 +53,31 @@ $(document).ready(function(){
 	});
 });
 //hết form chạy
+// more
+$(function() {
+	$('.more').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+	});
+
+});
+$(document).ready(function(){
+	$('.formdebook').slideUp();
+	var stt=0;
+	$("img .slide").each(function(){
+		if($(this).is(':visible'))
+			stt=$(this).attr("stt");
+	});
+	$("#next").click(function()
+	{
+		next= ++stt;
+		$(" img .slide").hide();
+		$(" img .slide").eq(next).show();
+	});
+});
+// end more
+// dịch chuyển form
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 670) {
         $('.widgets').addClass('fixed');
@@ -64,7 +89,8 @@ $(window).scroll(function () {
         $('.widgets').removeClass('fixed');
     }
 });
-
+// end dịch chuyển
+// chọn ngày
 $(function() {
 
 	$('input[name="datetimes"]').daterangepicker({
@@ -77,6 +103,7 @@ $(function() {
 		}
 	});
 });
+// end chọn ngày
 
 
 jQuery(document).ready(function($){
@@ -193,4 +220,8 @@ jQuery(document).ready(function($){
 
 		    	});
 		    })
+	$('.people-inner').click(function(){
+				var t = $(this);
+				t.parent().find('.formdebook').slideToggle();
+			});
 });
