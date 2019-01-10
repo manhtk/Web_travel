@@ -7,14 +7,6 @@ $(function() {
 	});
 
 });
-$('.slide .control a').click(function()
-{
-	var id= $(this).attr('data-id');
-	var margin_left=-870*(id-1);
-	$ (' .slide .list-img .wrap').css('margin-left',margin_left+'px');
-})
-;
-
 $(document).ready(function(){
 	$('.chodeformdangki').slideUp();
 	var stt=0;
@@ -29,7 +21,17 @@ $(document).ready(function(){
 		$(" img .slide").eq(next).show();
 	});
 });
+// cho de dang ki
+$(function() {
+	$('.bookphong').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+	});
 
+});
+
+//hết form chạy
 // date
 $(function() {
 
@@ -43,32 +45,6 @@ $(function() {
 		}
 	});
 });
-
-
-
-
-$('.slide .control a').click(function()
-{
-	var id= $(this).attr('data-id');
-	var margin_left=-870*(id-1);
-	$ (' .slide .list-img .wrap').css('margin-left',margin_left+'px');
-})
-;
-
-$(document).ready(function(){
-	var stt=0;
-	$("img .slide").each(function(){
-		if($(this).is(':visible'))
-			stt=$(this).attr("stt");
-	});
-	$("#next").click(function()
-	{
-		next= ++stt;
-		$(" img .slide").hide();
-		$(" img .slide").eq(next).show();
-	});
-});
-
 // chạy form
 
 $(window).scroll(function () {
@@ -179,23 +155,32 @@ jQuery(document).ready(function($){
 		        	$button.parent().find(".text .value").text(newVal);
 		        	$('input[name="'+$button.parent().find("input").attr('name')+'"]', '.people-dropdown').trigger('change');
 		        }
+		        $('.people-inner').click(function(){
+		        	var t = $(this);
+
+		        	t.parent().find('.formdebook').slideToggle();
+		        });
 		    });
 	$('.check-like').each(function(){
-		    	var parent = $(this);
-		    	$('.glyphicon', parent).click(function(){
-		    		var t = $(this);
-		    		var currentLike = parent.find('.like').text();
+		var parent = $(this);
+		$('.glyphicon', parent).click(function(){
+			var t = $(this);
+			var currentLike = parent.find('.like').text();
 
-		    		parent.toggleClass('open');
+			parent.toggleClass('open');
 
-		    		if(parent.hasClass('open')){
-		    			currentLike++
-						parent.find('.like').text(currentLike);
-		    		}else{
-		    			currentLike--
-						parent.find('.like').text(currentLike);
-		    		}
+			if(parent.hasClass('open')){
+				currentLike++
+				parent.find('.like').text(currentLike);
+			}else{
+				currentLike--
+				parent.find('.like').text(currentLike);
+			}
 
-		    	});
-		    })
+		});
+	})
+
 });
+
+// book
+
