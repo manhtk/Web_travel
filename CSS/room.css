@@ -46,7 +46,7 @@ body
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
 	border-radius: 5px;
 	width: 270px;
-	height: 430px;
+	height: 480px;
 	z-index: 9;
 	padding: 12px; 
 	border-top: 5px solid blue;
@@ -83,14 +83,28 @@ a.dropdown {
 }
 #bt
 {
-	height: 120px;
+	height: 195px;
 	border : 1px;
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;	
 }
 .extras
 {
-	border: 1px;
+	display: none;
+	z-index: 1;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	font-size: 1.3em;
+	color: gray;
+	min-width: 240px;
+	position: absolute;
+	background: #fff;
+	top: 245px;
+	left: 17px;
+	right:10px;
 }
 .icon
 {
@@ -345,8 +359,7 @@ a.morelink {
 	-o-user-select: none;
 	user-select: none;
 }
-/*end số ng*/
-
+/*end số ng*/	
 /*chọn thêm*/
 .st-flex.space-between 
 {
@@ -391,7 +404,7 @@ select
 	color: #fff;
 	background: #5191FA;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 16px;
 	margin-bottom: 30px;
 	display: block;
 	text-align: center;
@@ -426,7 +439,6 @@ select
 	color: yellow;
 }
 .like {
-	float: right;
 	margin-top: -35px;
 	color: #1C48E7;
 }
