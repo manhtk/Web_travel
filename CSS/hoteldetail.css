@@ -643,9 +643,7 @@ body
 	/* widget */
 	.widgets
 	{
-		padding: 3px 0;
-		border: 1px solid #f1f1f1;
-		height: 416px;
+		border-top: 2px solid #5191FA;
 		width: 200px;
 		text-align: center;
 		position: relative;
@@ -660,7 +658,8 @@ body
 	.widgets button
 	{
 		width: 173px;
-		height: 50px;
+		height: 39px;
+		margin-top: 10px;
 		background:#5191FA;
 		color: #fff;
 		border-radius: 3px;
@@ -686,23 +685,16 @@ body
 		color: #5191FA;
 		text-align:center;
 	}
-	.widgets #guests
-	{
-		height: 84px;
+	#guests {
+		height: 75px;
 		width: 100%;
-		border-bottom: 1px solid #f1f1f1;	
 		background: #fff;
-
+		border-bottom: 1px solid #f1f1f1;
 	}
-	.widgets #guests a
-	{
-		color:#5191FA;
-	}
-	#guests .people-group .label
-	{
+	.widgets .label {
 		display: inline;
 		padding: .2em .6em .3em;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 700;
 		line-height: 1;
 		color: #6aa1fa;
@@ -711,25 +703,55 @@ body
 		vertical-align: baseline;
 		border-radius: .25em;
 	}
-	#guests .people-dropdown {
+	.widgets .field_people_room {
+		padding-left: 0.5px;
+		padding-right: 0.5px;
+		margin-bottom: 15px;
+		width: 154px;
+		position: relative;
+	}
+	.field_people_room .people-inner {
+		background: #fff;
+		position: relative;
+		color: gray;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		position: relative;
+	}
+	.widgets .bookphong {
+		position: relative;
+		margin-left: 143px;
+		margin-top: -20px
+	}
+	.field_people_room .people-dropdown {
 		z-index: 1;
-		padding: 20px 20px;
+		/* padding: 20px 20px; */
 		border: none;
 		border-radius: 0px;
 		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-		font-size: 14px;
+		font-size: 1.3em;
 		color: gray;
-		min-width: 240px;
+		min-width: 195px;
+		min-height: 151px;
 		position: absolute;
 		background: #fff;
-		left: -0.6em;
-		bottom: -8em;
+		top: 56px;
+		left: -21px
+	}
+	.field_people_room .people-dropdown .item .text .value {
+		font-size: 20px;
+		color: #5191fa;
+		font-weight: 500;
 	}
 	.widgets #bt
 	{
-		height: 145px;
+		
 		width: 100%;
-		border-bottom: 1px solid #f1f1f1;
+		
 		background: #fff;	
 	}
 	.widget-box
@@ -983,102 +1005,6 @@ body
 		border-bottom: 25px solid #5191FA;
 	}
 	
-	/*end st-hotel-header */
-	/*slide*/
-	
-	/*end slide*/
-	/* widget */
-	/*.widgets
-	{
-		padding: 3px 0;
-		border: 1px solid #f1f1f1;
-		height: 416px;
-		width: 258px;
-		text-align: center;
-		position: relative;
-		background: #5191FA;
-		z-index: 10;
-	}
-	.widgets .row
-	{
-		margin: 0;
-
-	}
-	.widgets button
-	{
-		width: 230px;
-		height: 50px;
-		background:#5191FA;
-		color: #fff;
-		border-radius: 3px;
-		border: none;
-	}
-	.widgets #money
-	{
-		height: 100px;
-		width: 100%;
-		border-bottom: 1px solid #f1f1f1;
-		background: #fff;
-	}
-	.widgets #check
-	{
-		height: 84px;
-		width: 100%;
-		border-bottom: 1px solid #f1f1f1;
-		background: #fff;
-	}
-	.widgets #check input
-	{
-		border: none;
-		color: #5191FA;
-		text-align:center;
-	}
-	.widgets #guests
-	{
-		height: 84px;
-		width: 100%;
-		border-bottom: 1px solid #f1f1f1;	
-		background: #fff;
-
-	}
-	.widgets #guests a
-	{
-		color:#5191FA;
-	}
-	.widgets #bt
-	{
-		height: 145px;
-		width: 100%;
-		border-bottom: 1px solid #f1f1f1;
-		background: #fff;	
-	}
-	.widget-box
-	{
-		background: #ffffff;
-		width: 270px;
-		height: 120px;
-		margin-top:17px;
-		border-radius: 2px;
-		border:1px solid #f1f1f1f1; 
-		font-size: 12px;
-
-
-	}
-	.widget-box #avt 
-	{
-		position: relative;
-		top:20px;
-		right: -20px;
-	}
-	.fixed3
-	{
-		position: relative;
-	}
-	.fixed
-	{
-		position: fixed;
-		top:0px;
-	}*/
 	.abc
 	{
 		position: relative;
@@ -1119,21 +1045,66 @@ body
 		color: #5191FA;
 		text-align:center;
 	}
-	.widgets #guests
-	{
-		height: 84px;
+	#guests {
+		height: 75px;
 		width: 100%;
-		border-bottom: 1px solid #f1f1f1;	
+		border-bottom: 1px solid #f1f1f1;
+	}
+	.widgets label {
+		display: inline-block;
+		max-width: 100%;
+		margin-bottom: 5px;
+		font-weight: 700;
+	}
+	.widgets .field_people_room {
+		padding-left: 0.5px;
+		padding-right: 0.5px;
+		margin-bottom: 15px;
+		width: 200px;
+		position: relative;
+	}
+	.field_people_room .people-inner {
 		background: #fff;
-
+		position: relative;
+		color: gray;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		position: relative;
 	}
-	.widgets #guests a
-	{
-		color:#5191FA;
+	.widgets .bookphong {
+		position: relative;
+		margin-left: 210px;
+		margin-top: -28px;
+		cursor: pointer;
+		font-size: 24px;
 	}
-	.widgets #bt
+	.field_people_room .people-dropdown {
+		z-index: 1;
+		padding: 20px 20px;
+		border: none;
+		border-radius: 0px;
+		-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+		font-size: 1.3em;
+		color: gray;
+		min-width: 265px;
+		min-height: 138px;
+		position: absolute;
+		background: #fff;
+		top: 58px;
+		left: -34px;
+	}
+	.field_people_room .people-dropdown .item .text .value {
+		font-size: 20px;
+		color: #5191fa;
+		font-weight: 500;
+	}
+	#bt
 	{
-		height: 110px;
 		padding: 14% 0;
 		width: 100%;
 		border-bottom:none;
