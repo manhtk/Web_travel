@@ -45,19 +45,223 @@
 	border-radius: 5px;
 }
 /*seach form*/
-	.seach-form .border-right
-	{
-		border-right: 1px solid #eee;
+.seach-form .border-right
+{
+	border-right: 1px solid #eee;
 
-	}
-	.seach-form .col-md-3
-	{
+}
+#guests
+{
+	height: 75px;
+	width: 100%;
+	border-bottom: 1px solid #f1f1f1;	
+}
+.field_people_room {
+	padding-left: 0.5px;
+	padding-right: 0.5px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.minus, .add
+{
+	float: right;
+}
+.field_people_room .people-inner {
+	
+	background: #fff;
+	padding: 16px 5px 20px 10px;
+	position: relative;
+	color: gray;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	padding: 0px;
+}
 
-	}
+.field_people_room .people-inner .fa {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.people-inner .people-group .label {
+	color: gray;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+	padding: 0;
+}
+
+.field_people_room .people-inner .people-group .value {
+	font-size: 20px;
+	color: #5191fa;
+	display: block;
+	font-weight: 450;
+}
+
+.field_people_room .people-dropdown {
+	display: none;
+	z-index: 1;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	font-size: 1.3em;
+	color: gray;
+	min-width: 240px;
+	position: absolute;
+	background: #fff;
+	top: 39px;
+	left: 5px;
+}
+.gmz-number-wrapper .text
+{
+	float: left;
+	width: 70%;
+}
+.field_people_room .people-dropdown:before {
+	position: absolute;
+	display: inline-block;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	content: '';
+	top: -7px;
+	left: 17px;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+}
+
+.field_people_room .people-dropdown .item {
+	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.field_people_room .people-dropdown .item .minus {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.field_people_room .people-dropdown .item .text .value {
+	font-size: 20px;
+	color: #5191fa;
+	font-weight: 500;
+}
+
+.field_people_room .people-dropdown .item .add {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.st-flex.space-between 
+{
+	font-size: 17px;
+}
+.form-group .form-more-extra
+{
+	position: relative;
+}
+.chon-adult
+{
+	height: 6%;
+	width: 70%;
+}
+li.item.mt10
+{
+	list-style: none;
+}
+.chon-children
+{
+	height: 6%;
+	width: 70%;	
+}
+.chon-services
+{
+	height: 6%;
+	width: 70%;
+}
+select
+{
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+.adult, .child 
+{
+	font-size: 16px;
+	color: #5191FA;
+}
+.people-dropdown
+{
+	font-size: 
+}
+.search-form-section
+{
+	float: left;
+	width: 80%;
+}
+
+.border-right .has-icon 
+{	
+	font-size: 25px;
+	float: left;
+	width: 20%;
+	color: #d6d5cd;
+}
 .seach-form .row
 {
 	margin-right: auto;
-    margin-left: -15px;
+	margin-left: -15px;
+}
+.dropdown-menu
+{
+	width: 100%;
+}
+.form-check-language
+{
+	width: 100%
+}
+.search-form-location
+{
+	margin-left: 20px;
+}
+.location-language
+{
+	margin-left: 40px;
+}
+.form-check-language .icon-seachform
+{
+	width: 20px;
+	margin-left: 20px;
+	float: left;
 }
 /*end banner*/
 
@@ -171,7 +375,7 @@
 {
 	width: 100%;
 	height: 160px;
-    top: 250px;
+	top: 250px;
 }
 .wpb-room-name a
 {
@@ -235,8 +439,8 @@
 	font-size: 14px;
 	color: #5E6D77;
 }
- /*End Last Minute Deals*/
- /*Top Destinations*/
+/*End Last Minute Deals*/
+/*Top Destinations*/
 
 .destination-item
 {
@@ -308,8 +512,12 @@
 {
 	clear: both;
 }
-@media only screen and (min-width: 375px) and (max-width: 425px)
+@media only screen and (max-width: 425px)
 {
+	.banner .row .wpb_column 
+	{
+		padding: 0px 6px !important;
+	}
 	.banner .search-form-wrapper .sub-heading
 	{
 		
@@ -324,63 +532,63 @@
 	{ 
 		padding: 0px 10px !important;
 	}
-    .destination-item img
-    {
-    	float: none;
-    	width: 100%;
-    	height: 100%;
-    }	
-     .destination-item .text-content
-     {
-     	left: 0px!important;
-     }
-    .destination-item .text-content .title-name h2{
-    	font-size: 25px !important;
-    }
-    .destination-item .text-content .desc-inf h3
-    {
+	.destination-item img
+	{
+		float: none;
+		width: 100%;
+		height: 100%;
+	}	
+	.destination-item .text-content
+	{
+		left: 0px!important;
+	}
+	.destination-item .text-content .title-name h2{
+		font-size: 25px !important;
+	}
+	.destination-item .text-content .desc-inf h3
+	{
 		font-size: 14px !important;	
-    }
-    .last-minute
-    {
-    	float: left;
-    	width: 50%!important;
-    	height: 300px!important;
+	}
+	.last-minute
+	{
+		float: left;
+		width: 50%!important;
+		height: 300px!important;
 
-    }
-     .wpb-content-text
-     {
-     	top:160px !important;
-     }
-    .last-minute .col-xs-6
-    {
+	}
+	.wpb-content-text
+	{
+		top:160px !important;
+	}
+	.last-minute .col-xs-6
+	{
 
-        width: 100%!important;
-    }
-    .wpb-content-image img
-    {
-    	max-width: 100% !important;
-    	max-height: 100% !important;
+		width: 100%!important;
+	}
+	.wpb-content-image img
+	{
+		max-width: 100% !important;
+		max-height: 100% !important;
 
-    }
-    .wpb-room-adress .review 
-    {
-    	width: 100% !important;
-    	float: none;
-    }
-    .rate p, .sumary li
-    {
-    	width: 100% !important;
-    }
-    .list-destination .col-xs-6 
-    {
+	}
+	.wpb-room-adress .review 
+	{
+		width: 100% !important;
+		float: none;
+	}
+	.rate p, .sumary li
+	{
+		width: 100% !important;
+	}
+	.list-destination .col-xs-6 
+	{
 		padding: 0px 5px!important;
-    }
-    .btn-view-all
-    {	
-    	margin-left: -10%!important;
-    }
-    .seach-form .border-right
+	}
+	.btn-view-all
+	{	
+		margin-left: -10%!important;
+	}
+	.seach-form .border-right
 	{
 		width: 100%;
 		border-bottom: 1px solid #eee !important;	
@@ -392,7 +600,7 @@
 }
 @media only screen and (min-width:425px) and (max-width: 768px)
 {
-		.banner .search-form-wrapper .sub-heading
+	.banner .search-form-wrapper .sub-heading
 	{
 		
 		display: none;
@@ -413,6 +621,7 @@
 	.seach-form .border-right
 	{
 		width: 100%;
+		height: 100%;
 		border-bottom: 1px solid #eee !important;	
 	}
 }
