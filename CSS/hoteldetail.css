@@ -17,6 +17,19 @@ body
     color: #1A2B48;
     font-size: 13px;
 }
+a {
+	color: #0254EB
+}
+a:visited {
+	color: #0254EB
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
 @media screen and (max-width: 767px){
 	.container
 	{
@@ -792,10 +805,26 @@ body
 		align-items: center;
 		margin-right: 100px;
 	}
-	.review-list .comment-item .comment-item-head .like {
+	/*.review-list .comment-item .comment-item-head .like {
 		float: right;
 		margin-top: -35px;
 		color: #AEB4C0;
+	}
+	.review-list .comment-item .comment-item-head .like .btn-like {
+		color: #1A2B48;
+		margin-left: 5px;
+		font-size: 20px;
+	}*/
+	.form-group {
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	.check-like.open .glyphicon{
+		transform: rotate(180deg);
+	}
+	.like {
+		margin-top: -35px;
+		color: #1C48E7;
 	}
 	.review-list .comment-item .comment-item-head .like .btn-like {
 		color: #1A2B48;
