@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
 	<link rel="stylesheet" type="text/css" href="../CSS/hoteldetail.css" />
+	<script type="text/javascript" src="../JS/script.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 	<!-- slide -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -20,8 +21,22 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<!-- end date time -->
-	<script src="../JS/jquery.shorten.1.0.js"></script>
-	<script src="../JS/script.js"></script>
+	<script type="text/javascript" src="..//JS/script.js" ></script>
+	<style type="text/css">
+	a {
+		color: #0254EB
+	}
+	a:visited {
+		color: #0254EB
+	}
+	a.morelink {
+		text-decoration:none;
+		outline: none;
+	}
+	.morecontent span {
+		display: none;
+	}
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -88,17 +103,17 @@
 			<div class="row" >
 				<div class="col-md-9">
 					<!-- slide -->
-						<div class="st-gallery" data-width="54%">
-							<div class="fotorama"
-							data-nav="thumbs" >
-								<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
-								<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
-								<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
-								<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
-								<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
-								<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
-							</div>
+					<div class="st-gallery" data-width="54%">
+						<div class="fotorama"
+						data-nav="thumbs" >
+						<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
+						<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
+						<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
+						<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
+						<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
+						<a href="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg"   ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/79746510-870x555.jpg width="135px" height="2.3%" ></a>
 						</div>
+					</div>
 					<!-- end  slide -->
 					<hr style="
 					width: 100%;">
@@ -107,66 +122,508 @@
 					<h2 class="st-heading-section">Description
 						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
 					</h2>	
-
 					</div>
-					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
+					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" >
 						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
-						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
-						<div class="cut-gradient"></div>
+						<p class="more-content">
+						Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.
+						</p>
+						
+						
 					</div>
-					<a href="#" class="st-link block" data-show-target="st-description" data-text-less="View Less" data-text-more="View More">
-						<span class="text">View More</span><i class="fas fa-sort-down"></i>
-					</a>
-					<script type="text/javascript">
-						$(".st-description").shorten({
-							"showChars" : 20,
-							"moreText"  : "View less",
-							"lessText"  : "View more",
+					<div class="cut-gradient"></div>
+					<script>
+						
+						$(".more-content").shorten({
+							"showChars" : 6,
+							"moreText"  : "View more",
+							"lessText"  : "View less",
 						});
 					</script>
+					
 					<!-- description -->
 					<hr style="
 					width: 100%;">
+					<!-- facilities -->
 					<div>
+						<h2 class="st-heading-section">Facilities
+							<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+						</h2>
+						<div class="facilities">
+							<div class="container-fuild">
+								<div class="row">
+									<div class="col-xs-4 fac" " ><i class="fas fa-temperature-low"></i> Air Conditioning</div>
+									<div class="col-xs-4 fac" "><i class="fas fa-taxi"></i> Airport Transport</div>
+									<div class="col-xs-4 fac" "><i class="fas fa-hiking"></i> Fitness Center</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-4 fac" "><i class="fas fa-tv"></i> Flat Tv</div>
+									<div class="col-xs-4 fac" "><i class="fas fa-hot-tub"></i> Heater</div>
+									<div class="col-xs-4 fac" "><i class="fas fa-wifi"></i> Internet – Wifi</div>
+								</div>							
+								<details>
+									<summary style="color:#5191FA;text-decoration: underline;font-size: 14px">show more</summary>
+									<div class="row">
+										<div class="col-xs-4 fac" ><i class="fas fa-parking"></i> Parking</div>
+										<div class="col-xs-4 fac" ><i class="fas fa-swimmer"></i> Pool</div>
+										<div class="col-xs-4 fac" ><i class="fas fa-utensils"></i> Restaurant</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-4 fac" ><i class="fas fa-smoking"></i> Smoking Room</div>
+										<div class="col-xs-4 fac" ><i class="fas fa-heart"></i> Spa & Sauna</div>
+										<div class="col-xs-4 fac" ><i class="fas fa-wind"></i> Washer & Dryer</div>
+									</div>
+								</details> 
+							</div>	
+						</div>
+					</div>
+					<!-- end facilities -->
+					<hr style="
+					width: 100%;">
+					<!-- room -->
+					<!--  -->
+					<div class="sroom">
 						<h2 class="st-heading-section">Rooms
-						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
-					</h2>
+							<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+						</h2>
+						<div class="container-fluid">
+							<div class="row sheration">
+								<div class="col-xs-12 col-md-4 images">
+									<div class="image">
+										<img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/hotel-1330846_960_720-1-800x600.jpg" alt="" class="img-responsive img-full">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-8">
+									<h2 style="font-size: 18px;color:#1A2B48"><a href="" style="color: black;">Room Sheraton Hotel</a></h2>
+									<div class="row">
+										<div class="col-xs-12 col-md-8 inf" >
+											<div class="col-xs-2">
+												<i class="fas fa-ruler-combined"></i>
+												<br>
+												<span>250m<sup>2</sup></span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-bed"></i>
+												<br>
+												<span>x3</span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-users"></i>
+												<br>
+												<span>x4</span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-baby"></i>
+												<br>
+												<span>x4</span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 btn">
+											<button>SHOW PRICE</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row sheration">
+								<div class="col-xs-12 col-md-4 images">
+									<div class="image">
+										<img src="https://homap.travelerwp.com/wp-content/uploads/2014/12/75997_18101122430068443476-800x600.jpg" alt="" class="img-responsive img-full">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-8">
+									<h2 style="font-size: 18px;color:#1A2B48"><a href="" style="color: black;">Double Room With Town View</a></h2>
+									<div class="row">
+										<div class="col-xs-12 col-md-8 inf" >
+											<div class="col-xs-2">
+												<i class="fas fa-ruler-combined"></i>
+												<br>
+												<span>200m<sup>2</sup></span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-bed"></i>
+												<br>
+												<span>x2</span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-users"></i>
+												<br>
+												<span>x3</span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-baby"></i>
+												<br>
+												<span>x4</span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 btn">
+											<button>SHOW PRICE</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row sheration">
+								<div class="col-xs-12 col-md-4 images">
+									<div class="image">
+										<img src="https://homap.travelerwp.com/wp-content/uploads/2014/12/735242_17013103030050668721-800x600.jpg" alt="" class="img-responsive img-full">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-8">
+									<h2 style="font-size: 18px;color:#1A2B48"><a href="" style="color: black;">Room Sheraton Hotel</a></h2>
+									<div class="row">
+										<div class="col-xs-12 col-md-8 inf" >
+											<div class="col-xs-2">
+												<i class="fas fa-ruler-combined"></i>
+												<br>
+												<span>26m<sup>2</sup></span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-bed"></i>
+												<br>
+												<span>x2</span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-users"></i>
+												<br>
+												<span>x6</span>
+											</div>
+											<div class="col-xs-2">
+												<i class="fas fa-baby"></i>
+												<br>
+												<span>x6</span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 btn">
+											<button>SHOW PRICE</button>
+										</div>
+									</div>
+								</div>
+							</div> 	
+						</div>
 					</div>
-					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
-						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
-						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
-						<div class="cut-gradient"></div>
-					</div>
-					<div>
+					<!--  -->
+					<div class="broom">
 						<h2 class="st-heading-section">Rooms
-						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
-					</h2>
+							<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
+						</h2>
+						<div class="container-fluid">
+							<div class="row sheration"  >
+								<div class="col-sm-4 edit" ><img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/hotel-1330846_960_720-1-800x600.jpg" width="270px" height="auto" alt=""></div>
+								<div class="col-sm-8">
+									<div >
+										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Room Sheraton Hotel</a></h2>
+										<div class="row" class="">
+											<div class="col-sm-8">
+												<div class="col-sm-2">
+													<i class="fas fa-ruler-combined"></i>
+													<br>
+													<span>250m<sup>2</sup></span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-bed"></i>
+													<br>
+													<span>x3</span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-users"></i>
+													<br>
+													<span>x4</span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-baby"></i>
+													<br>
+													<span>x4</span>
+												</div>
+												<div class="col-sm-4"></div>
+											</div>
+											<div class="col-sm-4 btn" ><button>SHOW PRICE</button></div>
+										</div>
+									</div>                 
+								</div>
+							</div>
+							<div class="row sheration"  >
+								<div class="col-sm-4 edit" ><img src="https://homap.travelerwp.com/wp-content/uploads/2014/12/75997_18101122430068443476-800x600.jpg" width="270px" height="auto" alt=""></div>
+								<div class="col-sm-8">
+									<div >
+										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Double Room With Town View</a></h2>
+										<div class="row" class="">
+											<div class="col-sm-8">
+												<div class="col-sm-2">
+													<i class="fas fa-ruler-combined"></i>
+													<br>
+													<span>200<sup>2</sup></span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-bed"></i>
+													<br>
+													<span>x2</span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-users"></i>
+													<br>
+													<span>x3</span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-baby"></i>
+													<br>
+													<span>x4</span>
+												</div>
+												<div class="col-sm-4"></div>
+											</div>
+											<div class="col-sm-4 btn" ><button>SHOW PRICE</button></div>
+										</div>
+									</div>                 
+								</div>
+							</div>
+							<div class="row sheration"  >
+								<div class="col-sm-4 edit" ><img src="https://homap.travelerwp.com/wp-content/uploads/2014/12/735242_17013103030050668721-800x600.jpg" width="270px" height="auto" alt=""></div>
+								<div class="col-sm-8">
+									<div >
+										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Standard Double Room</a></h2>
+										<div class="row" class="">
+											<div class="col-sm-8">
+												<div class="col-sm-2">
+													<i class="fas fa-ruler-combined"></i>
+													<br>
+													<span>26m<sup>2</sup></span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-bed"></i>
+													<br>
+													<span>x2</span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-users"></i>
+													<br>
+													<span>x6</span>
+												</div>
+												<div class="col-sm-2">
+													<i class="fas fa-baby"></i>
+													<br>
+													<span>x6</span>
+												</div>
+												<div class="col-sm-4"></div>
+											</div>
+											<div class="col-sm-4 btn" ><button>SHOW PRICE</button></div>
+										</div>
+									</div>                 
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
-						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
-						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
-						<div class="cut-gradient"></div>
-					</div>
-					<div>
-						<h2 class="st-heading-section">Rooms
-						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
-					</h2>
-					</div>
-					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
-						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
-						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
-						<div class="cut-gradient"></div>
-					</div>
-					<div>
-						<h2 class="st-heading-section">Rooms
-						<a href="" class="pull-right toggle-section	"><i class="fas fa-chevron-up" style="font-size: 12px;"></i></a>
-					</h2>
-					</div>
-					<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" style="height: 120px;">
-						<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.</p>
-						<p>Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
-						<div class="cut-gradient"></div>
-					</div>
+					<!-- end room -->
+					<hr style="
+					width: 100%;">
+					<!-- reviews -->
+					<div class="reviews">
+						<h2>Reviews</h2>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12 col-sm-4 reviews-score"  >
+									<h2 class="heading">Review score</h2>
+									<div class="review-box-score">
+										<div class="review-score">4.7<span class="per-total">/5</span></div>
+										<div class="review-score-text">Excellent</div>
+										<div class="review-score-base">
+											Based on<span> 3 reviews</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-4 rating" >
+									<h2 class="heading">Traveler rating</h2>
+									<div class="item">
+										<div class="progress">
+											<div class="percent green" style="width: 0%;"></div>
+										</div>
+										<div class="label">
+											Excellent <div class="number">0</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent darkgreen" style="width: 100%;"></div>
+										</div>
+										<div class="label">
+											Very Good <div class="number">3</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent yellow" style="width: 0%;"></div>
+										</div>
+										<div class="label">
+											Average <div class="number">0</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent orange" style="width: 0%;"></div>
+										</div>
+										<div class="label">
+											Poor <div class="number">0</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent red" style="width: 0%;"></div>
+										</div>
+										<div class="label">
+											Terrible <div class="number">0</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-4 summary" >
+									<h2 class="heading">Summary</h2>
+									<div class="item">
+										<div class="progress">
+											<div class="percent" style="width: 93.3333333333%;"></div>
+										</div>
+										<div class="label">
+											Location
+											<div class="number">
+												4.7/5
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent" style="width: 93.3333333333%;"></div>
+										</div>
+										<div class="label">
+											Service 
+											<div class="number">
+												4.3 /5
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent" style="width: 86.6666666667%;"></div>
+										</div>
+										<div class="label">
+											Clearness 
+											<div class="number">
+												5 /5
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent" style="width:100%;"></div>
+										</div>
+										<div class="label">
+											Rooms 
+											<div class="number">
+												5/5
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="progress">
+											<div class="percent" style="width: 93.3333333333%;"></div>
+										</div>
+										<div class="label">
+											Sleep 
+											<div class="number">
+												4.7/5
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="text-align: center;">
+								<div class="col-md-12">
+									3 reviews on this Hotel - Showing 1 to 3
+								</div>
+
+							</div>
+							<!-- review-list -->
+							<div class="review-list">
+								<div class="comment-item">
+									<div class="comment-item-head">
+										<div class="media">
+											<div class="media-left">
+												<img alt="avatar" width="50" height="50" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_8-1-37jk0455r1ut9uns0zq58g.jpg" class="avatar avatar-96 photo origin round">                    </div>
+												<div class="media-body">
+													<h4 class="media-heading">Travis Tan</h4>
+													<div class="date">11/12/2018</div>
+												</div>
+											</div>
+											<div class="like">
+												<span>4</span> likes this                                                <a data-id="163" href="#" class="btn-like st-like-review ">
+													<i class="far fa-thumbs-up"></i>
+												</a>
+											</div>
+										</div>
+										<div class="comment-item-body">
+											<span class="comment-rate">4.6</span>                                    <div class="detail">
+												<div class="st-description" data-show-all="st-description-163">
+												Great location, great host, hot water, big bed. Kitchen and washer/dryer work well. It is a tiny space but is advertised that way. I’d come back because the location is amazing and I also felt very secure here. My baby boomer mom had to climb stairs to reach the bed, but it was very cozy and she’s spry enough.                    </div>
+											</div>
+										</div>
+									</div>
+
+									<!--  -->
+									<div class="comment-item">
+										<div class="comment-item-head">
+											<div class="media">
+												<div class="media-left">
+													<img alt="avatar" width="50" height="50" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_10-1-37jiio2qgpw8izfqv5nitc.jpg" class="avatar avatar-96 photo origin round">                    </div>
+													<div class="media-body">
+														<h4 class="media-heading">Donald Wolf</h4>
+														<div class="date">07/12/2018</div>
+													</div>
+												</div>
+												<div class="like">
+													<span>2</span> likes this                                                <a data-id="96" href="#" class="btn-like st-like-review ">
+														<i class="far fa-thumbs-up"></i>
+													</a>
+												</div>
+											</div>
+											<div class="comment-item-body">
+												<h4 class="title">
+													<span class="comment-rate">4.6</span>                        "Good location, quality should be better"
+												</h4>
+												<div class="detail">
+													<div class="st-description" data-show-all="st-description-96">
+														The bathroom was super old! 30 years old!! Pieces of tiles were missing... regardless of the fact that it was clean, it looks really old. 
+													The food at breakfast was of very poor quality. The scrambled and boiled eggs were practically inedible. I find the variety of food at breakfast very limited for a 4 star hotel which charges 300 euro a night.                    </div>
+												</div>
+											</div>
+										</div>
+
+										<!--  -->
+										<div class="comment-item">
+											<div class="comment-item-head">
+												<div class="media">
+													<div class="media-left">
+														<img alt="avatar" width="50" height="50" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/images-37jjdsv8akbybpoam2sav4.jpg" class="avatar avatar-96 photo origin round">                    </div>
+														<div class="media-body">
+															<h4 class="media-heading">Quillen</h4>
+															<div class="date">07/12/2018</div>
+														</div>
+													</div>
+													<div class="like">
+														<span>1</span> like this                                                <a data-id="94" href="#" class="btn-like st-like-review ">
+															<i class="far fa-thumbs-up"></i>
+														</a>
+													</div>
+												</div>
+												<div class="comment-item-body">
+													<h4 class="title">
+														<span class="comment-rate">4.8</span>                        "Beautiful spot with a lovely view"
+													</h4>
+													<div class="detail">
+														<div class="st-description" data-show-all="st-description-94">
+														Beautiful spot with a lovely view. It's warm and cozy and had everything we needed. I am very particular about cleanliness and this place was spotless! Very quick to respond and extended check out for us. Truly perfect!                    </div>
+													</div>
+												</div>
+											</div>
+											<!--  -->
+										</div> 
+										<!--review-list  -->
+									</div>
+								</div>
+								<!-- end review  -->					
 				</div>
 				<div class="col-md-3 fixed3 abc"  >
 					<!-- widget -->

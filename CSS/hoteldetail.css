@@ -235,6 +235,164 @@ body
 		text-decoration: underline;
 	}
 	/*end descripton*/
+	/*Faciliti*/
+	.facilities .fac
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		color: #5E6D77;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	/*end Faciliti*/
+	/*room*/
+	.broom
+	{
+		display: none;
+	}
+	.sroom
+	{
+		display: block;
+	}
+	.sroom .sheration
+	{
+		border: 1px solid #f1f1f1;
+		border-radius: 5px;
+		margin-bottom: 10%;
+	}
+	.sheration .images
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.sheration .image img
+	{
+		border-radius: 5px;
+	}
+	.sheration .image .img-full
+	{
+		display: block;
+		width: 100%;
+	}
+	.sroom .inf
+	{
+		margin-top: 5%;
+	}
+	.sroom .btn
+	{
+		padding: 0;
+	}
+	.sroom .btn button
+	{
+		background: #FA5636;
+		color: #FFF;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 10px 10px;
+		border-radius: 5px;
+		border: none;
+		margin:4% 78% 4% 0%;
+	}
+	/*end room*/
+	/*review*/
+	.reviews .reviews-score
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+		
+	}
+	.reviews .review-box-score .review-box .review-box-score {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		text-align: center;
+	}
+	.reviews  .review-box-score .review-score {
+		line-height: 50px;
+		font-size: 72px;
+		font-weight: 500;
+		color: #5191FA;
+	}
+	.reviews .review-score .per-total {
+		font-size: 24px;
+	}
+	.reviews .review-box-score .review-score-text {
+		font-weight: 400;
+		font-size: 24px;
+		color: #1A2B48;
+	}
+	.reviews .review-box-score .review-score-base {
+		margin-top: 10px;
+		color: #768090;
+		font-size: 14px;
+	}
+	
+	.reviews .rating
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+	}
+
+	.reviews .item
+	{
+		margin-top: 15px;
+	}
+	.reviews .item .progress {
+		position: relative;
+		height: 8px;
+		width: 100%;
+		border-radius: 10px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background: #EEE;
+		margin-bottom:0px;
+		overflow: inherit;
+	}
+	.reviews .item .progress .percent {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 8px;
+		background: #5191FA;
+		border-radius: 10px;
+	}
+	.reviews .item .label {
+		position: relative;
+		margin-bottom: 12px;
+		display: block;
+		padding-left: 0;
+		color: #1A2B48;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+	}
+	.reviews .item .label .number {
+		position: absolute;
+		top: 0;
+		right: 2px;
+		color: #768090;
+	}
+	.reviews .summary
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+	}
+	/*end review*/
 }
 @media screen and (min-width: 768px){
 	.container
@@ -450,6 +608,220 @@ body
 		text-decoration: underline;
 	}
 	/*end descripton*/
+	/*Faciliti*/
+	.facilities .fac
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		color: #5E6D77;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	/*end Faciliti*/
+	.broom
+	{
+		display: none;
+
+	}
+	.sroom
+	{
+		display: block;
+	}
+	.sroom .sheration
+	{
+		border: 1px solid #f1f1f1;
+		border-radius: 5px;
+		margin-bottom: 10%;
+	}
+	.sheration .images
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.sheration .image img
+	{
+		border-radius: 5px;
+	}
+	.sheration .image .img-full
+	{
+		display: block;
+		width: 100%;
+	}
+	.sroom .inf
+	{
+		margin-top: 5%;
+	}
+	.sroom .btn
+	{
+		padding: 0;
+	}
+	.sroom .btn button
+	{
+		background: #FA5636;
+		color: #FFF;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 10px 10px;
+		border-radius: 5px;
+		border: none;
+		margin:4% 78% 4% 0%;
+	}
+	/*end room*/
+	/*review*/
+	.reviews
+	{
+		margin-left: 44px;
+		margin-right: -25px;
+		color: #5E6D77;
+		font-size: 14px;
+	}
+	.reviews .reviews-score
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+		height: 346px;
+		
+	}
+	.reviews .review-box-score .review-box .review-box-score {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		text-align: center;
+	}
+	.reviews  .review-box-score .review-score {
+		line-height: 50px;
+		font-size: 72px;
+		font-weight: 500;
+		color: #5191FA;
+	}
+	.reviews .review-score .per-total {
+		font-size: 24px;
+	}
+	.reviews .review-box-score .review-score-text {
+		font-weight: 400;
+		font-size: 24px;
+		color: #1A2B48;
+	}
+	.reviews .review-box-score .review-score-base {
+		margin-top: 10px;
+		color: #768090;
+		font-size: 14px;
+	}
+	
+	.reviews .rating
+	{
+		height: 346px;
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+	}
+
+	.reviews .item
+	{
+		margin-top: 15px;
+	}
+	.reviews .item .progress {
+		position: relative;
+		height: 8px;
+		width: 100%;
+		border-radius: 10px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background: #EEE;
+		margin-bottom:0px;
+		overflow: inherit;
+	}
+	.reviews .item .progress .percent {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 8px;
+		background: #5191FA;
+		border-radius: 10px;
+	}
+	.reviews .item .label {
+		position: relative;
+		margin-bottom: 12px;
+		display: block;
+		padding-left: 0;
+		color: #1A2B48;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+	}
+	.reviews .item .label .number {
+		position: absolute;
+		top: 0;
+		right: 2px;
+		color: #768090;
+	}
+	.reviews .summary
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+		height: 346px;
+	}
+	.review-list .comment-item {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-top: 1px solid #EAEEF3;
+		border-bottom: 1px solid #EAEEF3;
+		font-size: 14px;
+	}
+	.review-list .comment-item .comment-item-head .media 
+	{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin-right: 100px;
+	}
+	.review-list .comment-item .comment-item-head .like {
+		float: right;
+		margin-top: -35px;
+		color: #AEB4C0;
+	}
+	.review-list .comment-item .comment-item-head .like .btn-like {
+		color: #1A2B48;
+		margin-left: 5px;
+		font-size: 20px;
+	}
+	.review-list .comment-item .comment-item-body 
+	{
+		margin-top: 30px;
+	}
+	.review-list .comment-item .comment-item-body .comment-rate 
+	{
+		padding: 5px;
+		background: #5191FA;
+		color: #FFF;
+		border-radius: 3px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.review-list .comment-item .comment-item-body .detail {
+		color: #74818A;
+	}
+	.review-list .comment-item .comment-item-head .media-left img {
+		border-radius: 50%;
+	}
+	/*end review*/
 }
 
 @media  screen and (min-width: 992px){
@@ -829,6 +1201,207 @@ body
 		text-decoration: underline;
 	}
 	/*end descripton*/
+	/*Faciliti*/
+	.facilities .fac
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		color: #5E6D77;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	/*end Faciliti*/
+	/*rooms*/
+		.sroom
+		{
+			display: none;
+		}
+		.broom
+		{
+			display: block;
+		}
+		.broom .sheration 
+		{
+			border: 1px solid #f1f1f1;
+			border-radius: 5px;
+			margin: 20px 0px;
+		}
+		.broom .sheration .edit
+		{
+			overflow: hidden;
+			margin-left: -15px;
+		}
+		.broom .btn
+		{
+			padding: 0;
+		}
+		.broom .btn button
+		{
+			background: #FA5636;
+			color: #FFF;
+			font-size: 14px;
+			font-weight: 500;
+			padding: 10px 10px;
+			border-radius: 5px;
+			border: none;
+		}
+		
+	/*rooms*/
+	/*review*/
+	.reviews
+	{
+		margin-left: 44px;
+		margin-right: -25px;
+		color: #5E6D77;
+		font-size: 14px;
+	}
+	.reviews .reviews-score
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+		height: 346px;
+		
+	}
+	.reviews .review-box-score .review-box .review-box-score {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		text-align: center;
+	}
+	.reviews  .review-box-score .review-score {
+		line-height: 50px;
+		font-size: 72px;
+		font-weight: 500;
+		color: #5191FA;
+	}
+	.reviews .review-score .per-total {
+		font-size: 24px;
+	}
+	.reviews .review-box-score .review-score-text {
+		font-weight: 400;
+		font-size: 24px;
+		color: #1A2B48;
+	}
+	.reviews .review-box-score .review-score-base {
+		margin-top: 10px;
+		color: #768090;
+		font-size: 14px;
+	}
+	
+	.reviews .rating
+	{
+		height: 346px;
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+	}
+
+	.reviews .item
+	{
+		margin-top: 15px;
+	}
+	.reviews .item .progress {
+		position: relative;
+		height: 8px;
+		width: 100%;
+		border-radius: 10px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background: #EEE;
+		margin-bottom:0px;
+		overflow: inherit;
+	}
+	.reviews .item .progress .percent {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 8px;
+		background: #5191FA;
+		border-radius: 10px;
+	}
+	.reviews .item .label {
+		position: relative;
+		margin-bottom: 12px;
+		display: block;
+		padding-left: 0;
+		color: #1A2B48;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+	}
+	.reviews .item .label .number {
+		position: absolute;
+		top: 0;
+		right: 2px;
+		color: #768090;
+	}
+	.reviews .summary
+	{
+		margin-top: 20px;
+		padding: 30px;
+		border: 1px solid #EAEEF3;
+		border-radius: 5px;
+		color: #1A2B48;
+		font-weight: 500;
+		height: 346px;
+	}
+	.review-list .comment-item {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-top: 1px solid #EAEEF3;
+		border-bottom: 1px solid #EAEEF3;
+		font-size: 14px;
+	}
+	.review-list .comment-item .comment-item-head .media 
+	{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin-right: 100px;
+	}
+	.review-list .comment-item .comment-item-head .like {
+		float: right;
+		margin-top: -35px;
+		color: #AEB4C0;
+	}
+	.review-list .comment-item .comment-item-head .like .btn-like {
+		color: #1A2B48;
+		margin-left: 5px;
+		font-size: 20px;
+	}
+	.review-list .comment-item .comment-item-body 
+	{
+		margin-top: 30px;
+	}
+	.review-list .comment-item .comment-item-body .comment-rate 
+	{
+		padding: 5px;
+		background: #5191FA;
+		color: #FFF;
+		border-radius: 3px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.review-list .comment-item .comment-item-body .detail {
+		color: #74818A;
+	}
+	.review-list .comment-item .comment-item-head .media-left img {
+		border-radius: 50%;
+	}
+	/*end review*/
 }
 @media  screen and (min-width:1200px){
 	.st-hotel-content .hotel-target-book-mobile
@@ -1222,6 +1795,20 @@ body
 		text-decoration: underline;
 	}
 	/*end descripton*/
+	/*Faciliti*/
+	.facilities .fac
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		color: #5E6D77;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	/*end Faciliti*/
 
 }
 
