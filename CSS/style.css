@@ -12,6 +12,7 @@ body{
 	padding-top: 65px;
 	padding-bottom: 40px;
 	background: #F5F5F5; 
+	min-width: 970px;
 }
 .mailchimp .media 
 {
@@ -124,12 +125,7 @@ font-family:Poppins-Regular;
  	width: 25%;
     float: left;
 }
-#footer_sub .col-lg-3
-{
- 	width: 25%;
-    float: left;
-}
-}
+
 
 
 
