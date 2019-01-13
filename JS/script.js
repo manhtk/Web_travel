@@ -1,5 +1,14 @@
 $(function() {
-	$('.dangky').click(function(event) {
+	$('.btn-like').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+		// $(this).children().css( "transform", "rotate(180deg)");
+	});
+
+});
+$(function() {
+	$('.heading').click(function(event) {
 		/* Act on the event */
 		$(this).toggleClass('daonguoc');
 		$(this).next().slideToggle();

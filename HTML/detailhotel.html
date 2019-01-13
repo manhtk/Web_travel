@@ -7,7 +7,7 @@
 	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
-	<link rel="stylesheet" type="text/css" href="../CSS/hoteldetail.css" />
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css" />
 	<script type="text/javascript" src="../JS/script.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 	<!-- slide -->
@@ -22,9 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<!-- end date time -->
 	<script type="text/javascript" src="..//JS/script.js" ></script>
-	<style type="text/css">
-	
-	</style>
 </head>
 <body>
 	<div class="container">
@@ -119,7 +116,7 @@
 						
 						
 					</div>
-					<div class="cut-gradient"></div>
+					
 					<script>
 						
 						$(".more-content").shorten({
@@ -166,6 +163,59 @@
 						</div>
 					</div>
 					<!-- end facilities -->
+					<hr style="width: 100%">
+					<!-- rules -->
+					<div class="rules">
+						<div class="container-fluid">
+							<h2>Rules</h2>
+							<div class="row">
+								<div class="col-md-4">
+									Check In
+								</div>
+								<div class="col-md-8">
+									3:00 PM
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									Check Out
+								</div>
+								<div class="col-md-8">
+									7:00 PM
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									Hotel Policies
+								</div>
+								<div class="col-md-8" id="rules">
+									<h4>What kind of foowear is most suitable ?</h4>
+									<p>Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, </p>
+									<div class="cut-gradient"></div>
+									<div class="more-content">
+										<p>
+											condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id
+										</p>
+										<h4>Can i bring Alcohol top this trip?</h4>
+										<p>
+											Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</p>
+										<h4>Can i bring Alcohol top this trip?</h4>
+										<p>Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>									
+								</div>
+								<script>
+									$(".more-content").shorten({
+										"showChars" : 6,
+										"moreText"  : "View more",
+										"lessText"  : "View less",
+									});
+								</script>
+							</div>
+
+						</div>
+					</div>
+					<!-- end rules -->
 					<hr style="
 					width: 100%;">
 					<!-- room -->
@@ -543,9 +593,9 @@
 										</div>
 									</div>
 									<div class="like  check-like">
-										<span>4</span> likes this <a data-id="163" href="#" class="btn-like st-like-review ">
+										<span>4</span> likes this <span  class="btn-like st-like-review ">
 											<i class="far fa-thumbs-up"></i>
-										</a>
+										</span>
 									</div>
 								</div>
 								<div class="comment-item-body">
@@ -568,9 +618,9 @@
 											</div>
 										</div>
 										<div class="like">
-											<span>2</span> likes this                                                <a data-id="96" href="#" class="btn-like st-like-review ">
-												<i class="far fa-thumbs-up"></i>
-											</a>
+											<span>2</span> likes this <span  class="btn-like st-like-review ">
+											<i class="far fa-thumbs-up"></i>
+										</span>
 										</div>
 									</div>
 									<div class="comment-item-body">
@@ -597,9 +647,9 @@
 												</div>
 											</div>
 											<div class="like">
-												<span>1</span> like this                                                <a data-id="94" href="#" class="btn-like st-like-review ">
-													<i class="far fa-thumbs-up"></i>
-												</a>
+												<span>1</span> like this <span  class="btn-like st-like-review ">
+											<i class="far fa-thumbs-up"></i>
+										</span>
 											</div>
 										</div>
 										<div class="comment-item-body">
@@ -614,7 +664,316 @@
 									</div>
 									<!--  -->
 								</div> 
-								<!--review-list  -->					
+								<!--review-list  -->
+								<hr style="
+								width: 100%;">
+								<!-- write  -->
+								<div id="write-review">
+									<div class="container-fuild">
+										<div class="row">
+											<div class="col-md-12">
+
+												<h4 class="heading">
+													<a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+														Write a review  <span class="dangky"><i class="fa ml5 fa-angle-up"></i></span>
+													</a>
+												</h4>
+												<div class="collapse" id="collapseExample">
+													<div class="card card-body">
+														<div class="col-md-12" class="form">
+															<div class="row" >
+																<div class="col-md-6">
+																	<input type="text" placeholder="Name*"  />
+																</div>
+																<div class="col-md-6">
+																	<input type="text" placeholder="Email*"  />
+																</div>
+															</div>
+															<div class="row" >
+																<div class="col-md-10">
+																	<input type="text" placeholder="Title"  />
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-8">
+																	<textarea name="comment" class="form-control has-matchHeight" placeholder="Content" style="height: 342px;"></textarea>
+																</div>
+																<div class="col-md-4">
+																	<div class="form-group review-items has-matchHeight" style="height: 342px;">
+																		<div class="item">
+																			<label>Sleep</label>
+																			<input class="st_review_stats" type="hidden" name="st_review_stats[Sleep]">
+																			<div class="rates">
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																			</div>
+																		</div>
+																		<div class="item">
+																			<label>Location</label>
+																			<input class="st_review_stats" type="hidden" name="st_review_stats[Location]">
+																			<div class="rates">
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																			</div>
+																		</div>
+																		<div class="item">
+																			<label>Service</label>
+																			<input class="st_review_stats" type="hidden" name="st_review_stats[Service]">
+																			<div class="rates">
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																			</div>
+																		</div>
+																		<div class="item">
+																			<label>Clearness</label>
+																			<input class="st_review_stats" type="hidden" name="st_review_stats[Clearness]">
+																			<div class="rates">
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																			</div>
+																		</div>
+																		<div class="item">
+																			<label>Rooms</label>
+																			<input class="st_review_stats" type="hidden" name="st_review_stats[Rooms]">
+																			<div class="rates">
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																				<i class="far fa-smile-beam"></i>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<!-- btf -->
+															<div class="text-center">
+																<input type="hidden" id="comment_post_ID" name="comment_post_ID" value="6556">
+																<input type="hidden" id="comment_parent" name="comment_parent" value="0">
+																<input id="submit" type="submit" name="submit" class="btn btn-green upper font-medium" value="Leave a Review">
+															</div>
+															<!-- end btf -->
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end write -->
+								<hr style="width: 100%">
+								<!-- Hotel Nearby -->
+								<div class="vc_row wpb_row st bg-holder vc_custom_1542167625295 vc_row-has-fill">
+									<div class="container">
+										<div class="row">
+											<div class="wpb_column column_container col-md-12 vc_custom_1542167696382">
+												<div class="vc_column-inner wpb_wrapper">
+													<div class="wpb_text_column wpb_content_element  fs-28 fs-normal">
+														<div class="wpb_wrapper">
+															<h2>Last Minute Deals</h2>
+														</div>
+														<div class="services-grid">
+															<div class="row">
+																<div class="last-minute">
+																	<div class="col-xs-6 col-sm6 col-md-3">
+																		<div class="row-content">
+																			<div class="wpb-content-image">
+																				<a href="#">
+																					<img src="../Images/39446446-450x417.jpg">
+																				</a>
+																				<div class="review-star">
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																				</div>
+																			</div>
+																			<div class="wpb-content-text">
+																				<div class="wpb-room-name">
+																					<a href="#">
+																						Crowne Plaza Hotel
+																					</a>
+																				</div>
+																				<div class="wpb-room-adress">
+																					<p> <i class="fas fa-map-marker-alt"></i>New York City, NY, USA</p>
+
+																				</div>
+																				<div class="review">
+																					<div class="rate">
+																						<p>4.5/5 excellent</p>
+																					</div>
+																					<div class="sumary">
+																						<li>5 reviews</li>
+																					</div>
+
+																				</div>
+																				<div class="price-wrapper">
+																					<p>
+																						<i class="fas fa-bolt"></i>
+																						<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
+																						<span class="price-from">/night</span>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="last-minute">
+																	<div class="col-xs-6 col-sm6 col-md-3">
+																		<div class="row-content">
+																			<div class="wpb-content-image">
+																				<a href="#">
+																					<img src="../Images/60337007-450x417.jpg">
+																				</a>
+																				<div class="review-star">
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																				</div>
+																			</div>
+																			<div class="wpb-content-text">
+																				<div class="wpb-room-name">
+																					<a href="#">
+																						Best Western Plus
+																					</a>
+																				</div>
+																				<div class="wpb-room-adress">
+																					<p> <i class="fas fa-map-marker-alt"></i>Ohio USA</p>
+
+																				</div>
+																				<div class="review">
+																					<div class="rate">
+																						<p>4.5/5 excellent</p>
+																					</div>
+																					<div class="sumary">
+																						<li>5 reviews</li>
+																					</div>
+
+																				</div>
+																				<div class="price-wrapper">
+																					<p>
+																						<i class="fas fa-bolt"></i>
+																						<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
+																						<span class="price-from">/night</span>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="last-minute">
+
+																	<div class="col-xs-6 col-sm6 col-md-3">
+																		<div class="row-content">
+																			<div class="wpb-content-image">
+																				<a href="#">
+																					<img src="../Images/60337007-450x417.jpg">
+																				</a>
+																				<div class="review-star">
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																				</div>
+																			</div>
+																			<div class="wpb-content-text">
+																				<div class="wpb-room-name">
+																					<a href="#">
+																						Dylan Hotel
+																					</a>
+																				</div>
+																				<div class="wpb-room-adress">
+																					<p> <i class="fas fa-map-marker-alt"></i>New York City, NY, USA</p>
+																				</div>
+																				<div class="review">
+																					<div class="rate">
+																						<p>4.5/5 excellent</p>
+																					</div>
+																					<div class="sumary">
+																						<li>5 reviews</li>
+																					</div>
+																				</div>
+																				<div class="price-wrapper">
+																					<p>
+																						<i class="fas fa-bolt"></i>
+																						<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
+																						<span class="price-from">/night</span>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="last-minute">
+																	<div class="col-xs-6 col-sm6 col-md-3">
+																		<div class="row-content">
+																			<div class="wpb-content-image">
+																				<a href="#">
+																					<img src="../Images/Parian Holiday Villas.jpg">
+																				</a>
+																				<div class="review-star">
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																					<i class="fas fa-star"></i>
+																				</div>
+																			</div>
+																			<div class="wpb-content-text">
+																				<div class="wpb-room-name">
+																					<a href="#">
+																						Edwardian Kenilworth
+																					</a>
+																				</div>
+																				<div class="wpb-room-adress">
+																					<p> <i class="fas fa-map-marker-alt"></i>New York City, NY, USA</p>
+
+																				</div>
+																				<div class="review">
+																					<div class="rate">
+																						<p>4.5/5 excellent</p>
+																					</div>
+																					<div class="sumary">
+																						<li>5 reviews</li>
+																					</div>
+
+																				</div>
+																				<div class="price-wrapper">
+																					<p>
+																						<i class="fas fa-bolt"></i>
+																						<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
+																						<span class="price-from">/night</span>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end hotel nearby -->
 				</div>
 				<div class="col-md-3 fixed3 abc"  >
 					<!-- widget -->
@@ -709,7 +1068,178 @@
 			
 		</div>
 		<!-- end content -->
+		<div class="clear"></div>		
 	</div>
+	<!-- footer -->
+	<div class="container-fluid">
+		<div class="mailchimp">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+						<div class="row">
+							<div class="col-xs-12  col-md-7 col-lg-6">
+								<div class="media ">
+									<div class="media-left pr30 hidden-xs">
+										<img class="media-object" src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_email_subscribe.svg" alt="">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading st-heading-section f24">Get Updates &amp; More</h4>
+										<p class="f16 c-grey">Thoughtful thoughts to your inbox</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-5 col-lg-6">
+								<form action="" class="subcribe-form">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Your Email">
+										<input type="submit" name="submit" value="Subcribe">
+									</div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_content">
+			<div class="container ">
+
+				<div class="row">
+
+					<div class="col-lg-3 footer_content_list">
+						<p class="footer_content_header">NEED HELP?</p>
+						<br />
+
+
+						<div  class="footer_content_element">
+							<p class="footer_content_element1" >Call Us</p>
+							<h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >+ 00 222 44 5678</h4>
+						</div>
+						<br />
+
+						<div class="footer_content_element">
+							<p class="footer_content_element1" >Email for Us</p>
+							<h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >hello@yoursite.com</h4>
+						</div>
+						<br />
+
+						<div class="footer_content_element">
+							<p class="footer_content_element1" >Follow Us</p>
+							<p style="padding-left: 15px;"><span ><img src="../Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_twitter_footer.svg"  ></span></p>
+						</div>
+						<br />
+
+
+
+					</div>
+					<div class="col-lg-3 footer_content_list">
+						<p class="footer_content_header">COMPANY</p>
+						<br />
+
+						<div class="footer_content1_element">
+							<div class="footer_content1_element1" ">
+								<a href="" style="color: #1A2B48"><p>About Us</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>ACommunity Blog</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Rewards</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Word with Us</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Meet the Team</p></a>
+								<br>
+								<br>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-3 footer_content_list">
+						<p class="footer_content_header">SUPPORT</p>
+						<br />
+
+						<div class="footer_content1_element">
+							<div class="footer_content1_element1" ">
+								<a href="" style="color: #1A2B48"><p>Acount</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Legal</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Contact</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Affiliate Program</p></a>
+								<br>
+
+								<a href="" style="color: #1A2B48"><p>Privacy policy</p></a>
+								<br>
+								<br>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-3 footer_content_list">
+						<p class="footer_content_header">SETTING</p>
+						<br />
+
+						<div class="footer_content1_element">
+							<div class="footer_content1_element1" ">
+								<p style="font-size: 14px;color: #5E6D77;" >Languages</p>
+								<select style=" width: 180px; height: 40px; border-radius: 4px;" >
+									<option>English</option>
+									<option>France</option>
+									<option>Spanish</option>
+								</select>
+								<br />
+								<br />
+								<br />
+								<p style="font-size: 14px;color: #5E6D77;" >Currencies</p>
+								<select style=" width: 180px; height: 40px; border-radius: 4px;" >
+									<option>EUR</option>
+									<option>USD</option>
+									<option>AUD</option>
+								</select>
+
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer_sub">
+			<div class="container">
+				<div class="row">
+
+
+					<div class="col-lg-4">
+						<div class="footer_sub_L">
+							<p>Copyright © 2018 by <a href="#">ShineTheme</a></p>
+
+
+						</div>
+
+					</div>
+					<div class="col-lg-5"></div>
+					<div class="col-lg-3">
+						<div class="footer_sub_R">
+							<p><span style="margin-left: 15px;"><img src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_paymethod.svg"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
 </body>
 </html>
 
