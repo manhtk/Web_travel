@@ -212,7 +212,9 @@ a.morelink {
 	color: #5E6D77;
 }
 /*End Last Minute Deals*/
+/*Thang Ngo*/
 @media screen and (max-width: 767px){
+	/* Thang Ngo*/
 	.container
 	{
 		width: 750px;
@@ -588,8 +590,10 @@ a.morelink {
 		font-weight: 500;
 	}
 	/*end review*/
+	/*Thang Ngo*/
 }
 @media screen and (min-width: 768px){
+	/*Thang Ngo 768 */
 	.container
 	{
 		width: 750px;
@@ -1030,9 +1034,11 @@ a.morelink {
 		border-radius: 50%;
 	}
 	/*end review*/
+	/*Thang Ngo 768*/
 }
 
 @media  screen and (min-width: 992px){
+	/*Thang Ngo 992*/
 	.st-hotel-content .hotel-target-book-mobile
 	{
 		
@@ -1610,8 +1616,10 @@ a.morelink {
 		border-radius: 50%;
 	}
 	/*end review*/
+	/*Thang Ngo 992*/
 }
 @media  screen and (min-width:1200px){
+	/*Thang Ngo 1200*/
 	.st-hotel-content .hotel-target-book-mobile
 	{
 		
@@ -2017,6 +2025,7 @@ a.morelink {
 		align-items: center;
 	}
 	/*end Faciliti*/
+	/*Thang Ngo 1200*/
 
 }
 /*end Thang Ngo*/
