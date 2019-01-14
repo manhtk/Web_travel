@@ -177,7 +177,7 @@ nav ul li a {
 	display: block;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 50px 20px; 
+	padding: 35px 20px; 
 	text-decoration: none;
 	color: black;
 
@@ -216,6 +216,20 @@ nav ul li ul li a {
 	font-size: 20px;
 	display: none;
 
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+.daonguoc svg:not(:root).svg-inline--fa{
+	transform: rotate(180deg);
+	font-size: 20px;	
+}
+.dangky{
+	cursor: pointer;
 }
 @media screen and (max-width: 767px)
 {
