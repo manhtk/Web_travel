@@ -9,7 +9,121 @@ body{
 	font-family: 'Poppins';
 
 }
+<<<<<<< HEAD
+.mailchimp 
+{
+	padding-top: 65px;
+	padding-bottom: 40px;
+	background: #F5F5F5; 
+}
+.mailchimp .media 
+{
+	overflow: visible; 
+}
+.mailchimp .media .media-object
+{
+	position: relative;
+	top: -10px; 
+}
+.main-footer-sub 
+{
+	padding-top: 10px;
+	padding-bottom: 30px; 
+}
+.subcribe-form 
+{
+	position: relative; 
+}
+.subcribe-form .form-control {
+	height: 55px;
+	line-height: 53px;
+	font-size: 14px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color: #D7DCE3;
+}
+.subcribe-form input[type="submit"] 
+{
+	border: none;
+	border-radius: 0 5px 5px 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 55px;
+	line-height: 55px;
+	color: #FFF;
+	background: #5191FA;
+	padding-left: 25px; 
+	padding-right: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.pr30 {
+	padding-right: 30px;
+}
+.f24 {
+	font-size: 24px !important;
+}
+.f16 {
+	font-size: 16px !important;
+}
+.c-grey {
+	color: #5E6D77 !important;
+}
+#footer_content
+{
+	padding-top: 61.3px;
+	padding-left: 40px;
+	min-height: 450px;
+}
+#footer_content .footer_content_header
+{
+	
+	 font-size: 14px;
+	 color: #1A2B48;
+	 font-weight: 500;
+}
+#footer_content .footer_content_element 
+{
+	 border-left: 3px solid #5191FA ;
+	 margin-top: 20px;
+	}
+#footer_content .footer_content_element .footer_content_element1
+{
+font-family:Poppins-Regular;
+	 font-size: 14px;
+	 color: #5E6D77;
+	padding-left: 15px;
+}
+#footer_content .footer_content1_element 
+{
+	margin-top: 20px;
+}
+#footer_content .footer_content1_element .footer_content1_element1
+{
+	font-family: Poppins-Medium;
+	 font-size: 14px;
+	 color: #1A2B48 ;
+}
+.footer_sub
+{
+	border-top: 1px solid #DDDDDD;
+}
+.footer_sub .footer_sub_L 
+{
+	padding-top: 30px;
+	font-size: 15px; 
+	color: #768092;
+	 padding-left: 25px;
+}
+.footer_sub .footer_sub_R 
+{
+	padding-top: 25px;
+}
+
+=======
 /*menu*/
+>>>>>>> 9c61a497128b2e844a944029096c0a01bd199843
 .topbar-left {
 	float: left;
 	height: 21px;
@@ -1565,6 +1679,478 @@ nav ul li ul li a {
 	}
 	/*end footer*/
 }
+<<<<<<< HEAD
+nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 35px;
+    text-decoration: none;
+    color: black;
+    }	
+/*home page*/
+/*banner*/
+
+.banner {
+    width: 100%;
+    height: 460px;
+}
+.banner img {
+    width: 100%;
+    height: 460px;
+    position: relative;
+}
+.banner .search-form-wrapper {
+    position: absolute;
+    bottom: 50px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+.banner .container .row
+{
+    padding: 0px!important;
+    margin: 0px !important;
+}
+
+.banner .search-form-wrapper .st-heading
+{
+    font-size: 64px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+}
+.banner .search-form-wrapper .sub-heading
+{
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 38px;
+
+}
+.banner .search-form-wrapper .seach-form
+{
+    margin-top: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+}
+/*seach form*/
+.seach-form .border-right
+{
+    border-right: 1px solid #eee;
+
+}
+
+{
+    float: left;
+    width: 80%;
+}
+
+.border-right .has-icon 
+{   
+    font-size: 25px;
+    float: left;
+    width: 20%;
+    color: #d6d5cd;
+}
+.seach-form .row
+{
+    margin-right: auto;
+    margin-left: -15px;
+}
+.dropdown-menu
+{
+    width: 100%;
+}
+.form-check-language
+{
+    width: 100%
+}
+.search-form-location
+{
+    margin-left: 20px;
+}
+.location-language
+{
+    margin-left: 40px;
+}
+.form-check-language .icon-seachform
+{
+    width: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+/*end banner*/
+
+
+
+/*holder*/
+.vc_column-inner
+{
+    width: 100%;
+    float: left;
+}
+.vc_custom_1542955832597
+{
+    margin-top: 25px;
+    height: 110px;
+    border-bottom: 1px solid #eee;
+}
+.vc_custom_1542955832597 .vc_column-inner .row-col-image
+{
+    width: 30%;
+    float: left;
+}
+.vc_custom_1542955832597 .vc_column-inner .row-col-text
+{
+    width: 70%;
+    float: right;
+}
+.vc_custom_1542955832597 .vc_column-inner .row-col-text .title
+{
+    font-size: 18px;
+    color: #1A2B48;
+    letter-spacing: 0;
+}
+.vc_custom_1542955832597 .vc_column-inner .row-col-text .desc
+{
+    font-size: 14px;
+    color: #5E6D77;
+    letter-spacing: 0;
+}
+.vc_custom_1542955832597 .row
+{
+    margin-left: -15px!important;
+    margin-right: 15px !important;
+}
+/*end holder*/
+/*Last Minute Deals*/
+.vc_custom_1542167625295
+{
+    width: 100%;
+    height: 400px;
+}
+.vc_custom_1542167696382
+{
+    padding: 30px 15px !important;
+}
+
+.wpb_content_element .wpb_wrapper
+{
+    font-size: 28px;
+    color: #1A2B48;
+    letter-spacing: 0;
+    padding-bottom: 30px;
+
+}
+.row-content
+{
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.row-content .wpb-content-image
+{
+    
+    overflow: hidden;
+    position: relative;
+}
+.wpb-content-image img
+{
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.75s;
+    border-radius: 2px;
+
+
+}
+.services-grid
+{
+    height: 400px;
+}
+.wpb-content-image:hover img
+{
+    transform: scale(1.1);
+    width: 100%;
+    height: 100;
+}
+.review-star
+{
+    position: absolute;
+    top: 85%;
+    left: 15px;
+}
+.fa-star
+{
+    font-size: 12px;
+    color: #FA5636;
+    letter-spacing: 0;
+}
+.wpb-content-text
+{
+    width: 100%;
+    height: 160px;
+    top: 250px;
+}
+.wpb-room-name a
+{
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #1A2B50;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+.wpb-room-adress
+{
+    font-size: 14px;
+    color: #5E6D77;
+    letter-spacing: 0;
+}
+.wpb-room-adress p i
+{
+    margin-right: 5px;
+}
+.review
+{
+    width: 100%;
+    position: relative;
+}
+.rate p
+{
+    width: 50%;
+
+    font-size: 14px;
+    color: #5191FA;
+    float: left;
+    margin:0px;
+}
+.sumary li
+{
+    font-size: 14px;
+    color: #6A7A84;
+    float: right;
+
+    width: 50%;
+}
+.price-from
+{
+    font-size: 14px;
+    color: #5E6D77;
+}
+.price-money
+{
+    font-size: 18px;
+    color: #1A2B50;
+}
+.price-wrapper
+{
+    width: 100%;
+
+}
+.price-wrapper .price-wrapper i
+{
+    font-size: 14px;
+    color: #5E6D77;
+}
+/*End Last Minute Deals*/
+/*Top Destinations*/
+
+.destination-item
+{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:30px;
+}
+.destination-item img
+{
+    max-width: 100%;
+    max-height: 370px;
+    transition: 0.75s;
+    border-radius: 5px;
+}
+.destination-item:hover img
+{
+    transform: scale(1.1);
+    border-radius: 3px;
+}
+.text-content
+{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 170px;
+    height: 70px;
+    color: #FFFFFF;
+}
+.title-name h2
+{
+    font-size: 36px;
+    text-align: center;
+    margin: 0px;
+}
+.desc-inf h3
+{
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: normal;
+    margin: 0px;
+}
+/*End Top Destinations*/
+/*btn view all*/
+.btn-view-all
+{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+
+}
+.btn-view-all button
+{
+    width: 180px;
+    height: 40px;
+    margin-left: 40%;
+    border: 1px solid #D7DCE3;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #5191FA;
+    letter-spacing: 0;
+    text-align: center; 
+    background-color:#FFFFFF;
+}
+/*end btn*/
+.clear
+{
+    clear: both;
+}
+@media only screen and (max-width: 425px)
+{
+    .banner .row .wpb_column 
+    {
+        padding: 0px 6px !important;
+    }
+    .banner .search-form-wrapper .sub-heading
+    {
+        
+        display: none;
+        width: 100%;
+    }
+    .wpb-room-name a
+    {
+        font-size: 15px!important;
+    }
+    .last-minute .col-xs-6
+    { 
+        padding: 0px 10px !important;
+    }
+    .destination-item img
+    {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }   
+    .destination-item .text-content
+    {
+        left: 0px!important;
+    }
+    .destination-item .text-content .title-name h2{
+        font-size: 25px !important;
+    }
+    .destination-item .text-content .desc-inf h3
+    {
+        font-size: 14px !important; 
+    }
+    .last-minute
+    {
+        float: left;
+        width: 50%!important;
+        height: 300px!important;
+
+    }
+    .wpb-content-text
+    {
+        top:160px !important;
+    }
+    .last-minute .col-xs-6
+    {
+
+        width: 100%!important;
+    }
+    .wpb-content-image img
+    {
+        max-width: 100% !important;
+        max-height: 100% !important;
+
+    }
+    .wpb-room-adress .review 
+    {
+        width: 100% !important;
+        float: none;
+    }
+    .rate p, .sumary li
+    {
+        width: 100% !important;
+    }
+    .list-destination .col-xs-6 
+    {
+        padding: 0px 5px!important;
+    }
+    .btn-view-all
+    {   
+        margin-left: -10%!important;
+    }
+    .seach-form .border-right
+    {
+        width: 100%;
+        border-bottom: 1px solid #eee !important;   
+    }
+    .banner .search-form-wrapper .st-heading
+    {
+        font-size: 32px !important;
+    }
+}
+@media only screen and (min-width:425px) and (max-width: 768px)
+{
+    .banner .search-form-wrapper .sub-heading
+    {
+        
+        display: none;
+        width: 100%;
+    }
+    .seach-form .border-right
+    {
+        width: 100%;
+        border-bottom: 1px solid #eee !important;   
+    }
+    .banner .search-form-wrapper .st-heading
+    {
+        font-size: 54px !important;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 991px)
+{
+    .seach-form .border-right
+    {
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #eee !important;   
+    }
+}
+
+/*end số ng*/   
+/*chọn thêm*/
+
+/*end chọn thêm*/
+=======
 @media (min-width: 992px)
 {
 
@@ -2471,6 +3057,7 @@ nav ul li ul li a {
 	{
 		width: 1170px;
 	}
+<<<<<<< HEAD
 	.widgets
 	{
 		background: #FFFFFF;
@@ -2635,3 +3222,7 @@ nav ul li ul li a {
 	}
 	/* end widget*/
 }
+=======
+}
+>>>>>>> 9c61a497128b2e844a944029096c0a01bd199843
+>>>>>>> b6e51c12ddb4bb0ef743d5c9c519be3ee68c7ee5
