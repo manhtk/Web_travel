@@ -215,7 +215,48 @@ nav ul li ul li a {
 	box-sizing: border-box;
 	font-size: 20px;
 	display: none;
-
+}
+#write-review
+{
+	padding-left: 44px;
+	padding-right: -25px;
+	color: #5E6D77;
+	font-size: 14px;
+	margin-top: 30px;
+}
+#write-review .heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1A2B48;
+    font-size: 16px;
+    font-weight: 500;
+}
+#write-review .heading a
+{
+	font-size: 16px;
+	color: #1A2B48;
+}
+#write-review .collapse .col-md-12
+{
+	margin-top: 30px;
+	padding: 30px;
+	border-radius: 5px;
+	border: 1px solid #D7DCE3;
+	background: #F9F9F9;
+}
+#write-review .collapse .col-md-12 .row
+{
+	margin-top: 10px;
+}
+#write-review .text-center {
+    text-align: center;
+}
+#write-review input[type='submit'] {
+    margin-top: 30px;
+}
+.btn.btn-green {
+    background: #5191FA;
+    color: #FFF;
 }
 a.morelink {
 	text-decoration:none;
@@ -224,7 +265,7 @@ a.morelink {
 .morecontent span {
 	display: none;
 }
-.daonguoc svg:not(:root).svg-inline--fa{
+.daonguoc svg:not(:root).fa-thumbs-up{
 	transform: rotate(180deg);
 	font-size: 20px;	
 }
@@ -873,6 +914,10 @@ a.morelink {
 	}
 	/*end footer*/
 }
+.head1
+{
+	border-bottom: 1px solid #EAEEF3;
+}
 @media screen and (max-width: 991px) 
 {
 	/*menu*/
@@ -912,8 +957,8 @@ a.morelink {
 		display: block;
 		float: left;
 		position: absolute;
-		top: 96px;
-		left: 0;
+		top: 88px;
+		left: 15px;
 	}
 	#st-main-menu {
 		position: fixed;
@@ -1060,6 +1105,7 @@ a.morelink {
 		color: #5E6D77;
 		font-size: 14px;
 		font-weight: 500;
+		width: 40%;
 	}
 	.hotel-target-book-mobile .price-wrapper .price {
 		color: #1A2B48;
@@ -1586,6 +1632,10 @@ a.morelink {
 	{
 		width: 970px;
 	}
+	#main-menu li ul
+	{
+		background: #fff;
+	} 
 	/*content*/
 	/*st-breadcrumb*/
 	#st-content-wrapper .st-breadcrumb
@@ -2912,7 +2962,7 @@ a.morelink {
 }
 .price-wrapper
 {
-	width: 100%;
+	width: 77%;
 
 }
 .price-wrapper .price-wrapper i
