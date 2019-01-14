@@ -263,6 +263,10 @@ select
 	margin-left: 20px;
 	float: left;
 }
+.daonguoc svg:not(:root).svg-inline--fa{
+	transform: rotate(180deg);
+	font-size: 20px;	
+}
 /*end banner*/
 
 
@@ -625,3 +629,173 @@ select
 		border-bottom: 1px solid #eee !important;	
 	}
 }
+.label
+{
+	width: 100%;
+}
+.bookphong
+{
+	position: relative;
+	margin-left: 210px;
+	margin-top: -28px;
+	cursor: pointer;
+	font-size: 24px;
+}
+.form-group {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.field_people_room {
+	padding-left: 0.5px;
+	padding-right: 0.5px;
+	margin-bottom: 15px;
+	width: 200px;
+	position: relative;
+}
+
+.field_people_room .people-inner {
+	
+	background: #fff;
+	padding: 16px 5px 20px 10px;
+	position: relative;
+	color: gray;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+}
+
+.field_people_room .people-inner .fa {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.people-inner .people-group .label {
+	color: gray;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+	padding: 0;
+}
+
+.field_people_room .people-inner .people-group .value {
+	font-size: 20px;
+	color: #5191fa;
+	display: block;
+	font-weight: 450;
+}
+
+.field_people_room .people-dropdown {
+	display: none;
+	z-index: 1;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	font-size: 1.3em;
+	color: gray;
+	min-width: 240px;
+	position: absolute;
+	background: #fff;
+	top: 69px;
+	left: 5px;
+}
+
+.field_people_room .people-dropdown:before {
+	position: absolute;
+	display: inline-block;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	content: '';
+	top: -7px;
+	left: 17px;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+}
+
+.field_people_room .people-dropdown .item {
+	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.field_people_room .people-dropdown .item .minus {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.field_people_room .people-dropdown .item .text .value {
+	font-size: 20px;
+	color: #5191fa;
+	font-weight: 500;
+}
+
+.field_people_room .people-dropdown .item .add {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+/*end số ng*/	
+/*chọn thêm*/
+.st-flex.space-between 
+{
+    font-size: 17px;
+}
+.form-group .form-more-extra
+{
+	position: relative;
+}
+.chon-adult
+{
+	height: 6%;
+	width: 70%;
+}
+li.item.mt10
+{
+	list-style: none;
+}
+.chon-children
+{
+	height: 6%;
+	width: 70%;	
+}
+.chon-services
+{
+	height: 6%;
+	width: 70%;
+}
+select
+{
+	    -webkit-appearance: none;
+	    cursor: pointer;
+}
+/*end chọn thêm*/
