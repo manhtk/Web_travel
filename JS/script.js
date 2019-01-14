@@ -17,6 +17,13 @@ $(function() {
 
 });
 $(document).ready(function(){
+	$('.menu1').click(function(){
+		$('nav').toggleClass('open'); 
+	});
+	$('.fa.fa-angle-left').click(function(){
+		$('nav').removeClass('open'); });
+})
+$(document).ready(function(){
 	$('.chodeformdangki').slideUp();
 	var stt=0;
 	$("img .slide").each(function(){
