@@ -239,7 +239,6 @@ jQuery(document).ready(function($){
 		    			currentLike--
 						parent.find('.like').text(currentLike);
 		    		}
-
 		    	});
 		    })
 	
