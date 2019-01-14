@@ -243,3 +243,15 @@ jQuery(document).ready(function($){
 		    })
 	
 });
+
+
+$(document).ready(function(){
+      $('.menu1').click(function(){
+      $('nav').toggleClass('open'); 
+      });
+      $('.fa.fa-angle-left').click(function(){
+    //      var t = $(this);
+
+        // t.parent().find('ul').next().slideToggle();
+      $('nav').removeClass('open'); });
+    })
