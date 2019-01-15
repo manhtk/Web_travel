@@ -11,12 +11,15 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-	<link rel="stylesheet" type="text/css" href="../CSS/style.css">	
+	
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<script type="text/javascript" src="../JS/khanh.js"></script>	
 
+<!-- chọn ngày -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 </head>
 <body>
@@ -108,19 +111,6 @@
 								<li><a href="../HTML/Contact.html">Contact</a></li>
 							</ul>
 						</nav>
-						
-						<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-						<script type="text/javascript"> 
-							$(document).ready(function(){
-								$('.menu1').click(function(){
-									$('nav').toggleClass('open'); 
-								});
-								$('.fa.fa-angle-left').click(function(){
-    //   		var t = $(this);
-
-				// t.parent().find('ul').next().slideToggle();
-				$('nav').removeClass('open'); });
-							})
 						</script>
 					</script>
 				</div>
@@ -257,28 +247,66 @@
 												<div class="search-form-section">
 													<label for="radio-choice-1" class="language text-muted">Check In-Out</label><br/>
 
-													<div class="check-datePicker">
-														<label for="radio-choice-3">
-															<input type="text" name="daterange" value="01/01/2019 - 01/15/2019" class=" check-date " style="color: #5191FA; border: none;"/>
+													<label>
+														<input type="text" name="datetimes"/>
+													</label>
 
-														</label>
+													
 													</div>
 												</div>
-												
-												<script type="text/javascript">
-													$(function() {
-														$('input[name="daterange"]').daterangepicker({
-															opens: 'right'
-														}, function(start, end, label) {
-															console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-														});
-													});
-												</script>
-											</div>
 											<div class="col-md-3 border-right">
-												
-											</div>
+												<div class="seach-form-section">
+												<div class="field_people_room">
+                <div class="people-inner">
+                  <i class="fa fa-user-o"></i>
+                    <div class="people-group">
+                    <span class="label">
+                      <span class="value">
+                        <span class="adult">1 Adult</span>,
+                        <span class="child">0 Child</span>
+                      </span>
+                    </span>
+                                        
+                    <div class="bookphong">
+                      <i class="fa ml5 fa-angle-up"></i>
+                    </div>
+                  <div class="formdebook">
+                    <div class="row">
+                  <div class="people-dropdown" style="display: block;">
+                    <div class="item gmz-number-wrapper">
+                      <span class="control minus">-</span>
+                      <span class="text">
+                        <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+                      </span>
+                      <span class="control add">+</span>
+                    </div>
+                    <div class="item gmz-number-wrapper">
+                      <span class="control minus">-</span>
+                      <span class="text">
+                        <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+                      </span>
+                      <span class="control add">+</span>
+                    </div>
+                    <div class="item gmz-number-wrapper">
+                      <span class="control minus">-</span>
+                      <span class="text">
+                        <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+                      </span>
+                      <span class="control add">+</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                 </div>
+                </div>
+                 </div>
+              </div>
+              </div>
+											
 											      
+												
+											
+											
 											       
 										<div class="col-md-3">
 											<div class="">
