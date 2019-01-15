@@ -201,6 +201,10 @@ nav ul li:hover ul {
 	transform: translateY(0px);
 	color: blue;
 }
+nav ul li:hover ul li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 nav ul li a:hover {
 	text-decoration: none;
 }
@@ -216,6 +220,19 @@ nav ul li ul li a {
 	font-size: 20px;
 	display: none;
 }
+/*sub-menu*/
+.sub-menu li:not(:last-child) a {
+    border-bottom: 1px solid #EEEEEE;
+}
+.sub-menu  li a {
+    padding: 15px 0;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+}
+.sub-menu 
+.sub-menu 
+/*end sub-menu*/
 #write-review
 {
 	padding-left: 44px;
@@ -268,6 +285,12 @@ a.morelink {
 .daonguoc i:not(:root){
 	transform: rotate(180deg);
 	font-size: 20px;	
+<<<<<<< HEAD
+=======
+}*/
+.daonguoc i:not(:root){
+	transform: rotate(180deg);	
+>>>>>>> 04bb2ae3a77a2886e6150b842123e0bb641e570b
 }
 
 .dangky{
@@ -919,6 +942,7 @@ a.morelink {
 {
 	border-bottom: 1px solid #EAEEF3;
 }
+
 @media screen and (max-width: 991px) 
 {
 	/*menu*/
@@ -1667,7 +1691,7 @@ a.morelink {
 		display: inline-block;
 		padding-left: 20px;
 		padding-right: 20px;
-		z-index: 9;
+		z-index: 0;
 	}
 
 	#st-content-wrapper .st-breadcrumb ul li a 
@@ -2489,7 +2513,7 @@ a.morelink {
 	}
 	nav ul li a {
 		display: block;
-		text-transform: uppercase;
+		text-transform: none;
 		font-weight: bold;
 		text-decoration: none;
 		color: black;

@@ -16,6 +16,15 @@ $(function() {
 	});
 
 });
+$(function() {
+	$('.dangky').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+		// $(this).children().css( "transform", "rotate(180deg)");
+	});
+
+});
 $(document).ready(function(){
 	$('.menu1').click(function(){
 		$('nav').toggleClass('open'); 
@@ -76,13 +85,13 @@ $(window).scroll(function () {
 });
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 960) {
+    if ($(window).scrollTop() >= 611) {
         $('.widgetroom').addClass('fixed');
     } 
-    if ($(window).scrollTop() >= 2000) {
+    if ($(window).scrollTop() >= 2500) {
         $('.widgetroom').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 960) {
+     if ($(window).scrollTop() < 611) {
         $('.widgetroom').removeClass('fixed');
     }
 });
