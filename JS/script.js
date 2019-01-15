@@ -72,13 +72,13 @@ $(function() {
 // chạy form
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 210) {
+    if ($(window).scrollTop() >= 340) {
         $('.widget').addClass('fixed');
     } 
     if ($(window).scrollTop() >= 2500) {
         $('.widget').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 210) {
+     if ($(window).scrollTop() < 340) {
         $('.widget').removeClass('fixed');
     }
 });
@@ -289,9 +289,8 @@ jQuery(document).ready(function($){
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
 });
-
 $(document).ready(function(){
-	$('.344').slideUp();
+	$('.').slideUp();
 	var stt=0;
 	$("img .slide").each(function(){
 		if($(this).is(':visible'))
