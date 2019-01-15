@@ -3200,8 +3200,7 @@ a.morelink {
 
     @media screen and (max-width: 991px) 
     {
-        
-
+}
 .banner-aboutus {
     background-image: url(https://travelhotel.wpengine.com/wp-content/uploads/2018/12/gallary_5.jpg);
     /*margin-top: 30px;*/
@@ -3210,8 +3209,7 @@ a.morelink {
     background-size: cover;
     padding: 81px 0;
     position: relative;
-    /*z-index: 1;*/
-}
+    /*z-index: 1;*/}
 .banner1 {
     background-image: url(https://homap.travelerwp.com/wp-content/uploads/2018/12/united.jpg);
     /*margin-top: 30px;*/
