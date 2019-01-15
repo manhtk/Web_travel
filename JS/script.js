@@ -1,4 +1,4 @@
-$(function() {
+﻿$(function() {
 	$('.btn-like').click(function(event) {
 		/* Act on the event */
 		$(this).toggleClass('daonguoc');
@@ -280,6 +280,27 @@ jQuery(document).ready(function($){
  	t.parent().find('ul').slideToggle();
 
  });
+<<<<<<< HEAD
+
+chien them js
+
+$(document).ready(function(){
+      $("li").click(function(event) {
+        $('.fa.fa-angle-down').toggleClass('daonguoc');
+        t = $(this);
+        t.parent().find('ul').slideToggle();
+      });
+     
+      $('.menu1').click(function(){
+      $("nav").toggleClass('open1'); 
+      });
+      $('.fa.fa-angle-left').click(function(){
+    //      var t = $(this);
+
+        // t.parent().find('ul').next().slideToggle();
+      $("nav").removeClass('open1'); });
+    })
+=======
  // down
  $(function() {
 	$('.down').click(function(event) {
@@ -304,3 +325,4 @@ $(document).ready(function(){
 	});
 });
  // end dowwn
+>>>>>>> 6ca2e999573dc6266deab03cb067afce03dc743f

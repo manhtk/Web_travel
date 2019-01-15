@@ -79,13 +79,13 @@ $(document).ready(function(){
 // end more
 // dịch chuyển form
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 670) {
+    if ($(window).scrollTop() >= 611) {
         $('.widgets').addClass('fixed');
     } 
-    if ($(window).scrollTop() >= 2000) {
+    if ($(window).scrollTop() >= 2450) {
         $('.widgets').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 670) {
+     if ($(window).scrollTop() < 611) {
         $('.widgets').removeClass('fixed');
     }
 });
