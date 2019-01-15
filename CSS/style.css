@@ -2247,6 +2247,7 @@ a.morelink {
 	{
 		position: relative;
 		top: -10px; 
+		float: left;
 	}
 	.main-footer-sub 
 	{
