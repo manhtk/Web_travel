@@ -75,6 +75,17 @@ $(window).scroll(function () {
     }
 });
 
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 960) {
+        $('.widgetroom').addClass('fixed');
+    } 
+    if ($(window).scrollTop() >= 2000) {
+        $('.widgetroom').removeClass('fixed');
+    }
+     if ($(window).scrollTop() < 960) {
+        $('.widgetroom').removeClass('fixed');
+    }
+});
 // guests
 jQuery(document).ready(function($){
 	/* People minus-add */
@@ -254,3 +265,10 @@ jQuery(document).ready(function($){
  	$('.fa.fa-angle-left').click(function(){
  		$('nav').removeClass('open1'); });
  })
+ $("li").click(function(event) {
+ 	$('.fa.fa-angle-down').toggleClass('daonguoc');
+ 	t = $(this);
+
+ 	t.parent().find('ul').slideToggle();
+
+ });
