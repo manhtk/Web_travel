@@ -895,6 +895,10 @@ height: 36.7px;
 {
      font-size: 16px;
      color: #1A2B48;
+<<<<<<< HEAD
+     text-align: left;
+=======
+>>>>>>> e1ee3fb9f807fe7e46a57aa0dbf3d907cf614d42
 }
 #footer_content .footer_content_element 
 {
@@ -910,6 +914,10 @@ height: 36.7px;
 #footer_content .footer_content1_element 
 {
     margin-top: 20px;
+<<<<<<< HEAD
+    text-align: left;
+=======
+>>>>>>> e1ee3fb9f807fe7e46a57aa0dbf3d907cf614d42
 }
 #footer_content .footer_content1_element .footer_content1_element1
 {
@@ -1063,8 +1071,13 @@ img.abc {
 /*Hotel*/
 @media (min-width: 768px){
 .col-sm-12 {
+<<<<<<< HEAD
+    /*width: 100%;
+    text-align: center;*/
+=======
     width: 100%;
     text-align: center;
+>>>>>>> e1ee3fb9f807fe7e46a57aa0dbf3d907cf614d42
 
 }
 .col-sm-12.col-md-6.col-lg-6.col-xl-6 p {
