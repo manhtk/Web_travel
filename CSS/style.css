@@ -298,6 +298,9 @@ a.morelink {
 .dangky{
 	cursor: pointer;
 }
+.check-like.open .glyphicon{
+			transform: rotate(180deg);
+		}
 @media screen and (max-width: 767px)
 {
 	/*menu*/
@@ -1498,9 +1501,7 @@ a.morelink {
 			margin-bottom: 15px;
 			font-size: 18px;
 		}
-		.check-like.open .glyphicon{
-			transform: rotate(180deg);
-		}
+		
 
 		.review-list .comment-item .comment-item-head .like .btn-like {
 			color: #1A2B48;
