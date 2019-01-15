@@ -23,7 +23,6 @@ $(function() {
 		$(this).next().slideToggle();
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
-
 });
 $(document).ready(function(){
 	$('.menu1').click(function(){
@@ -73,13 +72,13 @@ $(function() {
 // chạy form
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 210) {
+    if ($(window).scrollTop() >= 340) {
         $('.widget').addClass('fixed');
     } 
     if ($(window).scrollTop() >= 2500) {
         $('.widget').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 210) {
+     if ($(window).scrollTop() < 340) {
         $('.widget').removeClass('fixed');
     }
 });
@@ -281,6 +280,7 @@ jQuery(document).ready(function($){
  	t.parent().find('ul').slideToggle();
 
  });
+<<<<<<< HEAD
 
 chien them js
 
@@ -300,3 +300,29 @@ $(document).ready(function(){
         // t.parent().find('ul').next().slideToggle();
       $("nav").removeClass('open1'); });
     })
+=======
+ // down
+ $(function() {
+	$('.down').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+		// $(this).children().css( "transform", "rotate(180deg)");
+	});
+});
+$(document).ready(function(){
+	$('.').slideUp();
+	var stt=0;
+	$("img .slide").each(function(){
+		if($(this).is(':visible'))
+			stt=$(this).attr("stt");
+	});
+	$("#next").click(function()
+	{
+		next= ++stt;
+		$(" img .slide").hide();
+		$(" img .slide").eq(next).show();
+	});
+});
+ // end dowwn
+>>>>>>> 6ca2e999573dc6266deab03cb067afce03dc743f
