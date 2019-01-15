@@ -247,3 +247,10 @@ jQuery(document).ready(function($){
  	};
 
  })(jQuery);
+ $(document).ready(function(){
+ 	$('.menu1').click(function(){
+ 		$('nav').toggleClass('open1'); 
+ 	});
+ 	$('.fa.fa-angle-left').click(function(){
+ 		$('nav').removeClass('open1'); });
+ })
