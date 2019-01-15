@@ -9,6 +9,9 @@ body{
 	font-family: 'Poppins';
 
 }
+.check-like.open .glyphicon{
+			transform: rotate(180deg);
+		}
 /*menu*/
 .topbar-left {
 	float: left;
@@ -1498,9 +1501,7 @@ a.morelink {
 			margin-bottom: 15px;
 			font-size: 18px;
 		}
-		.check-like.open .glyphicon{
-			transform: rotate(180deg);
-		}
+		
 
 		.review-list .comment-item .comment-item-head .like .btn-like {
 			color: #1A2B48;
