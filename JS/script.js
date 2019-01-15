@@ -23,7 +23,6 @@ $(function() {
 		$(this).next().slideToggle();
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
-
 });
 $(document).ready(function(){
 	$('.menu1').click(function(){
@@ -281,3 +280,28 @@ jQuery(document).ready(function($){
  	t.parent().find('ul').slideToggle();
 
  });
+ // down
+ $(function() {
+	$('.down').click(function(event) {
+		/* Act on the event */
+		$(this).toggleClass('daonguoc');
+		$(this).next().slideToggle();
+		// $(this).children().css( "transform", "rotate(180deg)");
+	});
+});
+
+$(document).ready(function(){
+	$('.344').slideUp();
+	var stt=0;
+	$("img .slide").each(function(){
+		if($(this).is(':visible'))
+			stt=$(this).attr("stt");
+	});
+	$("#next").click(function()
+	{
+		next= ++stt;
+		$(" img .slide").hide();
+		$(" img .slide").eq(next).show();
+	});
+});
+ // end dowwn
