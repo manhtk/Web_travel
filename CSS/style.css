@@ -269,8 +269,8 @@ a.morelink {
 	transform: rotate(180deg);
 	font-size: 20px;	
 }*/
-.daonguoc {
-    transform: rotate(180deg);
+.daonguoc i:not(:root){
+	transform: rotate(180deg);	
 }
 .dangky{
 	cursor: pointer;
