@@ -14,13 +14,32 @@
 	
 	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
 	<script type="text/javascript" src="../JS/khanh.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../ion.rangeSlider-master/css/ion.rangeSlider.min.css">
+	<script type="text/javascript" src="../ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- chọn ngày -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+ 
+  <script type="text/javascript">
 
+		jQuery(document).ready(function($){
+		
+			$("#demo_0").ionRangeSlider({
+	            type: "double",
+	            min: 0,
+	            max: 200,
+	            step: 1,
+	            prefix: "$",
+	        });
+		
+			
+		});
+		
+	</script>
 </head>
 <body>
 	<div id="HomePage">
@@ -247,69 +266,131 @@
 													<label for="radio-choice-1" class="language text-muted">Check In-Out</label><br/>
 
 													<label>
-														<input type="text" name="datetimes"/>
-													</label>
-
-													
+														<input type="text" name="datetimes" style="color: #5191fa" />
+													</label>	
 													</div>
 												</div>
 											<div class="col-md-3 border-right">
 												<div class="seach-form-section">
-												<div class="field_people_room">
-                <div class="people-inner">
-                  <i class="fa fa-user-o"></i>
-                    <div class="people-group">
-                    <span class="label">
-                      <span class="value">
-                        <span class="adult">1 Adult</span>,
-                        <span class="child">0 Child</span>
-                      </span>
-                    </span>
-                                        
-                    <div class="bookphong">
-                      <i class="fa ml5 fa-angle-up"></i>
-                    </div>
-                  <div class="formdebook">
-                    <div class="row">
-                  <div class="people-dropdown" style="display: block;">
-                    <div class="item gmz-number-wrapper">
-                      <span class="control minus">-</span>
-                      <span class="text">
-                        <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
-                      </span>
-                      <span class="control add">+</span>
-                    </div>
-                    <div class="item gmz-number-wrapper">
-                      <span class="control minus">-</span>
-                      <span class="text">
-                        <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
-                      </span>
-                      <span class="control add">+</span>
-                    </div>
-                    <div class="item gmz-number-wrapper">
-                      <span class="control minus">-</span>
-                      <span class="text">
-                        <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
-                      </span>
-                      <span class="control add">+</span>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                 </div>
-                </div>
-                 </div>
-              </div>
-              </div>
-											
-											      
-												
-											
-											
-											       
+													<div class="field_people_room">
+														<span><i class="fa fa-user-o"></i> Guest</span>
+														
+														<div class="people-inner">
+															
+															<div class="people-group">
+																<span class="label">
+																	<span class="value">
+																		<span class="adult">1 Adult</span>,
+																		<span class="child">0 Child</span>
+																	</span>
+																</span>
+
+																<div class="bookphong">
+																	<i class="fa ml5 fa-angle-up"></i>
+																</div>
+																<div class="formdebook">
+																	<div class="row">
+																		<div class="people-dropdown" style="display: block;">
+																			<div class="item gmz-number-wrapper">
+																				<span class="control minus">-</span>
+																				<span class="text">
+																					<span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+																				</span>
+																				<span class="control add">+</span>
+																			</div>
+																			<div class="item gmz-number-wrapper">
+																				<span class="control minus">-</span>
+																				<span class="text">
+																					<span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+																				</span>
+																				<span class="control add">+</span>
+																			</div>
+																			<div class="item gmz-number-wrapper">
+																				<span class="control minus">-</span>
+																				<span class="text">
+																					<span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+																				</span>
+																				<span class="control add">+</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										<div class="col-md-3">
-											<div class="">
-												
+											<div class="form-button">
+												<div class="advantice">
+													<div class="form-group form-extra-field dropdown clearfix field-advance">
+														<label class="hidden-xs">
+															Advantice
+														</label>
+														<div class="dropdown-factilities">
+														<div class="render">
+															<span class="hidden-xs">
+																More
+																<i class="fas fa-caret-square-down"></i>
+															</span>
+															<div class="dropdown-menu-facilities">
+																<div class="row">
+																	<div class="col-lg-12">
+																		 <div class="demo" style="width: 400px">
+ 	
+	<input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""        
+    />
+	
+	</div>
+																	</div>
+																	<div class="col-lg-12">
+																		<div class="facilities">
+																			<div class="item-title">
+																				<h4>
+																					Hotel Facilities
+																				</h4>
+																				<div class="check-radio-homepage">
+																					<div class="col-md-4">
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Air Conditioning <br>
+																						</p>
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
+																						Flat Tv <br>
+																					</p>
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
+																						Paking <br>
+																					</p>
+																					</div>
+																					<div class="col-md-4">
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Airport Transport <br>
+																						</p>
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Heater
+																						<br>
+																					</p>
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Pool <br>
+																						</p>
+																					</div>
+																					<div class="col-md-4">
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Fitness Centre <br>
+																						</p>
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Internet - Wifi <br>
+																						</p>
+																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Restaurant <br>
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													</div>
+
+												</div>
+												<div class="btn-seach-homepage">
+													<button class="seach-homepage"> SEACH </button>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -713,7 +794,7 @@
 									<img class="media-object" src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_email_subscribe.svg" alt="">
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading f24">Get Updates &amp; More</h4>
+									<h4 class="media-heading st-heading-section f24">Get Updates &amp; More</h4>
 									<p class="f16 c-grey">Thoughtful thoughts to your inbox</p>
 								</div>
 							</div>
