@@ -1002,7 +1002,7 @@ a.morelink {
 		-webkit-transition-delay: .1s;
 		transition-delay: .1s;
 	}
-	#st-main-menu.open {
+	#st-main-menu.open1 {
 		opacity: 1;
 		visibility: visible;
 		z-index: 999;
@@ -1017,7 +1017,7 @@ a.morelink {
 	#st-main-menu #main-menu li {
 		display: block !important;
 	}
-	#st-main-menu.open .back-menu {
+	#st-main-menu.open1 .back-menu {
 		opacity: 1;
 		left: 0;
 		-webkit-transition-delay: .1s;
@@ -1047,7 +1047,7 @@ a.morelink {
 		transition: left .3s ease, opacity .3s ease;
 	}
 
-	#st-main-menu.open #main-menu {
+	#st-main-menu.open1 #main-menu {
 		opacity: 1;
 		left: 0;
 		-webkit-transition-delay: .1s;
@@ -3198,8 +3198,7 @@ a.morelink {
 
 /*chien style*/
 
-    @media screen and (max-width: 991px) 
-    {
+  
         
 
 .banner-aboutus {
