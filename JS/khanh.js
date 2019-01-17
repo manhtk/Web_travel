@@ -94,6 +94,7 @@ $(window).scroll(function () {
 $(function() {
 
 	$('input[name="datetimes"]').daterangepicker({
+		singleDatePicker: true,
 		opens:'left',
 		"autoApply": true,
 		startDate: moment().startOf('hour'),
@@ -255,3 +256,31 @@ $(document).ready(function(){
         // t.parent().find('ul').next().slideToggle();
       $('nav').removeClass('open'); });
     })
+
+// chọn ngày theo từng bên
+$(function() {
+
+	$('input[name="startday"]').daterangepicker({
+		singleDatePicker: true,
+		opens:'left',
+		"autoApply": true,
+		startDate: moment().startOf('hour'),
+		endDate: moment().startOf('hour').add(32, 'hour'),
+		locale: {
+			format: 'M/DD/YYYY'
+		}
+	});
+});
+$(function() {
+
+	$('input[name="endday"]').daterangepicker({
+		singleDatePicker: true,
+		opens:'left',
+		"autoApply": true,
+		startDate: moment().startOf('hour'),
+		endDate: moment().startOf('hour').add(32, 'hour'),
+		locale: {
+			format: 'M/DD/YYYY'
+		}
+	});
+});
