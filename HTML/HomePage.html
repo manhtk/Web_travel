@@ -15,9 +15,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="../CSS/HomePage.css">
 	<script type="text/javascript" src="../JS/khanh.js"></script>	
-	<link rel="stylesheet" type="text/css" href="../ion.rangeSlider-master/css/ion.rangeSlider.min.css">
-	<script type="text/javascript" src="../ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 <!-- chọn ngày -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
@@ -27,18 +25,6 @@
  
   <script type="text/javascript">
 
-		jQuery(document).ready(function($){
-		
-			$("#demo_0").ionRangeSlider({
-	            type: "double",
-	            min: 0,
-	            max: 200,
-	            step: 1,
-	            prefix: "$",
-	        });
-		
-			
-		});
 		
 	</script>
 </head>
@@ -51,7 +37,7 @@
 		<div class="clear"></div>
 		<!-- Banner -->
 		<div id="banner">
-		<div class="container" style="width: 100%;">
+		<div class="container" style="width: 100%">
 			<div class="banner">
 				<img src="../Images/background.jpg" width="100%" height="100%">
 				<div class="container">
@@ -71,95 +57,96 @@
 												</div>
 												<div class="search-form-section">
 													<label for="name"  class="text-muted" style="float: left;">Detination</label><br/>
+													<div class="dropdow-list" style="width: 80%; height: 30px;">
+														<div class="dropdown">
+															<p  class="dropdown-toggle search-form-dropdown" data-toggle="dropdown" style="color:#5191FA; float: left;">
+																Where are you going?
+															</p>
+															<div class="dropdown-menu form-item">
+																<form action="/action_page.php" >
+																	<p class="search-form-location">United States</p>
+																	<div class="form-check-language">
+																		<div class="icon-seachform">
+																			<label class="form-check-label" for="check1">
+																				<i class="fas fa-map-marker-alt"></i>
+																			</label>
+																		</div>
+																		<div class="check-item">
+																			<p> California</p>
+																		</div>
+																	</div>
+																	<div class="form-check-language">
+																		<div class="icon-seachform">
+																			<label class="form-check-label" for="check1">
+																				<i class="fas fa-map-marker-alt"></i>
+																			</label>
+																		</div>
+																		<div class="check-item">
+																			<p>Los Angerles</p>
+																		</div>
+																	</div>
+																	<div class="form-check-language">
+																		<div class="icon-seachform">
+																			<label class="form-check-label" for="check1">
+																				<i class="fas fa-map-marker-alt"></i>
+																			</label>
+																		</div>
+																		<div class="check-item">
+																			<p>Nevada</p>
+																		</div>
+																	</div>
+																	<div class="form-check-language">
+																		<div class="icon-seachform">
+																			<label class="form-check-label" for="check1">
+																				<i class="fas fa-map-marker-alt"></i>
+																			</label>
+																		</div>
+																		<div class="check-item">
+																			<p>New Jersey</p>
+																		</div>
+																	</div>
+																	<div class="form-check-language">
+																		<label class="form-check-label" for="check5">
 
-													<div class="dropdown">
-														<p  class="dropdown-toggle search-form-dropdown" data-toggle="dropdown" style="color:#5191FA; float: left;">
-															Where are you going?
-														</p>
-														<div class="dropdown-menu form-item">
-															<form action="/action_page.php" >
-																<p class="search-form-location">United States</p>
-																<div class="form-check-language">
-																	<div class="icon-seachform">
-																		<label class="form-check-label" for="check1">
-																			<i class="fas fa-map-marker-alt"></i>
+																			<p class="location-language text-secondary">Delaware</p>
 																		</label>
 																	</div>
-																	<div class="check-item">
-																		<p> California</p>
-																	</div>
-																</div>
-																<div class="form-check-language">
-																	<div class="icon-seachform">
-																		<label class="form-check-label" for="check1">
-																			<i class="fas fa-map-marker-alt"></i>
-																		</label>
-																	</div>
-																	<div class="check-item">
-																		<p>Los Angerles</p>
-																	</div>
-																</div>
-																<div class="form-check-language">
-																	<div class="icon-seachform">
-																		<label class="form-check-label" for="check1">
-																			<i class="fas fa-map-marker-alt"></i>
-																		</label>
-																	</div>
-																	<div class="check-item">
-																		<p>Nevada</p>
-																	</div>
-																</div>
-																<div class="form-check-language">
-																	<div class="icon-seachform">
-																		<label class="form-check-label" for="check1">
-																			<i class="fas fa-map-marker-alt"></i>
-																		</label>
-																	</div>
-																	<div class="check-item">
-																		<p>New Jersey</p>
-																	</div>
-																</div>
-																<div class="form-check-language">
-																	<label class="form-check-label" for="check5">
+																	<div class="form-check-language">
+																		<label class="form-check-label" for="check5">
 
-																		<p class="location-language text-secondary">Delaware</p>
-																	</label>
-																</div>
-																<div class="form-check-language">
-																	<label class="form-check-label" for="check5">
-
-																		<p class="location-language text-secondary">Philadelphia</p>
-																	</label>
-																</div>
-																<div class="form-check-language">
-																	<div class="icon-seachform">
-																		<label class="form-check-label" for="check1">
-																			<i class="fas fa-map-marker-alt"></i>
+																			<p class="location-language text-secondary">Philadelphia</p>
 																		</label>
 																	</div>
-																	<div class="check-item">
-																		<p>New York City</p>
+																	<div class="form-check-language">
+																		<div class="icon-seachform">
+																			<label class="form-check-label" for="check1">
+																				<i class="fas fa-map-marker-alt"></i>
+																			</label>
+																		</div>
+																		<div class="check-item">
+																			<p>New York City</p>
+																		</div>
 																	</div>
-																</div>
-																<div class="form-check-language">
-																	<div class="icon-seachform">
-																		<label class="form-check-label" for="check1">
-																			<i class="fas fa-map-marker-alt"></i>
+																	<div class="form-check-language">
+																		<div class="icon-seachform">
+																			<label class="form-check-label" for="check1">
+																				<i class="fas fa-map-marker-alt"></i>
+																			</label>
+																		</div>
+																		<div class="check-item">
+																			<p> Sanfransico</p>
+																		</div>
+																	</div>
+																	<div class="form-check-language">
+																		<label class="form-check-label" for="check9">
+
+																			<p class="location-language text-secondary">Wilmington</p>
 																		</label>
 																	</div>
-																	<div class="check-item">
-																		<p> Sanfransico</p>
-																	</div>
-																</div>
-																<div class="form-check-language">
-																	<label class="form-check-label" for="check9">
 
-																		<p class="location-language text-secondary">Wilmington</p>
-																	</label>
-																</div>
-
-															</form>
-														</div> 
+																</form>
+															</div> 
+														</div>
 													</div>
 												</div>
 											</div>
@@ -169,29 +156,37 @@
 												</div>
 												<div class="search-form-section">
 													<label for="radio-choice-1" class="language text-muted" style="float:left;">Check In-Out</label><br/>
-
+													<div class="dropdow-list1">
 													<label>
+
 														<input type="text" name="datetimes" style="color: #5191fa" />
 													</label>	
 													</div>
+												</div>	
 												</div>
 											<div class="col-md-3 border-right">
-												<div class="search-form-section">
+												<div class="form-group form-extra-field dropdown clearfix field-detination has-icon">
+													<i class="far fa-calendar-plus  search-form-checkIcon"></i>
+												</div>
+
+												<div class="seach-form-section">
 													<div class="field_people_room">
-														<span style=""><i class="fa fa-user-o"></i> Guest</span>
+														<span style="" class="text-muted">Guest</span>
+														
 														
 														<div class="people-inner">
-															
+															<div class="dropdow-list2">
 															<div class="people-group">
 																<span class="label">
 																	<span class="value">
 																		<span class="adult">1 Adult</span>,
 																		<span class="child">0 Child</span>
+																		<i  style="color: #333" class="fa ml5 fa-angle-up"></i>
 																	</span>
 																</span>
 
 																<div class="bookphong">
-																	<i class="fa ml5 fa-angle-up"></i>
+																		
 																</div>
 																<div class="formdebook">
 																	<div class="row">
@@ -223,6 +218,7 @@
 															</div>
 														</div>
 													</div>
+												</div>
 												</div>
 											</div>
 										<div class="col-md-3">
@@ -306,7 +302,7 @@
 
 			</div>
 		</div>
-	</div>
+		</div>
 		<!-- end banner -->
 		<div class="clear"> </div>
 		<div class="vc_row wpb_row st bg-holder vc_custom_1542955832597">
