@@ -72,13 +72,13 @@ $(function() {
 // chạy form
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 340) {
+    if ($(window).scrollTop() >= 332) {
         $('.widget').addClass('fixed');
     } 
     if ($(window).scrollTop() >= 2500) {
         $('.widget').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 340) {
+     if ($(window).scrollTop() < 332) {
         $('.widget').removeClass('fixed');
     }
 });
