@@ -7,9 +7,11 @@
 }
 body
 {
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif !important;
 
 }
+/*content*/
+
 #write-review
 {
 	padding-left: 44px;
@@ -321,7 +323,14 @@ a.morelink
 }
 /*end st-breadcrumb*/
 /**/
-.st-hotel-content .hotel-target-book-mobile
+
+#st-content-wrapper .st-hotel-content .hotel-target-book-mobile
+{
+
+	display: block;
+
+}
+.st-hotel-content 
 {
 
 	display: none;
@@ -330,7 +339,7 @@ a.morelink
 #st-content-wrapper .st-hotel-content .hotel-target-book-mobile
 {
 
-	display: none;
+	display: block;
 
 }
 /**/
@@ -684,7 +693,18 @@ font-size: 14px;
 	border-radius: 50%;
 }
 /*end review*/
-
+.text-center
+{
+	text-align: center;
+}
+#st-content-wrapper .st-heading {
+    margin-top: 10px;
+    color: #1A2B48;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+}
+/*end content*/
 /**/
 /*start footer*/
 .mailchimp {
@@ -1772,10 +1792,10 @@ i.fa.fa-bars.munu1{
 	.st-hotel-content
 	{
 		margin-top: 40px;
+		display: block !important;
 	}
 	.st-hotel-content .hotel-target-book-mobile
 	{
-		
 		position: fixed;
 		align-items: center;
 		left: 0;
