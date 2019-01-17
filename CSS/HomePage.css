@@ -79,15 +79,14 @@ body{
     height: 30px;
     float: left;
     position: absolute;
-    left:10%;
+    left:20%;
     margin-top: 25px;
 }
-.dropdow-list1
-{
-	width: 100%;
+.dropdow-list1 {
+    width: 100%;
     height: 30px;
     position: absolute;
-    left: 24px;
+    left: 7px;
     margin-top: 25px;
 }
 .dropdow-list2
@@ -104,7 +103,7 @@ body{
     background: #FFF;
     position: absolute;
     top: 35px;
-    left: -10px;
+    left: -3px;
     width: 100%;
     height: 100px;
     border: 1px solid #eee;
@@ -119,7 +118,14 @@ body{
 	    position: absolute;
     margin-top: 25px;
     width: 100%;
-    right: 13%;
+    left: -15%;
+    color: #717171;
+}
+.border-right .text-muted1 {
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+    left: -17%;
     color: #717171;
 }
 .border-right .text-muted2
@@ -471,16 +477,22 @@ body{
 {
 	width: 30%;
 	float: left;
-	    margin-top: 20px;
+	margin-top: 24px;
+	color: #717171;
 }
 .seach-homepage
 {		
-	width: 60%;
-    height: 40px;
-	margin-top: 10px;
+	margin-top: 7%;
     margin-left: 10%;
     background: #5191FA;
-    border-radius: 5px;
+    border-radius: 4px;
+    /* padding: 15px 35px 15px 35px; */
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    border:0px;
 }
 .seach-form-homepage
 {
@@ -734,9 +746,43 @@ body{
 		height: 80px;
 	}
 }
-@media only screen and (max-width: 991px)
+@media only screen and (max-width: 1200px)
 {
-
+.border-right .text-muted2 {
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+    left: -11%;
+    color: #717171;
+}
+.border-right .text-muted1 {
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+    /* right: -2%; */
+    left: -33px;
+    color: #717171;
+}
+.border-right .text-muted {
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+    left: -21%;
+    color: #717171;
+}
+.dropdow-list2 {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 4px;
+    margin-top: 50px;
+}
+.dropdow-list1 {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 23px;
+    margin-top: 25px;
 }
 
 
