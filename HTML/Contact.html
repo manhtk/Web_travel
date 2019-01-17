@@ -3,6 +3,7 @@
 <head>
 	<title>Contact-Traveler</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
 	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
@@ -11,64 +12,64 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="date.js"></script>
-	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<script src="../JS/script.js"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="../CSS/style.css"> -->
 </head>
 <body>
 	
 	<!-- end class header -->
 	<div id="Contact">
-
-		<div class="header">
-			<header>
-				<div class="topbar">
-
-					<div class="topbar-left">
-						<ul class="st-list socials">
-							<li>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</li>
-						</ul>
-						<ul class="st-list topbar-items">
-							<li class="hidden-xs hidden-sm">
-								<a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
-							</li>
-						</ul>
-					</div>
-					<div class="topbar-right">
-						<ul class="st-list topbar-items">
-							<li><a href="#">Login</a></li>
-							<li><a href="#">Sign up</a></li>
-							<li class="dropdown dropdown-currency hidden-sm hidden-xs">
-								<a href="#">EUR<i class="fa fa-angle-down"></i></a>
-								<ul class="dropmenu">
-									<li><a href="#">USD</a></li>
-									<li><a href="#">AUD</a></li>
-								</ul>
-							</li>
-							<li class="dropdown dropdown-language hidden-sm hidden-xs">
-								<a href="#">English<i class="fa fa-angle-down"></i></a>
-								<ul class="dropmenu">
-									<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-									<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-
+<!-- header -->
+	<header>
+		<div class="topbar">
+			<div class="container-fluid">
+				<div class="topbar-left">
+					<ul class="st-list socials">
+						<li>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+					</ul>
+					<ul class="st-list topbar-items">
+						<li class="hidden-xs hidden-sm">
+							<a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
+						</li>
+					</ul>
 				</div>
-				<div class="clearfix"></div>
-				<div class="head1">
-					<div class="container">
-						<div class="toggle">
-							<i class="fa fa-bars menu1"></i>
-						</div>
-						<div class="header1left">
-							<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-							<div class="menu">
-
-								<nav id="st-main-menu" >
+				<div class="topbar-right">
+					<ul class="st-list topbar-items">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Sign up</a></li>
+						<li class="dropdown dropdown-currency hidden-sm hidden-xs">
+							<a href="#">EUR<i class="fa fa-angle-down"></i></a>
+							<ul class="dropmenu">
+								<li><a href="#">USD</a></li>
+								<li><a href="#">AUD</a></li>
+							</ul>
+						</li>
+						<li class="dropdown dropdown-language hidden-sm hidden-xs">
+							<a href="#">English<i class="fa fa-angle-down"></i></a>
+							<ul class="dropmenu">
+								<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
+								<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="head1">
+			<div class="container">
+				<div class="toggle">
+					<i class="fa fa-bars menu1"></i>
+				</div>
+				<div class="header1left">
+					<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+					<div class="menu">
+						<nav id="st-main-menu" >
 							<a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
 							<ul id="main-menu">
 								<li><a href="../HTML/HomePage.html">HOME</a></li>
@@ -96,54 +97,39 @@
 								<li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="../HTML/aboutus.html">About Us</a></li>
-										<li><a href="#">Blog</a></li>
+										<li><a href="../HTML/hotel.html">Blog</a></li>
 										<li><a href="#">404 Page</a></li>
 									</ul>
 								</li>
 								<li><a href="../HTML/Contact.html">Contact</a></li>
 							</ul>
 						</nav>
-
-								<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-								<script type="text/javascript"> 
-									$(document).ready(function(){
-										$('.menu1').click(function(){
-											$('nav').toggleClass('open'); 
-										});
-										$('.fa.fa-angle-left').click(function(){
-    //   		var t = $(this);
-
-				// t.parent().find('ul').next().slideToggle();
-				$('nav').removeClass('open'); });
-									})
-								</script>
-							</script>
-						</div>
 					</div>
-					<div class="header1right">
-						<form action="" method="get" class="header-search hidden-sm">
-							<input type="text" class="form-control" name="s" value="">
-							<i class="fa fa-search"></i>
-						</form>
-						<i class="fa fa-cart-plus"></i>
-					</div>
+				</div>
+				<div class="header1right">
+					<form action="" method="get" class="header-search hidden-sm">
+						<input type="text" class="form-control" name="s" value="">
+						<i class="fa fa-search"></i>
+					</form>
+					<i class="fa fa-cart-plus"></i>
 				</div>
 			</div>
 		</div>
 	</header>
+	<!-- end header -->
 		</div>
 		<div class="clear"></div>
 		</div>
 		<div id="st-content-wrapper">
-			<div class="banner-contact">
-				<div class="banner-img-contact">
+			<div class="banner">
+				<div class="banner-img">
 					<div class="banner-images">
 					<img src="../Images/gallary_4-1.jpg">
 					<div class="container Contact">
 						<div class="col-sm-12">
 						<div class="banner-text">
 							<div class="find-your Perfect-Hotels">
-								<h2 class="h2contact-text" >
+								<h2 >
 									Contact Us
 								</h2>
 							</div>
@@ -158,7 +144,7 @@
 		<div class="st-breadcrumb hidden-xs">
 			<div class="container">
 				<ul>
-					<li><a href="../HTML/HomePage.html">Home</a></li>
+					<li><a href="#">Home</a></li>
 					<li class="active">Contact</li>
 				</ul>
 			</div>
@@ -166,11 +152,17 @@
 
 <div class="clear"></div>
 <div class="container">
-
+	<div class="vc_row wpb_row st bg-holder">
+		<div class="row">
+			<div class="vc_empty_space">
+				
+			</div>
+		</div>
+	</div>
 	<div class="vc_row wpb_row st bg-holder">
 		<div class="container">
 			<div class="row">
-				<div class="content-text-contact">
+				<div class="content-text">
 				<div class="wpb_column column_container col-md-12"
 				style="height: 75px">
 				</div>
@@ -209,14 +201,14 @@
 					</div>
 				</div>
 				<div class="wpb_column column_container col-md-2"></div>
-				<div class="wpb_column column_container col-md-5 infor-contact">
+				<div class="wpb_column column_container col-md-5 infor">
 					<div class="vc_column-inner wpb_wrapper">
 						<div class="infor-img">
 							<img src="../Images/bg-contact-1.jpg">
 						</div>
 
 						<div class="infor-content">
-							<div class="text-content-contact">
+							<div class="text-content">
 							<h3>Traveler Ltd</h3>
 							<div class="sub"></div>
 							<p>Tell. + 00 222 444 33</p>
@@ -246,7 +238,7 @@
 									<img class="media-object" src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_email_subscribe.svg" alt="">
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading  f24">Get Updates &amp; More</h4>
+									<h4 class="media-heading st-heading-section f24">Get Updates &amp; More</h4>
 									<p class="f16 c-grey">Thoughtful thoughts to your inbox</p>
 								</div>
 							</div>
