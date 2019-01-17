@@ -94,11 +94,8 @@ $(window).scroll(function () {
 $(function() {
 
 	$('input[name="datetimes"]').daterangepicker({
-<<<<<<< HEAD
+
 		opens:'center',
-=======
-		opens:'left',
->>>>>>> c94ed0f9ebb209bee0b1bf1e6bf974b2d067ff49
 		"autoApply": true,
 		startDate: moment().startOf('hour'),
 		endDate: moment().startOf('hour').add(32, 'hour'),
