@@ -1217,7 +1217,7 @@ nav ul li:hover ul {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0px);
-	
+
 }
 nav ul li a:hover {
 	text-decoration: none;
@@ -1317,7 +1317,7 @@ i.fa.fa-bars.munu1{
 	#st-content-wrapper .st-hotel-content .hotel-target-book-mobile
 	{
 		
-		display: none;	
+		display: block;	
 	}
 	/**/
 	/* st-hotel-header */
@@ -1952,7 +1952,7 @@ i.fa.fa-bars.munu1{
 	i .fa .fa-angle-down {
 		padding-left: 0px;
 		float: right;
-		
+
 	}
 
 	#st-main-menu #main-menu li:not(:last-child) a {
