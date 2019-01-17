@@ -807,16 +807,16 @@ font-size: 14px;
 	/*end Faciliti*/
 	/* widget */
 	.widgets
-{
-	background: #FFFFFF;
-	border: 1px solid #D7DCE3;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
-	border-radius: 5px;
-	width: 110%;
-	z-index: 9;
-	padding: 12px; 
-	border-top: 5px solid #5191fa;
-}
+	{
+		background: #FFFFFF;
+		border: 1px solid #D7DCE3;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+		border-radius: 5px;
+		width: 110%;
+		z-index: 9;
+		padding: 12px; 
+		border-top: 5px solid #5191fa;
+	}
 	.widgets .row
 	{
 		margin: 0;
@@ -1409,7 +1409,7 @@ font-size: 14px;
 }
 .icon
 {
- font-size: 35px;
+	font-size: 35px;
 }
 .icon p 
 {
@@ -1459,17 +1459,17 @@ label.star:before {
 	margin-left: 15px;
 	color: #868686;
 	width: 97%;
-	}
-	.chodeformdangki
-	{
-		background-color: #D7DCE3;
-		margin:auto;
-		border-radius: 5px;
-	}
+}
+.chodeformdangki
+{
+	background-color: #D7DCE3;
+	margin:auto;
+	border-radius: 5px;
+}
 #review-room {
-    color: #5E6D77;
-    font-size: 14px;
-    margin-top: 30px;
+	color: #5E6D77;
+	font-size: 14px;
+	margin-top: 30px;
 }
 .formdangky
 {
@@ -1528,19 +1528,19 @@ label.star:before {
 .label
 {
 	cursor: pointer;
-}.booknow
-{
-	padding-top: 10px;
-}
-.facilities
-{
-	padding: 10px;
-}
-.facilities p
-{
-	margin: 0px 20px;
-}
-.btn-book{
+	}.booknow
+	{
+		padding-top: 10px;
+	}
+	.facilities
+	{
+		padding: 10px;
+	}
+	.facilities p
+	{
+		margin: 0px 20px;
+	}
+	.btn-book{
 		width: 80%;
 		height: 50%;
 		line-height: 50px;
@@ -1554,29 +1554,33 @@ label.star:before {
 		text-transform: uppercase;
 		border-radius: 3px;
 	}
-.btn-book:hover{
+	.btn-book:hover{
 		background: #4977FA;
 		color: #fff;
 		text-decoration: none;
-}
-span .adult
-{
-	font-size: 16px;
-	color: #5191FA;
-}
-span .child
-{
-	font-size: 16px;
-	color: #5191FA;
-}
-.media-body
-{
-	margin-left: 20px;
-}
-.form-group.check-like {
-    margin: -20px 0px 10px 20px;
-    font-size: 20px;
-}
-.number {
-    font-size: 20px;
-}
+	}
+	span .adult
+	{
+		font-size: 16px;
+		color: #5191FA;
+	}
+	span .child
+	{
+		font-size: 16px;
+		color: #5191FA;
+	}
+	.media-body1
+	{
+		margin-left: 20px;
+	}
+	.form-group.check-like {
+		margin: -20px 0px 10px 20px;
+		font-size: 20px;
+	}
+	.number {
+		font-size: 20px;
+	}
+	.widgetroom1
+	{
+		display: block;
+	}
