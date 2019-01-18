@@ -47,10 +47,8 @@ ul.st-list.topbar-items li {
 ul{
 	margin-bottom: 0;
 }
-li.dropdown.dropdown-currency.hidden-sm.hidden-xs
-{
-	border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
+
+
 ul.st-list.topbar-items li:hover ul {
 	background: #1A2B48;
 	display: block;
@@ -92,6 +90,12 @@ li a {
 .header .topbar .topbar-items {
 	display: inline-block;
 }
+.topbar .topbar-items li:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.topbar .topbar-items .dropdown-currency .dropmenu li{
+	border-right: none;
+}
 ul.st-list.socials li a {
 	/*    padding-left: 18px;*/
 	padding-right: 18px;
@@ -104,7 +108,7 @@ ul.st-list.socials li{
 ul.st-list.topbar-items {
 	/*padding-left: 18px;*/
 }
-a {
+.topbar .topbar-items li a  {
 	color: #D1D4DA;
 	text-decoration: none;
 }
@@ -119,6 +123,7 @@ a {
 	width: 100%;
 	height: 91px;
 	z-index: 2;
+
 	/*	padding-right: 50px;*/
 	/*	padding-left: 50px;*/
 }
@@ -148,16 +153,19 @@ a {
 	margin-left: 75px;
 
 }
+.header1right input.form-control {
+    padding-left: 25px;
+}
 .header-search i.fa.fa-search {
 	position: absolute;
-	top: 8px;
+	top: 7px;
 	left: 6px;
 	font-size: 20px;
 }
 img.ico_card {
 	position: absolute;
-	top: 2px;
-	left: 218px;
+	top: 1px;
+	left: 223px;
 	height: 31px;
 }
 #main-menu
@@ -170,7 +178,7 @@ img.ico_card {
 }
 #main-menu li{
 	color: #5191FA;
-	border-bottom: 1px solid #EEEEEE;
+	
 }
 .menu {
 	position: absolute;
@@ -224,9 +232,15 @@ nav ul li a:hover {
 	color: #5191FA
 }
 nav ul li ul li a {
-	padding: 10px;
+	padding: 16px;
 	font-weight: normal;
 	color: #1A2B48;
+	border-bottom: 1px solid #EEEEEE;
+	padding-left: 0px;
+}
+#st-main-menu #main-menu li .sub-menu li{
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .text a {
 	font-size: 20px;

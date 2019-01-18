@@ -190,10 +190,6 @@ a.morelink
 	border-radius: 3px;
 	border: none;
 }
-/* end widget*/
-/**/
-/**/
-/*st-breadcrumb*/
 #st-content-wrapper .st-breadcrumb
 {
 	display: block;
@@ -269,13 +265,6 @@ a.morelink
 	display: block;
 
 }
-/**/
-/* st-hotel-header */
-/*#st-content-wrapper .sub-heading
-{
-color: #5E6D77;
-font-size: 14px;
-}*/
 .st-hotel-header .st-heading
 {
 	margin-top: 10px;
@@ -1389,15 +1378,6 @@ font-size: 14px;
 		display: none;
 	}
 }
-@media and (max-width:424px )
-{
-	/*content*/
-	.sroom .btn button
-	{
-		margin: 4% 60% 4% 0%;
-	}
-	/*end content*/
-}
 .double-room
 {
 	float: left;
@@ -1477,13 +1457,13 @@ label.star:before {
 }
 .btn-success
 {
-	background-color: red;
+	
 	margin-top: 50px;
 	margin-left: 45%;
 }
 .star-room
 {
-	width: 70%;
+	width: 60%;
 }
 .daonguoc svg:not(:root).svg-inline--fa{
 	transform: rotate(180deg);
@@ -1529,59 +1509,87 @@ label.star:before {
 .label
 {
 	cursor: pointer;
-	}.booknow
-	{
-		padding-top: 10px;
-	}
-	.facilities
-	{
-		padding: 10px;
-	}
-	.facilities p
-	{
-		margin: 0px 20px;
-	}
-	.btn-book{
-		width: 80%;
-		height: 50%;
-		line-height: 50px;
-		color: #fff;
-		background: #5191FA;
-		margin: auto;
-		padding-right: 10px;
-		padding-left: 10px;
-		display: block;
-		text-align: center;
-		text-transform: uppercase;
-		border-radius: 3px;
-	}
-	.btn-book:hover{
-		background: #4977FA;
-		color: #fff;
-		text-decoration: none;
-	}
-	span .adult
-	{
-		font-size: 16px;
-		color: #5191FA;
-	}
-	span .child
-	{
-		font-size: 16px;
-		color: #5191FA;
-	}
-	.media-body1
-	{
-		margin-left: 20px;
-	}
-	.form-group.check-like {
-		margin: -20px 0px 10px 20px;
-		font-size: 20px;
-	}
-	.number {
-		font-size: 20px;
-	}
-	.widgetroom1
-	{
-		display: block;
-	}
+}
+.booknow
+{
+	padding-top: 10px;
+}
+.facilities
+{
+	padding: 10px;
+}
+.facilities p
+{
+	margin: 0px 20px;
+}
+.btn-book{
+	width: 80%;
+	height: 50%;
+	line-height: 50px;
+	color: #fff;
+	background: #5191FA;
+	margin: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+.btn-book:hover{
+	background: #4977FA;
+	color: #fff;
+	text-decoration: none;
+}
+span .adult
+{
+	font-size: 16px;
+	color: #5191FA;
+}
+span .child
+{
+	font-size: 16px;
+	color: #5191FA;
+}
+.media-body1
+{
+	margin-left: 20px;
+}
+.form-group.check-like {
+	margin: -20px 0px 10px 20px;
+	font-size: 20px;
+}
+.number {
+	font-size: 20px;
+}
+.widgetroom1
+{
+	display: block;
+}
+.banner
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.btn-cmt{
+	width: 20%;
+	height: 50%;
+	line-height: 60px;
+	color: #fff;
+	background: #5191FA;
+	margin: auto;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 10px;
+	outline: none;
+}
+.btn-cmt:hover{
+	background: #4977FA;
+	color: #fff;
+	text-decoration: none;
+}
