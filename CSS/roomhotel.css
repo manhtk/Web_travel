@@ -577,16 +577,19 @@ font-size: 14px;
 {
 	font-size: 14px;
 }
+.reviews .square
+{
+	border:1px solid #eeeeee;
+	border-radius: 5px;
+	padding: 20px 20px;
+}
 .reviews .reviews-score
 {
 	margin-top: 20px;
-	padding: 30px;
-	border: 1px solid #EAEEF3;
 	border-radius: 5px;
 	color: #1A2B48;
 	font-weight: 500;
-	height: 346px;
-
+	padding-left: 0;
 }
 .reviews .review-box-score .review-box .review-box-score {
 	padding-top: 45px;
@@ -612,16 +615,20 @@ font-size: 14px;
 	color: #768090;
 	font-size: 14px;
 }
+.reviews .square .heading {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
 .reviews .rating
 {
-	height: 346px;
 	margin-top: 20px;
-	padding: 30px;
-	border: 1px solid #EAEEF3;
 	border-radius: 5px;
 	color: #1A2B48;
 	font-weight: 500;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .reviews .item
@@ -666,12 +673,11 @@ font-size: 14px;
 .reviews .summary
 {
 	margin-top: 20px;
-	padding: 30px;
-	border: 1px solid #EAEEF3;
 	border-radius: 5px;
 	color: #1A2B48;
 	font-weight: 500;
 	height: 346px;
+	padding-right: 0;
 }
 .review-list .comment-item {
 	padding-top: 30px;
@@ -689,6 +695,10 @@ font-size: 14px;
 	-ms-flex-align: center;
 	align-items: center;
 	margin-right: 100px;
+}
+.review-list .media-body2
+{
+	padding-left: 20px;
 }
 .review-list .comment-item .comment-item-head .like {
 	float: right;
@@ -1293,12 +1303,11 @@ font-size: 14px;
 .reviews .reviews-score
 {
 	margin-top: 20px;
-	padding: 30px;
-	border: 1px solid #EAEEF3;
 	border-radius: 5px;
 	color: #1A2B48;
 	font-weight: 500;
 	height: 346px;	
+	padding-left: 0;
 }
 .reviews .review-box-score .review-box .review-box-score {
 	padding-top: 45px;
@@ -1327,13 +1336,12 @@ font-size: 14px;
 
 .reviews .rating
 {
-	height: 346px;
 	margin-top: 20px;
-	padding: 30px;
-	border: 1px solid #EAEEF3;
 	border-radius: 5px;
 	color: #1A2B48;
 	font-weight: 500;
+	padding-left:0;
+	padding-right: 0; 
 }
 
 .reviews .item
@@ -1378,12 +1386,11 @@ font-size: 14px;
 .reviews .summary
 {
 	margin-top: 20px;
-	padding: 30px;
-	border: 1px solid #EAEEF3;
 	border-radius: 5px;
 	color: #1A2B48;
 	font-weight: 500;
 	height: 346px;
+	padding-right: 0;
 }
 .review-list .comment-item {
 	padding-top: 30px;
@@ -1992,8 +1999,6 @@ font-size: 14px;
 	.reviews .reviews-score
 	{
 		margin-top: 20px;
-		padding: 30px;
-		border: 1px solid #EAEEF3;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
@@ -2026,10 +2031,7 @@ font-size: 14px;
 	
 	.reviews .rating
 	{
-		height: 346px;
 		margin-top: 20px;
-		padding: 30px;
-		border: 1px solid #EAEEF3;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
@@ -2077,8 +2079,6 @@ font-size: 14px;
 	.reviews .summary
 	{
 		margin-top: 20px;
-		padding: 30px;
-		border: 1px solid #EAEEF3;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
@@ -2426,8 +2426,6 @@ font-size: 14px;
 	.reviews .reviews-score
 	{
 		margin-top: 20px;
-		padding: 30px;
-		border: 1px solid #EAEEF3;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;		
@@ -2465,8 +2463,6 @@ font-size: 14px;
 	.reviews .rating
 	{
 		margin-top: 20px;
-		padding: 30px;
-		border: 1px solid #EAEEF3;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
@@ -2514,8 +2510,6 @@ font-size: 14px;
 	.reviews .summary
 	{
 		margin-top: 20px;
-		padding: 30px;
-		border: 1px solid #EAEEF3;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
