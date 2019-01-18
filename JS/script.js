@@ -1,7 +1,7 @@
 ﻿$(function() {
 	$('.btn-like').click(function(event) {
 		/* Act on the event */
-		$(this).toggleClass('daonguoc');
+		$(this).addClass('daonguoc');
 		$(this).next().slideToggle();
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
@@ -14,7 +14,6 @@ $(function() {
 		$(this).next().slideToggle();
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
-
 });
 $(function() {
 	$('.dangky').click(function(event) {
@@ -304,3 +303,8 @@ $(document).ready(function(){
 	});
 });
  // end dowwn
+ $(document).ready(function(){
+ 	$(".showmore").click(function(){
+ 		$(".showfaciliti").slideToggle();
+ 	});
+ });
