@@ -1,7 +1,7 @@
-﻿$(function() {
+$(function() {
 	$('.btn-like').click(function(event) {
 		/* Act on the event */
-		$(this).addClass('daonguoc');
+		$(this).toggleClass('daonguoc');
 		$(this).next().slideToggle();
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
@@ -14,6 +14,7 @@ $(function() {
 		$(this).next().slideToggle();
 		// $(this).children().css( "transform", "rotate(180deg)");
 	});
+
 });
 $(function() {
 	$('.dangky').click(function(event) {
@@ -71,13 +72,13 @@ $(function() {
 // chạy form
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 332) {
+    if ($(window).scrollTop() >= 340) {
         $('.widget').addClass('fixed');
     } 
     if ($(window).scrollTop() >= 2500) {
         $('.widget').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 332) {
+     if ($(window).scrollTop() < 340) {
         $('.widget').removeClass('fixed');
     }
 });
@@ -303,8 +304,3 @@ $(document).ready(function(){
 	});
 });
  // end dowwn
- $(document).ready(function(){
- 	$(".showmore").click(function(){
- 		$(".showfaciliti").slideToggle();
- 	});
- });
