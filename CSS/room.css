@@ -1477,6 +1477,7 @@ label.star:before {
 }
 .btn-success
 {
+	background-color: red;
 	margin-top: 50px;
 	margin-left: 45%;
 }
