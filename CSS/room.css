@@ -10,6 +10,9 @@ body
 	font-family: 'Poppins';
 
 }
+.widgetroom {
+    margin-top: 33px;
+}
 a.morelink 
 {
 	text-decoration:none;
@@ -29,6 +32,7 @@ a.morelink
 .glyphicon 
 {
 	font-size: 20px;
+	cursor: pointer;
 }
 .dangky
 {
@@ -63,7 +67,7 @@ a.morelink
 	font-weight: 700;
 }
 .widgets .field_people_room {
-	padding-left: 0.5px;
+	padding-left: 3.5px;
 	padding-right: 0.5px;
 	margin-bottom: 15px;
 	width: 200px;
@@ -88,28 +92,120 @@ a.morelink
 	cursor: pointer;
 	font-size: 24px;
 }
+.field_people_room .people-inner {
+	
+	z-index: 9;
+	background: #fff;
+	padding: 10px 5px 9px 15px;
+	position: relative;
+	color: gray;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.field_people_room .people-inner .fa {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.people-inner .people-group .label {
+	color: gray;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+	padding: 0;
+}
+
+
+.field_people_room .people-inner .people-group .value {
+	font-size: 15px;
+	color: #5191fa;
+	display: block;
+	font-weight: 450;
+}
+
 .field_people_room .people-dropdown {
+	display: none;
 	z-index: 1;
-	padding: 20px 20px;
+	padding: 15px 10px;
 	border: none;
 	border-radius: 0px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	
+	font-size: 1.4em;
 	color: gray;
-	min-width: 259px;
-	min-height: 138px;
+	min-width: 229px;
 	position: absolute;
 	background: #fff;
-	top: 58px;
-	left: -25px;
-	text-align: center;
+	/*margin-left: -5px;*/
+	top: 28px;
+	/*left: 5px;*/
 }
+
+.field_people_room .people-dropdown:before {
+	position: absolute;
+	display: inline-block;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	content: '';
+	top: -7px;
+	left: 17px;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+}
+
+.field_people_room .people-dropdown .item {
+	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.field_people_room .people-dropdown .item .minus {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
 .field_people_room .people-dropdown .item .text .value {
-	font-size: 16px;
+	font-size: 17px;
 	color: #5191fa;
 	font-weight: 500;
 }
-.field_people_room .people-dropdown .gmz-number-wrapper
-{
-	padding: 10px 0;
+
+.field_people_room .people-dropdown .item .add {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 #bt
 {
@@ -164,8 +260,24 @@ a.morelink
 	min-width: 240px;
 	position: absolute;
 	background: #fff;
-	left: -0.6em;
+	left: 3px;
 	bottom: -8em;
+}
+.btn-cmt{
+	width: 20%;
+	height: 50%;
+	line-height: 60px;
+	color: #fff;
+	background: #5191FA;
+	margin: auto;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 10px;
+	outline: none;
 }
 .icon
 {
@@ -574,6 +686,22 @@ a.morelink
 {
 	/*content*/
 	/*st-breadcrumb*/
+	.btn-cmt{
+	width: 25%;
+	height: 50%;
+	line-height: 60px;
+	color: #fff;
+	background: #5191FA;
+	margin: auto;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 10px;
+	outline: none;
+}
 	#st-content-wrapper .st-breadcrumb
 	{
 		display: block;
@@ -1153,6 +1281,22 @@ a.morelink
 } 
 @media screen and (max-width: 767px)
 {
+	.btn-cmt{
+	width: 40%;
+	height: 50%;
+	line-height: 60px;
+	color: #fff;
+	background: #5191FA;
+	margin: auto;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 10px;
+	outline: none;
+}
 	/*content*/
 	#st-content-wrapper .st-breadcrumb
 	{
@@ -1509,6 +1653,9 @@ label.star:before {
 .label
 {
 	cursor: pointer;
+	position: absolute;
+    top: -14px;
+    left: 25px;
 }
 .booknow
 {
@@ -1558,6 +1705,9 @@ span .child
 .form-group.check-like {
 	margin: -20px 0px 10px 20px;
 	font-size: 20px;
+	position: absolute;
+    top: 63px;
+    right: 30px;
 }
 .number {
 	font-size: 20px;
@@ -1572,8 +1722,16 @@ span .child
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.btn-cmt{
-	width: 20%;
+
+.btn-cmt:hover{
+	background: #4977FA;
+	color: #fff;
+	text-decoration: none;
+}
+@media screen and (max-width: 525px)
+{
+	.btn-cmt{
+	width: 60%;
 	height: 50%;
 	line-height: 60px;
 	color: #fff;
@@ -1588,8 +1746,4 @@ span .child
 	border-radius: 10px;
 	outline: none;
 }
-.btn-cmt:hover{
-	background: #4977FA;
-	color: #fff;
-	text-decoration: none;
 }
