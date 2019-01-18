@@ -95,174 +95,181 @@ $(window).scroll(function () {
 });
 // guests
 jQuery(document).ready(function($){
-	/* People minus-add */
-	$('.gmz-number-wrapper').each(function () {
-		var timeOut = 0;
-		var t = $(this);
-		var input = t.find('input');
-		var min = input.data('min');
-		var max = input.data('max');
+/* People minus-add */
+$('.gmz-number-wrapper').each(function () {
+	var timeOut = 0;
+	var t = $(this);
+	var input = t.find('input');
+	var min = input.data('min');
+	var max = input.data('max');
+ 	//Change room value
+ 	$('input[name="number_room"]', t).change(function () {
+ 		var rooms = parseInt($(this).val());
+ 		var html   = rooms;
+ 		if (typeof rooms == 'number') {
+ 			if (rooms < 2) {
+ 				html = rooms + ' Room';
+ 			} else {
+ 				html = rooms + ' Rooms';
+ 			}
+ 		}
+ 		$('.people-inner .room').html(html);
+ 	});
+ 	$('input[name="number_room"]', t).trigger('change');
 
-		        //Change room value
-		        $('input[name="number_room"]', t).change(function () {
-		        	var rooms = parseInt($(this).val());
-		        	var html   = rooms;
-		        	if (typeof rooms == 'number') {
-		        		if (rooms < 2) {
-		        			html = rooms + ' Room';
-		        		} else {
-		        			html = rooms + ' Rooms';
-		        		}
-		        	}
-		        	$('.people-inner .room').html(html);
-		        });
-
-		        $('input[name="number_room"]', t).trigger('change');
-
-		        //Change adult value
-		        $('input[name="number_adult"]', t).change(function () {
-		        	var adults = parseInt($(this).val());
-		        	var html   = adults;
-		        	if (typeof adults == 'number') {
-		        		if (adults < 2) {
-		        			html = adults + ' Adult';
-		        		} else {
-		        			html = adults + ' Adults';
-		        		}
-		        	}
-		        	$('.people-inner .adult').html(html);
-		        });
-
-		        $('input[name="number_adult"]', t).trigger('change');
-
-		        //Change adult value
-		        $('input[name="number_child"]', t).change(function () {
-		        	var childs = parseInt($(this).val());
-		        	var html   = childs;
-		        	if (typeof childs == 'number') {
-		        		if (childs < 2) {
-		        			html = childs + ' Children';
-		        		} else {
-		        			html = childs + ' Childrens';
-		        		}
-		        	}
-		        	$('.people-inner .child').html(html);
-		        });
-
-		        $('input[name="number_child"]', t).trigger('change');
-
-
-		        t.find('.control').on("click", function() {
-
-		        	var $button = $(this);
-		        	numberButtonFunc($button);
-
-		        });
-
-		        t.find('.control').on("mousedown touchstart", function() {
-		        	var $button = $(this);
-		        	timeOut = setInterval(function(){
-		        		numberButtonFunc($button);
-		        	}, 150);
-		        }).bind('mouseup mouseleave touchend', function() {
-		        	clearInterval(timeOut);
-		        });
-
-		        function numberButtonFunc($button){
-		        	var oldValue = $button.parent().find(".text input").val();
-
-		        	if ($button.hasClass('add')) {
-		        		if (oldValue < max) {
-		        			var newVal = parseFloat(oldValue) + 1;
-		        		}else{
-		        			newVal = max;
-		        		}
-		        	} else {
-		        		if (oldValue > min) {
-		        			var newVal = parseFloat(oldValue) - 1;
-		        		} else {
-		        			newVal = min;
-		        		}
-		        	}
-
-		        	$button.parent().find(".text input").val(newVal);
-		        	$button.parent().find(".text .value").text(newVal);
-		        	$('input[name="'+$button.parent().find("input").attr('name')+'"]', '.people-dropdown').trigger('change');
-		        }
-		        $('.people-inner').click(function(){
-		        	var t = $(this);
-
-		        	t.parent().find('.formdebook').slideToggle();
-		        });
-		    });
-	$('.check-like').each(function(){
-		var parent = $(this);
-		$('.glyphicon', parent).click(function(){
-			var t = $(this);
-			var currentLike = parent.find('.like').text();
-
-			parent.toggleClass('open');
-
-			if(parent.hasClass('open')){
-				currentLike++
-				parent.find('.like').text(currentLike);
-			}else{
-				currentLike--
-				parent.find('.like').text(currentLike);
+	//Change adult value
+	$('input[name="number_adult"]', t).change(function () {
+		var adults = parseInt($(this).val());
+		var html   = adults;
+		if (typeof adults == 'number') {
+			if (adults < 2) {
+				html = adults + ' Adult';
+			} else {
+				html = adults + ' Adults';
 			}
+		}
+		$('.people-inner .adult').html(html);
+	});
 
-		});
-	})
+	$('input[name="number_adult"]', t).trigger('change');
+
+	//Change adult value
+	$('input[name="number_child"]', t).change(function () {
+		var childs = parseInt($(this).val());
+		var html   = childs;
+		if (typeof childs == 'number') {
+			if (childs < 2) {
+				html = childs + ' Children';
+			} else {
+				html = childs + ' Childrens';
+			}
+		}
+		$('.people-inner .child').html(html);
+	});
+	$('input[name="number_child"]', t).trigger('change');
+	t.find('.control').on("click", function() {
+		var $button = $(this);
+		numberButtonFunc($button);
+	});
+
+	t.find('.control').on("mousedown touchstart", function() {
+		var $button = $(this);
+		timeOut = setInterval(function(){
+			numberButtonFunc($button);
+		}, 150);
+	}).bind('mouseup mouseleave touchend', function() {
+		clearInterval(timeOut);
+	});
+
+	function numberButtonFunc($button){
+		var oldValue = $button.parent().find(".text input").val();
+
+		if ($button.hasClass('add')) {
+			if (oldValue < max) {
+				var newVal = parseFloat(oldValue) + 1;
+			}else{
+				newVal = max;
+			}
+		} else {
+			if (oldValue > min) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = min;
+			}
+		}
+
+		$button.parent().find(".text input").val(newVal);
+		$button.parent().find(".text .value").text(newVal);
+		$('input[name="'+$button.parent().find("input").attr('name')+'"]', '.people-dropdown').trigger('change');
+	}
+	$('.people-inner').click(function(){
+		var t = $(this);
+		t.parent().find('.formbook').slideToggle();
+	});
+});
+
+$('.check-like').each(function(){
+	var parent = $(this);
+	$('.glyphicon', parent).click(function(){
+		var t = $(this);
+		var currentLike = parent.find('.like').text();
+
+		parent.toggleClass('open');
+
+		if(parent.hasClass('open')){
+			currentLike++
+			parent.find('.like').text(currentLike);
+		}else{
+			currentLike--
+			parent.find('.like').text(currentLike);
+		}
+
+	});
+})
 
 });
+$(document).ready(function(){
+			$('.formbook').slideUp();
+			var stt=0;
+			$("img .slide").each(function(){
+				if($(this).is(':visible'))
+					stt=$(this).attr("stt");
+			});
+			$("#next").click(function()
+			{
+				next= ++stt;
+				$(" img .slide").hide();
+				$(" img .slide").eq(next).show();
+			});
+		}); 
 (function($) {
- 	$.fn.shorten = function (settings) {
- 		
- 		var config = {
- 			showChars: 100,
- 			ellipsesText: "...",
- 			moreText: "more",
- 			lessText: "less"
- 		};
+	$.fn.shorten = function (settings) {
 
- 		if (settings) {
- 			$.extend(config, settings);
- 		}
- 		
- 		$(document).off("click", '.morelink');
- 		
- 		$(document).on({click: function () {
+		var config = {
+			showChars: 100,
+			ellipsesText: "...",
+			moreText: "more",
+			lessText: "less"
+		};
 
- 			var $this = $(this);
- 			if ($this.hasClass('less')) {
- 				$this.removeClass('less');
- 				$this.html(config.moreText);
- 			} else {
- 				$this.addClass('less');
- 				$this.html(config.lessText);
- 			}
- 			$this.parent().prev().toggle();
- 			$this.prev().slideToggle();
- 			return false;
- 		}
- 	}, '.morelink');
+		if (settings) {
+			$.extend(config, settings);
+		}
 
- 		return this.each(function () {
- 			var $this = $(this);
- 			if($this.hasClass("shortened")) return;
- 			
- 			$this.addClass("shortened");
- 			var content = $this.html();
- 			if (content.length > config.showChars) {
- 				var c = content.substr(0, config.showChars);
- 				var h = content.substr(config.showChars, content.length - config.showChars);
- 				var html = c + '<span class="moreellipses"> </span><span class="morecontent"><span>' + h + '</span> <a href="#" class="morelink">' + config.ellipsesText + '' + config.moreText + '</a></span>';
- 				$this.html(html);
- 				$(".morecontent span").hide();
- 			}
- 		});
- 		
- 	};
+		$(document).off("click", '.morelink');
+
+		$(document).on({click: function () {
+
+			var $this = $(this);
+			if ($this.hasClass('less')) {
+				$this.removeClass('less');
+				$this.html(config.moreText);
+			} else {
+				$this.addClass('less');
+				$this.html(config.lessText);
+			}
+			$this.parent().prev().toggle();
+			$this.prev().slideToggle();
+			return false;
+		}
+	}, '.morelink');
+
+		return this.each(function () {
+			var $this = $(this);
+			if($this.hasClass("shortened")) return;
+
+			$this.addClass("shortened");
+			var content = $this.html();
+			if (content.length > config.showChars) {
+				var c = content.substr(0, config.showChars);
+				var h = content.substr(config.showChars, content.length - config.showChars);
+				var html = c + '<span class="moreellipses"> </span><span class="morecontent"><span>' + h + '</span> <a href="#" class="morelink">' + config.ellipsesText + '' + config.moreText + '</a></span>';
+				$this.html(html);
+				$(".morecontent span").hide();
+			}
+		});
+
+	};
 
  })(jQuery);
  $(document).ready(function(){

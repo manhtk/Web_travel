@@ -116,7 +116,7 @@ a.morelink
 	background: #FFFFFF;
 	border: 1px solid #D7DCE3;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
-	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
 	width: 100%;
 	z-index: 9;
 	padding: 12px; 
@@ -182,17 +182,17 @@ a.morelink
 	cursor: pointer;
 	font-size: 24px;
 }
-.field_people_room .people-dropdown {
+/*.field_people_room .people-dropdown {
 	z-index: 1;
 	padding: 20px 20px;
 	border: none;
 	border-radius: 0px;
 	color: gray;
-	min-width: 259px;
+	min-width: 263px;
 	min-height: 138px;
 	position: absolute;
 	background: #fff;
-	top: 58px;
+	top: 44px;
 	left: -25px;
 	text-align: center;
 }
@@ -201,10 +201,150 @@ a.morelink
 	color: #5191fa;
 	font-weight: 500;
 }
+.field_people_room .people-dropdown .gmz-number-wrapper label
+{
+	font-size: 14px;
+	color: #5E6D77;
+    font-weight: 400;
+    float: left;
+}
 .field_people_room .people-dropdown .gmz-number-wrapper
 {
 	padding: 10px 0;
 }
+.field_people_room .people-dropdown .gmz-number-wrapper .text
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}*/
+/*css book lich*/
+.field_people_room {
+	/*padding-left: 0.5px;*/
+	padding-right: -0.5px;
+	margin-bottom: 15px;
+	
+	position: relative;
+	box-shadow: none;
+}
+
+.field_people_room .people-inner {
+	
+	z-index: 9;
+	background: #fff;
+	padding: 9px 5px 9px 15px;
+	position: relative;
+	color: gray;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.field_people_room .people-inner .fa {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.people-inner .people-group .label {
+	color: gray;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+	padding: 0;
+}
+
+
+.field_people_room .people-inner .people-group .value {
+	font-size: 15px;
+	color: #5191FA;
+	display: block;
+	font-weight: bold;
+}
+
+.field_people_room .people-dropdown {
+	display: none;
+	z-index: 1;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 0px;
+	font-size: 1.3em;
+	color: gray;
+	min-width: 266px;
+	position: absolute;
+	background: #fff;
+	/*margin-left: -5px;*/
+	top: 42px;
+	/*left: 5px;*/
+}
+
+.field_people_room .people-dropdown:before {
+	position: absolute;
+	display: inline-block;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	content: '';
+	top: -7px;
+	left: 17px;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+}
+
+.field_people_room .people-dropdown .item {
+	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.field_people_room .people-dropdown .item .minus {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.field_people_room .people-dropdown .item .text .value {
+	font-size: 20px;
+	color: #5191fa;
+	font-weight: 500;
+}
+
+.field_people_room .people-dropdown .item .add {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.icondaonguoc
+{
+	transform: rotate(180deg);
+}
+/*end css book lich*/
 #bt
 {
 	padding: 15% 18px;
@@ -398,6 +538,7 @@ font-size: 14px;
 .st-hotel-header .right
 {		
 	float: right;
+	margin-bottom: 15px;
 }
 .st-hotel-header .review-score 
 {
@@ -421,7 +562,7 @@ font-size: 14px;
 	color: #1A2B48;
 	font-weight: 400;
 	line-height: 25px;
-	margin-bottom: 5px;
+	margin-bottom: -10px;
 }
 .st-hotel-header .review-score .head .left {
 	text-align: right;
@@ -643,7 +784,7 @@ font-size: 14px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background: #EEE;
-	margin-bottom:0px;
+	margin-bottom:10px;
 	overflow: inherit;
 }
 .reviews .item .progress .percent {
@@ -1476,7 +1617,7 @@ font-size: 14px;
 .widgets #check input
 {
 	border: none;
-	color: #5191FA;
+	color: #6aa1fa;
 	text-align:left;
 }
 #guests {
@@ -1496,6 +1637,7 @@ font-size: 14px;
 	white-space: nowrap;
 	vertical-align: baseline;
 	border-radius: .25em;
+	padding-left: 0;
 }
 .widgets .field_people_room {
 	padding-left: 0.5px;
@@ -1521,6 +1663,136 @@ font-size: 14px;
 	margin-left: 143px;
 	margin-top: -20px
 }
+/*css book lich*/
+.field_people_room {
+	/*padding-left: 0.5px;*/
+	padding-right: -0.5px;
+	margin-bottom: 15px;
+	
+	position: relative;
+	box-shadow: none;
+}
+
+.field_people_room .people-inner {
+	
+	z-index: 9;
+	background: #fff;
+	padding: 10px 5px 9px 15px;
+	position: relative;
+	color: gray;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.field_people_room .people-inner .fa {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.people-inner .people-group .label {
+	color: gray;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+	padding: 0;
+}
+
+
+.field_people_room .people-inner .people-group .value {
+	font-size: 15px;
+	color: #5191fa;
+	display: block;
+	font-weight: 450;
+}
+
+.field_people_room .people-dropdown {
+	display: none;
+	z-index: 1;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	
+	font-size: 1.3em;
+	color: gray;
+	min-width: 264px;
+	position: absolute;
+	background: #fff;
+	/*margin-left: -5px;*/
+	top: 65px;
+	/*left: 5px;*/
+}
+
+.field_people_room .people-dropdown:before {
+	position: absolute;
+	display: inline-block;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	content: '';
+	top: -7px;
+	left: 17px;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+}
+
+.field_people_room .people-dropdown .item {
+	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.field_people_room .people-dropdown .item .minus {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.field_people_room .people-dropdown .item .text .value {
+	font-size: 20px;
+	color: #5191fa;
+	font-weight: 500;
+}
+
+.field_people_room .people-dropdown .item .add {
+	width: 30px;
+	color: #5191fa;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.icondaonguoc
+{
+	transform: rotate(180deg);
+}
+/*end css book lich*/
 .field_people_room .people-dropdown {
 	z-index: 1;
 	/* padding: 20px 20px; */
@@ -2428,7 +2700,8 @@ font-size: 14px;
 		margin-top: 20px;
 		border-radius: 5px;
 		color: #1A2B48;
-		font-weight: 500;		
+		font-weight: 500;
+		padding-right: 0;		
 	}
 	.reviews .review-box-score
 	{
@@ -2466,6 +2739,7 @@ font-size: 14px;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
+		padding-right: 0;
 	}
 
 	.reviews .item
@@ -2513,6 +2787,7 @@ font-size: 14px;
 		border-radius: 5px;
 		color: #1A2B48;
 		font-weight: 500;
+		padding-left: 0;
 	}
 	/*end review*/
 	/*widget*/
