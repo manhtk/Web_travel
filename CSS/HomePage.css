@@ -485,9 +485,13 @@ body{
 .dropdown-factilities
 {
 	position: relative;
+<<<<<<< HEAD
     left: -10px;
     top: -8px;
     font-size: 16px;
+=======
+	left: -10px;
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
 }
 .dropdown-menu-facilities
 {
@@ -899,14 +903,22 @@ body{
     position: absolute;
     margin-top: 25px;
     width: 100%;
+<<<<<<< HEAD
     left: -13%;
+=======
+    left: -18%;
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
     color: #717171;
 }
 .dropdow-list2 {
     width: 100%;
     height: 30px;
     position: absolute;
+<<<<<<< HEAD
     left: 20px;
+=======
+    left: 10px;
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
     margin-top: 42px;
 }
 .dropdow-list1 {

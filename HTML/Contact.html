@@ -3,6 +3,10 @@
 <head>
 	<title>Contact-Traveler</title>
 	<meta charset="utf-8">
+<<<<<<< HEAD
+=======
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
 	<link rel="stylesheet" type="text/css" href="../CSS/Contact.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
@@ -14,7 +18,7 @@
 	<script type="text/javascript" src="date.js"></script>
 	<script src="../JS/script.js"></script>
 
-	<!-- <link rel="stylesheet" type="text/css" href="../CSS/style.css"> -->
+
 </head>
 <body>
 	
@@ -40,8 +44,8 @@
 				</div>
 				<div class="topbar-right">
 					<ul class="st-list topbar-items">
-						<li><a href="#">Login</a></li>
-						<li><a href="#">Sign up</a></li>
+						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Login</a></li>
+						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Sign up</a></li>
 						<li class="dropdown dropdown-currency hidden-sm hidden-xs">
 							<a href="#">EUR<i class="fa fa-angle-down"></i></a>
 							<ul class="dropmenu">
@@ -53,7 +57,7 @@
 							<a href="#">English<i class="fa fa-angle-down"></i></a>
 							<ul class="dropmenu">
 								<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-								<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
+								<li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -64,81 +68,88 @@
 		<div class="head1">
 			<div class="container">
 				<div class="toggle">
-					<i class="fa fa-bars menu1"></i>
+					<i class="fa fa-bars menu1" style="padding-left: 20px"></i>
 				</div>
 				<div class="header1left">
 					<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
 					<div class="menu">
+
 						<nav id="st-main-menu" >
 							<a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
 							<ul id="main-menu">
-								<li><a href="../HTML/HomePage.html">HOME</a></li>
+								<li><a href="#"  >HOME</a></li>
 								<li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
-										<li><a href="">Full Map Layout</a></li>
+										<li><a href="#">Full Map Layout</a></li>
 										<li><a href="#">Half Map Layout</a></li>
-										<li><a href="../HTML/slidebar.html">Slidebar Layout</a></li>
+										<li><a href="#">Sidebar layout</a></li>
+										
 									</ul>
 								</li>
 								<li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
-										<li><a href="../HTML/detailhotel1.html">Hotel Detail 1</a></li>
+										<li><a href="#">Hotel Detail 1</a></li>
 										<li><a href="#">Hotel Detail 2</a></li>
 										<li><a href="#">Hotel Detail 3</a></li>
-										<li><a href="../HTML/roomdetail1.html">Room Detail</a></li>
+										<li><a href="#">Room Detail 1</a></li>
 									</ul>
 								</li>
 								<li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="#">House Detail 1</a></li>
 										<li><a href="#">House Detail 2</a></li>
+										
 									</ul>
 								</li>
 								<li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
-										<li><a href="../HTML/aboutus.html">About Us</a></li>
-										<li><a href="../HTML/hotel.html">Blog</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Blog</a></li>
 										<li><a href="#">404 Page</a></li>
+										
 									</ul>
 								</li>
-								<li><a href="../HTML/Contact.html">Contact</a></li>
+								<li><a href="#">Contact</a></li>
 							</ul>
 						</nav>
-					</div>
-				</div>
-				<div class="header1right">
-					<form action="" method="get" class="header-search hidden-sm">
-						<input type="text" class="form-control" name="s" value="">
-						<i class="fa fa-search"></i>
-					</form>
-					<i class="fa fa-cart-plus"></i>
+
+						<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+								$('.menu1').click(function(){
+									$('nav').toggleClass('open'); 
+								});
+								$('.fa.fa-angle-left').click(function(){
+    //   		var t = $(this);
+
+				// t.parent().find('ul').next().slideToggle();
+				$('nav').removeClass('open'); });
+							})
+						</script>
+					</script>
 				</div>
 			</div>
+			<div class="header1right">
+				<form action="" method="get" class="header-search hidden-sm">
+					<input type="text" class="form-control" name="s" value="">
+					<i class="fa fa-search"></i>
+				</form>
+				<img class="ico_card" src="../Images/ico_card.svg">
+			</div>
 		</div>
-	</header>
+	</div>
+</div>
+</header>
 	<!-- end header -->
 		</div>
 		<div class="clear"></div>
 		</div>
 		<div id="st-content-wrapper">
-			<div class="banner">
-				<div class="banner-img">
-					<div class="banner-images">
-					<img src="../Images/gallary_4-1.jpg">
-					<div class="container Contact">
-						<div class="col-sm-12">
-						<div class="banner-text">
-							<div class="find-your Perfect-Hotels">
-								<h2 >
-									Contact Us
-								</h2>
-							</div>
-						</div>
-						</div>
-					</div>
-					</div>
+			<div class="banner1">
+				<div class="container">
+					<h1>Contact</h1>
 				</div>
-			</div>
+		</div>
 		</div>
 
 		<div class="st-breadcrumb hidden-xs">

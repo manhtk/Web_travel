@@ -54,8 +54,8 @@
       </div>
       <div class="topbar-right">
         <ul class="st-list topbar-items">
-          <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Login</a></li>
-          <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Sign up</a></li>
+          <li ><a href="#">Login</a></li>
+          <li ><a href="#">Sign up</a></li>
           <li class="dropdown dropdown-currency hidden-sm hidden-xs">
             <a href="#">EUR<i class="fa fa-angle-down"></i></a>
             <ul class="dropmenu">
@@ -92,7 +92,7 @@
                 <ul class="sub-menu">
                   <li><a href="#">Full Map Layout</a></li>
                   <li><a href="#">Half Map Layout</a></li>
-                  <li><a href="../HTML/slidebar.html">Sidebar layout</a></li>
+                  <li><a href="../Web-hotel/HTML/dealline.html">Sidebar layout</a></li>
                   
                 </ul>
               </li>
@@ -113,13 +113,13 @@
               </li>
               <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
                 <ul class="sub-menu">
-                  <li><a href="../HTML/aboutus.html">About Us</a></li>
-                  <li><a href="../HTML/hotel.html">Blog</a></li>
+                  <li><a href="../Hotel/hotel.html">About Us</a></li>
+                  <li><a href="../Hotel/aboutus.html">Blog</a></li>
                   <li><a href="#">404 Page</a></li>
                   
                 </ul>
               </li>
-              <li><a href="../HTML/Contact.html">Contact</a></li>
+              <li><a href="../HTML/Contact.html">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -152,8 +152,10 @@
   <div class="clear"></div>
   <!-- slide -->
   <div class="container-fuild">
+    <div class="banner">
     <img src="../Images/khanh3.jpg" width="100%" height="400px" alt="">       
   </div>
+</div>
   <!-- slide -->
   <div class="container">
     <!-- st-content-hotel -->
@@ -236,21 +238,10 @@
                 <h2 class="st-heading-section">Description
                 </h2> 
                 <div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120" >
-
-                  <p>Room Kerama comprises of 1 Double Bed or 2 Twin Beds, 2 Bedside Tables, a Desk &amp; Chair. The room is furnished with wall to wall carpeting, trendy furnishings and a balcony.</p>
-                  <p>Our ultramodern glass bathroom is equipped with hairdryer, magnifying shaving and make up mirror as well as all the amenities you could possible need during your stay.</p>
-                  <p>A Complimentary Bottle of Wine, Fresh Fruit and Mineral Water, are provided on arrival. Electric current: 220 Volts. Smoking rooms &amp; inter-connecting rooms are also available.</p>
                   <p>Room Kerama comprises of 1 Double Bed or 2 Twin Beds, 2 Bedside Tables, a Desk &amp; Chair. The room is furnished with wall to wall carpeting, trendy furnishings and a balcony.</p>
                   <p>Our ultramodern glass bathroom is equipped with hairdryer, magnifying shaving and make up mirror as well as all the amenities you could possible need during your stay.</p>
                   <p>A Complimentary Bottle of Wine, Fresh Fruit and Mineral Water, are provided on arrival. Electric current: 220 Volts. Smoking rooms &amp; inter-connecting rooms are also available.</p>
                 </div>
-                <script>  
-                  $(".more-content").shorten({
-                    "showChars" : 6,
-                    "moreText"  : "View more",
-                    "lessText"  : "View less",
-                  });
-                </script>
               </div>
             </div>
             <!-- end description -->
@@ -470,8 +461,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <button class="btn btn-success" type="submit">Leave a Review</button>
+                        <div class="form-group" style="padding-top: 20px;">
+                          <button class="btn-cmt">Leave a Review</button>
                         </div>
                       </form>
                     </div>
@@ -523,7 +514,7 @@
                             <div class="people-group">
                               <span class="label">
                                 <span class="value">
-                                  <span class="adult">1 Adult</span>,
+                                  <span class="adult">1 Adult</span> -
                                   <span class="child">0 Child</span>
                                 </span>
                               </span>
@@ -531,29 +522,33 @@
                                 <i class="fa ml5 fa-angle-up" style="position: absolute;left: -40px;top: 5px;font-size: 20px;"></i>
                               </div>
                               <div class="formdebook">
-                                <div class="row">
-                                  <div class="people-dropdown" style="display: block;">
-                                    <div class="item gmz-number-wrapper">
-                                      <span class="control minus">-</span>
-                                      <span class="text">
-                                        <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
-                                      </span>
-                                      <span class="control add">+</span>
-                                    </div>
-                                    <div class="item gmz-number-wrapper">
-                                      <span class="control minus">-</span>
-                                      <span class="text">
-                                        <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
-                                      </span>
-                                      <span class="control add">+</span>
-                                    </div>
-                                    <div class="item gmz-number-wrapper">
-                                      <span class="control minus">-</span>
-                                      <span class="text">
-                                        <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
-                                      </span>
-                                      <span class="control add">+</span>
-                                    </div>
+                                <div class="people-dropdown" style="display: block;">
+                                  <div class="item gmz-number-wrapper">
+                                    Rooms
+                                    <span class="control minus">-</span>
+                                    <span class="text">
+                                      <span class="value room">1</span>               
+                                      <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+                                    </span>
+                                    <span class="control add">+</span>
+                                  </div>
+                                  <div class="item gmz-number-wrapper">
+                                    Adults
+                                    <span class="control minus">-</span>
+                                    <span class="text">
+                                      <span class="value adult">1</span>               
+                                      <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+                                    </span>
+                                    <span class="control add">+</span>
+                                  </div>
+                                  <div class="item gmz-number-wrapper">
+                                    Children
+                                    <span class="control minus">-</span>
+                                    <span class="text">
+                                      <span class="value child">1</span>                
+                                      <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+                                    </span>
+                                    <span class="control add">+</span>
                                   </div>
                                 </div>
                               </div>
@@ -709,21 +704,24 @@
                                 <div class="item gmz-number-wrapper">
                                   <span class="control minus">-</span>
                                   <span class="text">
-                                    <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+                                    <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                
+                                    <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
                                   </span>
                                   <span class="control add">+</span>
                                 </div>
                                 <div class="item gmz-number-wrapper">
                                   <span class="control minus">-</span>
                                   <span class="text">
-                                    <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+                                    <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                
+                                    <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
                                   </span>
                                   <span class="control add">+</span>
                                 </div>
                                 <div class="item gmz-number-wrapper">
                                   <span class="control minus">-</span>
                                   <span class="text">
-                                    <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+                                    <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                
+                                    <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
                                   </span>
                                   <span class="control add">+</span>
                                 </div>
@@ -847,8 +845,7 @@
                           <input type="text" class="form-control" placeholder="Your Email">
                           <input type="submit" name="submit" value="Subcribe">
                         </div>
-                      </form>
-
+                     </form>
                     </div>
                   </div>
                 </div>
@@ -858,89 +855,66 @@
           <div id="footer_content">
            <div class="container "> 
             <div class="row">
-
               <div class=" col-lg-3 col-md-3  col-xs-12 footer_content_list">
                 <p class="footer_content_header">NEED HELP?</p>
                 <br />
-
-
                 <div  class="footer_content_element">
                   <p class="footer_content_element1" >Call Us</p>
                   <h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >+ 00 222 44 5678</h4>
                 </div>
                 <br />
-
                 <div class="footer_content_element">
                   <p class="footer_content_element1" >Email for Us</p>
                   <h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >hello@yoursite.com</h4>
                 </div>
                 <br />
-
                 <div class="footer_content_element">
                   <p class="footer_content_element1" >Follow Us</p>
                   <p style="padding-left: 15px;"><span ><img src="../Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_twitter_footer.svg"  ></span></p>
                 </div>
                 <br />
-
-
-
               </div>
               <div class="  col-lg-3 col-md-3 col-xs-12  footer_content_list">
                 <p class="footer_content_header">COMPANY</p>
                 <br />
-
                 <div class="footer_content1_element">
                   <div class="footer_content1_element1" ">
                     <a href="" style="color: #1A2B48"><p>About Us</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>ACommunity Blog</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Rewards</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Word with Us</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Meet the Team</p></a>
                     <br>
                     <br>
-
                   </div>
-
                 </div>
               </div>
               <div class="  col-lg-3 col-md-3 col-xs-12  footer_content_list">
                 <p class="footer_content_header">SUPPORT</p>
                 <br />
-
                 <div class="footer_content1_element">
                   <div class="footer_content1_element1" ">
                     <a href="" style="color: #1A2B48"><p>Acount</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Legal</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Contact</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Affiliate Program</p></a>
                     <br>
-
                     <a href="" style="color: #1A2B48"><p>Privacy policy</p></a>
                     <br>
                     <br>
-
                   </div>
-
                 </div>
               </div>
               <div class=" col-lg-3 col-md-3  col-xs-12  footer_content_list">
                 <p class="footer_content_header">SETTING</p>
                 <br />
-
                 <div class="footer_content1_element">
                   <div class="footer_content1_element1" ">
                     <p style="font-size: 14px;color: #5E6D77;" >Languages</p>
@@ -958,28 +932,19 @@
                       <option>USD</option>
                       <option>AUD</option>
                     </select>
-
-
-                  </div>
-
+                 </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
         <div class="footer_sub">
           <div class="container">
             <div class="row">
-
-
               <div class="col-lg-4">
                 <div class="footer_sub_L">
-                  <p>Copyright © 2018 by <a href="#">ShineTheme</a></p>
-
-
+                  <p>Copyright © 2018 by <a href="#" >ShineTheme</a></p>
                 </div>
-
               </div>
               <div class="col-lg-5"></div>
               <div class="col-lg-3">
@@ -990,5 +955,5 @@
             </div>
           </div>
         </div>
-      </body>
-      </html>
+  </body>
+</html>

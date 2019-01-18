@@ -82,7 +82,7 @@ $(window).scroll(function () {
     if ($(window).scrollTop() >= 611) {
         $('.widgets').addClass('fixed');
     } 
-    if ($(window).scrollTop() >= 2700) {
+    if ($(window).scrollTop() >= 2500) {
         $('.widgets').removeClass('fixed');
     }
      if ($(window).scrollTop() < 611) {
