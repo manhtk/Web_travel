@@ -143,6 +143,7 @@ a.morelink
 	border: none;
 	color: #5191FA;
 	text-align:left;
+	outline: none;
 }
 #guests {
 	padding-top: 15px;
