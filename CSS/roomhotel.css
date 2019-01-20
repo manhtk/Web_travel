@@ -15,6 +15,10 @@ body
 {
 	border-top: 1px solid #EEEEEE;
 }
+.st-hotel-header .left
+{
+	margin-bottom: 10px;
+}
 #write-review
 {
 	color: #5E6D77;
@@ -320,7 +324,12 @@ a.morelink
 	-o-user-select: none;
 	user-select: none;
 }
-
+span.control.minus.adult {
+    padding-left: 22px;
+}
+span.control.minus.children {
+    padding-left: 8px;
+}
 .field_people_room .people-dropdown .item .text .value {
 	font-size: 20px;
 	color: #5191fa;
@@ -539,7 +548,6 @@ font-size: 14px;
 .st-hotel-header .right
 {		
 	float: right;
-	margin-bottom: 15px;
 }
 .st-hotel-header .review-score 
 {
@@ -572,6 +580,7 @@ font-size: 14px;
 	display: block;
 	line-height: 13px;
 	margin-top: 11px;
+	margin-bottom: 5px;
 }
 .st-hotel-header .review-score .head span.text-rating {
 	color: #5191FA;
@@ -641,11 +650,11 @@ font-size: 14px;
 {
 	margin: 0 0 10px;
 }
-.st-description .cut-gradient {
+.cut-gradient {
 	position: absolute;
-	bottom: 0;
+	bottom: 27px;
 	left: 0;
-	height: 50px;
+	height: 65px;
 	width: 100%;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
 	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
@@ -1290,7 +1299,6 @@ font-size: 14px;
 		color: #1A2B48;
 		font-weight: 400;
 		line-height: 25px;
-		margin-bottom: 5px;
 	}
 	.st-hotel-header .review-score .head .left {
 		text-align: right;
@@ -2188,9 +2196,9 @@ font-size: 14px;
 	}
 	.st-description .cut-gradient {
 		position: absolute;
-		bottom: 0;
+		bottom: 25px;
 		left: 0;
-		height: 124px;
+		height: 75px;
 		width: 100%;
 		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
 		background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
@@ -2619,13 +2627,7 @@ font-size: 14px;
 		margin: 0 0 10px;
 	}
 	.st-description .cut-gradient {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 124px;
-		width: 100%;
-		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
-		background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
+	display: none;
 	}
 	.st-link:hover {
 		color: #5191FA !important;
@@ -2681,7 +2683,7 @@ font-size: 14px;
 	}
 	.sroom .btn
 	{
-		padding: 0;
+		padding: 26px;
 	}
 	.sroom .btn button
 	{
