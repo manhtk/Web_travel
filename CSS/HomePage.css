@@ -232,36 +232,45 @@ body{
 }
 .vc_custom_1542955832597
 {
-	margin-top: 25px;
-	height: 110px;
+	margin-top: 0px;
+	height: auto;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 }
 .vc_custom_1542955832597 .vc_column-inner .row-col-image
 {
-	width: 30%;
+	width: 25%;
 	float: left;
 }
 .vc_custom_1542955832597 .vc_column-inner .row-col-text
 {
-	width: 70%;
+	width: 75%;
 	float: right;
+
 }
 .vc_custom_1542955832597 .vc_column-inner .row-col-text .title
 {
 	font-size: 18px;
 	color: #1A2B48;
 	letter-spacing: 0;
+	font-weight: 500;
 }
 .vc_custom_1542955832597 .vc_column-inner .row-col-text .desc
 {
 	font-size: 14px;
 	color: #5E6D77;
 	letter-spacing: 0;
+	font-weight: 300;
+	color: #1A2B48
 }
 .vc_custom_1542955832597 .row
 {
 	margin-left: -15px!important;
 	margin-right: 15px !important;
+}
+.wpb_wrapper
+{
+	padding-bottom: 20px;
 }
 /*end holder*/
 /*Last Minute Deals*/
@@ -281,7 +290,6 @@ body{
 	color: #1A2B48;
 	letter-spacing: 0;
 	padding-bottom: 30px;
-
 }
 .row-content
 {
@@ -477,7 +485,13 @@ body{
 .dropdown-factilities
 {
 	position: relative;
+<<<<<<< HEAD
+    left: -10px;
+    top: -8px;
+    font-size: 16px;
+=======
 	left: -10px;
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
 }
 .dropdown-menu-facilities
 {
@@ -590,6 +604,7 @@ body{
 {
 	width: 100%;
 	height: 65px;
+	position: absolute;
 }
 @media only screen and (max-width: 425px)
 {
@@ -736,11 +751,35 @@ body{
 	.text-content .title-name {
     font-size: 25px !important;
 }
-	
+.advantice
+{
+	display: none;
+}
+.seach-homepage
+{
+	    width: 100% !important;
+    margin: 0px!important;
+}
+.col-search-form
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.btn-seach-homepage
+{
+	    height: 50px!important;
+    /* position: absolute; */
+    background: #
+}
 }
 @media only screen and (max-width: 991px)
 
 {	
+	
+	.text-muted1
+	{
+		width: 100%
+	}
 	.review-star
 	{
 		top: 90%;
@@ -765,12 +804,13 @@ body{
 	.seach-form .border-right
 	{
 		width: 100%;
-		height: 100%;
+		height: 80px;
 		border-bottom: 1px solid #eee !important;	
 	}
 	.vc_custom_1542955832597
 	{
-		border-bottom: none;
+		border-bottom: 1px solid #EEE;\
+		height: auto;
 	}
 	.banner .search-form-wrapper .sub-heading
 	{
@@ -784,10 +824,63 @@ body{
 	{
 		margin-top: 40px;
 	}
-	.search-form-section
-	{
-		height: 80px;
-	}
+	.search-form-section {
+    position: absolute;
+    height: 80px;
+    text-align: left;
+    margin-left: 13%;
+    width: 80%;
+}
+.dropdow-list {
+    width: 90%;
+    height: 30px;
+    float: left;
+    position: absolute;
+    /* left: 20%; */
+    left: -5%;
+    margin-top: 25px;
+    font-size: 16px;
+}
+.dropdow-list1
+{
+	float: left;
+    left: -28px!important;
+}
+.border-right .text-muted2 {
+        width: 100%!important;
+        padding-left: 30px;
+}
+.text-muted
+{
+	    width: 80%!important;
+    float: left;
+    text-align: left;
+    padding-left: 25%;
+}
+.dropdow-list2
+{
+	width: 80%!important;
+	padding-left: 9%;
+	text-align: left;
+}
+.advantice
+{
+	text-align: left;
+	padding-left: 20px;
+}
+.render
+{
+	padding-left: 6px;
+}
+.seach-homepage
+{
+	margin-top: 18px;
+}
+.btn-seach-homepage
+{
+	text-align: right;
+
+}
 }
 @media only screen and (max-width: 1200px)
 {
@@ -810,14 +903,22 @@ body{
     position: absolute;
     margin-top: 25px;
     width: 100%;
+<<<<<<< HEAD
+    left: -13%;
+=======
     left: -18%;
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
     color: #717171;
 }
 .dropdow-list2 {
     width: 100%;
     height: 30px;
     position: absolute;
+<<<<<<< HEAD
+    left: 20px;
+=======
     left: 10px;
+>>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
     margin-top: 42px;
 }
 .dropdow-list1 {
@@ -827,6 +928,24 @@ body{
     left: 23px;
     margin-top: 25px;
 }
+ .dropdown-factilities
+ {  position: relative;
+    left: -5px;
+    top: -8px;
+    font-size: 16px;
 
-
+}
+.wpb_wrapper {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    }
+.vc_custom_1542167696382 {
+    padding: 10px 15px !important;
+}
+.    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    margin-top: 40px
+}
 /*end Hompage*/
