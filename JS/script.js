@@ -1,4 +1,35 @@
-﻿$(function() {
+﻿// dao nguoc
+$(document).ready(function(){
+	$(".more-content").click(function(){
+		$(".cut-gradient").fadeToggle();
+	});
+	$(".down-icon").click(function(){
+		$(".st-description").fadeToggle();
+	});
+	$(".down-icon").click(function(){
+		$(this).toggleClass('icondaonguoc');
+	});
+});
+$(document).ready(function(){
+	$(".down-icon1").click(function(){
+		$(this).toggleClass('icondaonguoc');
+	});
+	$(".down-icon1").click(function(){
+		$(".facilities").fadeToggle();
+	});
+});
+$(document).ready(function(){
+	$(".down-icon2").click(function(){
+		$(this).toggleClass('icondaonguoc');
+	});
+	$(".down-icon2").click(function(){
+		$(".roomsm").fadeToggle();
+		$(".roomlg").fadeToggle();
+	});
+});
+
+// end dao nguoc
+$(function() {
 	$('.btn-like').click(function(event) {
 		/* Act on the event */
 		$(this).addClass('daonguoc');

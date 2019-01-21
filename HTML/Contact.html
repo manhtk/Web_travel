@@ -3,20 +3,20 @@
 <head>
 	<title>Contact-Traveler</title>
 	<meta charset="utf-8">
-<<<<<<< HEAD
-=======
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
->>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
 	<link rel="stylesheet" type="text/css" href="../CSS/Contact.css">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
 	<link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="date.js"></script>
 	<script src="../JS/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/footer.css">
 
 
 </head>
@@ -77,21 +77,21 @@
 						<nav id="st-main-menu" >
 							<a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
 							<ul id="main-menu">
-								<li><a href="#"  >HOME</a></li>
+								<li><a href="../HTML/HomePage.html"  >HOME</a></li>
 								<li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="#">Full Map Layout</a></li>
 										<li><a href="#">Half Map Layout</a></li>
-										<li><a href="#">Sidebar layout</a></li>
+										<li><a href="../HTML/slidebar.html">Sidebar layout</a></li>
 										
 									</ul>
 								</li>
 								<li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
-										<li><a href="#">Hotel Detail 1</a></li>
+										<li><a href="../HTML/detailhotel1.html">Hotel Detail 1</a></li>
 										<li><a href="#">Hotel Detail 2</a></li>
 										<li><a href="#">Hotel Detail 3</a></li>
-										<li><a href="#">Room Detail 1</a></li>
+										<li><a href="../HTML/roomdetail1.html">Room Detail 1</a></li>
 									</ul>
 								</li>
 								<li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
@@ -103,57 +103,41 @@
 								</li>
 								<li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
-										<li><a href="#">About Us</a></li>
-										<li><a href="#">Blog</a></li>
+										<li><a href="../Hotel/aboutus.html">About Us</a></li>
+                    					<li><a href="../Hotel/hotel.html">Blog</a></li>
 										<li><a href="#">404 Page</a></li>
 										
 									</ul>
 								</li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="../HTML/Contact.html">CONTACT</a></li>
 							</ul>
 						</nav>
-
-						<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-						<script type="text/javascript"> 
-							$(document).ready(function(){
-								$('.menu1').click(function(){
-									$('nav').toggleClass('open'); 
-								});
-								$('.fa.fa-angle-left').click(function(){
-    //   		var t = $(this);
-
-				// t.parent().find('ul').next().slideToggle();
-				$('nav').removeClass('open'); });
-							})
-						</script>
-					</script>
+					</div>
+				</div>
+				<div class="header1right">
+					<form action="" method="get" class="header-search hidden-sm">
+						<input type="text" class="form-control" name="s" value="">
+						<i class="fa fa-search"></i>
+					</form>
+					<img class="ico_card" src="../Images/ico_card.svg">
 				</div>
 			</div>
-			<div class="header1right">
-				<form action="" method="get" class="header-search hidden-sm">
-					<input type="text" class="form-control" name="s" value="">
-					<i class="fa fa-search"></i>
-				</form>
-				<img class="ico_card" src="../Images/ico_card.svg">
-			</div>
 		</div>
-	</div>
-</div>
-</header>
-	<!-- end header -->
+	
+</header	<!-- end header -->
 		</div>
 		<div class="clear"></div>
 		</div>
 		<div id="st-content-wrapper">
 			<div class="banner1">
-				<div class="container">
+				<div class="container ctn-contact">
 					<h1>Contact</h1>
 				</div>
 		</div>
 		</div>
 
 		<div class="st-breadcrumb hidden-xs">
-			<div class="container">
+			<div class="container ctn-contact">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li class="active">Contact</li>
@@ -162,7 +146,7 @@
 		</div>
 
 <div class="clear"></div>
-<div class="container">
+<div class="container ctn-contact">
 	<div class="vc_row wpb_row st bg-holder">
 		<div class="row">
 			<div class="vc_empty_space">
@@ -171,7 +155,7 @@
 		</div>
 	</div>
 	<div class="vc_row wpb_row st bg-holder">
-		<div class="container">
+		<div class="container ctn-contact">
 			<div class="row">
 				<div class="content-text">
 				<div class="wpb_column column_container col-md-12"
@@ -194,7 +178,7 @@
 								<input type="text" class="frm-name" name="name" placeholder="Name" size="40px">
 							</span>
 						</div>
-						<div class="form-group">
+						<div class="form-group-contact">
 							<span class="from-email">
 								<input type="text" class="frm-email" name="email" placeholder="Email" size="40px">
 							</span>
