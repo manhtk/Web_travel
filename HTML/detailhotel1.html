@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -58,7 +61,7 @@
 				</div>
 				<div class="topbar-right">
 					<ul class="st-list topbar-items">
-						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Login</a></li>
+						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Sign up</a></li>
 						<li class="dropdown dropdown-currency hidden-sm hidden-xs">
 							<a href="#">EUR<i class="fa fa-angle-down"></i></a>
@@ -75,9 +78,67 @@
 							</ul>
 						</li>
 					</ul>
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog">	
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" >&times;</button>
+									<h4 class="modal-title">Login</h4>
+								</div>
+								<div class="modal-body relative">
+									<form action="" class="form" method="post">
+										<input type="hidden" name="action" value="st_login_popup">
+										<div class="form-group">
+											<input type="text" class="form-control" name="username" autocomplete="off" placeholder="Email or Username">
+											<i class="far fa-envelope input-icon"></i>                            
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password"><i class="fas fa-lock input-icon"></i>
+										</div>
+										<div class="form-group">
+											<input type="submit" name="submit" class="form-submit" value="Log In">
+										</div>
+										<div class="mt20 st-flex space-between st-icheck">
+											<div class="st-icheck-item">
+												<label for="remember-me" class="c-grey">
+													<input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
+												</label>
+											</div>
+											<a href="" class="st-link open-loss-password" data-toggle="modal">Forgot Password?</a>
+										</div>
+										<div class="advanced">
+											<p class="text-center f14 c-grey">or continue with</p>
+											<div class="row">
+												<div class="col-xs-12 col-sm-4">
+													<a onclick="return false" href="#" class="btn_login_fb_link st_login_social_link" data-channel="facebook">
+													<i class="fab fa-facebook"></i></a>
+												</div>
+												<div class="col-xs-12 col-sm-4">
+													<a onclick="return false" href="#" class="btn_login_gg_link st_login_social_link" data-channel="google">
+													<i class="fab fa-google-plus-g"></i></a>
+												</div>
+												<div class="col-xs-12 col-sm-4">
+													<a href="https://homap.travelerwp.com/social-login/twitter" onclick="return false" class="btn_login_tw_link st_login_social_link" data-channel="twitter">
+													<i class="fab fa-twitter"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="mt20 c-grey font-medium f14 text-center">
+											Do not have an account? <a href="" class="st-link open-signup" data-toggle="modal">Sign Up</a>
+										</div>
+									</form>
+									
+
+								</div>
+							</div>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="clearfix"></div>
 		<div class="head1">
 			<div class="container">
@@ -217,7 +278,7 @@
 					<!-- description -->
 					<div>
 						<h2 class="st-heading-section">Descripton
-							<a href="" class="pull-right toggle-section	"><i class="fa fa-angle-down" aria-hidden="true" style="border: none;"></i></a>
+							<i class="fa fa-angle-down down-icon" aria-hidden="true" style="border: none;"></i>
 						</h2>
 						<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120"  >
 							<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.
@@ -234,12 +295,6 @@
 								"moreText"  : "View more",
 								"lessText"  : "View less",
 							});
-							$(document).ready(function(){
-								$(".more-content").click(function(){
-									$(".cut-gradient").fadeToggle();
-
-								});
-							});
 						</script>
 					</div>
 					<!-- description -->
@@ -247,7 +302,7 @@
 					<!-- facilities -->
 					<div>
 						<h2 class="st-heading-section">Facilities
-							<a href="" class="pull-right toggle-section	"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<i class="fa fa-angle-down down-icon1" aria-hidden="true"></i>
 						</h2>
 						<div class="facilities" >
 							<div class="container-fuild">
@@ -339,9 +394,9 @@
 					<!--  -->
 					<div class="sroom">
 						<h2 class="st-heading-section">Rooms
-							<a href="" class="pull-right toggle-section	"><i style="border: none;" class="fa fa-angle-down" aria-hidden="true" ></i>
+							<i style="border: none;" class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
 						</h2>
-						<div class="container-fluid">
+						<div class="container-fluid roomsm">
 							<div class="row sheration">
 								<div class="col-xs-12 col-md-4 images">
 									<div class="image">
@@ -458,9 +513,9 @@
 					<!--  -->
 					<div class="broom">
 						<h2 class="st-heading-section">Rooms
-							<a href="" class="pull-right toggle-section	"><i class="fa fa-angle-down" aria-hidden="true" style="border: none;"></i></a>
+							<i class="fa fa-angle-down down-icon2" aria-hidden="true" style="border: none;"></i>
 						</h2>
-						<div class="">
+						<div class="roomlg">
 							<div class="row sheration"  >
 								<div class="col-sm-4 edit" ><img src="../Images/Hotel Stanford.jpg" width="270px" height="203px" alt=""></div>
 								<div class="col-sm-8">
@@ -930,7 +985,7 @@
 														<div class="people-group">
 
 															<span class="value">
-																<span class="adult search-element1">1 Adult</span>
+																<span class="adult search-element1">1 Adult</span> -
 
 																<span class="child search-element2">0 Child</span>
 															</span>

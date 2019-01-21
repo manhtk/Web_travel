@@ -10,6 +10,93 @@ body
 	font-family: 'Poppins', sans-serif ;
 
 }
+/*login*/
+.modal .modal-dialog .modal-content .modal-header .close
+{
+	font-size: 24px; 
+	color: #000;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title
+{
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+}
+.modal .modal-dialog .modal-content .modal .modal-content .modal-body {
+    padding: 0;
+    position: relative;
+}
+.modal .modal-content .modal-body .form-group {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.modal .modal-content .modal-body .form-group .form-control {
+    height: 45px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #DAE1E7;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.modal .modal-content .modal-body .form-group .input-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    color: #acb5be;
+    line-height: 0px;
+}
+.modal .modal-content .modal-body .form-submit {
+    height: 45px;
+    width: 100%;
+    background: #5191FA;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.st-flex.space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.st-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.modal .modal-content .modal-body .advanced {
+    background: #f9f9f9;
+    margin-top: 20px;
+    padding: 30px;
+}
+.f14 {
+    font-size: 14px !important;
+}
+.font-medium {
+    font-weight: 500 !important;
+}
+.modal .modal-dialog .modal-content 
+.modal .modal-dialog .modal-content 
+.modal .modal-dialog .modal-content 
+.modal .modal-dialog .modal-content 
+.modal .modal-dialog .modal-content 
+
+/*end login*/
 /*content*/
 #st-content-wrapper
 {
@@ -148,6 +235,7 @@ a.morelink
 	color: #5191FA;
 	text-align:left;
 	outline: none;
+	cursor: pointer;
 }
 #guests {
 	padding-top: 15px;
@@ -187,41 +275,7 @@ a.morelink
 	cursor: pointer;
 	font-size: 24px;
 }
-/*.field_people_room .people-dropdown {
-	z-index: 1;
-	padding: 20px 20px;
-	border: none;
-	border-radius: 0px;
-	color: gray;
-	min-width: 263px;
-	min-height: 138px;
-	position: absolute;
-	background: #fff;
-	top: 44px;
-	left: -25px;
-	text-align: center;
-}
-.field_people_room .people-dropdown .item .text .value {
-	font-size: 16px;
-	color: #5191fa;
-	font-weight: 500;
-}
-.field_people_room .people-dropdown .gmz-number-wrapper label
-{
-	font-size: 14px;
-	color: #5E6D77;
-    font-weight: 400;
-    float: left;
-}
-.field_people_room .people-dropdown .gmz-number-wrapper
-{
-	padding: 10px 0;
-}
-.field_people_room .people-dropdown .gmz-number-wrapper .text
-{
-	margin-right: 10px;
-	margin-left: 10px;
-}*/
+
 /*css book lich*/
 .field_people_room {
 	/*padding-left: 0.5px;*/
@@ -268,6 +322,7 @@ a.morelink
 	color: #5191FA;
 	display: block;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .field_people_room .people-dropdown {
@@ -621,10 +676,16 @@ font-size: 14px;
 /*description*/
 .st-heading-section
 {
+	position: relative;
 	margin-bottom: 20px;
 	font-size: 24px;
 	color: #1A2B48;
 	font-weight: 500;
+}
+.st-heading-section .down-icon
+{
+	position: absolute;
+	right: 0;
 }
 .st-heading-section .toggle-section {
 	font-size: 22px;
@@ -665,6 +726,11 @@ font-size: 14px;
 }
 /*end descripton*/
 /*Faciliti*/
+.st-heading-section .down-icon1
+{
+	position: absolute;
+	right: 0;
+}
 .facilities .fac
 {
 	margin-top: 20px;
@@ -681,9 +747,15 @@ font-size: 14px;
 .showmore
 {
 	color:#5191FA;
+	cursor: pointer;
 }
 /*end Faciliti*/
 /*rooms*/
+.st-heading-section .down-icon2
+{
+	position: absolute;
+	right: 0;
+}
 .sroom
 {
 	display: none;
@@ -1379,7 +1451,7 @@ font-size: 14px;
 }
 .st-description .cut-gradient {
 	position: absolute;
-	bottom: 0;
+	bottom: 30px;
 	left: 0;
 	height: 50px;
 	width: 100%;
@@ -1595,6 +1667,7 @@ font-size: 14px;
 	width: 100%;
 	position: relative;
 	display: block;
+	cursor: pointer;
 }
 .widgets .row
 {
