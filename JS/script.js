@@ -182,10 +182,11 @@ $('.gmz-number-wrapper').each(function () {
 		$button.parent().find(".text .value").text(newVal);
 		$('input[name="'+$button.parent().find("input").attr('name')+'"]', '.people-dropdown').trigger('change');
 	}
-	$('.people-inner').click(function(){
-		var t = $(this);
-		t.parent().find('.formbook').slideToggle();
-	});
+});
+
+$('.people-inner').click(function(){
+	var t = $(this);
+	t.parent().find('.formbook').slideToggle();
 });
 
 $('.check-like').each(function(){
@@ -296,7 +297,7 @@ $(document).ready(function(){
 	});
 });
 $(document).ready(function(){
-	$('.').slideUp();
+	//$('.formbook').slideUp();
 	var stt=0;
 	$("img .slide").each(function(){
 		if($(this).is(':visible'))
