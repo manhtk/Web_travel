@@ -705,13 +705,12 @@ i.fa.fa-bars.munu1{
 }
 .slidebar-filter .search-option
 {
-	position: relative;
-	line-height: 50px;
-	color: #5191FA;
-	font-size: 16px;
-	top: -15px;
-
-	margin-left: 142px;
+	
+    line-height: 50px;
+    color: #5191FA;
+    font-size: 16px;
+    top: -15px;
+    margin-left: 142px;
 
 }
 .slidebar-filter .search-list-option
@@ -776,13 +775,13 @@ i.fa.fa-bars.munu1{
 }
 .slidebar-filter  .search-check-button
 {
-	width: 230px;
-	height: 47px;
-	position: absolute;
-	padding-right: 13px;
-	top: -15px;
-	right: 143px;
-	line-height: 30px;
+	width: 100%;
+    height: 47px;
+   
+    padding-right: 13px;
+    top: -15px;
+    right: 143px;
+    line-height: 30px;
 
 }
 
@@ -812,10 +811,10 @@ i.fa.fa-bars.munu1{
 	/*margin-left: -15px;*/
 	padding-left: 34px;
 }
-.field_people_room .aaa
+.field_people_room .book-people
 {
 	margin-left: -15px;
-	width: 267px;
+	width: 210px;
 }
 .field_people_room .search-checkicon
 {
@@ -983,7 +982,7 @@ i.fa.fa-bars.munu1{
 /*END CONTENT TITLE*/
 .modern-search-result
 {
-	height: 1600px;
+	height: 1400px;
     margin-top: 30px;
     margin-left: 10px;
 }
@@ -1046,7 +1045,7 @@ i.fa.fa-bars.munu1{
 .modern-search-result .text
 {
 	position: absolute;
-	/*left: 3px;*/
+	
 	bottom: 200px;
 	color: white;
 	background-color: #19A1E5;
@@ -1066,9 +1065,9 @@ i.fa.fa-bars.munu1{
 
 	width: 100%;
 	margin-top: 30px;
-	/*margin-left: 630px;*/
+	
 	margin-bottom: 100px;
-	/*position: relative;*/
+	
 	padding-left: 100px;
 	position: relative;
 
@@ -1076,7 +1075,7 @@ i.fa.fa-bars.munu1{
 .modern-search-result-phantrang .phantrang-list
 {
 	text-align: center;
-	/*display: block;*/
+	
 	margin-top: -15px;
 	padding-left: 267px;
 	margin-bottom: 0px;
@@ -1089,7 +1088,7 @@ i.fa.fa-bars.munu1{
 {
 	border: 1px solid #5191FA !important;
 	width: 32px;
-	/*padding: 5px 10px;*/
+	
 	height: 32px;
 	line-height: 32px;
 	color: #5191FA !important;
@@ -1194,7 +1193,7 @@ i.fa.fa-bars.munu1{
 #footer_content
 {
 	padding-top: 61.3px;
-	/*padding-left: 40px;*/
+	
 	min-height: 450px;
 }
 #footer_content .footer_content_header
@@ -1443,10 +1442,7 @@ i.fa.fa-bars.munu1{
 
 
 	}
-	.slidebar-filter.search-optiontitle
-	{
-		position: absolute;
-	}
+	
 	.slidebar-filter  .search-check-button
 	{
 		width: 174px;
@@ -1483,7 +1479,7 @@ i.fa.fa-bars.munu1{
 		line-height: 10px;
 		padding-left: 34px;
 	}
-	.field_people_room .aaa
+	.field_people_room .book-people
 	{
 		margin-left: -15px;
 		width: 210.5px;
@@ -1528,7 +1524,7 @@ i.fa.fa-bars.munu1{
 		position: absolute;
 		bottom: 20px;
 		padding-left: 146px;
-		/* margin-left: 220px; */
+		
 	}
 	.field_people_room .formbook
 	{
@@ -1544,14 +1540,14 @@ i.fa.fa-bars.munu1{
 
 .st-hotel-result .toolbar-layout
 {
-	    /* width: 700px; */
+	    
     height: 29px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 .st-hotel-result .content-title 
 {
-	/*width: 545px;*/
+	
 	height: 26px;
 }
 .st-hotel-result h3
@@ -1570,8 +1566,8 @@ i.fa.fa-bars.munu1{
 .st-hotel-result .layout-title
 {
 	right: 55px;
-	position: absolute;
-	margin-top: -38px;
+    
+    margin-top: -15px;
 }
 .st-hotel-result .caret
 {
@@ -1590,20 +1586,20 @@ i.fa.fa-bars.munu1{
 {
 	font-size: 22px;
     color: gray;
-    position: absolute;
-    right: 61px;
-    top: -23px;
+  
+    right: 74px;
+    top: -1px;
 
 
 
 }
 .st-hotel-result .layout .fa-th-list
 {
-	position: absolute;
+	
     font-size: 22px;
     color: #5191FA;
-    right: 26px;
-    top: -23px;
+    right: 41px;
+    top: -1px;
 
 }
 .st-hotel-result .toolbar-layout .layout-list
@@ -1655,7 +1651,7 @@ i.fa.fa-bars.munu1{
 }
 .modern-search-result
 {
-	width: 728px;
+	width: 100%;
 	min-height: 500px;
 	margin-top: 30px;
 }
@@ -1813,16 +1809,14 @@ i.fa.fa-bars.munu1{
 		font-size: 25px;
 		top: -59px;
 		text-align: center;
-		/*left: 195px;*/
+		
 		position: absolute;
 	}
 	.mobile-list
 	{
 		margin-top: 30px;
 		height: 52px;
-		/*margin-top: -20px;*/
-		/*padding: 10px 20px;*/
-		/*margin-left: 150px;*/
+		
 		display: block;	
 	}
 
@@ -2296,7 +2290,7 @@ i.fa.fa-bars.munu1{
 		color: #1A2B50;
 	}
 
-	.modern-search-result .chiuchiu
+	.modern-search-result .heart
 	{
 		position: absolute;
 		right: 18px;
