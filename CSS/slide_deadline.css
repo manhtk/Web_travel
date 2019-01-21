@@ -1656,7 +1656,7 @@ i.fa.fa-bars.munu1{
 .modern-search-result
 {
 	width: 728px;
-	height: 1466px;
+	min-height: 500px;
 	margin-top: 30px;
 }
 .modern-search-result .thumb
@@ -1976,7 +1976,7 @@ i.fa.fa-bars.munu1{
 	.modern-search-result
 	{
 		width: 750px;
-		height: 1466px;
+		min-height: 500px;
 		margin-top: 30px;
 		/*margin-left: 10px;*/
 	}
