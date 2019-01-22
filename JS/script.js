@@ -219,6 +219,16 @@ $('.people-inner').click(function(){
 	var t = $(this);
 	t.parent().find('.formbook').slideToggle();
 });
+$(document).mouseup(function(e) 
+{
+    var container = $(".formbook");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.hide();
+    }
+});
 
 $('.check-like').each(function(){
 	var parent = $(this);
@@ -347,3 +357,4 @@ $(document).ready(function(){
  		$(".showfaciliti").slideToggle();
  	});
  });
+// hide forrm book 
