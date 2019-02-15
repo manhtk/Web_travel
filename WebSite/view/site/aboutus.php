@@ -1,3 +1,4 @@
+<?php $url='http://localhost:8888/WebTravel_MVC/Web_travel/WebSite/'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pages.css" />
+    <link rel="stylesheet" href="<?php echo $url; ?>public/css/pages.css" />
 
 	
 </head>
@@ -318,31 +319,31 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1420px;height:500px;overflow:hidden;">
             <div>
-                <img data-u="image" src="../Images/001.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/001.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/002.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/002.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/003.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/003.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/004.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/004.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/005.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/005.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/006.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/006.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/007.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/007.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/008.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/008.jpg" />
             </div>
             <div>
-                <img data-u="image" src="../Images/009.jpg" />
+                <img data-u="image" src="<?php echo $url; ?>libs/Images/009.jpg" />
             </div>
         </div>
         Bullet Navigator
@@ -381,7 +382,7 @@
     <div class="container">
             <div class="row">
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_9.jpg"alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_9.jpg"alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -393,7 +394,7 @@
                     <h4 class="img-overlay">CEO</h4>
                 </div>
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_7.jpg" alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_7.jpg" alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -405,7 +406,7 @@
                     <h4 class="img-overlay">CEO</h4>
                 </div>
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_3.jpg"alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_3.jpg"alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -417,7 +418,7 @@
                     <h4 class="img-overlay">CEO</h4>
                 </div>
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_4.jpg"alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_4.jpg"alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -431,7 +432,7 @@
             </div>
             <div class="row">
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_5.jpg"alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_5.jpg"alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -443,7 +444,7 @@
                     <h4 class="img-overlay">CEO</h4>
                 </div>
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_6.jpg"alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_6.jpg"alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -455,7 +456,7 @@
                     <h4 class="img-overlay">CEO</h4>
                 </div>
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_7.jpg"alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_7.jpg"alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -467,7 +468,7 @@
                     <h4 class="img-overlay">CEO</h4>
                 </div>
                 <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="../Images/people_8.jpg" alt="">
+                    <img class="image" src="<?php echo $url; ?>libs/Images/people_8.jpg" alt="">
                     <div class="overlay overlayFade">
                         <div class="text">
                             <a href="#"><i class="fa fa-facebook"></i></a>
