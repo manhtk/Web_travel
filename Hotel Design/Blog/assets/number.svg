@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>number</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog" transform="translate(-1368.000000, -74.000000)">
+            <g id="header" transform="translate(0.000000, 51.000000)">
+                <g id="cart" transform="translate(147.000000, 23.000000)">
+                    <g id="number" transform="translate(1221.000000, 0.000000)">
+                        <circle id="Oval-8" fill="#FA5636" cx="10" cy="10" r="10"></circle>
+                        <text id="12" font-family="Poppins-Medium, Poppins" font-size="12" font-weight="400" fill="#FFFFFF">
+                            <tspan x="4.438" y="15">12</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

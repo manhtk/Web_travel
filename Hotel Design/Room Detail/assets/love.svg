@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>love</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Room_Only_Detail_1" transform="translate(-960.000000, -241.000000)">
+            <g id="room-detail" transform="translate(0.000000, 211.000000)">
+                <g id="img">
+                    <g id="love" transform="translate(960.000000, 30.000000)">
+                        <rect id="Rectangle-3" fill="#1A2B48" opacity="0.5" x="0" y="0" width="40" height="40" rx="20"></rect>
+                        <g id="ico_love" transform="translate(10.000000, 10.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                            <g id="Group" transform="translate(0.000000, 1.666667)">
+                                <g id="love-it" stroke-width="1.4">
+                                    <path d="M10,16.5366667 L2.01,8.20333333 C0.569826849,6.76429273 0.212919205,4.56476124 1.12416667,2.74416667 C1.80385716,1.38517684 3.09534112,0.435723357 4.59521264,0.192376012 C6.09508416,-0.0509713322 7.62050608,0.441451964 8.695,1.51583333 L10,2.82 L11.305,1.51583333 C12.3794939,0.441451964 13.9049158,-0.0509713322 15.4047874,0.192376012 C16.9046589,0.435723357 18.1961428,1.38517684 18.8758333,2.74416667 C19.7858055,4.56398595 19.4293317,6.76190528 17.9908333,8.20083333 L10,16.5366667 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

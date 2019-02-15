@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_adults</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_3" transform="translate(-562.000000, -2232.000000)" stroke="#768090">
+            <g id="hotel-detail" transform="translate(0.000000, 211.000000)">
+                <g id="rooms" transform="translate(135.000000, 1234.000000)">
+                    <g id="1" transform="translate(0.000000, 701.000000)">
+                        <g id="Group-3" transform="translate(300.000000, 79.000000)">
+                            <g id="Group" transform="translate(120.000000, 0.000000)">
+                                <g id="ico_adults" transform="translate(8.000000, 8.000000)">
+                                    <g id="Regular">
+                                        <circle id="Oval" cx="5.6" cy="3.2" r="3.2"></circle>
+                                        <path d="M11.2,13.6 C11.2,10.5072054 8.6927946,8 5.6,8 C2.5072054,8 3.55271368e-16,10.5072054 0,13.6 L0,16 L2.4,16 L3.2,24 L8,24 L8.8,16 L11.2,16 L11.2,13.6 Z" id="Shape"></path>
+                                        <path d="M12.8,19.2 L14.4,19.2 L15.2,24 L20,24 L20.8,19.2 L24,19.2 L21.6,12 C20.8,9.6 19.8090667,8 17.6,8 C16.0812765,8.00148675 14.7301489,8.96474312 14.2336,10.4" id="Shape"></path>
+                                        <circle id="Oval" cx="17.6" cy="3.2" r="3.2"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

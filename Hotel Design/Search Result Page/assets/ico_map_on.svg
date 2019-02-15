@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="24px" viewBox="0 0 44 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_map_on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search_Result_2_List" transform="translate(-1263.000000, -423.000000)">
+            <g id="filter" transform="translate(135.000000, 421.000000)">
+                <g id="map-on-off" transform="translate(1079.000000, 2.000000)">
+                    <g id="ico_map_on" transform="translate(49.000000, 0.000000)">
+                        <rect id="Rectangle-31" fill="#5191FA" x="0" y="0" width="44" height="24" rx="12"></rect>
+                        <circle id="Oval-4" fill="#FFFFFF" cx="14" cy="12" r="8"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_bathroom-hair-dryer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_1" transform="translate(-336.000000, -1440.000000)" stroke="#768090">
+            <g id="hotel-detail" transform="translate(135.000000, 251.000000)">
+                <g id="facilities" transform="translate(0.000000, 1087.000000)">
+                    <g id="1" transform="translate(201.000000, 101.000000)">
+                        <g id="Group">
+                            <g id="ico_bathroom-hair-dryer">
+                                <polygon id="Shape" points="6 8.5 1 9.5 1 2.5 6 3.5"></polygon>
+                                <path d="M6,3.5 L18,1.527 C19.7143002,1.33839132 21.3855977,2.14615314 22.302868,3.60663716 C23.2201382,5.06712119 23.2220055,6.92338386 22.3076754,8.38571034 C21.3933452,9.84803682 19.7236762,10.6591594 18.009,10.474 L6,8.5" id="Shape"></path>
+                                <path d="M21.969,8.866 L21.076,17.583 C21.0327241,18.102635 20.5974308,18.5017989 20.076,18.5 L17.087,18.5 C16.8067561,18.5009671 16.5389662,18.384295 16.3488496,18.1783988 C16.1587331,17.9725025 16.0637379,17.6962785 16.087,17.417 L16.848,10.284" id="Shape"></path>
+                                <path d="M22.5,22.5 L20.5,22.5 C19.3954305,22.5 18.5,21.6045695 18.5,20.5 L18.5,18.5" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

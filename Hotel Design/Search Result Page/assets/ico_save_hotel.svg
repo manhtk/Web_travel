@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_save_hotel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5" stroke-linecap="round" stroke-linejoin="round">
+        <g id="hotel_list" transform="translate(-226.000000, -21.000000)" fill="#FFFFFF" stroke="#A0A9B2">
+            <g id="hotel">
+                <g id="like" transform="translate(226.000000, 20.000000)">
+                    <g id="ico_love_2">
+                        <g id="Group" transform="translate(0.000000, 2.000000)">
+                            <g id="love-it">
+                                <path d="M12,19.844 L2.412,9.844 C0.683792219,8.11715128 0.255503047,5.47771349 1.349,3.293 C2.16462859,1.66221221 3.71440934,0.522868028 5.51425517,0.230851215 C7.31410099,-0.0611655986 9.14460729,0.529742356 10.434,1.819 L12,3.384 L13.566,1.819 C14.8553927,0.529742356 16.685899,-0.0611655986 18.4857448,0.230851215 C20.2855907,0.522868028 21.8353714,1.66221221 22.651,3.293 C23.7429666,5.47678314 23.3151981,8.11428634 21.589,9.841 L12,19.844 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

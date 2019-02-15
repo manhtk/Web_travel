@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_grid_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Search_Result_1_Grid" transform="translate(-1285.000000, -920.000000)" stroke="#5191FA">
+            <g id="list-hotel" transform="translate(435.000000, 910.000000)">
+                <g id="ico_grid_active" transform="translate(850.000000, 10.000000)">
+                    <g id="layout-module">
+                        <rect id="Rectangle-path" x="0.625" y="0.6225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="8.125" y="0.6225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="15.625" y="0.6225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="0.625" y="8.1225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="8.125" y="8.1225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="15.625" y="8.1225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="0.625" y="15.6225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="8.125" y="15.6225" width="3.75" height="3.75" rx="1.5"></rect>
+                        <rect id="Rectangle-path" x="15.625" y="15.6225" width="3.75" height="3.75" rx="1.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

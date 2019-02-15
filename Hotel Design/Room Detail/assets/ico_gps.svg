@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_gps</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Room_Only_Detail_1" transform="translate(-959.000000, -2648.000000)" stroke="#A0A9B2">
+            <g id="room-detail" transform="translate(0.000000, 211.000000)">
+                <g id="maps" transform="translate(135.000000, 2265.000000)">
+                    <g id="map_control" transform="translate(814.000000, 121.000000)">
+                        <g id="location" transform="translate(0.000000, 41.000000)">
+                            <g id="Group" transform="translate(10.000000, 10.000000)">
+                                <g id="ico_gps">
+                                    <path d="M8.00133333,11.498 L8.00133333,15.498" id="Shape"></path>
+                                    <path d="M8.00133333,0.498 L8.00133333,4.498" id="Shape"></path>
+                                    <path d="M4.50133333,7.998 L0.501333333,7.998" id="Shape"></path>
+                                    <path d="M15.5013333,7.998 L11.5013333,7.998" id="Shape"></path>
+                                    <circle id="Oval" cx="8.00133333" cy="7.99866667" r="5.5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

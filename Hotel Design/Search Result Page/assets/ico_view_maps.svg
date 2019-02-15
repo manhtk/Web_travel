@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_view_maps</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Search_Result_1_Grid" transform="translate(-1384.000000, -472.000000)" stroke="#A0A9B2">
+            <g id="maps" transform="translate(0.000000, 350.000000)">
+                <g id="map_control" transform="translate(1374.000000, 30.000000)">
+                    <g id="view" transform="translate(0.000000, 82.000000)">
+                        <g id="Group" transform="translate(10.000000, 10.000000)">
+                            <g id="ico_view_maps">
+                                <ellipse id="Oval" cx="3.5" cy="12.8" rx="3" ry="3.2"></ellipse>
+                                <path d="M6.50000189,12.8 L6.5,2.93333333 C6.50127951,1.99841491 5.85394863,1.20668527 4.98542936,1.08091056 C4.11691009,0.955135853 3.29511701,1.53411416 3.06266667,2.43555556 L0.607333333,11.9502222" id="Shape"></path>
+                                <ellipse id="Oval" cx="12.5" cy="12.8" rx="3" ry="3.2"></ellipse>
+                                <path d="M9.49999811,12.8 L9.5,2.93333333 C9.49872049,1.99841491 10.1460514,1.20668527 11.0145706,1.08091056 C11.8830899,0.955135853 12.704883,1.53411416 12.9373333,2.43555556 L15.3926667,11.9480889" id="Shape"></path>
+                                <rect id="Rectangle-path" x="6.5" y="6.4" width="3" height="2.13333333"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

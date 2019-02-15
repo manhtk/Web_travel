@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="40px" viewBox="0 0 55 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_score_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search_Result_1_List" transform="translate(-1220.000000, -1010.000000)" fill="#5191FA">
+            <g id="list-hotel" transform="translate(435.000000, 910.000000)">
+                <g id="h1_l" transform="translate(0.000000, 70.000000)">
+                    <g id="hotel_list">
+                        <g id="hotel">
+                            <g id="score" transform="translate(703.000000, 30.000000)">
+                                <path d="M92.3703704,40 L83.5022782,40 C83.2283831,40 82.9664759,39.8876567 82.7777073,39.6892003 C82.3970725,39.2890309 82.4129084,38.656064 82.8130779,38.2754291 L89.3703704,32.0382366 L89.3703704,3 C89.3703704,1.34314575 90.7135161,3.04359188e-16 92.3703704,0 L133.777778,0 C135.434632,-4.71910575e-15 136.777778,1.34314575 136.777778,3 L136.777778,37 C136.777778,38.6568542 135.434632,40 133.777778,40 L92.3703704,40 Z" id="ico_score_small"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

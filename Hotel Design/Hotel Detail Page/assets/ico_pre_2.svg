@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="30px" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_pre_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-29.2%" y="-27.3%" width="158.3%" height="172.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_1" transform="translate(-169.000000, -602.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="hotel-detail" transform="translate(135.000000, 251.000000)">
+                <g id="img" transform="translate(0.000000, 114.000000)">
+                    <g id="nav" transform="translate(30.000000, 230.000000)">
+                        <g id="ico_pre_2" filter="url(#filter-1)" transform="translate(8.000000, 9.000000)">
+                            <g id="Group">
+                                <g id="Regular">
+                                    <path d="M23.25,11 L0.75,11" id="Shape"></path>
+                                    <polyline id="Shape" points="11.25 0.5 0.75 11 11.25 21.5"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

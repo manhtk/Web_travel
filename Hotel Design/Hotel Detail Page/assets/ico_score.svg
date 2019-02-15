@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="54px" viewBox="0 0 70 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_score</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detail_1" transform="translate(-1235.000000, -263.000000)" fill="#5191FA">
+            <g id="hotel-detail" transform="translate(135.000000, 251.000000)">
+                <g id="score" transform="translate(978.000000, 12.000000)">
+                    <path d="M145.869894,53.9686154 L145.901296,54 L123.481976,54 C122.929692,54 122.481976,53.5522847 122.481976,53 C122.481976,52.8717376 122.506651,52.7446729 122.554656,52.6257325 L128,39.133827 L128,3 C128,1.34314575 129.343146,3.04359188e-16 131,0 L189,0 C190.656854,-4.71910575e-15 192,1.34314575 192,3 L192,50.9686154 C192,52.6254696 190.656854,53.9686154 189,53.9686154 L145.869894,53.9686154 Z" id="ico_score"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

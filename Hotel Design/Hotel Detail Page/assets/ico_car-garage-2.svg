@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_car-garage-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_1" transform="translate(-135.000000, -1503.000000)" stroke="#768090">
+            <g id="hotel-detail" transform="translate(135.000000, 251.000000)">
+                <g id="facilities" transform="translate(0.000000, 1087.000000)">
+                    <g id="1" transform="translate(0.000000, 165.000000)">
+                        <g id="Group">
+                            <g id="ico_car-garage-2">
+                                <path d="M0.5,10.823 L11.326,0.939 C11.7078147,0.590641793 12.2921853,0.590641793 12.674,0.939 L23.5,10.823" id="Shape"></path>
+                                <path d="M6.5,21.323 L6.5,22.823 C6.5,23.0991424 6.27614237,23.323 6,23.323 L4,23.323 C3.72385763,23.323 3.5,23.0991424 3.5,22.823 L3.5,21.323" id="Shape"></path>
+                                <path d="M20.5,21.323 L20.5,22.823 C20.5,23.0991424 20.2761424,23.323 20,23.323 L18,23.323 C17.7238576,23.323 17.5,23.0991424 17.5,22.823 L17.5,21.323" id="Shape"></path>
+                                <path d="M20.9999984,21.323 C21.2761408,21.323 21.4999984,21.0991424 21.4999984,20.823 L21.4999984,17.53 C21.5002354,17.3973011 21.4477124,17.2699507 21.3539984,17.176 L19.4999986,15.323 L4.49999983,15.323 L2.64599999,17.176 C2.55228605,17.2699507 2.499763,17.3973011 2.5,17.53 L2.5,20.823 C2.5,21.0991424 2.72385761,21.323 2.99999996,21.323 L20.9999984,21.323 Z" id="Shape"></path>
+                                <path d="M19.5,15.3229992 L17.626,10.637 C17.5498686,10.4470323 17.3656548,10.3226384 17.161,10.323 L6.839,10.323 C6.63434525,10.3226384 6.45013137,10.4470323 6.374,10.637 L4.5,15.3229992" id="Shape"></path>
+                                <path d="M2.5,19.323 L7,19.323" id="Shape"></path>
+                                <path d="M17,19.323 L21.5,19.323" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

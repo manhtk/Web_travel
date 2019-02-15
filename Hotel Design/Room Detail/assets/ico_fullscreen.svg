@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_fullscreen</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Room_Only_Detail_1" transform="translate(-959.000000, -2606.000000)" stroke="#A0A9B2">
+            <g id="room-detail" transform="translate(0.000000, 211.000000)">
+                <g id="maps" transform="translate(135.000000, 2265.000000)">
+                    <g id="map_control" transform="translate(814.000000, 121.000000)">
+                        <g id="full">
+                            <g id="ico_fullscreen" transform="translate(10.000000, 10.000000)">
+                                <g id="expand-6">
+                                    <polyline id="Shape" points="15.5006667 4.99866667 15.5006667 0.498666667 11.0006667 0.498666667"></polyline>
+                                    <path d="M15.5006667,0.498666667 L5.50066667,10.4986667" id="Shape"></path>
+                                    <path d="M7.50066667,3.49866667 L1.50066667,3.49866667 C0.948381917,3.49866667 0.500666667,3.94638192 0.500666667,4.49866667 L0.500666667,14.4986667 C0.500666667,15.0509514 0.948381917,15.4986667 1.50066667,15.4986667 L11.5006667,15.4986667 C12.0529514,15.4986667 12.5006667,15.0509514 12.5006667,14.4986667 L12.5006667,8.49866667" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

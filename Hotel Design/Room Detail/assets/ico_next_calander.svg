@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_next_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Room_Only_Detail_1" transform="translate(-951.000000, -2067.000000)" stroke="#1A2B48">
+            <g id="room-detail" transform="translate(0.000000, 211.000000)">
+                <g id="Availability" transform="translate(135.000000, 1714.000000)">
+                    <g id="Calendar" transform="translate(480.000000, 142.000000)">
+                        <g id="month">
+                            <g id="Head">
+                                <g id="ico_next_1" transform="translate(336.000000, 0.000000)">
+                                    <g id="Group">
+                                        <g id="Regular" stroke-width="1.5">
+                                            <path d="M0.75,12 L23.25,12" id="Shape"></path>
+                                            <polyline id="Shape" points="12.75 22.5 23.25 12 12.75 1.5"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

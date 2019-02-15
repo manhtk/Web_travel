@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_beds</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_3" transform="translate(-503.000000, -2233.000000)" stroke="#768090">
+            <g id="hotel-detail" transform="translate(0.000000, 211.000000)">
+                <g id="rooms" transform="translate(135.000000, 1234.000000)">
+                    <g id="1" transform="translate(0.000000, 701.000000)">
+                        <g id="Group-3" transform="translate(300.000000, 79.000000)">
+                            <g id="Group" transform="translate(60.000000, 0.000000)">
+                                <g id="ico_beds" transform="translate(8.000000, 8.000000)">
+                                    <g id="hotel-double-bed-2">
+                                        <polyline id="Shape" points="19.473 4.5 21.5 4.5 23.5 16.5 0.5 16.5 2.5 4.5 4.778 4.5"></polyline>
+                                        <path d="M23.5,16.5 L23.5,21 C23.5,21.8284271 22.8284271,22.5 22,22.5 L2,22.5 C1.17157288,22.5 0.5,21.8284271 0.5,21 L0.5,16.5" id="Shape"></path>
+                                        <path d="M1.833,8.5 L22.167,8.5" id="Shape"></path>
+                                        <path d="M10.552,6.01 C10.5465543,6.28222935 10.3242838,6.50005446 10.052,6.5 L5.074,6.5 C4.92852283,6.50139289 4.78965327,6.43935417 4.69362055,6.33006893 C4.59758783,6.2207837 4.55391656,6.07509095 4.574,5.931 L4.852,3.931 C4.88666911,3.68209419 5.10070281,3.49759714 5.352,3.5 L10.094,3.5 C10.2283592,3.49997313 10.3570754,3.55402204 10.4511364,3.64996428 C10.5451975,3.74590653 10.5966872,3.87566769 10.594,4.01 L10.552,6.01 Z" id="Shape"></path>
+                                        <path d="M13.7,6.01 C13.7054457,6.28222935 13.9277162,6.50005446 14.2,6.5 L19.177,6.5 C19.3224772,6.50139289 19.4613467,6.43935417 19.5573794,6.33006893 C19.6534122,6.2207837 19.6970834,6.07509095 19.677,5.931 L19.399,3.931 C19.3643795,3.6824746 19.150918,3.49810206 18.9,3.5 L14.157,3.5 C14.0226408,3.49997313 13.8939246,3.55402204 13.7998636,3.64996428 C13.7058025,3.74590653 13.6543128,3.87566769 13.657,4.01 L13.7,6.01 Z" id="Shape"></path>
+                                        <path d="M2.5,4.5 L2.5,2 C2.5,1.17157288 3.17157288,0.5 4,0.5 L20,0.5 C20.8284271,0.5 21.5,1.17157288 21.5,2 L21.5,4.5" id="Shape"></path>
+                                        <path d="M3.5,22.5 L3.5,23.5" id="Shape"></path>
+                                        <path d="M20.5,22.5 L20.5,23.5" id="Shape"></path>
+                                        <path d="M10.605,4.614 L13.647,4.614" id="Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_maps_zoom_in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Search_Result_1_Grid" transform="translate(-1383.000000, -752.000000)" stroke="#A0A9B2">
+            <g id="maps" transform="translate(0.000000, 350.000000)">
+                <g id="maps-zoom" transform="translate(1374.000000, 393.000000)">
+                    <g id="+">
+                        <g id="ico_maps_zoom_in" transform="translate(10.000000, 10.000000)">
+                            <path d="M0.163265306,7.9982585 L15.8367347,7.9982585" id="Shape"></path>
+                            <path d="M8,15.8349932 L8,0.16152381" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

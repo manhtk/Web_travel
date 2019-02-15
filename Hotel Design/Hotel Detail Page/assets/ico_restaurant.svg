@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_restaurant</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_1" transform="translate(-535.000000, -1503.000000)" stroke="#768090">
+            <g id="hotel-detail" transform="translate(135.000000, 251.000000)">
+                <g id="facilities" transform="translate(0.000000, 1087.000000)">
+                    <g id="1" transform="translate(400.000000, 165.000000)">
+                        <g id="Group">
+                            <g id="ico_restaurant">
+                                <path d="M20.5,15.5 L23,15.5 C23.2761424,15.5 23.5,15.2761424 23.5,15 C23.433,7.2 21.853,0.5 20.5,0.5 L20.5,23.5" id="Shape"></path>
+                                <path d="M0.5,0.5 L0.5,5.50000003 C0.500000025,7.15685427 1.84314577,8.5 3.5,8.5 C5.15685423,8.5 6.49999998,7.15685427 6.5,5.50000003 L6.5,0.5" id="Shape"></path>
+                                <path d="M3.501,0.5 L3.501,23.5" id="Shape"></path>
+                                <circle id="Oval" cx="12.001" cy="16" r="6.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
