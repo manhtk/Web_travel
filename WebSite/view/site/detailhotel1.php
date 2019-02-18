@@ -1,4 +1,20 @@
-<?php $url='http://localhost:8888/WebTravel_MVC/Web_travel/WebSite/'; ?>
+<?php $url='http://localhost:8888/WebTravel_MVC/Web_travel/WebSite/'; 
+if (isset($_POST["form-submit"])) {
+ //lấy thông tin từ các form bằng phương thức POST
+ $username = $_POST["username"];
+ $fullname = $_POST["fullname"];
+ $email = $_POST["email"];
+ $password = $_POST["password"];
+ //Kiểm tra điều kiện bắt buộc đối với các field không được bỏ trống
+ if ($username == "" || $password == "" || $fullname == "" || $email == "") {
+ echo "bạn vui lòng nhập đầy đủ thông tin";
+ }else{
+ //thực hiện việc lưu trữ dữ liệu vào db
+ }
+ }
+?>
+
+require_once("db.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +80,7 @@
 				<div class="topbar-right">
 					<ul class="st-list topbar-items">
 						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
-						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="#myModal">Sign up</a></li>
+						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="#myModal1">Sign up</a></li>
 						<li class="dropdown dropdown-currency hidden-sm hidden-xs">
 							<a href="#">EUR<i class="fa fa-angle-down"></i></a>
 							<ul class="dropmenu">
@@ -80,6 +96,61 @@
 							</ul>
 						</li>
 					</ul>
+					<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" style="display: none;">
+              <div class="modal-dialog" role="document" style="max-width: 520px;">
+                <div class="modal-content relative">
+                  <div class="loader-wrapper">
+                    <div class="st-loader"></div>
+                  </div>
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="input-icon field-icon fa"></i>
+                      <h4 class="modal-title">Sign Up</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" class="form" method="post">
+                      <input type="hidden" name="action" value="st_registration_popup">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="username" autocomplete="off" placeholder="Username">
+                        <i class="input-icon field-icon fa"></i>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="fullname" autocomplete="off" placeholder="Fullname">
+                        <i class="input-icon field-icon fa"></i>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email">
+                        <i class="input-icon field-icon fa"></i>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+                        <i class="input-icon field-icon fa"></i>
+                      </div>
+                      <div class="form-group">
+                        <p class="f14 c-grey">Select user Type</p>
+                        <label for="normal-user" class="block">
+                          <input checked="" id="normal-user" type="radio" class="mr5" name="register_as" value="normal">
+                          <span class="c-main" data-toggle="tooltip" data-placement="right" title="" data-original-title="Used for booking services">Normal User</span>
+                        </label>
+                        <label for="partner-user" class="block">
+                          <input checked="" id="partner-user" type="radio" class="mr5" name="register_as" value="partner">
+                          <span class="c-main" data-toggle="tooltip" data-placement="right" title="" data-original-title="Used for upload and booking services">Partner User</span>
+                        </label>
+                      </div>
+                      <div class="form-group st-icheck-item">
+                                <label for="term">
+                                                                        <input id="term" type="checkbox" name="term" class="mr5"> I have read and accept the <a class="st-link" href="https://homap.travelerwp.com/about-us/">Terms and Privacy Policy</a>                                    <span class="checkmark fcheckbox"></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="form-submit" value="Sign Up">
+                            </div>
+                            <div class="message-wrapper mt20"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
 					<div class="modal fade" id="myModal" role="dialog">
 						<div class="modal-dialog">	
 							<!-- Modal content-->
