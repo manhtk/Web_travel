@@ -12,9 +12,6 @@
         <h1>Register</h1>
     </div>
     <form action="register.php" method="POST">
-        <?php
-        include ('errors.php');
-        ?>
         <div class="input-group">
             <label for="">Username</label>
             <input type="text" name="username"  value="<?php echo $username; ?> " />

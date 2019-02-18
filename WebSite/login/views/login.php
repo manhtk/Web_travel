@@ -13,13 +13,14 @@
     </div>
     <form action="" method="POST">
         <input type="hidden" name="s" value="1">
+
         <div class="input-group">
             <label for="">Username</label>
-            <input type="text" name="username" />
+            <input type="text" name="username" required  "/>
         </div>
         <div class="input-group">
             <label for="">Password</label>
-            <input type="text" name="password_1" />
+            <input type="password" name="password_1" required  "/>
         </div>
         <div class="input-group">
             <button type="submit" name="login" class="btn">Login</button>
