@@ -1,4 +1,4 @@
-
+<?php include_once "public/skill/header.php" ?>
 <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
@@ -34,7 +34,7 @@
                             <td><?php echo $value['people'] ?></td>
                             <td><?php echo $value['bed'] ?></td>
                             <td><?php echo $value['size'] ?></td>
-                            <td><?php echo $value['images'] ?></td>
+                            <td ><img src="<?php echo $value['images'] ?>" style="width: 50px; height:auto;"></td>
                             <td><?php echo $value['content'] ?></td>
                             <td><?php echo $value['status'] ?></td>
                             <td>
@@ -46,3 +46,4 @@
                  
                 </table>
               </div>
+     <?php include_once "public/skill/footer.php" ?>         
