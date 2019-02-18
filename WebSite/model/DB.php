@@ -63,16 +63,24 @@ class Database
     }
 
     
-        public function insertData($table, $data)
-        {
+        // public function insertData($hotel_id, $room_name, $typeroom, $price, $point, $people, $bed, $size, $images, $content, $status)
+        // {
+        //     $sql = ""
 
-            $columns = implode(", ", array_keys($data));
-            $escaped_values = array_map(array($this->connect(), 'real_escape_string'), array_values($data));
-            $values = implode(", ", $escaped_values);
-            $query = "INSERT INTO $table($columns) VALUES ($values)";
-            return (array)$this->excute($query);
+        // //    $sql = "SELECT * FROM $table";
+        // // $db = new Database();
+        // // $sql = mysqli_query($db->connect(),$sql);
+        // // while ($result = mysqli_fetch_field($sql)) {
+        // //     $columns = $result->name;
+        // //     $datas[] = $columns;
+        // // }
+        // // $key = implode(", ", $datas);
+        // // $values = array_values($data);
+        // // $val = "'".implode("', '", $values) . "'";
+        // // $query = "INSERT INTO $table($key) VALUES($val)";
+        // // return $this->excute($query);
 
-        }
+        // }
     /*
     public function insertData($city_id, $hotel_name, $owner, $description, $images, $starnum, $address)
     {
@@ -80,6 +88,22 @@ class Database
         return $this->excute($sql);
     }
     */
+    public function insertData($table, $data)
+    {
+        $sql = "SELECT * FROM $table";
+        $db = new Database();
+        $sql = mysqli_query($db->connect(),$sql);
+        while ($result = mysqli_fetch_field($sql)) {
+            $columns = $result->name;
+            $datas[] = $columns;
+        }
+        $key = implode(", ", $datas);
+        $values = array_values($data);
+        $val = "'".implode("', '", $values) . "'";
+        $query = "INSERT INTO $table($key) VALUES($val)";
+        return $this->excute($query);
+
+    }
     public
     function updateData()
     {
