@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Danh sach khach san</title>
-</head>
-<body>
-    <div class="danhsach">
-        <h3>List Setting Page</h3>
-<table border="1px">
+<div class="table-responsive">
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" >
     <thead>
             <tr>
                 <th>STT</th>
                 <th>Date Format</th>
                 <th>Logo</th>
-                <th>Address Admin Email</th>
+                <th>Admin Email</th>
                 <th>Phân Trang</th>
                 <th>Tùy Chọn</th>
             </tr>
@@ -25,14 +17,12 @@
         <tr>
             <td><?php echo $value['id'] ?></td>
             <td><?php echo $value['dateformat'] ?></td>
-            <td><?php echo $value['logo'] ?></td>
+            <td style="text-align: center;" ><img src="<?php echo $value['logo']?>"  style="width: 50px; height: auto;" ></td>
             <td><?php echo $value['admin_email'] ?></td>
             <td><?php echo $value['paging'] ?></td>
-            <td><a href="admin.php?controller=setting&action=update&id=<?php echo $value['id'] ?>">Edit</a></td>
+            <td><a href="admin.php?controller=setting&action=update&id=<?php echo $value['id'] ?>">Update</a></td>
         </tr>
     <?php } ?>
     </tbody>
 </table>
 </div>
-</body>
-</html>

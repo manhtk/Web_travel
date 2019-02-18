@@ -7,9 +7,7 @@ if (isset($_GET['action'])) {
 }
 
 switch ($action) {
-    case "add":
-        {
-        }
+    
     case "update":
         {
             if (isset($_GET['id'])) {
@@ -18,13 +16,16 @@ switch ($action) {
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_setting'])) {
                     $val = $_POST["setting"];
-                    if (!$db->updateData($table, $id, $val)) {
+                    if ($db->updateData($table, $id, $val)) {
+                        echo "Update record success";
+                        echo "<br>";
+                        echo "<a href='admin.php?controller=setting'>Home</a>";
+                        break;
+                    } else {
                         echo "Can't update data because duplicate id of hotel. Please check again!";
                         echo "<br>";
                         echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
                         break;
-                    } else {
-                        header("location: admin.php?controller=setting");
                     }
                 }
             }
@@ -32,10 +33,7 @@ switch ($action) {
             require_once("view/setting/update_setting.php");
             break;
         }
-    case "delete":
-        {
-
-        }
+    
     default:
         {
 
