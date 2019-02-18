@@ -8,7 +8,7 @@
             $_SESSION['currUser']=$row['username'];
             if ($row['role']==1 || $row['role']==2 ) {
                 $_SESSION['currAdmin'] = $row['role'];
-                include ('../admin.php');
+                include ('../admin.php') ;
             }
             else
             {
@@ -16,8 +16,7 @@
             }
         }else
         {
-            echo "<script>alert('Tên đăng nhập hoặc mật khẩu không đúng')</script> ";
-
+            echo "<script>alert('Tên đăng nhập hoặc mật khẩu không đúng')</script>    ";
         }
     }
 ?>

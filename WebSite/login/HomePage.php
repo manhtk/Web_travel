@@ -1,4 +1,3 @@
-<?php $url='http://localhost:63342/Web_travel/WebSite/login/'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +12,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="<?php echo $url ;?>../../public/css/menu.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url ;?>../../public/css/footer.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url ;?>../../public/css/HomePage.css">
-	<script type="text/javascript" src="<?php echo $url ;?>../../public/js/khanh.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/HomePage.css">
+	<script type="text/javascript" src="../JS/khanh.js"></script>	
 
 
 <!-- chọn ngày -->
