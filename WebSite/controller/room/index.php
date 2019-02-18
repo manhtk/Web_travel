@@ -19,6 +19,7 @@ switch ($action) {
 
         }
      case 'list':
+        
               $tbl = "room";
             $data = $db->getAllData($tbl);
              require_once('view/room/list_room.php');

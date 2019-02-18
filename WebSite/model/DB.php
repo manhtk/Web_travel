@@ -62,7 +62,7 @@ class Database
         return $num;
     }
 
-    /*
+    
         public function insertData($table, $data)
         {
 
@@ -73,13 +73,13 @@ class Database
             return (array)$this->excute($query);
 
         }
-    */
+    /*
     public function insertData($city_id, $hotel_name, $owner, $description, $images, $starnum, $address)
     {
         $sql = "INSERT INTO 'hotel'('hotel_id', 'city_id','hotel_name','owner','description','images','starnum','address') VALUES(NULL, $city_id, $hotel_name, $owner, $description, $images, $starnum, $address)";
         return $this->excute($sql);
     }
-
+    */
     public
     function updateData()
     {
