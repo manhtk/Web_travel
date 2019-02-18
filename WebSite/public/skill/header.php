@@ -87,7 +87,7 @@
                 </li>
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="?controller=setting">
                   
                     <span>Setting</span></a>
                 </li>
