@@ -24,7 +24,7 @@ $db->connect();
 
     case "setting":
         {
-            require_once('controller/Setting/index.php');
+            require_once('controller/setting/index.php');
             break;
         }
     default:

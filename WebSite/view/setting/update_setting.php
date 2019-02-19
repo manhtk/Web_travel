@@ -15,7 +15,14 @@
                 <tr>
                     <td>Date Format</td>
                 
-                    <td><input type="text" name="setting[]" value="<?php echo $value['dateformat'] ?>" placeholder="date format"></td>
+                    <td><select>
+                        <option><?php echo $value['dateformat'] ?></option>
+                        <option>yyyy/mm/dd</option>
+                        <option>yyyy/dd/mm</option>
+                        <option>mm/dd/yyyy</option>
+                        <option>dd/mm/yyyy</option>
+                        <option>mm/yyyy/dd</option>
+                    </select></td>
                 </tr>
                 <tr>
                     <td>Logo</td>

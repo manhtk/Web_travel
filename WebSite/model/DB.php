@@ -83,7 +83,6 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         while ($res_2 = mysqli_fetch_array($res_1)) {
             $datas2 = $res_2;
         }
-        echo var_dump($query);
         return $datas2;
     }
 
@@ -203,6 +202,32 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
             }
         }
         return $data;
+    }
+
+    // phan trang
+    public function phantrang($tbl)
+    {
+        //số tin trên 1 trang
+        $query = "SELECT paging from setting";
+        $count = $this->excute($query);
+        while($res=mysqli_fetch_assoc($count)){
+                   $sotin = implode(" ",$res);
+        }
+        echo $sotin;
+        
+
+        //Tổng số lượng tin
+
+        $sql = "SELECT * from $tbl";
+        $total = $this->excute($sql);
+        $count = $this->numRows();
+        echo $count;  
+
+        //tìm số lượng trang
+        $page = ceil($count/$sotin);
+        echo $page;
+
+
     }
 
 }

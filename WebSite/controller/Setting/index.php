@@ -34,13 +34,18 @@ switch ($action) {
             require_once("view/setting/update_setting.php");
             break;
         }
-    
+        case 'phantrang':
+        {
+            $table = 'room';
+            $db->phantrang($table);
+            break;
+        }
     default:
         {
 
             $tbl = "setting";
             $data = $db->getAllData($tbl);
-            require_once('View/setting/setting.php');
+            require_once('view/setting/setting.php');
             break;
 
         }
