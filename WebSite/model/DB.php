@@ -99,10 +99,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         while ($res_2 = mysqli_fetch_array($res_1)) {
             $datas2 = $res_2;
         }
-<<<<<<< HEAD
-=======
-       
->>>>>>> 3e1158e7e3f4d7744eddb1fa7e2d2b5ace6892aa
+
         return $datas2;
     }
 
