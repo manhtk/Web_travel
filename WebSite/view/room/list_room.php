@@ -33,11 +33,11 @@
                             <td><?php echo $value['bed'] ?></td>
                             <td><?php echo $value['size'] ?></td>
                             <td ><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height:auto;"></td>
-                           
+                           <td><?php echo $value['room_images'] ?></td>
                             <td><?php echo $value['content'] ?></td>
                             <td><?php echo $value['status'] ?></td>
                             <td>
-                                <input  type="submit" name="Xóa" value="Xóa"><input type="submit" name="Sửa" value="Sửa">
+                                <input  type="submit" name="Xóa" value="Xóa" ><input type="submit" name="Sửa" value="Sửa">
                             </td>
                         </tr>
                         <?php } ?>
