@@ -51,6 +51,22 @@ class Database
         }
         return $data;
     }
+    public function getALLDataBase($table1,$table2,$id)
+    {
+        $query = "SELECT * FROM $table1 INNER JOIN $table2 WHERE $table1.$id = $table2.$id ";
+        $this->excute($query);
+        if ($this->numRows() == 0) {
+            $data = 0;
+        } else {
+            while ($datas = $this->getData()) {
+                $data[] = $datas;
+            }
+        }
+    
+
+        return $data;
+
+    }
 
     public function getPrimaryKey($table)
     {
@@ -83,7 +99,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         while ($res_2 = mysqli_fetch_array($res_1)) {
             $datas2 = $res_2;
         }
-        echo var_dump($query);
+       
         return $datas2;
     }
 

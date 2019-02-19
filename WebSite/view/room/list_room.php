@@ -4,7 +4,7 @@
                   <thead>
                     <tr>
                         <th>RoomID</th>
-                        <th>HotelID</th>
+                        <th>Hotel</th>
                         <th>Room</th>
                         <th>TypeRoom</th>
                         <th>Price</th>
@@ -16,8 +16,6 @@
                         <th>Content</th>
                         <th>Status</th>
                         <th></th>
-
-
                     </tr>
                 </thead>
                 <tbody>
@@ -26,7 +24,7 @@
                         ?>
                         <tr>
                             <td><?php echo $value['room_id'] ?></td>
-                            <td><?php echo $value['hotel_id'] ?></td>
+                            <td><?php echo $value['hotel_name'] ?></td>
                             <td><?php echo $value['room_name'] ?></td>
                             <td><?php echo $value['typeroom'] ?></td>
                             <td><?php echo $value['price'] ?></td>
@@ -34,11 +32,12 @@
                             <td><?php echo $value['people'] ?></td>
                             <td><?php echo $value['bed'] ?></td>
                             <td><?php echo $value['size'] ?></td>
-                            <td ><img src="<?php echo $value['images'] ?>" style="width: 50px; height:auto;"></td>
+                            <td ><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height:auto;"></td>
+                           
                             <td><?php echo $value['content'] ?></td>
                             <td><?php echo $value['status'] ?></td>
                             <td>
-                                <input type="submit" name="Xóa" value="Xóa"><input type="submit" name="Sửa" value="Sửa">
+                                <input  type="submit" name="Xóa" value="Xóa"><input type="submit" name="Sửa" value="Sửa">
                             </td>
                         </tr>
                         <?php } ?>
