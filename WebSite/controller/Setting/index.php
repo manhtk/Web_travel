@@ -28,6 +28,7 @@ switch ($action) {
                         break;
                     }
                 }
+                
             }
 
             require_once("view/setting/update_setting.php");
