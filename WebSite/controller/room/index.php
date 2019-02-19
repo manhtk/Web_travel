@@ -12,6 +12,14 @@ switch ($action) {
             
     case "update":
         {
+          $tbl2 = "room";
+               $tbl1 = "hotel";
+               $id = "hotel_id";
+            
+            $data = $db->getALLDataBase($tbl1,$tbl2,$id);
+
+            require_once 'view/room/edit_room.php';
+            break;
 
         }
     case "delete":
@@ -19,17 +27,24 @@ switch ($action) {
 
         }
      case 'list':
-        
-              $tbl = "room";
-            $data = $db->getAllData($tbl);
+          
+              $tbl2 = "room";
+               $tbl1 = "hotel";
+               $id = "hotel_id";
+            
+            $data = $db->getALLDataBase($tbl1,$tbl2,$id);
              require_once('view/room/list_room.php');
             break;   
     default:
         {
-            $tbl = "room";
-            $data = $db->getAllData($tbl);
-            require_once('view/room/list_room.php');
-            break;
+            
+              $tbl2 = "room";
+               $tbl1 = "hotel";
+               $id = "hotel_id";
+
+            $data1 = $db->getALLDataBase($tbl1,$tbl2,$id);
+             require_once('view/room/list_room.php');
+            break;   
         }
 }
 ?>
