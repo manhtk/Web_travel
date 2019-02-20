@@ -284,6 +284,22 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
 
         return $page;
     }
+    //Phương thức lấy dữ liệu cần sửa theo id
+    public function getDataID($table,$id)
+    {
+        $sql = "SELECT * FROM $table WHERE id = '$id";
+        $this->excute($sql);
+        if($this->numRows()!=0)
+        {
+            $data = mysqli_fetch_array($this->result);
+        }
+        else
+        {
+            $data = 0;
+        }
+        return $data;
+        
+    }
 
 
 }
