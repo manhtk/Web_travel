@@ -1,5 +1,5 @@
 <?php
-
+include_once 'model/DB.php';
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
@@ -32,12 +32,9 @@ switch ($action) {
      if(isset($_GET['id'])){
            $id = $_GET['id'];
               $tbl = "room";
-            $dataID = $db->getDataID($tbl,$id);
+              $dataID = $db->getDataID($tbl,$id);
             echo var_dump($dataID);
-            
         }
-
-
             require_once 'view/room/edit_room.php';
             break;
 
@@ -53,7 +50,6 @@ switch ($action) {
                $id = "hotel_id";
             
             $limit = $db->getPag();
-            echo $limit;
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
             if(empty($paged) || !is_numeric((float)$paged))
                 $paged = 1;

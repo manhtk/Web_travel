@@ -64,7 +64,6 @@ class Database
         {
             
             $query = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$id = $table2.$id LIMIT {$offset},{$limit}";
-            echo var_dump($query);
         }
         elseif($limit !=''){
             echo '123';
@@ -287,7 +286,8 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
     //Phương thức lấy dữ liệu cần sửa theo id
     public function getDataID($table,$id)
     {
-        $sql = "SELECT * FROM $table WHERE id = '$id";
+        $sql = "SELECT * FROM $table WHERE room_id = '$id";
+        echo var_dump($sql);
         $this->excute($sql);
         if($this->numRows()!=0)
         {
@@ -297,7 +297,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         {
             $data = 0;
         }
-      
+
         return $data;
         
     }
