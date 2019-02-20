@@ -282,7 +282,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
     public function getDataID($table,$id)
     {
         $sql = "SELECT * FROM $table WHERE room_id = '$id";
-        echo var_dump($sql);
+       
         $this->excute($sql);
         if($this->numRows()!=0)
         {

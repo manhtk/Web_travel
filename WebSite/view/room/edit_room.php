@@ -1,6 +1,4 @@
-<?php foreach ($dataID as $value) {
-	echo $value['room_id'];
-} ?>
+
 <div class="row" >
 	<div class="col-md-4">
 		<form>
