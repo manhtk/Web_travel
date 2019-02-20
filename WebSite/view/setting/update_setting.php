@@ -20,7 +20,7 @@
                 <tr>
                     <td>Logo</td>
                 
-                    <td><input type="text" name="setting[]" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
+                    <td><input type="file" name="setting[]" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
                 </tr>
                 <tr>
                     <td>Email Admin</td>

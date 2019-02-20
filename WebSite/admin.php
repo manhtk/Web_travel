@@ -17,23 +17,27 @@ $db->connect();
    	$controller = "";
    }
  switch ($controller) {
-   	case 'room':{
-   		require_once('controller/room/index.php');
-   		break;
-      }
+      case 'room':{
+       require_once('controller/room/index.php');
+       break;
+     }
 
-    case "setting":
-        {
-            require_once('controller/setting/index.php');
-            break;
-        }
+      case "setting":
+     {
+      require_once('controller/setting/index.php');
+      break;
+    }
+      case 'hotel':{
+        require_once('controller/hotel/index.php');
+      break;
+    }
     default:
-   {
-   require_once ('admin.php');
-   break;
-   }  
-   	
-   }
+    {
+     require_once ('admin.php');
+     break;
+    }  
+
+    }
    
 
  ?>
