@@ -81,7 +81,6 @@ class Database
             }
         }
     
-
         return $data;
 
     }

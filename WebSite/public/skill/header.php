@@ -60,7 +60,7 @@
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             
-                            <a class="collapse-item" href="#">All Hotel</a>
+                            <a class="collapse-item" href="?controller=hotel&action=list">All Hotel</a>
                             <a class="collapse-item" href="utilities-border.html">Add Hotel</a>
                             
                         </div>

@@ -54,3 +54,14 @@
     <td><a href="admin.php?controller=hotel&action=add">Add new data</td>
     <input type='submit' name='delete' onclick="return confirm('Are you sure?')" value='Delete'>
 </form>
+<?php 
+    $page = $db->phantrang('room');
+?>
+
+<div class="test-phantrang">
+    <?php
+    for ($i=1; $i<=$page ; $i++) { 
+        echo "<a href='admin.php?controller=hotel&action=list&page=$i'>Page $i</a> - ";
+    }
+    ?>
+</div>

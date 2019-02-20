@@ -22,7 +22,7 @@ switch ($action) {
                 </script>";
                 }
             }
-            require_once("View/hotel/add_hotel.php");
+            require_once("view/hotel/add_hotel.php");
             break;
         }
     case "update":
@@ -46,7 +46,7 @@ switch ($action) {
                     }
                 }
             }
-            require_once("View/hotel/update_hotel.php");
+            require_once("view/hotel/update_hotel.php");
             break;
         }
     case
@@ -76,10 +76,20 @@ switch ($action) {
         }
     case "list":
         {
-            $tbl = "hotel";
-            $tbl1 = "city";
-            $data = $db->combineTable($tbl, $tbl1, 'hotel_city', 'city_id');
-            require_once('View/hotel/list_hotel.php');
+            $tbl2 = "city";
+               $tbl1 = "hotel";
+               $id = "city_id";
+            
+            $limit = $db->getPag();
+            $paged = isset($_GET['page']) ? $_GET['page'] : 1;
+            if(empty($paged) || !is_numeric((float)$paged))
+                $paged = 1;
+
+            $offset = ($paged - 1) * $limit;
+
+            $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
+            $count = $db->phantrang($tbl2);
+            require_once("view/hotel/list_hotel.php");
             break;
         }
 
@@ -93,7 +103,7 @@ switch ($action) {
                 $data = $db->combineTable($tbl, $tbl1, $name, 'city_id');
                 $data_Search = $db->searchData($name, 'hotel_name', $key);
             }
-            require_once("View/hotel/search_hotel.php");
+            require_once("view/hotel/search_hotel.php");
             break;
         }
 
@@ -124,7 +134,7 @@ switch ($action) {
             $tbl = "hotel";
             $tbl1 = "city";
             $data = $db->combineTable($tbl, $tbl1, 'hotel_city', 'city_id');
-            require_once('View/hotel/list_hotel.php');
+            require_once('view/hotel/list_hotel.php');
             break;
         }
 } ?>
