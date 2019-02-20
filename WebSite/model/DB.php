@@ -66,11 +66,9 @@ class Database
             $query = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$id = $table2.$id LIMIT {$offset},{$limit}";
         }
         elseif($limit !=''){
-            echo '123';
             $query = "SELECT * FROM $table LIMIT {$offset}, {$limit}";  
         }else
         {
-            echo'789';
             $query = "SELECT * FROM $table1";
         }
 
