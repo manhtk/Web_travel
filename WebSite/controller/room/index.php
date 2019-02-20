@@ -33,8 +33,10 @@ switch ($action) {
            $id = $_GET['id'];
               $tbl = "room";
             $dataID = $db->getDataID($tbl,$id);
+            echo var_dump($dataID);
             
         }
+
 
             require_once 'view/room/edit_room.php';
             break;
@@ -61,7 +63,7 @@ switch ($action) {
             $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
 
             $count = $db->phantrang($tbl2);
-            require_once("view/setting/test-phantrang.php");
+            require_once("view/room/list_room.php");
             break;
     default:
         {

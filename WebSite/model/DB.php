@@ -297,6 +297,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         {
             $data = 0;
         }
+      
         return $data;
         
     }
