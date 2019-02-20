@@ -10,7 +10,7 @@
         <tr>
             <td>Id hotel</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value["hotel_id"] ?>" placeholder="Id hotel"></td>
+        <td><input type="text" name="hotel[]" value="<?php echo $value["hotel_id"] ?>" placeholder="Id hotel" /></td>
         <tr>
             <td>Id city</td>
         </tr>

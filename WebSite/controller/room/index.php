@@ -29,13 +29,27 @@ switch ($action) {
         
             
     case "update": {  
-     if(isset($_GET['id'])){
-           $id = $_GET['id'];
-              $tbl = "room";
-              $dataID = $db->getDataID($tbl,$id);
-            
-        }
-            require_once 'view/room/edit_room.php';
+           if (isset($_GET['id'])) {
+                $table = 'room';
+                $id = $_GET['id'];
+                $value = $db->getDataUpdate($table, $id);
+                if (isset($_POST['update_room'])) {
+                    $val = $_POST["room"];
+                    if ($db->updateData($table, $id, $val)) {
+                        echo "
+                    <script>
+                        window.location.href ='admin.php?controller=room&action=list';
+                </script>";
+                    } else {
+                        echo "Can't update data because duplicate id of hotel. Please check again!";
+                        echo "<br>";
+                        echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+                        break;
+                    }
+                }
+            }
+     
+            require_once 'view/room/update_room.php';
             break;
 
         }
