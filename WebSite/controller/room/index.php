@@ -10,13 +10,13 @@ switch ($action) {
     case "add":
         
             
-    case "update":
-        {
-          $tbl2 = "room";
-               $tbl1 = "hotel";
-               $id = "hotel_id";
+    case "update": {  
+     if(isset($_GET['id'])){
+           $id = $_GET['id'];
+              $tbl = "room";
+            $dataID = $db->getDataID($tbl,$id);
             
-            $data = $db->getALLDataBase($tbl1,$tbl2,$id);
+        }
 
             require_once 'view/room/edit_room.php';
             break;

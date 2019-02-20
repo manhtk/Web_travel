@@ -1,5 +1,8 @@
 <?php include_once "public/skill/header.php" ?>
 <div class="table-responsive">
+    <div style="text-align: center;">
+        <h2> List Room</h2>
+    </div>
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
@@ -33,11 +36,11 @@
                             <td><?php echo $value['bed'] ?></td>
                             <td><?php echo $value['size'] ?></td>
                             <td ><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height:auto;"></td>
-                           <td><?php echo $value['room_images'] ?></td>
                             <td><?php echo $value['content'] ?></td>
                             <td><?php echo $value['status'] ?></td>
                             <td>
-                                <input  type="submit" name="Xóa" value="Xóa" ><input type="submit" name="Sửa" value="Sửa">
+                                <input  type="submit" name="Xóa" value="Xóa" ><input type="submit" name="Sửa" value="Sửa"
+                                onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id'] ?>'" >
                             </td>
                         </tr>
                         <?php } ?>
