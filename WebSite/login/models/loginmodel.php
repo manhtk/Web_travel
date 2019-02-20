@@ -8,15 +8,17 @@
             $_SESSION['currUser']=$row['username'];
             if ($row['role']==1 || $row['role']==2 ) {
                 $_SESSION['currAdmin'] = $row['role'];
-                include ('../admin.php') ;
+                include ('../../../WebSite/admin.php') ;
             }
             else
             {
-               include ('../HomePage.php');
+               include ('../../view/site/HomePage.php');
             }
         }else
         {
-            echo "<script>alert('Tên đăng nhập hoặc mật khẩu không đúng')</script>    ";
+            return '<p class="error">Username or Password is not correct !!!</p>  ';
         }
+
+        return '';
     }
 ?>

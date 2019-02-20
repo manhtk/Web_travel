@@ -1,20 +1,3 @@
-<?php $url='http://localhost:8888/WebTravel_MVC/Web_travel/WebSite/'; 
-if (isset($_POST["form-submit"])) {
- //lấy thông tin từ các form bằng phương thức POST
- $username = $_POST["username"];
- $fullname = $_POST["fullname"];
- $email = $_POST["email"];
- $password = $_POST["password"];
- //Kiểm tra điều kiện bắt buộc đối với các field không được bỏ trống
- if ($username == "" || $password == "" || $fullname == "" || $email == "") {
- echo "bạn vui lòng nhập đầy đủ thông tin";
- }else{
- //thực hiện việc lưu trữ dữ liệu vào db
- }
- }
-?>
-
-require_once("db.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +21,8 @@ require_once("db.php");
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo $url; ?>public/css/roomhotel.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>public/css//menu.css">
+	<link rel="stylesheet" href="../../public/css/roomhotel.css">
+	<link rel="stylesheet" href="../../public/css/menu.css">
 	
 	<!-- slide -->
 	
@@ -52,7 +35,7 @@ require_once("db.php");
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<!-- end date time -->
-	<script type="text/javascript" src="<?php echo $url ?>../JS/script.js" ></script>
+	<script type="text/javascript" src="../../public/js/script.js" ></script>
 	
 </head>
 <script>
@@ -79,8 +62,8 @@ require_once("db.php");
 				</div>
 				<div class="topbar-right">
 					<ul class="st-list topbar-items">
-						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
-						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="#myModal1">Sign up</a></li>
+						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login" data-toggle="modal" data-target="">Login</a></li>
+						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="">Sign up</a></li>
 						<li class="dropdown dropdown-currency hidden-sm hidden-xs">
 							<a href="#">EUR<i class="fa fa-angle-down"></i></a>
 							<ul class="dropmenu">
@@ -96,61 +79,6 @@ require_once("db.php");
 							</ul>
 						</li>
 					</ul>
-					<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" style="display: none;">
-              <div class="modal-dialog" role="document" style="max-width: 520px;">
-                <div class="modal-content relative">
-                  <div class="loader-wrapper">
-                    <div class="st-loader"></div>
-                  </div>
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <i class="input-icon field-icon fa"></i>
-                      <h4 class="modal-title">Sign Up</h4>
-                  </div>
-                  <div class="modal-body">
-                    <form action="" class="form" method="post">
-                      <input type="hidden" name="action" value="st_registration_popup">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="username" autocomplete="off" placeholder="Username">
-                        <i class="input-icon field-icon fa"></i>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="fullname" autocomplete="off" placeholder="Fullname">
-                        <i class="input-icon field-icon fa"></i>
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email">
-                        <i class="input-icon field-icon fa"></i>
-                      </div>
-                      <div class="form-group">
-                        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
-                        <i class="input-icon field-icon fa"></i>
-                      </div>
-                      <div class="form-group">
-                        <p class="f14 c-grey">Select user Type</p>
-                        <label for="normal-user" class="block">
-                          <input checked="" id="normal-user" type="radio" class="mr5" name="register_as" value="normal">
-                          <span class="c-main" data-toggle="tooltip" data-placement="right" title="" data-original-title="Used for booking services">Normal User</span>
-                        </label>
-                        <label for="partner-user" class="block">
-                          <input checked="" id="partner-user" type="radio" class="mr5" name="register_as" value="partner">
-                          <span class="c-main" data-toggle="tooltip" data-placement="right" title="" data-original-title="Used for upload and booking services">Partner User</span>
-                        </label>
-                      </div>
-                      <div class="form-group st-icheck-item">
-                                <label for="term">
-                                                                        <input id="term" type="checkbox" name="term" class="mr5"> I have read and accept the <a class="st-link" href="https://homap.travelerwp.com/about-us/">Terms and Privacy Policy</a>                                    <span class="checkmark fcheckbox"></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="form-submit" value="Sign Up">
-                            </div>
-                            <div class="message-wrapper mt20"></div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
 					<div class="modal fade" id="myModal" role="dialog">
 						<div class="modal-dialog">	
 							<!-- Modal content-->
@@ -220,54 +148,54 @@ require_once("db.php");
 				</div>
 				<div class="header1left">
 					<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-					<div class="menu">
+                    <div class="menu">
 
-						<nav id="st-main-menu" >
-							<a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
-							<ul id="main-menu">
-								<li><a href="../HTML/HomePage.html"  >HOME</a></li>
-								<li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
-									<ul class="sub-menu">
-										<li><a href="#">Full Map Layout</a></li>
-										<li><a href="#">Half Map Layout</a></li>
-										<li><a href="../HTML/slidebar.html">Sidebar layout</a></li>
-										
-									</ul>
-								</li>
-								<li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
-									<ul class="sub-menu">
-										<li><a href="../HTML/detailhotel1.html">Hotel Detail 1</a></li>
-										<li><a href="#">Hotel Detail 2</a></li>
-										<li><a href="#">Hotel Detail 3</a></li>
-										<li><a href="../HTML/roomdetail1.html">Room Detail 1</a></li>
-									</ul>
-								</li>
-								<li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
-									<ul class="sub-menu">
-										<li><a href="#">House Detail 1</a></li>
-										<li><a href="#">House Detail 2</a></li>
-										
-									</ul>
-								</li>
-								<li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
-									<ul class="sub-menu">
-										<li><a href="../HTML/aboutus.html">About Us</a></li>
-										<li><a href="../HTML/blog1.html">Blog</a></li>
-										<li><a href="#">404 Page</a></li>
-										
-									</ul>
-								</li>
-								<li><a href="../HTML/Contact.html">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
+                        <nav id="st-main-menu" >
+                            <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
+                            <ul id="main-menu">
+                                <li><a href="../../view/site/HomePage.php"  >HOME</a></li>
+                                <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Full Map Layout</a></li>
+                                        <li><a href="#">Half Map Layout</a></li>
+                                        <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
+                                        <li><a href="#">Hotel Detail 2</a></li>
+                                        <li><a href="#">Hotel Detail 3</a></li>
+                                        <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">House Detail 1</a></li>
+                                        <li><a href="#">House Detail 2</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="../../view/site/aboutus.php">About Us</a></li>
+                                        <li><a href="../../view/site/blog1.php">Blog</a></li>
+                                        <li><a href="#">404 Page</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="../../view/site/Contact.php">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 				</div>
 				<div class="header1right">
 					<form action="" method="get" class="header-search hidden-sm">
 						<input type="text" class="form-control" name="s" value="">
 						<i class="fa fa-search"></i>
 					</form>
-					<img class="ico_card" src="<?php echo $url ?>libs/Images/ico_card.svg">
+					<img class="ico_card" src="../../libs/Images/ico_card.svg">
 				</div>
 			</div>
 		</div>
@@ -338,12 +266,12 @@ require_once("db.php");
 					<div class="slidehotel">
 						<div class="fotorama "
 						data-nav="thumbs" data-thumbwidth="135px" data-thumbheight="135px" data-fit="none" data-width="870px" data-height="500px" data-allowfullscreen="native" data-thumbfit="cover" data-thumbmargin="8" >
-						<a href="<?php echo $url ?>libs/Images/khanh1.jpg"><img src="<?php echo $url ?>libs/Images/khanh1.jpg"  width="135px" height="135px"></a>
-						<a href="<?php echo $url ?>libs/Images/khanh2.jpg"><img src="<?php echo $url ?>libs/Images/khanh2.jpg"  width="135px" height="135px"></a>
-						<a href="<?php echo $url ?>libs/Images/khanh3.jpg"><img src="<?php echo $url ?>libs/Images/khanh3.jpg"  width="135px" height="135px"></a>
-						<a href="<?php echo $url ?>libs/Images/khanh4.jpg"><img src="<?php echo $url ?>..libs/Images/khanh4.jpg"  width="135px" height="135px"></a>
-						<a href="<?php echo $url ?>libs/Images/khanh5.jpg"><img src="<?php echo $url ?>libs/Images/khanh5.jpg"  width="135px" height="135px"></a>
-						<a href="<?php echo $url ?>libs/Images/khanh6.jpg"><img src="<?php echo $url ?>libs/Images/khanh6.jpg"  width="135px" height="135px"></a>
+						<a href="../../libs/Images/khanh1.jpg"><img src="<../../libs/Images/khanh1.jpg"  width="135px" height="135px"></a>
+						<a href="../../libs/Images/khanh2.jpg"><img src="../../libs/Images/khanh2.jpg"  width="135px" height="135px"></a>
+						<a href="../../libs/Images/khanh3.jpg"><img src="../../libs/Images/khanh3.jpg"  width="135px" height="135px"></a>
+						<a href="../../libs/Images/khanh4.jpg"><img src="../../libs/Images/khanh4.jpg"  width="135px" height="135px"></a>
+						<a href="../../libs/Images/khanh5.jpg"><img src="../../libs/Images/khanh5.jpg"  width="135px" height="135px"></a>
+						<a href="../../libs/Images/khanh6.jpg"><img src="../../libs/Images/khanh6.jpg"  width="135px" height="135px"></a>
 					</div>
 					</div>
 					<!-- end slide -->
@@ -590,7 +518,7 @@ require_once("db.php");
 						</h2>
 						<div class="roomlg">
 							<div class="row sheration"  >
-								<div class="col-sm-4 edit" ><img src="<?php echo $url ?>libs/Images/Hotel Stanford.jpg" width="270px" height="203px" alt=""></div>
+								<div class="col-sm-4 edit" ><img src="../../libs/Images/Hotel Stanford.jpg" width="270px" height="203px" alt=""></div>
 								<div class="col-sm-8">
 									<div >
 										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Room Sheraton Hotel</a></h2>
@@ -624,7 +552,7 @@ require_once("db.php");
 								</div>
 							</div>
 							<div class="row sheration"  >
-								<div class="col-sm-4 edit" ><img src="<?php echo $url ?>libs/Images/Hotel Ascot Opera.jpg" width="270px" height="203px" alt=""></div>
+								<div class="col-sm-4 edit" ><img src="../../libs/Images/Hotel Ascot Opera.jpg" width="270px" height="203px" alt=""></div>
 								<div class="col-sm-8">
 									<div >
 										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Double Room With Town View</a></h2>
@@ -658,7 +586,7 @@ require_once("db.php");
 								</div>
 							</div>
 							<div class="row sheration"  >
-								<div class="col-sm-4 edit" ><img src="<?php echo $url ?>libs/Images/Dylan Hotel.jpg" width="270px" height="203px" alt=""></div>
+								<div class="col-sm-4 edit" ><img src="../../libs/Images/Dylan Hotel.jpg" width="270px" height="203px" alt=""></div>
 								<div class="col-sm-8">
 									<div >
 										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Standard Double Room</a></h2>
@@ -1142,7 +1070,7 @@ require_once("db.php");
 											<div class="row-content">
 												<div class="wpb-content-image">
 													<a href="#">
-														<img src="<?php echo $url ?>libs/Images/39446446-450x417.jpg">
+														<img src="../../libs/Images/39446446-450x417.jpg">
 													</a>
 													<div class="review-star">
 														<i class="fas fa-star"></i>
@@ -1189,7 +1117,7 @@ require_once("db.php");
 											<div class="row-content">
 												<div class="wpb-content-image">
 													<a href="#">
-														<img src="<?php echo $url ?>libs/Images/60337007-450x417.jpg">
+														<img src="../../libs/Images/60337007-450x417.jpg">
 													</a>
 													<div class="review-star">
 														<i class="fas fa-star"></i>
@@ -1237,7 +1165,7 @@ require_once("db.php");
 											<div class="row-content">
 												<div class="wpb-content-image">
 													<a href="#">
-														<img src="<?php echo $url ?>libs/Images/60337007-450x417.jpg">
+														<img src="../../libs/Images/60337007-450x417.jpg">
 													</a>
 													<div class="review-star">
 														<i class="fas fa-star"></i>
@@ -1284,7 +1212,7 @@ require_once("db.php");
 											<div class="row-content">
 												<div class="wpb-content-image">
 													<a href="#">
-														<img src="<?php echo $url ?>libs/Images/Parian Holiday Villas.jpg">
+														<img src="../../libs/Images/Parian Holiday Villas.jpg">
 													</a>
 													<div class="review-star">
 														<i class="fas fa-star"></i>
@@ -1386,7 +1314,7 @@ require_once("db.php");
 					<br />					
 					<div class="footer_content_element">
 						<p class="footer_content_element1" >Follow Us</p>
-						<p style="padding-left: 15px;"><span ><img src="<?php echo $url ?>libs/Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="<?php echo $url ?>libs/Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="<?php echo $url ?>libs/Images/ico_twitter_footer.svg"  ></span></p>
+						<p style="padding-left: 15px;"><span ><img src="../../libs/Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="<?php echo $url ?>libs/Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="<?php echo $url ?>libs/Images/ico_twitter_footer.svg"  ></span></p>
 					</div>
 					<br />
 				</div>

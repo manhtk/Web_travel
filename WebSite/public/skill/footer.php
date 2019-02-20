@@ -39,7 +39,7 @@
             </div>
         </div>
         <!-- Bootstrap core JavaScript-->
-        <script src="/public/js/jquery.min.js"></script>//
+        <script src="/public/js/jquery.min.js"></script>
         <script src="/public/js/bootstrap.bundle.min.js"></script>
         <!-- Core plugin JavaScript-->
         <script src="/public/js/jquery.easing.min.js"></script>
