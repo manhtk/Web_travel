@@ -19,7 +19,7 @@ switch ($action) {
                     if ($db->updateData($table, $id, $val)) {
                         echo "Update record success";
                         echo "<br>";
-                        echo "<a href='admin.php?controller=setting'>Home</a>";
+                        echo "<a href='admin.php?controller=setting'>Go home</a>";
                         break;
                     } else {
                         echo "Can't update data because duplicate id of hotel. Please check again!";
@@ -28,10 +28,9 @@ switch ($action) {
                         break;
                     }
                 }
-                
             }
 
-            require_once("view/setting/update_setting.php");
+            require_once("View/setting/update_setting.php");
             break;
         }
         case 'phantrang':
