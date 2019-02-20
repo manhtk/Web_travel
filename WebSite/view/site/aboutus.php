@@ -68,421 +68,51 @@
         </div>
         <div class="header1left">
           <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-          <div class="menu">
-            <nav id="st-main-menu" >
-              <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
-              <ul id="main-menu">
-                <li><a href="../HTML/HomePage.html">HOME</a></li>
-                <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="">Full Map Layout</a></li>
-                    <li><a href="#">Half Map Layout</a></li>
-                    <li><a href="../HTML/slidebar.html">Slidebar Layout</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="../HTML/detailhotel1.html">Hotel Detail 1</a></li>
-                    <li><a href="#">Hotel Detail 2</a></li>
-                    <li><a href="#">Hotel Detail 3</a></li>
-                    <li><a href="../HTML/roomdetail1.html">Room Detail</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="#">House Detail 1</a></li>
-                    <li><a href="#">House Detail 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="../HTML/aboutus.html">About Us</a></li>
-                    <li><a href="../HTML/blog1.html">Blog</a></li>
-                    <li><a href="#">404 Page</a></li>
-                  </ul>
-                </li>
-                <li><a href="../HTML/Contact.html">CONTACT</a></li>
-              </ul>
-            </nav>
-            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript"> 
-    $(document).ready(function(){
+            <div class="menu">
 
-       $("li").click(function(event) {
-         $('.fa.fa-angle-down').toggleClass('daonguoc');
-         t = $(this);
-         t.parent().find('ul').slideToggle();
-       });
-     
-       $('.menu1').click(function(){
-       $("nav").toggleClass('open'); 
-       });
-       $('.fa.fa-angle-left').click(function(){
-          var t = $(this);
+                <nav id="st-main-menu" >
+                    <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
+                    <ul id="main-menu">
+                        <li><a href="../../view/site/HomePage.php"  >HOME</a></li>
+                        <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Full Map Layout</a></li>
+                                <li><a href="#">Half Map Layout</a></li>
+                                <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
 
-     t.parent().find('ul').next().slideToggle();
-       $("nav").removeClass('open'); });
-     })
-  </script>
-  </script>
-          </div>
-        </div>
-        <div class="header1right">
-          <form action="" method="get" class="header-search hidden-sm">
-            <input type="text" class="form-control" name="s" value="">
-            <i class="fa fa-search"></i>
-          </form>
-          <img class="ico-card" src="images/ico_card.svg" alt="">
+                            </ul>
+                        </li>
+                        <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
+                                <li><a href="#">Hotel Detail 2</a></li>
+                                <li><a href="#">Hotel Detail 3</a></li>
+                                <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">House Detail 1</a></li>
+                                <li><a href="#">House Detail 2</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="../../view/site/aboutus.php">About Us</a></li>
+                                <li><a href="../../view/site/blog1.php">Blog</a></li>
+                                <li><a href="#">404 Page</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="../../view/site/Contact.php">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- end header -->
-  <div class="main-content">
-    <div class="banner">
-            <div class="container">
-                <h1>About Us</h1>
-            </div>
-        </div>
-        <div class="st-breadcrumb">
-            <div class="container">
-                <ul>
-                    <li class="hiddenn">Home</li>
-                    <li class="hiddenn"><a href="#">About us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img class="abc" src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/about_1.jpg" height="184px" width="570px" alt="">
-                <h2>Our Story</h2>
-                <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. 
-                </p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img class="abc" src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/about_1.jpg" height="184px" width="570px" alt="">
-                <h2>Our Story</h2>
-                <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. 
-                </p>
-            </div>
-        </div></div>
-        <div class="st-list-statistic">
-            <div class="container">
-                <div class="row">            
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item-wrapper">
-                    <div class="item">
-                        <div class="front">
-                            <div class="inner">
-                                <h4>100+</h4>
-                                <p class="sub-text">partner</p>
-                            </div>
-                        </div>
-                        <div class="end">
-                            <p class="desc">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3 col-sm-6">
-                <div class="item-wrapper">
-                    <div class="item">
-                        <div class="front">
-                            <div class="inner">
-                                <h4>2k+</h4>
-                                <p class="sub-text">properties</p>
-                            </div>
-                        </div>
-                        <div class="end">
-                            <p class="desc">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3 col-sm-6">
-                <div class="item-wrapper">
-                    <div class="item">
-                        <div class="front">
-                            <div class="inner">
-                                <h4>300+</h4>
-                                <p class="sub-text">destinations</p>
-                            </div>
-                        </div>
-                        <div class="end">
-                            <p class="desc">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3 col-sm-6">
-                <div class="item-wrapper">
-                    <div class="item">
-                        <div class="front">
-                            <div class="inner">
-                                <h4>40k+</h4>
-                                <p class="sub-text">booking</p>
-                            </div>
-                        </div>
-                        <div class="end">
-                            <p class="desc">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div></div>
-            </div></div>
-    <div class="st-aboutus-info">
-        <p class="message">"Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Nam dapibus nisl vitae elit fringilla rutrum."</p>
-        <img src="https://homap.travelerwp.com/wp-content/uploads/2018/12/people_10.jpg" alt="">
-        <p class="name">Adam Blin</p>
-        <p class="pos">Founder</p>
-    </div>
-    <script src="./js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
-
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $SlideWidth: 830,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1420;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
-    <style>
-        /*jssor slider loading skin spin css*/
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        /*jssor slider bullet skin 051 css*/
-        .jssorb051 .i {position:absolute;cursor:pointer;}
-        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
-        .jssorb051 .i:hover .b {fill-opacity:.7;}
-        .jssorb051 .iav .b {fill-opacity: 1;}
-        .jssorb051 .i.idn {opacity:.3;}
-
-        /*jssor slider arrow skin 105 css*/
-        .jssora105 {display:block;position:absolute;cursor:pointer;}
-        .jssora105 .c {fill:#000;opacity:.5;}
-        .jssora105 .a {fill:none;stroke:#fff;stroke-width:350;stroke-miterlimit:10;}
-        .jssora105:hover .c {opacity:.5;}
-        .jssora105:hover .a {opacity:.8;}
-        .jssora105.jssora105dn .c {opacity:.2;}
-        .jssora105.jssora105dn .a {opacity:1;}
-        .jssora105.jssora105ds {opacity:.3;pointer-events:none;}
-    </style>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1420px;height:500px;overflow:hidden;visibility:hidden; margin-bottom: 151px;">
-        Loading Screen
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1420px;height:500px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/001.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/002.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/003.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/004.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/005.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/006.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/007.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/008.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="<?php echo $url; ?>libs/Images/009.jpg" />
-            </div>
-        </div>
-        Bullet Navigator
-        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        Arrow Navigator
-        <div data-u="arrowleft" class="jssora105" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
-                <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
-                <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
-            </svg>
-        </div>
-        <div data-u="arrowright" class="jssora105" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
-                <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
-                <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
-            </svg>
-        </div>
-    </div>
-    <script type="text/javascript">jssor_1_slider_init();</script>
-    <div class="container">
-        <div class="row">
-            <div class="st-aboutus-team">
-                <h3>Leadership Team</h3>
-            </div>
-        </div>
-    </div>
-    <div class="st-content-wrapper">
-    <div class="container">
-            <div class="row">
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_9.jpg"alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_7.jpg" alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_3.jpg"alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_4.jpg"alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_5.jpg"alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_6.jpg"alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_7.jpg"alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-                <div class="bg-holder col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <img class="image" src="<?php echo $url; ?>libs/Images/people_8.jpg" alt="">
-                    <div class="overlay overlayFade">
-                        <div class="text">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="img-overlay">Eva Hicks</h3>
-                    <h4 class="img-overlay">CEO</h4>
-                </div>
-            </div>
-            
-        </div>
-  </div></div>
   <footer>
         <div class="mailchimp">
         <div class="container">
