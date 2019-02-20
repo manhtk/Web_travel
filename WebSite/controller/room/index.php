@@ -53,7 +53,6 @@ switch ($action) {
                $id = "hotel_id";
             
             $limit = $db->getPag();
-            echo $limit;
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
             if(empty($paged) || !is_numeric((float)$paged))
                 $paged = 1;
