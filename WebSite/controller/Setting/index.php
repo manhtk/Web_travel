@@ -36,8 +36,22 @@ switch ($action) {
         }
         case 'phantrang':
         {
-            $table = 'room';
-            $db->phantrang($table);
+            $tbl2 = "room";
+               $tbl1 = "hotel";
+               $id = "hotel_id";
+            
+            $limit = $db->getPag();
+            echo $limit;
+            $paged = isset($_GET['page']) ? $_GET['page'] : 1;
+            if(empty($paged) || !is_numeric((float)$paged))
+                $paged = 1;
+
+            $offset = ($paged - 1) * $limit;
+
+            $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
+
+            $count = $db->phantrang($tbl2);
+            require_once("view/setting/test-phantrang.php");
             break;
         }
     default:

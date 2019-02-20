@@ -38,9 +38,16 @@ class Database
         return $data;
     }
 
-    public function getAllData($table)
+    public function getAllData($table, $offset = '', $limit = '')
     {
-        $query = "SELECT * FROM $table";
+
+        if($limit != ''){
+            $query = "SELECT * FROM $table LIMIT {$offset}, {$limit}";
+        }else{
+
+            $query = "SELECT * FROM $table";
+        }
+        
         $this->excute($query);
         if ($this->numRows() == 0) {
             $data = 0;
@@ -51,9 +58,26 @@ class Database
         }
         return $data;
     }
-    public function getALLDataBase($table1,$table2,$id)
+    public function getALLDataBase($table1,$table2='',$id='',$offset='',$limit='')
     {
-        $query = "SELECT * FROM $table1 INNER JOIN $table2 WHERE $table1.$id = $table2.$id ";
+        if ($table2!=''&&$id!='')
+        {
+            
+            $query = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$id = $table2.$id LIMIT {$offset},{$limit}";
+            echo var_dump($query);
+        }
+        elseif($limit !=''){
+            echo '123';
+            $query = "SELECT * FROM $table LIMIT {$offset}, {$limit}";  
+        }else
+        {
+            echo'789';
+            $query = "SELECT * FROM $table1";
+        }
+
+
+
+        
         $this->excute($query);
         if ($this->numRows() == 0) {
             $data = 0;
@@ -221,6 +245,15 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $data;
     }
 
+
+    public function getPag(){
+        $query = "SELECT paging from setting";
+        $count = $this->excute($query);
+        while($res=mysqli_fetch_assoc($count)){
+                   $sotin = implode(" ",$res);
+        }
+        return $sotin;
+    }
     // phan trang
     public function phantrang($tbl)
     {
@@ -230,7 +263,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         while($res=mysqli_fetch_assoc($count)){
                    $sotin = implode(" ",$res);
         }
-        echo $sotin;
+        
         
 
         //Tổng số lượng tin
@@ -238,13 +271,18 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         $sql = "SELECT * from $tbl";
         $total = $this->excute($sql);
         $count = $this->numRows();
-        echo $count;  
+         
 
         //tìm số lượng trang
         $page = ceil($count/$sotin);
-        echo $page;
+    
 
+        $from = ($page -1) * $sotin;
 
+        $qr ="SELECT * from $tbl limit $from, $sotin";
+        
+
+        return $page;
     }
     //Phương thức lấy dữ liệu cần sửa theo id
     public function getDataID($table,$id)
@@ -262,5 +300,6 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $data;
         
     }
+
 
 }

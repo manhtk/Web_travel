@@ -83,47 +83,47 @@
       </div>
       <div class="header1left">
         <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-        <div class="menu">
+          <div class="menu">
 
-          <nav id="st-main-menu" >
-            <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
-            <ul id="main-menu">
-              <li><a href="../HTML/HomePage.html"  >HOME</a></li>
-              <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="#">Full Map Layout</a></li>
-                  <li><a href="#">Half Map Layout</a></li>
-                  <li><a href="../Web-hotel/HTML/dealline.html">Sidebar layout</a></li>
-                  
-                </ul>
-              </li>
-              <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="../HTML/detailhotel1.html">Hotel Detail 1</a></li>
-                  <li><a href="#">Hotel Detail 2</a></li>
-                  <li><a href="#">Hotel Detail 3</a></li>
-                  <li><a href="../HTML/roomdetail1.html">Room Detail 1</a></li>
-                </ul>
-              </li>
-              <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="#">House Detail 1</a></li>
-                  <li><a href="#">House Detail 2</a></li>
-                  
-                </ul>
-              </li>
-              <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="../HTML/aboutus.html">About Us</a></li>
-                  <li><a href="../HTML/blog1.html">Blog</a></li>
-                  <li><a href="#">404 Page</a></li>
-                  
-                </ul>
-              </li>
-              <li><a href="../HTML/Contact.html">CONTACT</a></li>
-            </ul>
-          </nav>
-        </div>
+              <nav id="st-main-menu" >
+                  <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
+                  <ul id="main-menu">
+                      <li><a href="../../view/site/HomePage.php"  >HOME</a></li>
+                      <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
+                          <ul class="sub-menu">
+                              <li><a href="#">Full Map Layout</a></li>
+                              <li><a href="#">Half Map Layout</a></li>
+                              <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
+
+                          </ul>
+                      </li>
+                      <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
+                          <ul class="sub-menu">
+                              <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
+                              <li><a href="#">Hotel Detail 2</a></li>
+                              <li><a href="#">Hotel Detail 3</a></li>
+                              <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
+                          <ul class="sub-menu">
+                              <li><a href="#">House Detail 1</a></li>
+                              <li><a href="#">House Detail 2</a></li>
+
+                          </ul>
+                      </li>
+                      <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
+                          <ul class="sub-menu">
+                              <li><a href="../../view/site/aboutus.php">About Us</a></li>
+                              <li><a href="../../view/site/blog1.php">Blog</a></li>
+                              <li><a href="#">404 Page</a></li>
+
+                          </ul>
+                      </li>
+                      <li><a href="../../view/site/Contact.php">CONTACT</a></li>
+                  </ul>
+              </nav>
+          </div>
       </div>
       <div class="header1right">
         <form action="" method="get" class="header-search hidden-sm">
