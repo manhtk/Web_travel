@@ -71,9 +71,6 @@ class Database
         {
             $query = "SELECT * FROM $table1";
         }
-
-
-
         
         $this->excute($query);
         if ($this->numRows() == 0) {
