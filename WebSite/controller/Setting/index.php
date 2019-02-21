@@ -1,4 +1,5 @@
 <?php
+include "upload.php";
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
@@ -14,7 +15,12 @@ switch ($action) {
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_setting'])) {
 
+                    $image_name = uploadImageHandler('image');
+
                     $val = $_POST["setting"];
+
+                    array_push($val, $image_name);
+
                     if ($db->updateData($table, $id, $val)) {
                         echo "Update record success";
                         echo "<br>";
@@ -29,6 +35,7 @@ switch ($action) {
                 }
             }
             require_once("view/setting/update_setting.php");
+
             break;
         }
         case 'phantrang':
