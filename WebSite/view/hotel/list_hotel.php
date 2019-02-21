@@ -65,7 +65,7 @@
     <input type='submit' name='delete' onclick="return confirm('Are you sure?')" value='Delete'>
 </form>
 <?php 
-    $page = $db->phantrang('room');
+    $page = $db->phantrang('hotel');
 ?>
 
 <div class="test-phantrang">

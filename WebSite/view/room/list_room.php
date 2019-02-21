@@ -67,13 +67,13 @@
 	</table>
 </div>
 <?php 
-	$page = $db->phantrang('room');
+	$page = $db->phantrang('hotel');
 ?>
 
 <div class="test-phantrang">
 	<?php
 	for ($i=1; $i<=$page ; $i++) { 
-		echo "<a href='admin.php?controller=setting&action=phantrang&page=$i'>Page $i</a> - ";
+		echo "<a href='admin.php?controller=room&action=list&page=$i'>Page $i</a> - ";
 	}
 	?>
 </div>
