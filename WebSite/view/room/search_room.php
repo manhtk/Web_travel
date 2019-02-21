@@ -1,7 +1,10 @@
 
 <?php include_once "public/skill/header.php" ?>
 <div class="table-responsive">
-	<form>
+	<?php if ($data_Search == 0) {
+    echo "Found no record!";
+} else { ?>
+	<form method="post" action="">
 	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 		<thead>
 			<tr>
@@ -22,7 +25,7 @@
 		</thead>
 		<tbody>
 			<?php
-			foreach ($data as $value) {
+			foreach ($data_Search as $value) {
 				?>
 				<tr>
 					<td><?php echo $value['room_id'] ?></td>
@@ -42,13 +45,14 @@
 						<input  type="submit" name="Xóa" value="Xóa" ><input type="submit" name="Sửa" onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>'"  value="Sửa">
 					</td>
 				</tr>
-			<?php } ?>
+			<?php }
+			} ?>
 		</tbody>
 
 	</table>
     </form>
 	<br>
-<button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Go home
+<button class="btn btn-primary" onclick="location.href='admin.php?controller=room&action=list'" type="button">Go home
 </button>
 </div>
 <?php 

@@ -80,7 +80,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                            
                             <a class="collapse-item" href="?controller=room&action=list">All Room</a>
-                            <a class="collapse-item" href="#">Add Room</a>
+                            <a class="collapse-item" href="?controller=room&action=add">Add Room</a>
                             
                         </div>
                     </div>
