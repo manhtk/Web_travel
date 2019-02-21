@@ -53,6 +53,15 @@ switch ($action) {
             break;
 
         }
+    case "search":
+        {
+            if (isset($_GET['key'])) {
+                $key = $_GET['key'];
+                $data_Search = $db->searchData('room', 'hotel', 'hotel_id', 'room_name', $key);
+            }
+            require_once("view/room/search_room.php");
+            break;
+        }    
     case "delete":
         {
 
@@ -78,13 +87,22 @@ switch ($action) {
     default:
         {
             
-              $tbl2 = "room";
+             $tbl2 = "room";
                $tbl1 = "hotel";
                $id = "hotel_id";
+            
+            $limit = $db->getPag();
+            $paged = isset($_GET['page']) ? $_GET['page'] : 1;
+            if(empty($paged) || !is_numeric((float)$paged))
+                $paged = 1;
 
-            $data1 = $db->getALLDataBase($tbl1,$tbl2,$id);
-             require_once('view/room/list_room.php');
-            break;   
+            $offset = ($paged - 1) * $limit;
+
+            $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
+
+            $count = $db->phantrang($tbl2);
+            require_once("view/room/list_room.php");
+            break;
         }
 }
 ?>

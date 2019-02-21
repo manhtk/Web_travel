@@ -3,8 +3,8 @@
 	<div class="col-md-4">
 		<form method="post" action="">
 			<div class="form-group">
-				
-				<input type="hidden" name="room[]" value="<?php echo $value['room_id']  ?>" class="form-control"  />
+				<label for="exampleInputPassword1">Room ID</label>
+				<input type="text" name="room[]" value="<?php echo $value['room_id']  ?>" class="form-control" readonly />
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Hotel</label>
