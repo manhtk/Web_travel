@@ -15,6 +15,12 @@ switch ($action) {
                 $id = $_GET['id'];
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_setting'])) {
+                    
+                    $type_image = explode('/', $_FILES['image']['type']);
+                   echo '<pre>';
+                    print_r($_FILES);die;
+                    echo $type_image[0];die;
+
                     $val = $_POST["setting"];
                     if ($db->updateData($table, $id, $val)) {
                         echo "Update record success";
