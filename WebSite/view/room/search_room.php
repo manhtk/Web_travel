@@ -1,6 +1,7 @@
 
 <?php include_once "public/skill/header.php" ?>
 <div class="table-responsive">
+	<form>
 	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 		<thead>
 			<tr>
@@ -45,6 +46,10 @@
 		</tbody>
 
 	</table>
+    </form>
+	<br>
+<button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Go home
+</button>
 </div>
 <?php 
 	$page = $db->phantrang('room');

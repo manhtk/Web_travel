@@ -14,20 +14,13 @@
                     <td><input type="hidden" name="setting[]" value="<?php echo $value['id'] ?>" placeholder="id"></td>
                 <tr>
                     <td>Date Format</td>
-                
-                    <td><select>
-                        <option><?php echo $value['dateformat'] ?></option>
-                        <option>yyyy/mm/dd</option>
-                        <option>yyyy/dd/mm</option>
-                        <option>mm/dd/yyyy</option>
-                        <option>dd/mm/yyyy</option>
-                        <option>mm/yyyy/dd</option>
-                    </select></td>
+                    <td><input type="text" name="setting[]" value="<?php echo $value['dateformat'] ?>" placeholder="data format"></td>
+                    
                 </tr>
                 <tr>
                     <td>Logo</td>
                 
-                    <td><input type="text" name="setting[]" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
+                    <td><input type="file" name="setting[]" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
                 </tr>
                 <tr>
                     <td>Email Admin</td>
@@ -44,12 +37,12 @@
                     
 
             </table>
-        </form>
+        
             <div style="text-align: center;padding:10px; ">
             <td><button onclick="location.href='admin.php?controller=setting'" type="button" style="margin-right: 18px;">Cancel</button>
             <td><input type="submit" name="update_setting" value="Update"></td>
         </td></div>
-        
+        </form>
     </div>
 </body>
 </html>
