@@ -1,7 +1,8 @@
 <div class="table-responsive">
 <form action="" method="get"
       class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-    <div class="input-group">
+    <div class="input-group" style="border-radius: 3px; border:1px solid #DDDFEB; margin-bottom: 20px">
+
         <input type="hidden" name="controller" value="hotel">
         <input type="text" name="key" class="form-control bg-light border-0 small"
                placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
@@ -63,5 +64,16 @@
     <td><a href="admin.php?controller=hotel&action=add">Add new data</a></td>
     <input type='submit' name='delete' onclick="return confirm('Are you sure?')" value='Delete'>
 </form>
+<?php 
+    $page = $db->phantrang('room');
+?>
+
+<div class="test-phantrang">
+    <?php
+    for ($i=1; $i<=$page ; $i++) { 
+        echo "<a href='admin.php?controller=hotel&action=list&page=$i'>Page $i</a> - ";
+    }
+    ?>
+</div>
 </div>
 
