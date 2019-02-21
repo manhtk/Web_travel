@@ -39,15 +39,20 @@ switch ($action) {
             break;
 
         }
-    case "delete":
-        {
-
-        }
+    // case "delete":
+    //     {
+    //         if (isset($_GET['id'])) {
+    //             $table = 'room';
+    //             $id = $_GET['id'];
+    //             if ($db->deleteData($table, $id)) {
+               
+    //         }
+    //     }
      case 'list':
-          
-              $tbl2 = "room";
-               $tbl1 = "hotel";
-               $id = "hotel_id";
+        {
+                $tbl2 = "room";
+                $tbl1 = "hotel";
+                $id = "hotel_id";
             
             $limit = $db->getPag();
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -61,6 +66,7 @@ switch ($action) {
             $count = $db->phantrang($tbl2);
             require_once("view/room/list_room.php");
             break;
+        }
     default:
         {
             
