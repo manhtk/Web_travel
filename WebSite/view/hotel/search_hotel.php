@@ -44,7 +44,7 @@
                 <td><?php echo $value['address'] ?></td>
                 <td><a href="admin.php?controller=hotel&action=update&id=<?php echo $value['hotel_id'] ?>">Edit</a></td>
                 <td><a onclick="return confirm('Are you want to delete record?')"
-                       href="admin.php?controller=hotel&action=delete&id=<?php echo $value['hotel_id'] ?>"
+                       href="admin.php?controller=hotel&action=delete_one&id=<?php echo $value['hotel_id'] ?>"
                        title="Delete">Delete</a>
                 </td>
             </tr>
