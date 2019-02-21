@@ -214,19 +214,19 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $count;
     }
 
-    public
-    function deleteData($table, $id)
+     public function deleteData($table, $column, $id)
     {
-        $column = $this->getPrimaryKey($table);
         $sql = "DELETE FROM $table WHERE $column='$id'";
         return $this->excute($sql);
     }
 
-    public function searchData($table, $key)
+     public function searchData($table1, $table2 = '', $join = '', $key, $valueS)
     {
-        $primary = $this->getPrimaryKey($table);
-        $column = $this->getKeySearch($table);
-        $sql = "SELECT * FROM $table WHERE $column LIKE '%$key%' ORDER BY $primary ";
+        if ($table2 != '' & $join != '') {
+            $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%'";
+        } else {
+            $sql = "SELECT * FROM $table1 WHERE $key LIKE '%$valueS%'";
+        }
         $this->excute($sql);
         if ($this->numRows() == 0) {
             $data = 0;
