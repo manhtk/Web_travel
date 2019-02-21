@@ -277,6 +277,16 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
 
         return $page;
     }
+    public function checkTag($val)
+    {
+        if ($val != strip_tags($val)) {
+            $data = 0;
+        } else {
+            $data = 1;
+        }
+        return $data;
+    }
+}
    
     
 

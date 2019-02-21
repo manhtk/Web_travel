@@ -42,7 +42,8 @@
 					<td><?php echo $value['content'] ?></td>
 					<td><?php echo $value['status'] ?></td>
 					<td>
-						<input  type="submit" name="Xóa" value="Xóa" ><input type="submit" name="Sửa" onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>'"  value="Sửa">
+						<input  type="button" name="Xóa" value="Xóa" ><button  onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id'] ?>'" type="button">Sửa
+</button>
 					</td>
 				</tr>
 			<?php }
