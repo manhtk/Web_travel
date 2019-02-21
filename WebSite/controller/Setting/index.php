@@ -13,12 +13,7 @@ switch ($action) {
                 $id = $_GET['id'];
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_setting'])) {
-<<<<<<< HEAD
-                    
-                   
 
-=======
->>>>>>> 9cbd62ae27fb6ad6238ee4c6c97c09f7f535aea4
                     $val = $_POST["setting"];
                     if ($db->updateData($table, $id, $val)) {
                         echo "Update record success";
