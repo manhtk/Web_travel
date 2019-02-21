@@ -8,48 +8,7 @@
 <!--
 <a href="admin.php?controller=hotel">Go home</a>
 -->
-<?php 
-    $smg = "";
 
-    //if upload button is pressed
-if (isset($_POST['upload'])){
-    $target = "hotel/".basename($_FILES['image']['']);
-    echo var_dump($target);
-
-
-    //connect to the database
-    $db=mysqli_connect("localhost", "root", "", "webtravel");
-
-    //get all the submidted data from the form
-
-    $image = $_FILES['image'];
-    $text =$_POST['text'];
-
-    $sql = "INSERT INTO hotel(images) VALUES('$images')";
-    echo var_dump($sql);
-    mysqli_query($db, $sql);
-
-    if(move_uploaded_file($_FILES['image'] , $target)){
-        $smg="image uploaded successfully";
-    }
-        else {
-            $smg="there was a propblem uploading image"; 
-        }
-    }
-
- ?>
-
-<?php    
-            $db = mysqli_connect("localhost", "root", "", "photos");
-            $sql = "SELECT * FROM hotel";
-            $result = mysqli_query($db, $sql);
-            while ($row = mysqli_fetch_array($result)) {
-                echo "<div id='img_div'>";
-                echo "<img src='/hotel/".$row['image']."'>";
-                echo "<p>".$row['text']."</p>";
-                echo "</div>";
-            }
-         ?>
 <form method="post" action="">
     <table>
         <tr>
@@ -59,7 +18,12 @@ if (isset($_POST['upload'])){
         <tr>
             <td>Id city</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Id city"></td>
+        <td><select class="form-control" name="hotel[]"><?php
+                foreach ($data_dis as $value) {
+                    ?>
+                    <option><?php echo $value['city_id']; ?></option>
+                <?php } ?>
+            </select></td>
         <tr>
             <td>Hotel name</td>
         </tr>
@@ -88,7 +52,7 @@ if (isset($_POST['upload'])){
     </table>
 </form>
 <br>
+
 <button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Cancel
 </button>
-
 

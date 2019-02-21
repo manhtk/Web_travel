@@ -65,7 +65,7 @@
 
 <div class="row" >
 	<div class="col-md-4">
-		<form action="" method="POST">
+		<form action="" method="post">
 			<div class="form-group">
 				<input type="hidden" name="room[]"  >
 			</div>

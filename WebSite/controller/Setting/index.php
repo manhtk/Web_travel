@@ -1,11 +1,10 @@
 <?php
-
+include "upload.php";
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
     $action = " ";
 }
-
 switch ($action) {
     
     case "update":
@@ -15,7 +14,13 @@ switch ($action) {
                 $id = $_GET['id'];
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_setting'])) {
+
+                    $image_name = uploadImageHandler('image');
+
                     $val = $_POST["setting"];
+
+                    array_push($val, $image_name);
+
                     if ($db->updateData($table, $id, $val)) {
                         echo "Update record success";
                         echo "<br>";
@@ -29,8 +34,8 @@ switch ($action) {
                     }
                 }
             }
+            require_once("view/setting/update_setting.php");
 
-            require_once("View/setting/update_setting.php");
             break;
         }
         case 'phantrang':
@@ -43,23 +48,18 @@ switch ($action) {
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
             if(empty($paged) || !is_numeric((float)$paged))
                 $paged = 1;
-
             $offset = ($paged - 1) * $limit;
-
             $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
-
             $count = $db->phantrang($tbl2);
             require_once("view/setting/test-phantrang.php");
             break;
         }
     default:
         {
-
             $tbl = "setting";
             $data = $db->getAllData($tbl);
             require_once('view/setting/setting.php');
             break;
-
         }
 }
 ?>
