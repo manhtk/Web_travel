@@ -8,7 +8,7 @@
     <div class="suacaidat">
         <h3>Update Setting</h3>
         
-        <form method="post" action="" enctype="multipart/form-data">
+        <form method="post" action="">
             <table border="0">
                 
                     <td><input type="hidden" name="setting[]" value="<?php echo $value['id'] ?>" placeholder="id"></td>
