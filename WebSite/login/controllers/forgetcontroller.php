@@ -16,8 +16,6 @@ if (isset($_POST['s']) && $_POST['s']==1) {
                       tokenExpire=DATE_ADD(NOW(), INTERVAL 5 MINUTE)
                       WHERE email='$email' OR username='$email'
             ");
-            var_dump($conn);
-            exit();
             require '../libs/PHPMailer/PHPMailer.php';
             require '../libs/PHPMailer/Exception.php';
             require '../libs/PHPMailer/SMTP.php';
