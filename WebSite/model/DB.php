@@ -212,7 +212,6 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         $sql = implode(",", $str);
         $query = "UPDATE $table SET $sql WHERE $column='$id'";
-        echo var_dump($query);
         return $this->excute($query);
     }
 
