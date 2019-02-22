@@ -35,6 +35,7 @@ if (isset($_POST['s']) && $_POST['s']==1) {
 	            Kind Regards,<br>
 	            My Name
 	        ";
+
             if ($mail->send())
                 array_push($errors,'<p class="error">Please Check Your Email Inbox!</p>') ;
             else

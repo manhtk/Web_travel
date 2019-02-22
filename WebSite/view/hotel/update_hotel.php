@@ -10,36 +10,36 @@
         <tr>
             <td>Id hotel</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value["hotel_id"] ?>" placeholder="Id hotel"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value["hotel_id"] ?>" placeholder="Id hotel" readonly ></td>
         <tr>
             <td>Id city</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['city_id'] ?>" placeholder="Id city"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['city_id'] ?>" placeholder="Id city"></td>
         <tr>
             <td>Name</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['hotel_name'] ?>" placeholder="Name"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['hotel_name'] ?>" placeholder="Name"></td>
         <tr>
             <td>Owner</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['owner'] ?>" placeholder="Owner"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['owner'] ?>" placeholder="Owner"></td>
         <tr>
             <td>Description</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['description'] ?>" placeholder="Description">
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['description'] ?>" placeholder="Description">
         </td>
         <tr>
             <td>Images</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['images'] ?>" placeholder="Image"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['images'] ?>" placeholder="Image"></td>
         <tr>
             <td>Starnum</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['starnum'] ?>" placeholder="Starnum"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['starnum'] ?>" placeholder="Starnum"></td>
         <tr>
             <td>Address</td>
         </tr>
-        <td><input type="text" name="hotel[]" value="<?php echo $value['address'] ?>" placeholder="Address"></td>
+        <td><input type="text"  class="form-control" name="hotel[]" value="<?php echo $value['address'] ?>" placeholder="Address"></td>
         <td><input type="submit" name="update_hotel" value="Update data"></td>
     </table>
 </form>
