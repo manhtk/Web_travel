@@ -19,6 +19,7 @@
         }
 
         if(!empty($errors)) {
+
             include('../views/login.php');
         }
 
