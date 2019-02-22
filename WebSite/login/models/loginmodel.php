@@ -8,11 +8,11 @@
             $_SESSION['currUser']=$row['username'];
             if ($row['role']==1 || $row['role']==2 ) {
                 $_SESSION['currAdmin'] = $row['role'];
-                include ('../../../WebSite/admin.php') ;
+                header ('Location:../../../WebSite/admin.php') ;
             }
             else
             {
-               include ('../../view/site/HomePage.php');
+               header('Location:../../view/site/HomePage.php');
             }
         }else
         {
