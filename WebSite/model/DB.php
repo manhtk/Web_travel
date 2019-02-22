@@ -5,7 +5,7 @@ class Database
     private $hostname = "localhost";
     private $username = "root";
     private $password = "";
-    private $dbname = "webtravel2";
+    private $dbname = "webtravel";
 
     private $conn = null;
     private $result = null;
