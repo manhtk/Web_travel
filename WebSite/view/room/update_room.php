@@ -10,9 +10,9 @@
 				<label for="exampleInputPassword1">Hotel</label>
 				<select class="form-control">
 					<?php
-                foreach ($data_dis as $value) {
+                foreach ($data_dis as $value1) {
                     ?>
-                    <option><?php echo $value['hotel_id']; ?></option>
+                    <option><?php echo $value1['hotel_id']; ?></option>
                 <?php } ?>
 				</select>				
 			</div>
