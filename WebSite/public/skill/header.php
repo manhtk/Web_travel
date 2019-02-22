@@ -61,7 +61,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             
                             <a class="collapse-item" href="?controller=hotel&action=list">All Hotel</a>
-                            <a class="collapse-item" href="utilities-border.html">Add Hotel</a>
+                            <a class="collapse-item" href="?controller=hotel&action=add">Add Hotel</a>
                             
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                                     Activity Log
                                     </a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <a class="dropdown-item" href="../../login" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                     </a>

@@ -53,15 +53,17 @@ if (isset($_POST['register']))
 	    }
 	if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['password_1']))
 	    {
-	    	array_push($errors, '<p class="error">Username không hợp lệ. Vui lòng nhập username khác </p>');
+	    	array_push($errors, '<p class="error">Password không hợp lệ. Vui lòng nhập password khác </p>');
 			$check = false;
 			// exit();
 	    }
 	if ($check){
-	
-		echo "Validate thành công";
 		include "../models/registermodel.php";
-		get_user($_POST['username'],$_POST['password_1'], $_POST['password_2'],$_POST['email'],$_POST['role'], $db);
+		$role = isset($_POST['partner']) ? $_POST['partner'] : 'normal-partner';
+		get_user($_POST['username'],$_POST['password_1'], $_POST['password_2'],$_POST['email'],$role, $db);
+
+	}else{
+		include "../views/register.php";
 	}
 
 	
@@ -76,8 +78,12 @@ if (isset($_POST['register']))
 	// 		header('location:index.php');
 		
 	// }
+}else{
+	include "../views/register.php";
 }
 
-include "../views/register.php";
+
+
+
 
  ?>

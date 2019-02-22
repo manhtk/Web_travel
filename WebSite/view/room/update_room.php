@@ -8,7 +8,13 @@
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Hotel</label>
-				<input type="text" name="room[]" value="<?php echo $value['hotel_id']  ?>" class="form-control"  >				
+				<select class="form-control">
+					<?php
+                foreach ($data_dis as $value) {
+                    ?>
+                    <option><?php echo $value['hotel_id']; ?></option>
+                <?php } ?>
+				</select>				
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Room</label>
