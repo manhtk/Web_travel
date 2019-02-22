@@ -47,7 +47,6 @@ class Database
 
             $query = "SELECT * FROM $table";
         }
-        echo var_dump($query);
         $this->excute($query);
         if ($this->numRows() == 0) {
             $data = 0;
