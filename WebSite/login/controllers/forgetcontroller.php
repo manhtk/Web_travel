@@ -16,6 +16,8 @@ if (isset($_POST['s']) && $_POST['s']==1) {
                       tokenExpire=DATE_ADD(NOW(), INTERVAL 5 MINUTE)
                       WHERE email='$email' OR username='$email'
             ");
+            var_dump($conn);
+            exit();
             require '../libs/PHPMailer/PHPMailer.php';
             require '../libs/PHPMailer/Exception.php';
             require '../libs/PHPMailer/SMTP.php';
@@ -35,6 +37,7 @@ if (isset($_POST['s']) && $_POST['s']==1) {
 	            Kind Regards,<br>
 	            My Name
 	        ";
+
             if ($mail->send())
                 array_push($errors,'<p class="error">Please Check Your Email Inbox!</p>') ;
             else
