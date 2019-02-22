@@ -59,9 +59,9 @@ switch ($action) {
         {
             if (isset($_GET['key'])) {
                 $key = $_GET['key'];
-                $data_Search = $db->searchData('user','username', $key);
+                $data_Search = $db->searchData('user','','','username','email', $key);
             }
-            require_once("view/user/seach_user.php");
+            require_once("view/user/search_user.php");
             break;
         }    
     case "delete":

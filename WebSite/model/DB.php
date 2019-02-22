@@ -5,7 +5,7 @@ class Database
     private $hostname = "localhost";
     private $username = "root";
     private $password = "";
-    private $dbname = "webtravel2";
+    private $dbname = "webtravel";
 
     private $conn = null;
     private $result = null;
@@ -227,6 +227,10 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
             $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE ($key LIKE '%$valueS%') OR ($key2 LIKE '%$valueS%') ";
         } else if ( $table2 != '' && $join != '' ){
             $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%' ";
+        }
+        else if($key2 !='' )
+        {
+             $sql = "SELECT * FROM $table1 WHERE ($key LIKE '%$valueS%') OR ($key2 LIKE '%$valueS%')";
         }
         else {
             $sql = "SELECT * FROM $table1 WHERE $key LIKE '%$valueS%'";

@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Danh sach khach san</title>
-</head>
-<body>
-<br>
+<div class="table-responsive">
 <?php if ($data_Search == 0) {
     echo "Found no record!";
 } else { ?>
 <form method="post" action="">
-    <table border="1">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
         <tr>
                 <th>User_id</th>
@@ -64,5 +57,4 @@
 <button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Go home
 </button>
 
-</body>
-</html>
+</div>
