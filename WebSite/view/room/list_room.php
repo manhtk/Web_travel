@@ -53,7 +53,7 @@
 					<td><?php echo $value['people'] ?></td>
 					<td><?php echo $value['bed'] ?></td>
 					<td><?php echo $value['size'] ?></td>
-					<td ><img src="libs/Images/<?php echo $value['room_images'] ?>" style="width: 50px; height:auto;"></td>
+					<td ><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height:auto;"></td>
 					
 					<td><?php echo $value['content'] ?></td>
 					<td><?php echo $value['status'] ?></td>
