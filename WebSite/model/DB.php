@@ -285,14 +285,6 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         return $data;
     }
-<<<<<<< HEAD
-
-=======
-
-
-   
-
->>>>>>> 9bece787becea92dfcf9760653ce8f4367cef8b4
 }
 
     
