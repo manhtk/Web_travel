@@ -8,7 +8,7 @@
             $_SESSION['currUser']=$row['username'];
             if ($row['role']==1 || $row['role']==2 ) {
                 $_SESSION['currAdmin'] = $row['role'];
-                header ('Location:../../../WebSite/admin.php') ;
+                header ('Location:../../admin.php') ;
             }
             else
             {
