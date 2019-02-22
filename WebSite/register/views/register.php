@@ -14,6 +14,7 @@
 			<!-- <?php 
 				// include ('errors.php');
 			?> -->
+			<div>
 			<?php
 			//In loi
 			if(isset($errors)){
@@ -25,7 +26,9 @@
 				}
 
 			}
+
 			?>
+			</div>
 			<div class="input-group">
 				<label for="">Username</label>
 				<input type="text"  name="username" value="<?php echo isset($_POST['username'])  ? $_POST['username'] : ''; ?>"  />
@@ -50,7 +53,7 @@
 				<input type="radio" class="radio"  name="partner" value="partner">Partner<br>
 			</div>
 			<p>
-				Not yet a member ? <a href="login.php">Sign In</a>
+				Not yet a member ? <a href="../../login/index.php">Sign In</a>
 			</p>
 		</form>
 	</div>

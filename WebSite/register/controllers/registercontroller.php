@@ -22,34 +22,48 @@ if (isset($_POST['register']))
 	//Đây mới là check validate form, chưa cần include model vội
 	//include ('../models/registermodel.php');
 	$check = true;
+	
 	if (empty($_POST['username'])) {
-		array_push($errors, "Username is required");
+		array_push($errors, '<p class="error">Username is required</p>');
 		$check = false;
 	}
 	if (empty($_POST['password_1'])) {
-		array_push($errors, "Password is required");
+		array_push($errors, '<p class="error">Password is required</p>');
 		$check = false;
 	}
     if (empty($_POST['email'])) {
-        array_push($errors, "Email is required");
+        array_push($errors, '<p class="error">Email is required</p>');
         $check = false;
     }
 	if ($_POST['password_1'] != $_POST['password_2']){
-		array_push($errors, "The two passwords do not match");
+		array_push($errors, '<p class="error">The two passwords do not match</p>');
 		$check = false;
 	}
-	if (!eregi("^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$", $email))
+	if (!eregi("^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$", $_POST['email']))
 	    {
-	    	array_push($errors, "Email này không hợp lệ. Vui long nhập email khác. ");
+	    	array_push($errors, '<p class="error">Email này không hợp lệ. Vui long nhập email khác.</p> ');
 			$check = false;
 			// exit();
-	       
+	    }
+	if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['username']))
+	    {
+	    	array_push($errors, '<p class="error">Username không hợp lệ. Vui lòng nhập username khác </p>');
+			$check = false;
+			// exit();
+	    }
+	if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['password_1']))
+	    {
+	    	array_push($errors, '<p class="error">Username không hợp lệ. Vui lòng nhập username khác </p>');
+			$check = false;
+			// exit();
 	    }
 	if ($check){
+	
 		echo "Validate thành công";
 		include "../models/registermodel.php";
-		get_user($_POST['username'],$_POST['password_1'], $_POST['password_2'],$_POST['email'], $db);
+		get_user($_POST['username'],$_POST['password_1'], $_POST['password_2'],$_POST['email'],$_POST['role'], $db);
 	}
+
 	
  //    echo 123;die;
 	// if($check && $errors==0){
