@@ -34,7 +34,7 @@
             <button type="submit" name="login" class="btn">Login</button>
         </div>
         <p>
-            Not yet a member ? <a href="register.php">Sign up</a>
+            Not yet a member ? <a href="../../register/">Sign up</a>
         </p>
         <p>
             <a href="../views/forget.php">forgot password ?</a>

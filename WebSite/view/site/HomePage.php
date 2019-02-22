@@ -71,7 +71,7 @@
                 <div class="topbar-right">
                     <ul class="st-list topbar-items">
                         <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Login</a></li>
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#">Sign up</a></li>
+                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../register">Sign up</a></li>
                         <li class="dropdown dropdown-currency hidden-sm hidden-xs">
                             <a href="#">EUR<i class="fa fa-angle-down"></i></a>
                             <ul class="dropmenu">
