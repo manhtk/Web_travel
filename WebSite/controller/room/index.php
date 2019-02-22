@@ -35,6 +35,7 @@ switch ($action) {
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_room'])) {
                     $val = $_POST["room"];
+
                     if ($db->updateData($table, $id, $val)   ) {
                         echo "
                     <script>
@@ -68,7 +69,7 @@ switch ($action) {
         {
             if (isset($_GET['key'])) {
                 $key = $_GET['key'];
-                $data_Search = $db->searchData('room', 'hotel', 'hotel_id', 'room_name', $key);
+                $data_Search = $db->searchData('room', 'hotel', 'hotel_id', 'room_name','', $key);
             }
             require_once("view/room/search_room.php");
             break;

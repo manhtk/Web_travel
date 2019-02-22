@@ -33,14 +33,17 @@
                 <tr>
                     <td>Logo</td>
                 
-                    <td><input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
+                    <td>
+                        <input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo">
+                        <input type="hidden" name="image1" value="<?php echo $value['logo'] ?>" />
+                    </td>
                 </tr>  
 
             </table>
         
             <div style="text-align: center;padding:10px; ">
-            <td><button onclick="location.href='admin.php?controller=setting'" type="button" style="margin-right: 18px;">Cancel</button>
-            <td><input type="submit" name="update_setting" value="Update"></td>
+            <td><button onclick="location.href='admin.php?controller=setting'" class="btn btn-primary" type="button" style="margin-right: 18px;">Cancel</button>
+            <td><input type="submit" class="btn btn-primary" name="update_setting" value="Update"></td>
         </td></div>
         </form>
     </div>
