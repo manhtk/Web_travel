@@ -71,7 +71,6 @@ switch ($action) {
               
                $tbl = "user";            
             $limit = $db->getPag();
-            echo var_dump($limit);
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
             if(empty($paged) || !is_numeric((float)$paged))
                 $paged = 1;
