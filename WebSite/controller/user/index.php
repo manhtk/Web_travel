@@ -14,7 +14,17 @@ switch ($action) {
                 $value = $_POST["user"];
                 $table = "user";
                 $value[2] = md5($value[2]);
-                if(!$db->insertData($table, $value)) {
+        // if($db->checkUser($table, 'username', $value['1']) > 0 || $db->checkUser($table, 'email', $value['7']) > 0) {
+        //             echo "Email hoac username da ton tai. Please check again!";
+        //             echo "<br>";
+        //             echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+        //         }
+        //        else
+        //          {
+        //             $db->insertData($table, $value);
+        //          }
+
+                  if(!$db->insertData($table, $value)) {
                     echo "Can't insert data because duplicate id of room. Please check again!";
                     echo "<br>";
                     echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
@@ -24,6 +34,7 @@ switch ($action) {
                     echo "Successful.";
                  }
             }
+            // echo $value['7'];
             require_once ("view/user/add_user.php");
             break;
     }

@@ -24,7 +24,7 @@
 		<br/>
 		<thead>
 			<tr>
-				<th>User_id</th>
+				<th>user_id</th>
 				<th>username</th>
 				<th>password</th>
 				<th>role</th>
@@ -37,6 +37,8 @@
 				<th>birthday</th>
 				<th>gender</th>
 				<th>regisdate</th>
+				<th>token</th>
+				<th>tokenExpire</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -58,6 +60,8 @@
 					<td><?php echo $value['birthday'] ?></td>
 					<td><?php echo $value['gender'] ?></td>
 					<td><?php echo $value['regisdate'] ?></td>
+					<td><?php echo $value['token'] ?></td>
+					<td><?php echo $value['tokenExpire'] ?></td>
 					
 					<td>
 						<button class="btn btn-danger"><a onclick="return confirm('Are you want to delete record?')"
