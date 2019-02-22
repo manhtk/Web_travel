@@ -24,7 +24,7 @@ function uploadImageHandler($field_name){
         $uploadOk = 0;
     }
     // Check file size
-    if ($_FILES[$field_name]["size"] > 5000000) {
+    if ($_FILES[$field_name]["size"] > 50000000) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
     }

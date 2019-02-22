@@ -25,6 +25,7 @@
             
             // array_push($errors, '<p class="error">Tài khoản hoặc email đã tồn tại </p>');
             //include('../views/register.php');
+            include "../views/register.php";
         }
         else {
             $sql="INSERT INTO user(username,password,email,role) VALUES ('$username','$password','$email','$role')";
@@ -32,7 +33,9 @@
             $query = mysqli_query($conn,$sql);
             $_SESSION['username']=$username;
             $_SESSION['success']="You are loged in";
-            // include ('../login/index.php');
+            $message = "Login thành công";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            include ('../../login/views/login.php');
         }
     }
     }

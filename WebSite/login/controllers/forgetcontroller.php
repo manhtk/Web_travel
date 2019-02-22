@@ -16,6 +16,7 @@ if (isset($_POST['s']) && $_POST['s']==1) {
                       tokenExpire=DATE_ADD(NOW(), INTERVAL 5 MINUTE)
                       WHERE email='$email' OR username='$email'
             ");
+            mail("minhthang1697@gmail.com","Success","Send mail from localhost using PHP"); die;
             require '../libs/PHPMailer/PHPMailer.php';
             require '../libs/PHPMailer/Exception.php';
             require '../libs/PHPMailer/SMTP.php';
