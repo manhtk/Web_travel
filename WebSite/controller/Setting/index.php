@@ -47,6 +47,12 @@ switch ($action) {
             break;
         }
         
-    
+    default:
+        {
+            $tbl = "setting";
+            $data = $db->getAllData($tbl);
+            require_once('view/setting/setting.php');
+            break;
+        }
 }
 ?>
