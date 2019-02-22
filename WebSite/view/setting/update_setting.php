@@ -17,7 +17,14 @@
                     <td><input type="text" name="setting[]" value="<?php echo $value['dateformat'] ?>" placeholder="data format"></td>
                     
                 </tr>
+                <tr>
+                    <td>Logo</td>
                 
+                    <td>
+                        <input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo">
+                        <input type="hidden" name="image1" value="<?php echo $value['logo'] ?>" />
+                    </td>
+                </tr>  
                 <tr>
                     <td>Email Admin</td>
                 
@@ -30,14 +37,7 @@
                 
                 </td>
             </tr>
-                <tr>
-                    <td>Logo</td>
                 
-                    <td>
-                        <input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo">
-                        <input type="hidden" name="image1" value="<?php echo $value['logo'] ?>" />
-                    </td>
-                </tr>  
 
             </table>
         
