@@ -14,7 +14,7 @@
         <tr>
             <td>Id hotel</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Id hotel"></td>
+        <td><input class="form-control" type="text" placeholder="Id hotel" readonly></td>
         <tr>
             <td>Id city</td>
         </tr>
@@ -48,7 +48,7 @@
             <td>Address</td>
         </tr>
         <td><input class="form-control" type="text" name="hotel[]" placeholder="Address"></td>
-        <td><input type="submit" name="add_hotel" value="Add data"></td>
+        <td><input style="margin-left: 30px;" type="submit" name="add_hotel" value="Add data"></td>
     </table>
 </form>
 <br>

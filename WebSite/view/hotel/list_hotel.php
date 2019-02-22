@@ -61,7 +61,6 @@
         } ?>
         </tbody>
     </table>
-    <td><a href="admin.php?controller=hotel&action=add">Add new data</a></td>
     <input type='submit' name='delete' onclick="return confirm('Are you sure?')" value='Delete'>
 </form>
 <?php 
