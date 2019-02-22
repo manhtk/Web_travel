@@ -35,7 +35,7 @@ switch ($action) {
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_room'])) {
                     $val = $_POST["room"];
-                    if ($db->updateData($table, $id, $val)) {
+                    if ($db->updateData($table, $id, $val)   ) {
                         echo "
                     <script>
                         window.location.href ='admin.php?controller=room&action=list';
@@ -94,6 +94,7 @@ switch ($action) {
             $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
 
             $count = $db->phantrang($tbl2);
+
             require_once("view/room/list_room.php");
             break;
         }
