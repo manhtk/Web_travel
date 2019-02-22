@@ -220,10 +220,10 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $this->excute($sql);
     }
 
-     public function searchData($table1, $table2 = '', $join = '', $key, $valueS)
+     public function searchData($table1, $table2 = '', $join = '', $key, $key2, $valueS)
     {
         if ($table2 != '' & $join != '') {
-            $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%'";
+            $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%' OR $key2  LIKE '%$valueS%' ";
         } else {
             $sql = "SELECT * FROM $table1 WHERE $key LIKE '%$valueS%'";
         }
@@ -286,10 +286,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         return $data;
     }
-<<<<<<< HEAD
 
-   
-=======
 }
->>>>>>> 2f7cc9cb3098ecc37fa42d8cd6e52679c59470dd
+
     
