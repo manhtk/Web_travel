@@ -13,6 +13,7 @@ switch ($action) {
             {
                 $value = $_POST["user"];
                 $table = "user";
+                $value[2] = md5($value[2]);
                 if(!$db->insertData($table, $value)) {
                     echo "Can't insert data because duplicate id of room. Please check again!";
                     echo "<br>";
@@ -35,10 +36,11 @@ switch ($action) {
                 $value = $db->getDataUpdate($table, $id);
                 if (isset($_POST['update_user'])) {
                     $val = $_POST["user"];
+                     $val[2] = md5($val[2]);
                     if ($db->updateData($table, $id, $val)) {
                         echo "
                     <script>
-                        window.location.href ='admin.php?controller=room&action=list';
+                        window.location.href ='admin.php?controller=user&action=list';
                 </script>";
                     } else {
                         echo "Can't update data because duplicate id of hotel. Please check again!";
@@ -49,7 +51,7 @@ switch ($action) {
                 }
             }
      
-            require_once 'view/room/update_user.php';
+            require_once 'view/user/update_user.php';
             break;
 
         }
@@ -57,14 +59,21 @@ switch ($action) {
         {
             if (isset($_GET['key'])) {
                 $key = $_GET['key'];
-                $data_Search = $db->searchData('room', 'hotel', 'hotel_id', 'room_name', $key);
+                $data_Search = $db->searchData('user','username', $key);
             }
-            require_once("view/room/search_room.php");
+            require_once("view/user/seach_user.php");
             break;
         }    
     case "delete":
         {
-
+             {
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+                if ($db->deleteData('user', 'user_id', $id)) {
+                    echo "Delete record success";
+                }
+            }
+        }
         }
      case 'list':
           
