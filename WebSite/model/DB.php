@@ -47,7 +47,6 @@ class Database
 
             $query = "SELECT * FROM $table";
         }
-        
         $this->excute($query);
         if ($this->numRows() == 0) {
             $data = 0;
@@ -65,7 +64,7 @@ class Database
             
             $query = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$id = $table2.$id LIMIT {$offset},{$limit}";
         }
-        elseif($limit !=''){
+        else if($limit !=''){
             $query = "SELECT * FROM $table LIMIT {$offset}, {$limit}";  
         }else
         {
@@ -81,7 +80,6 @@ class Database
             }
         }
     
-
         return $data;
 
     }
@@ -215,19 +213,19 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $count;
     }
 
-    public
-    function deleteData($table, $id)
+     public function deleteData($table, $column, $id)
     {
-        $column = $this->getPrimaryKey($table);
         $sql = "DELETE FROM $table WHERE $column='$id'";
         return $this->excute($sql);
     }
 
-    public function searchData($table, $key)
+     public function searchData($table1, $table2 = '', $join = '', $key, $key2, $valueS)
     {
-        $primary = $this->getPrimaryKey($table);
-        $column = $this->getKeySearch($table);
-        $sql = "SELECT * FROM $table WHERE $column LIKE '%$key%' ORDER BY $primary ";
+        if ($table2 != '' & $join != '') {
+            $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%' OR $key2  LIKE '%$valueS%' ";
+        } else {
+            $sql = "SELECT * FROM $table1 WHERE $key LIKE '%$valueS%'";
+        }
         $this->excute($sql);
         if ($this->numRows() == 0) {
             $data = 0;
@@ -278,24 +276,15 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
 
         return $page;
     }
-    //Phương thức lấy dữ liệu cần sửa theo id
-    public function getDataID($table,$id)
+    public function checkTag($val)
     {
-        $sql = "SELECT * FROM $table WHERE room_id = '$id";
-       
-        $this->excute($sql);
-        if($this->numRows()!=0)
-        {
-            $data = mysqli_fetch_array($this->result);
-        }
-        else
-        {
+        if ($val != strip_tags($val)) {
             $data = 0;
+        } else {
+            $data = 1;
         }
-
         return $data;
-        
     }
-
-
 }
+
+    

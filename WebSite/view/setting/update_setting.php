@@ -8,7 +8,7 @@
     <div class="suacaidat">
         <h3>Update Setting</h3>
         
-        <form method="post" action="">
+        <form method="post" action="" enctype="multipart/form-data">
             <table border="0">
                 
                     <td><input type="hidden" name="setting[]" value="<?php echo $value['id'] ?>" placeholder="id"></td>
@@ -17,11 +17,7 @@
                     <td><input type="text" name="setting[]" value="<?php echo $value['dateformat'] ?>" placeholder="data format"></td>
                     
                 </tr>
-                <tr>
-                    <td>Logo</td>
                 
-                    <td><input type="text" name="setting[]" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
-                </tr>
                 <tr>
                     <td>Email Admin</td>
                 
@@ -34,7 +30,11 @@
                 
                 </td>
             </tr>
-                    
+                <tr>
+                    <td>Logo</td>
+                
+                    <td><input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo"></td>
+                </tr>  
 
             </table>
         
