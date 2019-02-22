@@ -9,10 +9,10 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case "add":
     {
-       if(isset($_POST['add_room']))
+       if(isset($_POST['add_user']))
             {
-                $value = $_POST["room"];
-                $table = "room";
+                $value = $_POST["user"];
+                $table = "user";
                 if(!$db->insertData($table, $value)) {
                     echo "Can't insert data because duplicate id of room. Please check again!";
                     echo "<br>";
@@ -23,19 +23,19 @@ switch ($action) {
                     echo "Successful.";
                  }
             }
-            require_once ("view/room/add_room.php");
+            require_once ("view/user/add_user.php");
             break;
     }
         
             
     case "update": {  
            if (isset($_GET['id'])) {
-                $table = 'room';
+                $table = 'user';
                 $id = $_GET['id'];
                 $value = $db->getDataUpdate($table, $id);
-                if (isset($_POST['update_room'])) {
-                    $val = $_POST["room"];
-                    if ($db->updateData($table, $id, $val)   ) {
+                if (isset($_POST['update_user'])) {
+                    $val = $_POST["user"];
+                    if ($db->updateData($table, $id, $val)) {
                         echo "
                     <script>
                         window.location.href ='admin.php?controller=room&action=list';
@@ -49,21 +49,10 @@ switch ($action) {
                 }
             }
      
-            require_once 'view/room/update_room.php';
+            require_once 'view/room/update_user.php';
             break;
 
         }
-
-    // case "delete":
-    //     {
-    //         if (isset($_GET['id'])) {
-    //             $table = 'room';
-    //             $id = $_GET['id'];
-    //             if ($db->deleteData($table, $id)) {
-               
-    //         }
-    //     }
-
     case "search":
         {
             if (isset($_GET['key'])) {
@@ -77,27 +66,23 @@ switch ($action) {
         {
 
         }
-
      case 'list':
-        {
-                $tbl2 = "room";
-                $tbl1 = "hotel";
-                $id = "hotel_id";
-            
+          
+              
+               $tbl = "user";            
             $limit = $db->getPag();
+            echo var_dump($limit);
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
             if(empty($paged) || !is_numeric((float)$paged))
                 $paged = 1;
 
             $offset = ($paged - 1) * $limit;
 
-            $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
-
-            $count = $db->phantrang($tbl2);
-
-            require_once("view/room/list_room.php");
+            $data = $db->getAllData($tbl,$offset,$limit);
+            $count = $db->phantrang($tbl);
+           
+            require_once("view/user/list_user.php");
             break;
-        }
     default:
         {
             
@@ -115,7 +100,7 @@ switch ($action) {
             $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
 
             $count = $db->phantrang($tbl2);
-            require_once("view/room/list_room.php");
+            require_once("view/user/list_user.php");
             break;
         }
 }

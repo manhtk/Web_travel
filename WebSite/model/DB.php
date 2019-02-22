@@ -47,7 +47,7 @@ class Database
 
             $query = "SELECT * FROM $table";
         }
-        
+        echo var_dump($query);
         $this->excute($query);
         if ($this->numRows() == 0) {
             $data = 0;
@@ -286,7 +286,14 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         return $data;
     }
+<<<<<<< HEAD
 
+=======
+
+
+   
+
+>>>>>>> 9bece787becea92dfcf9760653ce8f4367cef8b4
 }
 
     
