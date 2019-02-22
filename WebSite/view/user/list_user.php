@@ -7,7 +7,7 @@
 				<form action="" method="get"
       class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
     <div  class="input-group" style="border: #dddfeb solid 1px; border-radius: 2px; ">
-        <input type="hidden" name="controller" value="room">
+        <input type="hidden" name="controller" value="user">
         <input type="text" name="key" class="form-control bg-light border-0 small"
                placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" ">
         <div class="input-group-append">
@@ -24,7 +24,7 @@
 		<br/>
 		<thead>
 			<tr>
-				<th>STT</th>
+				<th>User_id</th>
 				<th>username</th>
 				<th>password</th>
 				<th>role</th>
@@ -37,6 +37,7 @@
 				<th>birthday</th>
 				<th>gender</th>
 				<th>regisdate</th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -59,7 +60,12 @@
 					<td><?php echo $value['regisdate'] ?></td>
 					
 					<td>
-						<input  type="submit" name="Xóa" value="Xóa" ><input type="submit" name="Sửa" onclick="location.href='admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>'"  value="Sửa">
+						<button class="btn btn-danger"><a onclick="return confirm('Are you want to delete record?')"
+                           href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"
+                           title="Delete">Delete</a></button>
+						 
+                    <button name="Sửa" onclick="location.href='admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>'"  value="Sửa" class="btn btn-primary">Update</button>
+						<!-- <input type="submit" > -->
 					</td>
 				</tr>
 			<?php } ?>
