@@ -69,20 +69,18 @@ switch ($action) {
      case 'list':
           
               
-               $tbl1 = "user";
-               $id = "user_id";
-            
+               $tbl = "user";            
             $limit = $db->getPag();
+            echo var_dump($limit);
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
             if(empty($paged) || !is_numeric((float)$paged))
                 $paged = 1;
 
             $offset = ($paged - 1) * $limit;
 
-            $data = $db->getAllDataBase($tbl1,$id,$offset,$limit);
-
-            $count = $db->phantrang($tbl1);
-            echo var_dump($offset);
+            $data = $db->getAllData($tbl,$offset,$limit);
+            $count = $db->phantrang($tbl);
+           
             require_once("view/user/list_user.php");
             break;
     default:

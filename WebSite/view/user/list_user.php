@@ -53,7 +53,6 @@
 					<td><?php echo $value['address'] ?></td>
 					<td><?php echo $value['email'] ?></td>
 					<td><?php echo $value['identity_card'] ?></td>
-					
 					<td><?php echo $value['phone_number'] ?></td>
 					<td><?php echo $value['birthday'] ?></td>
 					<td><?php echo $value['gender'] ?></td>
@@ -69,7 +68,7 @@
 	</table>
 </div>
 <?php 
-	$page = $db->phantrang('hotel');
+	$page = $db->phantrang('user');
 ?>
 
 <div class="test-phantrang">
