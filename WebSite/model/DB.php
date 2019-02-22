@@ -219,10 +219,10 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $this->excute($sql);
     }
 
-     public function searchData($table1, $table2 = '', $join = '', $key, $key2, $valueS)
+     public function searchData($table1, $table2 = '', $join = '', $key, $valueS)
     {
         if ($table2 != '' & $join != '') {
-            $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%' OR $key2  LIKE '%$valueS%' ";
+            $sql = "SELECT * FROM $table1 INNER JOIN $table2 ON $table1.$join = $table2.$join WHERE $key LIKE '%$valueS%' ";
         } else {
             $sql = "SELECT * FROM $table1 WHERE $key LIKE '%$valueS%'";
         }

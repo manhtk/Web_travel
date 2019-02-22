@@ -60,13 +60,13 @@
 					<td><a onclick="return confirm('Are you want to delete record?')" 
 							href="admin.php?controller=room&action=delete&id=<?php echo $value['room_id'] ?>" title = "delete">Delete</a>
 						<!-- <input  type="submit" name="Xóa" value="Xóa" > -->
-					</td>
-					<td>
+					
 						<input type="submit" name="Sửa" onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>'"  value="Sửa">
 					</td>
-					<td><?php
+					<?php
 					echo "<td>"; ?><input type="checkbox" name="checkbox[]"
-											value ="<?php echo $value['room_id']; ?>"/><?php echo "</td>"; ?>			
+											value ="<?php echo $value['room_id']; ?>"/><?php echo "</td>"; ?>	
+												
 					</tr>
 			<?php } ?>
 		</tbody>
