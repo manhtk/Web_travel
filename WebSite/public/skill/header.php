@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -45,8 +45,8 @@
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="#">All User<a>
-                            <a class="collapse-item" href="#">Add User</a>
+                            <a class="collapse-item" href="?controller=user&action=list">All User<a>
+                            <a class="collapse-item" href="?controller=user&action=add">Add User</a>
                             
                         </div>
                     </div>

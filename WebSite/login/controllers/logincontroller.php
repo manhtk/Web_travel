@@ -3,7 +3,7 @@
         $errors = array();
         include('../config/db.php');
         $username = $_POST['username'];
-        $password = $_POST['password_1'];
+        $password = md5($_POST['password_1']);
 
         if (empty($username))
             array_push($errors, '<p class="error">Username is required!</p>');
