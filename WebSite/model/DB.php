@@ -138,6 +138,16 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         return $res;
     }
+    public function checkUser($table,$data,$value)
+    {
+        $sql= "SELECT * FROM $table WHERE $data = '$value'";
+        // echo var_dump($sql);
+        $db = new Database();
+        $sql = mysqli_query($db->connect(), $sql);
+        $count = mysqli_num_rows($sql);
+
+        return $count;
+    }
 
     public function insertData($table, $data)
     {
@@ -196,7 +206,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         echo var_dump($query_final);
         return $this->excute($query_final);
         */
-        $combine = array_combine($datas_key, $values);
+        $combine = array_combine($datas_key, $values); 
         foreach ($combine as $key => $value) {
             $str[] = $key . "='" . $value . "'";
         }

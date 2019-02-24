@@ -1,4 +1,6 @@
 <?php
+
+//role= 1
     function get_user($username,$password_1, $conn)
     {
         $qr=mysqli_query($conn, "SELECT * FROM user where username='$username' and password='$password_1'");
@@ -8,7 +10,7 @@
             $_SESSION['currUser']=$row['username'];
             if ($row['role']==1 || $row['role']==2 ) {
                 $_SESSION['currAdmin'] = $row['role'];
-                header ('Location:../../../WebSite/admin.php') ;
+                header ('Location:../../admin.php') ;
             }
             else
             {

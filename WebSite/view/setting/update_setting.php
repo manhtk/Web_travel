@@ -30,7 +30,7 @@
                 
                 </td>
             </tr>
-                <tr>
+            <tr>
                     <td>Logo</td>
                 
                     <td>
@@ -38,6 +38,7 @@
                         <input type="hidden" name="image1" value="<?php echo $value['logo'] ?>" />
                     </td>
                 </tr>  
+                
 
             </table>
         

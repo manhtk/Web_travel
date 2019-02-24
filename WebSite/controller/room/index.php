@@ -33,12 +33,16 @@ switch ($action) {
         
             
     case "update": {  
+         
+            
            if (isset($_GET['id'])) {
                 $table = 'room';
                 $id = $_GET['id'];
                 $value = $db->getDataUpdate($table, $id);
+                 $data_dis = $db->getAllData('hotel');
                 if (isset($_POST['update_room'])) {
                     $val = $_POST["room"];
+                    $data_dis = $db->getAllData('hotel');
 
                     if ($db->updateData($table, $id, $val)   ) {
                         echo "
@@ -73,7 +77,7 @@ switch ($action) {
         {
             if (isset($_GET['key'])) {
                 $key = $_GET['key'];
-                $data_Search = $db->searchData('room', 'hotel', 'hotel_id', 'room_name','', $key);
+                $data_Search = $db->searchData('room', 'hotel', 'hotel_id', 'room_name','hotel_name', $key);
             }
             require_once("view/room/search_room.php");
             break;
