@@ -308,9 +308,8 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
      public function uploadImage($data = 1)
     {
         $return = false;
-        $folder = 'images';
+        $folder = 'libs/uploads';
         $target_dir = SITEPATH . $folder . "/";
-
         $target_file = $target_dir . basename($_FILES["image"]["name"]);
         $image_name = $_FILES["image"]["name"];
         $uploadOk = 1;
