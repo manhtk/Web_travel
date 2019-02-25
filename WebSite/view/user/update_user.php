@@ -1,10 +1,8 @@
-
 <div class="row" >
 	<div class="col-md-4">
 		<form method="post" action="">
 			<div class="form-group">
-				<button class="btn btn-primary" onclick="location.href='admin.php?controller=user&action=list'" type="button">Go home
-		       </button>
+				
 				<!-- <label for="exampleInputPassword1">User_id</label> -->
 				<input type="hidden" name="user[]" value="<?php echo $value['user_id']  ?>" class="form-control" readonly />
 			</div>
@@ -76,6 +74,8 @@
 			
 			
 			<button type="submit" name="update_user"  class="btn btn-primary" >Update</button>
+			<button class="btn btn-primary" onclick="location.href='admin.php?controller=user&action=list'" type="button">Go home
+		       </button>
 			
 		</form>
 	

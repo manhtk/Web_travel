@@ -51,19 +51,22 @@
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Gender</label>
-				<input type="text" name="user[]" required="" class="form-control"  >
+				<select   name="user[]" class="form-control">
+					<option value="Nam">Nam</option>
+					<option value="Nữ">Nữ</option>
+				</select>
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Regisdate</label>
-				<input type="text" name="user[]" required="" class="form-control"  >
+				<input type="date" name="user[]" required="" class="form-control"  >
 			</div>
 			<div class="form-group">
 				<!-- <label for="exampleInputPassword1">Regisdate</label> -->
-				<input type="hidden" name="user[]" " class="form-control"  >
+				<input type="hidden" name="user[]"  class="form-control"  >
 			</div>
 			<div class="form-group">
 				<!-- <label for="exampleInputPassword1">Regisdate</label> -->
-				<input type="hidden" name="user[]" " class="form-control"  >
+				<input type="hidden" name="user[]"  class="form-control"  >
 			</div>
 			
 			<button type="submit" name="add_user"  class="btn btn-primary" >Add</button>

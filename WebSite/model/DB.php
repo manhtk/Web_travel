@@ -141,11 +141,9 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
     public function checkUser($table,$data,$value)
     {
         $sql= "SELECT * FROM $table WHERE $data = '$value'";
-        // echo var_dump($sql);
         $db = new Database();
         $sql = mysqli_query($db->connect(), $sql);
         $count = mysqli_num_rows($sql);
-
         return $count;
     }
 
@@ -218,7 +216,9 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
     public function checkDuplicate($table, $value)
     {
         $key = $this->getPrimaryKey($table);
+
         $sql = "SELECT * FROM $table WHERE $key='$value'";
+
         $res = $this->excute($sql);
         $count = mysqli_num_rows($res);
         return $count;

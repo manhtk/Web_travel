@@ -54,7 +54,7 @@
     </table>
 </form>
 <br>
-<button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Go home
+<button class="btn btn-primary" onclick="location.href='admin.php?controller=user&action=list'" type="button">Go home
 </button>
 
 </div>
