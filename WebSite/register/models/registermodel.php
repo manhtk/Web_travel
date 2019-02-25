@@ -21,8 +21,8 @@
         $result = "SELECT * FROM user WHERE username ='$username' OR email = '$email'";
         $check_username =mysqli_query($conn,$result);
         if ($check_username->num_rows >0) {
-            echo 'Tài khoản hoặc email đã tồn tại';
-            
+            $message1 = "Tài khoản đã tồn tại";
+            echo "<script type='text/javascript'>alert('$message1');</script>";
             // array_push($errors, '<p class="error">Tài khoản hoặc email đã tồn tại </p>');
             //include('../views/register.php');
             include "../views/register.php";
