@@ -21,12 +21,11 @@ switch ($action) {
                  } else
                  {
                     echo "Successful.";
-<<<<<<< HEAD
-=======
+
                     // echo "<script>
                     // window.location.href='admin.php?controller=room&action=add';
                     // <script>";
->>>>>>> d60f78c0372586ed7e20b7b7d9c458fa61431cd5
+
                  }
             }
             require_once ("view/room/add_room.php");

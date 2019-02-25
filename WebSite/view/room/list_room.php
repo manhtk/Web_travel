@@ -62,7 +62,9 @@
 					
 					<td><?php echo $value['content'] ?></td>
 					<td><?php echo $value['status'] ?></td>
-					<td><input type="submit" name="Sửa" onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>'" value="Edit">
+					<td><a  
+						href="admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>"
+						title="Edit">Edit</a>
 					</td>
 					<td><a onclick="return confirm('Do you want to delete record?')" 
 						href="admin.php?controller=room&action=delete_one&id=<?php echo $value['room_id']?>"
