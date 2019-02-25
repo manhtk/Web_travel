@@ -49,7 +49,7 @@
 				<th>Edit</th>
 				<th>Detele</th>
 
-			</tr>
+			</tr>	
 		</thead>
 		<tbody>
 			<?php
@@ -73,13 +73,13 @@
 					<td><?php echo $value['tokenExpire'] ?></td>
 					
 					<td>
-						<button class="btn btn-danger"><a onclick="return confirm('Are you want to delete record?')"
-                           href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"
-                           title="Delete">Delete</a></button>
+						
+                           <a href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"> Delete</a>
 					</td>
 					<td>	 
 
-                    <button name="Sửa" onclick="location.href='admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>'"  value="Sửa" class="btn btn-primary">Update</button>
+                    
+                    <a href="admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>">Edit</a>
 						<!-- <input type="submit" > -->
 					</td>
 				</tr>
