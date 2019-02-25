@@ -9,8 +9,8 @@
 <?php if ($data_Search == 0) {
     echo "Found no record!";
 } else { ?>
-<form method="post" action="">
-    <table border="1">
+<form method="post" action="" enctype="multipart/form-data">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
         <tr>
             <th>Id hotel</th>

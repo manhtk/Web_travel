@@ -5,44 +5,51 @@
 		<div class="row">
 			<div class="col-md-4">
 				<form action="" method="get"
-      class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-    <div  class="input-group" style="border: #dddfeb solid 1px; border-radius: 2px; ">
-        <input type="hidden" name="controller" value="user">
-        <input type="text" name="key" class="form-control bg-light border-0 small"
-               placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" ">
-        <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">
-                <i class="fas fa-search fa-sm"></i>
-            </button>
-        </div>
+				class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+				<div  class="input-group" style="border: #dddfeb solid 1px; border-radius: 2px; ">
+					<input type="hidden" name="controller" value="user">
+					<input type="text" name="key" class="form-control bg-light border-0 small"
+					placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" ">
+					<div class="input-group-append">
+						<button class="btn btn-primary" type="submit">
+							<i class="fas fa-search fa-sm"></i>
+						</button>
+					</div>
 
-        <input type="hidden" name="action" value="search">
-    </div>
-</form>
-			</div>
+					<input type="hidden" name="action" value="search">
+					<div class="input-group-append">
+
+						<select class="form-control" id="sel1" name="key">
+							<option value="1">Admin</option>
+							<option value="2">Partner</option>
+						</select>
+					</div>
+				</div>
+			</form>
 		</div>
+	</div>
 		<br/>
 		<thead>
 			<tr>
-				<th>user_id</th>
-				<th>username</th>
-				<th>password</th>
-				<th>role</th>
-				<th>first_name</th>
-				<th>last_name</th>
-				<th>address</th>
-				<th>email</th>
-				<th>identity_card</th>
-				<th>phone_number</th>
-				<th>birthday</th>
-				<th>gender</th>
-				<th>regisdate</th>
-				<th>token</th>
-				<th>tokenExpire</th>
+				<th>UserID</th>
+				<th>UserName</th>
+				<th>PassWord</th>
+				<th>Role</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Address</th>
+				<th>Email</th>
+				<th>Identity Card</th>
+				<th>PhoneNumber</th>
+				<th>Birthday</th>
+				<th>Gender</th>
+				<th>Regisdate</th>
+				<th>Token</th>
+				<th>TokenExpire</th>
 				<th>Edit</th>
-				<th>Delete</th>
-				<th></th>
-			</tr>
+				<th>Detele</th>
+
+			</tr>	
 		</thead>
 		<tbody>
 			<?php
@@ -66,12 +73,13 @@
 					<td><?php echo $value['tokenExpire'] ?></td>
 					
 					<td>
-						<button class="btn btn-danger"><a onclick="return confirm('Are you want to delete record?')"
-                           href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"
-                           title="Delete">Delete</a></button>
-                       </td>
-						<td> 
-                    <button name="Sửa" onclick="location.href='admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>'"  value="Sửa" class="btn btn-primary">Update</button>
+						
+                           <a href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"> Delete</a>
+					</td>
+					<td>	 
+
+                    
+                    <a href="admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>">Edit</a>
 						<!-- <input type="submit" > -->
 					</td>
 				</tr>

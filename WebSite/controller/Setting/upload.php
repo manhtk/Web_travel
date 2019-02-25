@@ -23,8 +23,8 @@ function uploadImageHandler($field_name){
         echo "Sorry, file already exists.";
         $uploadOk = 0;
     }
-    // Check file size
-    if ($_FILES[$field_name]["size"] > 500000) {
+    // Check file size < 3MB
+    if ($_FILES[$field_name]["size"] > 3145728) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
     }

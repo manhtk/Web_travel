@@ -7,32 +7,42 @@ if (isset($_GET['action'])) {
 }
 
 switch ($action) {
+ 
     case "add":
     {
        if(isset($_POST['add_user']))
             {
-                $value = $_POST["user"];
+                $value = isset($_POST["user"]) ? $_POST["user"] : array();
                 $table = "user";
-                $value[2] = md5($value[2]);
-        // if($db->checkUser($table, 'username', $value['1']) > 0 || $db->checkUser($table, 'email', $value['7']) > 0) {
-        //             echo "Email hoac username da ton tai. Please check again!";
-        //             echo "<br>";
-        //             echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
-        //         }
-        //        else
-        //          {
-        //             $db->insertData($table, $value);
-        //          }
+                $val=$_POST["user"];
 
-                  if(!$db->insertData($table, $value)) {
-                    echo "Can't insert data because duplicate id of room. Please check again!";
+                $count_user = $db->checkUser($table, 'username', $value[1]);
+                if($count_user > 0 ) {
+                    echo " Username already exist. Please check again!";
                     echo "<br>";
                     echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
-                
-                 } else
+                }
+                  else
                  {
                     echo "Successful.";
                  }
+                $check=$db->checkTag($val['7']);
+                if ($check == 0) {
+                    echo "Cant insert data because value include html tags. Please check again";
+                    break;
+                }
+               else
+                 {
+                    $db->insertData($table, $value);
+                 }
+
+                  if(!$db->insertData($table, $value)) {
+                    echo "Can't insert data . Please check again!";
+                    echo "<br>";
+                    echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+                
+                 }
+
             }
             // echo $value['7'];
             require_once ("view/user/add_user.php");
@@ -70,7 +80,7 @@ switch ($action) {
         {
             if (isset($_GET['key'])) {
                 $key = $_GET['key'];
-                $data_Search = $db->searchData('user','','','username','email', $key);
+                $data_Search = $db->searchData('user','','','username','role', $key);
             }
             require_once("view/user/search_user.php");
             break;
