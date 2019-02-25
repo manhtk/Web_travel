@@ -5,6 +5,9 @@
   </div>
   <link rel="stylesheet" type="text/css" href="public/css/setting.css">
   <?php
+  define('SITEPATH', dirname(__FILE__) . '/'); //khai bao hang so
+   define('SITEURL', 'http://webhotel.com:8080/');
+ 
   include_once "model/DB.php";
   $db = new Database;
   $db->connect();
