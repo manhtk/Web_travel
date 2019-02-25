@@ -305,19 +305,33 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         return $data;
     }
+<<<<<<< HEAD
      public function uploadImage($data = 1)
     {
         $return = false;
         $folder = 'images';
         $target_dir = SITEPATH . $folder . "/";
+=======
+    public function uploadImage($data = 1){
+        $return = false;
+        $folder = 'images';
+        $target_dir = SITEPATH . $folder. "/";
+>>>>>>> 78eac40700495800410bb313d188a5947661a273
 
         $target_file = $target_dir . basename($_FILES["image"]["name"]);
         $image_name = $_FILES["image"]["name"];
         $uploadOk = 1;
+<<<<<<< HEAD
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
         $check = getimagesize($_FILES["image"]["tmp_name"]);
         if (is_array($check)) {
+=======
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+        if(is_array($check)) {
+>>>>>>> 78eac40700495800410bb313d188a5947661a273
             $uploadOk = 1;
         } else {
             $uploadOk = 0;
@@ -325,6 +339,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         if (file_exists($target_file)) {
             $uploadOk = 0;
         }
+<<<<<<< HEAD
         if ($_FILES["image"]["size"] > 500000) {
             echo "Sorry, your file is too large.";
             $uploadOk = 0;
@@ -332,6 +347,11 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif") {
             echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+=======
+
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+            && $imageFileType != "gif" ) {
+>>>>>>> 78eac40700495800410bb313d188a5947661a273
             $uploadOk = 0;
         }
 
@@ -339,11 +359,20 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
             $return = false;
         } else {
             if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+<<<<<<< HEAD
                 $return = SITEURL . '' . $folder . '/' . $image_name;
             } else {
                 $return = false;
             }
         }
+=======
+                $return = SITEURL .'/' . $folder .'/'. $image_name;
+            } else {
+                $return =  false;
+            }
+        }
+
+>>>>>>> 78eac40700495800410bb313d188a5947661a273
         return $return;
     }
 }

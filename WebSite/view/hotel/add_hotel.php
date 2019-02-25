@@ -9,16 +9,16 @@
 <a href="admin.php?controller=hotel">Go home</a>
 -->
 
-<form method="post" action="">
+<form method="post" action="" enctype="multipart/form-data">
     <table>
         <tr>
             <td>Id hotel</td>
         </tr>
-        <td><input class="form-control" type="text" placeholder="Id hotel" readonly></td>
+        <td><input class="form-control" type="text" name="hotel_id" placeholder="Id hotel" readonly=""></td>
         <tr>
             <td>Id city</td>
         </tr>
-        <td><select class="form-control" name="hotel[]"><?php
+        <td><select class="form-control" name="city_id"><?php
                 foreach ($data_dis as $value) {
                     ?>
                     <option><?php echo $value['city_id']; ?></option>
@@ -27,28 +27,28 @@
         <tr>
             <td>Hotel name</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Hotel name"></td>
+        <td><input class="form-control" type="text" name="hotel_name" placeholder="Hotel name"></td>
         <tr>
             <td>Owner</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Owner"></td>
+        <td><input class="form-control" type="text" name="owner" placeholder="Owner"></td>
         <tr>
             <td>Description</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Description"></td>
+        <td><input class="form-control" type="text" name="description" placeholder="Description" ></td>
         <tr>
             <td>Images</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Image"></td>
+        <td><input class="form-control" type="file" name="image" placeholder="Image"></td>
         <tr>
             <td>Starnum</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Starnum"></td>
+        <td><input class="form-control" type="text" name="starnum" placeholder="Starnum"></td>
         <tr>
             <td>Address</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel[]" placeholder="Address"></td>
-        <td><input style="margin-left: 30px;" type="submit" name="add_hotel" value="Add data"></td>
+        <td><input class="form-control" type="text" name="address" placeholder="Address"></td>
+        <td><input  type="submit" name="add_hotel" value="Add data" style="margin-left: 20px;"></td>
     </table>
 </form>
 <br>
