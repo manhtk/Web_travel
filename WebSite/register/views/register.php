@@ -42,7 +42,7 @@
 				<input type="password" name="password_1" />
 			</div>
 			<div class="input-group">
-				<label for="">Confilm password</label>
+				<label for="">Confirm password</label>
 				<input type="password" name="password_2" />
 			</div>
 			<div class="input-group">

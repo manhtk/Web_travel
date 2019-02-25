@@ -1,3 +1,36 @@
+<?php 
+  class Room{
+    public $columns = [];
+    public function __construct()
+    {
+        $this->columns = array(
+            'room_id',
+            'hotel_id',
+            'room_name',
+            'typeroom',
+            'price',
+            'point',
+            'people',
+            'bed',
+            'size',
+            'images',
+            'content',
+            'status'
+
+        );
+    }
+    public static function get_inst()
+    {
+        static $instance;
+
+        if (is_null($instance)) {
+            $instance = new Room();
+        }
+
+        return $instance;
+    }
+  }
+ ?>
 <?php
 class Room{
     public $columns = [];
@@ -34,6 +67,15 @@ class Room{
         $action = " ";
     }
 
+<<<<<<< HEAD
+=======
+include_once 'model/DB.php';
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
+} else {
+    $action = " ";
+}
+>>>>>>> bff4dc753e5f33e7ad880c7bd075a362639d2f1c
 
 switch ($action) {
 
@@ -84,26 +126,33 @@ switch ($action) {
          
             
            if (isset($_GET['id'])) {
-                $table = 'room';
+               
                 $id = $_GET['id'];
-                $value = $db->getDataUpdate($table, $id);
+                $value = $db->getDataUpdate('room', $id);
                  $data_dis = $db->getAllData('hotel');
+                  $nameErr = "";
+                 $val=[];
+                 $columns = Room::get_inst()->columns;
+                 foreach ($columns as $column ) {
+                     $val[$column] = isset($_POST[$column]) ? $_POST[$column] : ' ';
+                 }
                 if (isset($_POST['update_room'])) {
-                    $val = $_POST["room"];
-                    $data_dis = $db->getAllData('hotel');
-
-                    if ($db->updateData($table, $id, $val)   ) {
+                     if ($db->checkTag($val['room_name']) == 0) {
+                        $nameErr = "Hotel name is invalid because include html tags";
+                    } else {
+                        $image_url = $db->uploadImage(); 
+                     if (!empty($image_url)) {
+                        $val['images'] = $image_url;
+                    }                 
+                    if ($db->updateData('room', $id, $val)   ) {
                         echo "
                     <script>
                         window.location.href ='admin.php?controller=room&action=list';
                 </script>";
-                    } else {
-                        echo "Can't update data because duplicate id of hotel. Please check again!";
-                        echo "<br>";
-                        echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
-                        break;
                     }
-                }
+                 }
+                    
+               }
             }
      
             require_once 'view/room/update_room.php';
