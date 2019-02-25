@@ -9,7 +9,6 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case "add":
     {
-        
        if(isset($_POST['add_room']))
             {
                 $value = $_POST["room"];
@@ -22,9 +21,6 @@ switch ($action) {
                  } else
                  {
                     echo "Successful.";
-                    echo "<script>
-                    window.location.href='admin.php?controller=room&action=add';
-                    <script>";
                  }
             }
             require_once ("view/room/add_room.php");
