@@ -6,8 +6,8 @@
                 <th>Date Format</th>
                 <th>Logo</th>
                 <th>Admin Email</th>
-                <th>Phân Trang</th>
-                <th>Tùy Chọn</th>
+                <th>Paging</th>
+                <th>Option</th>
             </tr>
         </thead>
     <tbody>

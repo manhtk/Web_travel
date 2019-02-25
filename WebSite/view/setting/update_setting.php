@@ -16,7 +16,7 @@
             <tr>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Email Admin</label>
-                    <input type="text" name="setting[]" value="<?php echo $value['admin_email'] ?>" placeholder="email admin" class="form-control"  >
+                    <input type="email" name="setting[]" value="<?php echo $value['admin_email'] ?>" placeholder="email admin" class="form-control"  >
                 </div>
             </tr>
             <tr>
