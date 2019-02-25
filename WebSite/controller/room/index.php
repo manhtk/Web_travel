@@ -1,32 +1,79 @@
 <?php
+class Room{
+    public $columns = [];
+    public function __construct(){
+        $this->columns = array(
+            'room_id',
+            'hotel_id',
+            'room_name',
+            'type_room',
+            'price',
+            'point',
+            'people',
+            'bed',
+            'size',
+            'image',
+            'content',
+            'status'
+        );
+    }
+    public static function get_inst(){
+        static $instance;
+        if(is_null($instance)){
+            $instance = new Room();
+        }
 
-if (isset($_GET['action'])) {
-    $action = $_GET['action'];
-} else {
-    $action = " ";
-}
+        return $instance;
+        }
+    }
+?>
+
+    <?php if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+    } else {
+        $action = " ";
+    }
+
 
 switch ($action) {
+
     case "add":
     {
-       if(isset($_POST['add_room']))
-            {
-                $value = $_POST["room"];
-                $table = "room";
-                if(!$db->insertData($table, $value)) {
-                    echo "Can't insert data because duplicate id of room. Please check again!";
-                    echo "<br>";
-                    echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
-                
-                 } else
-                 {
-                    echo "Successful.";
+            $data = $db->getAllData('room');
+            $data_dis = $db->getAllData('hotel');
+            $nameErr = "";
+            $val = [];
+            $columns = Room::get_inst()->columns;
+            $uploadOk = 1;
+            foreach ($columns as $column) {
+                $val[$column] = isset($_POST[$column]) ? $_POST[$column] : ' ';
+            }
+            if (isset($_POST['add_room'])) {
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if ($db->checkDuplicate('room', $val['room_id']) > 0) {
+                        echo "Can't insert data because duplicate id room. Please check again";
+                        break;
+                    }
+                    if ($db->checkTag($val['room_name']) == 0) {
+                        $nameErr = "Room name is invalid because include html tags";
+                    } else {
+                        $image_url = $db->uploadImage();
+                        if (!empty($image_url)) {
+                            $val['images'] = $image_url;
+                            $uploadOk = 1;
+                        } else {
+                            $uploadOk = 0;
+                            echo "<br/><button class='btn btn-primary' type='button' onclick=\"location.href='javascript:self.history.back()'\">Go Back</button>";
+                            break;
+                        }
+                        $db->insertData('room', $val);
+                        echo "
+                    <script>
+                        window.location.href ='admin.php?controller=room&action=list';
+                </script>";
+                    }
 
-                    // echo "<script>
-                    // window.location.href='admin.php?controller=room&action=add';
-                    // <script>";
-
-                 }
+                }
             }
             require_once ("view/room/add_room.php");
             break;

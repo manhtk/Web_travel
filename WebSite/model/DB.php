@@ -160,7 +160,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         $values = array_values($data);
         $val = "'" . implode("', '", $values) . "'";
         $query = "INSERT INTO $table($key) VALUES($val)";
-        //echo var_dump($query);
+        echo var_dump($query);
         return $this->excute($query);
 
     }
@@ -348,5 +348,3 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
     }
 
 }
-
-    
