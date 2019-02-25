@@ -9,7 +9,6 @@ if (isset($_GET['action'])) {
 switch ($action) {
     case "add":
     {
-        
        if(isset($_POST['add_room']))
             {
                 $value = $_POST["room"];
@@ -22,9 +21,12 @@ switch ($action) {
                  } else
                  {
                     echo "Successful.";
-                    echo "<script>
-                    window.location.href='admin.php?controller=room&action=add';
-                    <script>";
+<<<<<<< HEAD
+=======
+                    // echo "<script>
+                    // window.location.href='admin.php?controller=room&action=add';
+                    // <script>";
+>>>>>>> d60f78c0372586ed7e20b7b7d9c458fa61431cd5
                  }
             }
             require_once ("view/room/add_room.php");
@@ -82,9 +84,29 @@ switch ($action) {
             require_once("view/room/search_room.php");
             break;
         }    
-    case "delete":
+    case "delete_one":
         {
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+                if ($db->deleteData('room', 'room_id', $id)) {
+                    echo "Delete record success";
+                }
+            }
+        }
 
+    case "delete_all":
+        {
+            if (isset($_POST['delete'])) {
+                $checkbox = $_POST['checkbox'];
+                while (list ($key, $value) = @each($checkbox)) {
+                    $db->deleteData('room', 'room_id', $value);
+                    echo "
+                 <script type='text/javascript'>
+                        window.location.href ='admin.php?controller=room&action=list';
+                </script>";
+                }
+            }
+            
         }
 
      case 'list':

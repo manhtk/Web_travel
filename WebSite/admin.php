@@ -4,8 +4,7 @@
     
   </div>
   <link rel="stylesheet" type="text/css" href="public/css/setting.css">
-  <?php 
-
+  <?php
   include_once "model/DB.php";
   $db = new Database;
   $db->connect();

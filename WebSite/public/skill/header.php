@@ -13,12 +13,17 @@
         <!-- Custom styles for this template-->
         <link href="public/css/sb-admin-2.min.css" rel="stylesheet">
     </head>
+    <?php
+    ob_start();
+    session_start();
+    ?>
     <body id="page-top">
         <!-- Page Wrapper -->
         <div id="wrapper">
             <!-- Sidebar -->
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
                 <!-- Sidebar - Brand -->
+
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin.php">
                     <div class="sidebar-brand-icon rotate-n-15">
                         <i class="fas fa-laugh-wink"></i>
@@ -38,19 +43,27 @@
                 <!-- Heading -->
                
                 <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
+                <?php
+                if($_SESSION['currAdmin']==1)
+                {
+                    ?>
+                    <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    
+
                     <span>User</span>
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <a class="collapse-item" href="?controller=user&action=list">All User<a>
                             <a class="collapse-item" href="?controller=user&action=add">Add User</a>
-                            
+
                         </div>
                     </div>
                 </li>
+                <?php
+                 }
+                ?>
+
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
@@ -86,11 +99,14 @@
                     </div>
                 </li>
                 <!-- Nav Item - Charts -->
+                <?php
+                if($_SESSION['currAdmin']==1) { ?>
                 <li class="nav-item">
                     <a class="nav-link" href="?controller=setting">
                   
                     <span>Setting</span></a>
                 </li>
+                <?php } ?>
                 <!-- Nav Item - Tables -->
                
                 <!-- Divider -->
