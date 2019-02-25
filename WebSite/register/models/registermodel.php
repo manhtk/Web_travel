@@ -21,7 +21,7 @@
         $result = "SELECT * FROM user WHERE username ='$username' OR email = '$email'";
         $check_username =mysqli_query($conn,$result);
         if ($check_username->num_rows >0) {
-            $message1 = "Tài khoản đã tồn tại";
+            $message1 = "Account already exists";
             echo "<script type='text/javascript'>alert('$message1');</script>";
             // array_push($errors, '<p class="error">Tài khoản hoặc email đã tồn tại </p>');
             //include('../views/register.php');
@@ -33,7 +33,7 @@
             $query = mysqli_query($conn,$sql);
             $_SESSION['username']=$username;
             $_SESSION['success']="You are loged in";
-            $message = "Login thành công";
+            $message = "Sign up success";
             echo "<script type='text/javascript'>alert('$message');</script>";
             include ('../../login/views/login.php');
         }
