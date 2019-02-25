@@ -1,52 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <div class="suacaidat">
-        <h3>Update Setting</h3>
-        
-        <form method="post" action="" enctype="multipart/form-data">
-            <table border="0">
-                
-                    <td><input type="hidden" name="setting[]" value="<?php echo $value['id'] ?>" placeholder="id"></td>
-                <tr>
-                    <td>Date Format</td>
-                    <td><input type="text" name="setting[]" value="<?php echo $value['dateformat'] ?>" placeholder="data format"></td>
-                    
-                </tr>
-                
-                <tr>
-                    <td>Email Admin</td>
-                
-                    <td><input type="email" name="setting[]" value="<?php echo $value['admin_email'] ?>" placeholder="email admin"></td>
-                </tr>
-                <tr>
-                    <td>Paging</td>
-                
-                    <td><input type="number" name="setting[]" min = "1" value="<?php echo $value['paging'] ?>" placeholder="paging">
-                
-                </td>
+<div class="row">
+    <div class="col-md-4">
+         <form method="post" action="" enctype="multipart/form-data">
+        <table border="0">
+            <div class="form-group">
+                <label for="exampleInputPassword1">ID</label>
+                <input type="text" name="setting[]" value="<?php echo $value['id']  ?>" class="form-control" readonly />
+            </div>
+            <tr>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Date Format</label>
+                    <input type="text" name="setting[]" value="<?php echo $value['dateformat'] ?>" placeholder="data format" class="form-control"  >
+                </div>
+            </tr>
+            
+            <tr>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email Admin</label>
+                    <input type="text" name="setting[]" value="<?php echo $value['admin_email'] ?>" placeholder="email admin" class="form-control"  >
+                </div>
             </tr>
             <tr>
-                    <td>Logo</td>
+                <label for="exampleInputPassword1">Paging</label>
                 
-                    <td>
-                        <input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo">
-                        <input type="hidden" name="image1" value="<?php echo $value['logo'] ?>" />
-                    </td>
-                </tr>  
-                
+                <input type="number" name="setting[]"  min = "1" value="<?php echo $value['paging'] ?>" placeholder="paging" class="form-control">
+                    
+               
+            </tr>
+            <tr>
 
-            </table>
+                <label for="exampleInputPassword1">Logo</label>
+                
+                <td>
+                    <input type="file" name="image" value="<?php echo $value['logo'] ?>" placeholder="logo">
+                    <input type="hidden" name="image1" value="<?php echo $value['logo'] ?>" />
+                </td>
+            </tr>  
+            
+
+        </table>
         
-            <div style="text-align: center;padding:10px; ">
-            <td><button onclick="location.href='admin.php?controller=setting'" class="btn btn-primary" type="button" style="margin-right: 18px;">Cancel</button>
-            <td><input type="submit" class="btn btn-primary" name="update_setting" value="Update"></td>
-        </td></div>
+        <div style="text-align: center;padding:10px; ">
+            <td><button onclick="location.href='admin.php?controller=setting'" class="btn btn-primary" type="button" style="margin-right:28px;">Cancel</button>
+                <td><input type="submit" class="btn btn-primary" name="update_setting" value="Update"></td>
+            </td></div>
         </form>
     </div>
-</body>
-</html>
+</div>
