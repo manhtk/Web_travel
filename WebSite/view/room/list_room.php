@@ -19,14 +19,13 @@
         <input type="hidden" name="action" value="search">
     </div>
 </form>
-			</div>
-		</div>
-		<br/>
+<form method="post" action="admin.php?controller=room&action=delete_all"> 
+	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 		<thead>
 			<tr>
 				<th>RoomID</th>
 				<th>Hotel</th>
-				<th>Room</th>
+				<th>Room</th>	
 				<th>TypeRoom</th>
 				<th>Price</th>
 				<th>Point</th>
@@ -79,8 +78,8 @@
 		} ?>
 		</tbody>
 	</table>
-	<input type="submit" name="delete" onclick="return confirm('Are you sure?')" value="Delete">
-</div>
+	<input style="float: right" type="submit" name="delete" onclick="return confirm('Are you sure?')" value="Delete">
+</form>
 <?php 
 	$page = $db->phantrang('hotel');
 ?>
