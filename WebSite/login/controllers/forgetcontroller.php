@@ -39,7 +39,7 @@ if (isset($_POST['s']) && $_POST['s']==1) {
 	            
 	            In order to reset your password, please click on the link below:<br>
 	            <a href='
-	           http://localhost/Web_travel/WebSite/login/views/resetPassword.php?email=$email&token=$token
+	           http://localhost/hotelMVC/WebSite/login/views/resetPassword.php?email=$email&token=$token
 	            '>http://localhost/Web_travel/WebSite/login/views/resetPassword.php?</a><br><br>
 	            
 	            Kind Regards,<br>

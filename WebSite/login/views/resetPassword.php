@@ -32,7 +32,7 @@
         </div>
         <div class="input-group">
             <label for="" >New Password again</label>
-            <input type="email"  name="password_2"/>
+            <input type="password"  name="password_2"/>
         </div>
         <div class="input-group">
             <button type="submit" name="forgotPass" class="btn btn-primary">UpDate Password</button>
