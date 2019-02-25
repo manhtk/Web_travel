@@ -31,7 +31,6 @@
 		<br/>
 		<thead>
 			<tr>
-<<<<<<< HEAD
 				<th>Userid</th>
 				<th>Username</th>
 				<th>Password</th>
@@ -50,26 +49,6 @@
 				<th>Edit</th>
 				<th>Detele</th>
 
-=======
-				<th>user_id</th>
-				<th>username</th>
-				<th>password</th>
-				<th>role</th>
-				<th>first_name</th>
-				<th>last_name</th>
-				<th>address</th>
-				<th>email</th>
-				<th>identity_card</th>
-				<th>phone_number</th>
-				<th>birthday</th>
-				<th>gender</th>
-				<th>regisdate</th>
-				<th>token</th>
-				<th>tokenExpire</th>
-				<th>Edit</th>
-				<th>Delete</th>
-				<th></th>
->>>>>>> d7bd77cd3134a6398c6397a22476512053ba96ab
 			</tr>
 		</thead>
 		<tbody>
@@ -97,13 +76,9 @@
 						<button class="btn btn-danger"><a onclick="return confirm('Are you want to delete record?')"
                            href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"
                            title="Delete">Delete</a></button>
-<<<<<<< HEAD
 					</td>
 					<td>	 
-=======
-                       </td>
-						<td> 
->>>>>>> d7bd77cd3134a6398c6397a22476512053ba96ab
+
                     <button name="Sửa" onclick="location.href='admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>'"  value="Sửa" class="btn btn-primary">Update</button>
 						<!-- <input type="submit" > -->
 					</td>
