@@ -305,6 +305,48 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         }
         return $data;
     }
+     public function uploadImage($data = 1)
+    {
+        $return = false;
+        $folder = 'images';
+        $target_dir = SITEPATH . $folder . "/";
+
+        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        $image_name = $_FILES["image"]["name"];
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+        if (is_array($check)) {
+            $uploadOk = 1;
+        } else {
+            $uploadOk = 0;
+        }
+        if (file_exists($target_file)) {
+            $uploadOk = 0;
+        }
+        if ($_FILES["image"]["size"] > 500000) {
+            echo "Sorry, your file is too large.";
+            $uploadOk = 0;
+        }
+        if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+            && $imageFileType != "gif") {
+            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+            $uploadOk = 0;
+        }
+
+        if ($uploadOk == 0) {
+            $return = false;
+        } else {
+            if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+                $return = SITEURL . '' . $folder . '/' . $image_name;
+            } else {
+                $return = false;
+            }
+        }
+        return $return;
+    }
+
 }
 
     

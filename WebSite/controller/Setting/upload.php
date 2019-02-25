@@ -24,7 +24,7 @@ function uploadImageHandler($field_name){
         $uploadOk = 0;
     }
     // Check file size
-    if ($_FILES[$field_name]["size"] > 50000000) {
+    if ($_FILES[$field_name]["size"] > 500000) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
     }
@@ -40,7 +40,7 @@ function uploadImageHandler($field_name){
     // if everything is ok, try to upload file
     } else {
         if (move_uploaded_file($_FILES[$field_name]["tmp_name"], $target_file)) {
-            echo "The file ". basename( $_FILES[$field_name]["name"]). " has been uploaded.";
+            echo "The file <b> ". basename( $_FILES[$field_name]["name"]). "</b> has been uploaded. ";
             return $_FILES[$field_name]["name"];
 
         } else {

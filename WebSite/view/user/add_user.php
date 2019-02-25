@@ -49,9 +49,16 @@
 				<label for="exampleInputPassword1">Birthday</label>
 				<input type="date" name="user[]" required=""  class="form-control"  >
 			</div>
-			<div class="form-group">
+			<!-- <div class="form-group">
 				<label for="exampleInputPassword1">Gender</label>
 				<input type="text" name="user[]" required="" class="form-control"  >
+			</div> -->
+			<div class="form-group">
+				<label for="exampleInputPassword1">Role</label>
+				<select   name="user[]" class="form-control">
+					<option value="Nam">Nam</option>
+					<option value="Nữ">Nữ</option>
+				</select>
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Regisdate</label>
