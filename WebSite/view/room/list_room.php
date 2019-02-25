@@ -19,14 +19,13 @@
         <input type="hidden" name="action" value="search">
     </div>
 </form>
-			</div>
-		</div>
-		<br/>
+<form method="post" action="admin.php?controller=room&action=delete_all"> 
+	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 		<thead>
 			<tr>
 				<th>RoomID</th>
 				<th>Hotel</th>
-				<th>Room</th>
+				<th>Room</th>	
 				<th>TypeRoom</th>
 				<th>Price</th>
 				<th>Point</th>
@@ -36,11 +35,16 @@
 				<th>Images</th>
 				<th>Content</th>
 				<th>Status</th>
-				<th></th>
+				<th>Edit</th>
+				<th>Delete</th>
+				<th>Select</th>
 			</tr>
 		</thead>
 		<tbody>
-			<?php
+		<?php
+        if ($data == 0) {
+            echo "Has no record";
+        } else {
 			foreach ($data as $value) {
 				?>
 				<tr>
@@ -57,22 +61,25 @@
 					
 					<td><?php echo $value['content'] ?></td>
 					<td><?php echo $value['status'] ?></td>
-					<td><a onclick="return confirm('Are you want to delete record?')" 
-							href="admin.php?controller=room&action=delete&id=<?php echo $value['room_id'] ?>" title = "delete">Delete</a>
-						<!-- <input  type="submit" name="Xóa" value="Xóa" > -->
-					
-						<input type="submit" name="Sửa" onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>'"  value="Sửa">
+					<td><a  
+						href="admin.php?controller=room&action=update&id=<?php echo $value['room_id']?>"
+						title="Edit">Edit</a>
+					</td>
+					<td><a onclick="return confirm('Do you want to delete record?')" 
+						href="admin.php?controller=room&action=delete_one&id=<?php echo $value['room_id']?>"
+						title="Delete">Delete</a>
 					</td>
 					<?php
 					echo "<td>"; ?><input type="checkbox" name="checkbox[]"
 											value ="<?php echo $value['room_id']; ?>"/><?php echo "</td>"; ?>	
 												
 					</tr>
-			<?php } ?>
+			<?php } 
+		} ?>
 		</tbody>
-
 	</table>
-</div>
+	<input style="float: right" type="submit" name="delete" onclick="return confirm('Are you sure?')" value="Delete">
+</form>
 <?php 
 	$page = $db->phantrang('hotel');
 ?>

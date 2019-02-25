@@ -39,24 +39,63 @@ if (isset($_POST['register']))
 		array_push($errors, '<p class="error">The two passwords do not match</p>');
 		$check = false;
 	}
-	if (!eregi("^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$", $_POST['email']))
+
+	// if (!eregi("^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$", $_POST['email']))
+	//     {
+	//     	array_push($errors, '<p class="error">Email này không hợp lệ. Vui long nhập email khác.</p> ');
+	// 		$check = false;
+	// 		// exit();
+	//     }
+	if (!preg_match('/^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$/', $_POST['email']))
 	    {
-	    	array_push($errors, '<p class="error">Email này không hợp lệ. Vui long nhập email khác.</p> ');
+	    	array_push($errors, '<p class="error">This email is not valid. Please re-enter.</p> ');
 			$check = false;
 			// exit();
 	    }
-	if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['username']))
+	if (!preg_match('/^[A-Za-z0-9]{5,50}$/', $_POST['username']))
 	    {
-	    	array_push($errors, '<p class="error">Username không hợp lệ. Vui lòng nhập username khác </p>');
+	    	array_push($errors, '<p class="error">This username is not valid. Please re-enter.</p> ');
 			$check = false;
 			// exit();
 	    }
-	if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['password_1']))
+	if (!preg_match('/^[A-Za-z0-9]{5,50}$/', $_POST['password_1']))
 	    {
-	    	array_push($errors, '<p class="error">Password không hợp lệ. Vui lòng nhập password khác </p>');
+	    	array_push($errors, '<p class="error">This password is not valid. Please re-enter.</p> ');
 			$check = false;
 			// exit();
 	    }
+	
+	  //   if (!preg_match('/^[A-Za-z0-9]{5,50}$/', $_POST['username']))
+	  //   {
+	  //   	array_push($errors, '<p class="error">Username không hợp lệ. Vui lòng nhập username khác</p> ');
+			// $check = false;
+			// // exit();
+	  //   }
+	  //   if (!preg_match('/^[A-Za-z0-9]{5,50}$/', $_POST['password_1']))
+	  //   {
+	  //   	array_push($errors, '<p class="error">Password không hợp lệ. Vui lòng nhập password khác</p> ');
+			// $check = false;
+			// // exit();
+	  //   }
+	// if (!eregi("^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$", $_POST['email']))
+	//     {
+	//     	array_push($errors, '<p class="error">Email này không hợp lệ. Vui long nhập email khác.</p> ');
+	// 		$check = false;
+	// 		// exit();
+	//     }
+
+	// if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['username']))
+	//     {
+	//     	array_push($errors, '<p class="error">Username không hợp lệ. Vui lòng nhập username khác </p>');
+	// 		$check = false;
+	// 		// exit();
+	//     }
+	// if (!eregi("^[A-Za-z0-9]{5,50}$", $_POST['password_1']))
+	//     {
+	//     	array_push($errors, '<p class="error">Password không hợp lệ. Vui lòng nhập password khác </p>');
+	// 		$check = false;
+	// 		// exit();
+	//     }
 	if ($check){
 		include "../models/registermodel.php";
 		$role = isset($_POST['partner']) ? $_POST['partner'] : 'normal-partner';
