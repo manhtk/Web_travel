@@ -14,7 +14,7 @@
         <tr>
             <td>Id hotel</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel_id" placeholder="Id hotel" readonly=""></td>
+        <td><input class="form-control" type="text" name="hotel_id" readonly></td>
         <tr>
             <td>Id city</td>
         </tr>
@@ -27,32 +27,37 @@
         <tr>
             <td>Hotel name</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel_name" placeholder="Hotel name"></td>
+        <td><input class="form-control" type="text" name="hotel_name" value="<?php
+            echo $val['hotel_name'] ?>"><span
+                    style="color: red"><?php echo $nameErr; ?></span></td>
+
         <tr>
             <td>Owner</td>
         </tr>
-        <td><input class="form-control" type="text" name="owner" placeholder="Owner"></td>
+        <td><input class="form-control" type="text" name="owner"></td>
         <tr>
             <td>Description</td>
         </tr>
-        <td><input class="form-control" type="text" name="description" placeholder="Description" ></td>
+        <td><input class="form-control" type="text" name="description"></td>
         <tr>
             <td>Images</td>
         </tr>
-        <td><input class="form-control" type="file" name="image" placeholder="Image"></td>
+        <td><input class="form-control" type="file" name="image"></td>
         <tr>
             <td>Starnum</td>
         </tr>
-        <td><input class="form-control" type="text" name="starnum" placeholder="Starnum"></td>
+        <td><input class="form-control" type="text" name="starnum"></td>
         <tr>
             <td>Address</td>
         </tr>
-        <td><input class="form-control" type="text" name="address" placeholder="Address"></td>
-        <td><input  type="submit" name="add_hotel" value="Add data" style="margin-left: 20px;"></td>
+        <td><input class="form-control" type="text" name="address"></td>
     </table>
+    <br>
+    <button class="btn btn-primary" type="submit" name="add_hotel">Add data</button>
+    <button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">
+        Cancel
+    </button>
 </form>
-<br>
 
-<button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Cancel
-</button>
+
 

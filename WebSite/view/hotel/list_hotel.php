@@ -44,7 +44,8 @@
                     <td><?php echo $value['hotel_name'] ?></td>
                     <td><?php echo $value['owner'] ?></td>
                     <td><?php echo $value['description'] ?></td>
-                    <td><img src="<?php echo $value['images'] ?>" style="width: 50px; height: 50px"></td>
+                    <td><img src="<?php echo $value['images'] ?>" style="width: 50px; height: 50px">
+                    </td>
                     <td><?php echo $value['starnum'] ?></td>
                     <td><?php echo $value['address'] ?></td>
                     <td><a href="admin.php?controller=hotel&action=update&id=<?php echo $value['hotel_id'] ?>">Edit</a>
@@ -61,7 +62,7 @@
         } ?>
         </tbody>
     </table>
-    <input type='submit' name='delete' onclick="return confirm('Are you sure?')" value='Delete'>
+    <button class="btn btn-primary" type='submit' name='delete' onclick="return confirm('Are you sure?')">Delete</button>
 </form>
 <?php 
     $page = $db->phantrang('hotel');
