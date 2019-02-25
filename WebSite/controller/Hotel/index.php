@@ -1,42 +1,80 @@
-<?php if (isset($_GET['action'])) {
-    $action = $_GET['action'];
-} else {
-    $action = " ";
-}
-switch ($action) {
-    case "add":
+<?php 
+class Hotel{
+    public $columns = [];
+    public function __construct(){
+        $this->columns = array(
+            'hotel_id',
+            'city_id',
+            'hotel_name',
+            'owner',
+            'description',
+            'images',
+            'starnum',
+            'address'
+        );        }
+
+        public static function get_inst(){
+            static $instance;
+
+            if(is_null($instance)){
+                $instance = new Hotel();
+            }
+
+            return $instance;
+        }
+    }
+
+    ?>
+
+    <?php if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+    } else {
+        $action = " ";
+    }
+    switch ($action) {
+        case "add":
         {
             $data = $db->getALLDataBase('hotel');
             $data_dis = $db->getAllData('city');
             if (isset($_POST['add_hotel'])) {
-                $val = $_POST["hotel"];
                 echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
                 $data = $db->getALLDataBase('hotel');
                 $data_dis = $db->getAllData('city');
                 if (isset($_POST['add_hotel'])) {
-                    $val = $_POST["hotel"];
-                    if ($db->checkDuplicate('hotel', $val['0']) > 0) {
-                        echo $val['1'];
-                        echo "Cant insert data because duplicate di hotel. Please check again";
+
+                    $val = [];
+                    $columns = Hotel::get_inst()->columns;
+                    foreach($columns as $column){
+                        $val[$column] = isset($_POST[$column]) ? $_POST[$column]: '';
+                    }
+                    if ($db->checkDuplicate('hotel', $val['hotel_id']) > 0) {
+                        echo "Cant insert data because duplicate id hotel. Please check again";
                         break;
                     }
-                    if ($db->checkTag($val['2']) == 0) {
+                    if ($db->checkTag($val['hotel_name']) == 0) {
                         echo "Cant insert data because value include html tags. Please check again";
                         break;
                     } else {
+
+                        $image_url = $db->uploadImage();
+                        if(!empty($image_url)){
+                            $val['images'] = $image_url;
+                        }
+
                         $db->insertData('hotel', $val);
+
                         echo "
-                    <script>
+                        <script>
                         window.location.href ='admin.php?controller=hotel&action=list';
-                </script>";
+                        </script>";
                     }
                 }
             }
             require_once("View/hotel/add_hotel.php");
             break;
         }
-    case
-    "update":
+        case
+        "update":
         {
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
@@ -45,9 +83,9 @@ switch ($action) {
                     $val = $_POST["hotel"];
                     if ($db->updateData('hotel', $id, $val)) {
                         echo "
-                    <script>
+                        <script>
                         window.location.href ='admin.php?controller=hotel&action=list';
-                </script>";
+                        </script>";
                     } else {
                         echo "Can't update data because duplicate id of hotel. Please check again!";
                         echo "<br>";
@@ -59,8 +97,8 @@ switch ($action) {
             require_once("View/hotel/update_hotel.php");
             break;
         }
-    case
-    "delete_one":
+        case
+        "delete_one":
         {
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
@@ -69,24 +107,24 @@ switch ($action) {
                 }
             }
         }
-    case "delete_all":
+        case "delete_all":
         {
             if (isset($_POST['delete'])) {
                 $checkbox = $_POST['checkbox'];
                 while (list ($key, $value) = @each($checkbox)) {
                     $db->deleteData('hotel', 'hotel_id', $value);
                     echo "
-                 <script type='text/javascript'>
-                        window.location.href ='admin.php?controller=hotel&action=list';
-                </script>";
+                    <script type='text/javascript'>
+                    window.location.href ='admin.php?controller=hotel&action=list';
+                    </script>";
                 }
             }
         }
-    case "list":
+        case "list":
         {
             $tbl2 = "city";
-               $tbl1 = "hotel";
-               $id = "city_id";
+            $tbl1 = "hotel";
+            $id = "city_id";
             
             $limit = $db->getPag();
             $paged = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -102,20 +140,20 @@ switch ($action) {
             break;
         }
 
-    case "search":
+        case "search":
         {
             if (isset($_GET['key'])) {
                 $key = $_GET['key'];
-                $data_Search = $db->searchData('hotel', 'city', 'city_id', 'hotel_name', $key);
+                $data_Search = $db->searchData('hotel', 'city', 'city_id', 'hotel_name', '', $key);
             }
             require_once("View/hotel/search_hotel.php");
             break;
         }
 
-    default:
+        default:
         {
             $data = $db->getALLDataBase('hotel', 'city', 'city_id', '0', '16');
             require_once('View/hotel/list_hotel.php');
             break;
         }
-} ?>
+    } ?>
