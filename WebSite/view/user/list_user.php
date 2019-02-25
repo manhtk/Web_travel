@@ -31,16 +31,16 @@
 		<br/>
 		<thead>
 			<tr>
-				<th>Userid</th>
-				<th>Username</th>
-				<th>Password</th>
+				<th>UserID</th>
+				<th>UserName</th>
+				<th>PassWord</th>
 				<th>Role</th>
 				<th>First Name</th>
 				<th>Last Name</th>
 				<th>Address</th>
 				<th>Email</th>
 				<th>Identity Card</th>
-				<th>Phonenumber</th>
+				<th>PhoneNumber</th>
 				<th>Birthday</th>
 				<th>Gender</th>
 				<th>Regisdate</th>
