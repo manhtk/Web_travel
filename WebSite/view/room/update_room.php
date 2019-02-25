@@ -29,7 +29,7 @@
 				<input type="text" name="room[]" value="<?php echo $value['price']  ?>" class="form-control"  >
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
+				<label for="exampleInputPassword1">Point</label>
 				<input type="text" name="room[]" value="<?php echo $value['point']  ?>" class="form-control"  >
 			</div>
 			<div class="form-group">

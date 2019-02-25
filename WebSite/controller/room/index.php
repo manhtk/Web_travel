@@ -1,5 +1,5 @@
 <?php
-include_once 'model/DB.php';
+
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
