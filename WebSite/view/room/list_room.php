@@ -37,7 +37,7 @@
 				<th>Status</th>
 				<th>Edit</th>
 				<th>Delete</th>
-				<th>Select</th>
+				<th><input type="checkbox" id="selAl">Select All</th>
 			</tr>
 		</thead>
 		<tbody>

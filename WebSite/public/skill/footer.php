@@ -50,5 +50,10 @@
         <!-- Page level custom scripts -->
         <script src="public/js/chart-area-demo.js"></script>
         <script src="public/js/chart-pie-demo.js"></script>
+        <script>
+    $("#selAl").click(function () {
+        $('input:checkbox').not(this).prop('checked', this.checked);
+    });
+</script>
     </body>
 </html>

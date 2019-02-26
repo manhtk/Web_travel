@@ -1,36 +1,4 @@
-<?php 
-  class Room{
-    public $columns = [];
-    public function __construct()
-    {
-        $this->columns = array(
-            'room_id',
-            'hotel_id',
-            'room_name',
-            'typeroom',
-            'price',
-            'point',
-            'people',
-            'bed',
-            'size',
-            'images',
-            'content',
-            'status'
 
-        );
-    }
-    public static function get_inst()
-    {
-        static $instance;
-
-        if (is_null($instance)) {
-            $instance = new Room();
-        }
-
-        return $instance;
-    }
-  }
- ?>
 <?php
 class Room{
     public $columns = [];
@@ -61,28 +29,22 @@ class Room{
     }
 ?>
 
-    <?php if (isset($_GET['action'])) {
-        $action = $_GET['action'];
-    } else {
-        $action = " ";
-    }
+    <?php 
 
-<<<<<<< HEAD
-=======
 include_once 'model/DB.php';
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
     $action = " ";
 }
->>>>>>> bff4dc753e5f33e7ad880c7bd075a362639d2f1c
+
 
 switch ($action) {
 
     case "add":
     {
             $data = $db->getAllData('room');
-            $data_dis = $db->getAllData('hotel');
+            //$data_dis = $db->getAllData('hotel');
             $nameErr = "";
             $val = [];
             $columns = Room::get_inst()->columns;
@@ -101,19 +63,22 @@ switch ($action) {
                     } else {
                         $image_url = $db->uploadImage();
                         if (!empty($image_url)) {
-                            $val['images'] = $image_url;
+                            $val['image'] = $image_url;
                             $uploadOk = 1;
                         } else {
                             $uploadOk = 0;
                             echo "<br/><button class='btn btn-primary' type='button' onclick=\"location.href='javascript:self.history.back()'\">Go Back</button>";
                             break;
                         }
-                        $db->insertData('room', $val);
+                    }
+                        if($db->insertData('room', $val)){
                         echo "
                     <script>
                         window.location.href ='admin.php?controller=room&action=list';
-                </script>";
-                    }
+                </script>";} else {
+                    echo "Cant insert Data";
+                }
+
 
                 }
             }
