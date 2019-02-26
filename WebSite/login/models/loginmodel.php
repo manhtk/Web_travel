@@ -4,10 +4,6 @@
     function get_user($username,$password_1, $conn)
     {
         $qr=mysqli_query($conn, "SELECT * FROM user where username='$username' and password='$password_1'");
-
-        echo '<pre>';
-        print_r($qr);
-
         if (mysqli_num_rows($qr)>0)
 
         {

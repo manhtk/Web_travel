@@ -35,7 +35,7 @@
 		<tr>
 			<td>Size</td>
 		</tr>
-		<td><input class="form-control" type="text" name="size"></td>
+		<td><input class="form-control" type="text" name="size" placeholder="Size"></td>
 		<tr>
 			<td>Room Images</td>
 		</tr>
@@ -49,7 +49,7 @@
 		</tr>
 		<td><input class="form-control" type="text" name="status" placeholder="Status"></td>
 	</table>
-			<button class="btn btn-primary" type="submit" name="add_room">Add data</button>
+<button class="btn btn-primary" type="submit" name="add_room">Add data</button>
 <button class="btn btn-primary" onclick="location.href='admin.php?controller=room'" type="button">Cancel
 </button>
 </form>

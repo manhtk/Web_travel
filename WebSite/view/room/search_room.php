@@ -20,7 +20,8 @@
 				<th>Images</th>
 				<th>Content</th>
 				<th>Status</th>
-				<th></th>
+				<th>Edit</th>
+				<th>Delete</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -41,10 +42,12 @@
 					
 					<td><?php echo $value['content'] ?></td>
 					<td><?php echo $value['status'] ?></td>
-					<td>
-						<input  type="button" name="Xóa" value="Xóa" ><button  onclick="location.href='admin.php?controller=room&action=update&id=<?php echo $value['room_id'] ?>'" type="button">Sửa
-</button>
+					<td><a href="admin.php?controller=room&action=update&id=<?php echo $value['room_id'] ?>">Edit</a></td>
+					<td><a onclick="return confirm('Do you want to delete record?')" 
+						href="admin.php?controller=room&action=delete_one&id=<?php echo $value['room_id']?>"
+						title="Delete">Delete</a>
 					</td>
+					
 				</tr>
 			<?php }
 			} ?>
