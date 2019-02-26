@@ -14,7 +14,7 @@ include '../controllers/forgetcontroller.php';
 <body>
 <div class="log">
     <div class="header-log">
-        <h1>Forget</h1>
+        <h1>Forget Password</h1>
 
     </div>
     <form action="" method="POST">

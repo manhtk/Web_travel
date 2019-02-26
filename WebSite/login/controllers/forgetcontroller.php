@@ -31,7 +31,7 @@ if (isset($_POST['s']) && $_POST['s']==1) {
             $mail->Port = 587;                          // TCP port to connect to
 
             $mail->addAddress($email);
-            $mail->setFrom("thanguk1997@gmail.com", "Thang");
+            $mail->setFrom("minhthangit3@gmail.com", "Thang");
             $mail->Subject = "Reset Password";
             $mail->isHTML(true);
             $mail->Body = "

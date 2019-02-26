@@ -36,6 +36,19 @@
                 <a class="btn btn-primary" href="login.html">Logout</a>
             </div>
         </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="public/js/jquery.min.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="public/js/jquery.easing.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="public/js/sb-admin-2.min.js"></script>
+        <!-- Page level plugins -->
+        <script src="public/js/Chart.min.js"></script>
+        <!-- Page level custom scripts -->
+        <script src="public/js/chart-area-demo.js"></script>
+        <script src="public/js/chart-pie-demo.js"></script>
+        <script>
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->

@@ -3,7 +3,7 @@
 		<tr>
 			<td>Room ID</td>
 		</tr>
-		<td><input class="form-control" type="text" name="room_id" placeholder="ID room" readonly=""></td>
+		<td><input class="form-control" type="text" name="room_id" placeholder="ID room" readonly></td>
 		<tr>
 			<td>Hotel Id</td>
 		</tr>
@@ -48,10 +48,9 @@
 			<td>Status</td>
 		</tr>
 		<td><input class="form-control" type="text" name="status" placeholder="Status"></td>
-		<td><input  type="submit" name="add_hotel" value="Add data" style="margin-left: 20px;"></td>
-
 	</table>
+<button class="btn btn-primary" type="submit" name="add_room">Add data</button>
+<button class="btn btn-primary" onclick="location.href='admin.php?controller=room'" type="button">Cancel
+</button>
 </form>
 <br>
-<button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Cancel
-</button>
