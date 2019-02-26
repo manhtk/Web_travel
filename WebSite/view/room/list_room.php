@@ -77,8 +77,10 @@
 			<?php } 
 		} ?>
 		</tbody>
+
 	</table>
-	<input style="float: right" type="submit" name="delete" onclick="return confirm('Are you sure?')" value="Delete">
+	<input style="float: right" class="btn btn-primary"  type="submit" name="delete" onclick="return confirm('Are you sure?')" value="Delete">
+	
 </form>
 <?php 
 	$page = $db->phantrang('hotel');

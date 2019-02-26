@@ -18,7 +18,8 @@
         <tr>
             <td>Name</td>
         </tr>
-        <td><input class="form-control" type="text" name="hotel_name" value="<?php echo $value['hotel_name'] ?>" placeholder="Name"></td>
+        <td><input class="form-control" type="text" name="hotel_name" value="<?php echo $value['hotel_name'] ?>" placeholder="Name"><span
+                    style="color: red"><?php echo $nameErr; ?></span></td>
         <tr>
             <td>Owner</td>
         </tr>
@@ -31,7 +32,8 @@
         <tr>
             <td>Images</td>
         </tr>
-        <td><img class="form-control" src="<?php echo $value['images'] ?>" style="width: 70px; height: 70px"><input class="form-control" type="file" name="image"></td>
+        <td><img class="form-control" src="<?php echo $value['images'] ?>" style="width: 70px; height: 70px"><input class="form-control" type="file" name="image" value="<?php echo $value['images'] ?>"></td>
+        <input type="hidden" name="image1" value="<?php echo $value['images']  ?>">
 
         <tr>
             <td>Starnum</td>
