@@ -2,6 +2,8 @@
 <div class="row" >
 	<div class="col-md-4">
 		<form method="post" action="" enctype="multipart/form-data">
+            <button class="btn btn-primary" onclick="location.href='admin.php?controller=room&action=list'" type="button">Go home
+        </button>
     <table>
         <tr>
             <td>ID Room</td>
@@ -49,7 +51,7 @@
         <tr>
             <td>Images</td>
         </tr>
-         <td><img src="<?php echo $value['images'] ?>" style="width: 50px; height: 50px"><input class="form-control" type="file" name="image" value="<?php echo $value['images']  ?>"></td>
+         <td><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height: 50px"><input  type="file" name="image" value="<?php echo $value['room_images']  ?>"></td>
         <tr>
             <td>Content</td>
         </tr>
@@ -61,8 +63,7 @@
     </table>
     <br>
     <button type="submit" name="update_room"  class="btn btn-primary" >Update</button>
-			<button class="btn btn-primary" onclick="location.href='admin.php?controller=room&action=list'" type="button">Go home
-		</button>
+			
 </form>
 
 	

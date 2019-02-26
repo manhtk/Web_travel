@@ -31,51 +31,17 @@
     }
   }
  ?>
-<?php
-class Room{
-    public $columns = [];
-    public function __construct(){
-        $this->columns = array(
-            'room_id',
-            'hotel_id',
-            'room_name',
-            'type_room',
-            'price',
-            'point',
-            'people',
-            'bed',
-            'size',
-            'image',
-            'content',
-            'status'
-        );
-    }
-    public static function get_inst(){
-        static $instance;
-        if(is_null($instance)){
-            $instance = new Room();
-        }
 
-        return $instance;
-        }
-    }
-?>
+ <?php 
 
-    <?php if (isset($_GET['action'])) {
-        $action = $_GET['action'];
-    } else {
-        $action = " ";
-    }
 
-<<<<<<< HEAD
-=======
 include_once 'model/DB.php';
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {
     $action = " ";
 }
->>>>>>> bff4dc753e5f33e7ad880c7bd075a362639d2f1c
+
 
 switch ($action) {
 
@@ -141,9 +107,11 @@ switch ($action) {
                         $nameErr = "Hotel name is invalid because include html tags";
                     } else {
                         $image_url = $db->uploadImage(); 
+                         
                      if (!empty($image_url)) {
                         $val['images'] = $image_url;
-                    }                 
+                    }     
+
                     if ($db->updateData('room', $id, $val)   ) {
                         echo "
                     <script>
