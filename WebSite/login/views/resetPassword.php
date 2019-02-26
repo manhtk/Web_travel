@@ -1,4 +1,6 @@
-<?php include "../controllers/resetcontroller.php" ;?>
+<?php
+include "../controllers/resetcontroller.php" ;
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -35,7 +37,7 @@
             <input type="password"  name="password_2"/>
         </div>
         <div class="input-group">
-            <button type="submit" name="forgotPass" class="btn btn-primary">UpDate Password</button>
+            <button type="submit" name="resetpass" class="btn btn-primary">UpDate Password</button>
         </div>
 
 

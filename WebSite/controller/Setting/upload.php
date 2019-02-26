@@ -3,7 +3,6 @@
 function uploadImageHandler($field_name){
     $target_dir = getcwd() . "/libs/uploads/";
     $target_file = $target_dir . basename($_FILES[$field_name]["name"]);
-
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
@@ -40,7 +39,8 @@ function uploadImageHandler($field_name){
     // if everything is ok, try to upload file
     } else {
         if (move_uploaded_file($_FILES[$field_name]["tmp_name"], $target_file)) {
-            echo "The file <b> ". basename( $_FILES[$field_name]["name"]). "</b> has been uploaded. ";
+            echo "The file <b> ". basename( $_FILES[$field_name]["name"]). "</b> has been uploaded. <br> ";
+
             return $_FILES[$field_name]["name"];
 
         } else {
@@ -48,6 +48,7 @@ function uploadImageHandler($field_name){
             echo "Sorry, there was an error uploading your file.";
         }
     }
+
 
 }
 

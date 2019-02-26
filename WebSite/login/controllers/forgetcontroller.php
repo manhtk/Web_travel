@@ -39,15 +39,15 @@ if (isset($_POST['s']) && $_POST['s']==1) {
 	            
 	            In order to reset your password, please click on the link below:<br>
 	            <a href='
-	           http://localhost:63342/hotelMVC/WebSite/login/views/resetPassword.php?email=$email&token=$token
-	            '>http://localhost:63342/hotelMVC/WebSite/login/views/resetPassword.php?</a><br><br>
+	           http://localhost/hotelMVC/WebSite/login/views/resetPassword.php?email=$email&token=$token
+	            '>http://localhost/hotelMVC/WebSite/login/views/resetPassword.php?email=$email&token=$token</a><br><br>
 	            
 	            Thang Ngo,<br>
 	            My Name
 	        ";
 
             if ($mail->send())
-                array_push($errors,'<p class="error">Please Check Your Email Inbox!</p>') ;
+                array_push($errors,'<p class="success">Please Check Your Email Inbox!</p>') ;
             else
                 array_push($errors,'<p class="error">Something Wrong Just Happened! Please try again!</p>') ;
         } else

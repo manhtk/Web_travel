@@ -1,63 +1,57 @@
+<form method="post" action="" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td>Room ID</td>
+		</tr>
+		<td><input class="form-control" type="text" name="room_id" placeholder="ID room" readonly=""></td>
+		<tr>
+			<td>Hotel Id</td>
+		</tr>
+		<td><input class="form-control" type="text" name="hotel_id" placeholder="ID hotel"></td>
+		<tr>
+			<td>Room Name</td>
+		</tr>
+		<td><input class="form-control" type="text" name="room_name" placeholder="Room Name"></td>
+		<tr>
+			<td>Type Room</td>
+		</tr>
+		<td><input class="form-control" type="text" name="type_room" placeholder="Type Room"></td>
+		<tr>
+			<td>Price</td>
+		</tr>
+		<td><input class="form-control" type="text" name="price" placeholder="Price"></td>
+		<tr>
+			<td>Point</td>
+		</tr>
+		<td><input class="form-control" type="text" name="point" placeholder="Point"></td>
+		<tr>
+			<td>People</td>
+		</tr>
+		<td><input class="form-control" type="text" name="people" placeholder="People"></td>
+		<tr>
+			<td>Bed</td>
+		</tr>
+		<td><input class="form-control" type="text" name="bed" placeholder="Bed"></td>
+		<tr>
+			<td>Size</td>
+		</tr>
+		<td><input class="form-control" type="text" name="size" placeholder="Size"></td>
+		<tr>
+			<td>Room Images</td>
+		</tr>
+		<td><input class="form-control" type="file" name="image"></td>
+		<tr>
+			<td>Content</td>
+		</tr>
+		<td><input class="form-control" type="text" name="content" placeholder="Content"></td>
+		<tr>
+			<td>Status</td>
+		</tr>
+		<td><input class="form-control" type="text" name="status" placeholder="Status"></td>
+		<td><input  type="submit" name="add_hotel" value="Add data" style="margin-left: 20px;"></td>
 
-<div class="row" >
-	<div class="col-md-4">
-		<form action="" method="post">
-			<div class="form-group">
-				<input type="hidden" name="room[]">
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Hotel</label>
-				<input type="text" name="room[]" placeholder="Hotel Id" class="form-control">
-<!-- 
-				<select class="form-control">
-					<?php  ?>
-					<option></option>
-				</select> -->
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Room</label>
-				<input type="text" name="room[]" placeholder="Room Name" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">TypeRoom</label>
-				<input type="text" name="room[]" placeholder="Type of room" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Price</label>
-				<input type="text" name="room[]" placeholder="Price" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Point</label>
-				<input type="text" name="room[]" placeholder="Point" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">People</label>
-				<input type="text" name="room[]" placeholder="People" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Bed</label>
-				<input type="text" name="room[]" placeholder="Bed" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Size</label>
-				<input type="text" name="room[]" placeholder="Size" class="form-control"  >
-			</div>
-			
-			<div class="form-group">
-				<label for="exampleInputFile">Images</label>
-				<input type="file" name="room[]" id="exampleInputFile">
-				<p class="help-block">Example block-level help text here.</p>
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Content</label>
-				<input type="text" name="room[]" placeholder="Content" class="form-control"  >
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Status</label>
-				<input type="text" name="room[]" placeholder="Status" class="form-control"  >
-			</div>
-			
-			<button type="submit" name="add_room" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
-</div>
+	</table>
+</form>
+<br>
+<button class="btn btn-primary" onclick="location.href='admin.php?controller=hotel'" type="button">Cancel
+</button>
