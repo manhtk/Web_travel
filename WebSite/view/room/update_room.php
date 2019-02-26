@@ -27,7 +27,8 @@
         <tr>
             <td>Type Room</td>
         </tr>
-        <td><input class="form-control" type="text" value="<?php echo $value['typeroom']  ?>" name="typeroom"></td>
+        <td><input class="form-control" type="text" value="<?php echo $value['typeroom']  ?>" name="typeroom"><span
+                    style="color: red"><?php echo $NameErr; ?></span></td>
         <tr>
             <td>Price</td>
         </tr>
@@ -51,7 +52,7 @@
         <tr>
             <td>Images</td>
         </tr>
-         <td><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height: 50px"><input  type="file" name="image" value="<?php echo $value['room_images']  ?>"></td>
+         <td><img src="<?php echo $value['room_images'] ?>" style="width: 50px; height: 50px"><input  type="file" name="image" value="<?php echo $value['room_images']  ?>"><input  type="hidden" name="images1" value="<?php echo $value['room_images']  ?>"></td>
         <tr>
             <td>Content</td>
         </tr>

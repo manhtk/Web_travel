@@ -97,20 +97,31 @@ switch ($action) {
                 $value = $db->getDataUpdate('room', $id);
                  $data_dis = $db->getAllData('hotel');
                   $nameErr = "";
+                  $NameErr = "";
                  $val=[];
                  $columns = Room::get_inst()->columns;
                  foreach ($columns as $column ) {
                      $val[$column] = isset($_POST[$column]) ? $_POST[$column] : ' ';
                  }
                 if (isset($_POST['update_room'])) {
-                     if ($db->checkTag($val['room_name']) == 0) {
-                        $nameErr = "Hotel name is invalid because include html tags";
-                    } else {
-                        $image_url = $db->uploadImage(); 
-                         
+                    
+                    if (!preg_match('/^[A-Za-z0-9]{1,50}$/',$_POST['room_name']))
+                    {
+                        $nameErr = "Roomname is invalid because have html tags or special characters";
+                    }
+                    else if (!preg_match('/^[A-Za-z0-9]{1,50}$/',$_POST['typeroom']))
+                    {
+                        $NameErr = "typeroom is invalid because have html tags or special characters";
+                    } else if($image_url = $db->uploadImage() ) {                    
                      if (!empty($image_url)) {
                         $val['images'] = $image_url;
-                    }     
+                    }          
+                 }
+                  else {
+                        $val['images'] = $_POST['images1'];
+
+                    }
+                    
 
                     if ($db->updateData('room', $id, $val)   ) {
                         echo "
@@ -118,7 +129,6 @@ switch ($action) {
                         window.location.href ='admin.php?controller=room&action=list';
                 </script>";
                     }
-                 }
                     
                }
             }
