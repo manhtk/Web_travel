@@ -49,7 +49,7 @@
         <tr>
             <td>Images</td>
         </tr>
-         <td><img src="<?php echo $value['images'] ?>" style="width: 50px; height: 50px"><input class="form-control" type="file" name="image"></td>
+         <td><img src="<?php echo $value['images'] ?>" style="width: 50px; height: 50px"><input class="form-control" type="file" name="image" value="<?php echo $value['images']  ?>"></td>
         <tr>
             <td>Content</td>
         </tr>
