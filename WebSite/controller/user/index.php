@@ -15,15 +15,18 @@ switch ($action) {
                 $value = isset($_POST["user"]) ? $_POST["user"] : array();
                 $table = "user";
                 $val=$_POST["user"];
+                $value[2] = md5($value[2]);
 
                 $count_user = $db->checkUser($table, 'username', $value[1]);
                 if($count_user > 0 ) {
-                    echo " Username already exist. Please check again!";
-                    echo "<br>";
-                    echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+                    // echo " Username already exist. Please check again!";
+                    // echo "<br>";
+                 echo "Username already exist. Please check again!. <a href='javascript: history.go(-1)'> Go Back</a>";
+                 exit();
                 }
-                  else
+                 else
                  {
+                    $db->insertData($table, $value);
                     echo "Successful.";
                  }
                 $check=$db->checkTag($val['7']);
@@ -31,17 +34,6 @@ switch ($action) {
                     echo "Cant insert data because value include html tags. Please check again";
                     break;
                 }
-               else
-                 {
-                    $db->insertData($table, $value);
-                 }
-
-                  if(!$db->insertData($table, $value)) {
-                    echo "Can't insert data . Please check again!";
-                    echo "<br>";
-                    echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
-                
-                 }
 
             }
             // echo $value['7'];
