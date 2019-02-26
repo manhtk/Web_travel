@@ -160,8 +160,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         $values = array_values($data);
         $val = "'" . implode("', '", $values) . "'";
         $query = "INSERT INTO $table($key) VALUES($val)";
-        echo var_dump($key);
-        echo var_dump($val);
+        
         return $this->excute($query);
 
     }
@@ -325,7 +324,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         if (file_exists($target_file)) {
             $uploadOk = 0;
         }
-        if ($_FILES["image"]["size"] > 5000000) {
+        if ($_FILES["image"]["size"] > 500000) {
             echo "Sorry, your file is too large.";
             $uploadOk = 0;
         }

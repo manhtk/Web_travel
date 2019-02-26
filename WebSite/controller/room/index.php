@@ -1,33 +1,40 @@
-<?php
-class Room{
+<?php 
+  class Room{
     public $columns = [];
-    public function __construct(){
+    public function __construct()
+    {
         $this->columns = array(
             'room_id',
             'hotel_id',
             'room_name',
-            'type_room',
+            'typeroom',
             'price',
             'point',
             'people',
             'bed',
             'size',
-            'image',
+            'images',
             'content',
             'status'
+
         );
     }
-    public static function get_inst(){
+    public static function get_inst()
+    {
         static $instance;
-        if(is_null($instance)){
+
+        if (is_null($instance)) {
             $instance = new Room();
         }
+
         return $instance;
     }
   }
  ?>
 
-<?php 
+ <?php 
+
+
 include_once 'model/DB.php';
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -41,7 +48,7 @@ switch ($action) {
     case "add":
     {
             $data = $db->getAllData('room');
-            //$data_dis = $db->getAllData('hotel');
+            $data_dis = $db->getAllData('hotel');
             $nameErr = "";
             $val = [];
             $columns = Room::get_inst()->columns;
@@ -51,31 +58,25 @@ switch ($action) {
             }
             if (isset($_POST['add_room'])) {
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    if ($db->checkDuplicate('room', $val['room_id']) > 0) {
-                        echo "Can't insert data because duplicate id room. Please check again";
-                        break;
-                    }
+                    
                     if ($db->checkTag($val['room_name']) == 0) {
                         $nameErr = "Room name is invalid because include html tags";
                     } else {
                         $image_url = $db->uploadImage();
                         if (!empty($image_url)) {
-                            $val['image'] = $image_url;
+                            $val['images'] = $image_url;
                             $uploadOk = 1;
                         } else {
                             $uploadOk = 0;
                             echo "<br/><button class='btn btn-primary' type='button' onclick=\"location.href='javascript:self.history.back()'\">Go Back</button>";
                             break;
                         }
-                    }
-                        if($db->insertData('room', $val)){
+                        $db->insertData('room', $val);
                         echo "
                     <script>
                         window.location.href ='admin.php?controller=room&action=list';
-                </script>";} else {
-                    echo "Cant insert Data";
-                }
-
+                </script>";
+                    }
 
                 }
             }
@@ -108,22 +109,33 @@ switch ($action) {
                     else if (!preg_match('/^[A-Za-z0-9]{1,50}$/',$_POST['typeroom']))
                     {
                         $NameErr = "typeroom is invalid because have html tags or special characters";
-                    } else if($image_url = $db->uploadImage() ) {                    
+                    } else if(isset($_FILES['image']) && !empty($_FILES['image']['name']) ) {
+                
+                        $image_url = $db->uploadImage();
                      if (!empty($image_url)) {
                         $val['images'] = $image_url;
-                    }          
-                 }
-                  else {
-                        $val['images'] = $_POST['images1'];
-
-                    }
+                    }   
                     
+
 
                     if ($db->updateData('room', $id, $val)   ) {
                         echo "
                     <script>
                         window.location.href ='admin.php?controller=room&action=list';
                 </script>";
+                    }
+                 }
+                  else {
+                        $val['images'] = $_POST['images1'];
+
+                     
+                    if ($db->updateData('room', $id, $val)   ) {
+                        echo "
+                    <script>
+                        window.location.href ='admin.php?controller=room&action=list';
+                </script>";
+                    }
+
                     }
                     
                }
