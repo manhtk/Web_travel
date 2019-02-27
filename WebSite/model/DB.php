@@ -6,7 +6,6 @@ class Database
     private $username = "root";
     private $password = "";
     private $dbname = "webtravel";
-
     private $conn = null;
     private $result = null;
 

@@ -51,6 +51,7 @@
 					<td><?php echo $value['room_id'] ?></td>
 					<td><?php echo $value['hotel_name'] ?></td>
 					<td><?php echo $value['room_name'] ?></td>
+ 
 					<td><?php echo $value['typeroom'] ?></td>
 					<td><?php echo $value['price'] ?></td>
 					<td><?php echo $value['point'] ?></td>
@@ -83,7 +84,7 @@
 	
 </form>
 <?php 
-	$page = $db->phantrang('hotel');
+	$page = $db->phantrang('room');
 ?>
 
 <div class="test-phantrang">
