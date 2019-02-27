@@ -7,19 +7,20 @@
         <thead>
         <tr>
                 <th>User_id</th>
-                <th>username</th>
-                <th>password</th>
-                <th>role</th>
-                <th>first_name</th>
-                <th>last_name</th>
-                <th>address</th>
-                <th>email</th>
-                <th>identity_card</th>
-                <th>phone_number</th>
-                <th>birthday</th>
-                <th>gender</th>
-                <th>regisdate</th>
-                <th></th>
+                <th>UserName</th>
+                <th>PassWord</th>
+                <th>Role</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>IdentityCard</th>
+                <th>PhoneNumber</th>
+                <th>Birthday</th>
+                <th>Gender</th>
+                <th>Regisdate</th>
+                <th>Edit</th>
+                <th>Delete</th>
         </tr>
         </thead>
         <tbody>
