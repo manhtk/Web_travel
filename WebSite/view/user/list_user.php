@@ -93,11 +93,17 @@
 	$page = $db->phantrang('user');
 ?>
 
-<div class="test-phantrang">
-	<?php
-	for ($i=1; $i<=$page ; $i++) { 
-		echo "<a href='admin.php?controller=user&action=list&page=$i'>Page $i</a> - ";
-	}
-	?>
+<div class="phantrang">
+    <?php
+    $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
+    for ($i=1; $i<=$page ; $i++) { 
+        $link = 'admin.php?controller=user&action=list&page=' . $i;
+        
+        $class_active = '';
+        if($current_page == $i)
+            $class_active = 'active';
+        echo "<a href='". $link ."' class='". $class_active ."'>Page $i</a> - ";
+    }
+    ?>
 </div>
 <?php include_once "public/skill/footer.php" ?>         
