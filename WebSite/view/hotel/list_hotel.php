@@ -65,11 +65,11 @@
     <button class="btn btn-primary" type='submit' name='delete' onclick="return confirm('Are you sure?')">Delete</button>
 </form>
 <?php 
-    $page = $db->phantrang('hotel');
+    $page = $db->paging('hotel');
 ?>
 
 
-<div class="phantrang">
+<div class="paging">
     <?php
     $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
     for ($i=1; $i<=$page ; $i++) { 

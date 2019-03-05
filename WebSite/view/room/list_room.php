@@ -84,7 +84,7 @@
 	
 </form>
 <?php 
-	$page = $db->phantrang('room');
+	$page = $db->paging('room');
 ?>
 
 <div class="phantrang">

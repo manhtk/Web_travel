@@ -90,10 +90,10 @@
 	</table>
 </div>
 <?php 
-	$page = $db->phantrang('user');
+	$page = $db->paging('user');
 ?>
 
-<div class="phantrang">
+<div class="paging">
     <?php
     $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
     for ($i=1; $i<=$page ; $i++) { 
