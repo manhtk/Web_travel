@@ -156,7 +156,7 @@ switch ($action) {
 
         $data = $db->getAllDataBase($tbl1, $tbl2, $id, $offset, $limit);
 
-        $count = $db->phantrang($tbl2);
+        $count = $db->paging($tbl2);
         require_once("view/hotel/list_hotel.php");
         break;
     }
