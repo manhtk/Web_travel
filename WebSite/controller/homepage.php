@@ -6,7 +6,7 @@
   {
   	
   	public function view(){
-  		$res = $this->model->getHotel(4,'hotel_name');
+  		$res = $this->model->getHotel(16,'hotel_name');
       
      
   		$this->view->render('site/homepage',array('data' => $res));    

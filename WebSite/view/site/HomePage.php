@@ -145,13 +145,13 @@
                                                         <div class="people-inner">
                                                             <div class="dropdow-list2">
                                                                 <div class="people-group">
-																<span class="label">
-																	<span class="value">
-																		<span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>,
-																		<span class="child" style="color: #5191FA;font-size: 16px">0 Child</span>
-																		<i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
-																	</span>
-																</span>
+                                                                <span class="label">
+                                                                    <span class="value">
+                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>,
+                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Child</span>
+                                                                        <i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
+                                                                    </span>
+                                                                </span>
 
                                                                     <div class="bookphong">
 
@@ -162,22 +162,22 @@
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
-																					<span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
-																				</span>
+                                                                                    <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+                                                                                </span>
                                                                                     <span class="control add">+</span>
                                                                                 </div>
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
-																					<span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
-																				</span>
+                                                                                    <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+                                                                                </span>
                                                                                     <span class="control add">+</span>
                                                                                 </div>
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
-																					<span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
-																				</span>
+                                                                                    <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+                                                                                </span>
                                                                                     <span class="control add">+</span>
                                                                                 </div>
                                                                             </div>
@@ -198,64 +198,64 @@
                                                             </label>
                                                             <div class="dropdown-factilities dropdow">
                                                                 <div class="render">
-															<span class="hidden-xs hidden-more">
-																More
-																<i class="fas fa-sort-down"></i>
-															
-															<div class="dropdown-menu-facilities">
-																<div class="row">
-																	<div class="col-lg-12">
-																		<div class="item-title">
-																	<h4>Filter Price</h4>
-																	</div>
-																		 <div class="demo" style="width: auto;">
-																			
-																			<input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""
+                                                            <span class="hidden-xs hidden-more">
+                                                                More
+                                                                <i class="fas fa-sort-down"></i>
+                                                            
+                                                            <div class="dropdown-menu-facilities">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="item-title">
+                                                                    <h4>Filter Price</h4>
+                                                                    </div>
+                                                                         <div class="demo" style="width: auto;">
+                                                                            
+                                                                            <input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""
                                                                             />
-																			
-																		</div>
-																	</div>
-																	</div>
-																	<div class="col-lg-12">
-																		<div class="facilities">
-																			<div class="item-title">
-																				<h4>
-																					Hotel Facilities
-																				</h4>
-																				<div class="check-radio-homepage">
-																					<div class="col-md-4">
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Air Conditioning <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
-																						Flat Tv <br>
-																					</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
-																						Paking <br>
-																					</p>
-																					</div>
-																					<div class="col-md-4">
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Airport Transport <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Heater
-																						<br>
-																					</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Pool <br>
-																						</p>
-																					</div>
-																					<div class="col-md-4">
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Fitness Centre <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Internet - Wifi <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Restaurant <br>
-																						</p>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</span>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12">
+                                                                        <div class="facilities">
+                                                                            <div class="item-title">
+                                                                                <h4>
+                                                                                    Hotel Facilities
+                                                                                </h4>
+                                                                                <div class="check-radio-homepage">
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Air Conditioning <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
+                                                                                        Flat Tv <br>
+                                                                                    </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
+                                                                                        Paking <br>
+                                                                                    </p>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Airport Transport <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Heater
+                                                                                        <br>
+                                                                                    </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Pool <br>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Fitness Centre <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Internet - Wifi <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Restaurant <br>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -351,8 +351,8 @@
                                     foreach ($data as   $values) {
                                         
                                       ?>
-                                    <div class="last-minute">
-                                        <div class="col-xs-6 col-sm6 col-md-3">
+                                    
+                                        <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 ">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
                                                     <a href="#">
@@ -373,7 +373,14 @@
                                                         </a>
                                                     </div>
                                                     <div class="wpb-room-adress">
-                                                        <p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name'] ?>,  <?php echo $values['country'] ?></p>
+                                                        <p>
+                                                            <?php 
+                                                            if(!empty($values['city_name']) || !empty($values['country'])){ ?>
+                                                                <i class="fas fa-map-marker-alt">
+                                                              <?php  }  ?>
+                                                        </i><?php echo htmlspecialchars($values['city_name']) ?>
+                                                         <?php if(!empty($values['city_name'])) { ?> , <?php } ?> 
+                                                         <?php echo htmlspecialchars($values['country']) ?></p>
 
                                                     </div>
                                                     <div class="review">
@@ -386,18 +393,18 @@
 
                                                     </div>
                                                     <div class="price-wrapper">
-															<span>
-																<i class="fas fa-bolt"></i>
-																<span class="price-from">from</span> <span class="price-money">€ <?php echo $values['medium_price'] ?> </span>
-																<span class="price-from">
-																	/night
-																</span>
-															</span>
+                                                            <span>
+                                                                <i class="fas fa-bolt"></i>
+                                                                <span class="price-from">from</span> <span class="price-money">€ <?php echo $values['hotel_price'] ?> </span>
+                                                                <span class="price-from">
+                                                                    /night
+                                                                </span>
+                                                            </span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    
                                     <?php } ?>
                                 </div>
                             </div>
