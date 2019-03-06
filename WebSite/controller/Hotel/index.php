@@ -156,7 +156,7 @@ switch ($action) {
 
         $data = $db->getAllDataBase($tbl1, $tbl2, $id, $offset, $limit);
 
-        $count = $db->paging($tbl2);
+        $count = $db->phantrang($tbl2);
         require_once("view/hotel/list_hotel.php");
         break;
     }
@@ -165,11 +165,7 @@ switch ($action) {
     {
         if (isset($_GET['key'])) {
             $key = $_GET['key'];
-<<<<<<< HEAD
             $data_Search = $db->searchData('hotel', 'city', 'city_id', 'hotel_name','', $key);
-=======
-            $data_Search = $db->searchData('hotel', 'city', 'city_id', 'hotel_name','',$key);
->>>>>>> 75d4ba4848d12caeafee978c7960fb8d069d35b6
         }
         require_once("View/hotel/search_hotel.php");
         break;

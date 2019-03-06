@@ -266,7 +266,7 @@ AND CONSTRAINT_NAME = 'PRIMARY'";
         return $sotin;
     }
     // phan trang
-    public function paging($tbl)
+    public function phantrang($tbl)
     {
         //số tin trên 1 trang
         $query = "SELECT paging from setting";
