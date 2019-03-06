@@ -165,7 +165,7 @@ switch ($action) {
     {
         if (isset($_GET['key'])) {
             $key = $_GET['key'];
-            $data_Search = $db->searchData('hotel', 'city', 'city_id', 'hotel_name', $key);
+            $data_Search = $db->searchData('hotel', 'city', 'city_id', 'hotel_name','', $key);
         }
         require_once("View/hotel/search_hotel.php");
         break;

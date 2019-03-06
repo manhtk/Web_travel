@@ -51,13 +51,11 @@
 			</div>
 			<!-- <div class="form-group">
 				<label for="exampleInputPassword1">Gender</label>
-<<<<<<< HEAD
-=======
+
 				<input type="text" name="user[]" required="" class="form-control"  >
 			</div> -->
 			<div class="form-group">
 				<label for="exampleInputPassword1">Role</label>
->>>>>>> d7bd77cd3134a6398c6397a22476512053ba96ab
 				<select   name="user[]" class="form-control">
 					<option value="Nam">Nam</option>
 					<option value="Nữ">Nữ</option>

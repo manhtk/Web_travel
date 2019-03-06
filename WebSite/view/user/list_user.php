@@ -9,7 +9,7 @@
 				<div  class="input-group" style="border: #dddfeb solid 1px; border-radius: 2px; ">
 					<input type="hidden" name="controller" value="user">
 					<input type="text" name="key" class="form-control bg-light border-0 small"
-					placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" ">
+               placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" ">
 					<div class="input-group-append">
 						<button class="btn btn-primary" type="submit">
 							<i class="fas fa-search fa-sm"></i>
@@ -73,13 +73,14 @@
 					<td><?php echo $value['tokenExpire'] ?></td>
 					
 					<td>
+						<a href="admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>">Edit</a>
 						
-                           <a href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"> Delete</a>
+                           
 					</td>
 					<td>	 
 
+                    <a onclick="return confirm('Are you want to delete record?')" href="admin.php?controller=user&action=delete&id=<?php echo $value['user_id'] ?>"> Delete</a>
                     
-                    <a href="admin.php?controller=user&action=update&id=<?php echo $value['user_id']?>">Edit</a>
 						<!-- <input type="submit" > -->
 					</td>
 				</tr>

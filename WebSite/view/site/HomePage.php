@@ -1,163 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>HomePage</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
-    <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../../public/css/menu.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/HomePage.css">
-    <script type="text/javascript" src="../../public/js/khanh.js"></script>
-
-
-    <!-- chọn ngày -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-
-    <link rel="stylesheet" type="text/css" href="../../public/js/ion.rangeSlider/css/ion.rangeSlider.css">
-    <link rel="stylesheet" type="text/css" href="../../public/js/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css">
-    <script type="text/javascript" src="../../public/js/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
-
-    <script type="text/javascript">
-
-        jQuery(document).ready(function($){
-
-            $("#demo_0").ionRangeSlider({
-                type: "double",
-                min: 0,
-                max: 200,
-                step: 1,
-                prefix: "$",
-
-            });
-
-
-        });
-
-    </script>
-</head>
-<body>
-<div id="HomePage">
-
-    <!-- header -->
-    <header>
-        <div class="topbar">
-            <div class="container-fluid">
-                <div class="topbar-left">
-                    <ul class="st-list socials">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                    <ul class="st-list topbar-items">
-                        <li class="hidden-xs hidden-sm">
-                            <a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="topbar-right">
-                    <ul class="st-list topbar-items">
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Login</a></li>
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../register">Sign up</a></li>
-                        <li class="dropdown dropdown-currency hidden-sm hidden-xs">
-                            <a href="#">EUR<i class="fa fa-angle-down"></i></a>
-                            <ul class="dropmenu">
-                                <li><a href="#">USD</a></li>
-                                <li><a href="#">AUD</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown dropdown-language hidden-sm hidden-xs">
-                            <a href="#">English<i class="fa fa-angle-down"></i></a>
-                            <ul class="dropmenu">
-                                <li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-                                <li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="head1">
-            <div class="container">
-                <div class="toggle">
-                    <i class="fa fa-bars menu1" style="padding-left: 20px"></i>
-                </div>
-                <div class="header1left">
-                    <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-                    <div class="menu">
-
-                        <nav id="st-main-menu" >
-                            <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
-                            <ul id="main-menu">
-                                <li><a href="../../view/site/HomePage.php"  >HOME</a></li>
-                                <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Full Map Layout</a></li>
-                                        <li><a href="#">Half Map Layout</a></li>
-                                        <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
-                                        <li><a href="#">Hotel Detail 2</a></li>
-                                        <li><a href="#">Hotel Detail 3</a></li>
-                                        <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">House Detail 1</a></li>
-                                        <li><a href="#">House Detail 2</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="../../view/site/aboutus.php">About Us</a></li>
-                                        <li><a href="../../view/site/blog1.php">Blog</a></li>
-                                        <li><a href="#">404 Page</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a href="../../view/site/Contact.php">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="header1right">
-                    <form action="" method="get" class="header-search hidden-sm">
-                        <input type="text" class="form-control" name="s" value="">
-                        <i class="fa fa-search"></i>
-                    </form>
-                    <img class="ico_card" src="../../libs/Images/ico_card.svg">
-                </div>
-            </div>
-        </div>
-
-    </header>
-
+  
     <div class="clear"></div>
     <!-- Banner -->
     <div id="banner">
         <div class="container" style="width: 100%">
             <div class="banner">
-                <img src="../../libs/Images/background.jpg" width="100%" height="100%">
+                <img src="libs/Images/background.jpg" width="100%" height="100%">
                 <div class="container">
                     <div class="row">
                         <div class="wpb_column column_container col-md-12">
@@ -499,12 +347,16 @@
                             </div>
                             <div class="services-grid">
                                 <div class="row">
+                                    <?php 
+                                    foreach ($data as   $values) {
+                                        
+                                      ?>
                                     <div class="last-minute">
                                         <div class="col-xs-6 col-sm6 col-md-3">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
                                                     <a href="#">
-                                                        <img src="../../libs/Images/39446446-450x417.jpg">
+                                                        <img src="<?php echo $values['images']; ?>" >
                                                     </a>
                                                     <div class="review-star">
                                                         <i class="fas fa-star"></i>
@@ -517,16 +369,16 @@
                                                 <div class="wpb-content-text">
                                                     <div class="wpb-room-name">
                                                         <a href="#">
-                                                            Crowne Plaza Hotel
+                                                            <?php echo $values['hotel_name']; ?>
                                                         </a>
                                                     </div>
                                                     <div class="wpb-room-adress">
-                                                        <p> <i class="fas fa-map-marker-alt"></i>New York City, NY, USA</p>
+                                                        <p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name'] ?>,  <?php echo $values['country'] ?></p>
 
                                                     </div>
                                                     <div class="review">
                                                         <div class="rate">
-                                                            <p>4.5/5 excellent</p>
+                                                            <p><?php echo $values['hotel_point'] ?>/5 excellent</p>
                                                         </div>
                                                         <div class="sumary">
                                                             <li>5 reviews</li>
@@ -536,7 +388,7 @@
                                                     <div class="price-wrapper">
 															<span>
 																<i class="fas fa-bolt"></i>
-																<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
+																<span class="price-from">from</span> <span class="price-money">€ <?php echo $values['medium_price'] ?> </span>
 																<span class="price-from">
 																	/night
 																</span>
@@ -546,148 +398,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="last-minute">
-                                        <div class="col-xs-6 col-sm6 col-md-3">
-                                            <div class="row-content">
-                                                <div class="wpb-content-image">
-                                                    <a href="#">
-                                                        <img src="../../libs/Images/60337007-450x417.jpg">
-                                                    </a>
-                                                    <div class="review-star">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="wpb-content-text">
-                                                    <div class="wpb-room-name">
-                                                        <a href="#">
-                                                            Best Western Plus
-                                                        </a>
-                                                    </div>
-                                                    <div class="wpb-room-adress">
-                                                        <p> <i class="fas fa-map-marker-alt"></i>Ohio USA</p>
-
-                                                    </div>
-                                                    <div class="review">
-                                                        <div class="rate">
-                                                            <p>4.5/5 excellent</p>
-                                                        </div>
-                                                        <div class="sumary">
-                                                            <li>5 reviews</li>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="price-wrapper">
-															<span>
-																<i class="fas fa-bolt"></i>
-																<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
-																<span class="price-from">
-																	/night
-																</span>
-															</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="last-minute">
-
-                                        <div class="col-xs-6 col-sm6 col-md-3">
-                                            <div class="row-content">
-                                                <div class="wpb-content-image">
-                                                    <a href="#">
-                                                        <img src="../../libs/Images/60337007-450x417.jpg">
-                                                    </a>
-                                                    <div class="review-star">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="wpb-content-text">
-                                                    <div class="wpb-room-name">
-                                                        <a href="#">
-                                                            Dylan Hotel
-                                                        </a>
-                                                    </div>
-                                                    <div class="wpb-room-adress">
-                                                        <p> <i class="fas fa-map-marker-alt"></i>New York City, NY, USA</p>
-                                                    </div>
-                                                    <div class="review">
-                                                        <div class="rate">
-                                                            <p>4.5/5 excellent</p>
-                                                        </div>
-                                                        <div class="sumary">
-                                                            <li>5 reviews</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="price-wrapper">
-															<span>
-																<i class="fas fa-bolt"></i>
-																<span class="price-from">from</span> 
-																<span class="price-money"> €128.00 </span>
-																<span class="price-from">
-																	/night
-																</span>
-															</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="last-minute">
-                                        <div class="col-xs-6 col-sm6 col-md-3">
-                                            <div class="row-content">
-                                                <div class="wpb-content-image">
-                                                    <a href="#">
-                                                        <img src="../../libs/Images/Parian Holiday Villas.jpg">
-                                                    </a>
-                                                    <div class="review-star">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="wpb-content-text">
-                                                    <div class="wpb-room-name">
-                                                        <a href="#">
-                                                            Edwardian Kenilworth
-                                                        </a>
-                                                    </div>
-                                                    <div class="wpb-room-adress">
-                                                        <p> <i class="fas fa-map-marker-alt"></i>New York City, NY, USA</p>
-
-                                                    </div>
-                                                    <div class="review">
-                                                        <div class="rate">
-                                                            <p>4.5/5 excellent</p>
-                                                        </div>
-                                                        <div class="sumary">
-                                                            <li>5 reviews</li>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="price-wrapper">
-															<span>
-																<i class="fas fa-bolt"></i>
-																<span class="price-from">from</span> <span class="price-money"> €128.00 </span>
-																<span class="price-from">
-																	/night
-																</span>
-															</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -712,7 +423,7 @@
                                 <div class="col-xs-6 col-sm-6 col-md-4 aaa">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="../../libs/Images/nevaga_2-1024x1024-1024x1024.jpg">
+                                            <img src="libs/Images/nevaga_2-1024x1024-1024x1024.jpg">
                                         </a>
 
                                         <div class="text-content">
@@ -730,7 +441,7 @@
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="../../libs/Images/angeles.jpg">
+                                            <img src="libs/Images/angeles.jpg">
                                         </a>
 
                                         <div class="text-content">
@@ -747,7 +458,7 @@
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="../../libs/Images/california.jpg">
+                                            <img src="libs/Images/california.jpg">
                                         </a>
                                         <div class="text-content">
                                             <div class="title-name">
@@ -762,7 +473,7 @@
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="../../libs/Images/virginia.jpg">
+                                            <img src="libs/Images/virginia.jpg">
                                         </a>
 
                                         <div class="text-content">
@@ -778,7 +489,7 @@
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="../../libs/Images/sanfransico.jpg">
+                                            <img src="libs/Images/sanfransico.jpg">
                                         </a>
 
                                         <div class="text-content">
@@ -794,7 +505,7 @@
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="../../libs/Images/newjersey.jpg">
+                                            <img src="libs/Images/newjersey.jpg">
                                         </a>
 
                                         <div class="text-content">
@@ -820,172 +531,4 @@
         </div>
     </div>
     <div class="clear"></div>
-    <!-- footer -->
-    <div class="mailchimp">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-                    <div class="row">
-                        <div class="col-xs-12  col-md-7 col-lg-6">
-                            <div class="media ">
-                                <div class="media-left pr30 hidden-xs">
-                                    <img class="media-object" src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_email_subscribe.svg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading  f24">Get Updates &amp; More</h4>
-                                    <p class="f16 c-grey">Thoughtful thoughts to your inbox</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-5 col-lg-6">
-                            <form action="" class="subcribe-form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Email">
-                                    <input type="submit" name="submit" value="Subcribe">
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer_content">
-        <div class="container ">
-            <div class="row">
-
-                <div class=" col-lg-3 col-md-3  col-xs-12 footer_content_list">
-                    <p class="footer_content_header">NEED HELP?</p>
-                    <br />
-
-
-                    <div  class="footer_content_element">
-                        <p class="footer_content_element1" >Call Us</p>
-                        <h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >+ 00 222 44 5678</h4>
-                    </div>
-                    <br />
-
-                    <div class="footer_content_element">
-                        <p class="footer_content_element1" >Email for Us</p>
-                        <h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >hello@yoursite.com</h4>
-                    </div>
-                    <br />
-
-                    <div class="footer_content_element">
-                        <p class="footer_content_element1" >Follow Us</p>
-                        <p style="padding-left: 15px;"><span ><img src="../../libs/Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/Images/ico_twitter_footer.svg"  ></span></p>
-                    </div>
-                    <br />
-
-
-
-                </div>
-                <div class="  col-lg-3 col-md-3 col-xs-12  footer_content_list">
-                    <p class="footer_content_header">COMPANY</p>
-                    <br />
-
-                    <div class="footer_content1_element">
-                        <div class="footer_content1_element1" ">
-                        <a href="" style="color: #1A2B48"><p>About Us</p></a>
-                        <br>
-
-                        <a href="" style="color: #1A2B48"><p>ACommunity Blog</p></a>
-                        <br>
-
-                        <a href="" style="color: #1A2B48"><p>Rewards</p></a>
-                        <br>
-
-                        <a href="" style="color: #1A2B48"><p>Word with Us</p></a>
-                        <br>
-
-                        <a href="" style="color: #1A2B48"><p>Meet the Team</p></a>
-                        <br>
-                        <br>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="  col-lg-3 col-md-3 col-xs-12  footer_content_list">
-                <p class="footer_content_header">SUPPORT</p>
-                <br />
-
-                <div class="footer_content1_element">
-                    <div class="footer_content1_element1" ">
-                    <a href="" style="color: #1A2B48"><p>Acount</p></a>
-                    <br>
-
-                    <a href="" style="color: #1A2B48"><p>Legal</p></a>
-                    <br>
-
-                    <a href="" style="color: #1A2B48"><p>Contact</p></a>
-                    <br>
-
-                    <a href="" style="color: #1A2B48"><p>Affiliate Program</p></a>
-                    <br>
-
-                    <a href="" style="color: #1A2B48"><p>Privacy policy</p></a>
-                    <br>
-                    <br>
-
-                </div>
-
-            </div>
-        </div>
-        <div class=" col-lg-3 col-md-3  col-xs-12  footer_content_list">
-            <p class="footer_content_header">SETTING</p>
-            <br />
-
-            <div class="footer_content1_element">
-                <div class="footer_content1_element1" ">
-                <p style="font-size: 14px;color: #5E6D77;" >Languages</p>
-                <select style=" width: 180px; height: 40px; border-radius: 4px;" >
-                    <option>English</option>
-                    <option>France</option>
-                    <option>Spanish</option>
-                </select>
-                <br />
-                <br />
-                <br />
-                <p style="font-size: 14px;color: #5E6D77;" >Currencies</p>
-                <select style=" width: 180px; height: 40px; border-radius: 4px;" >
-                    <option>EUR</option>
-                    <option>USD</option>
-                    <option>AUD</option>
-                </select>
-
-
-            </div>
-
-        </div>
-    </div>
-
-</div>
-</div>
-</div>
-<div class="footer_sub">
-    <div class="container">
-        <div class="row">
-
-
-            <div class="col-lg-4">
-                <div class="footer_sub_L">
-                    <p>Copyright © 2018 by <a href="#">ShineTheme</a></p>
-
-
-                </div>
-
-            </div>
-            <div class="col-lg-5"></div>
-            <div class="col-lg-3">
-                <div class="footer_sub_R">
-                    <p><span style="margin-left: 15px; margin-top: 15px; "><img src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_paymethod.svg"></span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</body>
-</html>
+    
