@@ -90,13 +90,20 @@
 	</table>
 </div>
 <?php 
-	$page = $db->phantrang('user');
+	$page = $db->paging('user');
 ?>
 
-<div class="test-phantrang">
+<div class="paging">
 	<?php
+	$current_page = isset($_GET['page']) ? $_GET['page'] : 1;
 	for ($i=1; $i<=$page ; $i++) { 
-		echo "<a href='admin.php?controller=user&action=list&page=$i'>Page $i</a> - ";
+		$link = 'admin.php?controller=user&action=list&page=' . $i;
+		if(isset($_GET['key']))
+			$link .= '&key=' . $_GET['key'];
+		$class_active = '';
+		if($current_page == $i)
+			$class_active = 'active';
+		echo "<a href='". $link ."' class='". $class_active ."'>Page $i</a> - ";
 	}
 	?>
 </div>
