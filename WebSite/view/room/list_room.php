@@ -54,7 +54,7 @@
  
 					<td><?php echo $value['typeroom'] ?></td>
 					<td><?php echo $value['price'] ?></td>
-					<td><?php echo $value['starnum	'] ?></td>
+					<td><?php echo $value['starnum'] ?></td>
 					<td><?php echo $value['people'] ?></td>
 					<td><?php echo $value['bed'] ?></td>
 					<td><?php echo $value['size'] ?></td>
