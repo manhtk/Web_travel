@@ -26,94 +26,31 @@
                                                     <div class="dropdow-list" style="width: 80%; height: 30px; float: left;">
 
                                                         <div class="dropdown">
-                                                            <p  class="dropdown-toggle search-form-dropdown" data-toggle="dropdown" style="color:#5191FA; float: left;">
-                                                                Where are you going?
-                                                            </p>
-                                                            <div class="dropdown-menu form-item">
-                                                                <form action="/action_page.php" >
-                                                                    <p class="search-form-location">United States</p>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p> California</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>Los Angerles</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>Nevada</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>New Jersey</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <label class="form-check-label" for="check5">
-
-                                                                            <p class="location-language text-secondary">Delaware</p>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <label class="form-check-label" for="check5">
-
-                                                                            <p class="location-language text-secondary">Philadelphia</p>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>New York City</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p> Sanfransico</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <label class="form-check-label" for="check9">
-
-                                                                            <p class="location-language text-secondary">Wilmington</p>
-                                                                        </label>
-                                                                    </div>
-
-                                                                </form>
-                                                            </div>
+                                                        <div class="dropdown-toggle"
+                                                             data-toggle="dropdown" style="color:#5191FA; float: left;">
+                                                            <span>Where are u going?</span>
                                                         </div>
+                                                        <ul class="dropdown-menu form-item">
+                                                            <li><span class="parent">United States</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Carlifornia</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Los Angeles</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Nevada</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">New jersy</span></li>
+                                                            <li><span class="child" style="padding-left: 50px">Delaware</span></li>
+                                                            <li><span class="child" style="padding-left: 50px">Philadelphia</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">New York City</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">San Francisco</span></li>
+                                                            <li><span class="child" style="padding-left: 50px">Wilmington</span></li>
+                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Virginia</span></li>
+                                                            <li><span class="child" style="padding-left: 50px">Virginia Beach</span></li>
+                                                        </ul>
+                                                        <script>
+                                                            $(".dropdown-menu li").click(function () {
+                                                                var selText = $(this).text();
+                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>');
+                                                            });
+                                                        </script>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
