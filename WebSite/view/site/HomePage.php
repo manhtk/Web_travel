@@ -24,26 +24,22 @@
                                                 </div>
                                                 <div class="search-form-section">
                                                     <label for="name"  class="text-muted1";">Detination</label><br/>
-                                                    <div class="dropdow-list" style="width: 80%; height: 30px; float: left;">
+                                                    <div class="dropdow-list" >
 
                                                         <div class="dropdown">
                                                         <div class="dropdown-toggle"
-                                                             data-toggle="dropdown" style="color:#5191FA; float: left;">
-                                                            <span>Where are u going?</span>
+                                                             data-toggle="dropdown">
+                                                            <span>Where are you going</span>
                                                         </div>
+
                                                         <ul class="dropdown-menu form-item">
-                                                            <li><span class="parent">United States</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Carlifornia</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Los Angeles</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Nevada</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">New jersy</span></li>
-                                                            <li><span class="child" style="padding-left: 50px">Delaware</span></li>
-                                                            <li><span class="child" style="padding-left: 50px">Philadelphia</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">New York City</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">San Francisco</span></li>
-                                                            <li><span class="child" style="padding-left: 50px">Wilmington</span></li>
-                                                            <li><i class="fas fa-map-marker-alt search-form-checkIcon" style="padding-left: 20px"></i><span class="child" style="font-weight: 500">Virginia</span></li>
-                                                            <li><span class="child" style="padding-left: 50px">Virginia Beach</span></li>
+                                                           <?php   foreach ($data as  $values){ ?>
+
+                                                            <li> <i class="fas fa-map-marker-alt"></i>
+                                                                <?php echo $values['city_name'] ?>
+                                                            </li>
+                                                      <?php } ?>
+                                                            
                                                         </ul>
                                                         <script>
                                                             $(".dropdown-menu li").click(function () {
