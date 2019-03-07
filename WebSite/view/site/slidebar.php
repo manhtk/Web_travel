@@ -241,13 +241,14 @@
 					<i class="fa fa-bars menu1" style="padding-left: 20px"></i>
 				</div>
 				<div class="header1left">
-					<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-					<div class="menu">
+					<a href="index.php">
+                        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                    </a>					<div class="menu">
 
 						<nav id="st-main-menu" >
 							<a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
 							<ul id="main-menu">
-								<li><a href="http://webhotel.com:8080"  >HOME</a></li>
+								<li><a href="index.php"  >HOME</a></li>
 								<li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="#">Full Map Layout</a></li>
