@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../../public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/HomePage.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/cart.css">
     <script type="text/javascript" src="../../public/js/khanh.js"></script>
 
 

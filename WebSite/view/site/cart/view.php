@@ -82,81 +82,85 @@
 		</li>
 	</ul>
 </div>
-              </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-lg-pull-4 col-md-pull-4">
-                        <h3 class="title">Booking Submission</h3>
-                        <div class="check-out-form">
+</div>
+</div>
+    <div class="col-lg-8 col-md-8 col-lg-pull-4 col-md-pull-4">
+        <h3 class="title">Booking Submission</h3>
+        <div class="check-out-form">
+            <?php foreach ($infouser  as  $value) {
+                ?>
                         	<div class="entry-content"></div>
  <form id="cc-form" class="" method="post" onsubmit="return false">
                             <div class="clearfix">
 
 <div class="row">
-            <div class="col-sm-6">
-
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_first_name">First Name <span class="require">*</span> </label>
-            <i class="fa fa-user input-icon"></i>                <input class="form-control required" id="field-st_first_name" value="" name="st_first_name" placeholder="First Name" type="text">
+            <i class="fa fa-user input-icon"></i>
+            <input class="form-control required" id="field-st_first_name" value="<?php echo $value['first_name'] ?>" name="st_first_name" placeholder="First Name" type="text">
         </div>
-
     </div>
-            <div class="col-sm-6">
-
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_last_name">Last Name <span class="require">*</span> </label>
-            <i class="fa fa-user input-icon"></i>                <input class="form-control required" id="field-st_last_name" value="" name="st_last_name" placeholder="Last Name" type="text">
+            <i class="fa fa-user input-icon"></i>
+             <input class="form-control required" id="field-st_last_name" value="<?php echo $value['last_name'] ?>" name="st_last_name" placeholder="Last Name" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_email">Email <span class="require">*</span> </label>
-            <i class="fa fa-envelope input-icon"></i>                <input class="form-control required" id="field-st_email" value="" name="st_email" placeholder="email@domain.com" type="text">
+            <i class="fa fa-envelope input-icon"></i>
+            <input class="form-control required" id="field-st_email" value="<?php echo $value['email'] ?>" name="st_email" placeholder="email@domain.com" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
 
         <div class="form-group form-group-icon-left">                
             <label for="field-st_phone">Phone <span class="require">*</span> </label>
-            <i class="fa fa-phone input-icon"></i>                <input class="form-control required" id="field-st_phone" value="" name="st_phone" placeholder="Your Phone" type="text">
+            <i class="fa fa-phone input-icon"></i>
+            <input class="form-control required" id="field-st_phone" value="0<?php echo $value['phone_number'] ?>" name="st_phone" placeholder="Your Phone" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_address">Address Line 1  </label>
-            <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_address" value="" name="st_address" placeholder="Your Address Line 1" type="text">
+            <i class="fa fa-map-marker input-icon"></i>
+            <input class="form-control" id="field-st_address" value="<?php echo $value['address'] ?>" name="st_address" placeholder="Your Address Line 1" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_address2">Address Line 2  </label>
             <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_address2" value="" name="st_address2" placeholder="Your Address Line 2" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_city">City  </label>
             <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_city" value="" name="st_city" placeholder="Your City" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_province">State/Province/Region  </label>
             <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="" name="st_province" placeholder="State/Province/Region" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_zip_code">ZIP code/Postal code  </label>
             <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_zip_code" value="" name="st_zip_code" placeholder="ZIP code/Postal code" type="text">
         </div>
     </div>
-            <div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group form-group-icon-left">                
             <label for="field-st_country">Country  </label>
             <i class="fa fa-globe input-icon"></i>                <input class="form-control" id="field-st_country" value="" name="st_country" placeholder="Country" type="text">
         </div>
     </div>
-            <div class="col-sm-12">
+    <div class="col-sm-12">
         <div class="form-group ">
             <label for="field-st_note">Special Requirements  </label>
             <textarea rows="6" class="form-control" id="field-st_note" name="st_note" placeholder="Special Requirements"></textarea>
@@ -164,13 +168,16 @@
     </div>
 </div>
 </div>
+</form>
+<?php } ?>
+</div>
 <input type="hidden" name="lang" value="en">
 <div class="cond-form">
                 <div class="st-icheck create-account st_check_create_account">
                 <div class="st-icheck-item">
                     <label>
                         <span class="payment-title">
-                            Create Traveler account                                 <small>(password will be sent to your e-mail)</small>
+                            Create Traveler account<small>(password will be sent to your e-mail)</small>
                         </span>
                         <input name="create_account" type="checkbox" value=" " checked="" disabled="" required="">
                         <span class="checkmark fcheckbox"></span>
