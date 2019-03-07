@@ -735,6 +735,10 @@ body{
 .title-name h2 {
 	font-size:25px !important;
 }
+.row-content
+{
+	height: 350px;
+}
 
 }
 @media only screen and (max-width: 767px)
@@ -1026,5 +1030,10 @@ body{
     }
 .vc_custom_1542167696382 {
     padding: 10px 15px !important;
+}
+.row-content
+{
+	min-height: 375px;
+}
 }
 /*end Hompage*/
