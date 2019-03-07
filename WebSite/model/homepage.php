@@ -47,6 +47,18 @@ class HomePage_Model extends Model {
         }
         return $data;
     }
+    public function getListCity()
+    {
+        $sql="SELECT * FROM city";
+        $res = $this->query($sql);
+        $data = [];
 
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $data[] = $row;
+            }
+        }
+        return $data;
     
+  }
 }
