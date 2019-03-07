@@ -304,7 +304,7 @@ body{
 {
 	width: 100%;
 	position: relative;
-	width: 100%;
+	
 	min-height: 420px;
 	float: left;
 }
@@ -323,7 +323,7 @@ body{
 }
 .services-grid
 {
-	height: 400px;
+	min-height: 420px;
 }
 .wpb-content-image:hover img
 {
@@ -448,9 +448,9 @@ body{
 .text-content
 {
 	position: absolute;
-    top: 38%;
-    left: 27%;
-    width: 170px;
+    top: 45%;
+    left: 10%;
+    width: 80%;
     height: 70px;
     color: #FFFFFF;
 }

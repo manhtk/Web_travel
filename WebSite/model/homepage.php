@@ -30,6 +30,23 @@ class HomePage_Model extends Model {
         }
         return $data;
     }
+    public function getCity($limit = false,$values)
+    {
+        $sql = "SELECT *,COUNT(hotel_name) AS 'column_hotel' FROM city INNER JOIN hotel ON city.city_id = hotel.city_id GROUP BY city.city_id ORDER BY $values DESC" ;
+        if($limit && is_numeric($limit)){
+            $sql .= " LIMIT 0,{$limit}";
+        }
+        
+        $res = $this->query($sql);
+        $data = [];
+
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $data[] = $row;
+            }
+        }
+        return $data;
+    }
 
     
 }

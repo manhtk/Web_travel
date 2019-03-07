@@ -281,16 +281,14 @@
                     <div class="vc_column-inner wpb_wrapper">
                         <div class="wpb_text_column wpb_content_element  fs-28 fs-normal">
                             <div class="wpb_wrapper">
-                                <h2>Last Minute Deals</h2>
+                                <h2>The Most Preferential Price</h2>
                             </div>
                             <div class="services-grid">
                                 <div class="row">
                                   
                                     <?php 
-                                    foreach ($data as   $values) {
-                                        
+                                    foreach ($data as  $values) {
                                       ?>
-                                   
                                         <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 cols ">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
@@ -366,104 +364,28 @@
                                 </div>
                             </div>
                             <div class="row list-destination">
+                         <?php foreach ($data_city as $val){ ?>
+
                                 <div class="col-xs-6 col-sm-6 col-md-4 aaa">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="libs/Images/nevaga_2-1024x1024-1024x1024.jpg">
+                                            <img src="<?php echo $val['city_images'];?>">
                                         </a>
 
                                         <div class="text-content">
                                             <div class="title-name">
-                                                <h2>Nevada</h2>
+                                                <h2><?php echo htmlspecialchars($val['city_name']) ?></h2>
 
                                                 <div class="desc-inf">
-                                                    <h3> 17 properties</h3>
+                                                    <h3> <?php echo $val['column_hotel'];  ?> properties</h3>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/angeles.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>Los Angeles</h2>
-
-                                                <div class="desc-inf">
-                                                    <h3>17 properties</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/california.jpg">
-                                        </a>
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2> California </h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>17 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/virginia.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>Virginia</h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>20 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/sanfransico.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>San Fransico</h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>20 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/newjersey.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>New Jersey</h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>20 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
+                       <?php } ?>
                             </div>
                         </div>
                     </div>

@@ -11,11 +11,11 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script>
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-    <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script>
+   
     <script type="text/javascript" src="public/js/khanh.js"></script>
 
 
