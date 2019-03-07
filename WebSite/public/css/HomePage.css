@@ -406,8 +406,9 @@ body{
 }
 .price-money
 {
-	font-size: 18px;
+	font-size: 16px;
 	color: #1A2B50;
+	font-weight: 500;
 }
 .price-wrapper
 {
@@ -494,13 +495,11 @@ body{
 .dropdown-factilities
 {
 	position: relative;
-<<<<<<< HEAD
+
     left: -10px;
     top: -8px;
     font-size: 16px;
-=======
-	left: -10px;
->>>>>>> 92def327b47c65b6277a392b425066dd18836fd1
+
 }
 .dropdown-menu-facilities
 {
@@ -646,10 +645,7 @@ body{
 		display: none;
 		width: 100%;
 	}
-	.wpb-room-name a
-	{
-		font-size: 15px!important;
-	}
+	
 	.last-minute .col-xs-6
 	{ 
 		padding: 0px 10px !important;
@@ -664,9 +660,7 @@ body{
 	{
 		left: 0px!important;
 	}
-	.destination-item .text-content .title-name h2{
-		font-size: 25px !important;
-	}
+	
 	.destination-item .text-content .desc-inf h3
 	{
 		font-size: 16px !important;	
@@ -736,12 +730,19 @@ body{
 	}
 .text-content
 {
-	left: 15%;
+	top:35%;
+}
+.title-name h2 {
+	font-size:25px !important;
 }
 
 }
 @media only screen and (max-width: 767px)
 {
+	.wpb-room-name a
+	{
+		font-size: 15px!important;
+	}
 
 	.banner .search-form-wrapper
 	{
@@ -840,6 +841,9 @@ body{
 .banner img
 {
 	height: 460px !important;
+}
+.title-name h2 {
+	font-size: 30px;
 }
 }
 
@@ -1012,17 +1016,15 @@ body{
     font-size: 16px;
 
 }
+.rate p 
+{
+	display: none;
+}
 .wpb_wrapper {
     padding-bottom: 20px;
     padding-top: 20px;
     }
 .vc_custom_1542167696382 {
     padding: 10px 15px !important;
-}
-.    width: 100%;
-    height: 30px;
-    position: absolute;
-    left: 20px;
-    margin-top: 40px
 }
 /*end Hompage*/
