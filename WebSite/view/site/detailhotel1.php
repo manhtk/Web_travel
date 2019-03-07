@@ -43,117 +43,59 @@
 </script>
 <body>
 	<!-- header -->
-	<header>
-		<div class="topbar">
-			<div class="container-fluid">
-				<div class="topbar-left">
-					<ul class="st-list socials">
-						<li>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-						</li>
-					</ul>
-					<ul class="st-list topbar-items">
-						<li class="hidden-xs hidden-sm">
-							<a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
-						</li>
-					</ul>
-				</div>
-				<div class="topbar-right">
-					<ul class="st-list topbar-items">
-						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login" data-toggle="modal" data-target="">Login</a></li>
-						<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="#" data-toggle="modal" data-target="">Sign up</a></li>
-						<li class="dropdown dropdown-currency hidden-sm hidden-xs">
-							<a href="#">EUR<i class="fa fa-angle-down"></i></a>
-							<ul class="dropmenu">
-								<li><a href="#">USD</a></li>
-								<li><a href="#">AUD</a></li>
-							</ul>
-						</li>
-						<li class="dropdown dropdown-language hidden-sm hidden-xs">
-							<a href="#">English<i class="fa fa-angle-down"></i></a>
-							<ul class="dropmenu">
-								<li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-								<li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
-							</ul>
-						</li>
-					</ul>
-					<div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">	
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" >&times;</button>
-									<h4 class="modal-title">Login</h4>
-								</div>
-								<div class="modal-body relative">
-									<form action="" class="form" method="post">
-										<input type="hidden" name="action" value="st_login_popup">
-										<div class="form-group">
-											<input type="text" class="form-control" name="username" autocomplete="off" placeholder="Email or Username">
-											<i class="far fa-envelope input-icon"></i>                            
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password"><i class="fas fa-lock input-icon"></i>
-										</div>
-										<div class="form-group">
-											<input type="submit" name="submit" class="form-submit" value="Log In">
-										</div>
-										<div class="mt20 st-flex space-between st-icheck">
-											<div class="st-icheck-item">
-												<label for="remember-me" class="c-grey">
-													<input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
-												</label>
-											</div>
-											<a href="" class="st-link open-loss-password" data-toggle="modal">Forgot Password?</a>
-										</div>
-										<div class="advanced">
-											<p class="text-center f14 c-grey">or continue with</p>
-											<div class="row">
-												<div class="col-xs-12 col-sm-4">
-													<a onclick="return false" href="#" class="btn_login_fb_link st_login_social_link" data-channel="facebook">
-													<i class="fab fa-facebook"></i></a>
-												</div>
-												<div class="col-xs-12 col-sm-4">
-													<a onclick="return false" href="#" class="btn_login_gg_link st_login_social_link" data-channel="google">
-													<i class="fab fa-google-plus-g"></i></a>
-												</div>
-												<div class="col-xs-12 col-sm-4">
-													<a href="https://homap.travelerwp.com/social-login/twitter" onclick="return false" class="btn_login_tw_link st_login_social_link" data-channel="twitter">
-													<i class="fab fa-twitter"></i></a>
-												</div>
-											</div>
-										</div>
-										<div class="mt20 c-grey font-medium f14 text-center">
-											Do not have an account? <a href="" class="st-link open-signup" data-toggle="modal">Sign Up</a>
-										</div>
-									</form>
-									
-
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="clearfix"></div>
-		<div class="head1">
-			<div class="container">
-				<div class="toggle">
-					<i class="fa fa-bars menu1" style="padding-left: 20px"></i>
-				</div>
-				<div class="header1left">
-					<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+<header>
+        <div class="topbar">
+            <div class="container-fluid">
+                <div class="topbar-left">
+                    <ul class="st-list socials">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="st-list topbar-items">
+                        <li class="hidden-xs hidden-sm">
+                            <a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul class="st-list topbar-items">
+                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Login</a></li>
+                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../register">Sign up</a></li>
+                        <li class="dropdown dropdown-currency hidden-sm hidden-xs">
+                            <a href="#">EUR<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropmenu">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">AUD</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-language hidden-sm hidden-xs">
+                            <a href="#">English<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropmenu">
+                                <li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
+                                <li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="head1">
+            <div class="container">
+                <div class="toggle">
+                    <i class="fa fa-bars menu1" style="padding-left: 20px"></i>
+                </div>
+                <div class="header1left">
+                    <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
                     <div class="menu">
 
                         <nav id="st-main-menu" >
                             <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
                             <ul id="main-menu">
-                                <li><a href="../../view/site/HomePage.php"  >HOME</a></li>
+                                <li><a href="http://webhotel.com:8080"  >HOME</a></li>
                                 <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Full Map Layout</a></li>
@@ -189,18 +131,18 @@
                             </ul>
                         </nav>
                     </div>
-				</div>
-				<div class="header1right">
-					<form action="" method="get" class="header-search hidden-sm">
-						<input type="text" class="form-control" name="s" value="">
-						<i class="fa fa-search"></i>
-					</form>
-					<img class="ico_card" src="../../libs/Images/ico_card.svg">
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
+                </div>
+                <div class="header1right">
+                    <form action="" method="get" class="header-search hidden-sm">
+                        <input type="text" class="form-control" name="s" value="">
+                        <i class="fa fa-search"></i>
+                    </form>
+                    <img class="ico_card" src="../../libs/Images/ico_card.svg">
+                </div>
+            </div>
+        </div>
+
+    </header>
   <!-- end header -->
   <div class="clear"></div>
 	<!--content -->

@@ -21,9 +21,9 @@
 		</tr>
 		<td><input class="form-control" type="text" name="price" placeholder="Price"></td>
 		<tr>
-			<td>Point</td>
+			<td>StarNum</td>
 		</tr>
-		<td><input class="form-control" type="text" name="point" placeholder="Point"></td>
+		<td><input class="form-control" type="text" name="starnum" placeholder="StarNum"></td>
 		<tr>
 			<td>People</td>
 		</tr>

@@ -278,6 +278,7 @@ $(function() {
 			format: 'M/DD/YYYY'
 		}
 	});
+<<<<<<< HEAD
 });
 // // form nhỏ
 // $(function() {
@@ -314,3 +315,6 @@ $(function() {
 //     $('.services-grid .row .cols').matchHeight();
 //     document.writeln("aaa");
 // });
+=======
+});
+>>>>>>> 25a7654ba0386521a2397bcf8ae2942dfe426b96
