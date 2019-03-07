@@ -12,16 +12,7 @@ if(isset($_POST['user'])){
 		$address = $_POST['address'];
 		$city = $_POST['city'];
 		$email = $_POST['email'];
-		// $tongtien = 0;
-		// foreach($_SESSION['cart'] as $cart){
-		// 	$thanhtien = $cart['qty']*$cart['giagoc'];
-		// 	$tongtien  = $tongtien+$thanhtien;
-		// }
-		// $sql  = "INSERT INTO khachhang(id, tenkhachhang, sodienthoai, diachi, email, thanhpho, tongtien)VALUES(null, '$hovaten', '$sodienthoai', '$diachi', '$email', '$thanhpho', '$tongtien')";
-		// if($db->execute($sql) === TRUE){
-		// 	$last_id = $db->connect()->insert_id;
-		// 	var_dump($last_id);
-		// }
+		
 		if(mysqli_query($conn, $sql)){
 			$last_id = $conn->insert_id;
 			// Lấy thông tin sản phẩm có trong giỏ hàng  :

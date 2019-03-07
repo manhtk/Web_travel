@@ -28,13 +28,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- end date time -->
-<<<<<<< HEAD
   <script type="text/javascript" src="../../public/js/khanh.js" ></script>
-  <link rel="stylesheet" type="text/css" href="../CSS/room.css"></li>
-=======
-  <script type="text/javascript" src="../../public/js/khanh.js"></script>
   <link rel="stylesheet" type="text/css" href="../../public/css/room.css"></li>
->>>>>>> 25a7654ba0386521a2397bcf8ae2942dfe426b96
+
 </head>
 <script>
 
@@ -87,7 +83,7 @@
                     <i class="fa fa-bars menu1" style="padding-left: 20px"></i>
                 </div>
                 <div class="header1left">
-                    <a href="index.php">
+                    <a href="http://webhotel.com:8080">
                         <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
                     </a>
                     <div class="menu">
@@ -95,7 +91,7 @@
                         <nav id="st-main-menu" >
                             <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
                             <ul id="main-menu">
-                                <li><a href="index.php/"  >HOME</a></li>
+                                <li><a href="index.php"  >HOME</a></li>
                                 <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Full Map Layout</a></li>
@@ -172,7 +168,7 @@
         <div class="price-wrapper">
           from <span class="price">€565</span>                        
         </div>
-        <a href="index.php/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
+        <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
       </div>
     </div>
     <div class="clear"></div>
@@ -649,7 +645,7 @@
                   <!-- book -->
                   <div class="row">
                     <div class="booknow">
-                      <a href="index.php/?c=bookcart&a=view" class="btn-book">Book now</a>
+                      <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn-book">Book now</a>
                     </div>
                   </div>
                 </div>

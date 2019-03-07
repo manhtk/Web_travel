@@ -58,4 +58,16 @@ class bookcart_model extends Model {
         }
         return $data;
     }
+    public function getInfoUser()
+    {
+        $sql = "SELECT * from user where user_id = 1";
+        $res = $this->query($sql);
+        $data = [];
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $data[] = $row;
+            }
+        }
+        return $data;
+    }
 }

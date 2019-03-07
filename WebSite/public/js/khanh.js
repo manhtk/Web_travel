@@ -278,43 +278,4 @@ $(function() {
 			format: 'M/DD/YYYY'
 		}
 	});
-<<<<<<< HEAD
 });
-// // form nhỏ
-// $(function() {
-// 	$('.btn-booknow').click(function(event) {
-// 		/* Act on the event */
-// 		$(this).toggleClass('daonguoc');
-// 		$(this).next().slideToggle();
-// 	});
-
-// });
-// $('.slide .control a').click(function()
-// {
-// 	var id= $(this).attr('data-id');
-// 	var margin_left=-870*(id-1);
-// 	$ (' .slide .list-img .wrap').css('margin-left',margin_left+'px');
-// })
-// ;
-
-// $(document).ready(function(){
-// 	$('.widgetroom1').slideUp();
-// 	var stt=0;
-// 	$("img .slide").each(function(){
-// 		if($(this).is(':visible'))
-// 			stt=$(this).attr("stt");
-// 	});
-// 	$("#next").click(function()
-// 	{
-// 		next= ++stt;
-// 		$(" img .slide").hide();
-// 		$(" img .slide").eq(next).show();
-// 	});
-// });
-// $(function() {
-//     $('.services-grid .row .cols').matchHeight();
-//     document.writeln("aaa");
-// });
-=======
-});
->>>>>>> 25a7654ba0386521a2397bcf8ae2942dfe426b96
