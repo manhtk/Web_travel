@@ -1,4 +1,5 @@
 
+
   
     <div class="clear"></div>
     <!-- Banner -->
@@ -284,12 +285,13 @@
                             </div>
                             <div class="services-grid">
                                 <div class="row">
+                                  
                                     <?php 
                                     foreach ($data as   $values) {
                                         
                                       ?>
-                                    
-                                        <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 ">
+                                   
+                                        <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 cols ">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
                                                     <a href="#">
@@ -313,11 +315,10 @@
                                                         <p>
                                                             <?php 
                                                             if(!empty($values['city_name']) || !empty($values['country'])){ ?>
-                                                                <i class="fas fa-map-marker-alt">
+                                                                <i class="fas fa-map-marker-alt"></i>
                                                               <?php  }  ?>
-                                                        </i><?php echo htmlspecialchars($values['city_name']) ?>
-                                                         <?php if(!empty($values['city_name'])) { ?> , <?php } ?> 
-                                                         <?php echo htmlspecialchars($values['country']) ?></p>
+                                                        <?php echo htmlspecialchars($values['city_name']) ?>
+                                                          ,<?php echo htmlspecialchars($values['country']) ?></p>
 
                                                     </div>
                                                     <div class="review">
@@ -341,8 +342,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                     
                                     <?php } ?>
+
                                 </div>
                             </div>
                         </div>

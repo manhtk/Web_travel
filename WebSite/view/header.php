@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
+    <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script>
     <script type="text/javascript" src="public/js/khanh.js"></script>
 
 
@@ -44,6 +45,7 @@
 
 
         });
+
 
     </script>
 </head>
@@ -94,7 +96,7 @@
         <div class="head1">
             <div class="container">
                 <div class="toggle">
-                    <i class="fa fa-bars menu1" style="padding-left: 20px"></i>
+                    <i class="fa fa-bars menu1" ></i>
                 </div>
                 <div class="header1left">
                     <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">

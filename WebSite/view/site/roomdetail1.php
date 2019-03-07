@@ -28,7 +28,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- end date time -->
-  <script type="text/javascript" src="..//JS/khanh.js" ></script>
+  <script type="text/javascript" src="../../public/js/khanh.js" ></script>
   <link rel="stylesheet" type="text/css" href="../CSS/room.css"></li>
 </head>
 <script>

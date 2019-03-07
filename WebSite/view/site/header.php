@@ -44,6 +44,9 @@
 
 
         });
+        $(function() {
+    $('.services-grid .row  .cols').matchHeight();
+});
 
     </script>
 </head>

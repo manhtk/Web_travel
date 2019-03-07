@@ -310,3 +310,7 @@ $(function() {
 // 		$(" img .slide").eq(next).show();
 // 	});
 // });
+// $(function() {
+//     $('.services-grid .row .cols').matchHeight();
+//     document.writeln("aaa");
+// });
