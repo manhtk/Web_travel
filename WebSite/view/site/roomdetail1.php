@@ -28,8 +28,13 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- end date time -->
+<<<<<<< HEAD
+  <script type="text/javascript" src="../../public/js/khanh.js" ></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/room.css"></li>
+=======
   <script type="text/javascript" src="../../public/js/khanh.js"></script>
   <link rel="stylesheet" type="text/css" href="../../public/css/room.css"></li>
+>>>>>>> 25a7654ba0386521a2397bcf8ae2942dfe426b96
 </head>
 <script>
 
