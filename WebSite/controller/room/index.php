@@ -9,7 +9,7 @@
             'room_name',
             'typeroom',
             'price',
-            'point',
+            'starnum',
             'people',
             'bed',
             'size',

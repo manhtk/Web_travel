@@ -13,7 +13,6 @@ class Hotel
             'owner',
             'description',
             'images',
-            'starnum',
             'address'
         );
     }
@@ -76,7 +75,7 @@ switch ($action) {
 
             }
         }
-        require_once("View/hotel/add_hotel.php");
+        require_once("view/hotel/add_hotel.php");
         break;
     }
     case
