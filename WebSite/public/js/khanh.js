@@ -278,7 +278,7 @@ $(function() {
 			format: 'M/DD/YYYY'
 		}
 	});
-<<<<<<< HEAD
+
 
 });
 $(function() {
@@ -287,6 +287,4 @@ $(function() {
 
 
 
-=======
-});
->>>>>>> 092bb1e17da2bc395632e4594c43d0033792ba67
+

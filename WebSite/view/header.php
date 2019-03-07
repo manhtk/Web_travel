@@ -15,12 +15,10 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-<<<<<<< HEAD
-   
-=======
+
     <link rel="stylesheet" type="text/css" href="public/css/cart.css">
-    <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script>
->>>>>>> 092bb1e17da2bc395632e4594c43d0033792ba67
+    
+
     <script type="text/javascript" src="public/js/khanh.js"></script>
 
 
