@@ -15,7 +15,12 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
+<<<<<<< HEAD
    
+=======
+    <link rel="stylesheet" type="text/css" href="public/css/cart.css">
+    <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script>
+>>>>>>> 092bb1e17da2bc395632e4594c43d0033792ba67
     <script type="text/javascript" src="public/js/khanh.js"></script>
 
 
@@ -99,13 +104,15 @@
                     <i class="fa fa-bars menu1" ></i>
                 </div>
                 <div class="header1left">
-                    <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                    <a href="index.php">
+                        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                    </a>
                     <div class="menu">
 
                         <nav id="st-main-menu" >
                             <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
                             <ul id="main-menu">
-                                <li><a href="http://webhotel.com:8080">HOME</a></li>
+                                <li><a href="index.php">HOME</a></li>
                                 <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Full Map Layout</a></li>

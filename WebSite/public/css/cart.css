@@ -1,0 +1,85 @@
+*
+{
+/*    background: red; 
+*/}
+.st-checkout-page .cart-info .info-section ul li span.label {
+    color: #1A2B48;
+    font-size: 100%;
+    width: 35%;
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    white-space: normal;
+    line-height: 18px;
+    font-weight: 400;
+}
+.st-checkout-page .cart-info .info-section ul li.ad-info ul li span.label 
+{
+    color: #1A2B48;
+    font-size: 100%;
+    padding: 0;
+    width: 60%;
+    font-weight: 400;
+}
+span.lable_section
+{
+    color: red;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+
+}
+.service-section {
+    padding: 30px;
+    border-bottom: 1px solid #EAEEF3;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+div#cart-info {
+    border: 1px solid #D7DCE3;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.info-section {
+    line-height: 20px;
+    padding: 30px;
+    border-bottom: 1px solid #EAEEF3;
+}
+.total-section {
+    line-height: 25px;
+    padding: 30px;
+}
+.label_section {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    color: blue;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.btn.btn-primary {
+    background: #FA5636;
+        font-size: 14px;
+        color: #FFF;
+    font-weight: 500;
+}
+.st-checkout-page .btn-checkout {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
