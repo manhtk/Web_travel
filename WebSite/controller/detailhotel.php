@@ -7,7 +7,7 @@
  */
 class DetailHotel extends Controller{
     public function view(){
-        $res = $this->model->getHotel(1,'hotel_name');
+        $res = $this->model->getHotel(4,'hotel_name');
         $this->view->render('site/detailhotel',array('data' => $res));
     }
 
