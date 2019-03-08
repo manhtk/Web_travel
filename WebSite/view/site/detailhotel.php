@@ -119,6 +119,9 @@
 					<hr style="width: 100%;">
 					<!-- description -->
 					<div>
+                        <?php
+
+                        ?>
 						<h2 class="st-heading-section">Descripton
 							<i class="fa fa-angle-down down-icon" aria-hidden="true" style="border: none;"></i>
 						</h2>
@@ -958,148 +961,7 @@
 										</div>
 									</div>
 
-									<div class="last-minute">
-										<div class="col-xs-6 col-sm6 col-md-3">
-											<div class="row-content">
-												<div class="wpb-content-image">
-													<a href="#">
-                                                        <img src="<?php echo $values['images']; ?>" >
-													</a>
-													<div class="review-star">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-													</div>
-												</div>
-												<div class="wpb-content-text">
-													<div class="wpb-room-name">
-														<a href="#">
-                                                            <?php echo $values['hotel_name']; ?>
-														</a>
-													</div>
-													<div class="wpb-room-adress">
-														<p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name']; ?></p>
 
-													</div>
-													<div class="review">
-														<div class="rate">
-															<p>4.5/5 excellent</p>
-														</div>
-														<div class="sumary">
-															<li>5 reviews</li>
-														</div>
-
-													</div>
-													<div class="price-wrapper">
-														<span>
-															<i class="fas fa-bolt"></i>
-															<span class="price-from">from</span> <span class="price-money"> €<?php echo $values['medium_price']; ?> </span>
-															<span class="price-from">
-																/night
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="last-minute">
-
-										<div class="col-xs-6 col-sm6 col-md-3">
-											<div class="row-content">
-												<div class="wpb-content-image">
-													<a href="#">
-                                                        <img src="<?php echo $values['images']; ?>" >
-													</a>
-													<div class="review-star">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-													</div>
-												</div>
-												<div class="wpb-content-text">
-													<div class="wpb-room-name">
-														<a href="#">
-                                                            <?php echo $values['hotel_name']; ?>
-														</a>
-													</div>
-													<div class="wpb-room-adress">
-														<p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name']; ?>,<?php echo $values['country']; ?></p>
-													</div>
-													<div class="review">
-														<div class="rate">
-															<p>4.5/5 excellent</p>
-														</div>
-														<div class="sumary">
-															<li>5 reviews</li>
-														</div>
-													</div>
-													<div class="price-wrapper">
-														<span>
-															<i class="fas fa-bolt"></i>
-															<span class="price-from">from</span>
-															<span class="price-money"> €<?php echo $values['medium_price']; ?> </span>
-															<span class="price-from">
-																/night
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="last-minute">
-										<div class="col-xs-6 col-sm6 col-md-3">
-											<div class="row-content">
-												<div class="wpb-content-image">
-													<a href="#">
-                                                        <img src="<?php echo $values['images']; ?>" >
-													</a>
-													<div class="review-star">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-													</div>
-												</div>
-												<div class="wpb-content-text">
-													<div class="wpb-room-name">
-														<a href="#">
-                                                            <?php echo $values['hotel_name']; ?>
-														</a>
-													</div>
-													<div class="wpb-room-adress">
-														<p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name']; ?>, <?php echo $values['country']; ?></p>
-
-													</div>
-													<div class="review">
-														<div class="rate">
-															<p>4.5/5 excellent</p>
-														</div>
-														<div class="sumary">
-															<li>5 reviews</li>
-														</div>
-
-													</div>
-													<div class="price-wrapper">
-														<span>
-															<i class="fas fa-bolt"></i>
-															<span class="price-from">from</span> <span class="price-money"> €<?php echo $values['medium_price']; ?> </span>
-															<span class="price-from">
-																/night
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
                                 <?php } ?>
 							</div>

@@ -10,6 +10,7 @@ body
 	font-family: 'Poppins';
 
 }
+
 .widgetroom {
     margin-top: 33px;
 }
@@ -58,6 +59,10 @@ a.morelink
 	position: fixed;
 	width: 15.3%;
 	top: 0px;
+	right: 100px;
+}
+.widgets.fixed {
+    right: 100px;
 }
 
 .widgets label {
@@ -993,6 +998,7 @@ a.morelink
 		width: 154px;
 		position: relative;
 	}
+	
 	.field_people_room .people-inner {
 		background: #fff;
 		position: relative;
@@ -1702,8 +1708,43 @@ span .child
 {
 	margin-left: 20px;
 }
+.banner	{
+	position: relative;
+	background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: auto;
+    	min-height: 100%;
+}
+.form-head {
+    position: relative;
+    padding: 30px 20px;
+    color: #5E6D77;
+    font-size: 14px;
+}
+.form-head .price {
+    font-size: 18px;
+    color: #1A2B48;
+    font-weight: 500;
+}
+/*
+    .banner img{
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: auto;
+    	min-height: 100%;
+    }*/
+
 .form-group.check-like {
-	margin: -20px 0px 10px 20px;
+/*	margin: -20px 0px 10px 20px;*/
 	font-size: 20px;
 	position: absolute;
     top: 63px;
@@ -1716,12 +1757,7 @@ span .child
 {
 	display: block;
 }
-.banner
-{
-	background-position: center !important;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-}
+
 
 .btn-cmt:hover{
 	background: #4977FA;
