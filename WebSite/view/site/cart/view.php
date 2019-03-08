@@ -86,11 +86,13 @@
 </div>
     <div class="col-lg-8 col-md-8 col-lg-pull-4 col-md-pull-4">
         <h3 class="title">Booking Submission</h3>
+         <form class="" method="post" action="?c=bookcart&a=checkout">
         <div class="check-out-form">
             <?php foreach ($infouser  as  $value) {
                 ?>
                         	<div class="entry-content"></div>
- <form id="cc-form" class="" method="post" onsubmit="return false">
+
+                        <input type="hidden"  value="<?php echo $value['user_id'] ?>" name = "st_user_id" >
                             <div class="clearfix">
 
 <div class="row">
@@ -168,7 +170,7 @@
     </div>
 </div>
 </div>
-</form>
+
 <?php } ?>
 </div>
 <input type="hidden" name="lang" value="en">
@@ -205,7 +207,8 @@
 
 <input type="hidden" name="st_cart" value="">
 <div class="alert form_alert hidden"></div>
-<a href="#" onclick="return false" class="btn btn-primary btn-checkout btn-st-checkout-submit btn-st-big ">Submit <i class=""></i></a>                            
+
+<button type="submit" class="btn btn-primary btn-checkout btn-st-checkout-submit btn-st-big " name="checkout_submit">Submit <i class=""></i></button>                            
 </form>
     </div>
 </div>
