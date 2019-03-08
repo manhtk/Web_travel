@@ -1,61 +1,44 @@
-<?php
-if(isset($_SESSION['thanhcong_oder'])==1){
-
-	?>
+<div class="container">
 	<div class="cart-succes">
 		<h3>Thank you, you have successfully placed an order.</h3>
-		<!-- <img src="image/icon/shopping-cart-orange-hi.png" alt="" width="100px"> -->
-
-		<?php  die; ?>
 		<h4>Your order information : </h4>
-		<?php
+		<form class="" method="post" action="?c=bookcart&a=listUserBook">
+			<table class="table table-bordered table-inverse">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>User ID</th>
+						<th>Room ID</th>
+						<th>Total</th>
+						<th>Delete</th>
+						<th><input type="checkbox" id="selAl">Select All</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					if (empty($list)) {
+						echo "Has no record";
+					} else {
+						foreach ($list as $value) {
+							?>
+							<tr>
+								<td><?php echo $value['user_id'] ?></td>
+								<td><?php echo $value['room_id'] ?></td>
+								<td><?php echo $value['totalmoney'] ?></td>
+								<td><a onclick="return confirm('Do you want to delete record?')" 
+									href="#"
+									title="Delete">Delete</a>
+								</td>
+								<?php
+								echo "<td>"; ?><input type="checkbox" name="checkbox[]"
+									value ="<?php echo $value['bill_id']; ?>"/><?php echo "</td>"; ?>	
 
-
-
-		$id = $_SESSION['last_id_order'];
-		$tblTable = 'bill';
-
-		$data = $db-> getID($tblTable, $id);
-		$key = "room_id";
-		$data_idKH = $data['user_id'];
-		$result_donhang = $db->getOrder($tblTable,$key,$data_idKH);
-		
-
-		echo "<li>Customer : ".$data['user_id']."</li>";
-		echo "<li>Room_ID : ".$data['room_id']."</li>";
-		echo "<li>Total Money : ".$data['totalmoney']."</li>";
-
-		?>
-
-
-		<table class="table table-bordered table-inverse">
-			<thead>
-				<tr>
-					<th>ID</th>
-					<th>User Name</th>
-					<th>Room Name</th>
-					<th>SL</th>
-					<th>Price</th>
-					<th>Total</th>
-				</tr>
-			</thead>
-			<tbody>
-
-
-			</tbody>
-		</table>
+								</tr>
+							<?php } 
+						} ?>
+					</tbody>
+				</table>
+			</div>
+		</form>
 	</div>
-	<?php
-}else{
-
-
-	?>
-	
-	<div class="cart-false">
-		<h4>You have placed a failed order</h4>
-		<p>There are no products you choose to buy</p>
-	</div>
-
-	<?php
-}
-?>
+</div>
