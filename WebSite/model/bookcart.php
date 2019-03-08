@@ -73,6 +73,21 @@ class bookcart_model extends Model {
     public function insertBill($bill_info)
     {
         $bill_info = implode(',', $bill_info);
-        $sql_oder = "INSERT INTO bill(bill_id, user_id, room_id, promotion_id, checkin, checkout, payments, totalmoney, status) VALUES (null,'$user_id','$room_id',null, '$checkin', '$checkout',null, '$totalmoney',null)";
+        $sql_oder = "INSERT INTO bill(bill_id, user_id, room_id,totalmoney) VALUES (null,$bill_info)";
+        $data = $this->query($sql_oder);
+        
+        return $data;
+    }
+    public function searchBill($key)
+    {
+        $sql="SELECT * from bill where user_id = '$key'";
+        $res = $this->query($sql);
+        $data = [];
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $data[] = $row;
+            }
+        }
+        return $data;
     }
 }
