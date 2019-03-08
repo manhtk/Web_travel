@@ -24,9 +24,7 @@
 					}
 					echo '<br />';
 				}
-
 			}
-
 			?>
 			</div>
 			<div class="input-group">

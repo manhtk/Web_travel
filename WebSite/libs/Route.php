@@ -21,6 +21,7 @@ class Route{
 			$this->c->loadModel($controller); 
 		}
 	}
+
 	//Function gọi phương thức  của controller dựa vào $_GET
  	public function __callMethod()
  	{
