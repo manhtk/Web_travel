@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
     <link rel="stylesheet" type="text/css" href="public/css/cart.css">
     <link rel="stylesheet" type="text/css" href="public/room.css">
