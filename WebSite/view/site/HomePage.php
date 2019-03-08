@@ -41,15 +41,11 @@
                                                       <?php } ?>
                                                             
                                                         </ul>
-                                                        <script>
+                                                       <script>
                                                             $(".dropdown-menu li").click(function () {
                                                                 var selText = $(this).text();
-                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>';
-
-
+                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>');
                                                             });
-
-
                                                         </script>
                                                     </div>
                                                 
@@ -289,7 +285,7 @@
                                     <?php 
                                     foreach ($data as  $values) {
                                       ?>
-                                        <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 cols ">
+                                        <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 has-matchHeight">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
                                                     <a href="#">
