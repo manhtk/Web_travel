@@ -13,7 +13,6 @@ class Hotel
             'owner',
             'description',
             'images',
-            'starnum',
             'address'
         );
     }
@@ -76,7 +75,7 @@ switch ($action) {
 
             }
         }
-        require_once("View/hotel/add_hotel.php");
+        require_once("view/hotel/add_hotel.php");
         break;
     }
     case
@@ -156,7 +155,6 @@ switch ($action) {
 
         $data = $db->getAllDataBase($tbl1, $tbl2, $id, $offset, $limit);
 
-        $count = $db->phantrang($tbl2);
         require_once("view/hotel/list_hotel.php");
         break;
     }

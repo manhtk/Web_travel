@@ -14,8 +14,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--   <link rel="stylesheet" href="../CSS/roomhotel.css"> -->
   <!-- <link rel="stylesheet" href="../menu_and_footer/CSS/style.css"> -->
-  <link rel="stylesheet" href="../CSS/footer.css">
-  <link rel="stylesheet" href="../CSS/menu.css">
+  <link rel="stylesheet" href="../../public/css/footer.css">
+  <link rel="stylesheet" href="../../public/css/menu.css">
   
   <!-- slide -->
   
@@ -28,8 +28,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- end date time -->
-  <script type="text/javascript" src="..//JS/khanh.js" ></script>
-  <link rel="stylesheet" type="text/css" href="../CSS/room.css"></li>
+  <script type="text/javascript" src="../../public/js/khanh.js" ></script>
+  <link rel="stylesheet" type="text/css" href="../../public/css/room.css"></li>
+
 </head>
 <script>
 
@@ -37,105 +38,107 @@
 <body>
  <!-- header -->
  <header>
-  <div class="topbar">
-    <div class="container-fluid">
-      <div class="topbar-left">
-        <ul class="st-list socials">
-          <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </li>
-        </ul>
-        <ul class="st-list topbar-items">
-          <li class="hidden-xs hidden-sm">
-            <a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
-          </li>
-        </ul>
-      </div>
-      <div class="topbar-right">
-        <ul class="st-list topbar-items">
-          <li ><a href="#">Login</a></li>
-          <li ><a href="#">Sign up</a></li>
-          <li class="dropdown dropdown-currency hidden-sm hidden-xs">
-            <a href="#">EUR<i class="fa fa-angle-down"></i></a>
-            <ul class="dropmenu">
-              <li><a href="#">USD</a></li>
-              <li><a href="#">AUD</a></li>
-            </ul>
-          </li>
-          <li class="dropdown dropdown-language hidden-sm hidden-xs">
-            <a href="#">English<i class="fa fa-angle-down"></i></a>
-            <ul class="dropmenu">
-              <li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-              <li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-  <div class="head1">
-    <div class="container">
-      <div class="toggle">
-        <i class="fa fa-bars menu1" style="padding-left: 20px"></i>
-      </div>
-      <div class="header1left">
-        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-          <div class="menu">
+        <div class="topbar">
+            <div class="container-fluid">
+                <div class="topbar-left">
+                    <ul class="st-list socials">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="st-list topbar-items">
+                        <li class="hidden-xs hidden-sm">
+                            <a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul class="st-list topbar-items">
+                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Login</a></li>
+                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../register">Sign up</a></li>
+                        <li class="dropdown dropdown-currency hidden-sm hidden-xs">
+                            <a href="#">EUR<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropmenu">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">AUD</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-language hidden-sm hidden-xs">
+                            <a href="#">English<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropmenu">
+                                <li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
+                                <li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="head1">
+            <div class="container">
+                <div class="toggle">
+                    <i class="fa fa-bars menu1" style="padding-left: 20px"></i>
+                </div>
+                <div class="header1left">
+                    <a href="http://webhotel.com:8080">
+                        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                    </a>
+                    <div class="menu">
 
-              <nav id="st-main-menu" >
-                  <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
-                  <ul id="main-menu">
-                      <li><a href="../../view/site/HomePage.php"  >HOME</a></li>
-                      <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
-                          <ul class="sub-menu">
-                              <li><a href="#">Full Map Layout</a></li>
-                              <li><a href="#">Half Map Layout</a></li>
-                              <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
+                        <nav id="st-main-menu" >
+                            <a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
+                            <ul id="main-menu">
+                                <li><a href="http://webhotel.com:8080"  >HOME</a></li>
+                                <li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Full Map Layout</a></li>
+                                        <li><a href="#">Half Map Layout</a></li>
+                                        <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
 
-                          </ul>
-                      </li>
-                      <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
-                          <ul class="sub-menu">
-                              <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
-                              <li><a href="#">Hotel Detail 2</a></li>
-                              <li><a href="#">Hotel Detail 3</a></li>
-                              <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
-                          <ul class="sub-menu">
-                              <li><a href="#">House Detail 1</a></li>
-                              <li><a href="#">House Detail 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
+                                        <li><a href="#">Hotel Detail 2</a></li>
+                                        <li><a href="#">Hotel Detail 3</a></li>
+                                        <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">House Detail 1</a></li>
+                                        <li><a href="#">House Detail 2</a></li>
 
-                          </ul>
-                      </li>
-                      <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
-                          <ul class="sub-menu">
-                              <li><a href="../../view/site/aboutus.php">About Us</a></li>
-                              <li><a href="../../view/site/blog1.php">Blog</a></li>
-                              <li><a href="#">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PAGES<i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="../../view/site/aboutus.php">About Us</a></li>
+                                        <li><a href="../../view/site/blog1.php">Blog</a></li>
+                                        <li><a href="#">404 Page</a></li>
 
-                          </ul>
-                      </li>
-                      <li><a href="../../view/site/Contact.php">CONTACT</a></li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
-      <div class="header1right">
-        <form action="" method="get" class="header-search hidden-sm">
-          <input type="text" class="form-control" name="s" value="">
-          <i class="fa fa-search"></i>
-        </form>
-        <img class="ico_card" src="../Images/ico_card.svg">
-      </div>
-    </div>
-  </div>
-</div>
-</header>
+                                    </ul>
+                                </li>
+                                <li><a href="../../view/site/Contact.php">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header1right">
+                    <form action="" method="get" class="header-search hidden-sm">
+                        <input type="text" class="form-control" name="s" value="">
+                        <i class="fa fa-search"></i>
+                    </form>
+                    <img class="ico_card" src="../../libs/Images/ico_card.svg">
+                </div>
+            </div>
+        </div>
+
+    </header>
 <!-- end header -->
 <div class="clear"></div>
 <!-- content -->
@@ -154,7 +157,7 @@
   <!-- slide -->
   <div class="container-fuild">
     <div class="banner">
-    <img src="../Images/khanh3.jpg" width="100%" height="400px" alt="">       
+    <img src="../../libs/Images/khanh3.jpg" width="100%" height="400px" alt="">       
   </div>
 </div>
   <!-- slide -->
@@ -165,7 +168,7 @@
         <div class="price-wrapper">
           from <span class="price">€565</span>                        
         </div>
-        <a href="" class="btn btn-green">Book Now</a>
+        <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
       </div>
     </div>
     <div class="clear"></div>
@@ -222,12 +225,12 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="fotorama" data-width="1100" data-ratio="3/2" data-fit="cover" data-allowfullscreen="native">
-                  <a href="../Images/khanh1.jpg" ></a>
-                  <a href="../Images/khanh2.jpg" ></a>
-                  <a href="../Images/khanh3.jpg" ></a>
-                  <a href="../Images/khanh4.jpg" ></a>
-                  <a href="../Images/khanh5.jpg" ></a>
-                  <a href="../Images/khanh6.jpg" ></a>
+                  <a href="../../libs/Images/khanh1.jpg" ></a>
+                  <a href="../../libs/Images/khanh2.jpg" ></a>
+                  <a href="../../libs/Images/khanh3.jpg" ></a>
+                  <a href="../../libs/Images/khanh4.jpg" ></a>
+                  <a href="../../libs/Images/khanh5.jpg" ></a>
+                  <a href="../../libs/Images/khanh6.jpg" ></a>
                 </div>
               </div>
             </div>
@@ -642,7 +645,7 @@
                   <!-- book -->
                   <div class="row">
                     <div class="booknow">
-                      <a href="#" class="btn-book">Book now</a>
+                      <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn-book">Book now</a>
                     </div>
                   </div>
                 </div>
@@ -737,90 +740,6 @@
               </label>
             </div>
           </div> 
-          <!-- more -->
-          <div class="row">
-            <div class="" id="bt1">
-              <div class="form-group form-more-extra">
-                <div class="more">
-                  <a href="#dropdown-more-extra" class="dropdown" style="color: blue;float: right;padding-right: 25px;">
-                    More Option
-                    <i class="fa fa-caret-down"></i></a>
-                  </div>
-                  <ul class="extras" style="display: block;">
-                    <div class="row">
-                      <li class="item mt10">
-                        <div class="st-flex space-between">
-                          <div class="col-sm-9">
-                            <span>Adult(€280.00)</span>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="select-wrapper" style="width: 50px;">
-                              <select class="chon-adult" data-extra-price="280">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <input type="hidden" name="extra_price[price][extra_adult]" value="280">
-                        <input type="hidden" name="extra_price[title][extra_adult]" value="Adult">
-                      </li>
-                    </div>
-                    <div class="row">
-                      <li class="item mt10">
-                        <div class="st-flex space-between">
-                          <div class="col-sm-9">
-                            <span>Children(€245.00)</span>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="select-wrapper" style="width: 50px;">
-                              <select class="chon-children" data-extra-price="245">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                              </select>
-                            </div>
-                          </div>
-                          <input type="hidden" name="extra_price[price][extra_children]" value="245">
-                          <input type="hidden" name="extra_price[title][extra_children]" value="Children">
-                        </li>
-                      </div>
-                      <div class="row">
-                        <li class="item mt10">
-                          <div class="st-flex space-between">
-                            <div class="col-sm-9">
-                              <span>Vip services(€175.00)</span>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="select-wrapper" style="width: 50px;">
-                                <select class="chon-services" data-extra-price="175">
-                                  <option value="0">0</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <input type="hidden" name="extra_price[price][extra_service]" value="175">
-                          <input type="hidden" name="extra_price[title][extra_service]" value="Vip services">
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- book -->
-              <div class="row">
-                <div class="booknow">
-                  <a href="#" class="btn-book">Book now</a>
-                </div>
-              </div>
             </div>
           </div>
           <!-- end content -->
@@ -871,7 +790,7 @@
                 <br />
                 <div class="footer_content_element">
                   <p class="footer_content_element1" >Follow Us</p>
-                  <p style="padding-left: 15px;"><span ><img src="../Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_twitter_footer.svg"  ></span></p>
+                  <p style="padding-left: 15px;"><span ><img src="../../libs/Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_twitter_footer.svg"  ></span></p>
                 </div>
                 <br />
               </div>

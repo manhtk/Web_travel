@@ -100,7 +100,6 @@ switch ($action) {
             $offset = ($paged - 1) * $limit;
 
             $data = $db->getAllData($tbl,$offset,$limit);
-            $count = $db->phantrang($tbl);
            
             require_once("view/user/list_user.php");
             break;

@@ -14,7 +14,7 @@
 
 	<!-- boostrap3 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../CSS/slide_deadline.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/slide_deadline.css">
 	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -241,13 +241,14 @@
 					<i class="fa fa-bars menu1" style="padding-left: 20px"></i>
 				</div>
 				<div class="header1left">
-					<img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
-					<div class="menu">
+					<a href="http://webhotel.com:8080">
+                        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                    </a>					<div class="menu">
 
 						<nav id="st-main-menu" >
 							<a href="#" class="back-menu"><i class="fa fa-angle-left"></i></a>
 							<ul id="main-menu">
-								<li><a href="../HTML/HomePage.html"  >HOME</a></li>
+								<li><a href="http://webhotel.com:8080"  >HOME</a></li>
 								<li><a href="#">LISTING<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="#">Full Map Layout</a></li>
@@ -258,10 +259,10 @@
 								</li>
 								<li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
 									<ul class="sub-menu">
-										<li><a href="../HTML/detailhotel1.html">Hotel Detail 1</a></li>
+										<li><a href="detailhotel1.php">Hotel Detail 1</a></li>
 										<li><a href="#">Hotel Detail 2</a></li>
 										<li><a href="#">Hotel Detail 3</a></li>
-										<li><a href="../HTML/roomdetail1.html">Room Detail 1</a></li>
+										<li><a href="roomdetail1.php">Room Detail 1</a></li>
 									</ul>
 								</li>
 								<li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>
@@ -289,7 +290,7 @@
 						<input type="text" class="form-control" name="s" value="">
 						<i class="fa fa-search"></i>
 					</form>
-					<img class="ico_card" src="../Images/ico_card.svg">
+					<img class="ico_card" src="../../libs/Images/ico_card.svg">
 				</div>
 			</div>
 		</div>
@@ -784,7 +785,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Hotel Stanford.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Hotel Stanford.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -816,7 +817,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/EnVision Hotel Boston.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/EnVision Hotel Boston.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -848,7 +849,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Parian Holiday Villas.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Parian Holiday Villas.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -879,7 +880,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Hyatt Centric Times Square.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Hyatt Centric Times Square.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -907,7 +908,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Redac Gateway Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Redac Gateway Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -925,7 +926,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Hotel Ascot Opera.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Hotel Ascot Opera.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -953,7 +954,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Dylan Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Dylan Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -980,7 +981,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Edwardian Kenilworth.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Edwardian Kenilworth.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -1008,7 +1009,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Stewart Hotel.jpeg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Stewart Hotel.jpeg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -1036,7 +1037,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Crowne Plaza Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Crowne Plaza Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 
 											</div>
 											<div class="icon-position">
@@ -1065,7 +1066,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/The May Fair Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/The May Fair Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
@@ -1093,7 +1094,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">
 											<div class="thumb">
-												<img class="im1 " src="../Images/Studio Allston Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
+												<img class="im1 " src="../../libs/Images/Studio Allston Hotel.jpg" width="269.98px" height="250.13px" class="rounded" /><br/>
 
 											</div>
 											<div class="icon-position">
@@ -1219,7 +1220,7 @@
 					<br />					
 					<div class="footer_content_element">
 						<p class="footer_content_element1" >Follow Us</p>
-						<p style="padding-left: 15px;"><span ><img src="../Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../Images/ico_twitter_footer.svg"  ></span></p>
+						<p style="padding-left: 15px;"><span ><img src="../../libs/Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_twitter_footer.svg"  ></span></p>
 					</div>
 					<br />
 				</div>

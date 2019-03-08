@@ -1,4 +1,5 @@
 
+
   
     <div class="clear"></div>
     <!-- Banner -->
@@ -23,97 +24,30 @@
                                                 </div>
                                                 <div class="search-form-section">
                                                     <label for="name"  class="text-muted1";">Detination</label><br/>
-                                                    <div class="dropdow-list" style="width: 80%; height: 30px; float: left;">
+                                                    <div class="dropdow-list" >
 
                                                         <div class="dropdown">
-                                                            <p  class="dropdown-toggle search-form-dropdown" data-toggle="dropdown" style="color:#5191FA; float: left;">
-                                                                Where are you going?
-                                                            </p>
-                                                            <div class="dropdown-menu form-item">
-                                                                <form action="/action_page.php" >
-                                                                    <p class="search-form-location">United States</p>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p> California</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>Los Angerles</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>Nevada</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>New Jersey</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <label class="form-check-label" for="check5">
-
-                                                                            <p class="location-language text-secondary">Delaware</p>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <label class="form-check-label" for="check5">
-
-                                                                            <p class="location-language text-secondary">Philadelphia</p>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p>New York City</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <div class="icon-seachform">
-                                                                            <label class="form-check-label" for="check1">
-                                                                                <i class="fas fa-map-marker-alt"></i>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="check-item">
-                                                                            <p> Sanfransico</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-check-language">
-                                                                        <label class="form-check-label" for="check9">
-
-                                                                            <p class="location-language text-secondary">Wilmington</p>
-                                                                        </label>
-                                                                    </div>
-
-                                                                </form>
-                                                            </div>
+                                                        <div class="dropdown-toggle"
+                                                             data-toggle="dropdown">
+                                                            <span>Where are you going</span>
                                                         </div>
+
+                                                        <ul class="dropdown-menu form-item">
+                                                           <?php   foreach ($data as  $values){ ?>
+
+                                                            <li> <i class="fas fa-map-marker-alt"></i>
+                                                                <?php echo $values['city_name'] ?>
+                                                            </li>
+                                                      <?php } ?>
+                                                            
+                                                        </ul>
+                                                        <script>
+                                                            $(".dropdown-menu li").click(function () {
+                                                                var selText = $(this).text();
+                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>');
+                                                            });
+                                                        </script>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,13 +79,13 @@
                                                         <div class="people-inner">
                                                             <div class="dropdow-list2">
                                                                 <div class="people-group">
-																<span class="label">
-																	<span class="value">
-																		<span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>,
-																		<span class="child" style="color: #5191FA;font-size: 16px">0 Child</span>
-																		<i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
-																	</span>
-																</span>
+                                                                <span class="label">
+                                                                    <span class="value">
+                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>,
+                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Child</span>
+                                                                        <i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
+                                                                    </span>
+                                                                </span>
 
                                                                     <div class="bookphong">
 
@@ -162,22 +96,22 @@
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
-																					<span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
-																				</span>
+                                                                                    <span class="value room">1</span>&nbsp; Room<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+                                                                                </span>
                                                                                     <span class="control add">+</span>
                                                                                 </div>
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
-																					<span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
-																				</span>
+                                                                                    <span class="value adult">1</span>&nbsp; Adult<small>(</small>s<small>)</small>                <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+                                                                                </span>
                                                                                     <span class="control add">+</span>
                                                                                 </div>
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
-																					<span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
-																				</span>
+                                                                                    <span class="value child">1</span>&nbsp; Children<small>(</small>s<small>)</small>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+                                                                                </span>
                                                                                     <span class="control add">+</span>
                                                                                 </div>
                                                                             </div>
@@ -198,64 +132,64 @@
                                                             </label>
                                                             <div class="dropdown-factilities dropdow">
                                                                 <div class="render">
-															<span class="hidden-xs hidden-more">
-																More
-																<i class="fas fa-sort-down"></i>
-															
-															<div class="dropdown-menu-facilities">
-																<div class="row">
-																	<div class="col-lg-12">
-																		<div class="item-title">
-																	<h4>Filter Price</h4>
-																	</div>
-																		 <div class="demo" style="width: auto;">
-																			
-																			<input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""
+                                                            <span class="hidden-xs hidden-more">
+                                                                More
+                                                                <i class="fas fa-sort-down"></i>
+                                                            
+                                                            <div class="dropdown-menu-facilities">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="item-title">
+                                                                    <h4>Filter Price</h4>
+                                                                    </div>
+                                                                         <div class="demo" style="width: auto;">
+                                                                            
+                                                                            <input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""
                                                                             />
-																			
-																		</div>
-																	</div>
-																	</div>
-																	<div class="col-lg-12">
-																		<div class="facilities">
-																			<div class="item-title">
-																				<h4>
-																					Hotel Facilities
-																				</h4>
-																				<div class="check-radio-homepage">
-																					<div class="col-md-4">
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Air Conditioning <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
-																						Flat Tv <br>
-																					</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
-																						Paking <br>
-																					</p>
-																					</div>
-																					<div class="col-md-4">
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Airport Transport <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Heater
-																						<br>
-																					</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Pool <br>
-																						</p>
-																					</div>
-																					<div class="col-md-4">
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Fitness Centre <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Internet - Wifi <br>
-																						</p>
-																						<input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Restaurant <br>
-																						</p>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</span>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12">
+                                                                        <div class="facilities">
+                                                                            <div class="item-title">
+                                                                                <h4>
+                                                                                    Hotel Facilities
+                                                                                </h4>
+                                                                                <div class="check-radio-homepage">
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Air Conditioning <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
+                                                                                        Flat Tv <br>
+                                                                                    </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  
+                                                                                        Paking <br>
+                                                                                    </p>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Airport Transport <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Heater
+                                                                                        <br>
+                                                                                    </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Pool <br>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Fitness Centre <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Internet - Wifi <br>
+                                                                                        </p>
+                                                                                        <input type="checkbox" class="input-advantice" name="check" value="Air Conditioning"><p class="text-advantice">  Restaurant <br>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -343,16 +277,15 @@
                     <div class="vc_column-inner wpb_wrapper">
                         <div class="wpb_text_column wpb_content_element  fs-28 fs-normal">
                             <div class="wpb_wrapper">
-                                <h2>Last Minute Deals</h2>
+                                <h2>The Most Preferential Price</h2>
                             </div>
                             <div class="services-grid">
                                 <div class="row">
+                                  
                                     <?php 
-                                    foreach ($data as   $values) {
-                                        
+                                    foreach ($data as  $values) {
                                       ?>
-                                    <div class="last-minute">
-                                        <div class="col-xs-6 col-sm6 col-md-3">
+                                        <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 cols ">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
                                                     <a href="#">
@@ -373,7 +306,16 @@
                                                         </a>
                                                     </div>
                                                     <div class="wpb-room-adress">
-                                                        <p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name'] ?>,  <?php echo $values['country'] ?></p>
+                                                        <p>
+                                                            <?php 
+                                                            if(!empty($values['city_name']) || !empty($values['country'])){ ?>
+                                                                <i class="fas fa-map-marker-alt"></i>
+                                                              <?php  }  ?>
+                                                        <?php echo htmlspecialchars($values['city_name']) ?>
+                                                        <?php if(!empty(htmlspecialchars($values['city_name'])) && !empty(htmlspecialchars($values['country']))){ ?>
+                                                         <span>, </span>
+                                                        <?php } ?>
+                                                         <?php echo htmlspecialchars($values['country']) ?></p>
 
                                                     </div>
                                                     <div class="review">
@@ -386,19 +328,20 @@
 
                                                     </div>
                                                     <div class="price-wrapper">
-															<span>
-																<i class="fas fa-bolt"></i>
-																<span class="price-from">from</span> <span class="price-money">€ <?php echo $values['medium_price'] ?> </span>
-																<span class="price-from">
-																	/night
-																</span>
-															</span>
+                                                            <span>
+                                                                <i class="fas fa-bolt"></i>
+                                                                <span class="price-from">from</span> <span class="price-money">€ <?php echo $values['hotel_price'] ?> </span>
+                                                                <span class="price-from">
+                                                                    /night
+                                                                </span>
+                                                            </span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                     
                                     <?php } ?>
+
                                 </div>
                             </div>
                         </div>
@@ -420,104 +363,28 @@
                                 </div>
                             </div>
                             <div class="row list-destination">
+                         <?php foreach ($data_city as $val){ ?>
+
                                 <div class="col-xs-6 col-sm-6 col-md-4 aaa">
                                     <div class="destination-item">
                                         <a href="#">
-                                            <img src="libs/Images/nevaga_2-1024x1024-1024x1024.jpg">
+                                            <img src="<?php echo $val['city_images'];?>">
                                         </a>
 
                                         <div class="text-content">
                                             <div class="title-name">
-                                                <h2>Nevada</h2>
+                                                <h2><?php echo htmlspecialchars($val['city_name']) ?></h2>
 
                                                 <div class="desc-inf">
-                                                    <h3> 17 properties</h3>
+                                                    <h3> <?php echo $val['column_hotel'];  ?> properties</h3>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/angeles.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>Los Angeles</h2>
-
-                                                <div class="desc-inf">
-                                                    <h3>17 properties</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/california.jpg">
-                                        </a>
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2> California </h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>17 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/virginia.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>Virginia</h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>20 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/sanfransico.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>San Fransico</h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>20 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <div class="destination-item">
-                                        <a href="#">
-                                            <img src="libs/Images/newjersey.jpg">
-                                        </a>
-
-                                        <div class="text-content">
-                                            <div class="title-name">
-                                                <h2>New Jersey</h2>
-                                            </div>
-                                            <div class="desc-inf">
-                                                <h3>20 properties</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
+                       <?php } ?>
                             </div>
                         </div>
                     </div>
