@@ -70,4 +70,9 @@ class bookcart_model extends Model {
         }
         return $data;
     }
+    public function insertBill($bill_info)
+    {
+        $bill_info = implode(',', $bill_info);
+        $sql_oder = "INSERT INTO bill(bill_id, user_id, room_id, promotion_id, checkin, checkout, payments, totalmoney, status) VALUES (null,'$user_id','$room_id',null, '$checkin', '$checkout',null, '$totalmoney',null)";
+    }
 }
