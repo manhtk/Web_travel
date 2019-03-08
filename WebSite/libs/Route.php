@@ -12,7 +12,7 @@ class Route{
 	// Funtion load file và khởi tạo controller dưa vào tham số trong biến $_GET
 	public function __loadController()
 	{
-		$controller = isset($_GET['c']) ? $_GET['c'] :'slidebar';
+		$controller = isset($_GET['c']) ? $_GET['c'] :'detailhotel';
 		$file_controller = 'controller/' . $controller . '.php';
 		if(file_exists($file_controller))
 		{
