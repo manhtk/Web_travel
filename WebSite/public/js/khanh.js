@@ -1,5 +1,13 @@
 jQuery(document).ready(function($){
 	/* People minus-add */
+
+	
+		var body = $('body');
+		
+
+			$('.has-matchHeight', body).matchHeight();
+		
+	
 	$('.gmz-number-wrapper').each(function () {
 		var timeOut = 0;
 		var t = $(this);
@@ -281,9 +289,7 @@ $(function() {
 
 
 });
-$(function() {
-    $('.row-content').matchHeight();
-});
+
 
 
 

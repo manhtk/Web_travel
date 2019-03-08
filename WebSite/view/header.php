@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
     <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
-    <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+      
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,11 +16,11 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-
+    <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
     <link rel="stylesheet" type="text/css" href="public/css/cart.css">
     
 
-    <script type="text/javascript" src="public/js/khanh.js"></script>
+  
 
 
     <!-- chọn ngày -->
@@ -28,30 +28,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+ <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script> 
 
+      <script type="text/javascript" src="public/js/khanh.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="public/js/ion.rangeSlider/css/ion.rangeSlider.css">
-    <link rel="stylesheet" type="text/css" href="public/js/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css">
-    <script type="text/javascript" src="public/js/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
-
-    <script type="text/javascript">
-
-        jQuery(document).ready(function($){
-
-            $("#demo_0").ionRangeSlider({
-                type: "double",
-                min: 0,
-                max: 200,
-                step: 1,
-                prefix: "$",
-
-            });
-
-
-        });
-
-
-    </script>
+   
 </head>
 <body>
 <div id="HomePage">
@@ -116,13 +97,13 @@
                                     <ul class="sub-menu">
                                         <li><a href="#">Full Map Layout</a></li>
                                         <li><a href="#">Half Map Layout</a></li>
-                                        <li><a href="../../view/site/slidebar.php">Sidebar layout</a></li>
+                                        <li><a href="index.php?c=slidebar&a=view">Sidebar layout</a></li>
 
                                     </ul>
                                 </li>
                                 <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="../../view/site/detailhotel1.php">Hotel Detail 1</a></li>
+                                        <li><a href="view/site/detailhotel1.php">Hotel Detail 1</a></li>
                                         <li><a href="#">Hotel Detail 2</a></li>
                                         <li><a href="#">Hotel Detail 3</a></li>
                                         <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>

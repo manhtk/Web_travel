@@ -118,7 +118,7 @@
             <div class="footer_content1_element">
                 <div class="footer_content1_element1" ">
                 <p style="font-size: 14px;color: #5E6D77;" >Languages</p>
-                <select style=" width: 180px; height: 40px; border-radius: 4px;" >
+                <select style=" width: 180px; height: 40px; border-radius: 4px; background-color: white" >
                     <option>English</option>
                     <option>France</option>
                     <option>Spanish</option>
@@ -127,7 +127,7 @@
                 <br />
                 <br />
                 <p style="font-size: 14px;color: #5E6D77;" >Currencies</p>
-                <select style=" width: 180px; height: 40px; border-radius: 4px;" >
+                <select style=" width: 180px; height: 40px; border-radius: 4px; background-color: white" >
                     <option>EUR</option>
                     <option>USD</option>
                     <option>AUD</option>
