@@ -38,13 +38,13 @@ class Slidebar_Model extends Model {
         if(isset($_GET['optradio']))
             $orderby = $_GET['optradio'];
         
-         $sql="SELECT *, MIN(room.price)AS hotel_price,ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel  
+         $sql="SELECT *,MIN(room.price)AS hotel_price,ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel  
                                        INNER JOIN city ON hotel.city_id = city.city_id
                                        INNER JOIN room ON hotel.hotel_id=room.hotel_id 
                                        GROUP BY hotel.hotel_id";
 
         if(!empty($orderby)){
-            switch ($orderby) {
+            switch ($orderby){
                 case 'low':
                     $sql .= " ORDER BY hotel_price ASC";
                     break;
@@ -52,27 +52,36 @@ class Slidebar_Model extends Model {
                 case 'hight':
                     $sql .= " ORDER BY hotel_price DESC";
                     break;
+                case 'nameaz':
+              
+                   $sql.="ORDER BY hotel.hotel_name ASC";
+                    break;
+                case 'nameza':
+                    $sql.="ORDER BY hotel.hotel_name DESC";
+                    break;
            
             }
         }
+
        
         if($limit && is_numeric($limit)){
             $sql .= " LIMIT 0,{$limit}";
         }
        
         $res = $this->query($sql);   
-
-        
+      
         $data = [];
 
-        if($res->num_rows > 0){
+        if($res&&$res->num_rows > 0){
             while($row = $res->fetch_assoc()){
                 $data[] = $row;
 
             }
         }
 
+
         return $data;
+
         
     }
  
