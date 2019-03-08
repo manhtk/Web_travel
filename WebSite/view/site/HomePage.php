@@ -24,9 +24,9 @@
                                                 </div>
                                                 <div class="search-form-section">
                                                     <label for="name"  class="text-muted1";">Detination</label><br/>
-                                                    <div class="dropdow-list" >
+                                                    
 
-                                                        <div class="dropdown">
+                                                        <div class="dropdown dropdown-list">
                                                         <div class="dropdown-toggle"
                                                              data-toggle="dropdown">
                                                             <span>Where are you going</span>
@@ -44,11 +44,15 @@
                                                         <script>
                                                             $(".dropdown-menu li").click(function () {
                                                                 var selText = $(this).text();
-                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>');
+                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>';
+
+
                                                             });
+
+
                                                         </script>
                                                     </div>
-                                                    </div>
+                                                
                                                 </div>
                                             </div>
                                             <div class="col-md-3 border-right">
