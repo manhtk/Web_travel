@@ -7,8 +7,8 @@
 }
 body{
 	font-family: 'Poppins';
-}
 
+}
 #banner
 {
 	width: 100%;
@@ -77,9 +77,6 @@ body{
 .dropdown-list
 {
 	top: 27px;
-	text-align: left;
-	padding-left: 60px;
-	font-size: 17px;
 }
 .dropdown-list li
 {
@@ -103,8 +100,7 @@ body{
 .dropdown-toggle span 
 {
 	color: #5191FA;
-	margin-left:0px;
-	font-size: 17px;
+	margin-left: -25px;
 }
 .dropdow-list2
 {
@@ -160,11 +156,9 @@ body{
 }
 .form-item
 {
-	top: 37px;
+	top: 35px;
     width: 100%!important;
-    left: -15px;
-    line-height:30px;
-    
+  margin-left:-15px;
 }
 .border-right .text-muted1 {
     position: absolute;

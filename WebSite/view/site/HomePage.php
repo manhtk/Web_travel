@@ -33,10 +33,10 @@
                                                         </div>
 
                                                         <ul class="dropdown-menu form-item">
-                                                           <?php   foreach ($data_listcity as  $value){ ?>
+                                                           <?php   foreach ($data as  $values){ ?>
 
                                                             <li> <i class="fas fa-map-marker-alt"></i>
-                                                                <?php echo $value['city_name'] ?>
+                                                                <?php echo $values['city_name'] ?>
                                                             </li>
                                                       <?php } ?>
                                                             
@@ -44,8 +44,12 @@
                                                         <script>
                                                             $(".dropdown-menu li").click(function () {
                                                                 var selText = $(this).text();
-                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>').css("color", "#5191FA");
+                                                                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>';
+
+
                                                             });
+
+
                                                         </script>
                                                     </div>
                                                 
