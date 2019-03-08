@@ -23,5 +23,21 @@ class DetailHotel_Model extends Model{
         }
         return $data;
     }
+    public function getRoom($room_id,$limit = false){
+        $sql = "SELECT * FROM room WHERE room_id='{$room_id}'";
+        if($limit && is_numeric($limit)){
+            $sql .= " LIMIT 0,{$limit}";
+        }
+
+        $res = $this->query($sql);
+        $data = [];
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $data[] = $row;
+            }
+        }
+        return $data;
+
+    }
 
 }
