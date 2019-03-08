@@ -17,9 +17,15 @@ class bookcart extends Controller {
 				$totalmoney				
 			);
 		}
-		$key=$data['st_user_id'];
+		$key1=$data['st_user_id'];
+		$key2=$cart['room_id'];
 		$res= $this->model->insertBill($array_insert);
-		$search=$this->model->searchBill($key);
+		$search=$this->model->searchBill($key1,$key2);
 		$this->view->render('site/cart/booking-success',array('data'=>$res,'list'=>$search));
+	}
+	public function listBill()
+	{
+		$res= $this->model->listBill();
+		$this->view->render('site/cart/list_bill',array('list'=>$res));
 	}
 }

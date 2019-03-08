@@ -83,3 +83,19 @@ div#cart-info {
     color: #FFFFFF;
     margin-top: 30px;
 }
+/*booking_succes*/
+#st-content-wrapper {
+    padding-bottom: 100px;
+}
+#st-content-wrapper .st-breadcrumb {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAEEF3;
+}
+#st-content-wrapper .st-breadcrumb ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+    background: #FFF;
+}
