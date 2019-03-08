@@ -39,5 +39,41 @@ class DetailHotel_Model extends Model{
         return $data;
 
     }
+    public function getCity()
+    {
+        $sql="SELECT * FROM city WHERE city_id=3";
+        $res=$this->query($sql);
+        $data=[];
+        if($res->num_rows>0){
+            while ($row=$res->fetch_assoc()){
+                $data[]=$row;
+            }
+        }
+        return $data;
+    }
+    public function getNameHotel()
+    {
+        $sql="SELECT hotel_name FROM hotel WHERE hotel_id=3";
+        $res=$this->query($sql);
+        $data=[];
+        if($res->num_rows>0){
+            while ($row=$res->fetch_assoc()){
+                $data[]=$row;
+            }
+        }
+        return $data;
+    }
+    public function getAllRoom()
+    {
+        $sql="SELECT * FROM room where room_id=2";
+        $res=$this->query($sql);
+        $data=[];
+        if($res->num_rows>0){
+            while ($row=$res->fetch_assoc()){
+                $data[]=$row;
+            }
+        }
+        return $data;
+    }
 
 }
