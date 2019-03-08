@@ -282,7 +282,7 @@ $(function() {
 
 });
 $(function() {
-    $('.cols').matchHeight();
+    $('.row-content').matchHeight();
 });
 
 
