@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-    <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
+    
     <link rel="stylesheet" type="text/css" href="public/css/cart.css">
     
 
@@ -103,7 +103,7 @@
                                 </li>
                                 <li><a href="#">HOTEL<i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="view/site/detailhotel1.php">Hotel Detail 1</a></li>
+                                        <li><a href="?c=detailhotel&a=view">Hotel Detail 1</a></li>
                                         <li><a href="#">Hotel Detail 2</a></li>
                                         <li><a href="#">Hotel Detail 3</a></li>
                                         <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
