@@ -74,18 +74,16 @@ body{
 	position: relative;
 
 }
-.dropdown-list
+.cityname 
+.dropdow-list
 {
-	top: 27px;
-}
-.dropdown-list li
-{
-	margin-left: 20px;
-	line-height: 30px;
-}
-.dropdown-list i
-{
-	margin-right: 20px;
+	width: 90%;
+    height: 30px;
+    float: left;
+    position: absolute;
+    left:20%;
+    margin-top: 25px;
+    font-size: 16px;	
 }
 .dropdow-list1 {
    
@@ -100,7 +98,6 @@ body{
 .dropdown-toggle span 
 {
 	color: #5191FA;
-	margin-left: -25px;
 }
 .dropdow-list2
 {
@@ -141,6 +138,13 @@ body{
 	line-height: 50px;
 
 }
+.dropdown-toggle
+{
+	    margin-top: 27px;
+    font-size: 17px;
+    text-align: left;
+   margin-left: -26px;
+}
 .adult , .child
 {
     font-weight: 200;
@@ -156,9 +160,21 @@ body{
 }
 .form-item
 {
-	top: 35px;
+	top: 37px;
     width: 100%!important;
-  margin-left:-15px;
+    left: -15px;
+    text-align: left;
+    line-height: 30px;
+}
+.form-item li
+{
+	padding-left: 23px;
+}
+.form-item i
+{
+	padding-right: 34px;
+	font-size: 15px;
+	color: #D6D5CD;
 }
 .border-right .text-muted1 {
     position: absolute;
@@ -743,11 +759,6 @@ body{
 .title-name h2 {
 	font-size:25px !important;
 }
-.row-content
-{
-
-	height: 350px !important;
-}
 
 }
 @media only screen and (max-width: 767px)
@@ -1039,10 +1050,5 @@ body{
     }
 .vc_custom_1542167696382 {
     padding: 10px 15px !important;
-}
-.row-content
-{
-	min-height: 375px;
-}
 }
 /*end Hompage*/
