@@ -9,7 +9,7 @@
             'room_name',
             'typeroom',
             'price',
-            'point',
+            'starnum',
             'people',
             'bed',
             'size',
@@ -205,7 +205,6 @@ switch ($action) {
 
             $data = $db->getAllDataBase($tbl1,$tbl2,$id,$offset,$limit);
 
-            $count = $db->phantrang($tbl2);
 
             require_once("view/room/list_room.php");
             break;

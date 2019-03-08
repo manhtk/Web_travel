@@ -28,7 +28,7 @@
 				<th>Room</th>	
 				<th>TypeRoom</th>
 				<th>Price</th>
-				<th>Point</th>
+				<th>Star Number</th>
 				<th>People</th>
 				<th>Bed</th>
 				<th>Size</th>
@@ -51,9 +51,10 @@
 					<td><?php echo $value['room_id'] ?></td>
 					<td><?php echo $value['hotel_name'] ?></td>
 					<td><?php echo $value['room_name'] ?></td>
+ 
 					<td><?php echo $value['typeroom'] ?></td>
 					<td><?php echo $value['price'] ?></td>
-					<td><?php echo $value['point'] ?></td>
+					<td><?php echo $value['starnum'] ?></td>
 					<td><?php echo $value['people'] ?></td>
 					<td><?php echo $value['bed'] ?></td>
 					<td><?php echo $value['size'] ?></td>
@@ -83,13 +84,18 @@
 	
 </form>
 <?php 
-	$page = $db->phantrang('hotel');
+	$page = $db->paging('room');
 ?>
 
-<div class="test-phantrang">
+<div class="paging">
 	<?php
+	$current_page = isset($_GET['page']) ? $_GET['page'] : 1;
 	for ($i=1; $i<=$page ; $i++) { 
-		echo "<a href='admin.php?controller=room&action=list&page=$i'>Page $i</a> - ";
+		$link = 'admin.php?controller=room&action=list&page=' . $i;
+		$class_active = '';
+		if($current_page == $i)
+			$class_active = 'active';
+		echo "<a href='". $link ."' class='". $class_active ."'>Page $i</a> - ";
 	}
 	?>
 </div>

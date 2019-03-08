@@ -44,10 +44,7 @@
         </tr>
         <td><input class="form-control" type="file" name="image"></td>
         <tr>
-            <td>Starnum</td>
-        </tr>
-        <td><input class="form-control" type="text" name="starnum"></td>
-        <tr>
+            
             <td>Address</td>
         </tr>
         <td><input class="form-control" type="text" name="address"></td>

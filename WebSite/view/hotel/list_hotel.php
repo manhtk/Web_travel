@@ -24,7 +24,6 @@
             <th>Owner</th>
             <th>Description</th>
             <th>Images</th>
-            <th>Starnum</th>
             <th>Address</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -46,7 +45,6 @@
                     <td><?php echo $value['description'] ?></td>
                     <td><img src="<?php echo $value['images'] ?>" style="width: 50px; height: 50px">
                     </td>
-                    <td><?php echo $value['starnum'] ?></td>
                     <td><?php echo $value['address'] ?></td>
                     <td><a href="admin.php?controller=hotel&action=update&id=<?php echo $value['hotel_id'] ?>">Edit</a>
                     </td>
@@ -65,13 +63,18 @@
     <button class="btn btn-primary" type='submit' name='delete' onclick="return confirm('Are you sure?')">Delete</button>
 </form>
 <?php 
-    $page = $db->phantrang('hotel');
+    $page = $db->paging('hotel');
 ?>
 
-<div class="test-phantrang">
+<div class="paging">
     <?php
+    $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
     for ($i=1; $i<=$page ; $i++) { 
-        echo "<a href='admin.php?controller=hotel&action=list&page=$i'>Page $i</a> - ";
+        $link = 'admin.php?controller=hotel&action=list&page=' . $i;
+        $class_active = '';
+        if($current_page == $i)
+            $class_active = 'active';
+        echo "<a href='". $link ."' class='". $class_active ."'>Page $i</a> - ";
     }
     ?>
 </div>
