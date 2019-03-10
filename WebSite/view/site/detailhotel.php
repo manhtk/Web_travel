@@ -77,9 +77,28 @@
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 					</div>
-					<h2 class="st-heading">Hyatt Centric Times Square</h2>
+					<h2 class="st-heading">
+                        <?php
+                        if(!empty($hotel_data)){
+
+                            ?>
+                            <?php
+                            foreach ($hotel_data as $values){
+                                ?>
+                                <h2><?php echo $values['hotel_name']; ?></h2>
+                                <?php
+                            }?>
+                        <?php } ?>
+                    </h2>
 					<div class="sub-heading">
-						<i class="fa fa-map-marker" style="color:#A0A9B2;font-size: 18px;margin-right: 5px " aria-hidden="true"></i><span>Boston, MA, USA View on map</span>
+						<i class="fa fa-map-marker" style="color:#A0A9B2;font-size: 18px;margin-right: 5px " aria-hidden="true"></i>
+                        <span><?php
+                            foreach ($city_data as $values){
+                            ?>
+                                <?php echo $values['city_name']; ?>,<span><?php $values['city_name'] ?></span>
+                                <?php
+                                }?>
+                            <?php  ?></span>
 					</div>
 				</div>
 				<div class="right">
@@ -123,12 +142,14 @@
 							<i class="fa fa-angle-down down-icon" aria-hidden="true" style="border: none;"></i>
 						</h2>
 						<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120"  >
-							<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.
-							</p>
-							<div class="cut-gradient"></div>
-							<p class="more-content">
-								Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>
-
+<!--							<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.-->
+<!--							</p>-->
+<!--							<div class="cut-gradient"></div>-->
+<!--							<p class="more-content">-->
+<!--								Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>-->
+                            <?php foreach ($all_room as $values){ ?>
+                                <?php echo $values['description']; ?>
+                            <?php }?>
 							<!-- <div class="cut-gradient"></div>	 -->
 						</div>
 						<script>	

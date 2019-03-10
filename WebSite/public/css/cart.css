@@ -83,3 +83,53 @@ div#cart-info {
     color: #FFFFFF;
     margin-top: 30px;
 }
+/*booking_succes*/
+#st-content-wrapper {
+    padding-bottom: 100px;
+}
+#st-content-wrapper .st-breadcrumb {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAEEF3;
+    border-top:1px solid #EAEEF3;
+}
+#st-content-wrapper .st-breadcrumb ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+    background: #FFF;
+}
+/*.container li
+{
+    margin-right: 30px;
+    float: left;
+}
+.line1
+{
+    margin-top: 20px;
+}
+.col-left
+{
+}
+.col-left img
+{
+    float: left;
+}
+.notice-success
+{
+    margin-left: 100px;
+}
+.booking-info-detail
+{
+
+}
+.line1
+{
+    font-size: 20px;
+    color:#00001E;
+}
+.line1 span
+{
+    font-weight: 900px;
+}*/
