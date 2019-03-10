@@ -8,6 +8,7 @@
 	<title>Web-hotel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- link font chu -->
+	<link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
 
 
 	<script>
@@ -642,7 +643,7 @@
 									foreach ($data_hotel as $value)
 									 {
 										?>
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 										<div class="item">
 											<div class="thumb">
 												
