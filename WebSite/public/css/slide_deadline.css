@@ -625,7 +625,7 @@ i.fa.fa-bars.munu1{
 {
 	position: absolute;
 	margin-left: 50px;
-	width: 163.3px;
+	/*width: 163.3px;*/
 	margin-top: 25px;
 	height: 22px;
 	color: #5191FA;
@@ -994,6 +994,8 @@ i.fa.fa-bars.munu1{
 .modern-search-result .im1
 {
 	transition: all 1s ease;
+	width: 269.5px;
+	height: 250px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -1664,7 +1666,7 @@ i.fa.fa-bars.munu1{
 .modern-search-result .im1
 {
 	width: 100%;
-	height: auto;
+	max-height: auto;
 }
 .modern-search-result .im1
 {
