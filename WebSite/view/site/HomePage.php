@@ -1,4 +1,8 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
 
   
     <div class="clear"></div>
