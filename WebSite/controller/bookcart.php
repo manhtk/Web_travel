@@ -4,16 +4,22 @@ class bookcart extends Controller {
 	public function view(){
 		session_start();
 		$cart_data = $_SESSION['st_cart'];
-		dd($cart_data);
-        $res = $this->model->getRoomDetal();
-        $getinfo = $this->model->getInfoUser();
+		$key1=$cart_data['room_id'];
+		
+		$key2=$_SESSION['currUser'];
+		
+        $res = $this->model->getRoomDetal($key1);
+        $getinfo = $this->model->getInfoUser($key2);
 		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo));
 	}
 	public function checkout(){
-
+		session_start();
+		$cart_checkout = $_SESSION['st_cart'];
+		
+		$key1=$cart_checkout['room_id'];
 		if(isset($_POST['checkout_submit'])){
 			$data = $_POST;
-			$cart_data = $this->model->getRoomDetal();
+			$cart_data = $this->model->getRoomDetal($key1);
 			$cart=(array_shift($cart_data));
 			$totalmoney = $cart['price']*110/100;
 			$array_insert = array(
@@ -22,11 +28,12 @@ class bookcart extends Controller {
 				$totalmoney				
 			);
 		}
-		$key1=$data['st_user_id'];
-		$key2=$cart['room_id'];
-		$get_room = $this->model->getRoomDetal();
+		$key2=$_SESSION['currUser'];
+
+		$key=$cart['room_id'];
+		$get_room = $this->model->getRoomDetal($key1);
 		$res= $this->model->insertBill($array_insert);
-		$search=$this->model->searchBill($key1,$key2);
+		$search=$this->model->getInfoUser($key2);
 		$this->view->render('site/cart/booking-success',array('data'=>$res,'list'=>$search,'room'=>$get_room));
 	}
 	public function listBill()
