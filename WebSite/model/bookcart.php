@@ -6,14 +6,14 @@
  * Time: 1:52 PM
  */
 class bookcart_model extends Model {
-	public function __construct() {
+    public function __construct() {
         parent::__construct();
-	}
+    }
 
-	public function getAllUsers(){
-	    $res = $this->query("SELECT * FROM user");
-	    $data = [];
-	    if($res->num_rows > 0){
+    public function getAllUsers(){
+        $res = $this->query("SELECT * FROM user");
+        $data = [];
+        if($res->num_rows > 0){
             while($row = $res->fetch_assoc()){
                 $data[] = $row;
             }
@@ -22,9 +22,9 @@ class bookcart_model extends Model {
     }
 
     public function getUsers($limit = false){
-	    $sql = "SELECT * FROM user";
-	    if($limit && is_numeric($limit)){
-	        $sql .= " LIMIT 0,{$limit}";
+        $sql = "SELECT * FROM user";
+        if($limit && is_numeric($limit)){
+            $sql .= " LIMIT 0,{$limit}";
         }
 
         $res = $this->query($sql);

@@ -43,44 +43,44 @@
                     Detail <i class="fa fa-caret-down"></i>
                 </button>
                 <ul class="detail-list" style="display: none;">
-					<li class="head"><span class="lable_section">From - To</span><span class="value">Price</span></li>
-			
-                 	<li><span class="lable_section">05/03/2019 <i class="fa fa-long-arrow-right"></i> 06/03/2019</span><span class="value">€350.00</span></li>
-				</ul>
-			</div>
+                    <li class="head"><span class="lable_section">From - To</span><span class="value">Price</span></li>
+            
+                    <li><span class="lable_section">05/03/2019 <i class="fa fa-long-arrow-right"></i> 06/03/2019</span><span class="value">€350.00</span></li>
+                </ul>
+            </div>
         </li>
         <li class="ad-info">
             <ul>
                 <li><span class="lable_section">Number of Night : </span>
-                	<span class="value">1 Night</span></li>
+                    <span class="value">1 Night</span></li>
                 <li><span class="lable_section">Number of Room : </span>
-                	<span class="value">1 Room(s)</span></li>
+                    <span class="value">1 Room(s)</span></li>
                 <li><span class="lable_section">Number of Adult : </span><span class="value">1</span></li>
             </ul>
         </li>
                 <li>
-            		<span class="label_section">Extra : </span>
-            	</li>
-        		<li class="extra-value"></li>
+                    <span class="label_section">Extra : </span>
+                </li>
+                <li class="extra-value"></li>
             </ul>
 </div>
 <div class="total-section">
-	<ul>
-		<li><span class="label_section">Subtotal : </span><span class="value">€ <?php echo $value['price'] ?></span></li>
-		<li>
-			<span class="label_section">Extra Price : </span>
-			<span class="value">€0.00</span>
-		</li>
-		<li><span class="label_section">Tax : </span><span class="value">10 %</span></li>
+    <ul>
+        <li><span class="label_section">Subtotal : </span><span class="value">€ <?php echo $value['price'] ?></span></li>
+        <li>
+            <span class="label_section">Extra Price : </span>
+            <span class="value">€0.00</span>
+        </li>
+        <li><span class="label_section">Tax : </span><span class="value">10 %</span></li>
 
-		<li class="payment-amount">
-			<span class="label_section">Pay Amount : </span>
-			<span class="value">€ <?php $vat= 0.1;
+        <li class="payment-amount">
+            <span class="label_section">Pay Amount : </span>
+            <span class="value">€ <?php $vat= 0.1;
             $money = $value['price'] + $value['price']*$vat;
 
             echo $money; ?></span>
-		</li>
-	</ul>
+        </li>
+    </ul>
 </div>
 </div>
 </div>
@@ -90,7 +90,7 @@
         <div class="check-out-form">
             <?php foreach ($infouser  as  $value) {
                 ?>
-                        	<div class="entry-content"></div>
+                            <div class="entry-content"></div>
 
                         <input type="hidden"  value="<?php echo $value['user_id'] ?>" name = "st_user_id" >
                             <div class="clearfix">
