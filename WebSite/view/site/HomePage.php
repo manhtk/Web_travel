@@ -292,7 +292,7 @@
                                         <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 has-matchHeight">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
-                                                    <a href="#">
+                                                    <a href="?c=detailhotel&a=view&hotel_id=<?php echo $values['hotel_id']?>">
                                                         <img src="<?php echo $values['images']; ?>" >
                                                     </a>
                                                     <div class="review-star">

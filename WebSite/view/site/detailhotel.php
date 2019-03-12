@@ -897,7 +897,7 @@
 										<div class="col-xs-6 col-sm-6 col-md-3 has-matchHeight">
 											<div class="row-content">
 												<div class="wpb-content-image">
-													<a href="#">
+													<a href="# ">
                                                         <img src="<?php echo $values['images']; ?>" >
 													</a>
 													<div class="review-star">
