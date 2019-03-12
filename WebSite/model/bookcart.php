@@ -46,9 +46,9 @@ class bookcart_model extends Model {
             return $this->getData();
         }
     }
-    public function getRoomDetal()
+    public function getRoomDetal($key)
     {
-        $sql = "SELECT * FROM hotel inner join room on hotel.hotel_id = room.hotel_id inner join city on hotel.city_id = city.city_id WHERE  room_id= 4";
+        $sql = "SELECT * FROM hotel inner join room on hotel.hotel_id = room.hotel_id inner join city on hotel.city_id = city.city_id WHERE  room_id= '$key'";
         $res = $this->query($sql);
         $data = [];
         if($res->num_rows > 0){
@@ -58,9 +58,9 @@ class bookcart_model extends Model {
         }
         return $data;
     }
-    public function getInfoUser()
+    public function getInfoUser($key)
     {
-        $sql = "SELECT * from user where user_id = 1";
+        $sql = "SELECT * from user where username = '$key' ";
         $res = $this->query($sql);
         $data = [];
         if($res->num_rows > 0){
