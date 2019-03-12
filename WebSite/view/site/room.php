@@ -1,4 +1,17 @@
-<link rel="stylesheet" type="text/css" href="../../public/css/room.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <!--  <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+  <!-- Fotorama -->
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="public/css/room.css">
+<script type="text/javascript" src="public/khanh.js" ></script>
   <!-- end header -->
   <div class="clear"></div>
   <!-- content -->
@@ -750,61 +763,5 @@
 
 </body>
 </html>
-<br /><br /><br /><hr /><br /><br /><br />
-<?php
-if(!empty($data)){
-    ?>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Email</th>
-        </tr>
-        <?php
-        foreach ($data as $k => $v){
-            ?>
-            <tr>
-                <td><?php echo $v['user_id']; ?></td>
-                <td><?php echo $v['email']; ?></td>
-            </tr>
-            <?php
-        }?>
-    </table>  
-<?php } ?>
 
-<?php
-if(!empty($data_room)){
-    ?>
-    <table>
-            <!-- <tr>
-                <th>ID</th>
-                <th>Room</th>
-            </tr> -->
-            <?php
-            foreach ($data_room as $values){
-                ?>
-                <tr>
-                    <td><img src="<?php echo $values['room_images']; ?>" style="width: 1349px;height: 400px"></td>
-                </tr>
-                <?php
-            }?>
-        </table>  
-    <?php } ?>
-<?php
-if(!empty($data_hotel)){
-    ?>
-    <table>
-            <!-- <tr>
-                <th>ID</th>
-                <th>Room</th>
-            </tr> -->
-            <?php
-            foreach ($data_hotel as $values){
-                ?>
-                <tr>
-                    <td><?php echo $values['hotel_name']; ?></td>
-                </tr>
-                <?php
-            }?>
-        </table>  
-    <?php } ?>
-    <br /><br /><br /><hr /><br /><br /><br />
+
