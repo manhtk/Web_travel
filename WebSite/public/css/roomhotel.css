@@ -216,6 +216,11 @@ a.morelink
 	border-bottom: 1px solid #f1f1f1;
 	background: #fff;
 }
+span.money-price{
+	color: #1A2B48;
+	font-size: 18px;
+	font-weight: 600;
+}
 .widgets #check
 {
 	padding-top: 15px;
@@ -587,7 +592,7 @@ font-size: 14px;
 .st-hotel-header .left
 {
 	font-size: small;
-	width: auto;
+	width: 75%;
 	float:left;
 }
 .st-hotel-header .left .st-stars  {
@@ -1332,7 +1337,7 @@ font-size: 14px;
 	.st-hotel-header .left
 	{
 		font-size: small;
-		width: auto;
+		width: 75%;
 		float:left;
 	}
 	.st-hotel-header .left .st-stars  {
@@ -1684,6 +1689,7 @@ font-size: 14px;
 	border-bottom: 1px solid #f1f1f1;
 	background: #fff;
 }
+
 .widgets #check
 {
 	height: 84px;

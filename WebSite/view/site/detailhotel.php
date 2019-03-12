@@ -1,47 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>detail detail 1</title>
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="public/css/roomhotel.css">
-	
-	
-	<!-- slide -->
-	
+	<title></title>
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
-	<!-- end slide -->
-	<!-- date time -->
-	
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-	<!-- end date time -->
-	<script type="text/javascript" src="public/js/script.js" ></script>
-	
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
+    <script type="text/javascript" src="public/js/script.js"></script>
+     <link rel="stylesheet" href="public/css/roomhotel.css">
 </head>
-<script>
-	
-</script>
 <body>
+
 
   <div class="clear"></div>
 	<!--content -->
@@ -60,9 +27,11 @@
 			<!-- st-content-hotel -->
 			<div class="st-hotel-content">
 				<div class="hotel-target-book-mobile" >
+					<?php foreach ($data_hotel as $value) { ?>
 					<div class="price-wrapper">
-						from <span class="price">€565</span>                        
+						from <span class="price">€<?php echo $value['hotel_price'];  ?></span>                        
 					</div>
+				<?php } ?>
 					<a href="" class="btn btn-green">Check Availability</a>
 				</div>
 			</div>
@@ -77,28 +46,22 @@
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 					</div>
-					<h2 class="st-heading">
-                        <?php
-                        if(!empty($hotel_data)){
-
-                            ?>
-                            <?php
-                            foreach ($hotel_data as $values){
-                                ?>
-                                <h2><?php echo $values['hotel_name']; ?></h2>
-                                <?php
-                            }?>
-                        <?php } ?>
-                    </h2>
+					 <?php foreach ($data_hotel as  $value) {?>
+					<h2 class="st-heading"> <?php echo $value['hotel_name']; ?></h2>
+                    <?php  } ?>
 					<div class="sub-heading">
+						<?php foreach ($data_hotel as  $value) {
+							
+						 ?>
+						 <?php if(!empty($value['city_name']) || !empty($value['country'])) { ?>
 						<i class="fa fa-map-marker" style="color:#A0A9B2;font-size: 18px;margin-right: 5px " aria-hidden="true"></i>
-                        <span><?php
-                            foreach ($city_data as $values){
-                            ?>
-                                <?php echo $values['city_name']; ?>,<span><?php $values['city_name'] ?></span>
-                                <?php
-                                }?>
-                            <?php  ?></span>
+                    	<?php } ?>
+                        <span><?php echo htmlspecialchars($value['city_name']); ?>
+                         <?php if(!empty(htmlspecialchars($value['city_name'])) && !empty(htmlspecialchars($value['country']))){ ?>
+                                                         <span>, </span>
+                                                        <?php } ?>
+                         <?php echo htmlspecialchars($value['country']); ?></span>
+                        <?php } ?>
 					</div>
 				</div>
 				<div class="right">
@@ -109,7 +72,9 @@
 								<span class="text-rating">from 2 reviews</span>
 							</div>
 							<div class="score">
-								4.4<span>/5</span>
+								<?php foreach ($data_hotel as $value) { ?>
+								<?php echo $value['hotel_point']; ?><span>/5</span>
+								<?php } ?>
 							</div>
 						</div>
 						<div class="foot">
@@ -142,19 +107,18 @@
 							<i class="fa fa-angle-down down-icon" aria-hidden="true" style="border: none;"></i>
 						</h2>
 						<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120"  >
-<!--							<p>Hyatt Centric Times Square New York guarantees guests a pleasant stay whether in New York for business or pleasure. Located 21.9 km from the city, this 4-star hotel commands an excellent location and provides access to the city’s top attractions. Hyatt Centric Times Square New York also offers many facilities to enrich your stay in New York. Top features of the hotel include express check-in/check-out, coffee shop, elevator, Wi-Fi in public areas, and a concierge.-->
-<!--							</p>-->
-<!--							<div class="cut-gradient"></div>-->
-<!--							<p class="more-content">-->
-<!--								Step into one of 487 inviting rooms and escape the stresses of the day with a wide range of amenities. After a long tiring day, the fitness center and spa are ideal places to relax. Discover an engaging blend of professional service and a wide array of features at Hyatt Centric Times Square New York. The property offers daily bottled water, coffee/tea, premium high speed internet access for multiple devices, local, or long distance and international phone calls, and 10% discount for lunch or dinner per room per day. A variety of discount promotions are also offered. Kindly contact the property for more details.</p>-->
-                            <?php foreach ($all_room as $values){ ?>
-                                <?php echo $values['description']; ?>
-                            <?php }?>
-							<!-- <div class="cut-gradient"></div>	 -->
+							
+							<div class="cut-gradient"></div>
+							<?php foreach ($data_hotel as  $value) {
+								
+							 ?>
+							<p class="more-content"><?php echo $value['description']; ?></p>
+							<?php } ?>
+								
 						</div>
 						<script>	
 							$(".more-content").shorten({
-								"showChars" : 2,
+								"showChars" : 500,
 								"moreText"  : "View more",
 								"lessText"  : "View less",
 							});
@@ -170,23 +134,17 @@
 						<div class="facilities" >
 							<div class="container-fuild">
 								<div class="row">
-									<div class="col-xs-4  fac" " ><i class="fa fa-thermometer-empty" aria-hidden="true"></i> Air Conditioning</div>
-									<div class="col-xs-4 fac" "><i class="fa fa-taxi" aria-hidden="true"></i> Airport Transport
+									<?php foreach ($data_fac as $val) {?>
+									<div class="col-xs-4  fac" " >
+										
+										<i class="fa <?php echo $val['service_icon']; ?> " aria-hidden="true"></i>  <?php echo $val['service']; ?>
+                                      
 									</div>
-									<div class="col-xs-4 fac" "><i class="fa fa-user-o" aria-hidden="true"></i> Fitness Center</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 fac" "><i class="fa fa-television" aria-hidden="true"></i> Flat Tv</div>
-									<div class="col-xs-4 fac" "><i class="fa fa-fire" aria-hidden="true"></i> Heater</div>
-									<div class="col-xs-4 fac" "><i class="fa fa-wifi" aria-hidden="true"></i> Internet – Wifi</div>
-								</div>						
+										  <?php } ?>			
 								<div class="showfaciliti" style="display: none;">
-									<div class="row">
 										<div class="col-xs-4 fac" ><i class="fa fa-product-hunt" aria-hidden="true"></i> Parking</div>
 										<div class="col-xs-4 fac" ><i class="fa fa-bath" aria-hidden="true"></i> Pool</div>
 										<div class="col-xs-4 fac" ><i class="fa fa-home" aria-hidden="true"></i> Restaurant</div>
-									</div>
-									<div class="row">
 										<div class="col-xs-4 fac" ><i class="fa fa-window-minimize" aria-hidden="true"></i> Smoking Room</div>
 										<div class="col-xs-4 fac" ><i class="fa fa-snowflake-o" aria-hidden="true"></i> Spa & Sauna</div>
 										<div class="col-xs-4 fac" ><i class="fa fa-bath" aria-hidden="true"></i> Washer & Dryer</div>
@@ -824,9 +782,11 @@
 					<div class="widget">
 						<div class="widgets" >
 							<div class="" id="money">
+								<?php foreach ($data_hotel as $value) {?>
 								<div class="col-md-12" >
-									from <strong style="color: #1A2B48;font-size: 18px;font-weight: 600">$565</strong> per night
+									from <span class="money-price" ><?php echo $value['hotel_price']; ?></span> /night
 								</div>
+							<?php } ?>
 							</div>   
 							<div class="" id="check">
 								<div class="col-md-12">
@@ -902,10 +862,12 @@
 						<div class="widget-box">
 							<div class="row">
 								<div class="col-sm-4"><img id="avt" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_8-1-37jk0455rmyknqn5gp7uo0.jpg" alt="" /></div>
+								<?php foreach ($data_hotel as $value) {?>
 								<div class="col-sm-8" style="position: relative;top: 20px;">
-									Travis Tan <br>
+									<?php echo $value['owner']; ?> <br>
 									<a href="">Member Since 2018</a>
 								</div>
+							<?php } ?>
 							</div>
 						</div>
 					</div>					
@@ -932,7 +894,7 @@
 
                                     ?>
 									<div class="last-minute">
-										<div class="col-xs-6 col-sm-6 col-md-3">
+										<div class="col-xs-6 col-sm-6 col-md-3 has-matchHeight">
 											<div class="row-content">
 												<div class="wpb-content-image">
 													<a href="#">
@@ -979,150 +941,10 @@
 										</div>
 									</div>
 
-									<div class="last-minute">
-										<div class="col-xs-6 col-sm6 col-md-3">
-											<div class="row-content">
-												<div class="wpb-content-image">
-													<a href="#">
-                                                        <img src="<?php echo $values['images']; ?>" >
-													</a>
-													<div class="review-star">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-													</div>
-												</div>
-												<div class="wpb-content-text">
-													<div class="wpb-room-name">
-														<a href="#">
-                                                            <?php echo $values['hotel_name']; ?>
-														</a>
-													</div>
-													<div class="wpb-room-adress">
-														<p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name']; ?></p>
-
-													</div>
-													<div class="review">
-														<div class="rate">
-															<p>4.5/5 excellent</p>
-														</div>
-														<div class="sumary">
-															<li>5 reviews</li>
-														</div>
-
-													</div>
-													<div class="price-wrapper">
-														<span>
-															<i class="fas fa-bolt"></i>
-															<span class="price-from">from</span> <span class="price-money"> €<?php echo $values['medium_price']; ?> </span>
-															<span class="price-from">
-																/night
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="last-minute">
-
-										<div class="col-xs-6 col-sm6 col-md-3">
-											<div class="row-content">
-												<div class="wpb-content-image">
-													<a href="#">
-                                                        <img src="<?php echo $values['images']; ?>" >
-													</a>
-													<div class="review-star">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-													</div>
-												</div>
-												<div class="wpb-content-text">
-													<div class="wpb-room-name">
-														<a href="#">
-                                                            <?php echo $values['hotel_name']; ?>
-														</a>
-													</div>
-													<div class="wpb-room-adress">
-														<p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name']; ?>,<?php echo $values['country']; ?></p>
-													</div>
-													<div class="review">
-														<div class="rate">
-															<p>4.5/5 excellent</p>
-														</div>
-														<div class="sumary">
-															<li>5 reviews</li>
-														</div>
-													</div>
-													<div class="price-wrapper">
-														<span>
-															<i class="fas fa-bolt"></i>
-															<span class="price-from">from</span>
-															<span class="price-money"> €<?php echo $values['medium_price']; ?> </span>
-															<span class="price-from">
-																/night
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="last-minute">
-										<div class="col-xs-6 col-sm6 col-md-3">
-											<div class="row-content">
-												<div class="wpb-content-image">
-													<a href="#">
-                                                        <img src="<?php echo $values['images']; ?>" >
-													</a>
-													<div class="review-star">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-													</div>
-												</div>
-												<div class="wpb-content-text">
-													<div class="wpb-room-name">
-														<a href="#">
-                                                            <?php echo $values['hotel_name']; ?>
-														</a>
-													</div>
-													<div class="wpb-room-adress">
-														<p> <i class="fas fa-map-marker-alt"></i><?php echo $values['city_name']; ?>, <?php echo $values['country']; ?></p>
-
-													</div>
-													<div class="review">
-														<div class="rate">
-															<p>4.5/5 excellent</p>
-														</div>
-														<div class="sumary">
-															<li>5 reviews</li>
-														</div>
-
-													</div>
-													<div class="price-wrapper">
-														<span>
-															<i class="fas fa-bolt"></i>
-															<span class="price-from">from</span> <span class="price-money"> €<?php echo $values['medium_price']; ?> </span>
-															<span class="price-from">
-																/night
-															</span>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+									
+								
                                 <?php } ?>
+                                </div>
 							</div>
 						</div>
 					</div>
