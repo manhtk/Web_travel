@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="list_bill">
-		<h3>Booking History.</h3>
+		<h3>Booking History</h3>
 		
 		<form class="" method="post" action="?c=bookcart&a=listBill">
 			<table class="table table-bordered table-inverse">
@@ -35,9 +35,14 @@
 								
 								<td><?php echo $value['totalmoney'] ?></td>
 								<td><?php echo $value['status'] ?></td>
-								<td><a onclick="return confirm('Do you want to delete record?')" 
+								<td>
+									<a  
+									href="#"
+									title="review">Write Review</a><br/>
+									<a onclick="return confirm('Do you want to delete record?')" 
 									href="#"
 									title="Delete">Delete</a>
+
 								</td>
 								<?php
 								echo "<td>"; ?><input type="checkbox" name="checkbox[]"

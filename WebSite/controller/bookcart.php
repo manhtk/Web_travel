@@ -29,7 +29,7 @@ class bookcart extends Controller {
 			);
 		}
 		$key2=$_SESSION['currUser'];
-
+			dd();
 		$key=$cart['room_id'];
 		$get_room = $this->model->getRoomDetal($key1);
 		$res= $this->model->insertBill($array_insert);
