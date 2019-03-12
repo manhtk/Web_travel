@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" type="text/css" href="../../public/css/room.css">
   <!-- end header -->
   <div class="clear"></div>
   <!-- content -->
@@ -44,7 +44,7 @@
         <div class="price-wrapper">
           from <span class="price">€565</span>                        
         </div>
-        <a href="" class="btn btn-green">Book Now</a>
+        <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
       </div>
     </div>
     <div class="clear"></div>
@@ -565,7 +565,7 @@
                   <!-- book -->
                   <div class="row">
                     <div class="booknow">
-                      <a href="#" class="btn-book">Book now</a>
+                      <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
                     </div>
                   </div>
                 </div>
@@ -741,7 +741,7 @@
               <!-- book -->
               <div class="row">
                 <div class="booknow">
-                  <a href="#" class="btn-book">Book now</a>
+                  <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
                 </div>
               </div>
             </div>
