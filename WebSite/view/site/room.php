@@ -57,7 +57,7 @@
         <div class="price-wrapper">
           from <span class="price">€565</span>                        
         </div>
-        <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
+        <button type="submit" class="btn-book" name="room_add_to_cart">Book Now</button>
       </div>
     </div>
     <div class="clear"></div>
@@ -578,7 +578,7 @@
                   <!-- book -->
                   <div class="row">
                     <div class="booknow">
-                      <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
+                      <button type="submit" class="btn-book" name="room_add_to_cart">Book Now</button>
                     </div>
                   </div>
                 </div>
@@ -754,7 +754,7 @@
               <!-- book -->
               <div class="row">
                 <div class="booknow">
-                  <a href="http://webhotel.com:8080/?c=bookcart&a=view" class="btn btn-green">Book Now</a>
+                  <button type="submit" class="btn-book" name="room_add_to_cart">Book Now</button>
                 </div>
               </div>
             </div>
