@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>HomePage</title>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-     
+     <link rel="stylesheet" type="text/css" href="public/css/room.css">
     <link rel="stylesheet" type="text/css" href="public/css/cart.css">
     
 
