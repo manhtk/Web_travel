@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title></title>
+
+	
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
     <script type="text/javascript" src="public/js/script.js"></script>
@@ -782,11 +784,9 @@
 					<div class="widget">
 						<div class="widgets" >
 							<div class="" id="money">
-								<?php foreach ($data_hotel as $value) {?>
 								<div class="col-md-12" >
-									from <span class="money-price" ><?php echo $value['hotel_price']; ?></span> /night
+									from <strong style="color: #1A2B48;font-size: 18px;font-weight: 600">$565</strong> per night
 								</div>
-							<?php } ?>
 							</div>   
 							<div class="" id="check">
 								<div class="col-md-12">
@@ -862,12 +862,10 @@
 						<div class="widget-box">
 							<div class="row">
 								<div class="col-sm-4"><img id="avt" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_8-1-37jk0455rmyknqn5gp7uo0.jpg" alt="" /></div>
-								<?php foreach ($data_hotel as $value) {?>
 								<div class="col-sm-8" style="position: relative;top: 20px;">
-									<?php echo $value['owner']; ?> <br>
+									Travis Tan <br>
 									<a href="">Member Since 2018</a>
 								</div>
-							<?php } ?>
 							</div>
 						</div>
 					</div>					
