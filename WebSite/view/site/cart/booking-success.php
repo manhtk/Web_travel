@@ -62,7 +62,7 @@
 				Your Items	</h3>
 				<div class="cart-info">
 					<?php
-					dd($room); 
+					
 					foreach ($room as $value) {
 						# code...
 					 ?>
@@ -133,24 +133,24 @@
 						} else {
 							foreach ($list as $value) {
 								?>
-								<ul>
-									<li><span class="label">First Name</span><span class="value"><?php echo $value['first_name'] ?></span></li>
-									<li><span class="label">Last name</span><span class="value"><?php echo $value['last_name'] ?></span></li>
-									<li><span class="label">Email</span><span class="value"><?php echo $value['email'] ?></span></li>
-									<li><span class="label">Address Line 1 </span><span class="value"></span></li>
-									<li><span class="label">Address Line 2 </span><span class="value"></span></li>
-									<li><span class="label">City</span><span class="value"></span></li>
-									<li><span class="label">State/Province/Region</span><span class="value"></span></li>
-									<li><span class="label">ZIP code/Postal code</span><span class="value"></span></li>
-									<li><span class="label">Country</span><span class="value"></span></li>
-									<li><span class="label">Special Requirements</span><span class="value"></span></li>
-								</ul>
+				<ul>
+					<li><span class="label">First Name</span><span class="value"><?php echo $value['first_name'] ?></span></li>
+					<li><span class="label">Last name</span><span class="value"><?php echo $value['last_name'] ?></span></li>
+					<li><span class="label">Email</span><span class="value"><?php echo $value['email'] ?></span></li>
+					<li><span class="label">Address Line 1 </span><span class="value"><?php echo $value['address1'] ?></span></li>
+					<li><span class="label">Address Line 2 </span><span class="value"><?php echo $value['address2'] ?></span></li>
+					<li><span class="label">City</span><span class="value"><?php echo $value['city'] ?></span></li>
+					<li><span class="label">State/Province/Region</span><span class="value"><?php echo $value['state/province/region'] ?></span></li>
+					<li><span class="label">ZIP code/Postal code</span><span class="value"><?php echo $value['zipcode_or_postal_code'] ?></span></li>
+					<li><span class="label">Country</span><span class="value"><?php echo $value['country'] ?></span></li>
+					<li><span class="label">Special Requirements</span><span class="value"><?php echo $value['special'] ?></span></li>
+				</ul>
 							<?php }
 						} ?>
 					</div>
 
 					<div class="text-center mg20 mt30">
-						<a href="https://homap.travelerwp.com/page-user-setting/?sc=booking-history" class="btn btn-primary"><i class="fa fa-book"></i> Booking Management</a>
+						<a href="/?c=bookcart&a=listBill" class="btn btn-primary"><i class="fa fa-book"></i> Booking Management</a>
 					</div>
 				</div>
 			</div>

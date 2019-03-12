@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>HomePage</title>
@@ -57,8 +56,14 @@
                 </div>
                 <div class="topbar-right">
                     <ul class="st-list topbar-items">
+<<<<<<< HEAD
                         <?php if(isset($_SESSION['currUser'])){ ?>
                         <li ><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
+=======
+                        <?php 
+                        if(isset($_SESSION['currUser'])){ ?>
+                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
+>>>>>>> f6f86e4b7eff5d3cb5fcecaf077a0ae6fabf83f7
                         <?php }else{
                             ?>
                         <li><a href="../../login">Login</a></li>
@@ -112,7 +117,7 @@
                                         <li><a href="?c=detailhotel&a=view">Hotel Detail 1</a></li>
                                         <li><a href="#">Hotel Detail 2</a></li>
                                         <li><a href="#">Hotel Detail 3</a></li>
-                                        <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
+                                        <li><a href="?c=room&a=view">Room Detail 1</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>

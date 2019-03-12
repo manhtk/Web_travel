@@ -5,7 +5,7 @@
  * Date: 2/16/2019
  * Time: 1:52 PM
  */
-class User_Model extends Model {
+class Room_Model extends Model {
 	public function __construct() {
         parent::__construct();
 	}
@@ -25,11 +25,9 @@ class User_Model extends Model {
         }
         return $data;
     }
-    public function getRoom($room_id,$limit = false){
+    public function getRoom($room_id){
         $sql = "SELECT * FROM room WHERE room_id='{$room_id}'";
-        if($limit && is_numeric($limit)){
-            $sql .= " LIMIT 0,{$limit}";
-        }
+        
 
         $res = $this->query($sql);
         $data = [];

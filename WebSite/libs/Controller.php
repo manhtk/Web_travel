@@ -5,6 +5,7 @@
  	public function __construct()
  	{
  		//Khởi tạo đối tượng trong controll base
+ 		session_start();
  		$this->view = new View();
  	}
  	//Phương thức load Model trong controller
