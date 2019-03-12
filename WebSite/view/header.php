@@ -56,14 +56,9 @@
                 </div>
                 <div class="topbar-right">
                     <ul class="st-list topbar-items">
-<<<<<<< HEAD
                         <?php if(isset($_SESSION['currUser'])){ ?>
                         <li ><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
-=======
-                        <?php 
-                        if(isset($_SESSION['currUser'])){ ?>
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
->>>>>>> f6f86e4b7eff5d3cb5fcecaf077a0ae6fabf83f7
+
                         <?php }else{
                             ?>
                         <li><a href="../../login">Login</a></li>
