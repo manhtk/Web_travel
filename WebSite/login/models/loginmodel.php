@@ -15,7 +15,7 @@
             }
             else
             {
-               header('Location:../../view/site/HomePage.php');
+               header('Location:/index.php');
             }
         }else
         {

@@ -1,4 +1,4 @@
-﻿
+﻿<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,7 +57,8 @@
                 </div>
                 <div class="topbar-right">
                     <ul class="st-list topbar-items">
-                        <?php if(isset($_SESSION['currUser'])){ ?>
+                        <?php 
+                        if(isset($_SESSION['currUser'])){ ?>
                         <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
                         <?php }else{
                             ?>
