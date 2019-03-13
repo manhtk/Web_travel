@@ -43,6 +43,7 @@ ul.st-list.topbar-items li {
 	padding-right: 18px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 ul{
 	margin-bottom: 0;

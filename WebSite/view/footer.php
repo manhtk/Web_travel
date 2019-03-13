@@ -40,19 +40,19 @@
 
                     <div  class="footer_content_element">
                         <p class="footer_content_element1" >Call Us</p>
-                        <h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >+ 00 222 44 5678</h4>
+                        <h4>+ 00 222 44 5678</h4>
                     </div>
                     <br />
 
                     <div class="footer_content_element">
                         <p class="footer_content_element1" >Email for Us</p>
-                        <h4 style="  font-size: 18px; color: #1A2B48 ; padding-left: 15px;  " >hello@yoursite.com</h4>
+                        <h4>hello@yoursite.com</h4>
                     </div>
                     <br />
 
                     <div class="footer_content_element">
                         <p class="footer_content_element1" >Follow Us</p>
-                        <p style="padding-left: 15px;"><span ><img src="../../libs/Images/ico_facebook_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_instagram_footer.svg"  ></span><span style="padding-left: 15px;"><img src="../../libs/Images/ico_twitter_footer.svg"  ></span></p>
+                        <p ><span ><img src="../../libs/Images/ico_facebook_footer.svg"  ></span><span ><img src="../../libs/Images/ico_instagram_footer.svg"  ></span><span><img src="../../libs/Images/ico_twitter_footer.svg"  ></span></p>
                     </div>
                     <br />
 
@@ -65,19 +65,19 @@
 
                     <div class="footer_content1_element">
                         <div class="footer_content1_element1" ">
-                        <a href="" style="color: #1A2B48"><p>About Us</p></a>
+                        <a href="" ><p>About Us</p></a>
                         <br>
 
-                        <a href="" style="color: #1A2B48"><p>ACommunity Blog</p></a>
+                        <a href="" ><p>ACommunity Blog</p></a>
                         <br>
 
-                        <a href="" style="color: #1A2B48"><p>Rewards</p></a>
+                        <a href="" ><p>Rewards</p></a>
                         <br>
 
-                        <a href="" style="color: #1A2B48"><p>Word with Us</p></a>
+                        <a href="" ><p>Word with Us</p></a>
                         <br>
 
-                        <a href="" style="color: #1A2B48"><p>Meet the Team</p></a>
+                        <a href="" ><p>Meet the Team</p></a>
                         <br>
                         <br>
 
@@ -91,19 +91,19 @@
 
                 <div class="footer_content1_element">
                     <div class="footer_content1_element1" ">
-                    <a href="" style="color: #1A2B48"><p>Acount</p></a>
+                    <a href="" ><p>Acount</p></a>
                     <br>
 
-                    <a href="" style="color: #1A2B48"><p>Legal</p></a>
+                    <a href="" ><p>Legal</p></a>
                     <br>
 
-                    <a href="" style="color: #1A2B48"><p>Contact</p></a>
+                    <a href="" ><p>Contact</p></a>
                     <br>
 
-                    <a href="" style="color: #1A2B48"><p>Affiliate Program</p></a>
+                    <a href="" ><p>Affiliate Program</p></a>
                     <br>
 
-                    <a href="" style="color: #1A2B48"><p>Privacy policy</p></a>
+                    <a href="" ><p>Privacy policy</p></a>
                     <br>
                     <br>
 
@@ -118,7 +118,7 @@
             <div class="footer_content1_element">
                 <div class="footer_content1_element1" ">
                 <p style="font-size: 14px;color: #5E6D77;" >Languages</p>
-                <select style=" width: 180px; height: 40px; border-radius: 4px; background-color: white" >
+                <select style=" width: 180px; height: 40px; border-radius: 4px" >
                     <option>English</option>
                     <option>France</option>
                     <option>Spanish</option>
@@ -127,7 +127,7 @@
                 <br />
                 <br />
                 <p style="font-size: 14px;color: #5E6D77;" >Currencies</p>
-                <select style=" width: 180px; height: 40px; border-radius: 4px; background-color: white" >
+                <select style=" width: 180px; height: 40px; border-radius: 4px" >
                     <option>EUR</option>
                     <option>USD</option>
                     <option>AUD</option>

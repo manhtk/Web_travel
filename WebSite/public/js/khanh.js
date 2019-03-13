@@ -193,13 +193,13 @@ $(document).ready(function(){
 // dịch chuyển form
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 611) {
-        $('.widgets').addClass('fixed');
+        $('.widget').addClass('fixed');
     } 
     if ($(window).scrollTop() >= 2500) {
-        $('.widgets').removeClass('fixed');
+        $('.widget').removeClass('fixed');
     }
      if ($(window).scrollTop() < 611) {
-        $('.widgets').removeClass('fixed');
+        $('.widget').removeClass('fixed');
     }
 });
 // end dịch chuyển

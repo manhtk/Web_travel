@@ -85,8 +85,8 @@
                                                                 <div class="people-group">
                                                                 <span class="label">
                                                                     <span class="value">
-                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>,
-                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Child</span>
+                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>
+                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Children</span>
                                                                         <i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
                                                                     </span>
                                                                 </span>

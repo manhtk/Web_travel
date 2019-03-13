@@ -2,7 +2,7 @@
 class bookcart extends Controller {
 
 	public function view(){
-		session_start();
+		
 		$cart_data = $_SESSION['st_cart'];
 		$key1=$cart_data['room_id'];
 		
@@ -13,7 +13,7 @@ class bookcart extends Controller {
 		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo));
 	}
 	public function checkout(){
-		session_start();
+		
 		$cart_checkout = $_SESSION['st_cart'];
 		
 		$key1=$cart_checkout['room_id'];
@@ -25,16 +25,21 @@ class bookcart extends Controller {
 			$array_insert = array(
 				$data['st_user_id'],
 				$cart['room_id'],
+				$cart_checkout['checkin'],
+				$cart_checkout['checkout'],
 				$totalmoney				
 			);
 		}
 		$key2=$_SESSION['currUser'];
-
+			
 		$key=$cart['room_id'];
 		$get_room = $this->model->getRoomDetal($key1);
 		$res= $this->model->insertBill($array_insert);
 		$search=$this->model->getInfoUser($key2);
 		$this->view->render('site/cart/booking-success',array('data'=>$res,'list'=>$search,'room'=>$get_room));
+
+		//hàm lấy datenow
+		//$curr_date = date('Y-m-d');
 	}
 	public function listBill()
 	{
@@ -46,10 +51,11 @@ class bookcart extends Controller {
 		if(isset($_POST['room_add_to_cart'])){
 			$post_data = $_POST;
 			unset($post_data['room_add_to_cart']);
-			session_start();
+		
 			unset($_SESSION['st_cart']);			
 			$_SESSION['st_cart'] = $post_data;
 			header('location: http://webhotel.com:8080/?c=bookcart&a=view');
+			
 		}
 	}
 }

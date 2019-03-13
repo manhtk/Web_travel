@@ -73,7 +73,7 @@ class bookcart_model extends Model {
     public function insertBill($bill_info)
     {
         $bill_info = implode(',', $bill_info);
-        $sql_oder = "INSERT INTO bill(bill_id, user_id, room_id,totalmoney) VALUES (null,$bill_info)";
+        $sql_oder = "INSERT INTO bill(bill_id, user_id, room_id, checkin, checkout,totalmoney) VALUES (null,$bill_info)";
         $data = $this->query($sql_oder);
         
         return $data;

@@ -1,5 +1,4 @@
-﻿<?php session_start(); ?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>HomePage</title>
@@ -57,15 +56,15 @@
                 </div>
                 <div class="topbar-right">
                     <ul class="st-list topbar-items">
-                        <?php 
-                        if(isset($_SESSION['currUser'])){ ?>
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
+                        <?php if(isset($_SESSION['currUser'])){ ?>
+                        <li ><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
+
                         <?php }else{
                             ?>
-<li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Login</a></li>
+                        <li><a href="../../login">Login</a></li>
                             <?php
                         } ?>
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../register">Sign up</a></li>
+                        <li "><a href="../../register">Sign up</a></li>
                         <li class="dropdown dropdown-currency hidden-sm hidden-xs">
                             <a href="#">EUR<i class="fa fa-angle-down"></i></a>
                             <ul class="dropmenu">
