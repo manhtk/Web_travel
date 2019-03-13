@@ -1,4 +1,4 @@
-﻿// dao nguoc
+// dao nguoc
 $(document).ready(function(){
 	var body = $('body');
 		
@@ -9,6 +9,11 @@ $(document).ready(function(){
 	$('.btn').click(function(){
 		$('.price-room').show();
 	});
+});
+$(document).ready(function(){
+  $(".btn").click(function(){
+    $(".btn").text("Detail Room");
+  });
 });
 $(document).ready(function(){
 	$(".more-content").click(function(){

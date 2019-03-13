@@ -255,7 +255,10 @@
 											</div>
 										</div>
 										<div class="col-xs-12 col-md-4 ">
-											<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
+											<div class="price-room"  >
+												<span class="money-price">€<?php echo $v['price']; ?> </span>
+												<span class="unit">/1 night</span>
+											</div>
 
 												<button class="btn"  style="">SHOW PRICE</button>
 										</div>
@@ -306,8 +309,9 @@
 
 											<div class="col-sm-4 " >
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
-
+												<button id= "clickme" class="clickme"> <a href="https://www.w3schools.com"> Room detail</a> </button>
 												<button class="btn"  style="">SHOW PRICE</button>
+												
 												
 											</div>
 										</div>
