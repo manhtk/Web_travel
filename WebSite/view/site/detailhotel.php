@@ -135,7 +135,7 @@
 						</h2>
 						<div class="facilities" >
 							<div class="container-fuild">
-								<div class="row">
+								<div class="row room-facility">
 									<?php foreach ($data_fac as $val) {?>
 									<div class="col-xs-4  fac" " >
 										
@@ -143,17 +143,9 @@
                                       
 									</div>
 										  <?php } ?>			
-								<div class="showfaciliti">
-										<div class="col-xs-4 fac" ><i class="fa fa-product-hunt" aria-hidden="true"></i> Parking</div>
-										<div class="col-xs-4 fac" ><i class="fa fa-bath" aria-hidden="true"></i> Pool</div>
-										<div class="col-xs-4 fac" ><i class="fa fa-home" aria-hidden="true"></i> Restaurant</div>
-										<div class="col-xs-4 fac" ><i class="fa fa-window-minimize" aria-hidden="true"></i> Smoking Room</div>
-										<div class="col-xs-4 fac" ><i class="fa fa-snowflake-o" aria-hidden="true"></i> Spa & Sauna</div>
-										<div class="col-xs-4 fac" ><i class="fa fa-bath" aria-hidden="true"></i> Washer & Dryer</div>
-									</div>
 								</div>
 								<div class="showmore" >
-									Show more
+									Show All
 								</div> 
 							
 							</div>	

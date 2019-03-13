@@ -151,8 +151,17 @@ body
 {
 	font-size: 20px;
 }
-.facilities .showfaciliti{
-	display: none;
+
+.facilities .room-facility{
+	overflow: hidden;
+	height: 125px;
+
+}
+.facilities .room-facility.more{
+	
+	height: auto;
+
+
 }
 .broom i
 {
@@ -180,6 +189,7 @@ a.morelink
 {
 	text-decoration:none;
 	outline: none;
+	color: #5191FA 
 }
 .morecontent span {
 	display: none;
