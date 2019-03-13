@@ -155,7 +155,13 @@
 				$(" img .slide").hide();
 				$(" img .slide").eq(next).show();
 			});
-		});    
+		}); 
+		$(document).ready(function(){
+			var body = $('body');
+			$('.has-matchHeight', body).matchHeight();
+		
+
+		})  ; 
 
 		
 		// end book lich
@@ -676,11 +682,12 @@
 									foreach ($data_hotel as $value)
 									 {
 										?>
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 										<div class="item">
 											<div class="thumb">
 												
-												<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
+												<img class="im1 
+												 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>
