@@ -110,13 +110,13 @@
 						</h2>
 						<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120"  >
 							
-							<div class="cut-gradient"></div>
+							
 							<?php foreach ($data_hotel as  $value) {
 								
 							 ?>
 							<p class="more-content"><?php echo $value['description']; ?></p>
 							<?php } ?>
-								
+								<div class="cut-gradient"></div>
 						</div>
 						<script>	
 							$(".more-content").shorten({

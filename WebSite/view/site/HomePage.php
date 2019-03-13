@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Home Page</title>
+      <script type="text/javascript" src="public/js/khanh.js"></script>
      <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
 
   

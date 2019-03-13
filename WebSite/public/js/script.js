@@ -100,7 +100,17 @@ $(function() {
 	});
 });
 
-
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 611) {
+        $('.widget').addClass('fixed');
+    } 
+    if ($(window).scrollTop() >= 2500) {
+        $('.widget').removeClass('fixed');
+    }
+     if ($(window).scrollTop() < 611) {
+        $('.widget').removeClass('fixed');
+    }
+});
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 611) {
         $('.widgetroom').addClass('fixed');

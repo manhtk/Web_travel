@@ -10,8 +10,9 @@
   <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="public/js/khanh.js"></script>
 <link rel="stylesheet" type="text/css" href="public/css/room.css">
-<script type="text/javascript" src="public/khanh.js" ></script>
+ 
   <!-- end header -->
   <div class="clear"></div>
   <!-- content -->
