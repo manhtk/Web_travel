@@ -53,11 +53,8 @@ class Room_Model extends Model {
         return $data;
 
     }
-    public function getAmenities($limit = false){
+    public function getAmenities($room_id){
         $sql = "SELECT * from serviceconn inner join room on serviceconn.room_id_or_hotel_id = room.room_id inner join service on serviceconn.service_id = service.service_id where serviceconn.type = 'room'";
-        if($limit && is_numeric($limit)){
-            $sql .= " LIMIT 0,{$limit}";
-        }
         $res = $this->query($sql);
         $data = [];
         if($res->num_rows > 0){
