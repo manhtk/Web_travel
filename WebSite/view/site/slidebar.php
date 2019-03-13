@@ -161,6 +161,11 @@
 
 		
 		// end book lich
+		$(document).ready(function(){
+			var body = $('body');
+			
+			$('.has-matchHeight', body).matchHeight(); 
+		});
 	</script>
 </head>
 <body>
@@ -668,7 +673,7 @@
 									foreach ($data_hotel as $value)
 									 {
 										?>
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 										<div class="item">
 											<div class="thumb">
 												
