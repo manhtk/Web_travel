@@ -101,6 +101,9 @@ body
 {
 	margin-bottom: 10px;
 }
+.st-hotel-header .left .sub-heading i {
+	color:#A0A9B2;font-size: 18px;margin-right: 5px
+}
 #write-review
 {
 	color: #5E6D77;
@@ -150,8 +153,8 @@ body
 }
 .broom i
 {
-	border: 1px solid #EAEEF3;
-	border-radius: 5px;
+	
+	
 	font-size: 20px;
 	padding: 6px 8px;
 }
@@ -165,8 +168,7 @@ body
 }
 .sroom i
 {
-	border: 1px solid #EAEEF3;
-	border-radius: 5px;
+	
 	font-size: 20px;
 	padding: 6px 8px;
 }
@@ -615,6 +617,8 @@ font-size: 14px;
 {		
 	float: right;
 }
+
+
 .st-hotel-header .review-score 
 {
 	line-height: 50px;
@@ -647,6 +651,7 @@ font-size: 14px;
 	line-height: 13px;
 	margin-top: 11px;
 	margin-bottom: 5px;
+	font-size: 24px;
 }
 .st-hotel-header .review-score .head span.text-rating {
 	color: #5191FA;
@@ -819,6 +824,7 @@ font-size: 14px;
 }
 .reviews .square
 {
+	height: 346px;
 	border:1px solid #eeeeee;
 	border-radius: 5px;
 	padding: 20px 20px;
@@ -854,6 +860,9 @@ font-size: 14px;
 	margin-top: 10px;
 	color: #768090;
 	font-size: 14px;
+}
+.reviews .review-box-score .review-score-base span {
+	color: #5191FA;
 }
 .reviews .square .heading {
     font-size: 18px;
@@ -893,6 +902,24 @@ font-size: 14px;
 	height: 8px;
 	background: #5191FA;
 	border-radius: 10px;
+}
+.reviews .item .progress  .darkgreen{
+	width: 100%;
+}
+.reviews .item .progress .location{
+	width: 94%;
+}
+.reviews .item .progress .service{
+	width: 86%;
+}
+.reviews .item .progress .clearness{
+	width: 100%;
+}
+.reviews .item .progress .room{
+	width: 100%;
+}
+.reviews .item .progress .sleep{
+	width: 94%;
 }
 .reviews .item .label {
 	position: relative;
@@ -972,6 +999,11 @@ font-size: 14px;
 .review-list .media-body
 {
 	padding-left: 10px;
+}
+.reviews .summarys
+{
+	text-align: center;
+	margin-top: 5%;
 }
 /*end review*/
 

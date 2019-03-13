@@ -56,7 +56,7 @@
 							
 						 ?>
 						 <?php if(!empty($value['city_name']) || !empty($value['country'])) { ?>
-						<i class="fa fa-map-marker" style="color:#A0A9B2;font-size: 18px;margin-right: 5px " aria-hidden="true"></i>
+						<i class="fa fa-map-marker"  aria-hidden="true"></i>
                     	<?php } ?>
                         <span><?php echo htmlspecialchars($value['city_name']); ?>
                          <?php if(!empty(htmlspecialchars($value['city_name'])) && !empty(htmlspecialchars($value['country']))){ ?>
@@ -70,7 +70,7 @@
 					<div class="review-score">
 						<div class="head clearfix">
 							<div class="left">
-								<span class="head-rating" style="font-size: 24px">Excellent</span>
+								<span class="head-rating" >Excellent</span>
 								<span class="text-rating">from 2 reviews</span>
 							</div>
 							<div class="score">
@@ -217,7 +217,7 @@
 					<!--  -->
 					<div class="sroom">
 						<h2 class="st-heading-section">Rooms
-							<i style="border: none;" class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
+							<i  class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
 						</h2>
 						<div class="container-fluid roomsm">
 							<?php foreach ($data_room as $v) {
@@ -268,7 +268,7 @@
 					<!--  -->
 					<div class="broom">
 						<h2 class="st-heading-section">Rooms
-							<i class="fa fa-angle-down down-icon2" aria-hidden="true" style="border: none;"></i>
+							<i class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
 						</h2>
 						<div class="roomlg">
 							<?php foreach ($data_room as$v) {
@@ -327,23 +327,23 @@
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-xs-12 col-sm-4 reviews-score"  >
-									<div class="square" style="height: 346px;">
+									<div class="square">
 										<h2 class="heading">Review score</h2>
 										<div class="review-box-score">
 											<div class="review-score">4.7<span class="per-total">/5</span></div>
 											<div class="review-score-text">Excellent</div>
 											<div class="review-score-base">
-												Based on<span style="color: #5191FA;"> 3 reviews</span>
+												Based on<span> 3 reviews</span>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-4 rating" >
-									<div class="square" style="height: 346px;">
+									<div class="square" >
 										<h2 class="heading">Traveler rating</h2>
 										<div class="item">
 											<div class="progress">
-												<div class="percent green" style="width: 0%;"></div>
+												<div class="percent green" "></div>
 											</div>
 											<div class="label">
 												Excellent <div class="number">0</div>
@@ -351,7 +351,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent darkgreen" style="width: 100%;"></div>
+												<div class="percent darkgreen" ></div>
 											</div>
 											<div class="label">
 												Very Good <div class="number">3</div>
@@ -359,7 +359,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent yellow" style="width: 0%;"></div>
+												<div class="percent green" ></div>
 											</div>
 											<div class="label">
 												Average <div class="number">0</div>
@@ -367,7 +367,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent orange" style="width: 0%;"></div>
+												<div class="percent green" ></div>
 											</div>
 											<div class="label">
 												Poor <div class="number">0</div>
@@ -375,7 +375,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent red" style="width: 0%;"></div>
+												<div class="percent green" ></div>
 											</div>
 											<div class="label">
 												Terrible <div class="number">0</div>
@@ -388,7 +388,7 @@
 										<h2 class="heading">Summary</h2>
 										<div class="item">
 											<div class="progress">
-												<div class="percent" style="width: 93.3333333333%;"></div>
+												<div class="percent location" ></div>
 											</div>
 											<div class="label">
 												Location
@@ -399,7 +399,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent" style="width: 93.3333333333%;"></div>
+												<div class="percent service " ></div>
 											</div>
 											<div class="label">
 												Service 
@@ -410,7 +410,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent" style="width: 86.6666666667%;"></div>
+												<div class="percent clearness" ></div>
 											</div>
 											<div class="label">
 												Clearness 
@@ -421,7 +421,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent" style="width:100%;"></div>
+												<div class="percent room" ></div>
 											</div>
 											<div class="label">
 												Rooms 
@@ -432,7 +432,7 @@
 										</div>
 										<div class="item">
 											<div class="progress">
-												<div class="percent" style="width: 93.3333333333%;"></div>
+												<div class="percent sleep" ></div>
 											</div>
 											<div class="label">
 												Sleep 
@@ -444,7 +444,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="row" style="text-align: center;margin-top: 5%">
+							<div class="row summarys" >
 								<div class="col-md-12">
 									3 reviews on this Hotel - Showing 1 to 3
 								</div>
@@ -576,10 +576,10 @@
 												</div>
 												<div class="row">
 													<div class="col-md-8">
-														<textarea name="comment" class="form-control has-matchHeight" placeholder="Content" style="height: 342px;"></textarea>
+														<textarea name="comment" class="form-control has-matchHeight" placeholder="Content" ></textarea>
 													</div>
 													<div class="col-md-4">
-														<div class="form-group1 review-items has-matchHeight" style="height: 342px;">
+														<div class="form-group1 review-items has-matchHeight" >
 															<div class="item">
 																<label>Sleep</label>
 																<input class="st_review_stats" type="hidden" name="st_review_stats[Sleep]">
@@ -742,10 +742,14 @@
 						<div class="widget-box">
 							<div class="row">
 								<div class="col-sm-4"><img id="avt" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_8-1-37jk0455rmyknqn5gp7uo0.jpg" alt="" /></div>
+								<?php foreach ($data_hotel as $value) {
+									
+								 ?>
 								<div class="col-sm-8" style="position: relative;top: 20px;">
-									Travis Tan <br>
+									<?php echo $value['owner']; ?> <br>
 									<a href="">Member Since 2018</a>
 								</div>
+							<?php } ?>
 							</div>
 						</div>
 					</div>					
