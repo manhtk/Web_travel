@@ -11,13 +11,20 @@ class Room extends Controller {
 	{
 		$room_id = '';
 		if(isset($_GET['room_id']))
+		{
 			$room_id = $_GET['room_id'];
-		$res = $this->model->getUsers(4);
-		$room_data = $this->model->getRoom($room_id);
-		$hotel_data = $this->model->getNamehotel($room_data[0]['hotel_id']);
+			$room_data = $this->model->getRoom($room_id);
+			$hotel_data = $this->model->getNamehotel($room_data[0]['hotel_id']);
+			$amenities_data = $this->model->getAmenities($room_id);
+		}
+		else 
+		{
+			$room_data = $this->model->getRoom(2);
+			$hotel_data = $this->model->getNamehotel(2);
+			$amenities_data = $this->model->getAmenities(2);
+		}
 
-		$amenities_data = $this->model->getAmenities($room_id);
-		$this->view->render('site/room', array('data' => $res, 'data_room' => $room_data,'data_hotel' => $hotel_data, 'data_amenities' => $amenities_data));
+		$this->view->render('site/room', array('data_room' => $room_data,'data_hotel' => $hotel_data, 'data_amenities' => $amenities_data));
 	}
 	
 }
