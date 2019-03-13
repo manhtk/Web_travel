@@ -25,7 +25,7 @@
 </svg></i><?php echo $value['city_name'] ?>,<?php echo $value['country'] ?> </p>
      </div>
     <div class="service-right">
-        <img src="<?php echo $value['room_images'] ?> "style =" width: 150px; height: auto ">
+        <img class="img-responsive" src="<?php echo $value['room_images'] ?> "style =" width: 150px; height: auto ">
             </div>
 </div>
 <?php } ?>
