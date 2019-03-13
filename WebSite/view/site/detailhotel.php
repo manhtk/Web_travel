@@ -143,7 +143,7 @@
                                       
 									</div>
 										  <?php } ?>			
-								<div class="showfaciliti" style="display: none;">
+								<div class="showfaciliti">
 										<div class="col-xs-4 fac" ><i class="fa fa-product-hunt" aria-hidden="true"></i> Parking</div>
 										<div class="col-xs-4 fac" ><i class="fa fa-bath" aria-hidden="true"></i> Pool</div>
 										<div class="col-xs-4 fac" ><i class="fa fa-home" aria-hidden="true"></i> Restaurant</div>
@@ -384,7 +384,7 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-4 summary" >
-									<div class="square" style="height: 346px;">
+									<div class="square" >
 										<h2 class="heading">Summary</h2>
 										<div class="item">
 											<div class="progress">
@@ -696,7 +696,7 @@
 													</div>
 
 													<div class="formbook" >
-														<div class="people-dropdown aaa" style="display: block;" >
+														<div class="people-dropdown aaa"  >
 															<div class="item gmz-number-wrapper">
 																Rooms
 																<span class="control minus">-</span>

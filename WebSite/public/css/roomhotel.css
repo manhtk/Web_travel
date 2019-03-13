@@ -151,6 +151,9 @@ body
 {
 	font-size: 20px;
 }
+.facilities .showfaciliti{
+	display: none;
+}
 .broom i
 {
 	
@@ -339,7 +342,7 @@ a.morelink
 }
 
 .field_people_room .people-dropdown {
-	display: none;
+	display: block;
 	z-index: 1;
 	padding: 20px 20px;
 	border: none;
