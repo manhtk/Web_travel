@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+      <script type="text/javascript" src="public/js/khanh.js"></script>
+     <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
 
   
     <div class="clear"></div>
@@ -81,8 +86,8 @@
                                                                 <div class="people-group">
                                                                 <span class="label">
                                                                     <span class="value">
-                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>,
-                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Child</span>
+                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>
+                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Children</span>
                                                                         <i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
                                                                     </span>
                                                                 </span>
@@ -288,7 +293,7 @@
                                         <div class="col-xs-6 col-sm6 col-md-3 col-lg-3 has-matchHeight">
                                             <div class="row-content">
                                                 <div class="wpb-content-image">
-                                                    <a href="#">
+                                                    <a href="?c=detailhotel&a=view&hotel_id=<?php echo $values['hotel_id']?>">
                                                         <img src="<?php echo $values['images']; ?>" >
                                                     </a>
                                                     <div class="review-star">

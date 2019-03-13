@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>HomePage</title>
@@ -15,8 +15,8 @@
     
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-     <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
+    
+     
     <link rel="stylesheet" type="text/css" href="public/css/cart.css">
     
 
@@ -30,13 +30,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
  <script type="text/javascript" src="public/js/jquery.matchHeight.js" ></script> 
 
-      <script type="text/javascript" src="public/js/khanh.js"></script>
+    
 
    
 </head>
 <body>
 <div id="HomePage">
-
     <!-- header -->
     <header>
         <div class="topbar">
@@ -57,8 +56,15 @@
                 </div>
                 <div class="topbar-right">
                     <ul class="st-list topbar-items">
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../login">Login</a></li>
-                        <li style="border-right: 1px solid rgba(255, 255, 255, 0.2);"><a href="../../register">Sign up</a></li>
+                        <?php if(isset($_SESSION['currUser'])){ ?>
+                        <li ><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
+
+                        <?php }else{
+                            ?>
+                        <li><a href="../../login">Login</a></li>
+                            <?php
+                        } ?>
+                        <li "><a href="../../register">Sign up</a></li>
                         <li class="dropdown dropdown-currency hidden-sm hidden-xs">
                             <a href="#">EUR<i class="fa fa-angle-down"></i></a>
                             <ul class="dropmenu">
@@ -106,7 +112,7 @@
                                         <li><a href="?c=detailhotel&a=view">Hotel Detail 1</a></li>
                                         <li><a href="#">Hotel Detail 2</a></li>
                                         <li><a href="#">Hotel Detail 3</a></li>
-                                        <li><a href="../../view/site/roomdetail1.php">Room Detail 1</a></li>
+                                        <li><a href="?c=room&a=view">Room Detail 1</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">HOUSE<i class="fa fa-angle-down"></i></a>

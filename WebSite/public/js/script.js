@@ -1,5 +1,16 @@
 ﻿// dao nguoc
 $(document).ready(function(){
+	var body = $('body');
+		
+
+			$('.has-matchHeight', body).matchHeight();
+});
+$(document).ready(function(){
+	$('.btn').click(function(){
+		$('.price-room').show();
+	});
+});
+$(document).ready(function(){
 	$(".more-content").click(function(){
 		$(".cut-gradient").fadeToggle();
 	});
@@ -99,20 +110,18 @@ $(function() {
 		}
 	});
 });
-// chạy form
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 332) {
+    if ($(window).scrollTop() >= 611) {
         $('.widget').addClass('fixed');
     } 
     if ($(window).scrollTop() >= 2500) {
         $('.widget').removeClass('fixed');
     }
-     if ($(window).scrollTop() < 332) {
+     if ($(window).scrollTop() < 611) {
         $('.widget').removeClass('fixed');
     }
 });
-
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 611) {
         $('.widgetroom').addClass('fixed');

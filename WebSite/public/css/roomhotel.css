@@ -155,6 +155,14 @@ body
 	font-size: 20px;
 	padding: 6px 8px;
 }
+.broom .price-room 
+{
+	display: none;
+}
+.sroom .price-room 
+{
+	display: none;
+}
 .sroom i
 {
 	border: 1px solid #EAEEF3;
@@ -195,6 +203,7 @@ a.morelink
 {
 	position: fixed;
 	top: 0;
+	
 }
 /*widget*/
 .widgets
@@ -215,6 +224,13 @@ a.morelink
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;
 	background: #fff;
+	color: #5E6D77;
+    font-size: 14px;
+}
+.money-price{
+	color: #1A2B48;
+	font-size: 18px;
+	font-weight: 500;
 }
 .widgets #check
 {
@@ -587,7 +603,7 @@ font-size: 14px;
 .st-hotel-header .left
 {
 	font-size: small;
-	width: auto;
+	width: 75%;
 	float:left;
 }
 .st-hotel-header .left .st-stars  {
@@ -762,6 +778,12 @@ font-size: 14px;
 .broom a
 {
 	color: #1A2B48;
+	font-size: 18px;
+}
+.broom a:hover
+{
+	color: #337ab7;
+	
 }
 .broom .sheration 
 {
@@ -778,7 +800,7 @@ font-size: 14px;
 {
 	padding: 0;
 }
-.broom .btn button
+.broom .btn 
 {
 	background: #FA5636;
 	color: #FFF;
@@ -1112,126 +1134,7 @@ font-size: 14px;
 
 /*end content*/
 /**/
-/*start footer*/
-.mailchimp {
-	padding-top: 65px;
-	padding-bottom: 40px;
-	background: #F5F5F5;
-}
-.mailchimp .media {
-	overflow: visible;
-}
 
-.mailchimp .media .media-object {
-	position: relative;
-	top: -10px; 
-}
-
-.main-footer-sub {
-	padding-top: 10px;
-	padding-bottom: 30px; 
-}
-
-.subcribe-form 
-{
-	position: relative; 
-}
-.subcribe-form .form-control {
-	height: 55px;
-	line-height: 53px;
-	font-size: 14px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border-color: #D7DCE3;
-}
-.subcribe-form input[type="submit"] 
-{
-	border: none;
-	border-radius: 0 5px 5px 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 55px;
-	line-height: 55px;
-	color: #FFF;
-	background: #5191FA;
-	padding-left: 25px;
-	padding-right: 25px;
-	font-weight: 600;
-	text-transform: uppercase; 
-}
-
-#description-tab img
-{
-	max-width: 100%; 
-}
-
-.fs-28 h2 {
-	font-size: 28px; 
-}
-.f24 
-{
-	font-size: 24px !important;
-}
-.f16 
-{
-	font-size: 16px !important;
-}
-.c-grey 
-{
-	color: #5E6D77 !important;
-}
-#footer_content
-{
-	padding-top: 61.3px;
-	padding-left: 40px;
-	min-height: 450px;
-}
-#footer_content .footer_content_header
-{
-
-	font-size: 14px;
-	color: #1A2B48;
-	font-weight: 500;
-}
-#footer_content .footer_content_element 
-{
-	border-left: 3px solid #5191FA ;
-	margin-top: 20px;
-}
-#footer_content .footer_content_element .footer_content_element1
-{
-	font-family:Poppins-Regular;
-	font-size: 14px;
-	color: #5E6D77;
-	padding-left: 15px;
-}
-#footer_content .footer_content1_element 
-{
-	margin-top: 20px;
-}
-#footer_content .footer_content1_element .footer_content1_element1
-{
-	
-	font-size: 14px;
-	color: #1A2B48 ;
-}
-.footer_sub
-{
-	border-top: 1px solid #DDDDDD;
-}
-.footer_sub .footer_sub_L 
-{
-	padding-top: 30px;
-	font-size: 15px; 
-	color: #768092;
-	padding-left: 25px;
-}
-.footer_sub .footer_sub_R 
-{
-	padding-top: 20px;
-}
-/*end footer*/
 
 @media screen and (max-width:1199px)
 {
@@ -1332,7 +1235,7 @@ font-size: 14px;
 	.st-hotel-header .left
 	{
 		font-size: small;
-		width: auto;
+		width: 75%;
 		float:left;
 	}
 	.st-hotel-header .left .st-stars  {
@@ -1481,6 +1384,7 @@ font-size: 14px;
 {
 	display: block;
 }
+
 .broom a
 {
 	color: #1A2B48;
@@ -1500,7 +1404,7 @@ font-size: 14px;
 {
 	padding: 0;
 }
-.broom .btn button
+.broom  .btn
 {
 	background: #FA5636;
 	color: #FFF;
@@ -1510,6 +1414,7 @@ font-size: 14px;
 	border-radius: 5px;
 	border: none;
 }
+ 
 /*rooms*/
 /*review*/
 .reviews
@@ -1684,6 +1589,7 @@ font-size: 14px;
 	border-bottom: 1px solid #f1f1f1;
 	background: #fff;
 }
+
 .widgets #check
 {
 	height: 84px;
@@ -2327,7 +2233,7 @@ font-size: 14px;
 	{
 		padding: 0;
 	}
-	.sroom .btn button
+	.sroom  button
 	{
 		background: #FA5636;
 		color: #FFF;
@@ -2753,7 +2659,7 @@ font-size: 14px;
 	{
 		padding: 26px;
 	}
-	.sroom .btn button
+	.sroom .btn 
 	{
 		background: #FA5636;
 		color: #FFF;
