@@ -6,6 +6,11 @@ $(document).ready(function(){
 			$('.has-matchHeight', body).matchHeight();
 });
 $(document).ready(function(){
+	$('.btn').click(function(){
+		$('.price-room').show();
+	});
+});
+$(document).ready(function(){
 	$(".more-content").click(function(){
 		$(".cut-gradient").fadeToggle();
 	});

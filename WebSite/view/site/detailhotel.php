@@ -236,26 +236,28 @@
 											<div class="col-xs-2">
 												<i class="fa fa-bath" aria-hidden="true"></i>
 												<br>
-												<span>250m<sup>2</sup></span>
+												<span><?php echo $v['size'];  ?>m<sup>2</sup></span>
 											</div>
 											<div class="col-xs-2">
 												<i class="fa fa-bed" aria-hidden="true"></i>
 												<br>
-												<span>x3</span>
+												<span>x<?php echo $v['bed'];  ?></span>
 											</div>
 											<div class="col-xs-2">
 												<i class="fa fa-venus-double" aria-hidden="true"></i>
 												<br>
-												<span>x4</span>
+												<span>x<?php echo $v['people'];  ?></span>
 											</div>
 											<div class="col-xs-2">
 												<i class="fa fa-child" aria-hidden="true"></i>
 												<br>
-												<span>x4</span>
+												<span>x<?php echo $v['people'];  ?></span>
 											</div>
 										</div>
-										<div class="col-xs-12 col-md-4 btn">
-											<button>SHOW PRICE</button>
+										<div class="col-xs-12 col-md-4 ">
+											<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
+
+												<button class="btn"  style="">SHOW PRICE</button>
 										</div>
 									</div>
 								</div>
@@ -282,31 +284,39 @@
 												<div class="col-sm-2">
 													<i class="fa fa-bath" aria-hidden="true"></i>
 													<br>
-													<span>250m<sup>2</sup></span>
+													<span><?php echo $v['size'] ?>m<sup>2</sup></span>
 												</div>
 												<div class="col-sm-2">
 													<i class="fa fa-bed" aria-hidden="true"></i>
 													<br>
-													<span>x3</span>
+													<span>x<?php echo $v['bed'];  ?></span>
 												</div>
 												<div class="col-sm-2">
 													<i class="fa fa-venus-double" aria-hidden="true"></i>
 													<br>
-													<span>x4</span>
+													<span>x<?php echo $v['people'];  ?></span>
 												</div>
 												<div class="col-sm-2">
 													<i class="fa fa-child" aria-hidden="true"></i>
 													<br>
-													<span>x4</span>
+													<span>x<?php echo $v['people'];  ?></span>
 												</div>
-												<div class="col-sm-4"></div>
+												
 											</div>
-											<div class="col-sm-4 btn" ><button>SHOW PRICE</button></div>
+
+											<div class="col-sm-4 " >
+												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
+
+												<button class="btn"  style="">SHOW PRICE</button>
+												
+											</div>
 										</div>
 									</div>                 
 								</div>
 							</div>
+
 							<?php } ?>
+							
 						</div>
 					</div>
 					<!-- end room -->
@@ -650,9 +660,13 @@
 					<div class="widget">
 						<div class="widgets" >
 							<div class="" id="money">
-								<div class="col-md-12" >
-									from <strong style="color: #1A2B48;font-size: 18px;font-weight: 600">$565</strong> per night
+								<?php foreach ($data_hotel as $value) {
+									
+								?>
+								<div class="col-md-12 " >
+									from <span class="money-price" >€<?php echo $value['hotel_price'] ?></span> /night
 								</div>
+							<?php } ?>
 							</div>   
 							<div class="" id="check">
 								<div class="col-md-12">

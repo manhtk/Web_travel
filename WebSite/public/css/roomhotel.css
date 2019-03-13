@@ -155,7 +155,14 @@ body
 	font-size: 20px;
 	padding: 6px 8px;
 }
-
+.broom .price-room 
+{
+	display: none;
+}
+.sroom .price-room 
+{
+	display: none;
+}
 .sroom i
 {
 	border: 1px solid #EAEEF3;
@@ -217,11 +224,13 @@ a.morelink
 	width: 100%;
 	border-bottom: 1px solid #f1f1f1;
 	background: #fff;
+	color: #5E6D77;
+    font-size: 14px;
 }
-span.money-price{
+.money-price{
 	color: #1A2B48;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .widgets #check
 {
@@ -769,6 +778,12 @@ font-size: 14px;
 .broom a
 {
 	color: #1A2B48;
+	font-size: 18px;
+}
+.broom a:hover
+{
+	color: #337ab7;
+	
 }
 .broom .sheration 
 {
@@ -785,7 +800,7 @@ font-size: 14px;
 {
 	padding: 0;
 }
-.broom .btn button
+.broom .btn 
 {
 	background: #FA5636;
 	color: #FFF;
@@ -1369,6 +1384,7 @@ font-size: 14px;
 {
 	display: block;
 }
+
 .broom a
 {
 	color: #1A2B48;
@@ -1388,7 +1404,7 @@ font-size: 14px;
 {
 	padding: 0;
 }
-.broom .btn button
+.broom  .btn
 {
 	background: #FA5636;
 	color: #FFF;
@@ -1398,6 +1414,7 @@ font-size: 14px;
 	border-radius: 5px;
 	border: none;
 }
+ 
 /*rooms*/
 /*review*/
 .reviews
@@ -2216,7 +2233,7 @@ font-size: 14px;
 	{
 		padding: 0;
 	}
-	.sroom .btn button
+	.sroom  button
 	{
 		background: #FA5636;
 		color: #FFF;
@@ -2642,7 +2659,7 @@ font-size: 14px;
 	{
 		padding: 26px;
 	}
-	.sroom .btn button
+	.sroom .btn 
 	{
 		background: #FA5636;
 		color: #FFF;
