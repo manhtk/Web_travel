@@ -368,7 +368,7 @@ $(document).ready(function(){
  // end dowwn
  $(document).ready(function(){
  	$(".showmore").click(function(){
- 		$(".showfaciliti").slideToggle();
+ 		$(".room-facility").toggleClass('more');
  	});
  });
 // hide forrm book 
