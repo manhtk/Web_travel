@@ -16,6 +16,7 @@
  			require_once $file_model;
  			$name_model = $name .'_model';
  			$this->model = new $name_model();
+ 			
  		}
  	}
  	
@@ -23,3 +24,4 @@
  }
 
  ?>
+ 

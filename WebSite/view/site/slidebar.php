@@ -2,8 +2,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web slide</title>
-	<meta charset="UTF-8">
-	<title>Web-hotel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
 	 
@@ -157,7 +155,13 @@
 				$(" img .slide").hide();
 				$(" img .slide").eq(next).show();
 			});
-		});    
+		}); 
+		$(document).ready(function(){
+			var body = $('body');
+			$('.has-matchHeight', body).matchHeight();
+		
+
+		})  ; 
 
 		
 		// end book lich
@@ -560,6 +564,16 @@
 													<span class="caret"></span></p>
 													<ul class="dropdown-menu layout-list" role="menu" aria-labelledby="menu1">
 														<form action="" method="GET">
+															<?php 
+															$get_data = $_GET;
+															
+															if(!empty($get_data)){
+																foreach ($get_data as $key => $value) {
+																	echo '<input type="hidden" name="'. $key .'" value="'. $value .'" />';
+																}
+															}
+															 ?>
+														
 														<div class="row">
 															<div class="col-sm-12">
 																<span class="layout-title1">
@@ -613,7 +627,7 @@
 															<div class="col-sm-12 layout-list-item">
 																<li role="presentation">
 
-																	<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="nameaz" />
+																	<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="name_az" />
 
 																	<span class="layout-check-content" >a-z</span> 
 
@@ -624,7 +638,7 @@
 															<div class="col-sm-12 layout-list-item">
 																<li role="presentation">
 
-																	<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="nameza"/>
+																	<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="name_za"/>
 
 																	<span class="layout-check-content" >z-a</span> 
 
@@ -668,11 +682,12 @@
 									foreach ($data_hotel as $value)
 									 {
 										?>
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 										<div class="item">
 											<div class="thumb">
 												
-												<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
+												<img class="im1 
+												 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
 											</div>
 											<div class="icon-position">
 												<i class="fas fa-heart img heart"></i>

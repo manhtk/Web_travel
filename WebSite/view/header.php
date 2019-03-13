@@ -103,7 +103,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="#">Full Map Layout</a></li>
                                         <li><a href="#">Half Map Layout</a></li>
-                                        <li><a href="index.php?c=slidebar&a=view">Sidebar layout</a></li>
+                                        <li><a href="?c=slidebar&a=view">Sidebar layout</a></li>
 
                                     </ul>
                                 </li>
