@@ -161,6 +161,11 @@
 
 		
 		// end book lich
+		$(document).ready(function(){
+			var body = $('body');
+			
+			$('.has-matchHeight', body).matchHeight(); 
+		});
 	</script>
 </head>
 <body>
@@ -560,6 +565,15 @@
 													<span class="caret"></span></p>
 													<ul class="dropdown-menu layout-list" role="menu" aria-labelledby="menu1">
 														<form action="" method="GET">
+															<?php 
+															$get_data = $_GET;
+															
+															if(!empty($get_data)){
+																foreach ($get_data as $key => $value) {
+																	echo '<input type="hidden" name="'. $key .'" value="'. $value .'" />';
+																}
+															}
+															 ?>
 														<div class="row">
 															<div class="col-sm-12">
 																<span class="layout-title1">
@@ -668,7 +682,7 @@
 									foreach ($data_hotel as $value)
 									 {
 										?>
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 										<div class="item">
 											<div class="thumb">
 												
