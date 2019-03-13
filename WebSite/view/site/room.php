@@ -68,7 +68,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-10 col-xs-12">
             <div class="double-room">
-              <h2 class="st-heading"><?php echo $values['content']; ?></h2>
+              <h2 class="st-heading"><?php echo $values['room_name']; ?></h2>
               <div class="sub-heading">
                 <i class="fas fa-map-marker-alt" style="color:#A0A9B2;font-size: 18px; "></i><span> Hotel :    
                     <?php
@@ -399,7 +399,7 @@
             </h4>
           </div>
           <!-- end write -->
-        </div>
+        </div></div>
         <div class="col-md-3 abc"  >
           <!-- widget -->
           <div class="container-fluid widgetroom">
