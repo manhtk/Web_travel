@@ -35,7 +35,7 @@
         <li>
             <span class="lable_section">Date : </span>
             <span class="value">
-                05/03/2019-06/03/2019
+                <?php echo $cart_data['startday'].'-'.$cart_data['endday'] ?>
                 <a class="st-link" style="font-size: 12px;" href="#">Edit</a>
             </span>
             <div class="detail">

@@ -196,7 +196,6 @@
                               
                             </div> 
                             <?php
-                            dd($values);
                         }?>
                     <?php } ?> 
                      

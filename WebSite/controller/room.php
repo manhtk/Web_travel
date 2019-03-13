@@ -13,7 +13,7 @@ class Room extends Controller {
 		if(isset($_GET['room_id']))
 		{
 			$room_id = $_GET['room_id'];
-			$room_data = $this->model->getRoom($room_id, 4);
+			$room_data = $this->model->getRoom($room_id);
 			$hotel_data = $this->model->getNamehotel($room_data[0]['hotel_id']);
 			$amenities_data = $this->model->getAmenities($room_id);
 		}
