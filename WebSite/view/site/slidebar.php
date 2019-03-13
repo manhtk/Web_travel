@@ -163,7 +163,6 @@
 		// end book lich
 		$(document).ready(function(){
 			var body = $('body');
-			
 			$('.has-matchHeight', body).matchHeight(); 
 		});
 	</script>
@@ -565,15 +564,6 @@
 													<span class="caret"></span></p>
 													<ul class="dropdown-menu layout-list" role="menu" aria-labelledby="menu1">
 														<form action="" method="GET">
-															<?php 
-															$get_data = $_GET;
-															
-															if(!empty($get_data)){
-																foreach ($get_data as $key => $value) {
-																	echo '<input type="hidden" name="'. $key .'" value="'. $value .'" />';
-																}
-															}
-															 ?>
 														<div class="row">
 															<div class="col-sm-12">
 																<span class="layout-title1">
