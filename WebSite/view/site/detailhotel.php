@@ -220,14 +220,17 @@
 							<i style="border: none;" class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
 						</h2>
 						<div class="container-fluid roomsm">
+							<?php foreach ($data_room as $v) {
+								
+							 ?>
 							<div class="row sheration">
 								<div class="col-xs-12 col-md-4 images">
 									<div class="image">
-										<img src="https://homap.travelerwp.com/wp-content/uploads/2017/06/hotel-1330846_960_720-1-800x600.jpg" alt="" class="img-responsive img-full">
+										<img src=" <?php echo $v['room_images'] ?> "  class="img-responsive ">
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-8">
-									<h2 style="font-size: 18px;color:#1A2B48"><a href="" style="color: black;">Room Sheraton Hotel</a></h2>
+									<h2 ><a href="" ><?php echo $v['room_name']; ?></a></h2>
 									<div class="row">
 										<div class="col-xs-12 col-md-8 inf" >
 											<div class="col-xs-2">
@@ -257,80 +260,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="row sheration">
-								<div class="col-xs-12 col-md-4 images">
-									<div class="image">
-										<img src="https://homap.travelerwp.com/wp-content/uploads/2014/12/75997_18101122430068443476-800x600.jpg" alt="" class="img-responsive img-full">
-									</div>
-								</div>
-								<div class="col-xs-12 col-md-8">
-									<h2 style="font-size: 18px;color:#1A2B48"><a href="" style="color: black;">Double Room With Town View</a></h2>
-									<div class="row">
-										<div class="col-xs-12 col-md-8 inf" >
-											<div class="col-xs-2">
-												<i class="fa fa-bath" aria-hidden="true"></i>
-												<br>
-												<span>200m<sup>2</sup></span>
-											</div>
-											<div class="col-xs-2">
-												<i class="fa fa-bed" aria-hidden="true"></i>
-												<br>
-												<span>x2</span>
-											</div>
-											<div class="col-xs-2">
-												<i class="fa fa-venus-double" aria-hidden="true"></i>
-												<br>
-												<span>x3</span>
-											</div>
-											<div class="col-xs-2">
-												<i class="fa fa-child" aria-hidden="true"></i>
-												<br>
-												<span>x4</span>
-											</div>
-										</div>
-										<div class="col-xs-12 col-md-4 btn">
-											<button>SHOW PRICE</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row sheration">
-								<div class="col-xs-12 col-md-4 images">
-									<div class="image">
-										<img src="https://homap.travelerwp.com/wp-content/uploads/2014/12/735242_17013103030050668721-800x600.jpg" alt="" class="img-responsive img-full">
-									</div>
-								</div>
-								<div class="col-xs-12 col-md-8">
-									<h2 style="font-size: 18px;color:#1A2B48"><a href="" style="color: black;">Room Sheraton Hotel</a></h2>
-									<div class="row">
-										<div class="col-xs-12 col-md-8 inf" >
-											<div class="col-xs-2">
-												<i class="fa fa-bath" aria-hidden="true"></i>
-												<br>
-												<span>26m<sup>2</sup></span>
-											</div>
-											<div class="col-xs-2">
-												<i class="fa fa-bed" aria-hidden="true"></i>
-												<br>
-												<span>x2</span>
-											</div>
-											<div class="col-xs-2">
-												<i class="fa fa-venus-double" aria-hidden="true"></i>
-												<br>
-												<span>x6</span>
-											</div>
-											<div class="col-xs-2">
-												<i class="fa fa-child" aria-hidden="true"></i>
-												<br>
-												<span>x6</span>
-											</div>
-										</div>
-										<div class="col-xs-12 col-md-4 btn">
-											<button>SHOW PRICE</button>
-										</div>
-									</div>
-								</div>
-							</div> 	
+							<?php } ?>
 						</div>
 					</div>
 					<!--  -->
@@ -339,11 +269,14 @@
 							<i class="fa fa-angle-down down-icon2" aria-hidden="true" style="border: none;"></i>
 						</h2>
 						<div class="roomlg">
+							<?php foreach ($data_room as$v) {
+								
+							 ?>
 							<div class="row sheration"  >
-								<div class="col-sm-4 edit" ><img src="<../../libs/Images/Hotel Stanford.jpg" width="270px" height="203px" alt=""></div>
+								<div class="col-sm-4 edit" ><img src=" <?php echo $v['room_images'] ?> " class="img-responsive "   alt=""></div>
 								<div class="col-sm-8">
 									<div >
-										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Room Sheraton Hotel</a></h2>
+										<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> "><?php echo $v['room_name'] ?></a></h2>
 										<div class="row" class="">
 											<div class="col-sm-8">
 												<div class="col-sm-2">
@@ -373,74 +306,7 @@
 									</div>                 
 								</div>
 							</div>
-							<div class="row sheration"  >
-								<div class="col-sm-4 edit" ><img src="<../../libs/Images/Hotel Ascot Opera.jpg" width="270px" height="203px" alt=""></div>
-								<div class="col-sm-8">
-									<div >
-										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Double Room With Town View</a></h2>
-										<div class="row" class="">
-											<div class="col-sm-8">
-												<div class="col-sm-2">
-													<i class="fa fa-bath" aria-hidden="true"></i>
-													<br>
-													<span>200m<sup>2</sup></span>
-												</div>
-												<div class="col-sm-2">
-													<i class="fa fa-bed" aria-hidden="true"></i>
-													<br>
-													<span>x2</span>
-												</div>
-												<div class="col-sm-2">
-													<i class="fa fa-venus-double" aria-hidden="true"></i>
-													<br>
-													<span>x3</span>
-												</div>
-												<div class="col-sm-2">
-													<i class="fa fa-child" aria-hidden="true"></i>
-													<br>
-													<span>x4</span>
-												</div>
-												<div class="col-sm-4"></div>
-											</div>
-											<div class="col-sm-4 btn" ><button>SHOW PRICE</button></div>
-										</div>
-									</div>                 
-								</div>
-							</div>
-							<div class="row sheration"  >
-								<div class="col-sm-4 edit" ><img src="<../../libs/Images/Dylan Hotel.jpg" width="270px" height="203px" alt=""></div>
-								<div class="col-sm-8">
-									<div >
-										<h2 style="font-size: 18px;color:#1A2B48"><a href="">Standard Double Room</a></h2>
-										<div class="row" class="">
-											<div class="col-sm-8">
-												<div class="col-sm-2">
-													<i class="fa fa-bath" aria-hidden="true"></i>
-													<br>
-													<span>26m<sup>2</sup></span>
-												</div>
-												<div class="col-sm-2">
-													<i class="fa fa-bed" aria-hidden="true"></i>
-													<br>
-													<span>x2</span>
-												</div>
-												<div class="col-sm-2">
-													<i class="fa fa-venus-double" aria-hidden="true"></i>
-													<br>
-													<span>x6</span>
-												</div>
-												<div class="col-sm-2">
-													<i class="fa fa-child" aria-hidden="true"></i>
-													<br>
-													<span>x6</span>
-												</div>
-												<div class="col-sm-4"></div>
-											</div>
-											<div class="col-sm-4 btn" ><button>SHOW PRICE</button></div>
-										</div>
-									</div>                 
-								</div>
-							</div>
+							<?php } ?>
 						</div>
 					</div>
 					<!-- end room -->

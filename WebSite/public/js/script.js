@@ -1,5 +1,11 @@
 ﻿// dao nguoc
 $(document).ready(function(){
+	var body = $('body');
+		
+
+			$('.has-matchHeight', body).matchHeight();
+});
+$(document).ready(function(){
 	$(".more-content").click(function(){
 		$(".cut-gradient").fadeToggle();
 	});

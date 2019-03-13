@@ -57,6 +57,20 @@ class DetailHotel_Model extends Model{
         return $data;
 
     }
+    public function getListRoom($hotel_id)
+    {
+        $sql = " SELECT * FROM room WHERE hotel_id = $hotel_id ";
+
+        $res = $this->query($sql);
+
+        $data = [];
+        if($res->num_rows >0){
+            while ($row = $res->fetch_assoc()) {
+                $data[] = $row;
+            }
+        }
+        return $data;
+    }
        
    
    
