@@ -464,6 +464,11 @@ span.control.minus.children {
 	top:20px;
 	right: -20px;
 }
+.widget-box .owner_name
+{
+	position: relative;
+	top: 20px;
+}
 .people-group .label
 {
 	display: inline;
@@ -1863,6 +1868,7 @@ font-size: 14px;
 	border:1px solid #D7DCE3; 
 	font-size: 12px;
 }
+
 .widget-box #avt 
 {
 	position: relative;
