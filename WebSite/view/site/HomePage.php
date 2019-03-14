@@ -11,20 +11,12 @@
     <div id="banner">
         <div class="container-fuil">
             <div class="banner">
-<<<<<<< HEAD
-                <img src="libs/Images/background.jpg">
-=======
                 <img src="libs/Images/background.jpg" >
->>>>>>> 837b46216ed12ffeedc4ca2d395cc17ff92c9521
                 <div class="container">
                     <div class="row">
                         <div class="wpb_column column_container col-md-12">
                             <div class="vc_column-inner wpb_wrapper">
-<<<<<<< HEAD
-                                <div class="search-form-wrapper">
-=======
                                 <div class="search-form-wrapper" >
->>>>>>> 837b46216ed12ffeedc4ca2d395cc17ff92c9521
                                     <h1 class="st-heading">Find Your Perfect Hotels</h1>
                                     <div class="sub-heading">Get the best prices on 20,000+ properties
                                     </div>
@@ -72,12 +64,7 @@
                                                     <label for="radio-choice-1" class="language text-muted2" >Check In-Out</label><br/>
                                                     <div class="dropdow-list1">
                                                         <label>
-<<<<<<< HEAD
-                                                            <input type="text" name="datetimes" />
-=======
                                                             <input type="text" name="datetimes"  />
->>>>>>> 837b46216ed12ffeedc4ca2d395cc17ff92c9521
-
                                                         </label>
                                                     </div>
                                                 </div>
@@ -103,11 +90,7 @@
                                                                 </span>
                                                                     <div class="formdebook">
                                                                         <div class="row">
-<<<<<<< HEAD
-                                                                            <div class="people-dropdown">
-=======
                                                                             <div class="people-dropdown" >
->>>>>>> 837b46216ed12ffeedc4ca2d395cc17ff92c9521
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
