@@ -222,7 +222,9 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- <?php
+                //dd(base64_encode(json_encode(array_shift($data))));
+                ?> -->
 
                 <input type="hidden" name="st_cart" value="">
                 <div class="alert form_alert hidden"></div>
