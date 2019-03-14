@@ -136,6 +136,17 @@
                     </div>
                 </div>
                 <div class="header1right">
+                    <?php
+                    //$cart = '';
+                    //if(isset($_SESSION['st_cart'])){
+                      //  $cart = $_SESSION['st_cart'];
+                    //}
+
+                    //dd($cart);
+                    //if(isset($_SESSION['st_cart'])){
+                        //unset($_SESSION['st_cart'])
+                    //}
+                    ?>
                     <form action="" method="get" class="header-search hidden-sm">
                         <input type="text" class="form-control" name="s" value="">
                         <i class="fa fa-search"></i>

@@ -37,7 +37,7 @@
                      <span class="lable_section">Date : </span>
                      <span class="value">
                         <?php echo $stss['startday'].'-'.$stss['endday'] ?>
-                        <a class="st-link" style="font-size: 12px;" href="#">Edit</a>
+                        <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $data[0]['room_id']?>">Edit</a>
                     </span>
                     <!-- <div class="detail">
                         <button class="btn btn-primary">
@@ -222,7 +222,9 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- <?php
+                //dd(base64_encode(json_encode(array_shift($data))));
+                ?> -->
 
                 <input type="hidden" name="st_cart" value="">
                 <div class="alert form_alert hidden"></div>

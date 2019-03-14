@@ -10,17 +10,17 @@ class bookcart extends Controller {
 			$_SESSION['st_cart'] = $post_data;
 			header('location: http://webhotel.com:8080/?c=bookcart&a=view');
 		}
-	
+
 		
 		$cart_data = $_SESSION['st_cart'];
 		$key1=$cart_data['room_id'];
 		// dd($cart_data);
 		$key2=$_SESSION['currUser'];
 
-        $res = $this->model->getRoomDetal($key1);
+		$res = $this->model->getRoomDetal($key1);
   //       $array=array_merge($res,$cart_data);
 		// dd($array);
-        $getinfo = $this->model->getInfoUser($key2);
+		$getinfo = $this->model->getInfoUser($key2);
 		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo,'stss'=>$cart_data));
 	}
 	public function checkout(){
@@ -40,36 +40,35 @@ class bookcart extends Controller {
 				$totalmoney,
 				'"' . $order_date . '"'				
 			);
-			
+			$res= $this->model->insertBill($array_insert);	
 		}
 		$key2=$_SESSION['currUser']; 
-		
-		$key1=$cart['room_id'];
-		$get_room = $this->model->getRoomDetal($key1);
-		$res= $this->model->insertBill($array_insert);
 		$search=$this->model->getInfoUser($key2);
 
-		// if(isset($_POST['checkout_submit'])){
-		// 	$post_data = $_POST;
-		// 	unset($post_data['checkout_submit']);
-			
-		// 	unset($_SESSION['st_user']);			
-		// 	$_SESSION['st_user'] = $post_user;
-		// 	header('location: http://webhotel.com:8080/?c=bookcart&a=checkout');
-		// }
-		// dd($post_user);
-		// if(isset($_SESSION['currUser']))
-		// {
-		// 	$array_user = array(
-		// 		$search['user_id'],
-		// 		$_SESSION['currUser'],
-		// 		$search['password'],
-		// 		$search['role'],
-		// 		$post_user[]
-		// 	) 
-		// 	$key = $_SESSION['currUser'];
-		// 	$up = $this->model->updateUser($array_user,$key);
-		// }
+		if(isset($_POST['checkout_submit'])){
+			$post_user = $_POST;
+			$cart = $_SESSION['st_cart'];
+			dd($cart);die;
+			// dd($post_user);die;
+			$this->model->updateUser($post_user);
+			unset($post_user['checkout_submit']);
+
+			dd($post_user);
+			unset($_SESSION['st_user']);			
+			//$_SESSION['st_user'] = $post_user;
+			header('location: http://webhotel.com:8080/?c=bookcart&a=checkout');
+		}
+	
+
+
+
+		$key1=$cart['room_id'];
+		$get_room = $this->model->getRoomDetal($key1);
+		
+		
+
+		
+		
 		$this->view->render('site/cart/booking-success',array('data'=>$res,'list'=>$search,'room'=>$get_room));
 
 		//hàm lấy datenow
