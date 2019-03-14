@@ -98,6 +98,7 @@ body{
 .dropdown-toggle span 
 {
 	color: #5191FA;
+	
 }
 .dropdow-list2
 {
@@ -144,6 +145,7 @@ body{
     font-size: 17px;
     text-align: left;
    margin-left: 60px;
+   cursor: pointer;
 }
 .adult , .child
 {
@@ -169,6 +171,7 @@ body{
 .form-item li
 {
 	padding-left: 23px;
+	cursor: pointer;
 }
 .form-item i
 {
