@@ -9,6 +9,10 @@ body{
 	font-family: 'Poppins';
 
 }
+#banner .container-fuil
+{
+	width: 100%;
+}
 #banner
 {
 	width: 100%;
@@ -95,6 +99,13 @@ body{
     font-size: 16px;
     font-weight: 200;
 }
+.dropdow-list1 label input 
+{
+	color: #5191fa; 
+	border: none; 
+	font-weight: 200;
+	 width: 90%
+}
 .dropdown-toggle span 
 {
 	color: #5191FA;
@@ -107,6 +118,33 @@ body{
     position: absolute;
     left: -5px;
     margin-top: 44px;
+}
+span .adult_values
+{
+	color: #5191FA;
+	font-size: 16px;
+}
+span .child_values
+{
+	color: #5191FA;
+	font-size: 16px;
+}
+.value .fa-angle-up
+{
+	color: #5191FA;
+	font-size: 20px;
+}
+.formdebook .people-dropdown
+{
+	display: block;
+}
+.search-form-style 
+{
+	position: relative;
+}
+.search-form-style .hidden-xs
+{
+	font-weight: 200;
 }
 .people-dropdown
 {    color: #5191FA;
