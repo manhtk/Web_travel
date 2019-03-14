@@ -10,7 +10,9 @@ body
 	font-family: 'Poppins';
 
 }
-
+.ul.st-list.topbar-items{
+	margin-bottom: 0px;
+}
 .widgetroom {
     margin-top: 33px;
 }
@@ -57,9 +59,8 @@ a.morelink
 }
 .fixed{
 	position: fixed;
-	width: 15.3%;
+	width: 17.3%;
 	top: 0px;
-	right: 100px;
 }
 
 
@@ -266,9 +267,18 @@ a.morelink
 	left: 3px;
 	bottom: -8em;
 }
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+
 .btn-cmt{
 	width: 20%;
-	height: 50%;
+
 	line-height: 60px;
 	color: #fff;
 	background: #5191FA;

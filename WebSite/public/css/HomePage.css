@@ -111,8 +111,8 @@ body{
 {    color: #5191FA;
     background: #FFF;
     position: absolute;
-    top: 45px;
-    left: 3px;
+    top: 40px;
+    left: -10px;
     width: 100%;
     /* height: 100px; */
     background: white;
@@ -143,7 +143,7 @@ body{
 	    margin-top: 27px;
     font-size: 17px;
     text-align: left;
-   margin-left: 55px;
+   margin-left: 60px;
 }
 .adult , .child
 {
@@ -842,9 +842,13 @@ body{
         display: none;
 }
 .text-muted2
-{    margin-left: 6%;
+{    margin-left: 5%;
     font-size: 20px;
 
+}
+.dropdown-toggle
+{
+	display: none;
 }
 .text-muted{
 
@@ -884,7 +888,14 @@ body{
 		top: 90%;
 	}
 
-	
+	.dropdown-toggle
+	{
+		margin-left: -25px;
+	}
+	.people-group
+	{
+		margin-left: 20px;
+	}
 	.banner
 	{
 		height: 680px;
@@ -1048,5 +1059,9 @@ body{
     }
 .vc_custom_1542167696382 {
     padding: 10px 15px !important;
+}
+.people-group
+{
+	margin-left: 40px;
 }
 /*end Hompage*/
