@@ -1,3 +1,5 @@
+
+
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -5,174 +7,14 @@
 	<meta charset="UTF-8">
 	<title>Web-hotel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
-	 
-	<!-- link font chu -->
-
-
-	<script>
-		$(function() {
-			$('input[name="daterange"]').daterangepicker({
-				opens: 'right',
-				 "autoApply": true,
-
-			}, function(start, end, label) {
-				console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-			});
-		});
-
-		jQuery(document).ready(function($){
-			/* People minus-add */
-			$('.gmz-number-wrapper').each(function () {
-		        var timeOut = 0;
-		        var t = $(this);
-		        var input = t.find('input');
-		        var min = input.data('min');
-		        var max = input.data('max');
-
-		        //Change room value
-		        $('input[name="number_room"]', t).change(function () {
-		            var rooms = parseInt($(this).val());
-		            var html   = rooms;
-		            if (typeof rooms == 'number') {
-		                if (rooms < 2) {
-		                    html = rooms + ' Room';
-		                } else {
-		                    html = rooms + ' Rooms';
-		                }
-		            }
-		            $('.people-inner .room').html(html);
-		        });
-
-		        $('input[name="number_room"]', t).trigger('change');
-
-		        //Change adult value
-		        $('input[name="number_adult"]', t).change(function () {
-		            var adults = parseInt($(this).val());
-		            var html   = adults;
-		            if (typeof adults == 'number') {
-		                if (adults < 2) {
-		                    html = adults + ' Adult';
-		                } else {
-		                    html = adults + ' Adults';
-		                }
-		            }
-		            $('.people-inner .adult').html(html);
-		        });
-
-		        $('input[name="number_adult"]', t).trigger('change');
-
-		        //Change adult value
-		        $('input[name="number_child"]', t).change(function () {
-		            var childs = parseInt($(this).val());
-		            var html   = childs;
-		            if (typeof childs == 'number') {
-		                if (childs < 2) {
-		                    html = childs + ' Children';
-		                } else {
-		                    html = childs + ' Childrens';
-		                }
-		            }
-		            $('.people-inner .child').html(html);
-		        });
-
-		        $('input[name="number_child"]', t).trigger('change');
-
-
-		        t.find('.control').on("click", function() {
-
-		            var $button = $(this);
-		            numberButtonFunc($button);
-
-		        });
-
-		        $('.control', t).on("mousedown touchstart", function() {
-		            var $button = $(this);
-		            timeOut = setInterval(function(){
-		                numberButtonFunc($button);
-		            }, 250);
-		        }).bind('mouseup mouseleave touchend', function() {
-		            clearInterval(timeOut);
-		        });
-
-		        function numberButtonFunc($button){
-		            var oldValue = $button.parent().find(".text input").val();
-		            if ($button.hasClass('add')) {
-		                if (oldValue < max) {
-		                    var newVal = parseFloat(oldValue) + 1;
-		                }else{
-		                    newVal = max;
-		                }
-		            } else {
-		                if (oldValue > min) {
-		                    var newVal = parseFloat(oldValue) - 1;
-		                } else {
-		                    newVal = min;
-		                }
-		            }
-
-
-
-		            $button.parent().find(".text input").val(newVal);
-		            $button.parent().find(".text .value").text(newVal);
-		            $('input[name="'+$button.parent().find("input").attr('name')+'"]', '.people-dropdown').trigger('change');
-		        }
-		    });
-
-			$('.people-inner').click(function(){
-				var t = $(this);
-
-				t.parent().find('.formbook').slideToggle();
-			});
-
-		});	
-
-		// xu ly book lich
-		$(function() {
-			$('.icon').click(function(event) {
-				/* Act on the event */
-				$(this).toggleClass('icondaonguoc');
-				$(this).next().slideToggle();
-			});
-
-		});
-		$('.slide .control a').click(function()
-		{
-			var id= $(this).attr('data-id');
-			var margin_left=-870*(id-1);
-			$ (' .slide .list-img .wrap').css('margin-left',margin_left+'px');
-		})
-		;
-
-		$(document).ready(function(){
-			$('.formbook').slideUp();
-			var stt=0;
-			$("img .slide").each(function(){
-				if($(this).is(':visible'))
-					stt=$(this).attr("stt");
-			});
-			$("#next").click(function()
-			{
-				next= ++stt;
-				$(" img .slide").hide();
-				$(" img .slide").eq(next).show();
-			});
-		});    
-
-		
-		// end book lich
-		$(document).ready(function(){
-			var body = $('body');
-			
-			$('.has-matchHeight', body).matchHeight(); 
-		});
-	</script>
+	<link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
+	<script type="text/javascript" src="public/js/cuong.js"></script>
 </head>
 <body>
 
-<!-- header -->
+	<!-- header -->
 	
-  <!-- end header -->
+	<!-- end header -->
 
 
 
@@ -245,119 +87,119 @@
 
 
 								<div class="row">
-								<form action="/action_page.php">
-									<div class="form-group col-sm-12 search-content">
-										<i class="fas fa-map-marker-alt search-checkiconleft"></i>
-										<label class="search-title-language1 search-title-language" >Detination:</label>
-										<div class="dropdown render">
+									<form action="/action_page.php">
+										<div class="form-group col-sm-12 search-content">
+											<i class="fas fa-map-marker-alt search-checkiconleft"></i>
+											<label class="search-title-language1 search-title-language" >Detination:</label>
+											<div class="dropdown render">
 
-											<p class="dropdown-toggle search-language" id="menu1"  data-toggle="dropdown">Where are you going?
-											</p>
-											<ul class="dropdown-menu search-list" role="menu" aria-labelledby="menu1">
-												<div class="row search-row">
-													<span class="search-list-title">United States</span>
+												<p class="dropdown-toggle search-language" id="menu1"  data-toggle="dropdown">Where are you going?
+												</p>
+												<ul class="dropdown-menu search-list" role="menu" aria-labelledby="menu1">
+													<div class="row search-row">
+														<span class="search-list-title">United States</span>
 
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">California</span>
-														</li>
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">California</span>
+															</li>
+														</div>
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">Los Angeles</span>
+															</li>
+														</div>
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">Nevada</span>
+															</li>
+														</div>
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">New Jersey</span>
+															</li>
+														</div>
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">Delaware</span>
+															</li>
+														</div>
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">Philadelphia</span>
+															</li>
+														</div>
+
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">New York City</span>
+															</li>
+														</div>
+
+
+														<div class="col-sm-12 col-md-12 search-list-wrapper">
+															<li role="presentation">
+																<i class="fas fa-map-marker-alt search-list-checkicon"></i>
+																<span class="search-list-item">San Francisco</span>
+															</li>
+														</div>
+
 													</div>
 
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">Los Angeles</span>
-														</li>
-													</div>
-
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">Nevada</span>
-														</li>
-													</div>
-
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">New Jersey</span>
-														</li>
-													</div>
-
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">Delaware</span>
-														</li>
-													</div>
-
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">Philadelphia</span>
-														</li>
-													</div>
 
 
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">New York City</span>
-														</li>
-													</div>
-
-
-													<div class="col-sm-12 col-md-12 search-list-wrapper">
-														<li role="presentation">
-															<i class="fas fa-map-marker-alt search-list-checkicon"></i>
-															<span class="search-list-item">San Francisco</span>
-														</li>
-													</div>
-
-												</div>
-
-
-
-											</ul>
+												</ul>
 
 
 
 
-									</div>
-								</div>
-								<!-- end cot 1 -->
+											</div>
+										</div>
+										<!-- end cot 1 -->
 
-								<div class="form-group col-sm-12 search-content1">
-									<i class="far fa-calendar-plus search-checkiconright"></i>
-									<label for="radio-choice-1" class="search-title-language"> Check In-Out</label>
-
-
-									<label for="radio-choice-3">
-
-										<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" class="search-date" style="color: #5191FA;" style="margin-left: 200px ;" />
+										<div class="form-group col-sm-12 search-content1">
+											<i class="far fa-calendar-plus search-checkiconright"></i>
+											<label for="radio-choice-1" class="search-title-language"> Check In-Out</label>
 
 
-									</label>
+											<label for="radio-choice-3">
 
-								</div>
-								<!-- END COT 2 -->
+												<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" class="search-date" style="color: #5191FA;" style="margin-left: 200px ;" />
 
-								<div class="form-group col-sm-12 search-content1">
 
-									<div class="row field-people-row">
-										<div class="col-sm-6 field_people_room">
-											<div class="people-inner">
-												<i class="fas fa-users search-checkicon"></i>
-												<label for="radio-choice-1" class="search-title-language-guest">Guests</label>
+											</label>
 
-												<div class="people-group">
+										</div>
+										<!-- END COT 2 -->
 
-													<span class="value">
-														<span class="adult search-element1">1 Adult</span>
+										<div class="form-group col-sm-12 search-content1">
 
-														<span class="child search-element2">0 Child</span>
-													</span>
+											<div class="row field-people-row">
+												<div class="col-sm-6 field_people_room">
+													<div class="people-inner">
+														<i class="fas fa-users search-checkicon"></i>
+														<label for="radio-choice-1" class="search-title-language-guest">Guests</label>
+
+														<div class="people-group">
+
+															<span class="value">
+																<span class="adult search-element1">1 Adult</span>
+
+																<span class="child search-element2">0 Child</span>
+															</span>
 
 													<!-- <div class="icon">
 														<i class="fas fa-angle-up"></i>
@@ -517,7 +359,7 @@
 											<input type="hidden" name="controller" value="slidebar">
 											
 											<button type="button" name="hotel_price" class="btn btn-primary col-lg-9 col-md-9 col-sm-9 search-check-button">SEARCH</button>
-											 <input type="hidden" name="action" value="list">
+											<input type="hidden" name="action" value="list">
 										</div>
 
 
@@ -533,260 +375,284 @@
 
 
 
-								</div>
-								<!-- END ROW -->
+						</div>
+						<!-- END ROW -->
 
-							</div>
-							<!-- END slidebar-item sidebar-search-form -->
+					</div>
+					<!-- END slidebar-item sidebar-search-form -->
 
 					
-							
 
-						</div>
 
-						<!-- END COT 3 -->
+				</div>
+
+				<!-- END COT 3 -->
 						<!-- <div class="col-lg-9 col-md-9 wapper-content">
 							
 
 						</div> -->
 						<div class="col-lg-9  col-md-9 wapper-content">
-						<div class="row row-wapper">
+							<div class="row row-wapper">
 
-							<div class="col-sm-12 col-xs-12 toolbar-layout">
+								<div class="col-sm-12 col-xs-12 toolbar-layout">
 
-								<div class="col-lg-9 col-md-9 col-sm-12 content-title">
-									<h3>20 hotels found</h3>
-								</div>
-								<div class="col-lg-3 layout">
-									<ul>
-										<li><!-- <span class="layout-title">Sort</span> -->
-											<div class="dropdown">
-												<p class=" dropdown-toggle layout-title" id="menu1"  data-toggle="dropdown">Sort
-													<span class="caret"></span></p>
-													<ul class="dropdown-menu layout-list" role="menu" aria-labelledby="menu1">
-														<form action="" method="GET">
-															<?php 
-															$get_data = $_GET;
-															
-															if(!empty($get_data)){
-																foreach ($get_data as $key => $value) {
-																	echo '<input type="hidden" name="'. $key .'" value="'. $value .'" />';
+									<div class="col-lg-9 col-md-9 col-sm-12 content-title">
+										<h3>20 hotels found</h3>
+									</div>
+									<div class="col-lg-3 layout">
+										<ul>
+											<li><!-- <span class="layout-title">Sort</span> -->
+												<div class="dropdown">
+													<p class=" dropdown-toggle layout-title" id="menu1"  data-toggle="dropdown">Sort
+														<span class="caret"></span></p>
+														<ul class="dropdown-menu layout-list" role="menu" aria-labelledby="menu1">
+															<form action="" method="GET">
+																<?php 
+																$get_data = $_GET;
+																if(!empty($get_data)){
+																	foreach ($get_data as $key => $value) {
+																		echo '<input type="hidden" name="'. $key .'" value="'. $value .'" />';
+																	}
 																}
-															}
-															 ?>
-														<div class="row">
-															<div class="col-sm-12">
-																<span class="layout-title1">
-																	SORT BY
-																</span>
+
+
+																?>
+																<div class="row">
+																	<div class="col-sm-12">
+																		<span class="layout-title1">
+																			SORT BY
+																		</span>
+																	</div>
+																	<div class="col-sm-12 layout-list-item">
+																		<li role="presentation">
+																			<?php
+																			$current_opt = '';
+																			if(!isset($_GET['optradio'])){
+																				$current_opt = 'new';
+																			}else{
+																				$current_opt = $_GET['optradio'];
+																			}
+
+																			?>
+																			<input type="radio" class="layout-checkicon" name="optradio"  onchange="this.form.submit();" value="new" <?php echo $current_opt == 'new' ? 'checked' : ''; ?>/>
+
+																			<span class="layout-check-content">New Hotel</span> 
+
+																		</li>
+																	</div>
+																	<div class="col-sm-12">
+																		<span class="layout-title2">
+																			Price
+																		</span>
+																	</div>
+
+
+
+																	<div class="col-sm-12 layout-list-item">
+																		<li role="presentation">
+																			
+																			<input type="radio" class="layout-checkicon" name="optradio" value="low" onchange="this.form.submit();" <?php echo $current_opt == 'low' ? 'checked' : ''; ?>/>
+
+
+																			<span class="layout-check-content" >Low to Hight</span> 
+
+																		</li>
+																	</div>
+
+																	<div class="col-sm-12 layout-list-item">
+																		<li role="presentation">
+
+																			<input type="radio" class="layout-checkicon" name="optradio" value="hight" onchange="this.form.submit();" <?php echo $current_opt == 'hight' ? 'checked' : ''; ?>/>
+
+																			<span class="layout-check-content" >Hight Low to</span> 
+
+																		</li>
+																	</div>
+
+																	<div class="col-sm-12">
+																		<span class="layout-title2">
+																			Name
+																		</span>
+																	</div>
+
+																	<div class="col-sm-12 layout-list-item">
+																		<li role="presentation">
+
+																			<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="name_az" <?php echo $current_opt == 'name_az' ? 'checked' : ''; ?>/>
+
+																			<span class="layout-check-content" >a-z</span> 
+
+																		</li>
+																	</div>
+
+
+																	<div class="col-sm-12 layout-list-item">
+																		<li role="presentation">
+
+																			<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="name_za" <?php echo $current_opt == 'name_za' ? 'checked' : ''; ?>/>
+
+																			<span class="layout-check-content" >z-a</span> 
+
+																		</li>
+																	</div>
+
+
+
+
+
+
+																</div>
+																<!-- <li>SORT BY</li> -->
+
+
+
+															</form>
+														</ul>
+
+													</div>
+
+
+												</li>
+												<li><a href="#"><i class="fas fa-list-ul"></i></a></li>
+												<li><a href="#"><i class="fas fa-th-list"></i></a></li>
+											</ul>
+
+
+
+										</div>
+
+
+									</div>
+
+									<div class=" modern-search-result">
+										<?php 
+
+										if(!empty($data_hotel))
+
+										{
+											foreach ($data_hotel as $value)
+											{
+												?>
+												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
+													<div class="item">
+														<div class="thumb">
+
+															<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
+														</div>
+														<div class="icon-position">
+															<i class="fas fa-heart img heart"></i>
+														</div>
+														<div class="icon-position">
+															<div class="icon-star">
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
 															</div>
-															<div class="col-sm-12 layout-list-item">
-																<li role="presentation">
 
-																	<input type="radio" class="layout-checkicon" name="optradio"  checked="checked" onchange="this.form.submit();" />
+														</div>
+														<div class="text-position">
+															<button class=" btn btn-primary text">Featured</button>
+														</div>
+														<div class="info">
 
-																	<span class="layout-check-content">New Hotel</span> 
+															<a href="#"><?= $value['hotel_name'] ?> </a><br/>
 
-																</li>
+
+
+
+															<p class="service-location"><i class="fas fa-map-marker-alt"></i><?php echo " ". $value['city_name'] ?> ,USA
+															</p>
+
+
+
+
+															<p style="color: #5191FA;"><?= $value['hotel_point']."  " .'/5 Excellent'?> </p>
+
+
+
+															<div >
+																
+															<span><i class="fas fa-bolt slide-icon"></i> from </span><span class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
 															</div>
-															<div class="col-sm-12">
-																<span class="layout-title2">
-																	Price
-																</span>
-															</div>
-
-
-															
-															<div class="col-sm-12 layout-list-item">
-																<li role="presentation">
-
-																	<input type="radio" class="layout-checkicon" name="optradio" value="low" onchange="this.form.submit();"/>
-																	
-																	
-																	<span class="layout-check-content" >Low to Hight</span> 
-
-																</li>
-															</div>
-
-															<div class="col-sm-12 layout-list-item">
-																<li role="presentation">
-
-																	<input type="radio" class="layout-checkicon" name="optradio" value="hight" onchange="this.form.submit();"/>
-																	
-																	<span class="layout-check-content" >Hight Low to</span> 
-
-																</li>
-															</div>
-														
-															<div class="col-sm-12">
-																<span class="layout-title2">
-																	Name
-																</span>
-															</div>
-
-															<div class="col-sm-12 layout-list-item">
-																<li role="presentation">
-
-																	<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="nameaz" />
-
-																	<span class="layout-check-content" >a-z</span> 
-
-																</li>
-															</div>
-
-
-															<div class="col-sm-12 layout-list-item">
-																<li role="presentation">
-
-																	<input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="nameza"/>
-
-																	<span class="layout-check-content" >z-a</span> 
-
-																</li>
-															</div>
-
-															
-
 
 
 
 														</div>
-														<!-- <li>SORT BY</li> -->
-
-
-
-													</form>
-													</ul>
-
+													</div>
 												</div>
 
+												<?php
+											}
 
-											</li>
-											<li><i class="fas fa-list-ul"></i></li>
-											<li><i class="fas fa-th-list"></i></li>
+										}
+
+										?>
+
+									</div>
+									<div class="clearfix"></div>
+									<!-- Phan trang -->
+									<!-- PHAN TRANG -->
+									<div class="phantrang modern-search-result-page ">
+
+										<ul class="pagination page-list">
+											
+
+
+											<?php
+											$get_data = $_GET;
+											if(!empty($get_data)){
+												foreach ($get_data as $key => $value) {
+
+												}
+											}
+											for ($i = 1;$i <= $total_page;$i++) {
+												echo "<li><a href='?c=slidebar&a=view&page=". $i ."&$key=$value'>$i</a></li>";
+											}
+
+
+
+
+
+											?>
+
+
+											
+
+
 										</ul>
 
 
 
-									</div>
 
-
+									</div>  
+									<!-- END PHAN TRANG -->
 								</div>
-
-								<div class=" modern-search-result">
-								<?php 
-
-								if(!empty($data_hotel))
-								
-								{
-									foreach ($data_hotel as $value)
-									 {
-										?>
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
-										<div class="item">
-											<div class="thumb">
-												
-												<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
-											</div>
-											<div class="icon-position">
-												<i class="fas fa-heart img heart"></i>
-											</div>
-											<div class="icon-position">
-												<div class="icon-star">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-
-											</div>
-											<div class="text-position">
-												<button class=" btn btn-primary text">Featured</button>
-											</div>
-											<div class="info">
-												
-														<a href="#"><?= $value['hotel_name'] ?> </a><br/>
-												
-
-												
-
-												     <p><i class="fas fa-map-marker-alt"><?php echo " ". $value['city_name'] ?></i>
-												     </p>
-												
-												
-
-												
-														<p style="color: #5191FA;"><?= $value['hotel_point']."  " .'Excellent'?> </p>
-												
-
-												
-														<i class="fas fa-bolt slide-icon"></i><?="From"." ". $value['hotel_price'] ." /night" ?>
-												
-												
-												
-											</div>
-										</div>
-									</div>
-
-									<?php
-									}
-
-								}
-
-								?>
-								
-								</div>
-								<div class="clearfix"></div>
-							<!-- Phan trang -->
-							<!-- PHAN TRANG -->
-							<div class="phantrang modern-search-result-phantrang ">
-								
-								<ul class="pagination phantrang-list">
-									<div class="phantrang-item1">
-										<li><a href="">1</a></li>
-									</div>
-									<div class="phantrang-item2">
-										<li><a href="#">2</a></li>
-									</div>
-									<li class="page-item">
-										
-											<span aria-hidden="true">&raquo;</span>
-											<!-- <span class="sr-only">Next</span> -->
-										
-									</li>
-								</ul>
-
-								<span class="count-string">1 - 12 of 20 Hotels </span>
-                   
-								
-							</div>  
-						<!-- END PHAN TRANG -->
 							</div>
+							<!-- end cot 9 -->
+
+
+							<!-- PHAN TRANG  -->
+
+
+							<!-- END CODE PHAN TRANG -->
+							<!-- END COL-9 -->
+
 						</div>
-						<!-- end cot 9 -->
 
-
-						<!-- PHAN TRANG  -->
-
-					
-						<!-- END CODE PHAN TRANG -->
-						<!-- END COL-9 -->
-						
 					</div>
-					
+
 				</div>
 
 			</div>
-
 		</div>
-	</div>
 
-	
-	
 
-	<!-- footer -->
-	<!-- end footer -->
-	
-</body>
-</html>
+
+
+		<!-- footer -->
+		<!-- end footer -->
+
+	</body>
+	</html>
