@@ -11,12 +11,12 @@
     <div id="banner">
         <div class="container" style="width: 100%">
             <div class="banner">
-                <img src="libs/Images/background.jpg" width="100%" height="100%">
+                <img src="libs/Images/background.jpg" >
                 <div class="container">
                     <div class="row">
                         <div class="wpb_column column_container col-md-12">
                             <div class="vc_column-inner wpb_wrapper">
-                                <div class="search-form-wrapper" style="height: auto;">
+                                <div class="search-form-wrapper" >
                                     <h1 class="st-heading">Find Your Perfect Hotels</h1>
                                     <div class="sub-heading">Get the best prices on 20,000+ properties
                                     </div>
@@ -64,7 +64,7 @@
                                                     <label for="radio-choice-1" class="language text-muted2" >Check In-Out</label><br/>
                                                     <div class="dropdow-list1">
                                                         <label>
-                                                            <input type="text" name="datetimes" style="color: #5191fa; border: none; font-weight: 200; width: 90%" />
+                                                            <input type="text" name="datetimes"  />
 
                                                         </label>
                                                     </div>
@@ -97,7 +97,7 @@
                                                                     </div>
                                                                     <div class="formdebook">
                                                                         <div class="row">
-                                                                            <div class="people-dropdown" style="display: block;">
+                                                                            <div class="people-dropdown" >
                                                                                 <div class="item gmz-number-wrapper">
                                                                                     <span class="control minus">-</span>
                                                                                     <span class="text txt-guest">
