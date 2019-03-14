@@ -9,7 +9,7 @@
     <div class="clear"></div>
     <!-- Banner -->
     <div id="banner">
-        <div class="container" style="width: 100%">
+        <div class="container-fuil">
             <div class="banner">
                 <img src="libs/Images/background.jpg" >
                 <div class="container">
@@ -65,7 +65,6 @@
                                                     <div class="dropdow-list1">
                                                         <label>
                                                             <input type="text" name="datetimes"  />
-
                                                         </label>
                                                     </div>
                                                 </div>
@@ -79,22 +78,16 @@
                                                 <div class="search-form-section">
                                                     <div class="field_people_room">
                                                         <span style="" class="text-muted">Guest</span>
-
-
                                                         <div class="people-inner">
                                                             <div class="dropdow-list2">
                                                                 <div class="people-group">
                                                                 <span class="label">
                                                                     <span class="value">
-                                                                        <span class="adult" style="color: #5191FA;font-size: 16px">1 Adult</span>
-                                                                        <span class="child" style="color: #5191FA;font-size: 16px">0 Children</span>
-                                                                        <i  style="color: #5191FA;font-size: 20px" class="fa ml5 fa-angle-up"></i>
+                                                                        <span class="adult_values">1 Adult</span>
+                                                                        <span class="child_values">0 Children</span>
+                                                                        <i class="fa ml5 fa-angle-up"></i>
                                                                     </span>
                                                                 </span>
-
-                                                                    <div class="bookphong">
-
-                                                                    </div>
                                                                     <div class="formdebook">
                                                                         <div class="row">
                                                                             <div class="people-dropdown" >
@@ -128,11 +121,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 col-search-form" style="position: relative;">
+                                            <div class="col-md-3 col-search-form search-form-style">
                                                 <div class="form-button">
                                                     <div class="advantice">
                                                         <div class="form-group form-extra-field dropdown clearfix field-advance">
-                                                            <label class="hidden-xs" style="font-weight: 200;">
+                                                            <label class="hidden-xs">
                                                                 Advantice
                                                             </label>
                                                             <div class="dropdown-factilities dropdow">
@@ -147,7 +140,7 @@
                                                                         <div class="item-title">
                                                                     <h4>Filter Price</h4>
                                                                     </div>
-                                                                         <div class="demo" style="width: auto;">
+                                                                         <div class="demo">
                                                                             
                                                                             <input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""
                                                                             />
