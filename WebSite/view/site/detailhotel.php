@@ -303,13 +303,10 @@
 
 											<div class="col-sm-4 " >
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
-<<<<<<< HEAD
+
 
 												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>
-=======
-												<button id= "clickme" class="clickme"> <a href="https://www.w3schools.com"> Room detail</a> </button>
-												<button class="btn"  style="">SHOW PRICE</button>
->>>>>>> 1e1366779f6d26dcb0a658e8a6923c7fda7d0b15
+
 												
 												
 											</div>
