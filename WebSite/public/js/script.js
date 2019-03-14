@@ -5,11 +5,7 @@ $(document).ready(function(){
 
 			$('.has-matchHeight', body).matchHeight();
 });
-$(document).ready(function(){
-	$('.btn').click(function(){
-		$('.price-room').show();
-	});
-});
+
 $(document).ready(function(){
 	$(".more-content").click(function(){
 		$(".cut-gradient").fadeToggle();
@@ -277,7 +273,7 @@ $(document).ready(function(){
 	$.fn.shorten = function (settings) {
 
 		var config = {
-			showChars: 100,
+			showChars: 0,
 			ellipsesText: "...",
 			moreText: "more",
 			lessText: "less"
@@ -363,7 +359,13 @@ $(document).ready(function(){
  // end dowwn
  $(document).ready(function(){
  	$(".showmore").click(function(){
+ 		var t = $(this);
  		$(".room-facility").toggleClass('more');
+ 		if($(".room-facility").hasClass('more')){
+ 			t.text('Show Less');
+ 		}else{
+ 			t.text('Show All');
+ 		}
  	});
  });
 // hide forrm book 

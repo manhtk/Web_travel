@@ -20,7 +20,9 @@
 				<ul>
 					<li><a href="https://homap.travelerwp.com">Home</a></li>
 					<li><a href="https://homap.travelerwp.com/search-hotel-full-map/?location_id=1957&amp;location_name=United%20States">United States</a></li>
-					<li class="active">EnVision Hotel Boston</li> 
+					<?php foreach ($data_hotel as $value) { ?>
+					<li class="active"> <?php echo $value['hotel_name']; ?></li> 
+				<?php } ?>
 				</ul>
 			</div>
 		</div>
@@ -226,7 +228,7 @@
 									<div class="row">
 										<div class="col-xs-12 col-md-8 inf" >
 											<div class="col-xs-2">
-												<i class="fa fa-bath" aria-hidden="true"></i>
+												<i class="fas fa-square" aria-hidden="true"></i>
 												<br>
 												<span><?php echo $v['size'];  ?>m<sup>2</sup></span>
 											</div>
@@ -249,7 +251,7 @@
 										<div class="col-xs-12 col-md-4 ">
 											<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
 
-												<button class="btn"  style="">SHOW PRICE</button>
+												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">SHOW PRICE</a>
 										</div>
 									</div>
 								</div>
@@ -274,7 +276,7 @@
 										<div class="row" class="">
 											<div class="col-sm-8">
 												<div class="col-sm-2">
-													<i class="fa fa-bath" aria-hidden="true"></i>
+													<i class="fa fa-square" aria-hidden="true"></i>
 													<br>
 													<span><?php echo $v['size'] ?>m<sup>2</sup></span>
 												</div>
@@ -299,7 +301,7 @@
 											<div class="col-sm-4 " >
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
 
-												<button class="btn"  style="">SHOW PRICE</button>
+												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>
 												
 											</div>
 										</div>
@@ -771,7 +773,7 @@
 										<div class="col-xs-6 col-sm-6 col-md-3 has-matchHeight">
 											<div class="row-content">
 												<div class="wpb-content-image">
-													<a href="# ">
+													<a href="?c=detailhotel&a=view&hotel_id=<?php echo $values['hotel_id']?> ">
                                                         <img src="<?php echo $values['images']; ?>" >
 													</a>
 													<div class="review-star">
