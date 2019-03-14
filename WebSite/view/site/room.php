@@ -25,14 +25,14 @@
         <li>
           <?php 
           if(!empty($data_hotel)){
-          ?>
+            ?>
             <?php 
-              foreach ($data_hotel as $values) {
+            foreach ($data_hotel as $values) {
               ?>
               <a href=""><?php echo $values['hotel_name'] ?></a>
-              <?php 
-              }?>
-        <?php } ?>
+              <?php     
+            }?>
+          <?php } ?>
         </li>
         <li class="active">
           <?php
@@ -219,10 +219,7 @@
                               
                             </div> 
                             <?php
-<<<<<<< HEAD
                             //dd($data_amenities);
-=======
->>>>>>> fcd3bd4f3ab689b6fcdfd9e0e6dd003b70d7cdae
                         }?>
                     <?php } ?> 
                      
