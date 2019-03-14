@@ -124,11 +124,13 @@ span .adult_values
 {
 	color: #5191FA;
 	font-size: 16px;
+	font-weight: 100;
 }
 span .child_values
 {
 	color: #5191FA;
 	font-size: 16px;
+	font-weight: 100;
 }
 .value .fa-angle-up
 {
@@ -933,7 +935,7 @@ span .child_values
 
 	.dropdown-toggle
 	{
-		margin-left: -25px;
+		margin-left: -25px !important;
 	}
 	.people-group
 	{
@@ -1106,5 +1108,10 @@ span .child_values
 .people-group
 {
 	margin-left: 40px;
+}
+.dropdown-toggle
+{
+	margin-left: 48px;
+}
 }
 /*end Hompage*/
