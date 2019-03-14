@@ -19,14 +19,14 @@
 						<p class="line1">
 							<span>
 								<?php 
-								echo $list[0]['first_name'].' '.$list[0]['last_name']; ?>, 
+								echo $list['first_name'].' '.$list['last_name']; ?>, 
 							</span>
 							Your order was submitted successfully
 						</p>
 						<p class="line2">
 							Booking details has been sent to:
 							<span>
-								<?php  echo $list[0]['email'] ?>
+								<?php  echo $list['email'] ?>
 							</span>
 						</p>
 					</div>
@@ -132,21 +132,21 @@
 						if (empty($list)) {
 							echo "Has no record";
 						} else {
-							foreach ($list as $value) {
+							
 								?>
 				<ul>
-					<li><span class="label">First Name</span><span class="value"><?php echo $value['first_name'] ?></span></li>
-					<li><span class="label">Last name</span><span class="value"><?php echo $value['last_name'] ?></span></li>
-					<li><span class="label">Email</span><span class="value"><?php echo $value['email'] ?></span></li>
-					<li><span class="label">Address Line 1 </span><span class="value"><?php echo $value['address1'] ?></span></li>
-					<li><span class="label">Address Line 2 </span><span class="value"><?php echo $value['address2'] ?></span></li>
-					<li><span class="label">City</span><span class="value"><?php echo $value['city'] ?></span></li>
-					<li><span class="label">State/Province/Region</span><span class="value"><?php echo $value['state/province/region'] ?></span></li>
-					<li><span class="label">ZIP code/Postal code</span><span class="value"><?php echo $value['zipcode_or_postal_code'] ?></span></li>
-					<li><span class="label">Country</span><span class="value"><?php echo $value['country'] ?></span></li>
-					<li><span class="label">Special Requirements</span><span class="value"><?php echo $value['special'] ?></span></li>
+					<li><span class="label">First Name</span><span class="value"><?php echo $list['first_name'] ?></span></li>
+					<li><span class="label">Last name</span><span class="value"><?php echo $list['last_name'] ?></span></li>
+					<li><span class="label">Email</span><span class="value"><?php echo $list['email'] ?></span></li>
+					<li><span class="label">Address Line 1 </span><span class="value"><?php echo $list['address1'] ?></span></li>
+					<li><span class="label">Address Line 2 </span><span class="value"><?php echo $list['address2'] ?></span></li>
+					<li><span class="label">City</span><span class="value"><?php echo $list['city'] ?></span></li>
+					<li><span class="label">State/Province/Region</span><span class="value"><?php echo $list['state_province_region'] ?></span></li>
+					<li><span class="label">ZIP code/Postal code</span><span class="value"><?php echo $list['zipcode_or_postal_code'] ?></span></li>
+					<li><span class="label">Country</span><span class="value"><?php echo $list['country'] ?></span></li>
+					<li><span class="label">Special Requirements</span><span class="value"><?php echo $list['special'] ?></span></li>
 				</ul>
-							<?php }
+							<?php 
 						} ?>
 					</div>
 
