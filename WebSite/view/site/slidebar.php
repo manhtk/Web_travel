@@ -2,15 +2,14 @@
 
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Web slide</title>
+	
 	<meta charset="UTF-8">
 	<title>Web-hotel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
 	<script type="text/javascript" src="public/js/cuong.js"></script>
-	 
+
 </head>
 <body>
 
@@ -86,147 +85,147 @@
 									</div>
 
 								</div>
-							
 
-						     <div class="row">
-										<form action="?c=slidebar&a=search" method="GET">
-                                    <div class="form-group col-sm-12 search-content">
-                                        <i class="fas fa-map-marker-alt search-checkiconleft"></i>
-                                        <label class="search-title-language1 search-title-language">Destination:</label>
-                                        <div class="dropdown render">
-                                            <input type="hidden" name="c" value="slidebar">
-                                            <div class="dropdown-toggle search-language" id="menu1"
-                                                 data-toggle="dropdown">
-                                                <?php
-                                                if (empty($_GET['cityid'])) {
-                                                    $des = 'Where are you going?';
-                                                } else {
-                                                    $des = $_GET['cityname'];
-                                                } ?>
-                                                <span class="destination" style="cursor: pointer"
-                                                      id="spankey"><?php echo $des ?></span>
-                                            </div>
-                                            <input type="hidden" name="cityname" id="namekey"
-                                                   value="<?php echo $_GET['cityname'] ?>">
-                                            <input type="hidden" name="cityid" id="idkey"
-                                                   value="<?php echo $_GET['cityid'] ?>">
 
-                                            <ul class="dropdown-menu search-list" role="menu"
-                                                aria-labelledby="menu1" onclick="change()">
-                                                <?php foreach ($data_city
+								<div class="row">
+									<form action="?c=slidebar&a=search" method="GET">
+										<div class="form-group col-sm-12 search-content">
+											<i class="fas fa-map-marker-alt search-checkiconleft"></i>
+											<label class="search-title-language1 search-title-language">Destination:</label>
+											<div class="dropdown render">
+												<input type="hidden" name="c" value="slidebar">
+												<div class="dropdown-toggle search-language" id="menu1"
+												data-toggle="dropdown">
+												<?php
+												if (empty($_GET['cityid'])) {
+													$des = 'Where are you going?';
+												} else {
+													$des = $_GET['cityname'];
+												} ?>
+												<span class="destination" style="cursor: pointer"
+												id="spankey"><?php echo $des ?></span>
+											</div>
+											<input type="hidden" name="cityname" id="namekey"
+											value="<?php echo $_GET['cityname'] ?>">
+											<input type="hidden" name="cityid" id="idkey"
+											value="<?php echo $_GET['cityid'] ?>">
 
-                                                               as $values) { ?>
+											<ul class="dropdown-menu search-list" role="menu"
+											aria-labelledby="menu1" onclick="change()">
+											<?php foreach ($data_city
 
-                                                    <li style="padding-left: 20px; cursor: pointer"
-                                                        data-value="<?php echo $values['city_id'] ?>"
-                                                    ><i
-                                                                class="fas fa-map-marker-alt"></i>
-                                                                <span style="padding: 20px;">
-                                                                    <?php echo $values['city_name'] ?>
-                                                                </span>
-                                                    </li>
-                                                <?php } ?>
+												as $values) { ?>
 
-                                            </ul>
-                                            <script>
-                                                $(function () {
+													<li style="padding-left: 20px; cursor: pointer"
+													data-value="<?php echo $values['city_id'] ?>"
+													><i
+													class="fas fa-map-marker-alt"></i>
+													<span style="padding: 20px;">
+														<?php echo $values['city_name'] ?>
+													</span>
+												</li>
+											<?php } ?>
 
-                                                    $(".dropdown-menu li").click(function (e) {
+										</ul>
+										<script>
+											$(function () {
 
-                                                        $(".destination:first-child").text($(this).text());
-                                                        $(".destination:first-child").val($(this).text());
-                                                        var value = $(this).data("value");
-                                                        $('#idkey').val(value);
-                                                    });
-                                                });
-                                            </script>
-                                            <script>
-                                                function change() {
-                                                    var input = document.getElementById('namekey');
-                                                    var span = document.getElementById('spankey');
-                                                    input.value = span.innerText;
-                                                }
-                                            </script>
-                                        </div>
-                                    </div>
-                                    <!-- end cot 1 -->
-                                    <?php
+												$(".dropdown-menu li").click(function (e) {
+
+													$(".destination:first-child").text($(this).text());
+													$(".destination:first-child").val($(this).text());
+													var value = $(this).data("value");
+													$('#idkey').val(value);
+												});
+											});
+										</script>
+										<script>
+											function change() {
+												var input = document.getElementById('namekey');
+												var span = document.getElementById('spankey');
+												input.value = span.innerText;
+											}
+										</script>
+									</div>
+								</div>
+								<!-- end cot 1 -->
+								<?php
                                     //Co $_GET['start'];
                                     //Kho cos
-                                    $start = date('d/m/Y');
-                                    $end = date('d/m/Y', strtotime(' + 1 days'));
-                                    $date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
-                                    if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
-                                        if (!empty($_GET['start'])) {
-                                            $start = $_GET['start'];
-                                        }
-                                        if (!empty($_GET['end'])) {
-                                            $end = $_GET['end'];
-                                        }
-                                        if (!empty($_GET['date'])) {
-                                            $date = $_GET['date'];
-                                        }
-                                    }
-                                    ?>
-                                    <div class="form-group col-sm-12 search-content1">
-                                        <i class="far fa-calendar-plus search-checkiconright"></i>
-                                        <label for="radio-choice-1" class="search-title-language"> Check
-                                            In-Out</label>
-                                        <div id="reportrange"
-                                             style="color: #5191FA;cursor: pointer;font-size: 15px;padding-left: 47px;padding-top: 20px">
-                                            <?php echo $start . ' - ' . $end ?>
-                                        </div>
+								$start = date('d/m/Y');
+								$end = date('d/m/Y', strtotime(' + 1 days'));
+								$date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
+								if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
+									if (!empty($_GET['start'])) {
+										$start = $_GET['start'];
+									}
+									if (!empty($_GET['end'])) {
+										$end = $_GET['end'];
+									}
+									if (!empty($_GET['date'])) {
+										$date = $_GET['date'];
+									}
+								}
+								?>
+								<div class="form-group col-sm-12 search-content1">
+									<i class="far fa-calendar-plus search-checkiconright"></i>
+									<label for="radio-choice-1" class="search-title-language"> Check
+									In-Out</label>
+									<div id="reportrange"
+									style="color: #5191FA;cursor: pointer;font-size: 15px;padding-left: 47px;padding-top: 20px">
+									<?php echo $start . ' - ' . $end ?>
+								</div>
 
-                                        <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
-                                        <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
-                                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
-                                        <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                $('#reportrange').daterangepicker(
-                                                    {
-                                                        startDate: moment().subtract('days', 29),
-                                                        endDate: moment(),
-                                                        minDate: '01/01/2012',
-                                                        maxDate: '31/12/2014',
-                                                        autoApply: true,
-                                                        dateLimit: {days: 60},
-                                                        showDropdowns: true,
-                                                        showWeekNumbers: true,
-                                                        timePicker: false,
-                                                        timePickerIncrement: 1,
-                                                        timePicker12Hour: true,
-                                                        opens: 'right',
-                                                        format: 'MM/DD/YYYY',
-                                                        separator: ' to ',
-                                                    },
-                                                    function (start, end) {
-                                                        console.log("Callback has been called!");
-                                                        $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
-                                                        $('#start').val(start.format('DD/MM/YYYY'));
-                                                        $('#end').val(end.format('DD/MM/YYYY'));
-                                                        $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
-                                                    }
-                                                );
-                                            });
-                                        </script>
-                                    </div>
-                                    <!-- END COT 2 -->
+								<input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
+								<input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
+								<input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
+								<script type="text/javascript">
+									$(document).ready(function () {
+										$('#reportrange').daterangepicker(
+										{
+											startDate: moment().subtract('days', 29),
+											endDate: moment(),
+											minDate: '01/01/2012',
+											maxDate: '31/12/2014',
+											autoApply: true,
+											dateLimit: {days: 60},
+											showDropdowns: true,
+											showWeekNumbers: true,
+											timePicker: false,
+											timePickerIncrement: 1,
+											timePicker12Hour: true,
+											opens: 'right',
+											format: 'MM/DD/YYYY',
+											separator: ' to ',
+										},
+										function (start, end) {
+											console.log("Callback has been called!");
+											$('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+											$('#start').val(start.format('DD/MM/YYYY'));
+											$('#end').val(end.format('DD/MM/YYYY'));
+											$('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+										}
+										);
+									});
+								</script>
+							</div>
+							<!-- END COT 2 -->
 
-                                  <div class="form-group col-sm-12 search-content1">
+							<div class="form-group col-sm-12 search-content1">
 
-											<div class="row field-people-row">
-												<div class="col-sm-6 field_people_room">
-													<div class="people-inner">
-														<i class="fas fa-users search-checkicon"></i>
-														<label for="radio-choice-1" class="search-title-language-guest">Guests</label>
+								<div class="row field-people-row">
+									<div class="col-sm-6 field_people_room">
+										<div class="people-inner">
+											<i class="fas fa-users search-checkicon"></i>
+											<label for="radio-choice-1" class="search-title-language-guest">Guests</label>
 
-														<div class="people-group">
+											<div class="people-group">
 
-															<span class="value">
-																<span class="adult search-element1">1 Adult</span>
+												<span class="value">
+													<span class="adult search-element1">1 Adult</span>
 
-																<span class="child search-element2">0 Child</span>
-															</span>
+													<span class="child search-element2">0 Child</span>
+												</span>
 
 													<!-- <div class="icon">
 														<i class="fas fa-angle-up"></i>
@@ -272,180 +271,180 @@
 
 
 								</div>
-                                    <!-- END COT 3 -->
-                                    <!-- more option -->
-                                    <div class="form-group col-sm-12 search-option">
+								<!-- END COT 3 -->
+								<!-- more option -->
+								<div class="form-group col-sm-12 search-option">
 
-                                        <div class="dropdown render">
+									<div class="dropdown render">
 
-                                            <p class="dropdown-toggle  search-optiontitle" id="menu-option"
-                                               data-toggle="dropdown">More option
+										<p class="dropdown-toggle  search-optiontitle" id="menu-option"
+										data-toggle="dropdown">More option
 
-                                            </p>
-                                            <ul class="dropdown-menu search-list-option" role="menu"
-                                                aria-labelledby="menu1">
-                                                <div class="row">
-                                                    <span class="search-list-title">Hotel Facilities</span>
-                                                    <div class="col-sm-12  search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
+									</p>
+									<ul class="dropdown-menu search-list-option" role="menu"
+									aria-labelledby="menu1">
+									<div class="row">
+										<span class="search-list-title">Hotel Facilities</span>
+										<div class="col-sm-12  search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
 
-                                                            <span class="search-list-item1">Ari Conditioning</span>
-                                                        </li>
-                                                    </div>
+												<span class="search-list-item1">Ari Conditioning</span>
+											</li>
+										</div>
 
-                                                    <div class="col-sm-12  search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Ariport Transport</span>
-                                                        </li>
-                                                    </div>
+										<div class="col-sm-12  search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Ariport Transport</span>
+											</li>
+										</div>
 
-                                                    <div class=" col-sm-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Fitness Center</span>
-                                                        </li>
-                                                    </div>
+										<div class=" col-sm-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Fitness Center</span>
+											</li>
+										</div>
 
-                                                    <div class=" col-sm-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Flat Tv</span>
-                                                        </li>
-                                                    </div>
+										<div class=" col-sm-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Flat Tv</span>
+											</li>
+										</div>
 
-                                                    <div class=" col-sm-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Headter</span>
-                                                        </li>
-                                                    </div>
+										<div class=" col-sm-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Headter</span>
+											</li>
+										</div>
 
-                                                    <div class=" col-sm-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Internet-Wifi</span>
-                                                        </li>
-                                                    </div>
-
-
-                                                    <div class=" col-sm-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Parking</span>
-                                                        </li>
-                                                    </div>
+										<div class=" col-sm-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Internet-Wifi</span>
+											</li>
+										</div>
 
 
-                                                    <div class=" col-sm-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Pool</span>
-                                                        </li>
-                                                    </div>
+										<div class=" col-sm-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Parking</span>
+											</li>
+										</div>
 
 
-                                                    <div class="col-sm-12 col-md-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Restaurant</span>
-                                                        </li>
-                                                    </div>
+										<div class=" col-sm-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Pool</span>
+											</li>
+										</div>
 
 
-                                                    <div class="col-sm-12 col-md-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Smoking Room</span>
-                                                        </li>
-                                                    </div>
+										<div class="col-sm-12 col-md-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Restaurant</span>
+											</li>
+										</div>
 
 
-                                                    <div class="col-sm-12 col-md-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Spa&Sauna</span>
-                                                        </li>
-                                                    </div>
+										<div class="col-sm-12 col-md-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Smoking Room</span>
+											</li>
+										</div>
 
 
-                                                    <div class="col-sm-12 col-md-12 search-list-wrapper">
-                                                        <li role="presentation">
-                                                            <input type="checkbox"
-                                                                   class="search-list-checkradio"
-                                                                   id="check1" name="option1"
-                                                                   value="something"/>
-                                                            <span class="search-list-item1">Washer&Dryer</span>
-                                                        </li>
-                                                    </div>
-
-                                                </div>
+										<div class="col-sm-12 col-md-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Spa&Sauna</span>
+											</li>
+										</div>
 
 
-                                            </ul>
+										<div class="col-sm-12 col-md-12 search-list-wrapper">
+											<li role="presentation">
+												<input type="checkbox"
+												class="search-list-checkradio"
+												id="check1" name="option1"
+												value="something"/>
+												<span class="search-list-item1">Washer&Dryer</span>
+											</li>
+										</div>
+
+									</div>
 
 
-                                            <div class="form-group col-sm-12 ">
+								</ul>
 
 
-                                                <button type="submit" name="hotel_price"
-                                                        class="btn btn-primary col-lg-9 col-md-9 col-sm-9 search-check-button">
-                                                    SEARCH
-                                                </button>
-                                                <input type="hidden" name="a" value="search">
-                                            </div>
+								<div class="form-group col-sm-12 ">
 
 
-                                        </div>
-                                    </div>
-								</form>
+									<button type="submit" name="hotel_price"
+									class="btn btn-primary col-lg-9 col-md-9 col-sm-9 search-check-button">
+									SEARCH
+								</button>
+								<input type="hidden" name="a" value="search">
+							</div>
 
-                                </div>
-						<!-- END ROW -->
 
+						</div>
 					</div>
-					<!-- END slidebar-item sidebar-search-form -->
+				</form>
 
-					
+			</div>
+			<!-- END ROW -->
+
+		</div>
+		<!-- END slidebar-item sidebar-search-form -->
 
 
-				</div>
 
-				<!-- END COT 3 -->
+
+	</div>
+
+	<!-- END COT 3 -->
 						<!-- <div class="col-lg-9 col-md-9 wapper-content">
 							
 
@@ -633,7 +632,7 @@
 
 															<div >
 																
-															<span><i class="fas fa-bolt slide-icon"></i> from </span><span class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
+																<span><i class="fas fa-bolt slide-icon"></i> from </span><span class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
 															</div>
 
 
