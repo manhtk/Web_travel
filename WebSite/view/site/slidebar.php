@@ -106,12 +106,12 @@
 												id="spankey"><?php echo $des ?></span>
 											</div>
 											<input type="hidden" name="cityname" id="namekey"
-											value="<?php echo $_GET['cityname'] ?>">
+											value="">
 											<input type="hidden" name="cityid" id="idkey"
-											value="<?php echo $_GET['cityid'] ?>">
+											value="">
 
 											<ul class="dropdown-menu search-list" role="menu"
-											aria-labelledby="menu1" onclick="change()">
+											aria-labelledby="menu1" onclick="change()" id="dropdownmenu">
 											<?php foreach ($data_city
 
 												as $values) { ?>
@@ -130,7 +130,7 @@
 										<script>
 											$(function () {
 
-												$(".dropdown-menu li").click(function (e) {
+												$("#dropdownmenu li").click(function (e) {
 
 													$(".destination:first-child").text($(this).text());
 													$(".destination:first-child").val($(this).text());
@@ -233,7 +233,6 @@
 
 												</div>
 											</div>
-
 											<div class="formbook">
 												<div class="people-dropdown book-people" style="display: block;">
 													<div class="item gmz-number-wrapper">
@@ -292,7 +291,7 @@
 												id="check1" name="option1"
 												value="something"/>
 
-												<span class="search-list-item1">Ari Conditioning</span>
+												<span class="search-list-item1">Air Conditioning</span>
 											</li>
 										</div>
 
