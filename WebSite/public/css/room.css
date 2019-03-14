@@ -515,6 +515,18 @@ a.morelink
 	position: relative;
 	overflow: hidden;
 }
+.more1 {
+	height: 100px;
+}
+.cut-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
+}
 /*.st-description {
 	height: 100px;
 }*/
@@ -522,15 +534,7 @@ a.morelink
 {
 	margin: 0 0 10px;
 }
-.st-description .cut-gradient {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 50px;
-	width: 100%;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
-	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
-}
+
 .st-link:hover {
 	color: #5191FA !important;
 	text-decoration: underline;
