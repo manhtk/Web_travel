@@ -584,6 +584,8 @@ i.fa.fa-bars.munu1{
  .slidebar-filter.search-title-mobile
 {
 	display: none;
+	text-align: center;
+	display: none;
 }
 
 
@@ -611,6 +613,10 @@ i.fa.fa-bars.munu1{
 	font-weight: 500;
 	padding: 25px 20px;
 	margin-left: -13px;
+}
+.slidebar-filter .search-title span
+{
+	font-size: 20px;
 }
 .slidebar-filter .search-content
 {
@@ -700,7 +706,7 @@ i.fa.fa-bars.munu1{
 .slidebar-filter .search-list
 {
 	width: 268px;
-	height: 380px;
+	height: 400px;
 	margin-left: -15px;
 	position: relative;
 	top: 73px;
@@ -756,6 +762,8 @@ i.fa.fa-bars.munu1{
 .slidebar-filter .search-date 
 {
 	margin-left: 50px;
+	color: #5191FA;
+
 	position: absolute;
 	top: 30px;
 	height: 15px;
@@ -779,9 +787,10 @@ i.fa.fa-bars.munu1{
 {
 	width: 100%;
     height: 47px;
-   
     padding-right: 13px;
     top: -15px;
+    border: none;
+    background: #19A1E5;
     right: 143px;
     line-height: 30px;
 
@@ -816,7 +825,7 @@ i.fa.fa-bars.munu1{
 .field_people_room .book-people
 {
 	margin-left: -15px;
-	width: 210px;
+	width: 265px;
 }
 .field_people_room .search-checkicon
 {
@@ -862,6 +871,7 @@ i.fa.fa-bars.munu1{
 .field_people_room .formbook
 {
 	display: none;
+	
 }
 /*ANH*/
 .wapper-content
@@ -1017,6 +1027,10 @@ i.fa.fa-bars.munu1{
 	font-size: 14px;
     color: #5E6D77;
 }
+.modern-search-result .info .service-point
+{
+	color: #5191FA;
+}
 .modern-search-result .info .service-price
 {
 	font-size: 18px;
@@ -1036,8 +1050,8 @@ i.fa.fa-bars.munu1{
 .modern-search-result .img
 {
 	position: absolute;
-	right: 3px;
-	bottom: 215px;
+	right: 18px;
+	bottom: 212px;
 	color: white;
 	font-size: 21px;
 
@@ -1057,15 +1071,13 @@ i.fa.fa-bars.munu1{
 .modern-search-result .text
 {
 	position: absolute;
-	
-	bottom: 200px;
-	color: white;
-	background-color: #19A1E5;
-	padding: 4px 10px;
-	width: 80px;
-	height: 30px;
-	line-height: 15px;
-	font-size: 13px;
+    bottom: 200px;
+    color: white;
+    border: none;
+    background-color: #19A1E5;
+    height: 30px;
+    line-height: 15px;
+    font-size: 13px;
 }
 .modern-search-result .slide-icon
 {
@@ -1076,7 +1088,7 @@ i.fa.fa-bars.munu1{
 {
 
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 40px;
 	text-align: center;
 	margin-bottom: 100px;
 	
@@ -1406,6 +1418,7 @@ i.fa.fa-bars.munu1{
 	.slidebar-filter .search-date 
 	{
 		margin-left: 33px;
+		color: #5191FA;
 		position: absolute;
 		top: 30px;
 		height: 15px;
