@@ -146,9 +146,13 @@
 									</div>
 										  <?php } ?>			
 								</div>
+								<?php
+								if(count($data_fac) > 6 ){  
+								?>
 								<div class="showmore" >
 									Show All
 								</div> 
+							<?php } ?>
 							
 							</div>	
 						</div>
@@ -305,10 +309,7 @@
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
 
 
-												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>
-
-												
-												
+												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>												
 											</div>
 										</div>
 									</div>                 
@@ -535,7 +536,7 @@
 							</div>
 							<div class="comment-item-body">
 								<h4 class="title">
-									<span class="comment-rate">4.8</span>                        "Beautiful spot with a lovely view"
+									<span class="comment-rate">4.8</span>"Beautiful spot with a lovely view"
 								</h4>
 								<div class="detail">
 									<div class="st-description" data-show-all="st-description-94">
@@ -745,7 +746,7 @@
 								<?php foreach ($data_hotel as $value) {
 									
 								 ?>
-								<div class="col-sm-8" style="position: relative;top: 20px;">
+								<div class="col-sm-8 owner_name " >
 									<?php echo $value['owner']; ?> <br>
 									<a href="">Member Since 2018</a>
 								</div>
