@@ -99,12 +99,20 @@ body{
     font-size: 16px;
     font-weight: 200;
 }
+<<<<<<< HEAD
 .dropdow-list1 label input 
 {
 	color: #5191fa; 
 	border: none; 
 	font-weight: 200;
 	 width: 90%
+=======
+.dropdow-list1 input{
+	color: #5191fa;
+	 border: none; 
+	 font-weight: 200;
+	  width: 90%
+>>>>>>> 837b46216ed12ffeedc4ca2d395cc17ff92c9521
 }
 .dropdown-toggle span 
 {
@@ -159,6 +167,7 @@ span .child_values
     overflow: hidden;
     border: 1px solid #eee;
     border-radius: 4px;
+    display: block;
 }
 .txt-guest
 {

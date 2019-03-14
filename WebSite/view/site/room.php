@@ -197,6 +197,7 @@
                 </div>
               </div>
             </div>
+          <!--   <a href="#"><span class="text">View more</span></a> -->
             <!-- end description -->
             <hr style="width: 100%;">
             <!-- Amenities -->

@@ -247,7 +247,13 @@ jQuery(document).ready(function($){
 		    })
 	
 });
-
+// $(document).ready(function){
+// 	$('span.text').toggle(function () {
+// 		$(".st-description").css({height(auto)});
+// 	}, function () {
+// 		$(".st-description").css({height(100px)});
+// 	});
+// }
 
 $(document).ready(function(){
       $('.menu1').click(function(){
