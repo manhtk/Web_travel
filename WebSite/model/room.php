@@ -9,22 +9,6 @@ class Room_Model extends Model {
 	public function __construct() {
         parent::__construct();
 	}
-    public function getUsers($limit = false){
-	    $sql = "SELECT * FROM user";
-	    if($limit && is_numeric($limit)){
-	        $sql .= " LIMIT 0,{$limit}";
-        }
-
-        $res = $this->query($sql);
-
-        $data = [];
-        if($res->num_rows > 0){
-            while($row = $res->fetch_assoc()){
-                $data[] = $row;
-            }
-        }
-        return $data;
-    }
     public function getRoom($room_id){
         $sql = "SELECT * FROM room WHERE room_id='{$room_id}'";
         
@@ -54,7 +38,7 @@ class Room_Model extends Model {
 
     }
     public function getAmenities($room_id){
-        $sql = "SELECT * from serviceconn inner join room on serviceconn.room_id_or_hotel_id = room.room_id inner join service on serviceconn.service_id = service.service_id where serviceconn.type = 'room'";
+        $sql = "SELECT * from serviceconn inner join room on serviceconn.room_id_or_hotel_id = room.room_id inner join service on serviceconn.service_id = service.service_id where serviceconn.type = 'room' and  room_id={$room_id}";
         $res = $this->query($sql);
         $data = [];
         if($res->num_rows > 0){
@@ -65,4 +49,4 @@ class Room_Model extends Model {
         return $data;
 
     }
-}
+}             

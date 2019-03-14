@@ -1,17 +1,17 @@
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  
-  <!--  <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
-  <!-- Fotorama -->
-  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script type="text/javascript" src="public/js/khanh.js"></script>
-<link rel="stylesheet" type="text/css" href="public/css/room.css">
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <!--  <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <!-- Fotorama -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="public/js/khanh.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/room.css">
+</head>
+<body>
+
  
   <!-- end header -->
   <div class="clear"></div>
@@ -21,9 +21,32 @@
     <div class="container">
       <ul>
         <li><a href="https://homap.travelerwp.com">Home</a></li>
-        <li><a href="https://homap.travelerwp.com/search-hotel-full-map/?location_id=1957&amp;location_name=United%20States">United States</a></li>
-        <li><a href="">Hotel WBF Hommachi</a></li>
-        <li class="active">Room Kerama Islands</li> 
+        <li><a href="">United States</a></li>
+        <li>
+          <?php 
+          if(!empty($data_hotel)){
+            ?>
+            <?php 
+            foreach ($data_hotel as $values) {
+              ?>
+              <a href=""><?php echo $values['hotel_name'] ?></a>
+              <?php     
+            }?>
+          <?php } ?>
+        </li>
+        <li class="active">
+          <?php
+          if(!empty($data_room)){
+          ?>
+              <?php
+              foreach ($data_room as $values){
+                ?>
+                <a href=""><?php echo $values['room_name']; ?></a>
+              <?php
+            }?>
+          <?php } ?>
+           
+         </li> 
       </ul>
     </div>
   </div>
@@ -196,6 +219,7 @@
                               
                             </div> 
                             <?php
+                            //dd($data_amenities);
                         }?>
                     <?php } ?> 
                      

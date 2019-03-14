@@ -1,10 +1,12 @@
 *{
-margin: 0px;
-padding: 0px;
-}
-body
-{
+	padding: 0;
+	margin: 0;
+	
 	font-family: 'Poppins', sans-serif;
+}
+body{
+	font-family: 'Poppins';
+
 }
 /*css book lich*/
 .field_people_room {
@@ -934,21 +936,19 @@ i.fa.fa-bars.munu1{
 	width: 160px;
     height: 279px;
     left: -101px;
-    /* margin-left: -178px; */
     margin-top: 14px;
 }
 .st-hotel-result .toolbar-layout .layout-title1
 {
-	width: 160px;
-	height: 30px;
+	
 	margin-left: 10px;
 }
 .st-hotel-result .toolbar-layout .layout-title2
 {
-	width: 160px;
-	height: 30px;
+	
 	opacity: 0.3;
-	top: 10px;
+	margin-top: 16px;
+    display: block;
 	margin-left: 10px;
 }
 .st-hotel-result .toolbar-layout .layout-list-item
@@ -960,8 +960,7 @@ i.fa.fa-bars.munu1{
 }
 .st-hotel-result .toolbar-layout .layout-check-content
 {
-	width: 110px;
-	height: 30px;
+	
 	position: absolute;
 	margin-left: 40px;
 	font-weight: 400;
@@ -982,7 +981,6 @@ i.fa.fa-bars.munu1{
 /*END CONTENT TITLE*/
 .modern-search-result
 {
-	height: 1400px;
     margin-top: 30px;
     margin-left: 10px;
 }
@@ -1014,6 +1012,16 @@ i.fa.fa-bars.munu1{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.modern-search-result .info .service-location
+{
+	font-size: 14px;
+    color: #5E6D77;
+}
+.modern-search-result .info .service-price
+{
+	font-size: 18px;
+    color: #1A2B50;
+}
 .modern-search-result .icon-position
 {
 	position: relative;
@@ -1021,6 +1029,8 @@ i.fa.fa-bars.munu1{
 .modern-search-result a
 {
 	color: #1A2B50;
+	font-size: 18px;
+	text-decoration: none;
 }
 
 .modern-search-result .img
@@ -1062,65 +1072,32 @@ i.fa.fa-bars.munu1{
 	color:yellow;
 }
 
-.modern-search-result-phantrang
+.modern-search-result-page
 {
 
 	width: 100%;
 	margin-top: 30px;
-	
+	text-align: center;
 	margin-bottom: 100px;
 	
-	padding-left: 100px;
-	position: relative;
 
 }
-.modern-search-result-phantrang .phantrang-list
+.modern-search-result-page .page-list
 {
 	text-align: center;
-	
 	margin-top: -15px;
-	padding-left: 267px;
+	letter-spacing: 10px;
 	margin-bottom: 0px;
 	list-style-type: none;
-	width: 200px;
-	position: relative;
+	
 
 }
-.modern-search-result-phantrang .phantrang-item1 li
+.modern-search-result-page .page-item1 li
 {
 	border: 1px solid #5191FA !important;
-	width: 32px;
-	
 	height: 32px;
 	line-height: 32px;
 	color: #5191FA !important;
-}
-.modern-search-result-phantrang .phantrang-item2 li
-{
-
-	width: 30px;
-	padding: 5px 10px;
-	margin-left: 38px;
-	height: 30px;
-	position: absolute;
-	margin-top: -30px;
-}
-.modern-search-result-phantrang	 li span
-{
-	width: 10px;
-
-	margin-left: 80px;
-	height: 30px;
-	position: absolute;
-	margin-top: -30px;
-}
-.modern-search-result-phantrang	.count-string
-{
-	margin-top: 30px;
-	position: absolute;
-	margin-left: 3px;
-	color: #768090;
-	font-size: 14px;
 }
 
 /*start footer*/
