@@ -17,15 +17,16 @@
 					<img src="https://homap.travelerwp.com/wp-content/themes/traveler2.5/v2/images/ico_success.svg" alt="Thanh toán thành công">
 					<div class="notice-success">
 						<p class="line1">
-							<span>	
-								Nguyễn dang chien
+							<span>
+								<?php 
+								echo $list[0]['first_name'].' '.$list[0]['last_name']; ?>, 
 							</span>
 							Your order was submitted successfully
 						</p>
 						<p class="line2">
 							Booking details has been sent to:
 							<span>
-								dangchien201197@gmail.com
+								<?php  echo $list[0]['email'] ?>
 							</span>
 						</p>
 					</div>

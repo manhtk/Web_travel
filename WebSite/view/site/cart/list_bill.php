@@ -29,7 +29,7 @@
 								<td><?php echo $value['bill_id'] ?></td>
 								
 								<td><?php echo $value['room_name'] ?></td>
-								<td></td>
+								<td><?php echo $value['date_order'] ?></td>
 								<td><?php echo $value['checkin'].'->'.$value['checkout'] ?></td>
 								
 								

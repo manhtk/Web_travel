@@ -197,6 +197,7 @@
                 </div>
               </div>
             </div>
+          <!--   <a href="#"><span class="text">View more</span></a> -->
             <!-- end description -->
             <hr style="width: 100%;">
             <!-- Amenities -->
@@ -427,6 +428,8 @@
         <div class="col-md-3 abc"  >
           <!-- widget -->
           <form action="?c=bookcart&a=view" method="post">
+          
+            <input type="hidden" name="room_id" value="<?php echo $data_room[0]['room_id']; ?>" />
           <div class="container-fluid widgetroom">
             <div class="widgets" style="background-color: white;" >
               <div class="form-head">
