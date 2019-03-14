@@ -219,7 +219,10 @@
                               
                             </div> 
                             <?php
+<<<<<<< HEAD
                             //dd($data_amenities);
+=======
+>>>>>>> fcd3bd4f3ab689b6fcdfd9e0e6dd003b70d7cdae
                         }?>
                     <?php } ?> 
                      

@@ -10,6 +10,10 @@ body
 	font-family: 'Poppins', sans-serif ;
 
 }
+.clickme
+{
+	display: none;
+}
 /*login*/
 .modal .modal-dialog .modal-content .modal-header .close
 {
@@ -101,6 +105,9 @@ body
 {
 	margin-bottom: 10px;
 }
+.st-hotel-header .left .sub-heading i {
+	color:#A0A9B2;font-size: 18px;margin-right: 5px
+}
 #write-review
 {
 	color: #5E6D77;
@@ -148,33 +155,40 @@ body
 {
 	font-size: 20px;
 }
+
+.facilities .room-facility{
+	overflow: hidden;
+	height: 125px;
+
+}
+.facilities .room-facility.more{
+	
+	height: auto;
+
+
+}
 .broom i
 {
-	border: 1px solid #EAEEF3;
-	border-radius: 5px;
+	
+	
 	font-size: 20px;
 	padding: 6px 8px;
 }
-.broom .price-room 
-{
-	display: none;
-}
-.sroom .price-room 
-{
-	display: none;
-}
+
+
 .sroom i
 {
-	border: 1px solid #EAEEF3;
-	border-radius: 5px;
+	
 	font-size: 20px;
 	padding: 6px 8px;
 }
+
 /*room*/
 a.morelink 
 {
 	text-decoration:none;
 	outline: none;
+	color: #5191FA 
 }
 .morecontent span {
 	display: none;
@@ -337,7 +351,7 @@ a.morelink
 }
 
 .field_people_room .people-dropdown {
-	display: none;
+	display: block;
 	z-index: 1;
 	padding: 20px 20px;
 	border: none;
@@ -615,6 +629,8 @@ font-size: 14px;
 {		
 	float: right;
 }
+
+
 .st-hotel-header .review-score 
 {
 	line-height: 50px;
@@ -647,6 +663,7 @@ font-size: 14px;
 	line-height: 13px;
 	margin-top: 11px;
 	margin-bottom: 5px;
+	font-size: 24px;
 }
 .st-hotel-header .review-score .head span.text-rating {
 	color: #5191FA;
@@ -771,6 +788,10 @@ font-size: 14px;
 {
 	display: none;
 }
+.sroom a{
+	color: #1A2B48;
+	font-size: 18px;
+}
 .broom
 {
 	display: block;
@@ -810,6 +831,9 @@ font-size: 14px;
 	border-radius: 5px;
 	border: none;
 }
+.broom .btn:hover{
+	color: #FFF;
+}
 
 /*rooms*/
 /*review*/
@@ -819,6 +843,7 @@ font-size: 14px;
 }
 .reviews .square
 {
+	height: 346px;
 	border:1px solid #eeeeee;
 	border-radius: 5px;
 	padding: 20px 20px;
@@ -854,6 +879,9 @@ font-size: 14px;
 	margin-top: 10px;
 	color: #768090;
 	font-size: 14px;
+}
+.reviews .review-box-score .review-score-base span {
+	color: #5191FA;
 }
 .reviews .square .heading {
     font-size: 18px;
@@ -893,6 +921,24 @@ font-size: 14px;
 	height: 8px;
 	background: #5191FA;
 	border-radius: 10px;
+}
+.reviews .item .progress  .darkgreen{
+	width: 100%;
+}
+.reviews .item .progress .location{
+	width: 94%;
+}
+.reviews .item .progress .service{
+	width: 86%;
+}
+.reviews .item .progress .clearness{
+	width: 100%;
+}
+.reviews .item .progress .room{
+	width: 100%;
+}
+.reviews .item .progress .sleep{
+	width: 94%;
 }
 .reviews .item .label {
 	position: relative;
@@ -972,6 +1018,11 @@ font-size: 14px;
 .review-list .media-body
 {
 	padding-left: 10px;
+}
+.reviews .summarys
+{
+	text-align: center;
+	margin-top: 5%;
 }
 /*end review*/
 
@@ -2233,7 +2284,7 @@ font-size: 14px;
 	{
 		padding: 0;
 	}
-	.sroom  button
+	.sroom  .btn
 	{
 		background: #FA5636;
 		color: #FFF;
@@ -2242,7 +2293,13 @@ font-size: 14px;
 		padding: 10px 10px;
 		border-radius: 5px;
 		border: none;
-		margin:4% 78% 4% 0%;
+		margin:1% 0% 4% 0%;
+	}
+	.sroom .price-room{
+		padding-top: 10px;
+	}
+	.sroom .btn{
+		color: #FFF;
 	}
 	/*end room*/
 	/*review*/
@@ -2631,12 +2688,16 @@ font-size: 14px;
 	{
 		display: block;
 	}
+
 	.sroom .sheration
 	{
 		border: 1px solid #f1f1f1;
 		border-radius: 5px;
 		margin-bottom: 10%;
 	}
+	.sroom .price-room {
+	padding-top: 10px;
+}
 	.sheration .images
 	{
 		padding-left: 0;
@@ -2668,7 +2729,10 @@ font-size: 14px;
 		padding: 10px 10px;
 		border-radius: 5px;
 		border: none;
-		margin:4% 78% 4% 0%;
+		margin:1% 0% 4% 0%;
+	}
+	.sroom .btn:hover{
+		color: #FFF;
 	}
 	/*end room*/
 	/*review*/

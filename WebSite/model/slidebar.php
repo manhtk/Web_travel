@@ -52,14 +52,6 @@ class Slidebar_Model extends Model {
                 case 'hight':
                     $sql .= " ORDER BY hotel_price DESC";
                     break;
-
-                case 'name_az':
-                    $sql .= " ORDER BY hotel.hotel_name ASC";
-                    break;
-
-                case 'name_za':
-                    $sql .= " ORDER BY hotel.hotel_name DESC";
-                    break;
            
             }
         }
@@ -81,11 +73,6 @@ class Slidebar_Model extends Model {
         }
 
         return $data;
-        
-
-
-
-        
         
     }
  
