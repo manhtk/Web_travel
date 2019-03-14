@@ -1,14 +1,15 @@
-﻿// dao nguoc
+// dao nguoc
 $(document).ready(function(){
 	var body = $('body');
 		
 
 			$('.has-matchHeight', body).matchHeight();
 });
+
 $(document).ready(function(){
-	$('.btn').click(function(){
-		$('.price-room').show();
-	});
+  $(".btn").click(function(){
+    $(".btn").text("Detail Room");
+  });
 });
 $(document).ready(function(){
 	$(".more-content").click(function(){
@@ -277,7 +278,7 @@ $(document).ready(function(){
 	$.fn.shorten = function (settings) {
 
 		var config = {
-			showChars: 100,
+			showChars: 0,
 			ellipsesText: "...",
 			moreText: "more",
 			lessText: "less"
@@ -363,7 +364,13 @@ $(document).ready(function(){
  // end dowwn
  $(document).ready(function(){
  	$(".showmore").click(function(){
- 		$(".showfaciliti").slideToggle();
+ 		var t = $(this);
+ 		$(".room-facility").toggleClass('more');
+ 		if($(".room-facility").hasClass('more')){
+ 			t.text('Show Less');
+ 		}else{
+ 			t.text('Show All');
+ 		}
  	});
  });
 // hide forrm book 
