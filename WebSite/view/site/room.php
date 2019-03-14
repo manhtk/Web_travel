@@ -448,7 +448,7 @@
                   }?>
 
                 <?php } ?>
-                
+                <input type="hidden" name="room_id" value="<?php $values['room_id'] ?>" >
                 <span class="unit">/night</span>
               </div>
               <div class="row">
