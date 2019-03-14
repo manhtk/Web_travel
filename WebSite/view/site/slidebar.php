@@ -667,6 +667,7 @@
 								{
 									foreach ($data_hotel as $value)
 									 {
+								
 										?>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
 										<div class="item">

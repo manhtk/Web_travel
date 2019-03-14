@@ -21,9 +21,17 @@
     width: 60%;
     font-weight: 400;
 }
+
+.st-checkout-page .cart-info .info-section ul li.ad-info ul li span.label {
+    color: #1A2B48;
+    font-size: 100%;
+    padding: 0;
+    width: 60%;
+    font-weight: 400;
+}
 span.lable_section
 {
-    color: red;
+    color: #1A2B48;
     display: inline;
     padding: .2em .6em .3em;
     font-size: 100%;
@@ -64,7 +72,7 @@ div#cart-info {
     font-size: 100%;
     font-weight: 700;
     line-height: 1;
-    color: blue;
+    color: #1A2B48;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
