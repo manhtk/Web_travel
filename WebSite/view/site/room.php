@@ -227,10 +227,12 @@
                         }?>
                     <?php } ?> 
                      
-                  </div>  
+                  </div>
+
                 </div>
               </div>
             </div>
+             <a href="#"><span class="text1">Show all</span></a> 
             <!-- end facilities -->
 
             <!-- Rules -->
@@ -532,7 +534,7 @@
                 <div class="" id="bt1">
                   <div class="form-group form-more-extra">
                     <div class="more">
-                      <a href="#dropdown-more-extra" class="dropdown" style="color: blue;float: right;padding-right: 25px;">
+                      <a href="#dropdown-more-extra" class="dropdown">
                         More Option
                         <i class="fa fa-caret-down"></i></a>
                       </div>
