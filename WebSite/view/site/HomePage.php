@@ -299,7 +299,7 @@
                                                 </div>
                                                 <div class="wpb-content-text">
                                                     <div class="wpb-room-name">
-                                                        <a href="#">
+                                                        <a href="?c=detailhotel&a=view&hotel_id=<?php echo $values['hotel_id']?>">
                                                             <?php echo $values['hotel_name']; ?>
                                                         </a>
                                                     </div>

@@ -10,6 +10,7 @@ body
 	font-family: 'Poppins', sans-serif ;
 
 }
+
 .clickme
 {
 	display: none;
@@ -736,6 +737,13 @@ font-size: 14px;
 	font-weight: 400;
 	position: relative;
 }
+.st-description .more-content{
+	height: 80px;
+	overflow: hidden;
+}
+.st-description .more-content.more{
+	height: auto;
+}
 [data-show-all] {
 	position: relative;
 	overflow: hidden;
@@ -744,18 +752,33 @@ font-size: 14px;
 {
 	margin: 0 0 10px;
 }
-.cut-gradient {
+.st-description .cut-gradient {
 	position: absolute;
-	bottom: 27px;
+	bottom: 20px;
 	left: 0;
 	height: 65px;
 	width: 100%;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
 	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
 }
+.cut_gradient_rule{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	height: 65px;
+	width: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
+	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
+
+}
 .st-link:hover {
 	color: #5191FA !important;
 	text-decoration: underline;
+}
+.showmore_des{
+	color:#5191FA;
+	cursor: pointer;
+}
 }
 /*end descripton*/
 /*Faciliti*/
@@ -782,7 +805,23 @@ font-size: 14px;
 	color:#5191FA;
 	cursor: pointer;
 }
+
+
 /*end Faciliti*/
+/*Rules*/
+.showmore_rule{
+	color:#5191FA;
+	cursor: pointer;
+}
+
+.rules .more_content_rule{
+	overflow: hidden;
+	height: 111px;
+}
+.rules .more_content_rule.more{
+	height: auto;
+}
+/*End Rules*/
 /*rooms*/
 .st-heading-section .down-icon2
 {
@@ -1403,15 +1442,7 @@ font-size: 14px;
 {
 	margin: 0 0 10px;
 }
-.st-description .cut-gradient {
-	position: absolute;
-	bottom: 30px;
-	left: 0;
-	height: 50px;
-	width: 100%;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
-	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
-}
+
 .st-link:hover {
 	color: #5191FA !important;
 	text-decoration: underline;
@@ -2225,15 +2256,7 @@ font-size: 14px;
 	{
 		margin: 0 0 10px;
 	}
-	.st-description .cut-gradient {
-		position: absolute;
-		bottom: 25px;
-		left: 0;
-		height: 75px;
-		width: 100%;
-		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
-		background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
-	}
+	
 	.st-link:hover {
 		color: #5191FA !important;
 		text-decoration: underline;
@@ -2663,9 +2686,7 @@ font-size: 14px;
 	{
 		margin: 0 0 10px;
 	}
-	.st-description .cut-gradient {
-	display: none;
-	}
+	
 	.st-link:hover {
 		color: #5191FA !important;
 		text-decoration: underline;
