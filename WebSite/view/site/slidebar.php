@@ -39,7 +39,7 @@
 
 						<div class="col-xs-12  form-group">		
 							<div class="banner-search-form">					
-								<i class="fas fa-map-marker-alt mobile-checkicon" style="color: #1A2B48;"></i>
+								<i class="fas fa-map-marker-alt mobile-checkicon"></i>
 								<input type="text" class="form-control col-sm-6 col-xs-12 mobile-input" id="email" placeholder="Where are you going?" name="email">
 								<button type="button" class=" btn-primary mobile-button"><i class="fas fa-search mobile-checkicon-button"></i></button>
 								
@@ -54,8 +54,8 @@
 
 		<!-- mobile list -->
 		<div class="mobile-list">
-			<div class="container" style="text-align: center;">
-				<ul class="" role="menu" aria-labelledby="menu1" style="display: inline-block;">
+			<div class="container mobile-list-waper">
+				<ul class="" role="menu" aria-labelledby="menu1">
 					<li role="presentation"><button class=" btn-primary mobile-list-item">Date</button></li>
 					<li role="presentation"><button class=" btn-primary mobile-list-item" >Guest</button></li>
 					<li role="presentation"><button class=" btn-primary mobile-list-item">Map</button></li>
@@ -102,7 +102,7 @@
 												} else {
 													$des = $_GET['cityname'];
 												} ?>
-												<span class="destination" style="cursor: pointer"
+												<span class="destination"
 												id="spankey"><?php echo $des ?></span>
 											</div>
 											<input type="hidden" name="cityname" id="namekey"
@@ -116,11 +116,11 @@
 
 												as $values) { ?>
 
-													<li style="padding-left: 20px; cursor: pointer"
+													<li 
 													data-value="<?php echo $values['city_id'] ?>"
 													><i
 													class="fas fa-map-marker-alt"></i>
-													<span style="padding: 20px;">
+													<span>
 														<?php echo $values['city_name'] ?>
 													</span>
 												</li>
@@ -171,10 +171,9 @@
 									<i class="far fa-calendar-plus search-checkiconright"></i>
 									<label for="radio-choice-1" class="search-title-language"> Check
 									In-Out</label>
-									<div id="reportrange"
-									style="color: #5191FA;cursor: pointer;font-size: 15px;padding-left: 47px;padding-top: 20px">
-									<?php echo $start . ' - ' . $end ?>
-								</div>
+									<div id="reportrange" class="matchHeight">
+										<?php echo $start . ' - ' . $end ?>
+									</div>
 
 								<input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
 								<input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
@@ -223,22 +222,18 @@
 
 												<span class="value">
 													<span class="adult search-element1">1 Adult</span>
-
 													<span class="child search-element2">0 Child</span>
 												</span>
 
-													<!-- <div class="icon">
-														<i class="fas fa-angle-up"></i>
-													</div> -->
 
 												</div>
 											</div>
 
 											<div class="formbook">
-												<div class="people-dropdown book-people" style="display: block;">
+												<div class="people-dropdown book-people">
 													<div class="item gmz-number-wrapper">
 														Rooms
-														<span class="control minus">-</span>
+														<span class="control minus room">-</span>
 														<span class="text">
 
 															<span class="value room">1</span>               <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
@@ -247,7 +242,7 @@
 													</div>
 													<div class="item gmz-number-wrapper">
 														Adults
-														<span class="control minus">-</span>
+														<span class="control minus adults">-</span>
 														<span class="text">
 															<span class="value adult">1</span>               <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
 														</span>
@@ -255,7 +250,7 @@
 													</div>
 													<div class="item gmz-number-wrapper">
 														Children
-														<span class="control minus">-</span>
+														<span class="control minus children">-</span>
 														<span class="text">
 															<span class="value child">1</span>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
 														</span>
@@ -279,8 +274,8 @@
 
 										<p class="dropdown-toggle  search-optiontitle" id="menu-option"
 										data-toggle="dropdown">More option
-
 									</p>
+
 									<ul class="dropdown-menu search-list-option" role="menu"
 									aria-labelledby="menu1">
 									<div class="row">
@@ -595,7 +590,7 @@
 													<div class="item">
 														<div class="thumb">
 
-															<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
+															<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">  <img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
 														</div>
 														<div class="icon-position">
 															<i class="fas fa-heart img heart"></i>
@@ -665,6 +660,7 @@
 
 												}
 											}
+
 											for ($i = 1;$i <= $total_page;$i++) {
 												echo "<li><a href='?c=slidebar&a=view&page=". $i ."&$key=$value'>$i</a></li>";
 											}
