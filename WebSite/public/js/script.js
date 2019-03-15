@@ -396,10 +396,11 @@ $(document).ready(function(){
  		if($(".more_content_rule").hasClass('more')){
  			t.text('Show Less') ;
 
- 			
+ 			$(" .cut_gradient_rule").css("display","none");
+
  		}else{
  			t.text('Show All');
- 			
+ 			$(" .cut_gradient_rule").css("display","block");
  		}
  	});
  });

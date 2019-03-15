@@ -203,8 +203,7 @@
 										<h4>Can i bring Alcohol top this trip?</h4>
 										<p>Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									</div>	
-									<br>
-									
+									<div class="cut_gradient_rule"></div>
 								<div class="showmore_rule" >
 									Show All 
 								</div>								

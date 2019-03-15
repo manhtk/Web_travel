@@ -751,7 +751,7 @@ font-size: 14px;
 {
 	margin: 0 0 10px;
 }
-.cut-gradient {
+.st-description .cut-gradient {
 	position: absolute;
 	bottom: 20px;
 	left: 0;
@@ -759,6 +759,16 @@ font-size: 14px;
 	width: 100%;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
 	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
+}
+.cut_gradient_rule{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	height: 65px;
+	width: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
+	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
+
 }
 .st-link:hover {
 	color: #5191FA !important;
@@ -1431,15 +1441,7 @@ font-size: 14px;
 {
 	margin: 0 0 10px;
 }
-.st-description .cut-gradient {
-	position: absolute;
-	bottom: 30px;
-	left: 0;
-	height: 50px;
-	width: 100%;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
-	background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
-}
+
 .st-link:hover {
 	color: #5191FA !important;
 	text-decoration: underline;
@@ -2253,15 +2255,7 @@ font-size: 14px;
 	{
 		margin: 0 0 10px;
 	}
-	.st-description .cut-gradient {
-		position: absolute;
-		bottom: 25px;
-		left: 0;
-		height: 75px;
-		width: 100%;
-		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(80%, white));
-		background-image: linear-gradient(rgba(255, 255, 255, 0) 1%, white 80%);
-	}
+	
 	.st-link:hover {
 		color: #5191FA !important;
 		text-decoration: underline;
@@ -2691,9 +2685,7 @@ font-size: 14px;
 	{
 		margin: 0 0 10px;
 	}
-	.st-description .cut-gradient {
-	display: none;
-	}
+	
 	.st-link:hover {
 		color: #5191FA !important;
 		text-decoration: underline;
