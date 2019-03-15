@@ -8,9 +8,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	$(".more-content").click(function(){
-		$(".cut-gradient").fadeToggle();
-	});
+	
 	$(".down-icon").click(function(){
 		$(".st-description").fadeToggle();
 	});
@@ -270,56 +268,56 @@ $(document).ready(function(){
 				$(" img .slide").eq(next).show();
 			});
 		}); 
-(function($) {
-	$.fn.shorten = function (settings) {
+// (function($) {
+// 	$.fn.shorten = function (settings) {
 
-		var config = {
-			showChars: 0,
-			ellipsesText: "...",
-			moreText: "more",
-			lessText: "less"
-		};
+// 		var config = {
+// 			showChars: 0,
+// 			ellipsesText: "...",
+// 			moreText: "more",
+// 			lessText: "less"
+// 		};
 
-		if (settings) {
-			$.extend(config, settings);
-		}
+// 		if (settings) {
+// 			$.extend(config, settings);
+// 		}
 
-		$(document).off("click", '.morelink');
+// 		$(document).off("click", '.morelink');
 
-		$(document).on({click: function () {
+// 		$(document).on({click: function () {
 
-			var $this = $(this);
-			if ($this.hasClass('less')) {
-				$this.removeClass('less');
-				$this.html(config.moreText);
-			} else {
-				$this.addClass('less');
-				$this.html(config.lessText);
-			}
-			$this.parent().prev().toggle();
-			$this.prev().slideToggle();
-			return false;
-		}
-	}, '.morelink');
+// 			var $this = $(this);
+// 			if ($this.hasClass('less')) {
+// 				$this.removeClass('less');
+// 				$this.html(config.moreText);
+// 			} else {
+// 				$this.addClass('less');
+// 				$this.html(config.lessText);
+// 			}
+// 			$this.parent().prev().toggle();
+// 			$this.prev().slideToggle();
+// 			return false;
+// 		}
+// 	}, '.morelink');
 
-		return this.each(function () {
-			var $this = $(this);
-			if($this.hasClass("shortened")) return;
+// 		return this.each(function () {
+// 			var $this = $(this);
+// 			if($this.hasClass("shortened")) return;
 
-			$this.addClass("shortened");
-			var content = $this.html();
-			if (content.length > config.showChars) {
-				var c = content.substr(0, config.showChars);
-				var h = content.substr(config.showChars, content.length - config.showChars);
-				var html = c + '<span class="moreellipses"> </span><span class="morecontent"><span>' + h + '</span> <a href="#" class="morelink">' + config.ellipsesText + '' + config.moreText + '</a></span>';
-				$this.html(html);
-				$(".morecontent span").hide();
-			}
-		});
+// 			$this.addClass("shortened");
+// 			var content = $this.html();
+// 			if (content.length > config.showChars) {
+// 				var c = content.substr(0, config.showChars);
+// 				var h = content.substr(config.showChars, content.length - config.showChars);
+// 				var html = c + '<span class="moreellipses"> </span><span class="morecontent"><span>' + h + '</span> <a href="#" class="morelink">' + config.ellipsesText + '' + config.moreText + '</a></span>';
+// 				$this.html(html);
+// 				$(".morecontent span").hide();
+// 			}
+// 		});
 
-	};
+// 	};
 
- })(jQuery);
+//  })(jQuery);
  $(document).ready(function(){
  	$('.menu1').click(function(){
  		$('nav').toggleClass('open1'); 
@@ -358,6 +356,7 @@ $(document).ready(function(){
 	});
 });
  // end dowwn
+ //Facilities
  $(document).ready(function(){
  	$(".showmore").click(function(){
  		var t = $(this);
@@ -366,6 +365,40 @@ $(document).ready(function(){
  			t.text('Show Less');
  		}else{
  			t.text('Show All');
+ 		}
+ 	});
+ });
+//Description
+ $(document).ready(function(){
+ 	$(".showmore_des").click(function(){
+ 		var t = $(this);
+ 		$(".more-content").toggleClass('more');
+ 		
+ 		if($(".more-content").hasClass('more')){
+ 			t.text('Show Less') ;
+
+ 			$(".st-description .cut-gradient").css("display","none");
+
+ 		}else{
+ 			t.text('Show All');
+ 			$(".st-description .cut-gradient").css("display","block");
+ 		}
+ 	});
+ });
+ //Rule
+ $(document).ready(function(){
+ 	$(".showmore_rule").click(function(){
+ 		var t = $(this);
+ 		$(".more_content_rule").toggleClass('more');
+ 		
+ 		if($(".more_content_rule").hasClass('more')){
+ 			t.text('Show Less') ;
+
+ 			$(" .cut_gradient_rule").css("display","none");
+
+ 		}else{
+ 			t.text('Show All');
+ 			$(" .cut_gradient_rule").css("display","block");
  		}
  	});
  });

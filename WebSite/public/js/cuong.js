@@ -112,7 +112,7 @@ $(function() {
 				t.parent().find('.formbook').slideToggle();
 			});
 
-		});	
+		});
 
 		// xu ly book lich
 		$(function() {

@@ -135,7 +135,12 @@ a.morelink
 	display: block;
 	font-weight: 450;
 }
-
+.dropdown {
+	color: blue;
+    float: right;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
 .field_people_room .people-dropdown {
 	display: none;
 	z-index: 1;
@@ -510,13 +515,19 @@ a.morelink
 	color: #5E6D77;
 	font-weight: 400;
 	position: relative;
+	height: auto;
 }
 [data-show-all] {
 	position: relative;
 	overflow: hidden;
+
 }
 .more1 {
 	height: 100px;
+}
+.more2  {
+	height: 200px;
+	overflow: hidden;
 }
 .cut-gradient {
     position: absolute;
@@ -1685,9 +1696,10 @@ label.star:before {
 {
 	padding-top: 10px;
 }
-.facilities
-{
-	padding: 10px;
+.abc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .facilities p
 {
