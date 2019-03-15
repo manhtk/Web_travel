@@ -9,43 +9,6 @@ class bookcart_model extends Model {
     public function __construct() {
         parent::__construct();
     }
-
-    public function getAllUsers(){
-        $res = $this->query("SELECT * FROM user");
-        $data = [];
-        if($res->num_rows > 0){
-            while($row = $res->fetch_assoc()){
-                $data[] = $row;
-            }
-        }
-        return $data;
-    }
-
-    public function getUsers($limit = false){
-        $sql = "SELECT * FROM user";
-        if($limit && is_numeric($limit)){
-            $sql .= " LIMIT 0,{$limit}";
-        }
-
-        $res = $this->query($sql);
-        $data = [];
-        if($res->num_rows > 0){
-            while($row = $res->fetch_assoc()){
-                $data[] = $row;
-            }
-        }
-        return $data;
-    }
-    public function getID($tblTable, $id){
-        $sql = "SELECT * FROM $tblTable WHERE id = '".$id."'";
-        $this->execute($sql);
-        if($this->num_rows()==0){
-            return FALSE;
-        }
-        else{
-            return $this->getData();
-        }
-    }
     public function getRoomDetal($key)
     {
         $sql = "SELECT * FROM hotel inner join room on hotel.hotel_id = room.hotel_id inner join city on hotel.city_id = city.city_id WHERE  room_id= '$key'";
@@ -107,24 +70,21 @@ class bookcart_model extends Model {
         }
         return $data;
     }
-    public function updateUser($data,$key)
+    public function updateUser($value1, $value2, $value3, $value4, $value5, $value6, $value7, $value8, $value9, $value10, $value11, $key)
     {
-        
-        $sql_1 = "SELECT * FROM user";
-        $db = new Database();
-        $sql_1 = mysqli_query($db->connect(), $sql_1);
-        while ($result = mysqli_fetch_field($sql_1)) {
-            $columns = $result->name;
-            $datas_key[] = $columns;
-
-        }
-        $values = array_values($data);
-         $combine = array_combine($datas_key, $values); 
-        foreach ($combine as $key => $value) {
-            $str[] = $key . "='" . $value . "'";
-        }
-        $sql = implode(",", $str);
-        $query = "UPDATE user SET $sql WHERE user.username='$key'";
+        $query = "UPDATE user SET first_name='$value1',last_name='$value2',email='$value3',phone_number='$value4',address1='$value5',address2='$value6',city='$value7',state_province_region='$value8',zipcode_or_postal_code='$value9',country='$value10',special='$value11' WHERE user.username='$key'";
         return $this->query($query);
+    }
+    public function insertUser($user_info)
+    {
+        $user_info = implode(',', $user_info);
+
+
+        $sql_user = "INSERT INTO user(user_id, username, password, role, first_name, last_name, address1, address2, city, email, regisdate, state_province_region, zipcode_or_postal_code, country, special) VALUES (null,$user_info)";
+
+        
+        $data = $this->query($sql_oder);
+        
+        return $data;
     }
 }

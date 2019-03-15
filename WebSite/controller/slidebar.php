@@ -6,13 +6,6 @@ class Slidebar extends Controller
       
         $rs=$this->model->sortHotel();
         $count=count($rs);
-
-          if($count >= 12) {
-            $count = 12;
-          } 
-          else {
-            $count = $count;
-          }
       $page=$this->model->getPage();
       $paged = isset($_GET['page']) ? $_GET['page'] : 1;
 

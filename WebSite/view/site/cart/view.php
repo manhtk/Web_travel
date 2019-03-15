@@ -39,17 +39,6 @@
                         <?php echo $stss['startday'].'-'.$stss['endday'] ?>
                         <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $data[0]['room_id']?>">Edit</a>
                     </span>
-                    <!-- <div class="detail">
-                        <button class="btn btn-primary">
-                            Detail <i class="fa fa-caret-down"></i>
-                        </button>
-                        <ul class="detail-list" style="display: none;">
-                            <li class="head"><span class="lable_section">From - To</span><span class="value">Price</span></li>
-
-                            <li><span class="lable_section"><?php echo $stss['startday']; ?> <i class="fa fa-long-arrow-right"></i><?php echo $stss['endday']; ?></span><span class="value">€350.00</span></li>
-                        </ul>
-                    </div> -->
-
                 </li>
 
                 <li class="ad-info">
@@ -163,7 +152,7 @@
                                 <div class="col-sm-6">
                                     <div class="form-group form-group-icon-left">                
                                         <label for="field-st_province">State/Province/Region  </label>
-                                        <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="<?php echo $value['state/province/region'] ?>" name="st_province" placeholder="State/Province/Region" type="text">
+                                        <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="<?php echo $value['state_province_region'] ?>" name="st_province" placeholder="State/Province/Region" type="text">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">

@@ -1,15 +1,16 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Web slide</title>
+
     <meta charset="UTF-8">
     <title>Web-hotel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="public/css/slide_deadline.css">
     <script type="text/javascript" src="public/js/cuong.js"></script>
+
 </head>
 <body>
+
 
 <!-- header -->
 
@@ -79,24 +80,23 @@
 
             <div class="st-hotel-result">
 
-                <form>
+                <div>
 
                     <div class="col-lg-3 col-md-3 slidebar-filter">
 
                         <div class="slidebar-item sidebar-search-form hidden-xs hidden-sm">
-                            <form method="get" action="">
+
+                            <div class="search-from">
                                 <div class="search-title">
                                     <span>Search Hotels</span>
 
                                 </div>
 
-                                <div class="col-xs-12 search-title-mobile">
-                                   
-                                </div>
+                            </div>
 
 
-                                <div class="row">
-
+                            <div class="row">
+                                <form action="?c=slidebar&a=search" method="GET">
                                     <div class="form-group col-sm-12 search-content">
                                         <i class="fas fa-map-marker-alt search-checkiconleft"></i>
                                         <label class="search-title-language1 search-title-language">Destination:</label>
@@ -119,7 +119,7 @@
                                                    value="<?php echo $_GET['cityid'] ?>">
 
                                             <ul class="dropdown-menu search-list" role="menu"
-                                                aria-labelledby="menu1" onclick="change()">
+                                                aria-labelledby="menu1" onclick="change()" id="dropdownmenu">
                                                 <?php foreach ($data_city
 
                                                                as $values) { ?>
@@ -128,9 +128,9 @@
                                                         data-value="<?php echo $values['city_id'] ?>"
                                                     ><i
                                                                 class="fas fa-map-marker-alt"></i>
-                                                                <span style="padding: 20px;">
-                                                                    <?php echo $values['city_name'] ?>
-                                                                </span>
+                                                        <span style="padding: 20px;">
+                                                        <?php echo $values['city_name'] ?>
+                                                    </span>
                                                     </li>
                                                 <?php } ?>
 
@@ -138,7 +138,7 @@
                                             <script>
                                                 $(function () {
 
-                                                    $(".dropdown-menu li").click(function (e) {
+                                                    $("#dropdownmenu li").click(function (e) {
 
                                                         $(".destination:first-child").text($(this).text());
                                                         $(".destination:first-child").val($(this).text());
@@ -225,66 +225,66 @@
                                             <div class="col-sm-6 field_people_room">
                                                 <div class="people-inner">
                                                     <i class="fas fa-users search-checkicon"></i>
-                                                    <label for="radio-choice-1"
-                                                           class="search-title-language-guest">Guests</label>
+                                                    <label for="radio-choice-1" class="search-title-language-guest">Guests</label>
 
                                                     <div class="people-group">
 
-													<span class="value">
-														<span class="search-element1"><?php echo $_GET['number_adult'] ?>
-                                                            Adult</span>
+                                                <span class="value">
 
-														<span class="search-element2"><?php echo $_GET['number_adult'] ?>
-                                                            Child</span>
-													</span>
+                                                    <span class="adult search-element1"><?php
+                                                        echo $_GET['number_adult'];
+                                                        ?> Adult</span>
+                                                    <span class="child search-element2"><?php
+                                                        echo (float)$_GET['number_child'];
+                                                        ?> Child</span>
 
-                                                        <!-- <div class="icon">
-                                                            <i class="fas fa-angle-up"></i>
-                                                        </div> -->
+
+                                                    <!-- <div class="icon">
+                                                        <i class="fas fa-angle-up"></i>
+                                                    </div> -->
 
                                                     </div>
                                                 </div>
 
                                                 <div class="formbook">
-                                                    <div class="people-dropdown book-people"
-                                                         style="display: block;">
+                                                    <div class="people-dropdown book-people" style="display: block;">
                                                         <div class="item gmz-number-wrapper">
                                                             Rooms
                                                             <span class="control minus">-</span>
                                                             <span class="text">
 
-															<span class="value room">1</span>               <input
-                                                                        type="hidden" value="1"
-                                                                        name="number_room"
-                                                                        data-min="1" data-max="20">
-														</span>
+                                                            <span class="value room"><?php echo $_GET['number_room'] ?></span>               <input
+                                                                        type="hidden"
+                                                                        value="<?php echo $_GET['number_room'] ?>"
+                                                                        name="number_room" data-min="1" data-max="20">
+                                                        </span>
                                                             <span class="control add">+</span>
                                                         </div>
                                                         <div class="item gmz-number-wrapper">
                                                             Adults
                                                             <span class="control minus">-</span>
                                                             <span class="text">
-															<span class="value adult">1</span>               <input
-                                                                        type="hidden" value="1"
-                                                                        name="number_adult"
-                                                                        data-min="1" data-max="20">
-														</span>
+                                                            <span class="value adult"><?php echo $_GET['number_adult'] ?></span>               <input
+                                                                        type="hidden"
+                                                                        value="<?php echo $_GET['number_adult'] ?>"
+                                                                        name="number_adult" data-min="1" data-max="20">
+                                                        </span>
                                                             <span class="control add">+</span>
                                                         </div>
                                                         <div class="item gmz-number-wrapper">
                                                             Children
                                                             <span class="control minus">-</span>
                                                             <span class="text">
-															<span class="value child">1</span>                <input
-                                                                        type="hidden" value="0"
-                                                                        name="number_child"
-                                                                        data-min="0" data-max="15">
-														</span>
+                                                            <span class="value child"><?php echo $_GET['number_child'] ?></span>                <input
+                                                                        type="hidden"
+                                                                        value="<?php echo $_GET['number_child'] ?>"
+                                                                        name="number_child" data-min="0" data-max="15">
+                                                        </span>
                                                             <span class="control add">+</span>
                                                         </div>
                                                     </div>
                                                 </div>
-
+<script></script>
                                             </div>
                                         </div>
 
@@ -311,7 +311,7 @@
                                                                    id="check1" name="option1"
                                                                    value="something"/>
 
-                                                            <span class="search-list-item1">Ari Conditioning</span>
+                                                            <span class="search-list-item1">Air Conditioning</span>
                                                         </li>
                                                     </div>
 
@@ -450,253 +450,261 @@
 
                                         </div>
                                     </div>
+                                </form>
 
+                            </div>
+                            <!-- END ROW -->
 
-                                </div>
-                                <!-- END ROW -->
-                            </form>
                         </div>
                         <!-- END slidebar-item sidebar-search-form -->
+
+
                     </div>
 
-            </div>
+                    <!-- END COT 3 -->
+                    <!-- <div class="col-lg-9 col-md-9 wapper-content">
 
 
-            <!-- END COT 3 -->
-            <!-- <div class="col-lg-9 col-md-9 wapper-content">
+                    </div> -->
+                    <div class="col-lg-9  col-md-9 wapper-content">
+                        <div class="row row-wapper">
+
+                            <div class="col-sm-12 col-xs-12 toolbar-layout">
 
 
-            </div> -->
-            <div class="col-lg-9  col-md-9 wapper-content">
-                <div class="row row-wapper">
+                                <div class="col-lg-9 col-md-9 col-sm-12 content-title">
+                                    <h3><?php echo $count ?> hotels found</h3>
+                                </div>
+                                <div class="col-lg-3 layout">
+                                    <ul>
+                                        <li><!-- <span class="layout-title">Sort</span> -->
+                                            <div class="dropdown">
+                                                <p class=" dropdown-toggle layout-title" id="menu1"
+                                                   data-toggle="dropdown">Sort
+                                                    <span class="caret"></span></p>
+                                                <ul class="dropdown-menu layout-list" role="menu"
+                                                    aria-labelledby="menu1">
+                                                    <form action="" method="GET">
+                                                        <?php
+                                                        $get_data = $_GET;
+                                                        if (!empty($get_data)) {
+                                                            foreach ($get_data as $key => $value) {
+                                                                echo '<input type="hidden" name="' . $key . '" value="' . $value . '" />';
+                                                            }
+                                                        }
 
-                    <div class="col-sm-12 col-xs-12 toolbar-layout">
-
-                        <div class="col-lg-9 col-md-9 col-sm-12 content-title">
-                            <h3><?php echo $count ?> hotels found</h3>
-                        </div>
-                        <div class="col-lg-3 layout">
-                       <ul>
-                                            <li><!-- <span class="layout-title">Sort</span> -->
-                                                <div class="dropdown">
-                                                    <p class=" dropdown-toggle layout-title" id="menu1"  data-toggle="dropdown">Sort
-                                                        <span class="caret"></span></p>
-                                                        <ul class="dropdown-menu layout-list" role="menu" aria-labelledby="menu1">
-                                                            <form action="" method="GET">
-                                                                <?php 
-                                                                $get_data = $_GET;
-                                                                if(!empty($get_data)){
-                                                                    foreach ($get_data as $key => $value) {
-                                                                        echo '<input type="hidden" name="'. $key .'" value="'. $value .'" />';
-                                                                    }
-                                                                }
-
-                                                                ?>
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
+                                                        ?>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
                                                                         <span class="layout-title1">
                                                                             SORT BY
                                                                         </span>
-                                                                    </div>
-                                                                    <div class="col-sm-12 layout-list-item">
-                                                                        <li role="presentation">
-                                                                            <?php
-                                                                            $current_opt = '';
-                                                                            if(!isset($_GET['optradio'])){
-                                                                                $current_opt = 'new';
-                                                                            }else{
-                                                                                $current_opt = $_GET['optradio'];
-                                                                            }
+                                                            </div>
+                                                            <div class="col-sm-12 layout-list-item">
+                                                                <li role="presentation">
+                                                                    <?php
+                                                                    $current_opt = '';
+                                                                    if (!isset($_GET['optradio'])) {
+                                                                        $current_opt = 'new';
+                                                                    } else {
+                                                                        $current_opt = $_GET['optradio'];
+                                                                    }
 
-                                                                            ?>
-                                                                            <input type="radio" class="layout-checkicon" name="optradio"  onchange="this.form.submit();" value="new" <?php echo $current_opt == 'new' ? 'checked' : ''; ?>/>
+                                                                    ?>
+                                                                    <input type="radio" class="layout-checkicon"
+                                                                           name="optradio"
+                                                                           onchange="this.form.submit();"
+                                                                           value="new" <?php echo $current_opt == 'new' ? 'checked' : ''; ?>/>
 
-                                                                            <span class="layout-check-content">New Hotel</span> 
+                                                                    <span class="layout-check-content">New Hotel</span>
 
-                                                                        </li>
-                                                                    </div>
-                                                                    <div class="col-sm-12">
+                                                                </li>
+                                                            </div>
+                                                            <div class="col-sm-12">
                                                                         <span class="layout-title2">
                                                                             Price
                                                                         </span>
-                                                                    </div>
+                                                            </div>
 
 
+                                                            <div class="col-sm-12 layout-list-item">
+                                                                <li role="presentation">
 
-                                                                    <div class="col-sm-12 layout-list-item">
-                                                                        <li role="presentation">
-                                                                            
-                                                                            <input type="radio" class="layout-checkicon" name="optradio" value="low" onchange="this.form.submit();" <?php echo $current_opt == 'low' ? 'checked' : ''; ?>/>
+                                                                    <input type="radio" class="layout-checkicon"
+                                                                           name="optradio" value="low"
+                                                                           onchange="this.form.submit();" <?php echo $current_opt == 'low' ? 'checked' : ''; ?>/>
 
 
-                                                                            <span class="layout-check-content" >Low to Hight</span> 
+                                                                    <span class="layout-check-content">Low to Hight</span>
 
-                                                                        </li>
-                                                                    </div>
+                                                                </li>
+                                                            </div>
 
-                                                                    <div class="col-sm-12 layout-list-item">
-                                                                        <li role="presentation">
+                                                            <div class="col-sm-12 layout-list-item">
+                                                                <li role="presentation">
 
-                                                                            <input type="radio" class="layout-checkicon" name="optradio" value="hight" onchange="this.form.submit();" <?php echo $current_opt == 'hight' ? 'checked' : ''; ?>/>
+                                                                    <input type="radio" class="layout-checkicon"
+                                                                           name="optradio" value="hight"
+                                                                           onchange="this.form.submit();" <?php echo $current_opt == 'hight' ? 'checked' : ''; ?>/>
 
-                                                                            <span class="layout-check-content" >Hight Low to</span> 
+                                                                    <span class="layout-check-content">Hight Low to</span>
 
-                                                                        </li>
-                                                                    </div>
+                                                                </li>
+                                                            </div>
 
-                                                                    <div class="col-sm-12">
+                                                            <div class="col-sm-12">
                                                                         <span class="layout-title2">
                                                                             Name
                                                                         </span>
-                                                                    </div>
+                                                            </div>
 
-                                                                    <div class="col-sm-12 layout-list-item">
-                                                                        <li role="presentation">
+                                                            <div class="col-sm-12 layout-list-item">
+                                                                <li role="presentation">
 
-                                                                            <input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="name_az" <?php echo $current_opt == 'name_az' ? 'checked' : ''; ?>/>
+                                                                    <input type="radio" class="layout-checkicon"
+                                                                           onchange="this.form.submit();"
+                                                                           name="optradio"
+                                                                           value="name_az" <?php echo $current_opt == 'name_az' ? 'checked' : ''; ?>/>
 
-                                                                            <span class="layout-check-content" >a-z</span> 
+                                                                    <span class="layout-check-content">a-z</span>
 
-                                                                        </li>
-                                                                    </div>
-
-
-                                                                    <div class="col-sm-12 layout-list-item">
-                                                                        <li role="presentation">
-
-                                                                            <input type="radio" class="layout-checkicon" onchange="this.form.submit();" name="optradio" value="name_za" <?php echo $current_opt == 'name_za' ? 'checked' : ''; ?>/>
-
-                                                                            <span class="layout-check-content" >z-a</span> 
-
-                                                                        </li>
-                                                                    </div>
+                                                                </li>
+                                                            </div>
 
 
+                                                            <div class="col-sm-12 layout-list-item">
+                                                                <li role="presentation">
+
+                                                                    <input type="radio" class="layout-checkicon"
+                                                                           onchange="this.form.submit();"
+                                                                           name="optradio"
+                                                                           value="name_za" <?php echo $current_opt == 'name_za' ? 'checked' : ''; ?>/>
+
+                                                                    <span class="layout-check-content">z-a</span>
+
+                                                                </li>
+                                                            </div>
 
 
+                                                        </div>
+                                                        <!-- <li>SORT BY</li> -->
 
 
-                                                                </div>
-                                                                <!-- <li>SORT BY</li> -->
+                                                    </form>
+                                                </ul>
 
-
-
-                                                            </form>
-                                                        </ul>
-
-                                                    </div>
-
-
-                                                </li>
-                                                <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-th-list"></i></a></li>
-                                            </ul>
-
-
-                        </div>
-
-
-                    </div>
-
-                    <div class=" modern-search-result">
-                        <?php
-                        if (!empty($data)) {
-                            foreach ($data as $value) {
-                                ?>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
-                                    <div class="item">
-                                        <div class="thumb">
-
-                                            <img class="im1 " src="<?php echo $value['images'] ?>"
-                                                 class="rounded"/><br/>
-                                        </div>
-                                        <div class="icon-position">
-                                            <i class="fas fa-heart img heart"></i>
-                                        </div>
-                                        <div class="icon-position">
-                                            <div class="icon-star">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
                                             </div>
 
-                                        </div>
-                                        <div class="text-position">
-                                            <button class=" btn btn-primary text">Featured</button>
-                                        </div>
-                                        <div class="info">
 
-                                         <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>"><?= $value['hotel_name'] ?> </a><br/>
+                                        </li>
+                                        <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-th-list"></i></a></li>
+                                    </ul>
 
 
-
-
-                                                            <p class="service-location"><i class="fas fa-map-marker-alt"></i><?php echo " ". $value['city_name'] ?> ,USA
-                                                            </p>
-
-
-
-                                                            <p class="service-point"><?= $value['hotel_point']."  " .'/5 Excellent'?> </p>
-
-
-                                                            <div >
-                                                                
-                                                            <span><i class="fas fa-bolt slide-icon"></i> from </span><span class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
-                                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
+
+                            </div>
+
+                            <div class=" modern-search-result">
                                 <?php
-                            }
-                        }
-                        ?>
+                                if (!empty($data)) {
+                                    foreach ($data as $value) {
+                                        ?>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                                            <div class="item">
+                                                <div class="thumb">
 
+                                                    <img class="im1 " src="<?php echo $value['images'] ?>"
+                                                         class="rounded"/><br/>
+                                                </div>
+                                                <div class="icon-position">
+                                                    <i class="fas fa-heart img heart"></i>
+                                                </div>
+                                                <div class="icon-position">
+                                                    <div class="icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+
+                                                </div>
+                                                <div class="text-position">
+                                                    <button class=" btn btn-primary text">Featured</button>
+                                                </div>
+                                                <div class="info">
+
+                                                    <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>"><?= $value['hotel_name'] ?> </a><br/>
+                                                    <p class="service-location"><i
+                                                                class="fas fa-map-marker-alt"></i><?php echo " " . $value['city_name'] ?>
+                                                        ,USA
+                                                    </p>
+
+
+                                                    <p class="service-point"><?= $value['hotel_point'] . "  " . '/5 Excellent' ?> </p>
+
+
+                                                    <div>
+
+                                                        <span><i class="fas fa-bolt slide-icon"></i> from </span><span
+                                                                class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php
+                                    }
+                                }
+                                ?>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Phan trang -->
+                            <!-- PHAN TRANG -->
+                            <div class="phantrang modern-search-result-page ">
+
+                                <ul class="pagination page-list">
+
+
+                                    <?php
+                                    $cityname = $_GET['cityname'];
+                                    $url = "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+                                    $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
+                                    for ($i = 1;
+                                         $i <= $page;
+                                         $i++) {
+                                        echo " <li><a href='$escaped_url&page=$i'>$i</a></li>";
+                                    }
+                                    ?>
+
+
+                                </ul>
+
+
+                            </div>
+                            <!-- END PHAN TRANG -->
+                        </div>
                     </div>
-                    <div class="clearfix"></div>
-                    <!-- Phan trang -->
-                    <!-- PHAN TRANG -->
-                    <div class="phantrang-list modern-search-result-page ">
-
-                        <ul class="pagination page-list">
-
-                            <?php
-                            $cityname = $_GET['cityname'];
-                            $url = "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-                            $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
-                            for ($i = 1;
-                                 $i <= $page;
-                                 $i++) {
-                                echo " <li><a href='$escaped_url&page=$i'>$i</a></li>";
-                            }
-                            ?>
-
-                        </ul>
-                    </div>
-                    
+                    <!-- end cot 9 -->
 
 
-                    <!-- END PHAN TRANG -->
+                    <!-- PHAN TRANG  -->
+
+
+                    <!-- END CODE PHAN TRANG -->
+                    <!-- END COL-9 -->
+
                 </div>
+
             </div>
-            <!-- end cot 9 -->
-
-
-            <!-- PHAN TRANG  -->
-
-
-            <!-- END CODE PHAN TRANG -->
-            <!-- END COL-9 -->
 
         </div>
 
     </div>
-
-</div>
-
-</div>
 </div>
 
 
