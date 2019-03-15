@@ -104,7 +104,7 @@
 					</div>
 					</div>
 					<!-- end slide -->
-					<hr>
+					<hr style="width: 100%;">
 					<!-- description -->
 					<div>
 						<h2 class="st-heading-section">Descripton
@@ -133,7 +133,7 @@
 						</script> -->
 					</div>
 					<!-- description -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- facilities -->
 					<div>
 						<h2 class="st-heading-section">Facilities
@@ -162,7 +162,7 @@
 						</div>
 					</div>
 					<!-- end facilities -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- rules -->
 					<div class="rules">
 						<div class="">
@@ -213,7 +213,7 @@
 						</div>
 					</div>
 					<!-- end rules -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- room -->
 					<!--  -->
 					<div class="sroom">
@@ -324,7 +324,7 @@
 						</div>
 					</div>
 					<!-- end room -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- reviews -->
 					<div class="reviews">
 						<h2>Reviews</h2>
@@ -457,7 +457,7 @@
 						</div>
 					</div>
 					<!-- end review  -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- review-list -->
 					<div class="review-list">
 						<div class="comment-item">
@@ -763,7 +763,7 @@
 		</div>
 	</div>
 	<!-- end content -->
-	<hr >
+	<hr style="width: 100%">
 	<h2 class="st-heading text-center">Hotel Nearby</h2>
 	<!-- nearby -->
 	<div>

@@ -4,8 +4,7 @@
     <title>Home Page</title>
       <script type="text/javascript" src="public/js/khanh.js"></script>
      <link rel="stylesheet" type="text/css" href="public/css/HomePage.css">
-
-  
+    
     <div class="clear"></div>
     <!-- Banner -->
     <div id="banner">
@@ -141,14 +140,14 @@
                                                                     <h4>Filter Price</h4>
                                                                     </div>
                                                                          <div class="demo">
-                                                                            <input type="text" class="js-range-slider" name="my_range" value="" />
-                                                                            <script type="text/javascript">
-                                                                                $(".js-range-slider").ionRangeSlider({
-                                                                                    min: 10,
-                                                                                    max: 315,
-                                                                                    from: 315,
-                                                                                });
-                                                                            </script>
+                                                                          <input type="text" class="js-range-slider" name="my_range" value="" />
+                                                                          <script type="text/javascript">
+                                                                            $(".js-range-slider").ionRangeSlider({
+                                                                                min: 10,
+                                                                                max: 315,
+                                                                                from: 315
+                                                                            });
+                                                                        </script>           
                                                                         </div>
                                                                     </div>
                                                                     </div>

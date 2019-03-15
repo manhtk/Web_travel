@@ -8,7 +8,9 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	
+	$(".more-content").click(function(){
+		$(".cut-gradient").fadeToggle();
+	});
 	$(".down-icon").click(function(){
 		$(".st-description").fadeToggle();
 	});

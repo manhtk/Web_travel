@@ -284,7 +284,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <script></script>
+<script></script>
                                             </div>
                                         </div>
 
@@ -669,18 +669,15 @@
 
                                 <ul class="pagination page-list">
 
+
                                     <?php
-                                    $currentpage = isset($_GET['page']) ? $_GET['page'] : 1;
+                                    $cityname = $_GET['cityname'];
                                     $url = "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
                                     $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
                                     for ($i = 1;
                                          $i <= $page;
                                          $i++) {
-                                        $active='';
-                                        if($currentpage==$i){
-                                            $active='not-active';
-                                        }
-                                        echo " <li><a href='$escaped_url&page=$i' class='$active'>$i</a></li>";
+                                        echo " <li><a href='$escaped_url&page=$i'>$i</a></li>";
                                     }
                                     ?>
 

@@ -515,12 +515,10 @@ a.morelink
 	color: #5E6D77;
 	font-weight: 400;
 	position: relative;
-	height: auto;
 }
 [data-show-all] {
 	position: relative;
 	overflow: hidden;
-
 }
 .more1 {
 	height: 100px;
@@ -1696,11 +1694,7 @@ label.star:before {
 {
 	padding-top: 10px;
 }
-.abc {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+
 .facilities p
 {
 	margin: 0px 20px;
