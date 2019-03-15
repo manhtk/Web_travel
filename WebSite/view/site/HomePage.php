@@ -141,10 +141,14 @@
                                                                     <h4>Filter Price</h4>
                                                                     </div>
                                                                          <div class="demo">
-                                                                            
-                                                                            <input type="text" class="js-range-slider" id="demo_0" name="my_range" value=""
-                                                                            />
-                                                                            
+                                                                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                                                                            <script type="text/javascript">
+                                                                                $(".js-range-slider").ionRangeSlider({
+                                                                                    min: 10,
+                                                                                    max: 315,
+                                                                                    from: 315,
+                                                                                });
+                                                                            </script>
                                                                         </div>
                                                                     </div>
                                                                     </div>
