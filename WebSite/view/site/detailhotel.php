@@ -104,11 +104,11 @@
 					</div>
 					</div>
 					<!-- end slide -->
-					<hr style="width: 100%;">
+					<hr>
 					<!-- description -->
 					<div>
 						<h2 class="st-heading-section">Descripton
-							<i class="fa fa-angle-down down-icon" aria-hidden="true" style="border: none;"></i>
+							<i class="fa fa-angle-down down-icon" aria-hidden="true" ></i>
 						</h2>
 						<div class="st-description" data-toggle-section="st-description" data-show-all="st-description" data-height="120"  >
 							
@@ -116,20 +116,24 @@
 							<?php foreach ($data_hotel as  $value) {
 								
 							 ?>
-							<p class="more-content"><?php echo $value['description']; ?></p>
+							<p class="more-content"><?php echo $value['hotel_description']; ?></p>
 							<?php } ?>
+
 								<div class="cut-gradient"></div>
+								<div class="showmore_des" >
+									Show All 
+								</div> 
 						</div>
-						<script>	
+						<!-- <script>	
 							$(".more-content").shorten({
 								"showChars" : 500,
 								"moreText"  : "View more",
 								"lessText"  : "View less",
 							});
-						</script>
+						</script> -->
 					</div>
 					<!-- description -->
-					<hr style="width: 100%;">
+					<hr >
 					<!-- facilities -->
 					<div>
 						<h2 class="st-heading-section">Facilities
@@ -158,7 +162,7 @@
 						</div>
 					</div>
 					<!-- end facilities -->
-					<hr style="width: 100%;">
+					<hr >
 					<!-- rules -->
 					<div class="rules">
 						<div class="">
@@ -185,9 +189,10 @@
 								</div>
 								<div class="col-md-8 col-xs-8" id="rules">
 									<h4>What kind of foowear is most suitable ?</h4>
-									<p>Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, </p>
-									<div class="cut-gradient"></div>
-									<div class="more-content">
+									
+									
+									<div class="more_content_rule">
+										<p>Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, </p>
 										<p>
 											condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id
 										</p>
@@ -197,20 +202,18 @@
 										</p>
 										<h4>Can i bring Alcohol top this trip?</h4>
 										<p>Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>									
+									</div>	
+									<div class="cut_gradient_rule"></div>
+								<div class="showmore_rule" >
+									Show All 
+								</div>								
 								</div>
-								<script>
-									$(".more-content").shorten({
-										"showChars" : 6,
-										"moreText"  : "View more",
-										"lessText"  : "View less",
-									});
-								</script>
+
 							</div>
 						</div>
 					</div>
 					<!-- end rules -->
-					<hr style="width: 100%;">
+					<hr >
 					<!-- room -->
 					<!--  -->
 					<div class="sroom">
@@ -321,7 +324,7 @@
 						</div>
 					</div>
 					<!-- end room -->
-					<hr style="width: 100%;">
+					<hr >
 					<!-- reviews -->
 					<div class="reviews">
 						<h2>Reviews</h2>
@@ -454,7 +457,7 @@
 						</div>
 					</div>
 					<!-- end review  -->
-					<hr style="width: 100%;">
+					<hr >
 					<!-- review-list -->
 					<div class="review-list">
 						<div class="comment-item">
@@ -760,7 +763,7 @@
 		</div>
 	</div>
 	<!-- end content -->
-	<hr style="width: 100%">
+	<hr >
 	<h2 class="st-heading text-center">Hotel Nearby</h2>
 	<!-- nearby -->
 	<div>

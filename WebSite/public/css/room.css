@@ -135,7 +135,12 @@ a.morelink
 	display: block;
 	font-weight: 450;
 }
-
+.dropdown {
+	color: blue;
+    float: right;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
 .field_people_room .people-dropdown {
 	display: none;
 	z-index: 1;
@@ -517,6 +522,10 @@ a.morelink
 }
 .more1 {
 	height: 100px;
+}
+.more2  {
+	height: 200px;
+	overflow: hidden;
 }
 .cut-gradient {
     position: absolute;
@@ -1685,10 +1694,7 @@ label.star:before {
 {
 	padding-top: 10px;
 }
-.facilities
-{
-	padding: 10px;
-}
+
 .facilities p
 {
 	margin: 0px 20px;

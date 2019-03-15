@@ -344,6 +344,16 @@ jQuery(document).ready(function($){
 			$('.cut-gradient').css("display", "none");
 		}
 	});
+	$("span.text1").click(function(r) {
+		r.preventDefault();
+		$(".facilities").toggleClass('more2');
+		if($(".facilities").hasClass('more2')){
+			$(this).text('Show all');
+		}
+		else{
+			$(this).text('Show less');
+		}
+	});
 });
 
 
