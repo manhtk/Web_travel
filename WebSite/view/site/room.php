@@ -193,11 +193,14 @@
                     ?>
                     <p><?php echo ($values['description']); ?></p>
                     <?php
+
                 }?></p>
+                <div class="cut-gradient"></div>
                 </div>
               </div>
             </div>
-          <!--   <a href="#"><span class="text">View more</span></a> -->
+            
+            <a href="#"><span class="text">View more</span></a>
             <!-- end description -->
             <hr style="width: 100%;">
             <!-- Amenities -->
@@ -224,10 +227,12 @@
                         }?>
                     <?php } ?> 
                      
-                  </div>  
+                  </div>
+
                 </div>
               </div>
             </div>
+             <a href="#"><span class="text1">Show all</span></a> 
             <!-- end facilities -->
 
             <!-- Rules -->
@@ -428,7 +433,6 @@
         <div class="col-md-3 abc"  >
           <!-- widget -->
           <form action="?c=bookcart&a=view" method="post">
-          
             <input type="hidden" name="room_id" value="<?php echo $data_room[0]['room_id']; ?>" />
           <div class="container-fluid widgetroom">
             <div class="widgets" style="background-color: white;" >
@@ -447,7 +451,7 @@
                   }?>
 
                 <?php } ?>
-                
+               <!--  <input type="hidden" name="room_id" value="<?php $values['room_id'] ?>" > -->
                 <span class="unit">/night</span>
               </div>
               <div class="row">
@@ -531,7 +535,7 @@
                 <div class="" id="bt1">
                   <div class="form-group form-more-extra">
                     <div class="more">
-                      <a href="#dropdown-more-extra" class="dropdown" style="color: blue;float: right;padding-right: 25px;">
+                      <a href="#dropdown-more-extra" class="dropdown">
                         More Option
                         <i class="fa fa-caret-down"></i></a>
                       </div>

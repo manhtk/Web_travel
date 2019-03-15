@@ -332,7 +332,29 @@ $(function() {
 //     });
 // });
 
-
+jQuery(document).ready(function($){
+	$("span.text").click(function(e){
+		e.preventDefault();
+		$(".st-description").toggleClass('more1');
+		if($(".st-description").hasClass('more1')){
+			$(this).text('View More');
+			$('.cut-gradient').css("display", "block");
+		}else{
+			$(this).text('View Less');
+			$('.cut-gradient').css("display", "none");
+		}
+	});
+	$("span.text1").click(function(r) {
+		r.preventDefault();
+		$(".facilities").toggleClass('more2');
+		if($(".facilities").hasClass('more2')){
+			$(this).text('Show all');
+		}
+		else{
+			$(this).text('Show less');
+		}
+	});
+});
 
 
 
