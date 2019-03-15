@@ -372,35 +372,34 @@ $(document).ready(function(){
  });
 //Description
  $(document).ready(function(){
- 	$(".showmore").click(function(){
+ 	$(".showmore_des").click(function(){
  		var t = $(this);
  		$(".more-content").toggleClass('more');
  		
  		if($(".more-content").hasClass('more')){
  			t.text('Show Less') ;
 
- 			$(".cut-gradient").css("display","none");
+ 			$(".st-description .cut-gradient").css("display","none");
 
  		}else{
  			t.text('Show All');
- 			$(".cut-gradient").css("display","block");
+ 			$(".st-description .cut-gradient").css("display","block");
  		}
  	});
  });
  //Rule
  $(document).ready(function(){
- 	$(".showmore").click(function(){
+ 	$(".showmore_rule").click(function(){
  		var t = $(this);
  		$(".more_content_rule").toggleClass('more');
  		
  		if($(".more_content_rule").hasClass('more')){
  			t.text('Show Less') ;
 
- 			$(".cut-gradient").css("display","none");
-
+ 			
  		}else{
  			t.text('Show All');
- 			$(".cut-gradient").css("display","block");
+ 			
  		}
  	});
  });

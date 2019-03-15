@@ -764,6 +764,11 @@ font-size: 14px;
 	color: #5191FA !important;
 	text-decoration: underline;
 }
+.showmore_des{
+	color:#5191FA;
+	cursor: pointer;
+}
+}
 /*end descripton*/
 /*Faciliti*/
 .st-heading-section .down-icon1
@@ -789,11 +794,18 @@ font-size: 14px;
 	color:#5191FA;
 	cursor: pointer;
 }
+
+
 /*end Faciliti*/
 /*Rules*/
+.showmore_rule{
+	color:#5191FA;
+	cursor: pointer;
+}
+
 .rules .more_content_rule{
 	overflow: hidden;
-	height: 120px;
+	height: 111px;
 }
 .rules .more_content_rule.more{
 	height: auto;
