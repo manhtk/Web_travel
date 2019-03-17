@@ -221,7 +221,7 @@
 
                                     <div class="form-group col-sm-12 search-content1">
 
-                                        <div class="row field-people-row">
+                                        <div class="row guests">
                                             <div class="col-sm-6 field_people_room">
                                                 <div class="people-inner">
                                                     <i class="fas fa-users search-checkicon"></i>
@@ -235,7 +235,7 @@
                                                         echo $_GET['number_adult'];
                                                         ?> Adult</span>
                                                     <span class="child search-element2"><?php
-                                                        echo (float)$_GET['number_child'];
+                                                        echo $_GET['number_child'];
                                                         ?> Child</span>
 
 
