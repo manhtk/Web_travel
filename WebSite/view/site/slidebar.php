@@ -655,14 +655,14 @@
 
 											<?php
 											$get_data = $_GET;
-											if(!empty($get_data)){
-												foreach ($get_data as $key => $value) {
-
-												}
+											$opt = '';
+											if(isset($get_data['optradio'])){
+												$opt = '&optradio=' . $get_data['optradio'];
 											}
 
 											for ($i = 1;$i <= $total_page;$i++) {
-												echo "<li><a href='?c=slidebar&a=view&page=". $i ."&$key=$value'>$i</a></li>";
+
+												echo '<li><a href="?c=slidebar&a=view&page='. $i . $opt .'">'. $i .'</a></li>';
 											}
 
 
