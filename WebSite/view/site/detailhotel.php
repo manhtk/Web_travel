@@ -18,8 +18,8 @@
 		<div class="st-breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="https://homap.travelerwp.com">Home</a></li>
-					<li><a href="https://homap.travelerwp.com/search-hotel-full-map/?location_id=1957&amp;location_name=United%20States">United States</a></li>
+					<li><a href="?c=homepage&a=view">Home</a></li>
+					<li><a href="#">United States</a></li>
 					<?php foreach ($data_hotel as $value) { ?>
 					<li class="active"> <?php echo $value['hotel_name']; ?></li> 
 				<?php } ?>

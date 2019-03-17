@@ -143,9 +143,11 @@
                                                                           <input type="text" class="js-range-slider" name="my_range" value="" />
                                                                           <script type="text/javascript">
                                                                             $(".js-range-slider").ionRangeSlider({
+                                                                                type:'double',
                                                                                 min: 10,
                                                                                 max: 315,
-                                                                                from: 315
+                                                                               skin: "big",
+                                                                                prefix: "$"
                                                                             });
                                                                         </script>           
                                                                         </div>
