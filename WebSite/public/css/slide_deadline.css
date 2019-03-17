@@ -271,7 +271,13 @@ ul.st-list.topbar-items {
 	/* z-index: 2;*/
 
 }
-
+.not-active {
+	cursor: text!important;
+	pointer-events: none;
+}
+.guests {
+	cursor: pointer;
+}
 .socials a {
 	text-decoration: none;
 	padding-left: 16px;
@@ -856,7 +862,7 @@ i.fa.fa-bars.munu1{
 .field_people_room .people-group .search-element2
 {
 	position: absolute;
-	margin-left: 64px;
+	margin-left: 75px;
 	width: 100px;
 	top: 25px;
 

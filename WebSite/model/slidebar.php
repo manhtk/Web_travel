@@ -185,19 +185,12 @@ class Slidebar_Model extends Model {
         $orderby = '';
         if (isset($_GET['optradio']))
             $orderby = $_GET['optradio'];
-        if ($limit != '' && is_numeric($limit)) {
-            $sql = "SELECT *,MIN(room.price)AS hotel_price,ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel  
-                                       INNER JOIN city ON hotel.city_id = city.city_id
-                                       INNER JOIN room ON hotel.hotel_id=room.hotel_id 
-                                       WHERE city.city_id='$key'
-                                       GROUP BY hotel.hotel_id LIMIT {$offset},{$limit}";
-        } else {
-            $sql = "SELECT *,MIN(room.price)AS hotel_price,ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel  
+        $sql = "SELECT *,MIN(room.price)AS hotel_price,ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel  
                                        INNER JOIN city ON hotel.city_id = city.city_id
                                        INNER JOIN room ON hotel.hotel_id=room.hotel_id 
                                        WHERE city.city_id='$key'
                                        GROUP BY hotel.hotel_id";
-        }
+
         if (!empty($orderby)) {
             switch ($orderby) {
                 case 'low':
@@ -217,6 +210,9 @@ class Slidebar_Model extends Model {
 
             }
         }
+        if ($limit != '') {
+            $sql .= " LIMIT {$offset},{$limit}";
+        }
 
         $res = $this->query($sql);
 
@@ -230,6 +226,57 @@ class Slidebar_Model extends Model {
         }
 
         return $data;
+    }
+
+    public function getAllSearch($offset = '', $limit = '')
+    {
+        $orderby = '';
+        if (isset($_GET['optradio']))
+            $orderby = $_GET['optradio'];
+        $sql = "SELECT *, MIN(room.price)AS hotel_price,ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel  
+        INNER JOIN city ON hotel.city_id = city.city_id
+        INNER JOIN room ON hotel.hotel_id=room.hotel_id 
+        GROUP BY hotel.hotel_id";
+
+
+        if (!empty($orderby)) {
+            switch ($orderby) {
+                case 'low':
+                    $sql .= " ORDER BY hotel_price ASC";
+                    break;
+
+                case 'hight':
+                    $sql .= " ORDER BY hotel_price DESC";
+                    break;
+                case 'name_az':
+                    $sql .= " ORDER BY hotel.hotel_name ASC";
+                    break;
+
+                case 'name_za':
+                    $sql .= " ORDER BY hotel.hotel_name DESC";
+                    break;
+
+            }
+        }
+
+        if ($limit != '') {
+            $sql .= " LIMIT {$offset},{$limit}";
+        }
+
+        $res = $this->query($sql);
+
+
+        $data = [];
+
+        if ($res->num_rows > 0) {
+            while ($row = $res->fetch_assoc()) {
+                $data[] = $row;
+
+            }
+        }
+
+        return $data;
+
     }
 
 }
