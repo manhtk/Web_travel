@@ -877,6 +877,9 @@ font-size: 14px;
 .broom .btn:hover{
 	color: #FFF;
 }
+.broom .price-room{
+	margin-bottom: 5px;
+}
 
 /*rooms*/
 /*review*/
@@ -1486,6 +1489,7 @@ font-size: 14px;
 	overflow: hidden;
 	margin-left: -15px;
 }
+
 .broom .btn
 {
 	padding: 0;

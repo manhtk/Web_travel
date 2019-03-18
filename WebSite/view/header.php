@@ -158,6 +158,7 @@
                         <input type="text" class="form-control" name="s" value="">
                         <i class="fa fa-search"></i>
                     </form>
+                    
                     <img class="ico_card" src="libs/Images/ico_card.svg">
                 </div>
             </div>
