@@ -1810,3 +1810,18 @@ span .child
 	outline: none;
 }
 }
+
+i.fa.fa-star {
+    /* background-color: yellow; */
+    color: yellow;
+}
+hr {
+	width: 100%;
+}
+span.like {
+	font-size: 20px;
+}
+label.abc1 {
+    margin-top: 20px;
+    float: left;
+}
