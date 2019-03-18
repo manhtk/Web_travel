@@ -72,6 +72,9 @@ class bookcart extends Controller {
 			else{
 				$regisdate= date('d-m-Y H:i:s');
 				$password = md5(rand(100000, 999999));
+				$keycheck= $post_user['st_email'];
+				$check  = $this->model->getInfoUser($keycheck);
+				if(empty($check)){
 				$arr_user = array(
 					'"' .$post_user['st_email']. '"',
 					'"' .$password. '"',
@@ -88,7 +91,12 @@ class bookcart extends Controller {
 					'"' .$post_user['st_country']. '"',
 					'"' .$post_user['st_note']. '"'
 				);
-			
+				}
+				else{
+					echo('Email already exists. Please login to use the site features !!!');
+					exit();
+
+				}
 				$this->model->insertUser($arr_user);
 
 			}
