@@ -253,7 +253,7 @@ nav ul li ul li a {
 	display: none;
 
 }
-i.fa.fa-bars.munu1{
+.toggle .menu1{
 	padding-left: 20px;
 }
 @media screen and (max-width: 991px) 

@@ -202,14 +202,15 @@
                                 
                                 <span class="checkmark fcheckbox"></span><br>
 
-                               
-                               <?php
-                                if(!empty($err)){
+                                <p>
+                                   <?php
+                                   if(!empty($err)){
                                     foreach ($err as $key => $value) {
                                         echo $value . '<br />';
+                                       }
                                     }
-                                }
-                               ?>
+                                   ?>
+                                </p>
                             </label>
                         </div>
                     </div>
