@@ -39,7 +39,7 @@
 
 						<div class="col-xs-12  form-group">		
 							<div class="banner-search-form">					
-								<i class="fas fa-map-marker-alt mobile-checkicon"></i>
+								<i class="fas fa-map-marker-alt mobile-checkicon" style="color: #1A2B48;"></i>
 								<input type="text" class="form-control col-sm-6 col-xs-12 mobile-input" id="email" placeholder="Where are you going?" name="email">
 								<button type="button" class=" btn-primary mobile-button"><i class="fas fa-search mobile-checkicon-button"></i></button>
 								
@@ -54,8 +54,8 @@
 
 		<!-- mobile list -->
 		<div class="mobile-list">
-			<div class="container mobile-list-waper">
-				<ul class="" role="menu" aria-labelledby="menu1">
+			<div class="container" style="text-align: center;">
+				<ul class="" role="menu" aria-labelledby="menu1" style="display: inline-block;">
 					<li role="presentation"><button class=" btn-primary mobile-list-item">Date</button></li>
 					<li role="presentation"><button class=" btn-primary mobile-list-item" >Guest</button></li>
 					<li role="presentation"><button class=" btn-primary mobile-list-item">Map</button></li>
@@ -102,25 +102,25 @@
 												} else {
 													$des = $_GET['cityname'];
 												} ?>
-												<span class="destination"
+												<span class="destination" style="cursor: pointer"
 												id="spankey"><?php echo $des ?></span>
 											</div>
 											<input type="hidden" name="cityname" id="namekey"
-											value="<?php echo $_GET['cityname'] ?>">
+											value="">
 											<input type="hidden" name="cityid" id="idkey"
-											value="<?php echo $_GET['cityid'] ?>">
+											value="">
 
 											<ul class="dropdown-menu search-list" role="menu"
-											aria-labelledby="menu1" onclick="change()">
+											aria-labelledby="menu1" onclick="change()" id="dropdownmenu">
 											<?php foreach ($data_city
 
 												as $values) { ?>
 
-													<li 
+													<li style="padding-left: 20px; cursor: pointer"
 													data-value="<?php echo $values['city_id'] ?>"
 													><i
 													class="fas fa-map-marker-alt"></i>
-													<span>
+													<span style="padding: 20px;">
 														<?php echo $values['city_name'] ?>
 													</span>
 												</li>
@@ -130,7 +130,7 @@
 										<script>
 											$(function () {
 
-												$(".dropdown-menu li").click(function (e) {
+												$("#dropdownmenu li").click(function (e) {
 
 													$(".destination:first-child").text($(this).text());
 													$(".destination:first-child").val($(this).text());
@@ -171,9 +171,10 @@
 									<i class="far fa-calendar-plus search-checkiconright"></i>
 									<label for="radio-choice-1" class="search-title-language"> Check
 									In-Out</label>
-									<div id="reportrange" class="matchHeight">
-										<?php echo $start . ' - ' . $end ?>
-									</div>
+									<div id="reportrange"
+									style="color: #5191FA;cursor: pointer;font-size: 15px;padding-left: 47px;padding-top: 20px">
+									<?php echo $start . ' - ' . $end ?>
+								</div>
 
 								<input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
 								<input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
@@ -212,7 +213,7 @@
 
 							<div class="form-group col-sm-12 search-content1">
 
-								<div class="row field-people-row">
+								<div class="row guests">
 									<div class="col-sm-6 field_people_room">
 										<div class="people-inner">
 											<i class="fas fa-users search-checkicon"></i>
@@ -225,12 +226,14 @@
 													<span class="child search-element2">0 Child</span>
 												</span>
 
+													<!-- <div class="icon">
+														<i class="fas fa-angle-up"></i>
+													</div> -->
 
 												</div>
 											</div>
-
 											<div class="formbook">
-												<div class="people-dropdown book-people">
+												<div class="people-dropdown book-people" style="display: block;">
 													<div class="item gmz-number-wrapper">
 														Rooms
 														<span class="control minus room">-</span>
@@ -274,8 +277,8 @@
 
 										<p class="dropdown-toggle  search-optiontitle" id="menu-option"
 										data-toggle="dropdown">More option
-									</p>
 
+									</p>
 									<ul class="dropdown-menu search-list-option" role="menu"
 									aria-labelledby="menu1">
 									<div class="row">
@@ -287,7 +290,7 @@
 												id="check1" name="option1"
 												value="something"/>
 
-												<span class="search-list-item1">Ari Conditioning</span>
+												<span class="search-list-item1">Air Conditioning</span>
 											</li>
 										</div>
 
@@ -590,7 +593,7 @@
 													<div class="item">
 														<div class="thumb">
 
-															<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">  <img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
+														<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">	<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
 														</div>
 														<div class="icon-position">
 															<i class="fas fa-heart img heart"></i>
@@ -615,7 +618,24 @@
 
 
 
-															<p class="service-location"><i class="fas fa-map-marker-alt"></i><?php echo " ". $value['city_name'] ?> ,USA
+															<p class="service-location">
+																
+																<?php 
+																if(!empty($value['city_name']) || !empty($value['country']))
+																{
+																	?>
+																	<i class="fas fa-map-marker-alt"></i>
+																	<?php
+																}
+
+																?>
+																<?php 
+																if (!empty(htmlspecialchars($value['city_name'])) || !empty($value['country'])) {
+
+																}
+
+																?>
+																<?php echo " ". $value['city_name'].", ". $value['country'] ?> 
 															</p>
 
 
@@ -655,14 +675,13 @@
 
 											<?php
 											$get_data = $_GET;
-											if(!empty($get_data)){
-												foreach ($get_data as $key => $value) {
-
-												}
+											$opt = '';
+											if(isset($get_data['optradio'])){
+												$opt = '&optradio=' . $get_data['optradio'];
 											}
-
 											for ($i = 1;$i <= $total_page;$i++) {
-												echo "<li><a href='?c=slidebar&a=view&page=". $i ."&$key=$value'>$i</a></li>";
+
+												echo '<li><a href="?c=slidebar&a=view&page='. $i . $opt .'">'. $i .'</a></li>';
 											}
 
 

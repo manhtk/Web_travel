@@ -1,60 +1,62 @@
 <?php
 class bookcart extends Controller {
 
-
-
-	public function view(){
+	public function view($err = false){
 		if(isset($_POST['room_add_to_cart'])){
 			$post_data = $_POST;
 			unset($post_data['room_add_to_cart']);
 			dd($post_data);
 			unset($_SESSION['st_cart']);			
 			$_SESSION['st_cart'] = $post_data;
-			header('location: '. $this->getSiteURL() .'?c=bookcart&a=view');
+			header('location: http://webhotel.com:8080/?c=bookcart&a=view');
 		}
 		$cart_data = $_SESSION['st_cart'];
 		$key1=$cart_data['room_id'];
-		
-		if(isset($_SESSION['currUser'])){
-			$key2=$_SESSION['currUser'];
-			$getinfo = $this->model->getInfoUser($key2);
-
-		}
-		else {
-			$getinfo = [];
-		}
+		$key2=$_SESSION['currUser'];
 		$res = $this->model->getRoomDetal($key1);
-		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo,'stss'=>$cart_data));
+		$getinfo = $this->model->getInfoUser($key2);
+		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo,'stss'=>$cart_data, 'err' => $err));
 	}
-
 	public function checkout(){
-
 		$cart_checkout = $_SESSION['st_cart'];
 		$key1=$cart_checkout['room_id'];
 		$cart_data = $this->model->getRoomDetal($key1);
 		if(isset($_POST['checkout_submit'])){
 			$data = $_POST;
+
+			//
+
+			if(!isset($data['term_condition']) || $data['term_condition'] != '1'){
+				$err_checkout = array();
+				array_push($err_checkout, 'Please tick a checkbox');
+			    
+				$this->view($err_checkout);	
+				return;		
+			}
+		
 			
 			$cart=(array_shift($cart_data));
 			$totalmoney = $cart['price']*110/100;
 			$order_date = date('d-m-Y');
 			$array_insert = array(
-				$data['st_email'],
+				$data['st_user_id'],
 				$cart['room_id'],
 				'"' . $cart_checkout['startday'] . '"',
 				'"' . $cart_checkout['endday'] . '"',
 				$totalmoney,
 				'"' . $order_date . '"'				
 			);
-			
 			$this->model->insertBill($array_insert);	
 		}
-		
+		 
+		$key2=$_SESSION['currUser'];
+		$search=$this->model->getInfoUser($key2);
+		$dataUser=array_shift($search);
 		if(isset($_POST['checkout_submit'])){
-			$post_user = $_POST;
 			
-			if(isset($_SESSION['currUser'])){
-				$key2=$_SESSION['currUser'];
+			$post_user = $_POST;
+			if(isset($key2)){
+			$cart = $_SESSION['st_cart'];
 				$value1=$post_user['st_first_name'];
 				$value2=$post_user['st_last_name'];
 				$value3=$post_user['st_email'];
@@ -67,43 +69,51 @@ class bookcart extends Controller {
 				$value10=$post_user['st_country'];
 				$value11=$post_user['st_note'];
 
-				$dataUser=$this->model->updateUser($value1,$value2,$value3,$value4,$value5,$value6,$value7,$value8,$value9,$value10,$value11, $key2);
+				$this->model->updateUser($value1,$value2,$value3,$value4,$value5,$value6,$value7,$value8,$value9,$value10,$value11, $key2);
 			}
 			else{
+<<<<<<< HEAD
 				$regisdate= date('d-m-Y H:i:s');
 				$password = md5(rand(100000, 999999));
 				$keycheck= $post_user['st_email'];
 				$check  = $this->model->getInfoUser($keycheck);
 				if(empty($check)){
+=======
+				$regisdate= date('d-m-Y');
+>>>>>>> f20cce301a3d9ab32857770765d2238b31fbf634
 				$arr_user = array(
-					'"' .$post_user['st_email']. '"',
-					'"' .$password. '"',
-					'3',
-					'"' .$post_user['st_first_name']. '"',
-					'"' .$post_user['st_last_name']. '"',
-					'"' .$post_user['st_address']. '"',
-					'"' .$post_user['st_address2']. '"',
-					'"' .$post_user['st_city']. '"',
-					'"' .$post_user['st_email']. '"',
+					$post_user['st_email'],
+					$post_user['st_phone'],
+					'4',
+					$post_user['st_first_name'],
+					$post_user['st_last_name'],
+					$post_user['st_address'],
+					$post_user['st_address2'],
+					$post_user['st_city'],
+					$post_user['st_email'],
 					'"' . $regisdate . '"',
-					'"' .$post_user['st_province']. '"',
+					$post_user['st_province'],
 					$post_user['st_zip_code'],
-					'"' .$post_user['st_country']. '"',
-					'"' .$post_user['st_note']. '"'
+					$post_user['st_country'],
+					$post_user['st_note']
 				);
+<<<<<<< HEAD
 				}
 				else{
 					echo('Email already exists. Please login to use the site features !!!');
 					exit();
 
 				}
+=======
+>>>>>>> f20cce301a3d9ab32857770765d2238b31fbf634
 				$this->model->insertUser($arr_user);
-
 			}
+			header('location: http://webhotel.com:8080/?c=bookcart&a=checkout');
 		}
-
+		
 		$get_room = $this->model->getRoomDetal($key1);
-		$this->view->render('site/cart/booking-success',array('list'=>$data,'room'=>$get_room));
+		$this->view->render('site/cart/booking-success',array('list'=>$dataUser,'room'=>$get_room));
+
 		//hàm lấy datenow
 		//$curr_date = date('Y-m-d');
 	}

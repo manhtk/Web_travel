@@ -515,15 +515,16 @@ a.morelink
 	color: #5E6D77;
 	font-weight: 400;
 	position: relative;
-	height: auto;
+
+	height: 100px;
+
 }
 [data-show-all] {
 	position: relative;
 	overflow: hidden;
-
 }
 .more1 {
-	height: 100px;
+	height: auto;
 }
 .more2  {
 	height: 200px;
@@ -1696,11 +1697,7 @@ label.star:before {
 {
 	padding-top: 10px;
 }
-.abc {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+
 .facilities p
 {
 	margin: 0px 20px;
@@ -1812,4 +1809,19 @@ span .child
 	border-radius: 10px;
 	outline: none;
 }
+}
+
+i.fa.fa-star {
+    /* background-color: yellow; */
+    color: yellow;
+}
+hr {
+	width: 100%;
+}
+span.like {
+	font-size: 20px;
+}
+label.abc1 {
+    margin-top: 20px;
+    float: left;
 }

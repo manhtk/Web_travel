@@ -1,18 +1,20 @@
 <?php
+
 class Slidebar extends Controller
 {
 
-    public function view(){
+    public function view()
+    {
 
-        $rs=$this->model->sortHotel();
-        $count=count($rs);
-        $page=$this->model->getPage();
+        $rs = $this->model->sortHotel();
+        $count = count($rs);
+        $page = $this->model->getPage();
         $paged = isset($_GET['page']) ? $_GET['page'] : 1;
 
         $offset = ($paged - 1) * 12;
         $rs = $this->model->sortHotel($offset, 12);
         $data = $this->model->getCity();
-        $this->view->render('site/slidebar',array('data_hotel'=>$rs,'total_page' => $page, 'data_city' => $data,'count'=>$count));
+        $this->view->render('site/slidebar', array('data_hotel' => $rs, 'total_page' => $page, 'data_city' => $data, 'count' => $count));
     }
 
     public function search()
@@ -42,6 +44,6 @@ class Slidebar extends Controller
     }
 
 
-
 }
+
 ?>

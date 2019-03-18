@@ -18,8 +18,8 @@
 		<div class="st-breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="https://homap.travelerwp.com">Home</a></li>
-					<li><a href="https://homap.travelerwp.com/search-hotel-full-map/?location_id=1957&amp;location_name=United%20States">United States</a></li>
+					<li><a href="?c=homepage&a=view">Home</a></li>
+					<li><a href="#">United States</a></li>
 					<?php foreach ($data_hotel as $value) { ?>
 					<li class="active"> <?php echo $value['hotel_name']; ?></li> 
 				<?php } ?>
@@ -104,7 +104,7 @@
 					</div>
 					</div>
 					<!-- end slide -->
-					<hr>
+					<hr style="width: 100%;">
 					<!-- description -->
 					<div>
 						<h2 class="st-heading-section">Descripton
@@ -133,7 +133,7 @@
 						</script> -->
 					</div>
 					<!-- description -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- facilities -->
 					<div>
 						<h2 class="st-heading-section">Facilities
@@ -162,7 +162,7 @@
 						</div>
 					</div>
 					<!-- end facilities -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- rules -->
 					<div class="rules">
 						<div class="">
@@ -213,7 +213,7 @@
 						</div>
 					</div>
 					<!-- end rules -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- room -->
 					<!--  -->
 					<div class="sroom">
@@ -258,7 +258,7 @@
 										<div class="col-xs-12 col-md-4 ">
 											<div class="price-room"  >
 												<span class="money-price">€<?php echo $v['price']; ?> </span>
-												<span class="unit">/1 night</span>
+												<span class="unit"> /1 night</span>
 											</div>
 
 												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">SHOW PRICE</a>
@@ -309,7 +309,7 @@
 											</div>
 
 											<div class="col-sm-4 " >
-												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
+												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit"> /1 night</span></div>
 
 
 												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>												
@@ -324,7 +324,7 @@
 						</div>
 					</div>
 					<!-- end room -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- reviews -->
 					<div class="reviews">
 						<h2>Reviews</h2>
@@ -457,7 +457,7 @@
 						</div>
 					</div>
 					<!-- end review  -->
-					<hr >
+					<hr style="width: 100%;">
 					<!-- review-list -->
 					<div class="review-list">
 						<div class="comment-item">
@@ -763,7 +763,7 @@
 		</div>
 	</div>
 	<!-- end content -->
-	<hr >
+	<hr style="width: 100%">
 	<h2 class="st-heading text-center">Hotel Nearby</h2>
 	<!-- nearby -->
 	<div>

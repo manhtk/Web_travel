@@ -4,13 +4,20 @@
     <title>HomePage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
     <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+   <!--  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script> -->
       
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
@@ -24,7 +31,7 @@
 
 
     <!-- chọn ngày -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -50,7 +57,7 @@
                     </ul>
                     <ul class="st-list topbar-items">
                         <li class="hidden-xs hidden-sm">
-                            <a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
+                            <a href="#" target="">contact@shinetheme.com</a>
                         </li>
                     </ul>
                 </div>
@@ -75,8 +82,8 @@
                         <li class="dropdown dropdown-language hidden-sm hidden-xs">
                             <a href="#">English<i class="fa fa-angle-down"></i></a>
                             <ul class="dropmenu">
-                                <li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-                                <li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">Español</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -91,7 +98,7 @@
                 </div>
                 <div class="header1left">
                     <a href="index.php">
-                        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                        <img src="libs/Images/logo_homap-4.svg">
                     </a>
                     <div class="menu">
 
@@ -151,6 +158,7 @@
                         <input type="text" class="form-control" name="s" value="">
                         <i class="fa fa-search"></i>
                     </form>
+                    
                     <img class="ico_card" src="libs/Images/ico_card.svg">
                 </div>
             </div>

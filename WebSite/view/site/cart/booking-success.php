@@ -9,24 +9,24 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div class="container">
 		<div class="st-checkout-page">
 			<div class="row booking-success-notice">
 				<div class="col-lg-8 col-md-8 col-left">
-					<img src="https://homap.travelerwp.com/wp-content/themes/traveler2.5/v2/images/ico_success.svg" alt="Thanh toán thành công">
+					<img src="libs/Images/ico_success.svg" alt="success">
 					<div class="notice-success">
 						<p class="line1">
 							<span>
 								<?php 
-								echo $list['st_first_name'].' '.$list['st_last_name']; ?>, 
+								echo $list['first_name'].' '.$list['last_name']; ?>, 
 							</span>
 							Your order was submitted successfully
 						</p>
 						<p class="line2">
 							Booking details has been sent to:
 							<span>
-								<?php  echo $list['st_email'] ?>
+								<?php  echo $list['email'] ?>
 							</span>
 						</p>
 					</div>
@@ -42,7 +42,7 @@
 						<span>
 							Booking Date
 						</span>
-						<?php echo $datenow= date('d-m-Y') ?>
+						08/03/2019
 					</li>
 					<li>
 						<span>
@@ -62,22 +62,26 @@
 				<h3 class="title">
 				Your Items	</h3>
 				<div class="cart-info">
-					<?php $rooms=array_shift($room) ?>
+					<?php
+					
+					foreach ($room as $value) {
+						# code...
+					 ?>
 					<div class="service-section">
 						<div class="service-left">
-							<h4 class="title"><a href="#"><?php echo $rooms['hotel_name'] ?></a></h4>
-							<p class="address"><i class="fa fa-map-marker"></i> <?php echo $rooms['city_name'] ?></p>
+							<h4 class="title"><a href="#"><?php echo $value['hotel_name'] ?></a></h4>
+							<p class="address"><i class="fa fa-map-marker"></i> <?php echo $value['city_name'] ?></p>
 						</div>
 						<div class="service-right">
-							<img width="110" height="110"  style="max-width:100%;height:auto" src="<?php echo $rooms['images'] ?>" sizes="(max-width: 110px) 100vw, 110px"></div>
+							<img width="110" height="110"  style="max-width:100%;height:auto" src="<?php echo $value['images'] ?>" sizes="(max-width: 110px) 100vw, 110px"></div>
 						</div>
 						<div class="info-section">
 							<ul>
 								<li><span class="label">Email:</span><span class="value">email@domain.com</span></li>
 								<li><span class="label">Phone:</span><span class="value">+658099999</span></li>
-								<li><span class="label">Room:</span><span class="value"><?php echo $rooms['room_name'] ?></span></li>
+								<li><span class="label">Room:</span><span class="value"><?php echo $value['room_name'] ?></span></li>
 								<li><span class="label">Number of rooms</span><span class="value"></span></li>
-								<li><span class="label">Check In:</span><span class="value">7/7</span></li>
+								<li><span class="label">Check In:</span><span class="value">08/03/2019</span></li>
 								<li><span class="label">Check Out:</span><span class="value">09/03/2019</span></li>
 								<li><span class="label">Price:</span>
 									<span class="value">€ 315,00</span>
@@ -114,6 +118,7 @@
 								</li>
 							</ul>
 						</div>
+					<?php } ?>
 					</div>
 				</div>
 
@@ -122,20 +127,27 @@
 					
 
 					<div class="info-form">
-					
-				<ul>
-					<li><span class="label">First Name</span><span class="value"><?php echo $list['st_first_name'] ?></span></li>
-					<li><span class="label">Last name</span><span class="value"><?php echo $list['st_last_name'] ?></span></li>
-					<li><span class="label">Email</span><span class="value"><?php echo $list['st_email'] ?></span></li>
-					<li><span class="label">Address Line 1 </span><span class="value"><?php echo $list['st_address'] ?></span></li>
-					<li><span class="label">Address Line 2 </span><span class="value"><?php echo $list['st_address2'] ?></span></li>
-					<li><span class="label">City</span><span class="value"><?php echo $list['st_city'] ?></span></li>
-					<li><span class="label">State/Province/Region</span><span class="value"><?php echo $list['st_province'] ?></span></li>
-					<li><span class="label">ZIP code/Postal code</span><span class="value"><?php echo $list['st_zip_code'] ?></span></li>
-					<li><span class="label">Country</span><span class="value"><?php echo $list['st_country'] ?></span></li>
-					<li><span class="label">Special Requirements</span><span class="value"><?php echo $list['st_note'] ?></span></li>
-				</ul>
+						<?php
+
+						if (empty($list)) {
+							echo "Has no record";
+						} else {
 							
+								?>
+				<ul>
+					<li><span class="label">First Name</span><span class="value"><?php echo $list['first_name'] ?></span></li>
+					<li><span class="label">Last name</span><span class="value"><?php echo $list['last_name'] ?></span></li>
+					<li><span class="label">Email</span><span class="value"><?php echo $list['email'] ?></span></li>
+					<li><span class="label">Address Line 1 </span><span class="value"><?php echo $list['address1'] ?></span></li>
+					<li><span class="label">Address Line 2 </span><span class="value"><?php echo $list['address2'] ?></span></li>
+					<li><span class="label">City</span><span class="value"><?php echo $list['city'] ?></span></li>
+					<li><span class="label">State/Province/Region</span><span class="value"><?php echo $list['state_province_region'] ?></span></li>
+					<li><span class="label">ZIP code/Postal code</span><span class="value"><?php echo $list['zipcode_or_postal_code'] ?></span></li>
+					<li><span class="label">Country</span><span class="value"><?php echo $list['country'] ?></span></li>
+					<li><span class="label">Special Requirements</span><span class="value"><?php echo $list['special'] ?></span></li>
+				</ul>
+							<?php 
+						} ?>
 					</div>
 
 					<div class="text-center mg20 mt30">
