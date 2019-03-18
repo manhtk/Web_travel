@@ -618,7 +618,24 @@
 
 
 
-															<p class="service-location"><i class="fas fa-map-marker-alt"></i><?php echo " ". $value['city_name'] ?> ,USA
+															<p class="service-location">
+																
+																<?php 
+																if(!empty($value['city_name']) || !empty($value['country']))
+																{
+																	?>
+																	<i class="fas fa-map-marker-alt"></i>
+																	<?php
+																}
+
+																?>
+																<?php 
+																if (!empty(htmlspecialchars($value['city_name'])) || !empty($value['country'])) {
+																	
+																}
+
+																?>
+																<?php echo " ". $value['city_name'].", ". $value['country'] ?> 
 															</p>
 
 
