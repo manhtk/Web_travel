@@ -515,13 +515,16 @@ a.morelink
 	color: #5E6D77;
 	font-weight: 400;
 	position: relative;
+
+	height: 100px;
+
 }
 [data-show-all] {
 	position: relative;
 	overflow: hidden;
 }
 .more1 {
-	height: 100px;
+	height: auto;
 }
 .more2  {
 	height: 200px;
