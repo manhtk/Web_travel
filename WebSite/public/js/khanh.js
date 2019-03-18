@@ -333,7 +333,6 @@ $(function() {
 // });
 
 jQuery(document).ready(function($){
-
 	$("span.text").click(function(e){
 		e.preventDefault();
 		$(".st-description").toggleClass('more1');
@@ -343,7 +342,7 @@ jQuery(document).ready(function($){
 		}else{
 			$(this).text('View More');
 			$('.cut-gradient').css("display", "block");
-			
+
 		}
 	});
 	$("span.text1").click(function(r) {

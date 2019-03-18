@@ -232,10 +232,11 @@
                 </div>
               </div>
             </div>
+
             <?php if(count($data_amenities) >6){ ?>
                 <a href="#"><span class="text1">Show all</span></a> 
            <?php } ?> 
-           
+
             <!-- end facilities -->
 
             <!-- Rules -->
@@ -267,16 +268,22 @@
             <!-- end Rules -->
             <!-- Review -->
             <div class="row">
-              <div class="abc">
-                <h2 class="st-heading-section">Review</h2>
-                <div class="st-re">
-                  <p>45 Review
-                    <i class="fa fa-star st-room" style="color:yellow"></i>
-                    <i class="fa fa-star st-room" style="color:yellow"></i>
-                    <i class="fa fa-star st-room" style="color:yellow"></i>
-                    <i class="fa fa-star st-room" style="color:yellow"></i>
-                    <i class="fa fa-star st-room" style="color:black"></i>
-                  </p>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="st-heading-section">Review</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="st-re">
+                      <p>45 Review
+                        <i class="fa fa-star st-room" style="color:yellow"></i>
+                        <i class="fa fa-star st-room" style="color:yellow"></i>
+                        <i class="fa fa-star st-room" style="color:yellow"></i>
+                        <i class="fa fa-star st-room" style="color:yellow"></i>
+                        <i class="fa fa-star st-room" style="color:black"></i>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -430,7 +437,7 @@
         <div class="col-md-3 abc"  >
           <!-- widget -->
           <form action="?c=bookcart&a=view" method="post">
-          <input type="hidden" name="room_id" value="<?php echo $data_room[0]['room_id']; ?>" />
+            <input type="hidden" name="room_id" value="<?php echo $data_room[0]['room_id']; ?>" />
           <div class="container-fluid widgetroom">
             <div class="widgets" style="background-color: white;" >
               <div class="form-head">
