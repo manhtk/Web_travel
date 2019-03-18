@@ -105,7 +105,8 @@ body{
 	color: #5191fa; 
 	border: none; 
 	font-weight: 200;
-	 width: 90%
+	 width: 90%;
+	 cursor: pointer;
 }
 .dropdown-toggle span 
 {
@@ -119,6 +120,7 @@ body{
     position: absolute;
     left: -5px;
     margin-top: 44px;
+    cursor: pointer;
 }
 span .adult_values
 {
@@ -568,6 +570,7 @@ span .child_values
     left: -10px;
     top: -8px;
     font-size: 16px;
+    cursor: pointer;
 
 }
 .dropdown-menu-facilities
