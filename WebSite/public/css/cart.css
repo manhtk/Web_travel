@@ -305,3 +305,8 @@ div#cart-info {
     width: 60%;
     display: inline-block;
 }
+.cond-form .st-icheck-item p{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}

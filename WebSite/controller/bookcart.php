@@ -30,7 +30,8 @@ class bookcart extends Controller {
 				$err_checkout = array();
 				array_push($err_checkout, 'Please tick a checkbox');
 			
-				$this->view($err_checkout);			
+				$this->view($err_checkout);	
+				return;		
 			}
 		
 			
