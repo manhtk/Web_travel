@@ -89,95 +89,96 @@
         </div>
         <div class="col-lg-8 col-md-8 col-lg-pull-4 col-md-pull-4">
             <h3 class="title">Booking Submission</h3>
+            
             <form class="" method="post" action="?c=bookcart&a=checkout">
-                <div class="check-out-form">
-                    <?php foreach ($infouser  as  $value) {
-                        ?>
-                        <div class="entry-content"></div>
+            <div class="check-out-form">
+                <?php foreach ($infouser  as  $value) {
+                    ?>
+                    <div class="entry-content"></div>
 
-                        <input type="hidden"  value="<?php echo $value['user_id'] ?>" name = "st_user_id" >
-                        <div class="clearfix">
+                    <input type="hidden"  value="<?php echo $value['user_id'] ?>" name = "st_user_id" >
+                    <div class="clearfix">
 
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_first_name">First Name <span class="require">*</span> </label>
-                                        <i class="fa fa-user input-icon"></i>
-                                        <input class="form-control required" id="field-st_first_name" value="<?php echo $value['first_name'] ?>" name="st_first_name" placeholder="First Name" type="text">
-                                    </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_first_name">First Name <span class="require">*</span> </label>
+                                    <i class="fa fa-user input-icon"></i>
+                                    <input class="form-control required" id="field-st_first_name" value="<?php echo $value['first_name'] ?>" name="st_first_name" placeholder="First Name" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_last_name">Last Name <span class="require">*</span> </label>
-                                        <i class="fa fa-user input-icon"></i>
-                                        <input class="form-control required" id="field-st_last_name" value="<?php echo $value['last_name'] ?>" name="st_last_name" placeholder="Last Name" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_last_name">Last Name <span class="require">*</span> </label>
+                                    <i class="fa fa-user input-icon"></i>
+                                    <input class="form-control required" id="field-st_last_name" value="<?php echo $value['last_name'] ?>" name="st_last_name" placeholder="Last Name" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_email">Email <span class="require">*</span> </label>
-                                        <i class="fa fa-envelope input-icon"></i>
-                                        <input class="form-control required" id="field-st_email" value="<?php echo $value['email'] ?>" name="st_email" placeholder="email@domain.com" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_email">Email <span class="require">*</span> </label>
+                                    <i class="fa fa-envelope input-icon"></i>
+                                    <input class="form-control required" id="field-st_email" value="<?php echo $value['email'] ?>" name="st_email" placeholder="email@domain.com" type="text">
                                 </div>
-                                <div class="col-sm-6">
+                            </div>
+                            <div class="col-sm-6">
 
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_phone">Phone <span class="require">*</span> </label>
-                                        <i class="fa fa-phone input-icon"></i>
-                                        <input class="form-control required" id="field-st_phone" value="0<?php echo $value['phone_number'] ?>" name="st_phone" placeholder="Your Phone" type="text">
-                                    </div>
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_phone">Phone <span class="require">*</span> </label>
+                                    <i class="fa fa-phone input-icon"></i>
+                                    <input class="form-control required" id="field-st_phone" value="0<?php echo $value['phone_number'] ?>" name="st_phone" placeholder="Your Phone" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_address">Address Line 1  </label>
-                                        <i class="fa fa-map-marker input-icon"></i>
-                                        <input class="form-control" id="field-st_address" value="<?php echo $value['address1'] ?>" name="st_address" placeholder="Your Address Line 1" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_address">Address Line 1  </label>
+                                    <i class="fa fa-map-marker input-icon"></i>
+                                    <input class="form-control" id="field-st_address" value="<?php echo $value['address1'] ?>" name="st_address" placeholder="Your Address Line 1" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_address2">Address Line 2  </label>
-                                        <i class="fa fa-map-marker input-icon"></i>
-                                        <input class="form-control" id="field-st_address2" value="<?php echo $value['address2'] ?>" name="st_address2" placeholder="Your Address Line 2" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_address2">Address Line 2  </label>
+                                    <i class="fa fa-map-marker input-icon"></i>
+                                    <input class="form-control" id="field-st_address2" value="<?php echo $value['address2'] ?>" name="st_address2" placeholder="Your Address Line 2" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_city">City  </label>
-                                        <i class="fa fa-map-marker input-icon"></i>
-                                        <input class="form-control" id="field-st_city" value="<?php echo $value['city'] ?>" name="st_city" placeholder="Your City" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_city">City  </label>
+                                    <i class="fa fa-map-marker input-icon"></i>
+                                    <input class="form-control" id="field-st_city" value="<?php echo $value['city'] ?>" name="st_city" placeholder="Your City" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_province">State/Province/Region  </label>
-                                        <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="<?php echo $value['state_province_region'] ?>" name="st_province" placeholder="State/Province/Region" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_province">State/Province/Region  </label>
+                                    <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="<?php echo $value['state_province_region'] ?>" name="st_province" placeholder="State/Province/Region" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_zip_code">ZIP code/Postal code  </label>
-                                        <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_zip_code" value="<?php echo $value['zipcode_or_postal_code'] ?>" name="st_zip_code" placeholder="ZIP code/Postal code" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_zip_code">ZIP code/Postal code  </label>
+                                    <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_zip_code" value="<?php echo $value['zipcode_or_postal_code'] ?>" name="st_zip_code" placeholder="ZIP code/Postal code" type="text">
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-group-icon-left">                
-                                        <label for="field-st_country">Country  </label>
-                                        <i class="fa fa-globe input-icon"></i>                
-                                        <input class="form-control" id="field-st_country" value="<?php echo $value['country'] ?>" name="st_country" placeholder="Country" type="text">
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-icon-left">                
+                                    <label for="field-st_country">Country  </label>
+                                    <i class="fa fa-globe input-icon"></i>                
+                                    <input class="form-control" id="field-st_country" value="<?php echo $value['country'] ?>" name="st_country" placeholder="Country" type="text">
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group ">
-                                        <label for="field-st_note">Special Requirements  </label>
-                                        <textarea rows="6" class="form-control" id="field-st_note" name="st_note" placeholder="Special Requirements"><?php echo $value['special'] ?></textarea>
-                                    </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group ">
+                                    <label for="field-st_note">Special Requirements  </label>
+                                    <textarea rows="6" class="form-control" id="field-st_note" name="st_note" placeholder="Special Requirements"><?php echo $value['special'] ?></textarea>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    <?php } ?>
+                <?php } ?>
                 </div>
                 <input type="hidden" name="lang" value="en">
                 <div class="cond-form">
@@ -199,7 +200,16 @@
                                 <input class="i-check" value="1" name="term_condition" type="checkbox">
                                 <span class="payment-title">I have read and accept the<a target="_blank" href=""> terms and conditions</a> and <a href="#" target="_blank">Privacy Policy</a></span>
                                 
-                                <span class="checkmark fcheckbox"></span>
+                                <span class="checkmark fcheckbox"></span><br>
+
+                               
+                               <?php
+                                if(!empty($err)){
+                                    foreach ($err as $key => $value) {
+                                        echo $value . '<br />';
+                                    }
+                                }
+                               ?>
                             </label>
                         </div>
                     </div>

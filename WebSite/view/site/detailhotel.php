@@ -18,8 +18,8 @@
 		<div class="st-breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="https://homap.travelerwp.com">Home</a></li>
-					<li><a href="https://homap.travelerwp.com/search-hotel-full-map/?location_id=1957&amp;location_name=United%20States">United States</a></li>
+					<li><a href="?c=homepage&a=view">Home</a></li>
+					<li><a href="#">United States</a></li>
 					<?php foreach ($data_hotel as $value) { ?>
 					<li class="active"> <?php echo $value['hotel_name']; ?></li> 
 				<?php } ?>
@@ -258,7 +258,7 @@
 										<div class="col-xs-12 col-md-4 ">
 											<div class="price-room"  >
 												<span class="money-price">€<?php echo $v['price']; ?> </span>
-												<span class="unit">/1 night</span>
+												<span class="unit"> /1 night</span>
 											</div>
 
 												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">SHOW PRICE</a>
@@ -309,7 +309,7 @@
 											</div>
 
 											<div class="col-sm-4 " >
-												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit">/1 night</span></div>
+												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit"> /1 night</span></div>
 
 
 												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>												

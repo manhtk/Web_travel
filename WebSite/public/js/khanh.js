@@ -337,11 +337,12 @@ jQuery(document).ready(function($){
 		e.preventDefault();
 		$(".st-description").toggleClass('more1');
 		if($(".st-description").hasClass('more1')){
+			$(this).text('View Less');
+			$('.cut-gradient').css("display", "none");			
+		}else{
 			$(this).text('View More');
 			$('.cut-gradient').css("display", "block");
-		}else{
-			$(this).text('View Less');
-			$('.cut-gradient').css("display", "none");
+
 		}
 	});
 	$("span.text1").click(function(r) {

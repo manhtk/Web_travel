@@ -124,6 +124,16 @@ body{
 #footer_content .footer_content1_element .footer_content1_element1 a{
   color: #1A2B48;
 }
+.footer_content_list .footer_content1_element p{
+  font-size: 14px;
+  color: #5E6D77;
+}
+.footer_content_list .footer_content1_element .footer_content1_element1 select{
+  width: 180px;
+   height: 40px; 
+   border-radius: 4px;
+   background:white;
+}
 .footer_sub
 {
  border-top: 1px solid #DDDDDD;
@@ -138,6 +148,11 @@ body{
 .footer_sub .footer_sub_R 
 {
  padding-top: 20px;
+}
+.footer_sub .footer_sub_R  span{
+  margin-left: 15px; 
+  margin-top: 15px;
+
 }
 
 /*end footer*/

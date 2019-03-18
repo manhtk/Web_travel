@@ -232,7 +232,11 @@
                 </div>
               </div>
             </div>
-             <a href="#"><span class="text1">Show all</span></a> 
+
+            <?php if(count($data_amenities) >6){ ?>
+                <a href="#"><span class="text1">Show all</span></a> 
+           <?php } ?> 
+
             <!-- end facilities -->
 
             <!-- Rules -->
