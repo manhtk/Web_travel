@@ -191,6 +191,8 @@ class Slidebar_Model extends Model {
                                        WHERE city.city_id='$key'
                                        GROUP BY hotel.hotel_id";
 
+        
+
         if (!empty($orderby)) {
             switch ($orderby) {
                 case 'low':
