@@ -236,7 +236,7 @@
 												<div class="people-dropdown book-people" style="display: block;">
 													<div class="item gmz-number-wrapper">
 														Rooms
-														<span class="control minus">-</span>
+														<span class="control minus room">-</span>
 														<span class="text">
 
 															<span class="value room">1</span>               <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
@@ -245,7 +245,7 @@
 													</div>
 													<div class="item gmz-number-wrapper">
 														Adults
-														<span class="control minus">-</span>
+														<span class="control minus adults">-</span>
 														<span class="text">
 															<span class="value adult">1</span>               <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
 														</span>
@@ -253,7 +253,7 @@
 													</div>
 													<div class="item gmz-number-wrapper">
 														Children
-														<span class="control minus">-</span>
+														<span class="control minus children">-</span>
 														<span class="text">
 															<span class="value child">1</span>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
 														</span>
