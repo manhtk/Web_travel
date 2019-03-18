@@ -14,7 +14,7 @@
 		<div class="st-checkout-page">
 			<div class="row booking-success-notice">
 				<div class="col-lg-8 col-md-8 col-left">
-					<img src="https://homap.travelerwp.com/wp-content/themes/traveler2.5/v2/images/ico_success.svg" alt="Thanh toán thành công">
+					<img src="libs/Images/ico_success.svg" alt="success">
 					<div class="notice-success">
 						<p class="line1">
 							<span>

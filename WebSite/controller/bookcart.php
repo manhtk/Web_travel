@@ -29,7 +29,7 @@ class bookcart extends Controller {
 			if(!isset($data['term_condition']) || $data['term_condition'] != '1'){
 				$err_checkout = array();
 				array_push($err_checkout, 'Please tick a checkbox');
-			
+			    
 				$this->view($err_checkout);	
 				return;		
 			}
