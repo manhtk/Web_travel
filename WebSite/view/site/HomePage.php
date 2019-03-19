@@ -1,4 +1,4 @@
-seâ<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Home Page</title>
@@ -22,50 +22,151 @@ seâ<!DOCTYPE html>
                                     <!-- seach form -->
                                     <div class="seach-form">
                                         <div class="row">
+                                           <form action="index.php?c=slidebar&a=search" method="GET">  
                                             <div class="col-md-3 border-right">
                                                 <div class="form-group form-extra-field dropdown clearfix field-detination has-icon">
                                                     <i class="fas fa-map-marker-alt search-form-checkIcon"></i>
                                                 </div>
                                                 <div class="search-form-section">
                                                     <label for="name"  class="text-muted1";">Detination</label><br/>
-                                                    
+                                                     <input type="hidden" name="c" value="slidebar">
 
                                                     <div class="dropdown dropdown-list">
                                                         <div class="dropdown-toggle"
-                                                        data-toggle="dropdown">
-                                                        <span>Where are you going</span>
+                                                        data-toggle="dropdown" id="menu1">
+                                                        <?php
+                                                        if (empty($_GET['cityid'])) {
+                                                            $des = 'Where are you going?';
+                                                        } else {
+                                                            $des = $_GET['cityname'];
+                                                        } ?>
+                                                        <span class="destination" 
+                                                      id="spankey"><?php echo $des ?></span>
                                                     </div>
+                                                    <input type="hidden" name="cityname" id="namekey"
+                                                     value="">
+                                                    <input type="hidden" name="cityid" id="idkey"
+                                                     value="">
 
-                                                    <ul class="dropdown-menu form-item">
+                                                    <ul class="dropdown-menu form-item" role="menu"
+                                                aria-labelledby="menu1" onclick="change()" id="dropdownmenu">
                                                        <?php   foreach ($dataListCity as  $values){ ?>
 
-                                                        <li> <i class="fas fa-map-marker-alt"></i>
+                                                        <li data-value="<?php echo $values['city_id'] ?>" > 
+                                                            <i class="fas fa-map-marker-alt"></i>
                                                             <?php echo $values['city_name'] ?>
                                                         </li>
                                                     <?php } ?>
+                                                    <?php 
+                                                        $get_data = $_GET;
+                                                        $cityid ="";
+                                                        $cityname ="";
+                                                        $start="";
+                                                        $end = "";
+                                                        $date = "";
+                                                        if(isset($get_data['cityid']) && isset($get_data['cityname']))
+                                                        {
+                                                            $cityid = '&cityid=' . $get_data['cityid'];
+                                                            $cityname = "&cityname" . $get_data['cityname'];
+                                                            
+                                                            
+                                                        }
+                                                        if( isset($get_data['start'])  && isset($get_data['end'])  && isset($get_data['date']))
+                                                        {
+                                                             $start = "&start" . $get_data['start'];
+                                                              $end = "&end" . $get_data['end'];
+                                                               $date = "&date" . $get_data['date'];
+
+                                                        }
+
+                                                        echo '<li><a href="?c=slidebar&a=view'. $cityid . $cityname . $start . $end . $date .'"></a></li>';
+                                                     ?>
                                                     
                                                 </ul>
-                                                <script>
-                                                    $(".dropdown-menu li").click(function () {
-                                                        var selText = $(this).text();
-                                                        $(this).parents('.dropdown').find('.dropdown-toggle').html(selText + ' <span></span>').css("color", "#5191FA");
+                                               <script>
+                                                $(function () {
+
+                                                    $("#dropdownmenu li").click(function (e) {
+
+                                                        $(".destination:first-child").text($(this).text());
+                                                        $(".destination:first-child").val($(this).text());
+                                                        var value = $(this).data("value");
+                                                        $('#idkey').val(value);
                                                     });
-                                                </script>
+                                                });
+                                            </script>
+                                            <script>
+                                                function change() {
+                                                    var input = document.getElementById('namekey');
+                                                    var span = document.getElementById('spankey');
+                                                    input.value = span.innerText;
+                                                }
+                                            </script>
                                             </div>
                                             
                                         </div>
                                     </div>
+                                   <!--  date time -->
+                                   <?php
+                                    //Co $_GET['start'];
+                                    //Kho cos
+                                    $start = date('d/m/Y');
+                                    $end = date('d/m/Y', strtotime(' + 1 days'));
+                                    $date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
+                                    if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
+                                        if (!empty($_GET['start'])) {
+                                            $start = $_GET['start'];
+                                        }
+                                        if (!empty($_GET['end'])) {
+                                            $end = $_GET['end'];
+                                        }
+                                        if (!empty($_GET['date'])) {
+                                            $date = $_GET['date'];
+                                        }
+                                    }
+                                    ?>
                                     <div class="col-md-3 border-right">
                                         <div class="form-group form-extra-field dropdown clearfix field-detination has-icon">
                                             <i class="far fa-calendar-plus  search-form-checkIcon"></i>
                                         </div>
                                         <div class="search-form-section">
                                             <label for="radio-choice-1" class="language text-muted2" >Check In-Out</label><br/>
-                                            <div class="dropdow-list1">
-                                                <label>
-                                                    <input type="text" name="datetimes"  />
-                                                </label>
+                                            <div class="dropdow-list1 ">
+                                               <div id="reportrange">
+                                            <?php echo $start . ' - ' . $end ?>
+                                        </div>
                                             </div>
+                                            <input type="hidden" name="start" id="start"  value="<?php echo $start; ?>">
+                                        <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
+                                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                $('#reportrange').daterangepicker(
+                                                    {
+                                                        startDate: moment().subtract('days', 29),
+                                                        endDate: moment(),
+                                                       
+                                                        autoApply: true,
+                                                        dateLimit: {days: 60},
+                                                        showDropdowns: true,
+                                                        showWeekNumbers: true,
+                                                        timePicker: false,
+                                                        timePickerIncrement: 1,
+                                                        timePicker12Hour: true,
+                                                        opens: 'right',
+                                                        format: 'MM/DD/YYYY',
+                                                        separator: ' to ',
+                                                    },
+                                                    function (start, end) {
+                                                        console.log("Callback has been called!");
+                                                        $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+                                                        $('#start').val(start.format('DD/MM/YYYY'));
+                                                        $('#end').val(end.format('DD/MM/YYYY'));
+                                                        $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+                                                    }
+                                                );
+                                            });
+                                        </script>
                                         </div>
                                     </div>
                                     <div class="col-md-3 border-right">
@@ -203,6 +304,7 @@ seâ<!DOCTYPE html>
                                         <button class="seach-homepage"> SEARCH </button>
                                     </div>
                                 </div>
+                            </form>
                             </div>
                         </div>
 
