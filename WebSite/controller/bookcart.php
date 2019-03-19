@@ -41,7 +41,7 @@ class bookcart extends Controller {
 			$totalmoney = $cart['price']*110/100;
 			$order_date = date('d-m-Y');
 			$array_insert = array(
-				$data['st_email'],
+				'"' .$data['st_email']. '"',
 				$cart['room_id'],
 				'"' . $cart_checkout['startday'] . '"',
 				'"' . $cart_checkout['endday'] . '"',
@@ -89,8 +89,17 @@ class bookcart extends Controller {
 					'"' .$post_user['st_country']. '"',
 					'"' .$post_user['st_note']. '"'
 				);
-			
-				$this->model->insertUser($arr_user);
+				$dt=$this->model->getInfoEmail($post_user['st_email']);
+				if(empty($dt)){
+					$this->model->insertUser($arr_user);
+				}
+				else{
+					echo "Email already exists. Please login now !!!";
+					echo "<br>";
+					echo '<a href="?c=bookcart&a=view">' . 'Back' .'</a>';
+					exit();
+
+				}
 			}
 		}
 		$get_room = $this->model->getRoomDetal($key1);
@@ -100,7 +109,11 @@ class bookcart extends Controller {
 	}
 	public function listBill()
 	{
-		$res= $this->model->listBill();
+		if(isset($_POST['check_list'])){
+			$post_list = $_POST;
+		}
+		$key=$post_list['st_username'];
+		$res= $this->model->listBill($key);
 		$this->view->render('site/cart/list_bill',array('list'=>$res));
 	}
 }

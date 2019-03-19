@@ -14,7 +14,7 @@
 		<div class="st-checkout-page">
 			<div class="row booking-success-notice">
 				<div class="col-lg-8 col-md-8 col-left">
-					<img src="https://homap.travelerwp.com/wp-content/themes/traveler2.5/v2/images/ico_success.svg" alt="Thanh toán thành công">
+					<img src="libs/Images/ico_success.svg" alt="Thanh toán thành công">
 					<div class="notice-success">
 						<p class="line1">
 							<span>
@@ -119,28 +119,31 @@
 
 				<div class="col-lg-8 col-md-8 col-lg-pull-4 col-md-pull-4">
 					<h3 class="title">Your Informatio</h3>
-					
+					<form class="" method="post" action="?c=bookcart&a=listBill">
 
 					<div class="info-form">
+						<input type="hidden"  value="<?php echo $list['st_email'] ?>" name = "st_username" >
 					
 				<ul>
-					<li><span class="label">First Name</span><span class="value"><?php echo $list['st_first_name'] ?></span></li>
-					<li><span class="label">Last name</span><span class="value"><?php echo $list['st_last_name'] ?></span></li>
-					<li><span class="label">Email</span><span class="value"><?php echo $list['st_email'] ?></span></li>
-					<li><span class="label">Address Line 1 </span><span class="value"><?php echo $list['st_address'] ?></span></li>
-					<li><span class="label">Address Line 2 </span><span class="value"><?php echo $list['st_address2'] ?></span></li>
-					<li><span class="label">City</span><span class="value"><?php echo $list['st_city'] ?></span></li>
-					<li><span class="label">State/Province/Region</span><span class="value"><?php echo $list['st_province'] ?></span></li>
-					<li><span class="label">ZIP code/Postal code</span><span class="value"><?php echo $list['st_zip_code'] ?></span></li>
-					<li><span class="label">Country</span><span class="value"><?php echo $list['st_country'] ?></span></li>
-					<li><span class="label">Special Requirements</span><span class="value"><?php echo $list['st_note'] ?></span></li>
+					<li><span class="label">First Name</span><span class="value" name="first_name"><?php echo $list['st_first_name'] ?></span></li>
+					<li><span class="label">Last name</span><span class="value" name="last_name"><?php echo $list['st_last_name'] ?></span></li>
+					<li><span class="label">Email</span><span class="value" name = "email"><?php echo $list['st_email'] ?></span></li>
+					<li><span class="label">Address Line 1 </span><span class="value" name="add1"><?php echo $list['st_address'] ?></span></li>
+					<li><span class="label">Address Line 2 </span><span class="value" name="add2"><?php echo $list['st_address2'] ?></span></li>
+					<li><span class="label">City</span><span class="value" name="city"><?php echo $list['st_city'] ?></span></li>
+					<li><span class="label">State/Province/Region</span><span class="value" name="province"><?php echo $list['st_province'] ?></span></li>
+					<li><span class="label">ZIP code/Postal code</span><span class="value" name="zipcode"><?php echo $list['st_zip_code'] ?></span></li>
+					<li><span class="label">Country</span><span class="value" name="country"><?php echo $list['st_country'] ?></span></li>
+					<li><span class="label">Special Requirements</span><span class="value" name="note"><?php echo $list['st_note'] ?></span></li>
 				</ul>
 							
 					</div>
-
+					
 					<div class="text-center mg20 mt30">
-						<a href="/?c=bookcart&a=listBill" class="btn btn-primary"><i class="fa fa-book"></i> Booking Management</a>
+						<button type="submit" class="btn btn-primary" name="check_list">
+						<i class="fa fa-book"></i> Booking Management </button>
 					</div>
+				</form>
 				</div>
 			</div>
 		</div>
