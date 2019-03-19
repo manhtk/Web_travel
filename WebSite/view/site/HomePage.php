@@ -79,7 +79,7 @@
 
                                                         }
 
-                                                        echo '<li><a href="?c=slidebar&a=view'. $cityid . $cityname . $start . $end . $date .'"></a></li>';
+                                                        echo '<a href="?c=slidebar&a=view'. $cityid . $cityname . $start . $end . $date .'"></a>';
                                                      ?>
                                                     
                                                 </ul>
