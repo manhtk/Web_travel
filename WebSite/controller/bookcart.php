@@ -1,6 +1,6 @@
 <?php
 class bookcart extends Controller {
-	public function view(){
+	public function view($err=false){
 		if(isset($_POST['room_add_to_cart'])){
 			$post_data = $_POST;
 			unset($post_data['room_add_to_cart']);
@@ -20,7 +20,7 @@ class bookcart extends Controller {
 			$getinfo = [];
 		}
 		$res = $this->model->getRoomDetal($key1);
-		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo,'stss'=>$cart_data));
+		$this->view->render('site/cart/view', array('data' => $res,'infouser' => $getinfo,'stss'=>$cart_data,'err'=>$err));
 	}
 	public function checkout(){
 		$cart_checkout = $_SESSION['st_cart'];
@@ -29,6 +29,14 @@ class bookcart extends Controller {
 		if(isset($_POST['checkout_submit'])){
 			$data = $_POST;
 			
+			if(!isset($data['term_condition']) || $data['term_condition'] != '1'){
+				$err_checkout = array();
+				array_push($err_checkout, 'Please tick a checkbox');
+			    
+				$this->view($err_checkout);	
+				return;		
+			}
+
 			$cart=(array_shift($cart_data));
 			$totalmoney = $cart['price']*110/100;
 			$order_date = date('d-m-Y');

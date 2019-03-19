@@ -337,6 +337,16 @@
                                 <span class="payment-title">I have read and accept the<a target="_blank" href=""> terms and conditions</a> and <a href="#" target="_blank">Privacy Policy</a></span>
                                 
                                 <span class="checkmark fcheckbox"></span>
+                                <br>
+                                <p>
+                                   <?php
+                                   if(!empty($err)){
+                                    foreach ($err as $key => $value) {
+                                        echo $value . '<br />';
+                                       }
+                                    }
+                                   ?>
+                                </p>
                             </label>
                         </div>
                     </div>
