@@ -591,7 +591,6 @@
 												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 													<div class="item">
 														<div class="thumb">
-
 														<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">	<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
 														</div>
 														<div class="icon-position">
