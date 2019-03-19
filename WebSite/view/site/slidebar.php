@@ -593,7 +593,7 @@
 													<div class="item">
 														<div class="thumb">
 
-															<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/><br/>
+														<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">	<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
 														</div>
 														<div class="icon-position">
 															<i class="fas fa-heart img heart"></i>
@@ -618,7 +618,24 @@
 
 
 
-															<p class="service-location"><i class="fas fa-map-marker-alt"></i><?php echo " ". $value['city_name'] ?> ,USA
+															<p class="service-location">
+																
+																<?php 
+																if(!empty($value['city_name']) || !empty($value['country']))
+																{
+																	?>
+																	<i class="fas fa-map-marker-alt"></i>
+																	<?php
+																}
+
+																?>
+																<?php 
+																if (!empty(htmlspecialchars($value['city_name'])) || !empty($value['country'])) {
+
+																}
+
+																?>
+																<?php echo " ". $value['city_name'].", ". $value['country'] ?> 
 															</p>
 
 

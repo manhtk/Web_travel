@@ -57,7 +57,7 @@
                     </ul>
                     <ul class="st-list topbar-items">
                         <li class="hidden-xs hidden-sm">
-                            <a href="mailto:contact@shinetheme.com" target="">contact@shinetheme.com</a>
+                            <a href="#" target="">contact@shinetheme.com</a>
                         </li>
                     </ul>
                 </div>
@@ -82,8 +82,8 @@
                         <li class="dropdown dropdown-language hidden-sm hidden-xs">
                             <a href="#">English<i class="fa fa-angle-down"></i></a>
                             <ul class="dropmenu">
-                                <li><a href="https://homap.travelerwp.com/fr/">Français</a></li>
-                                <li><a href="https://homap.travelerwp.com/fr/">Español</a></li>
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">Español</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="header1left">
                     <a href="index.php">
-                        <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/11/logo_homap-4.svg">
+                        <img src="libs/Images/logo_homap-4.svg">
                     </a>
                     <div class="menu">
 
