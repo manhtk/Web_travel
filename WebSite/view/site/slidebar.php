@@ -116,11 +116,11 @@
 
 												as $values) { ?>
 
-													<li style="padding-left: 20px; cursor: pointer"
+													<li 
 													data-value="<?php echo $values['city_id'] ?>"
 													><i
 													class="fas fa-map-marker-alt"></i>
-													<span style="padding: 20px;">
+													<span >
 														<?php echo $values['city_name'] ?>
 													</span>
 												</li>
