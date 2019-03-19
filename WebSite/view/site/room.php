@@ -300,7 +300,7 @@
                           <div class="comment-item-head">
                             <div class="media">
                               <div class="media-left">
-                                <img alt="avatar" width="50" height="50" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_8-1-37jk0455r1ut9uns0zq58g.jpg" class="avatar avatar-96 photo origin round">                    
+                                <img alt="avatar" width="50" height="50" src="libs/Images/8.jpg" class="avatar avatar-96 photo origin round">                    
                               </div>
                               <div class="media-body1">
                                 <h4 class="media-heading">Travis Tan</h4>
@@ -334,7 +334,7 @@
                               <div class="comment-item-head">
                                 <div class="media">
                                   <div class="media-left">
-                                    <img alt="avatar" width="50" height="50" src="https://homap.travelerwp.com/wp-content/uploads/bfi_thumb/people_10-1-37jiio2qgpw8izfqv5nitc.jpg" class="avatar avatar-96 photo origin round">                    
+                                    <img alt="avatar" width="50" height="50" src="libs/Images/8.jpg" class="avatar avatar-96 photo origin round">                    
                                   </div>
                                   <div class="media-body1" >
                                     <h4 class="media-heading">Donald Wolf</h4>
@@ -443,7 +443,7 @@
                 <form action="?c=bookcart&a=view" method="post">
                   <input type="hidden" name="room_id" value="<?php echo $data_room[0]['room_id']; ?>" />
                   <div class="container-fluid widgetroom">
-                    <div class="widgets" style="background-color: white;" >
+                    <div class="widgets"  >
                       <div class="form-head">
                         from
                         <?php
@@ -463,25 +463,15 @@
                         <span class="unit">/night</span>
                       </div>
                       <div class="row">
-                        <div class="col-md-6" style="border-right: 1px solid #D7DCE3;;padding-top: 15px;">
-                          <div class="checkin">
-                            Check-In
-                          </div>
-                          <input type="text" name="startday" value="" style="cursor: pointer;width: 100%;border: none;color: #5191fa;text-align: center;"/>
-                        </div>
-                        <div class="col-md-6" style="padding-top: 15px;">
-                          <div class="checkout">
-                            Check-Out
-                          </div>
-                          <input type="text" name="endday" value="" style="cursor: pointer;width: 100%;border: none;color: #5191fa;text-align: center;"/>
-                        </div>
+                        <p class="abc2">Check in - Check out</p>
+                        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
                       </div>
-                      <hr style="width: 100%;margin-top: 0px;"/>
+                      <hr/>
                       <div class="row">
 
-                        <div class="col-md-12" style="text-align: left;">
+                        <div class="col-md-12">
                           <div class="" id="guests1">
-                            <div class="" style="margin-top: -10px;">
+                            <div class="">
                               Guests
                             </div>
                             <br>
@@ -497,10 +487,10 @@
                                         </span>
                                       </span>
                                       <div class="bookphong">
-                                        <i class="fa ml5 fa-angle-up" style="position: absolute;left: -40px;top: 5px;font-size: 20px;"></i>
+                                        <i class="fa ml5 fa-angle-up" ></i>
                                       </div>
                                       <div class="formdebook">
-                                        <div class="people-dropdown" style="display: block;">
+                                        <div class="people-dropdown">
                                           <div class="item gmz-number-wrapper">
                                             Rooms
                                             <span class="control minus">-</span>
@@ -547,7 +537,7 @@
                                 More Option
                                 <i class="fa fa-caret-down"></i></a>
                               </div>
-                              <ul class="extras" style="display: block;">
+                              <ul class="extras">
                                 <div class="row">
                                   <li class="item mt10">
                                     <div class="st-flex space-between">
@@ -555,7 +545,7 @@
                                         <span>Adult(€280.00)</span>
                                       </div>
                                       <div class="col-sm-3">
-                                        <div class="select-wrapper" style="width: 50px;">
+                                        <div class="select-wrapper">
                                           <select class="chon-adult" data-extra-price="280">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -575,7 +565,7 @@
                                         <span>Children(€245.00)</span>
                                       </div>
                                       <div class="col-sm-3">
-                                        <div class="select-wrapper" style="width: 50px;">
+                                        <div class="select-wrapper">
                                           <select class="chon-children" data-extra-price="245">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -596,7 +586,7 @@
                                           <span>Vip services(€175.00)</span>
                                         </div>
                                         <div class="col-sm-3">
-                                          <div class="select-wrapper" style="width: 50px;">
+                                          <div class="select-wrapper">
                                             <select class="chon-services" data-extra-price="175">
                                               <option value="0">0</option>
                                               <option value="1">1</option>

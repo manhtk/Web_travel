@@ -21,7 +21,7 @@
                                     </g>
                                 </g>
                             </g>
-                        </svg></i><?php echo $value['city_name'] ?>,<?php echo $value['country'] ?> </p>
+                        </svg></i> <?php echo $value['city_name'] ?> , <?php echo $value['country'] ?> </p>
                     </div>
                     <div class="service-right">
                         <img class="img-responsive" src="<?php echo $value['room_images'] ?> "style =" width: 150px; height: auto ">
@@ -62,7 +62,7 @@
                         <li>
                             <span class="label_section">Extra : </span>
                         </li>
-                        <li class="extra-value"></li>
+                        
                     </ul>
 
                 </div>

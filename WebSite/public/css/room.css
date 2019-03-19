@@ -119,13 +119,25 @@ a.morelink
 	font-size: 17px;
 	margin-right: 10px;
 }
-
+input[type="text"] {
+    margin-left: 30px;
+    color: #5191FA;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 450;
+}
+.abc2 {
+	padding-left: 15px;
+}
 .people-inner .people-group .label {
 	color: gray;
 	font-weight: 400;
 	font-size: 14px;
 	text-align: left;
 	padding: 0;
+	    left: 30px;
 }
 
 
@@ -526,7 +538,22 @@ a.morelink
 .more1 {
 	height: auto;
 }
-.more2  {
+.facilities.more2  {
+	height: auto;
+}
+i.fa.ml5.fa-angle-up {
+	position: absolute;
+	left: -40px;
+	top: 5px;
+	font-size: 20px;
+}
+.people-dropdown {
+	display: block;
+}
+ul.extras {
+	display: block;
+}
+.facilities {
 	height: 200px;
 	overflow: hidden;
 }
