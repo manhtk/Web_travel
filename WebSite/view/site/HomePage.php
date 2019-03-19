@@ -143,19 +143,13 @@
                                             $(document).ready(function () {
                                                 $('#reportrange').daterangepicker(
                                                     {
-                                                        startDate: moment().subtract('days', 29),
-                                                        endDate: moment(),
-                                                       
-                                                        autoApply: true,
-                                                        dateLimit: {days: 60},
-                                                        showDropdowns: true,
-                                                        showWeekNumbers: true,
-                                                        timePicker: false,
-                                                        timePickerIncrement: 1,
-                                                        timePicker12Hour: true,
-                                                        opens: 'right',
-                                                        format: 'MM/DD/YYYY',
-                                                        separator: ' to ',
+                                                       opens: 'left',
+                                                       "autoApply": true,
+                                                       startDate: moment().startOf('hour'),
+                                                       endDate: moment().startOf('hour').add(32, 'hour'),
+                                                       locale: {
+                                                        format: 'M/DD/YYYY'
+                                                    }
                                                     },
                                                     function (start, end) {
                                                         console.log("Callback has been called!");
