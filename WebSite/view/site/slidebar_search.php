@@ -124,11 +124,11 @@
 
                                                                as $values) { ?>
 
-                                                    <li style="padding-left: 20px; cursor: pointer"
+                                                    <li 
                                                         data-value="<?php echo $values['city_id'] ?>"
                                                     ><i
                                                                 class="fas fa-map-marker-alt"></i>
-                                                        <span style="padding: 20px;">
+                                                        <span>
                                                         <?php echo $values['city_name'] ?>
                                                     </span>
                                                     </li>
@@ -179,8 +179,7 @@
                                         <i class="far fa-calendar-plus search-checkiconright"></i>
                                         <label for="radio-choice-1" class="search-title-language"> Check
                                             In-Out</label>
-                                        <div id="reportrange"
-                                             style="color: #5191FA;cursor: pointer;font-size: 15px;padding-left: 47px;padding-top: 20px">
+                                        <div id="reportrange">
                                             <?php echo $start . ' - ' . $end ?>
                                         </div>
 
@@ -616,8 +615,7 @@
                                             <div class="item">
                                                 <div class="thumb">
 
-                                                    <img class="im1 " src="<?php echo $value['images'] ?>"
-                                                         class="rounded"/><br/>
+                                                   <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">   <img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
                                                 </div>
                                                 <div class="icon-position">
                                                     <i class="fas fa-heart img heart"></i>
