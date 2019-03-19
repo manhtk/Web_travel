@@ -158,7 +158,7 @@
             <div class="col-lg-5"></div>
             <div class="col-lg-3">
                 <div class="footer_sub_R">
-                    <p><span ><img src="https://homap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_paymethod.svg"></span></p>
+                    <p><span ><img src="libs/Images/ico_paymethod.svg"></span></p>
                 </div>
             </div>
         </div>

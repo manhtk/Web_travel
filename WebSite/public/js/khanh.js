@@ -267,33 +267,46 @@ $(document).ready(function(){
     })
 
 // chọn ngày theo từng bên
+// $(function() {
+
+// 	$('input[name="startday"]').daterangepicker({
+// 		singleDatePicker: true,
+// 		opens:'left',
+// 		"autoApply": true,
+// 		startDate: moment().startOf('hour'),
+// 		endDate: moment().startOf('hour').add(32, 'hour'),
+// 		locale: {
+// 			format: 'M/DD/YYYY'
+// 		}
+// 	});
+// });
+// $(function() {
+
+// 	$('input[name="endday"]').daterangepicker({
+// 		singleDatePicker: true,
+// 		opens:'left',
+// 		"autoApply": true,
+// 		startDate: moment().startOf('hour'),
+// 		endDate: moment().startOf('hour').add(32, 'hour'),
+// 		locale: {
+// 			format: 'M/DD/YYYY'
+// 		}
+// 	});
+
+
+// });
 $(function() {
-
-	$('input[name="startday"]').daterangepicker({
-		singleDatePicker: true,
-		opens:'left',
-		"autoApply": true,
-		startDate: moment().startOf('hour'),
-		endDate: moment().startOf('hour').add(32, 'hour'),
-		locale: {
-			format: 'M/DD/YYYY'
-		}
-	});
-});
-$(function() {
-
-	$('input[name="endday"]').daterangepicker({
-		singleDatePicker: true,
-		opens:'left',
-		"autoApply": true,
-		startDate: moment().startOf('hour'),
-		endDate: moment().startOf('hour').add(32, 'hour'),
-		locale: {
-			format: 'M/DD/YYYY'
-		}
-	});
-
-
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left',
+    "autoApply": true,
+    startDate: moment().startOf('hour'),
+	endDate: moment().startOf('hour').add(32, 'hour'),
+	locale: {
+		format: 'M/DD/YYYY'
+	}
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
 });
 // $(document).ready(function() {
 //     // Configure/customize these variables.
@@ -349,10 +362,10 @@ jQuery(document).ready(function($){
 		r.preventDefault();
 		$(".facilities").toggleClass('more2');
 		if($(".facilities").hasClass('more2')){
-			$(this).text('Show all');
+			$(this).text('Show less');
 		}
 		else{
-			$(this).text('Show less');
+			$(this).text('Show more');
 		}
 	});
 });
