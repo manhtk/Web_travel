@@ -297,7 +297,13 @@ $(document).ready(function(){
 // });
 $(function() {
   $('input[name="daterange"]').daterangepicker({
-    opens: 'left'
+    opens: 'left',
+    "autoApply": true,
+    startDate: moment().startOf('hour'),
+	endDate: moment().startOf('hour').add(32, 'hour'),
+	locale: {
+		format: 'M/DD/YYYY'
+	}
   }, function(start, end, label) {
     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   });
