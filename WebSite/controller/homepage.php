@@ -6,7 +6,7 @@
   {
   	
   	public function view(){
-  	 $res	 = $this->model->getHotel(5,'hotel_price');
+  	 $res	 = $this->model->getHotel(4,'hotel_price');
      $data_city = $this->model->getCity(6,'city.city_id');
      $data = $this->model->getListCity();
 

@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <?php  
-                $value=array_shift($data);
+                
                 if (isset($_SESSION['st_cart'])) {
                 ?>
                 <!-- Icon Bookcart -->
@@ -166,13 +166,13 @@
                         <li class="cart-item">
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="<?php echo $value['room_images'] ?>" style="width: 50px;height: 50px;" alt="">
+                                    <img src="<?php echo $data[0]['room_images'] ?>" style="width: 50px;height: 50px;" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $value['room_id'] ?>"><?php echo $value['room_name'] ?></a>
+                                    <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $data[0]['room_id'] ?>"><?php echo $data[0]['room_name'] ?></a>
                                     </h4>
                                     <div class="price-wrapper">Price:
-                                        <span class="price">€ <?php echo $value['price'] ?></span>
+                                        <span class="price">€ <?php echo $data[0]['price'] ?></span>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
                         <li class="cart-total">
                             <div class="sub-total">Subtotal: <span class="price"> €
                                 <?php 
-                                    echo $money = $value['price'] + $value['price']*0.1;
+                                    echo $money = $data[0]['price'] + $data[0]['price']*0.1;
                                 ?>
                             </span>
                             </div>
