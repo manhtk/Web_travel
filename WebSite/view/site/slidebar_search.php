@@ -185,36 +185,26 @@
 
                                         <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
                                         <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
-                                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
+                                       <input type="text" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
                                         <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                $('#reportrange').daterangepicker(
-                                                    {
-                                                        startDate: moment().subtract('days', 29),
-                                                        endDate: moment(),
-                                                        minDate: '01/01/2012',
-                                                        maxDate: '31/12/2014',
-                                                        autoApply: true,
-                                                        dateLimit: {days: 60},
-                                                        showDropdowns: true,
-                                                        showWeekNumbers: true,
-                                                        timePicker: false,
-                                                        timePickerIncrement: 1,
-                                                        timePicker12Hour: true,
-                                                        opens: 'right',
-                                                        format: 'MM/DD/YYYY',
-                                                        separator: ' to ',
-                                                    },
-                                                    function (start, end) {
-                                                        console.log("Callback has been called!");
-                                                        $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
-                                                        $('#start').val(start.format('DD/MM/YYYY'));
-                                                        $('#end').val(end.format('DD/MM/YYYY'));
-                                                        $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
-                                                    }
-                                                );
-                                            });
-                                        </script>
+                                    $(document).ready(function () {
+                                        $('input[name="date"]').daterangepicker(
+                                        {
+                                            "autoApply": true,
+                                            "locale": {
+                                                "format": "DD/MM/YYYY",
+                                            },
+                                        },
+                                        function (start, end, label) {
+                                            console.log("Callback has been called!");
+                                            $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+                                            $('#start').val(start.format('DD/MM/YYYY'));
+                                            $('#end').val(end.format('DD/MM/YYYY'));
+                                            $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+                                        }
+                                        );
+                                    });
+                                </script>
                                     </div>
                                     <!-- END COT 2 -->
 

@@ -138,30 +138,26 @@
                                             </div>
                                             <input type="hidden" name="start" id="start"  value="<?php echo $start; ?>">
                                         <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
-                                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
+                                        <input type="text" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
                                         <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                $('#reportrange').daterangepicker(
-                                                    {
-                                                       opens: 'left',
-                                                       "autoApply": true,
-                                                       startDate: moment().startOf('hour'),
-                                                       endDate: moment().startOf('hour').add(32, 'hour'),
-                                                       'minDate' :'03/19/2019',
-                                                       locale: {
-                                                        format: 'M/DD/YYYY'
-                                                    }
-                                                    },
-                                                    function (start, end) {
-                                                        console.log("Callback has been called!");
-                                                        $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
-                                                        $('#start').val(start.format('DD/MM/YYYY'));
-                                                        $('#end').val(end.format('DD/MM/YYYY'));
-                                                        $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
-                                                    }
-                                                );
-                                            });
-                                        </script>
+                                    $(document).ready(function () {
+                                        $('input[name="date"]').daterangepicker(
+                                        {
+                                            "autoApply": true,
+                                            "locale": {
+                                                "format": "DD/MM/YYYY",
+                                            },
+                                        },
+                                        function (start, end, label) {
+                                            console.log("Callback has been called!");
+                                            $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+                                            $('#start').val(start.format('DD/MM/YYYY'));
+                                            $('#end').val(end.format('DD/MM/YYYY'));
+                                            $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+                                        }
+                                        );
+                                    });
+                                </script>
                                         </div>
                                     </div>
                                     <div class="col-md-3 border-right">

@@ -114,6 +114,18 @@ body{
     padding-top: 3px;
 
 }
+.search-form-section  #date{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* visibility: hidden; */
+    cursor: pointer;
+}
 .dropdown-toggle span 
 {
 	color: #5191FA;
