@@ -49,14 +49,14 @@ class bookcart_model extends Model {
     public function insertBill($bill_info)
     {
         $bill_info = implode(',', $bill_info);
-        $sql_oder = "INSERT INTO bill(bill_id, username, room_id, checkin, checkout,totalmoney,date_order) VALUES (null,$bill_info)";
+        $sql_oder = "INSERT INTO bill(bill_id, email, room_id, checkin, checkout,totalmoney,date_order) VALUES (null,$bill_info)";
         $data = $this->query($sql_oder);
         
         return $data;
     }
     public function searchBill($key1,$key2)
     {
-        $sql="SELECT * from bill inner join user on bill.user_id = user.user_id inner join room on bill.room_id = room.room_id where (bill.username = '$key1') and (bill.room_id='$key2')";
+        $sql="SELECT * from bill inner join user on bill.email = user.email inner join room on bill.room_id = room.room_id where (bill.email = '$key1') and (bill.room_id='$key2')";
         $res = $this->query($sql);
         $data = [];
         if($res->num_rows > 0){
@@ -69,10 +69,10 @@ class bookcart_model extends Model {
     public function listBill($key)
     {
         // $sql="SELECT * from bill inner join user on bill.user_id = user.user_id inner join room on bill.room_id = room.room_id inner join promotion on bill.promotion_id = promotion.promotion_id";
-        $sql="SELECT * from bill inner join user on bill.username = user.username inner join room on bill.room_id = room.room_id where bill.username = '$key' ";
+        $sql="SELECT * from bill inner join user on bill.email = user.email inner join room on bill.room_id = room.room_id where bill.email = '$key' ";
         $res = $this->query($sql);
         $data = [];
-        if($res->num_rows > 0){
+        if($res&&$res->num_rows > 0){
             while($row = $res->fetch_assoc()){
                 $data[] = $row;
             }

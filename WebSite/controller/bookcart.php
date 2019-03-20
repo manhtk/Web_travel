@@ -28,7 +28,6 @@ class bookcart extends Controller {
 		$cart_data = $this->model->getRoomDetal($key1);
 		if(isset($_POST['checkout_submit'])){
 			$data = $_POST;
-			
 			if(!isset($data['term_condition']) || $data['term_condition'] != '1'){
 				$err_checkout = array();
 				array_push($err_checkout, 'Please tick a checkbox');
@@ -36,25 +35,21 @@ class bookcart extends Controller {
 				$this->view($err_checkout);	
 				return;		
 			}
-
 			$cart=(array_shift($cart_data));
 			$totalmoney = $cart['price']*110/100;
-			$order_date = date('d-m-Y');
+			$order_date = date('d-m-Y H:i:s');
 			$array_insert = array(
 				'"' .$data['st_email']. '"',
 				$cart['room_id'],
-				'"' . $cart_checkout['startday'] . '"',
-				'"' . $cart_checkout['endday'] . '"',
+				'"' . $cart_checkout['start'] . '"',
+				'"' . $cart_checkout['end'] . '"',
 				$totalmoney,
 				'"' . $order_date . '"'				
 			);
-			
 			$this->model->insertBill($array_insert);	
 		}
-		
 		if(isset($_POST['checkout_submit'])){
 			$post_user = $_POST;
-			
 			if(isset($_SESSION['currUser'])){
 				$key2=$_SESSION['currUser'];
 				$value1=$post_user['st_first_name'];
@@ -104,8 +99,6 @@ class bookcart extends Controller {
 		}
 		$get_room = $this->model->getRoomDetal($key1);
 		$this->view->render('site/cart/booking-success',array('list'=>$data,'room'=>$get_room,'check'=>$cart_checkout));
-		//hàm lấy datenow
-		//$curr_date = date('Y-m-d');
 	}
 	public function listBill()
 	{

@@ -22,7 +22,7 @@ class DetailHotel extends Controller{
        $data_room = $this->model->getListRoom(1);  
    }
    
-   $res = $this->model->getListHotel(4,'hotel_name');
+   $res = $this->model->getListHotel(5,'hotel_name');
    $this->view->render('site/detailhotel',array('data' => $res,'data_hotel' => $data_hotel,'data_fac' => $data_fac,'data_room' => $data_room));
 
 }
