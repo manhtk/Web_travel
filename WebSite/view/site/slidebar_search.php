@@ -173,7 +173,7 @@
                                         if (!empty($_GET['date'])) {
                                             $date = $_GET['date'];
                                         }
-                                        dd($_GET);
+                                       
                                     }
                                     ?>
                                     <div class="form-group col-sm-12 search-content1">
