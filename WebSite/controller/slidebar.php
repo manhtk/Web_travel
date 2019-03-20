@@ -2,7 +2,7 @@
 
 class Slidebar extends Controller
 {
-
+    // Start cuong
     public function view()
     {
 
@@ -16,7 +16,11 @@ class Slidebar extends Controller
         $data = $this->model->getCity();
         $this->view->render('site/slidebar', array('data_hotel' => $rs, 'total_page' => $page, 'data_city' => $data, 'count' => $count));
     }
+    // End cuong
+   
+    
 
+    // Start  quan
     public function search()
     {
         $key = $_GET['cityid'];
