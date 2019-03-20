@@ -1,5 +1,4 @@
 
-
 <html>
 <head>
 	
@@ -86,7 +85,7 @@
 
 								</div>
 
-
+								<!-- Start quan -->
 								<div class="row">
 									<form action="?c=slidebar&a=search" method="GET">
 										<div class="form-group col-sm-12 search-content">
@@ -432,12 +431,17 @@
 
 
 	</div>
+	<!-- End quan -->
 
 	<!-- END COT 3 -->
 						<!-- <div class="col-lg-9 col-md-9 wapper-content">
 							
 
 						</div> -->
+
+
+
+						<!-- Start cuong -->
 						<div class="col-lg-9  col-md-9 wapper-content">
 							<div class="row row-wapper">
 
@@ -664,11 +668,14 @@
 
 
 											<?php
+
+											
 											$get_data = $_GET;
 											$opt = '';
 											if(isset($get_data['optradio'])){
 												$opt = '&optradio=' . $get_data['optradio'];
 											}
+
 											for ($i = 1;$i <= $total_page;$i++) {
 
 												echo '<li><a href="?c=slidebar&a=view&page='. $i . $opt .'">'. $i .'</a></li>';
@@ -687,7 +694,7 @@
 										</ul>
 
 
-
+									<!-- END CUONG -->
 
 									</div>  
 									<!-- END PHAN TRANG -->

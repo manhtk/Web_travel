@@ -94,7 +94,7 @@
 
                             </div>
 
-
+                            <!-- Start quan -->
                             <div class="row">
                                 <form action="?c=slidebar&a=search" method="GET">
                                     <div class="form-group col-sm-12 search-content">
@@ -454,8 +454,13 @@
                     <!-- END COT 3 -->
                     <!-- <div class="col-lg-9 col-md-9 wapper-content">
 
-
+                    
                     </div> -->
+
+                    <!-- END QUAN -->
+
+
+                    <!-- Start Cuong -->
                     <div class="col-lg-9  col-md-9 wapper-content">
                         <div class="row row-wapper">
 
@@ -596,7 +601,11 @@
 
 
                             </div>
+                                <!-- END CUONG -->
 
+
+
+                                <!-- Start Quan -->
                             <div class=" modern-search-result">
                                 <?php
                                 if (!empty($data)) {
@@ -709,7 +718,7 @@
 
                     <!-- END CODE PHAN TRANG -->
                     <!-- END COL-9 -->
-
+                        <!-- END QUAN -->
                 </div>
 
             </div>
