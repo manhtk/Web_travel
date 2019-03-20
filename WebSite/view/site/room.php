@@ -494,7 +494,7 @@
                             {
                               "autoApply": true,
                               opens    : 'left',
-                           
+
                               "minDate" : moment().startOf('hour'),
                               "locale": {
                                 "format": "DD/MM/YYYY",
