@@ -464,7 +464,7 @@
                       </div>
                       <div class="row">
                         <p class="abc2">Check in - Check out</p>
-                        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                        <input type="text1" name="daterange" value="01/01/2018 - 01/15/2018" />
                       </div>
                       <hr/>
                       <div class="row">
