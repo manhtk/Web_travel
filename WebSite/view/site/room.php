@@ -373,7 +373,7 @@
                 <div id="review-room">
                   <h4 class="heading">
                     <div class="dangky">Write a review
-                      <i class="fa ml5 fa-angle-up"></i>
+                      
                     </div>
                     <div class="chodeformdangki">
                       <div class="formdangky">
@@ -493,7 +493,7 @@
                             {
                               "autoApply": true,
                               opens    : 'left',
-                           
+
                               "minDate" : moment().startOf('hour'),
                               "locale": {
                                 "format": "DD/MM/YYYY",
