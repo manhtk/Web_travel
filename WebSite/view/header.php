@@ -143,8 +143,8 @@
                         </nav>
                     </div>
                 </div>
-                <?php $value=array_shift($data);?>
-                <?php 
+                <?php  
+                $value=array_shift($data);
                 if (isset($_SESSION['st_cart'])) {
                 ?>
                 <!-- Icon Bookcart -->
@@ -172,7 +172,7 @@
                                     <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $value['room_id'] ?>"><?php echo $value['room_name'] ?></a>
                                     </h4>
                                     <div class="price-wrapper">Price:
-                                        <span class="price"></span>
+                                        <span class="price"><?php echo $value['price'] ?></span>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +181,17 @@
                             </i></a>
                         </li>
                         <li class="cart-total">
-                            <div class="sub-total">Subtotal: <span class="price">€346.50</span>
+                            <div class="sub-total">Subtotal: <span class="price">
+                                <?php 
+                                    $endday= strtotime($stss['end']);
+                                    $startday = strtotime($stss['start']);
+                                    $night = abs($endday-$startday);
+                                    $sl_night = floor($night/(60*60*24));
+                                    $total = $sl_night * $value['price'];
+                                    $money = $total + $total*0.1;
+                                    echo $money;
+                                ?>
+                            </span>
                             </div>
                             <a href="?c=bookcart&a=view" class="btn btn-green btn-full upper">Check Out</a>
                         </li>
