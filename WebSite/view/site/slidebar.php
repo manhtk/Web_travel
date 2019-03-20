@@ -639,7 +639,7 @@
 
 
 
-															<div >
+															<div class="service-all">
 																
 																<span><i class="fas fa-bolt slide-icon"></i> from </span><span class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
 															</div>

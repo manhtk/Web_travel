@@ -1090,17 +1090,27 @@ i.fa.fa-bars.munu1{
 }
 .modern-search-result .info .service-location
 {
-	font-size: 14px;
+	font-size: 13px;
     color: #5E6D77;
 }
 .modern-search-result .info .service-point
 {
-	color: #5191FA;
+	font-size: 14px;
+    color: #5191FA;
+    margin-right: 10px;
+    margin-top: 10px;
+
 }
 .modern-search-result .info .service-price
 {
 	font-size: 18px;
     color: #1A2B50;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.modern-search-result .info .service-all
+{
+	margin-top: -10px;
 }
 .modern-search-result .icon-position
 {
@@ -1109,9 +1119,10 @@ i.fa.fa-bars.munu1{
 .modern-search-result a
 {
 	color: #1A2B50;
-	font-size: 18px;
-	line-height: 26px;
-	text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
 }
 
 .modern-search-result .img
@@ -1171,136 +1182,6 @@ i.fa.fa-bars.munu1{
 	
 
 }
-.modern-search-result-page .page-item1 li
-{
-	border: 1px solid #5191FA !important;
-	height: 32px;
-	line-height: 32px;
-	color: #5191FA !important;
-}
-
-/*start footer*/
-.mailchimp {
-	padding-top: 65px;
-	padding-bottom: 40px;
-	background: #F5F5F5;
-}
-.mailchimp .media {
-	overflow: visible;
-}
-
-.mailchimp .media .media-object {
-	position: relative;
-	top: -10px; 
-}
-
-.main-footer-sub {
-	padding-top: 10px;
-	padding-bottom: 30px; 
-}
-
-.subcribe-form 
-{
-	position: relative; 
-}
-.subcribe-form .form-control {
-	height: 55px;
-	line-height: 53px;
-	font-size: 14px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border-color: #D7DCE3;
-}
-.subcribe-form input[type="submit"] 
-{
-	border: none;
-	border-radius: 0 5px 5px 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 55px;
-	line-height: 55px;
-	color: #FFF;
-	background: #5191FA;
-	padding-left: 25px;
-	padding-right: 25px;
-	font-weight: 600;
-	text-transform: uppercase; 
-}
-
-#description-tab img
-{
-	max-width: 100%; 
-}
-
-.fs-28 h2 {
-	font-size: 28px; 
-}
-.f24 
-{
-	font-size: 24px !important;
-}
-.f16 
-{
-	font-size: 16px !important;
-}
-.c-grey 
-{
-	color: #5E6D77 !important;
-}
-#footer_content
-{
-	padding-top: 61.3px;
-	
-	min-height: 450px;
-}
-#footer_content .footer_content_header
-{
-
-	font-size: 14px;
-	color: #1A2B48;
-	font-weight: 500;
-}
-#footer_content .footer_content_element 
-{
-	border-left: 3px solid #5191FA ;
-	margin-top: 20px;
-}
-#footer_content .footer_content_element .footer_content_element1
-{
-	font-family:Poppins-Regular;
-	font-size: 14px;
-	color: #5E6D77;
-	padding-left: 15px;
-}
-#footer_content .footer_content1_element 
-{
-	margin-top: 20px;
-}
-#footer_content .footer_content1_element .footer_content1_element1
-{
-	
-	font-size: 14px;
-	color: #1A2B48 ;
-}
-.footer_sub
-{
-	border-top: 1px solid #DDDDDD;
-}
-.footer_sub .footer_sub_L 
-{
-	padding-top: 30px;
-	font-size: 15px; 
-	color: #768092;
-	padding-left: 25px;
-}
-.footer_sub .footer_sub_R 
-{
-	padding-top: 20px;
-}
-/*end footer*/
-
-
 
 
 
@@ -1805,65 +1686,25 @@ i.fa.fa-bars.munu1{
 	color:yellow;
 }
 
-.modern-search-result-phantrang
+.modern-search-result-page
 {
 
 	width: 100%;
-    margin-top: -42px;
-    /* margin-left: 630px; */
-    margin-bottom: 100px;
-    /* position: relative; */
-    padding-left: 2px;
-    position: relative;
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 100px;
+	
 
 }
-.modern-search-result-phantrang .phantrang-list
+.modern-search-result-page .page-list
 {
 	text-align: center;
-	/*display: block;*/
 	margin-top: -15px;
-	padding-left: 267px;
+	letter-spacing: 10px;
 	margin-bottom: 0px;
 	list-style-type: none;
-	width: 200px;
-	position: relative;
+	
 
-}
-.modern-search-result-phantrang .phantrang-item1 li
-{
-	border: 1px solid #5191FA !important;
-	width: 32px;
-	/*padding: 5px 10px;*/
-	height: 32px;
-	line-height: 32px;
-	color: #5191FA !important;
-}
-.modern-search-result-phantrang .phantrang-item2 li
-{
-
-	width: 30px;
-	padding: 5px 10px;
-	margin-left: 38px;
-	height: 30px;
-	position: absolute;
-	margin-top: -30px;
-}
-.modern-search-result-phantrang	 li span
-{
-	width: 10px;
-
-	margin-left: 80px;
-	height: 30px;
-	position: absolute;
-	margin-top: -30px;
-}
-.modern-search-result-phantrang	.count-string
-{
-	margin-top: 30px;
-	position: absolute;
-	margin-left: 3px;
-	color: #768090;
-	font-size: 14px;
 }
 }
 @media (max-width: 991px)
@@ -2131,6 +1972,27 @@ i.fa.fa-bars.munu1{
 	.modern-search-result .slide-icon
 	{
 		color:yellow;
+	}
+
+	.modern-search-result-page
+	{
+
+		width: 100%;
+		margin-top: 40px;
+		text-align: center;
+		margin-bottom: 100px;
+
+
+	}
+	.modern-search-result-page .page-list
+	{
+		text-align: center;
+		margin-top: -15px;
+		letter-spacing: 10px;
+		margin-bottom: 0px;
+		list-style-type: none;
+
+
 	}
 }
 @media (max-width: 767px)
@@ -2411,64 +2273,26 @@ i.fa.fa-bars.munu1{
 	{
 		color:yellow;
 	}
-	.modern-search-result-phantrang
+	.modern-search-result-page
 	{
 
 		width: 100%;
-		margin-top: 94px;
-		/*padding-left: 48px;*/
-		margin-bottom: 60px;
-		
+		margin-top: 40px;
+		text-align: center;
+		margin-bottom: 100px;
+
+
 	}
-	.modern-search-result-phantrang .phantrang-list
+	.modern-search-result-page .page-list
 	{
 		text-align: center;
-		/*display: block;*/
 		margin-top: -15px;
-		/*padding-left: 267px;*/
+		letter-spacing: 10px;
 		margin-bottom: 0px;
 		list-style-type: none;
-		width: 200px;
-		
+
 
 	}
-	.modern-search-result-phantrang .phantrang-item1 li
-	{
-		border: 1px solid #5191FA !important;
-		width: 32px;
-		/*padding: 5px 10px;*/
-		height: 32px;
-		line-height: 32px;
-		color: #5191FA !important;
-	}
-	.modern-search-result-phantrang .phantrang-item2 li
-	{
-
-		width: 30px;
-		padding: 5px 10px;
-		margin-left: 38px;
-		height: 30px;
-		
-		margin-top: -30px;
-	}
-	.modern-search-result-phantrang	 li span
-	{
-		width: 10px;
-
-		margin-left: 80px;
-		height: 30px;
-		
-		margin-top: -30px;
-	}
-	.modern-search-result-phantrang	.count-string
-	{
-		margin-top: 30px;
-		position: absolute;
-		margin-left: 3px;
-		color: #768090;
-		font-size: 14px;
-	}
-
 
 	
 
