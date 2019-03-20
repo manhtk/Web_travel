@@ -9,7 +9,6 @@
 			</ul>
 		</div>
 	</div>
-	
 	<div class="container">
 		<div class="st-checkout-page">
 			<div class="row booking-success-notice">
@@ -45,14 +44,8 @@
 						<?php echo $datenow= date('d-m-Y') ?>
 					</li>
 					<li>
-						<span>
-
-							Payment Method
-							
-						</span>
-
+						<span>Payment Method</span>
 						Submit Form
-						
 					</li>
 				</ul>
 			</div>
@@ -120,8 +113,6 @@
 									<span class="label">Tax</span>
 									<span class="value">10%</span>
 								</li>
-
-
 								<li class="payment-amount">
 									<span class="label">Pay Amount</span>
 									<span class="value">
@@ -134,14 +125,11 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-8 col-md-8 col-lg-pull-4 col-md-pull-4">
 					<h3 class="title">Your Informatio</h3>
 					<form class="" method="post" action="?c=bookcart&a=listBill">
-
 					<div class="info-form">
 						<input type="hidden"  value="<?php echo $list['st_email'] ?>" name = "st_username" >
-					
 				<ul>
 					<li><span class="label">First Name</span><span class="value" name="first_name"><?php echo $list['st_first_name'] ?></span></li>
 					<li><span class="label">Last name</span><span class="value" name="last_name"><?php echo $list['st_last_name'] ?></span></li>
@@ -153,10 +141,8 @@
 					<li><span class="label">ZIP code/Postal code</span><span class="value" name="zipcode"><?php echo $list['st_zip_code'] ?></span></li>
 					<li><span class="label">Country</span><span class="value" name="country"><?php echo $list['st_country'] ?></span></li>
 					<li><span class="label">Special Requirements</span><span class="value" name="note"><?php echo $list['st_note'] ?></span></li>
-				</ul>
-							
+				</ul>	
 					</div>
-					
 					<div class="text-center mg20 mt30">
 						<button type="submit" class="btn btn-primary" name="check_list">
 						<i class="fa fa-book"></i> Booking Management </button>

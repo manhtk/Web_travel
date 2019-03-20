@@ -196,7 +196,6 @@
                             <a href="?c=bookcart&a=view" class="btn btn-green btn-full upper">Check Out</a>
                         </li>
                     </ul>
-                    
                 </div>
             <?php }
             else{ ?>
@@ -217,12 +216,10 @@
                         
                         <li class="cart-total">
                             <p>Your cart is empty !!!</p>
-                            
                         </li>
                     </ul> 
                 </div>
             <?php } ?>
             </div>
         </div>
-
     </header>
