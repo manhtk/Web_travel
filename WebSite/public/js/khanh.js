@@ -295,6 +295,7 @@ $(document).ready(function(){
 
 
 // });
+
 $(function() {
   $('input[name="daterange"]').daterangepicker({
     opens: 'left',

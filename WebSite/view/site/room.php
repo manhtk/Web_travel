@@ -448,23 +448,75 @@
                         from
                         <?php
                         if(!empty($data_room)){
+
                           ?>
 
                           <?php
                           foreach ($data_room as $values){
                             ?>
                             <span class="price"><?php echo $values['price']; ?></span>
-
+                            
                             <?php
                           }?>
-
+                        
                         <?php } ?>
                         <!--  <input type="hidden" name="room_id" value="<?php $values['room_id'] ?>" > -->
                         <span class="unit">/night</span>
+
                       </div>
                       <div class="row">
                         <p class="abc2">Check in - Check out</p>
-                        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                        <?php 
+                        $start = date('d/m/Y');
+                        $end = date('d/m/Y', strtotime('+ 1 days'));
+                        $date = date('d/m/Y') . ' 12:00 am - ' .date('d/m/Y', strtotime('+ 1  days')) . '11:59 pm';
+                        if(isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])){
+                          if(!empty($_GET['start'])){
+                            $start= $_GET['start'];
+                          }
+                          if(!empty($_GET['end'])){
+                            $end = $_GET['end'];
+                          }
+                          if(!empty($_GET['date'])){
+                            $date = $_GET['date'];
+                          }
+
+                        }
+                        ?>
+                        <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
+                        <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
+                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
+                        <input type="text" name="daterange" value="<?php echo $start . ' - ' . $end ?>" />
+                        <?php dd($_GET); ?>
+                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                $('#reportrange').daterangepicker(
+                                                    {
+                                                        startDate: moment().subtract('days', 29),
+                                                        endDate: moment(),
+                                                        minDate: '01/01/2012',
+                                                        maxDate: '31/12/2014',
+                                                        autoApply: true,
+                                                        dateLimit: {days: 60},
+                                                        showDropdowns: true,
+                                                        showWeekNumbers: true,
+                                                        timePicker: false,
+                                                        timePickerIncrement: 1,
+                                                        timePicker12Hour: true,
+                                                        opens: 'right',
+                                                        format: 'MM/DD/YYYY',
+                                                        separator: ' to ',
+                                                    },
+                                                    function (start, end) {
+                                                        console.log("Callback has been called!");
+                                                        $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+                                                        $('#start').val(start.format('DD/MM/YYYY'));
+                                                        $('#end').val(end.format('DD/MM/YYYY'));
+                                                        $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+                                                    }
+                                                );
+                                            });
+                                        </script>
                       </div>
                       <hr/>
                       <div class="row">
