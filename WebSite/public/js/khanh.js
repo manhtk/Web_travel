@@ -295,18 +295,22 @@ $(document).ready(function(){
 
 
 // });
-$(function() {
-  $('input[name="daterange"]').daterangepicker({
-    opens: 'left',
-    "autoApply": true,
-    startDate: moment().startOf('hour'),
-	endDate: moment().startOf('hour').add(32, 'hour'),
-	locale: {
-		format: 'M/DD/YYYY'
+$(document).ready(function () {
+	$('input[name="date"]').daterangepicker(
+	{
+		"autoApply": true,
+		"locale": {
+			"format": "DD/MM/YYYY",
+		},
+	},
+	function (start, end, label) {
+		console.log("Callback has been called!");
+		$('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+		$('#start').val(start.format('DD/MM/YYYY'));
+		$('#end').val(end.format('DD/MM/YYYY'));
+		$('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
 	}
-  }, function(start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-  });
+	);
 });
 // $(document).ready(function() {
 //     // Configure/customize these variables.
