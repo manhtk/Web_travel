@@ -116,4 +116,18 @@ class bookcart extends Controller {
 		$res= $this->model->listBill($key);
 		$this->view->render('site/cart/list_bill',array('list'=>$res));
 	}
+	public function destroy()
+	{
+		if(isset($_SESSION['currUser'])){
+			unset($_SESSION['currUser']);
+			header('location: '. $this->getSiteURL() .'index.php');
+		}
+	}
+	public function dtCart()
+	{
+		if(isset($_SESSION['st_cart'])){
+			unset($_SESSION['st_cart']);
+			header('location: '. $this->getSiteURL() .'index.php');
+		}
+	}
 }
