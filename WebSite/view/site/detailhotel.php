@@ -282,7 +282,26 @@
 								<div class="col-sm-4 edit" ><img src=" <?php echo $v['room_images'] ?> " class="img-responsive "   alt=""></div>
 								<div class="col-sm-8">
 									<div >
-										<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> "><?php echo $v['room_name'] ?></a></h2>
+										 <?php
+                                                            $get_data = $_GET;
+                                                           
+                                                            $start='';
+                                                            $end='';
+                                                            $date = '';
+                                                            
+                                                            if(isset($get_data['start'])){
+                                                                $start =  $get_data['start'];
+                                                            }
+
+                                                            if(isset($get_data['end'])){
+                                                                $end =  $get_data['end'];
+                                                            }
+                                                             if(isset($get_data['date'])){
+                                                                $date =  $get_data['date'];
+                                                            }
+
+                                                            ?>
+										<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> "><?php echo $v['room_name'] ?></a></h2>
 										<div class="row" class="">
 											<div class="col-sm-8">
 												<div class="col-sm-2">
@@ -312,7 +331,7 @@
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit"> /1 night</span></div>
 
 
-												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>												
+												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> " class="btn"  style="">ROOM DETAIL</a>												
 											</div>
 										</div>
 									</div>                 
@@ -700,6 +719,7 @@
                                         <input type="hidden" name="start" id="start"  value="<?php echo $start; ?>">
                                         <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
                                         <input type="text" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
+
                                           <script type="text/javascript">
                                     $(document).ready(function () {
                                         $('input[name="date"]').daterangepicker(
