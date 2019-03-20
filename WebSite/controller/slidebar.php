@@ -10,7 +10,7 @@ class Slidebar extends Controller
         $count = count($rs);
         $page = $this->model->getPage();
         $paged = isset($_GET['page']) ? $_GET['page'] : 1;
-
+        
         $offset = ($paged - 1) * 12;
         $rs = $this->model->sortHotel($offset, 12);
         $data = $this->model->getCity();

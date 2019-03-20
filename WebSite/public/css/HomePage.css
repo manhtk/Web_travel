@@ -108,6 +108,12 @@ body{
 	 width: 90%;
 	 cursor: pointer;
 }
+.dropdow-list1 #reportrange{
+	color: #5191FA;
+    cursor: pointer;
+    padding-top: 3px;
+
+}
 .dropdown-toggle span 
 {
 	color: #5191FA;

@@ -76,11 +76,11 @@
 								<li><span class="label">Email:</span><span class="value">email@domain.com</span></li>
 								<li><span class="label">Phone:</span><span class="value">+658099999</span></li>
 								<li><span class="label">Room:</span><span class="value"><?php echo $rooms['room_name'] ?></span></li>
-								<li><span class="label">Number of rooms</span><span class="value"></span></li>
-								<li><span class="label">Check In:</span><span class="value">7/7</span></li>
-								<li><span class="label">Check Out:</span><span class="value">09/03/2019</span></li>
+								<li><span class="label">Number of rooms</span><span class="value"><?php echo $check['number_room'] ?></span></li>
+								<li><span class="label">Check In:</span><span class="value"><?php echo $check['startday'] ?></span></li>
+								<li><span class="label">Check Out:</span><span class="value"><?php echo $check['endday'] ?></span></li>
 								<li><span class="label">Price:</span>
-									<span class="value">€ 315,00</span>
+									<span class="value">€ <?php echo $rooms['price'] ?></span>
 								</li>
 								<li><span class="label">Extra</span>
 									<span class="value"></span>
@@ -95,7 +95,21 @@
 							<ul>
 								<li>
 									<span class="label">Subtotal</span>
-									<span class="value">€ 315,0</span>
+										<span class="value">
+										<?php
+										$endday= strtotime($check['endday']);
+										$startday = strtotime($check['startday']);
+										$night = abs($endday-$startday);
+										$sl_night = floor($night/(60*60*24));
+										if ($sl_night>1) {
+											$price = $sl_night * $rooms['price']*$check['number_room'];
+										}
+										else {
+											$price = $rooms['price']*$check['number_room'];
+										}
+										echo $price;
+										?>
+									</span>
 								</li>
 								<li>
 									<span class="label">Extra Price</span>
@@ -110,7 +124,11 @@
 
 								<li class="payment-amount">
 									<span class="label">Pay Amount</span>
-									<span class="value">€ 346,50</span>
+									<span class="value">
+										€ <?php $vat= 0.1;
+										$money = $price + $price*$vat;
+										echo $money; ?>	
+                            		</span>
 								</li>
 							</ul>
 						</div>

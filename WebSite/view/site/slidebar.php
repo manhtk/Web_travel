@@ -39,7 +39,7 @@
 
 						<div class="col-xs-12  form-group">		
 							<div class="banner-search-form">					
-								<i class="fas fa-map-marker-alt mobile-checkicon" style="color: #1A2B48;"></i>
+								<i class="fas fa-map-marker-alt mobile-checkicon"></i>
 								<input type="text" class="form-control col-sm-6 col-xs-12 mobile-input" id="email" placeholder="Where are you going?" name="email">
 								<button type="button" class=" btn-primary mobile-button"><i class="fas fa-search mobile-checkicon-button"></i></button>
 								
@@ -54,8 +54,8 @@
 
 		<!-- mobile list -->
 		<div class="mobile-list">
-			<div class="container" style="text-align: center;">
-				<ul class="" role="menu" aria-labelledby="menu1" style="display: inline-block;">
+			<div class="container" >
+				<ul class="" role="menu" aria-labelledby="menu1" >
 					<li role="presentation"><button class=" btn-primary mobile-list-item">Date</button></li>
 					<li role="presentation"><button class=" btn-primary mobile-list-item" >Guest</button></li>
 					<li role="presentation"><button class=" btn-primary mobile-list-item">Map</button></li>
@@ -102,13 +102,13 @@
 												} else {
 													$des = $_GET['cityname'];
 												} ?>
-												<span class="destination" style="cursor: pointer"
+												<span class="destination" 
 												id="spankey"><?php echo $des ?></span>
 											</div>
 											<input type="hidden" name="cityname" id="namekey"
-											value="">
+											value="<?php echo isset($_GET['cityname']) ? $_GET['cityname'] : ''; ?>">
 											<input type="hidden" name="cityid" id="idkey"
-											value="">
+											value="<?php echo isset($_GET['cityid']) ? $_GET['cityid'] : ''; ?>">
 
 											<ul class="dropdown-menu search-list" role="menu"
 											aria-labelledby="menu1" onclick="change()" id="dropdownmenu">
@@ -116,11 +116,11 @@
 
 												as $values) { ?>
 
-													<li style="padding-left: 20px; cursor: pointer"
+													<li 
 													data-value="<?php echo $values['city_id'] ?>"
 													><i
 													class="fas fa-map-marker-alt"></i>
-													<span style="padding: 20px;">
+													<span >
 														<?php echo $values['city_name'] ?>
 													</span>
 												</li>
@@ -172,8 +172,7 @@
 									<i class="far fa-calendar-plus search-checkiconright"></i>
 									<label for="radio-choice-1" class="search-title-language"> Check
 									In-Out</label>
-									<div id="reportrange"
-									style="color: #5191FA;cursor: pointer;font-size: 15px;padding-left: 47px;padding-top: 20px">
+									<div id="reportrange">
 									<?php echo $start . ' - ' . $end ?>
 								</div>
 
@@ -593,7 +592,6 @@
 												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 has-matchHeight ">
 													<div class="item">
 														<div class="thumb">
-
 														<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>">	<img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
 														</div>
 														<div class="icon-position">

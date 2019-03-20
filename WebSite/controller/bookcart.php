@@ -103,7 +103,7 @@ class bookcart extends Controller {
 			}
 		}
 		$get_room = $this->model->getRoomDetal($key1);
-		$this->view->render('site/cart/booking-success',array('list'=>$data,'room'=>$get_room));
+		$this->view->render('site/cart/booking-success',array('list'=>$data,'room'=>$get_room,'check'=>$cart_checkout));
 		//hàm lấy datenow
 		//$curr_date = date('Y-m-d');
 	}
