@@ -468,7 +468,8 @@
                         <?php
                                     //Co $_GET['start'];
                                     //Kho cos
-                        $start = date('d/m/Y');
+                        $start = date('d/m/Y ');
+
                         $end = date('d/m/Y', strtotime(' + 1 days'));
                         $date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
                         if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
