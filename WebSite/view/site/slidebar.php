@@ -224,7 +224,7 @@
 												</div>
 											</div>
 											<div class="formbook">
-												<div class="people-dropdown book-people" style="display: block;">
+												<div class="people-dropdown book-people">
 													<div class="item gmz-number-wrapper">
 														Rooms
 														<span class="control minus room">-</span>
