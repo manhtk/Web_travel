@@ -608,16 +608,11 @@
 
                                                    <?php
                                                             $get_data = $_GET;
-                                                            $city_name = '';
-                                                            $city_id='';
+                                                           
                                                             $start='';
                                                             $end='';
-                                                            if(isset($get_data['cityname'])){
-                                                                $city_name =  $get_data['cityname'];
-                                                            }
-                                                            if(isset($get_data['cityid'])){
-                                                                $city_id = $get_data['cityid'];
-                                                            }
+                                                            $date = '';
+                                                            
                                                             if(isset($get_data['start'])){
                                                                 $start =  $get_data['start'];
                                                             }
@@ -625,9 +620,12 @@
                                                             if(isset($get_data['end'])){
                                                                 $end =  $get_data['end'];
                                                             }
+                                                             if(isset($get_data['date'])){
+                                                                $date =  $get_data['date'];
+                                                            }
 
                                                             ?>
-                                                            <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>&cityname=<?=$city_name ?>&cityid=<?=$city_id?>&start=<?=$start ?>&end=<?=$end ?>"> 
+                                                            <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?>"> 
                                                                 <img class="im1 " src="<?php echo $value['images']?>"  class="rounded"/></a><br/>
                                                 </div>
                                                 <div class="icon-position">

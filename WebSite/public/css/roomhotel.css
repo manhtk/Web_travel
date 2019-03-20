@@ -254,6 +254,22 @@ a.morelink
 	border-bottom: 1px solid #f1f1f1;
 	background: #fff;
 }
+.widgets #check #reportrange{
+	   color: #5191FA;
+}
+.widgets #check #date{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+ 
+    /* visibility: hidden; */
+    cursor: pointer;
+}
 .widgets #check input
 {
 	border: none;
@@ -463,6 +479,8 @@ span.control.minus.children {
 	position: relative;
 	top:20px;
 	right: -20px;
+	width: 50px;
+	height: auto;
 }
 .widget-box .owner_name
 {
@@ -1041,6 +1059,10 @@ font-size: 14px;
 	color: #1A2B48;
 	margin-left: 5px;
 	font-size: 20px;
+}
+.review-list .avatar{
+	width: 50px;
+	height: auto;
 }
 .review-list .comment-item .comment-item-body 
 {

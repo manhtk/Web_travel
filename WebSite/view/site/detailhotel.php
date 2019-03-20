@@ -671,13 +671,56 @@
 									from <span class="money-price" >€<?php echo $value['hotel_price'] ?></span> /night
 								</div>
 							<?php } ?>
-							</div>   
+							</div> 
+							<?php
+                                    //Co $_GET['start'];
+                                    //Kho cos
+                                    $start = date('d/m/Y');
+                                    $end = date('d/m/Y', strtotime(' + 1 days'));
+                                    $date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
+                                    if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
+                                        if (!empty($_GET['start'])) {
+                                            $start = $_GET['start'];
+                                        }
+                                        if (!empty($_GET['end'])) {
+                                            $end = $_GET['end'];
+                                        }
+                                        if (!empty($_GET['date'])) {
+                                            $date = $_GET['date'];
+                                        }
+                                    }
+                                    ?>  
 							<div class="" id="check">
 								<div class="col-md-12">
 									Check In-Out
-									<br><label>
-										<input type="text" name="datetimes"/>
-									</label>
+									<br>
+									  <div id="reportrange">
+                                            <?php echo $start . ' - ' . $end ?>
+                                        </div>
+                                        <input type="hidden" name="start" id="start"  value="<?php echo $start; ?>">
+                                        <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
+                                        <input type="text" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
+                                          <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('input[name="date"]').daterangepicker(
+                                        {
+                                            "autoApply": true,
+                                             opens    : 'left',
+                                            "minDate" : moment().startOf('hour'),
+                                            "locale": {
+                                                "format": "DD/MM/YYYY",
+                                            },
+                                        },
+                                        function (start, end, label) {
+                                            console.log("Callback has been called!");
+                                            $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+                                            $('#start').val(start.format('DD/MM/YYYY'));
+                                            $('#end').val(end.format('DD/MM/YYYY'));
+                                            $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+                                        }
+                                        );
+                                    });
+                                </script>
 								</div>
 							</div>
 							<div class="" id="guests">
