@@ -217,6 +217,25 @@
 
 					<!-- room -->
 					<!--  -->
+					<?php
+					$get_data = $_GET;
+
+					$start='';
+					$end='';
+					$date = '';
+
+					if(isset($get_data['start'])){
+						$start = "&start=" . $get_data['start'];
+					}
+
+					if(isset($get_data['end'])){
+						$end = "$end=" . $get_data['end'];
+					}
+					if(isset($get_data['date'])){
+						$date = "$date=" .  $get_data['date'];
+					}
+
+					?>
 					<div class="sroom">
 						<h2 class="st-heading-section">Rooms
 							<i  class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
@@ -283,25 +302,7 @@
 								<div class="col-sm-4 edit" ><img src=" <?php echo $v['room_images'] ?> " class="img-responsive "   alt=""></div>
 								<div class="col-sm-8">
 									<div >
-										<?php
-										$get_data = $_GET;
-
-										$start='';
-										$end='';
-										$date = '';
-
-										if(isset($get_data['start'])){
-											$start = "&start=" . $get_data['start'];
-										}
-
-										if(isset($get_data['end'])){
-											$end = "$end=" . $get_data['end'];
-										}
-										if(isset($get_data['date'])){
-											$date = "$date=" .  $get_data['date'];
-										}
-
-										?>
+										
 										
 										<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id'] ?><?=$start ?><?=$end ?><?=$date ?> "><?php echo $v['room_name'] ?></a></h2>
 										<div class="row" class="">
