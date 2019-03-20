@@ -482,7 +482,7 @@
                           }
                         }
                         ?>
-                        
+
                         <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
                         <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
                         <input type="text" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
@@ -493,6 +493,7 @@
                             {
                               "autoApply": true,
                               opens    : 'left',
+                           
                               "minDate" : moment().startOf('hour'),
                               "locale": {
                                 "format": "DD/MM/YYYY",
