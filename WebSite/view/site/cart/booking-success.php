@@ -77,8 +77,8 @@
 								<li><span class="label">Phone:</span><span class="value">+658099999</span></li>
 								<li><span class="label">Room:</span><span class="value"><?php echo $rooms['room_name'] ?></span></li>
 								<li><span class="label">Number of rooms</span><span class="value"><?php echo $check['number_room'] ?></span></li>
-								<li><span class="label">Check In:</span><span class="value"><?php echo $check['startday'] ?></span></li>
-								<li><span class="label">Check Out:</span><span class="value"><?php echo $check['endday'] ?></span></li>
+								<li><span class="label">Check In:</span><span class="value"><?php echo $check['start'] ?></span></li>
+								<li><span class="label">Check Out:</span><span class="value"><?php echo $check['end'] ?></span></li>
 								<li><span class="label">Price:</span>
 									<span class="value">€ <?php echo $rooms['price'] ?></span>
 								</li>
@@ -97,8 +97,8 @@
 									<span class="label">Subtotal</span>
 										<span class="value">
 										<?php
-										$endday= strtotime($check['endday']);
-										$startday = strtotime($check['startday']);
+										$endday= strtotime($check['end']);
+										$startday = strtotime($check['start']);
 										$night = abs($endday-$startday);
 										$sl_night = floor($night/(60*60*24));
 										if ($sl_night>1) {

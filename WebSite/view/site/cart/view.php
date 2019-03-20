@@ -3,9 +3,7 @@
         <div class="col-lg-4 col-md-4 col-lg-push-8 col-md-push-8 info-booking">
             <h3 class="title">Your Booking</h3>
             <div class="cart-info" id="cart-info">
-                <?php 
-                foreach ($data as  $value) {
-                 ?>
+                
                  <div class="service-section">
                     <div class="service-left">
                         <h4 class="title"><a href="#"><?php echo $value['hotel_name'] ?></a></h4>
@@ -32,13 +30,12 @@
                 <div class="info-section">
                     <ul>
                         <li><span class="lable_section">Room : </span><span class="value"><?php echo $value['room_name'] ?></span></li>
-                    <?php } ?>
                     <li>
                      
                      <span class="lable_section">Date : </span>
                      <span class="value">
-                        <?php echo $stss['startday'].'-'.$stss['endday'] ?>
-                        <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $data[0]['room_id']?>">Edit</a>
+                        <?php echo $stss['start'].'-'.$stss['end'] ?>
+                        <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $value['room_id']?>">Edit</a>
                     </span>
                 </li>
 
@@ -46,8 +43,8 @@
                     <ul>
                         <li><span class="lable_section">Number of Night : </span>
                             <span class="value"><?php
-                            $endday= strtotime($stss['endday']);
-                            $startday = strtotime($stss['startday']);
+                            $endday= strtotime($stss['end']);
+                            $startday = strtotime($stss['start']);
                             if($endday < $startday){
                                 echo 'LOI';
                             }else
