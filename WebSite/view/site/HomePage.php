@@ -144,6 +144,7 @@
                                         $('input[name="date"]').daterangepicker(
                                         {
                                             "autoApply": true,
+                                            "minDate" : moment().startOf('hour'),
                                             "locale": {
                                                 "format": "DD/MM/YYYY",
                                             },
