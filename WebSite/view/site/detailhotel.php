@@ -275,30 +275,9 @@
 							<i class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
 						</h2>
 						<div class="roomlg">
-							<?php foreach ($data_room as $v) {
+							<?php foreach ($data_room as$v) {
 								
 							 ?>
-							<?php 
-								$start = date('d/m/Y');
-								$end = date('d/m/Y', strtotime('+ 1 days'));
-								$date = date('d/m/Y') . ' 12:00 am - ' .date('d/m/Y', strtotime('+ 1  days')) . '11:59 pm';
-								if(isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])){
-									if(!empty($_GET['start'])){
-										$start= $_GET['start'];
-									}
-									if(!empty($_GET['end'])){
-										$end = $_GET['end'];
-									}
-									if(!empty($_GET['date'])){
-										$date = $_GET['date'];
-									}
-
-								}
-							 ?>
-							  <?php echo $start . ' - ' . $end ?>
-							   <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
-                                        <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
-                                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
 							<div class="row sheration"  >
 								<div class="col-sm-4 edit" ><img src=" <?php echo $v['room_images'] ?> " class="img-responsive "   alt=""></div>
 								<div class="col-sm-8">

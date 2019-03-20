@@ -448,47 +448,23 @@
                         from
                         <?php
                         if(!empty($data_room)){
-
                           ?>
 
                           <?php
                           foreach ($data_room as $values){
                             ?>
                             <span class="price"><?php echo $values['price']; ?></span>
-                            
+
                             <?php
                           }?>
-                        
+
                         <?php } ?>
                         <!--  <input type="hidden" name="room_id" value="<?php $values['room_id'] ?>" > -->
                         <span class="unit">/night</span>
-
                       </div>
                       <div class="row">
                         <p class="abc2">Check in - Check out</p>
-                        <?php 
-                        $start = date('d/m/Y');
-                        $end = date('d/m/Y', strtotime('+ 1 days'));
-                        $date = date('d/m/Y') . ' 12:00 am - ' .date('d/m/Y', strtotime('+ 1  days')) . '11:59 pm';
-                        if(isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])){
-                          if(!empty($_GET['start'])){
-                            $start= $_GET['start'];
-                          }
-                          if(!empty($_GET['end'])){
-                            $end = $_GET['end'];
-                          }
-                          if(!empty($_GET['date'])){
-                            $date = $_GET['date'];
-                          }
-
-                        }
-                        ?>
-                        <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
-                        <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
-                        <input type="hidden" name="date" id="date" value="<?php echo $date; ?>">
-                        <input type="text1" name="daterange" value="<?php echo $start . ' - ' . $end ?>" />
-                        
-                        
+                        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
                       </div>
                       <hr/>
                       <div class="row">

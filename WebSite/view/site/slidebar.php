@@ -165,7 +165,6 @@
 									if (!empty($_GET['date'])) {
 										$date = $_GET['date'];
 									}
-									
 								}
 								?>
 								<div class="form-group col-sm-12 search-content1">

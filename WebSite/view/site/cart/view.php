@@ -3,8 +3,7 @@
         <div class="col-lg-4 col-md-4 col-lg-push-8 col-md-push-8 info-booking">
             <h3 class="title">Your Booking</h3>
             <div class="cart-info" id="cart-info">
-                <?php 
-                foreach ($data as  $value) {
+                <?php foreach ($data as  $value) {
                  ?>
                  <div class="service-section">
                     <div class="service-left">

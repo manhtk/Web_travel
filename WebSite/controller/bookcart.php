@@ -103,7 +103,7 @@ class bookcart extends Controller {
 			}
 		}
 		$get_room = $this->model->getRoomDetal($key1);
-		$this->view->render('site/cart/booking-success',array('list'=>$data,'room'=>$get_room,'check'=>$cart_checkout));
+		$this->view->render('site/cart/booking-success',array('list'=>$data,'room'=>$get_room));
 		//hàm lấy datenow
 		//$curr_date = date('Y-m-d');
 	}
@@ -115,19 +115,5 @@ class bookcart extends Controller {
 		$key=$post_list['st_username'];
 		$res= $this->model->listBill($key);
 		$this->view->render('site/cart/list_bill',array('list'=>$res));
-	}
-	public function destroy()
-	{
-		if(isset($_SESSION['currUser'])){
-			unset($_SESSION['currUser']);
-			header('location: '. $this->getSiteURL() .'index.php');
-		}
-	}
-	public function dtCart()
-	{
-		if(isset($_SESSION['st_cart'])){
-			unset($_SESSION['st_cart']);
-			header('location: '. $this->getSiteURL() .'index.php');
-		}
 	}
 }
