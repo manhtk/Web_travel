@@ -65,7 +65,7 @@
                     <ul class="st-list topbar-items">
                         <?php if(isset($_SESSION['currUser'])){ ?>
                         <li ><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
-                        
+                        <li><a href="?c=bookcart&a=destroy">Logout</a></li>
                         <?php }else{
                             ?>
                         <li><a href="../../login">Login</a></li>
@@ -176,7 +176,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" class="cart-delete-item"><i class="fa">
+                            <a href="?c=bookcart&a=dtCart" class="cart-delete-item"><i class="fa">
                                 <img src="libs/Images/delete.svg" style="height: 16px;width: 16px;">
                             </i></a>
                         </li>
