@@ -65,7 +65,7 @@
                     <ul class="st-list topbar-items">
                         <?php if(isset($_SESSION['currUser'])){ ?>
                         <li ><a href="../../login">Hi, <?php echo $_SESSION['currUser'] ?></a></li>
-                        
+                        <li><a href="?c=bookcart&a=destroy">Logout</a></li>
                         <?php }else{
                             ?>
                         <li><a href="../../login">Login</a></li>
@@ -143,25 +143,75 @@
                         </nav>
                     </div>
                 </div>
+                <?php $value=array_shift($data);?>
+                <?php 
+                if (isset($_SESSION['st_cart'])) {
+                ?>
+                <!-- Icon Bookcart -->
                 <div class="header1right">
-                    <?php
-                    //$cart = '';
-                    //if(isset($_SESSION['st_cart'])){
-                      //  $cart = $_SESSION['st_cart'];
-                    //}
-
-                    //dd($cart);
-                    //if(isset($_SESSION['st_cart'])){
-                        //unset($_SESSION['st_cart'])
-                    //}
-                    ?>
                     <form action="" method="get" class="header-search hidden-sm">
                         <input type="text" class="form-control" name="s" value="">
                         <i class="fa fa-search"></i>
                     </form>
+                    <div id="d-minicart" class="mini-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div class="cart-caret">1</div>
+                        <i class="input-icon field-icon fa">
+                            <img class="ico_card" src="libs/Images/ico_card.svg">
+                        </i>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="d-minicart">
+                        <li class="heading">
+                            <h4 class="st-heading-section">Your Cart</h4>
+                        </li>
+                        <li class="cart-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="<?php echo $value['room_images'] ?>" style="width: 50px;height: 50px;" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $value['room_id'] ?>"><?php echo $value['room_name'] ?></a>
+                                    </h4>
+                                    <div class="price-wrapper">Price:
+                                        <span class="price"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="?c=bookcart&a=dtCart" class="cart-delete-item"><i class="fa">
+                                <img src="libs/Images/delete.svg" style="height: 16px;width: 16px;">
+                            </i></a>
+                        </li>
+                        <li class="cart-total">
+                            <div class="sub-total">Subtotal: <span class="price">€346.50</span>
+                            </div>
+                            <a href="?c=bookcart&a=view" class="btn btn-green btn-full upper">Check Out</a>
+                        </li>
+                    </ul>
                     
-                    <img class="ico_card" src="libs/Images/ico_card.svg">
                 </div>
+            <?php }
+            else{ ?>
+                <div class="header1right">
+                    <form action="" method="get" class="header-search hidden-sm">
+                        <input type="text" class="form-control" name="s" value="">
+                        <i class="fa fa-search"></i>
+                    </form>
+                    <div id="d-minicart" class="mini-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="input-icon field-icon fa">
+                            <img class="ico_card" src="libs/Images/ico_card.svg">
+                        </i>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="d-minicart">
+                        <li class="heading">
+                            <h4 class="st-heading-section">Your Cart</h4>
+                        </li>
+                        
+                        <li class="cart-total">
+                            <p>Your cart is empty !!!</p>
+                            
+                        </li>
+                    </ul> 
+                </div>
+            <?php } ?>
             </div>
         </div>
 
