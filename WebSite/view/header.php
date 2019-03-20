@@ -172,7 +172,7 @@
                                     <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $value['room_id'] ?>"><?php echo $value['room_name'] ?></a>
                                     </h4>
                                     <div class="price-wrapper">Price:
-                                        <span class="price"><?php echo $value['price'] ?></span>
+                                        <span class="price">€ <?php echo $value['price'] ?></span>
                                     </div>
                                 </div>
                             </div>
@@ -181,15 +181,9 @@
                             </i></a>
                         </li>
                         <li class="cart-total">
-                            <div class="sub-total">Subtotal: <span class="price">
+                            <div class="sub-total">Subtotal: <span class="price"> €
                                 <?php 
-                                    $endday= strtotime($stss['end']);
-                                    $startday = strtotime($stss['start']);
-                                    $night = abs($endday-$startday);
-                                    $sl_night = floor($night/(60*60*24));
-                                    $total = $sl_night * $value['price'];
-                                    $money = $total + $total*0.1;
-                                    echo $money;
+                                    echo $money = $value['price'] + $value['price']*0.1;
                                 ?>
                             </span>
                             </div>
