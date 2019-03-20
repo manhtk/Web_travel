@@ -828,6 +828,18 @@ i.fa.fa-bars.munu1{
 
 
 	}
+.slidebar-filter .search-content1 #date{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* visibility: hidden; */
+    cursor: pointer;
+}	
 .slidebar-filter.search-optiontitle
 {
 	position: absolute;
