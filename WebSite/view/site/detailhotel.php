@@ -331,7 +331,7 @@
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit"> /1 night</span></div>
 
 
-												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> " class="btn"  style="">ROOM DETAIL</a>												
+												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?> " class="btn"  style="">ROOM DETAIL</a>												
 											</div>
 										</div>
 									</div>                 
