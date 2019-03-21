@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <?php  
-                
+                    
                 if (isset($_SESSION['st_cart'])) {
                 ?>
                 <!-- Icon Bookcart -->
@@ -166,13 +166,31 @@
                         <li class="cart-item">
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="<?php echo $data[0]['room_images'] ?>" style="width: 50px;height: 50px;" alt="">
+                                    <img src="<?php echo $cart_data[0]['room_images'] ?>" style="width: 50px;height: 50px;" alt="">
                                 </div>
+                                <?php $ss = $_SESSION['st_cart']; 
+                            // dd($ss);
+                                ?>
                                 <div class="media-body">
-                                    <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $data[0]['room_id'] ?>"><?php echo $data[0]['room_name'] ?></a>
+                                    <h4 class="media-heading"><a class="st-link c-main" href="?c=room&a=view&room_id=<?php echo $cart_data[0]['room_id'] ?>"><?php echo $cart_data[0]['room_name'] ?></a>
                                     </h4>
                                     <div class="price-wrapper">Price:
-                                        <span class="price">€ <?php echo $data[0]['price'] ?></span>
+                                        <span class="price">€ 
+                                            <?php 
+                                                $endday= strtotime($ss['end']);
+                                                $startday = strtotime($ss['start']);
+                                                $night = abs($endday-$startday);
+                                                $sl_night = floor($night/(60*60*24));
+                                                if ($sl_night>1) {
+                                                    $price = $sl_night * $cart_data[0]['price'];
+                                                }
+                                                else {
+                                                    $price = $cart_data[0]['price'];
+                                                }
+                                                $money = $price + $price*0.1;
+                                                echo $money;
+                                            ?>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -182,8 +200,8 @@
                         </li>
                         <li class="cart-total">
                             <div class="sub-total">Subtotal: <span class="price"> €
-                                <?php 
-                                    echo $money = $data[0]['price'] + $data[0]['price']*0.1;
+                                <?php
+                                    echo $money;
                                 ?>
                             </span>
                             </div>
