@@ -30,11 +30,23 @@ class bookcart extends Controller {
 			$data = $_POST;
 			if(!isset($data['term_condition']) || $data['term_condition'] != '1'){
 				$err_checkout = array();
-				array_push($err_checkout, 'Please tick a checkbox');
+				array_push($err_checkout, 'Please tick a checkbox.');
 			    
 				$this->view($err_checkout);	
 				return;		
 			}
+			$err_checkout = array();
+			if (empty($_POST['st_email'])) {
+		        array_push($err_checkout, '  Email is required.');
+		        $this->view($err_checkout);
+		        return;
+		    }
+			if (!preg_match('/^[_a-z0-9-]*@[a-z0-9-]+(\.[a-z0-9-]+)$/', $_POST['st_email']))
+		    {
+		    	array_push($err_checkout, '  This email is not valid. Please re-enter. ');
+				$this->view($err_checkout);
+				return;
+		    }
 			$cart=(array_shift($cart_data));
 			$totalmoney = $cart['price']*110/100;
 			$order_date = date('d-m-Y H:i:s');

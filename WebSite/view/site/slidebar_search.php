@@ -211,72 +211,58 @@
 
                                     <div class="form-group col-sm-12 search-content1">
 
-                                        <div class="row guests">
-                                            <div class="col-sm-6 field_people_room">
-                                                <div class="people-inner">
-                                                    <i class="fas fa-users search-checkicon"></i>
-                                                    <label for="radio-choice-1" class="search-title-language-guest">Guests</label>
+                                       <div class="row guests">
+                                    <div class="col-sm-6 field_people_room">
+                                        <div class="people-inner">
+                                            <i class="fas fa-users search-checkicon"></i>
+                                            <label for="radio-choice-1" class="search-title-language-guest">Guests</label>
 
-                                                    <div class="people-group">
+                                            <div class="people-group">
 
                                                 <span class="value">
-
-                                                    <span class="adult search-element1"><?php
-                                                        echo $_GET['number_adult'];
-                                                        ?> Adult</span>
-                                                    <span class="child search-element2"><?php
-                                                        echo $_GET['number_child'];
-                                                        ?> Child</span>
-
+                                                    <span class="adult search-element1">1 Adult</span>
+                                                    <span class="child search-element2">0 Child</span>
+                                                </span>
 
                                                     <!-- <div class="icon">
                                                         <i class="fas fa-angle-up"></i>
                                                     </div> -->
 
-                                                    </div>
                                                 </div>
-
-                                                <div class="formbook">
-                                                    <div class="people-dropdown book-people">
-                                                        <div class="item gmz-number-wrapper">
-                                                            Rooms
-                                                            <span class="control minus">-</span>
-                                                            <span class="text">
-
-                                                            <span class="value room"><?php echo $_GET['number_room'] ?></span>               <input
-                                                                        type="hidden"
-                                                                        value="<?php echo $_GET['number_room'] ?>"
-                                                                        name="number_room" data-min="1" data-max="20">
-                                                        </span>
-                                                            <span class="control add">+</span>
-                                                        </div>
-                                                        <div class="item gmz-number-wrapper">
-                                                            Adults
-                                                            <span class="control minus">-</span>
-                                                            <span class="text">
-                                                            <span class="value adult"><?php echo $_GET['number_adult'] ?></span>               <input
-                                                                        type="hidden"
-                                                                        value="<?php echo $_GET['number_adult'] ?>"
-                                                                        name="number_adult" data-min="1" data-max="20">
-                                                        </span>
-                                                            <span class="control add">+</span>
-                                                        </div>
-                                                        <div class="item gmz-number-wrapper">
-                                                            Children
-                                                            <span class="control minus">-</span>
-                                                            <span class="text">
-                                                            <span class="value child"><?php echo $_GET['number_child'] ?></span>                <input
-                                                                        type="hidden"
-                                                                        value="<?php echo $_GET['number_child'] ?>"
-                                                                        name="number_child" data-min="0" data-max="15">
-                                                        </span>
-                                                            <span class="control add">+</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <script></script>
                                             </div>
+                                            <div class="formbook">
+                                                <div class="people-dropdown book-people">
+                                                    <div class="item gmz-number-wrapper">
+                                                        Rooms
+                                                        <span class="control minus room">-</span>
+                                                        <span class="text">
+
+                                                            <span class="value room">1</span>               <input type="hidden" value="1" name="number_room" data-min="1" data-max="20">
+                                                        </span>
+                                                        <span class="control add">+</span>
+                                                    </div>
+                                                    <div class="item gmz-number-wrapper">
+                                                        Adults
+                                                        <span class="control minus adults">-</span>
+                                                        <span class="text">
+                                                            <span class="value adult">1</span>               <input type="hidden" value="1" name="number_adult" data-min="1" data-max="20">
+                                                        </span>
+                                                        <span class="control add">+</span>
+                                                    </div>
+                                                    <div class="item gmz-number-wrapper">
+                                                        Children
+                                                        <span class="control minus children">-</span>
+                                                        <span class="text">
+                                                            <span class="value child">1</span>                <input type="hidden" value="0" name="number_child" data-min="0" data-max="15">
+                                                        </span>
+                                                        <span class="control add">+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
+                                    </div>
+
 
 
                                     </div>

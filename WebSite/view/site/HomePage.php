@@ -65,6 +65,9 @@
                                                     $start="";
                                                     $end = "";
                                                     $date = "";
+                                                    $number_room ="";
+                                                    $number_adult ="";
+                                                    $number_child ="";
                                                     if(isset($get_data['cityid']) && isset($get_data['cityname']))
                                                     {
                                                         $cityid = '&cityid=' . $get_data['cityid'];
@@ -79,8 +82,13 @@
                                                        $date = "&date" . $get_data['date'];
 
                                                    }
+                                                   if(isset($get_data['number_room']) && isset($get_data['number_adult']) && $get_data['number_child']){
+                                                    $number_room =  $get_data['number_room'];
+                                                    $number_adult =  $get_data['number_adult'];
+                                                    $number_child =  $get_data['number_child'];
+                                                   }
 
-                                                   echo '<a href="?c=slidebar&a=view'. $cityid . $cityname . $start . $end . $date .'"></a>';
+                                                   echo '<a href="?c=slidebar&a=view'. $cityid . $cityname . $start . $end . $date . '"></a>';
                                                    ?>
 
                                                </ul>
@@ -469,9 +477,9 @@
                         <div class="row list-destination">
                            <?php foreach ($data_city as $val){ ?>
 
-                            <div class="col-xs-6 col-sm-6 col-md-4 aaa">
+                            <div class="col-xs-6 col-sm-6 col-md-4 ">
                                 <div class="destination-item">
-                                    <a href="#">
+                                    <a href="?c=slidebar&a=search&cityname=<?=$val['city_name']?>&cityid=<?=$val['city_id']?>&start=<?=$start ?>&end=<?=$end?>&date=<?=$date ?>">
                                         <img src="<?php echo $val['city_images'];?>">
                                     </a>
 
