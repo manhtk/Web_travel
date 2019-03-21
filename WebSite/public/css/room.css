@@ -61,7 +61,7 @@ a.morelink
 }
 .fixed{
 	position: fixed;
-	width: 17.3%;
+	width: 19.3%;
 	top: 0px;
 }
 
@@ -125,11 +125,11 @@ a.morelink
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 450;
 }
 .abc2 {
-	padding-left: 15px;
+	padding-left: 30px;
 }
 .people-inner .people-group .label {
 	color: gray;
@@ -154,7 +154,7 @@ a.morelink
     padding-bottom: 15px;
 }
 .field_people_room .people-dropdown {
-	display: none;
+	display: block;
 	z-index: 1;
 	padding: 15px 10px;
 	border: none;
@@ -1731,7 +1731,7 @@ label.star:before {
 }
 .btn-book{
 	width: 80%;
-	height: 50%;
+	
 	line-height: 50px;
 	color: #fff;
 	background: #5191FA;
@@ -1750,7 +1750,7 @@ label.star:before {
 }
 span .adult
 {
-	font-size: 16px;
+	font-size: 15px;
 	color: #5191FA;
 }
 span .child
@@ -1851,4 +1851,7 @@ span.like {
 label.abc1 {
     margin-top: 20px;
     float: left;
+}
+.abc3 {
+    padding-left: 15px;
 }

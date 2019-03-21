@@ -42,7 +42,7 @@
               <?php
               foreach ($data_room as $values){
                 ?>
-                <a href=""><?php echo $values['room_name']; ?></a>
+                <?php echo $values['room_name']; ?>
                 <?php
               }?>
             <?php } ?>
@@ -468,9 +468,16 @@
                         <?php
                                     //Co $_GET['start'];
                                     //Kho cos
+<<<<<<< HEAD
                         $start = date('d-m-Y');
                         $end = date('d-m-Y', strtotime(' + 1 days'));
                         $date = date('d-m-Y') . ' 12:00 am - ' . date('d-m-Y', strtotime(' + 1 days')) . ' 11:59 pm';
+=======
+                        $start = date('d/m/Y ');
+
+                        $end = date('d/m/Y', strtotime(' + 1 days'));
+                        $date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
+>>>>>>> fb0d3ac02f6c11f924eed73ef1e84deac8eaee24
                         if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
                           if (!empty($_GET['start'])) {
                             $start = $_GET['start'];
@@ -517,7 +524,7 @@
 
                         <div class="col-md-12">
                           <div class="" id="guests1">
-                            <div class="">
+                            <div class="abc3">
                               Guests
                             </div>
                             <br>
