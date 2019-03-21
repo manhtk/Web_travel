@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-lg-push-8 col-md-push-8 info-booking">
@@ -7,7 +8,6 @@
                     <div class="service-left">
                         <h4 class="title"><a href="#"><?php echo $value['hotel_name'] ?></a></h4>
                         <p class="address"><i class="input-icon field-icon fa"><svg height="15px" width="15px">
-                            <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
                             <title>Ico_maps</title>
                             <desc>Created with Sketch.</desc>
                             <defs></defs>
@@ -24,7 +24,7 @@
                     <li>
                      <span class="lable_section">Date : </span>
                      <span class="value">
-                        <?php echo $stss['start'].'-'.$stss['end'] ?>
+                        <?php echo $stss['start'].' --> '.$stss['end'] ?> &nbsp;    
                         <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $value['room_id']?>">Edit</a>
                     </span>
                 </li>
@@ -47,10 +47,6 @@
                                 <li><span class="lable_section">Number of Adult : </span><span class="value"> <?php echo $stss['number_adult'] ?></span></li>
                             </ul>
                         </li>
-                        <li>
-                            <span class="label_section">Extra : </span>
-                        </li>
-                        
                     </ul>
 
                 </div>
@@ -116,8 +112,17 @@
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
-                                    <i class="fa fa-envelope input-icon"></i>
-                                    <input class="form-control required" id="field-st_email" value="<?php echo $info['email'] ?>" name="st_email" placeholder="email@domain.com" type="text" required>
+                                    <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
+                                    <span class="err">
+                                         <?php
+                                   if(!empty($err)){
+                                    foreach ($err as $key => $value) {
+                                        echo $value . '<br />';
+                                       }
+                                    }
+                                   ?>
+                                    </span>
+                                    <input class="form-control required" id="field-st_email" value="<?php echo $info['email'] ?>" name="st_email" placeholder="email@domain.com" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -237,8 +242,17 @@
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
-                                    <i class="fa fa-envelope input-icon"></i>
-                                    <input class="form-control required" id="field-st_email" value="" name="st_email" placeholder="email" type="email" required>
+                                    <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
+                                   <span class="err">
+                                        <?php
+                                   if(!empty($err)){
+                                    foreach ($err as $key => $value) {
+                                        echo $value . '<br />';
+                                       }
+                                    }
+                                   ?>
+                                   </span>
+                                    <input class="form-control required" id="field-st_email" value="" name="st_email" placeholder="email"  >
                                 </div>
                             </div>
                             <div class="col-sm-6">

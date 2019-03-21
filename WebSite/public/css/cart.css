@@ -385,3 +385,7 @@ div#cart-info {
     font-weight: 500;
     background-color: #4977FA;
 }
+.clearfix .form-group-icon-left .err{
+    color: red;
+    font-weight: 500;
+}
