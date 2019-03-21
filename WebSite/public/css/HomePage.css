@@ -289,8 +289,10 @@ span .child_values
 }
 .form-item li
 {
-	padding-left: 23px;
-	cursor: pointer;
+    padding-left: 23px;
+    cursor: pointer;
+    height: 33px;
+    font-weight: 500;
 }
 .form-item i
 {
