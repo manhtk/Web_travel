@@ -42,7 +42,7 @@
               <?php
               foreach ($data_room as $values){
                 ?>
-                <a href=""><?php echo $values['room_name']; ?></a>
+                <?php echo $values['room_name']; ?>
                 <?php
               }?>
             <?php } ?>
