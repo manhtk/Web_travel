@@ -225,14 +225,22 @@
 					$date = '';
 
 					if(isset($get_data['start'])){
-						$start =  $get_data['start'];
+						$start = "&start=" .  $get_data['start'];
+					}else{
+						$start ="";
 					}
 
 					if(isset($get_data['end'])){
-						$end =  $get_data['end'];
+						$end = "&end=" .  $get_data['end'];
+					}
+					else{
+						$end ="";
 					}
 					if(isset($get_data['date'])){
-						$date =   $get_data['date'];
+						$date = "&date=" .   $get_data['date'];
+					}
+					else{
+						$date ="";
 					}
 
 					?>
@@ -253,7 +261,7 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-8">
-									<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> "><?php echo $v['room_name'] ?></a></h2>
+									<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?><?=$start ?>&<?=$end ?><?=$date ?> "><?php echo $v['room_name'] ?></a></h2>
 									<div class="row">
 										<div class="col-xs-12 col-md-8 inf" >
 											<div class="col-xs-2">
@@ -283,7 +291,7 @@
 												<span class="unit"> /1 night</span>
 											</div>
 
-												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> " class="btn"  style="">SHOW PRICE</a>
+												<a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?><?=$start ?>&<?=$end ?><?=$date ?> " class="btn"  style="">SHOW PRICE</a>
 										</div>
 									</div>
 								</div>
@@ -306,7 +314,7 @@
 									<div >
 										
 										
-										<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> "><?php echo $v['room_name'] ?></a></h2>
+										<h2 ><a href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?><?=$start ?><?=$end ?><?=$date ?> "><?php echo $v['room_name'] ?></a></h2>
 										<div class="row" class="">
 											<div class="col-sm-8">
 												<div class="col-sm-2">
@@ -336,7 +344,7 @@
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit"> /1 night</span></div>
 
 
-												<a  href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> " class="btn"  style="">ROOM DETAIL</a>												
+												<a  href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?><?=$start ?><?=$end ?><?=$date ?> " class="btn"  style="">ROOM DETAIL</a>												
 											</div>
 										</div>
 									</div>                 
@@ -700,9 +708,9 @@
 							<?php
                                     //Co $_GET['start'];
                                     //Kho cos
-                                    $start = date('d-m-Y');
-                                    $end = date('d-m-Y', strtotime(' + 1 days'));
-                                    $date = date('d-m-Y') . ' 12:00 am - ' . date('d-m-Y', strtotime(' + 1 days')) . ' 11:59 pm';
+                                    $start = date('d/m/Y');
+                                    $end = date('d/m/Y', strtotime(' + 1 days'));
+                                    $date = date('d/m/Y') . ' 12:00 am - ' . date('d/m/Y', strtotime(' + 1 days')) . ' 11:59 pm';
                                     if (isset($_GET['start']) && isset($_GET['end']) && isset($_GET['date'])) {
                                         if (!empty($_GET['start'])) {
                                             $start = $_GET['start'];
@@ -734,15 +742,15 @@
                                              opens    : 'left',
                                             "minDate" : moment().startOf('hour'),
                                             "locale": {
-                                                "format": "DD-MM-YYYY",
+                                                "format": "DD/MM/YYYY",
                                             },
                                         },
                                         function (start, end, label) {
                                             console.log("Callback has been called!");
-                                            $('#reportrange').html(start.format('DD-MM-YYYY') + ' - ' + end.format('DD-MM-YYYY'));
-                                            $('#start').val(start.format('DD-MM-YYYY'));
-                                            $('#end').val(end.format('DD-MM-YYYY'));
-                                            $('#date').val(start.format('DD-MM-YYYY hh:mm') + ' am- ' + end.format('DD-MM-YYYY hh:mm') + ' pm');
+                                            $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
+                                            $('#start').val(start.format('DD/MM/YYYY'));
+                                            $('#end').val(end.format('DD/MM/YYYY'));
+                                            $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
                                         }
                                         );
                                     });

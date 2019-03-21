@@ -36,6 +36,10 @@
                             
                             $endday= strtotime($stss['end']);
                             $startday = strtotime($stss['start']);
+                            $day = '03/05/2019';
+                            $day_cv = $this -> convertDateFormat($day);
+
+                            dd(strtotime($day_cv));
                             if($endday < $startday){
                                 echo 'Error';
                             }else

@@ -13,6 +13,14 @@ class View{
 			include 'view/footer.php';
 		}
 	}
+
+	public	function convertDateFormat($date){
+ 		//YYYY-MM-DD
+ 		$format = 'd/m/Y';
+
+ 		$date_format = DateTime::createFromFormat($format, $date);
+		return $date_format->format('Y-m-d');
+ 	}
 }  
 
  ?>
