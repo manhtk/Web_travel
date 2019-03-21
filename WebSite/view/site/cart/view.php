@@ -33,10 +33,11 @@
                     <ul>
                         <li><span class="lable_section">Number of Night : </span>
                             <span class="value"><?php
+                            
                             $endday= strtotime($stss['end']);
                             $startday = strtotime($stss['start']);
                             if($endday < $startday){
-                                echo 'LOI';
+                                echo 'Error';
                             }else
                             {
                             $night = abs($endday-$startday);

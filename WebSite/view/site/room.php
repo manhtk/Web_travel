@@ -500,15 +500,15 @@
 
                               "minDate" : moment().startOf('hour'),
                               "locale": {
-                                "format": "DD/MM/YYYY",
+                                "format": "DD-MM-YYYY",
                               },
                             },
                             function (start, end, label) {
                               console.log("Callback has been called!");
-                              $('#reportrange').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
-                              $('#start').val(start.format('DD/MM/YYYY'));
-                              $('#end').val(end.format('DD/MM/YYYY'));
-                              $('#date').val(start.format('DD/MM/YYYY hh:mm') + ' am- ' + end.format('DD/MM/YYYY hh:mm') + ' pm');
+                              $('#reportrange').html(start.format('DD-MM-YYYY') + ' - ' + end.format('DD-MM-YYYY'));
+                              $('#start').val(start.format('DD-MM-YYYY'));
+                              $('#end').val(end.format('DD-MM-YYYY'));
+                              $('#date').val(start.format('DD-MM-YYYY hh:mm') + ' am- ' + end.format('DD-MM-YYYY hh:mm') + ' pm');
                             }
                             );
                           });
