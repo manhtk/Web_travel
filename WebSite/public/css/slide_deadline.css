@@ -1210,7 +1210,7 @@ body{
 {
 	width: 160px;
 	height: 279px;
-	margin-left: -165px;
+	margin-left: -50px;
 	margin-top: 14px;
 }
 .st-hotel-result .toolbar-layout .layout-title1
@@ -1221,11 +1221,10 @@ body{
 }
 .st-hotel-result .toolbar-layout .layout-title2
 {
-	width: 160px;
-	height: 30px;
 	opacity: 0.3;
-	top: 10px;
-	margin-left: 10px;
+    margin-top: 16px;
+    display: block;
+    margin-left: 10px;
 }
 .st-hotel-result .toolbar-layout .layout-list-item
 {
@@ -1304,7 +1303,7 @@ body{
 {
 	position: absolute;
 	right: 23px;
-	bottom: 162px;
+	bottom: 156px;
 	color: white;
 	font-size: 21px;
 }
