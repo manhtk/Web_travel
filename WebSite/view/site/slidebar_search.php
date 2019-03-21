@@ -36,7 +36,7 @@
                     <div class="col-xs-12  form-group">
                         <div class="banner-search-form">
                             <i class="fas fa-map-marker-alt mobile-checkicon"></i>
-                            <input type="text" class="form-control col-sm-6 col-xs-12 mobile-input" id="email"
+                            <input type="text" class="form-control col-sm-12 col-xs-12 mobile-input" id="email"
                                    placeholder="Where are you going?" name="email">
                             <button type="button" class=" btn-primary mobile-button"><i
                                         class="fas fa-search mobile-checkicon-button"></i></button>
