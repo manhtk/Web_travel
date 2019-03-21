@@ -89,7 +89,7 @@ class bookcart_model extends Model {
     {
         $user_info = implode(',', $user_info);
         $sql_user = "INSERT INTO user(user_id, username, password, role, first_name, last_name, address1, address2, city, email, regisdate, state_province_region, zipcode_or_postal_code, country, special) VALUES (null,$user_info)";
-        dd($sql_user);
+        
         $data = $this->query($sql_user);
        
         return $data;
