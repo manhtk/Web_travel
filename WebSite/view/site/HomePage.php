@@ -21,6 +21,7 @@
                                     <div class="sub-heading">Get the best prices on 20,000+ properties
                                     </div>
                                     <!-- seach form -->
+                                    <!-- <start hoa> -->
                                     <div class="seach-form">
                                         <div class="row">
                                          <form action="index.php?c=slidebar&a=search" method="GET">  
@@ -170,6 +171,7 @@
                                     </script>
                                 </div>
                             </div>
+                            <!-- end Hoa -->
 
                             <div class="col-md-3 border-right">
                                 <div class="form-group form-extra-field dropdown clearfix field-detination has-icon">
@@ -390,6 +392,7 @@
                         </div>
                         <!-- Start Manh -->
                         <div class="services-grid">
+                        
                             <div class="row">
 
                                 <?php 

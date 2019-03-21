@@ -11,7 +11,7 @@ class HomePage_Model extends Model {
         
 	}
 
-	
+	// start Manh
 
     public function getHotel($limit = false,$values){
 	    $sql = "SELECT *,MIN(room.price) AS 'hotel_price',ROUND(AVG(room.price),2) AS 'medium_price',ROUND(AVG(room.starnum),1) AS 'hotel_point' FROM hotel INNER JOIN room ON hotel.hotel_id = room.hotel_id INNER JOIN city ON hotel.city_id = city.city_id GROUP BY hotel_name ORDER BY $values  ";
@@ -47,6 +47,8 @@ class HomePage_Model extends Model {
         }
         return $data;
     }
+    // end Manh
+    // Start Hoa
     public function getListCity()
     {
         $sql="SELECT * FROM city";
@@ -111,5 +113,6 @@ class HomePage_Model extends Model {
 
         return $data;
     }
+    // end Hoa
 
 }
