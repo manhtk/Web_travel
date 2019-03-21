@@ -12,9 +12,12 @@
   <link rel="stylesheet" type="text/css" href="public/css/room.css">
 </head>
 <body>
+
+
   <!-- end header -->
   <div class="clear"></div>
   <!-- content -->
+
   <div id="st-content-wrapper">
     <div class="st-breadcrumb">
       <div class="container">
