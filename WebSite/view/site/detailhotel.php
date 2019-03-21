@@ -225,15 +225,23 @@
 					$date = '';
 
 					if(isset($get_data['start'])){
-						$start =  $get_data['start'];
+						$start = '&start=' . $get_data['start'];
+					}else{
+						$start ="";
 					}
 
 					if(isset($get_data['end'])){
-						$end =  $get_data['end'];
+						$end = '&end=' . $get_data['end'];
+					}else{
+						$end ="";
 					}
+
 					if(isset($get_data['date'])){
-						$date =   $get_data['date'];
+						$date = '&date=' . $get_data['date'];
+					}else{
+						$date ="";
 					}
+
 
 					?>
 					<div class="sroom">
@@ -334,7 +342,7 @@
 												<div class="price-room"  ><span class="money-price">€<?php echo $v['price']; ?> </span><span class="unit"> /1 night</span></div>
 
 
-												<a  href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?>&start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?> " class="btn"  style="">ROOM DETAIL</a>												
+												<a  href="?c=room&a=view&room_id=<?php echo $v['room_id']  ?><?=$start ?><?=$end ?><?=$date ?> " class="btn"  style="">ROOM DETAIL</a>												
 											</div>
 										</div>
 									</div>                 

@@ -12,8 +12,6 @@
   <link rel="stylesheet" type="text/css" href="public/css/room.css">
 </head>
 <body>
-
-
   <!-- end header -->
   <div class="clear"></div>
   <!-- content -->
