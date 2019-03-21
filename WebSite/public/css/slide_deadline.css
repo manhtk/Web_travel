@@ -1101,7 +1101,7 @@ i.fa.fa-bars.munu1{
 	margin-top: 4px;
     color: #5E6D77;
 }
-.service-review
+.modern-search-result .service-review
 {
 	width: 100%;
 	font-weight: 400;
@@ -1984,6 +1984,32 @@ i.fa.fa-bars.munu1{
 	{
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+   .modern-search-result	.service-review
+	{
+		width: 100%;
+		font-weight: 400;
+		height: 20px;
+		margin-top: 10px;
+	}
+
+	.modern-search-result .info .evaluate li
+	{
+		font-size: 12px;
+		color: #6A7A84;
+		float: left;
+
+		width: 50%;
+	}
+	.modern-search-result .info .service-point p
+	{
+		font-size: 12px;
+		color: #5191FA;
+		width: 42%;
+		float: left;
+		margin-right: 10px;
+
+
 	}
 	.modern-search-result .icon-position
 	{
