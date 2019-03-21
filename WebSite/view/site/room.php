@@ -42,7 +42,7 @@
               <?php
               foreach ($data_room as $values){
                 ?>
-                <a href=""><?php echo $values['room_name']; ?></a>
+                <?php echo $values['room_name']; ?>
                 <?php
               }?>
             <?php } ?>
@@ -518,7 +518,7 @@
 
                         <div class="col-md-12">
                           <div class="" id="guests1">
-                            <div class="">
+                            <div class="abc3">
                               Guests
                             </div>
                             <br>
