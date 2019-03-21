@@ -61,7 +61,7 @@ a.morelink
 }
 .fixed{
 	position: fixed;
-	width: 17.3%;
+	width: 19.3%;
 	top: 0px;
 }
 
@@ -154,7 +154,7 @@ a.morelink
     padding-bottom: 15px;
 }
 .field_people_room .people-dropdown {
-	display: none;
+	display: block;
 	z-index: 1;
 	padding: 15px 10px;
 	border: none;
