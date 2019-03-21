@@ -36,8 +36,9 @@ class bookcart extends Controller {
 				return;		
 			}
 			$err_checkout = array();
+
 			if (empty($_POST['st_email'])) {
-		        array_push($err_checkout, '  Email is required.');
+			    array_push($err_checkout, '  Email is required.');
 		        $this->view($err_checkout);
 		        return;
 		    }
@@ -45,8 +46,11 @@ class bookcart extends Controller {
 		    {
 		    	array_push($err_checkout, '  This email is not valid. Please re-enter. ');
 				$this->view($err_checkout);
+				
 				return;
 		    }
+
+
 			$cart=(array_shift($cart_data));
 			$totalmoney = $cart['price']*110/100;
 			$order_date = date('d-m-Y H:i:s');
@@ -92,7 +96,7 @@ class bookcart extends Controller {
 					'"' .$post_user['st_email']. '"',
 					'"' . $regisdate . '"',
 					'"' .$post_user['st_province']. '"',
-					$post_user['st_zip_code'],
+					'"' .$post_user['st_zip_code']. '"',
 					'"' .$post_user['st_country']. '"',
 					'"' .$post_user['st_note']. '"'
 				);

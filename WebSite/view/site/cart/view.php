@@ -6,26 +6,26 @@
             <div class="cart-info" id="cart-info">
                  <div class="service-section">
                     <div class="service-left">
-                        <h4 class="title"><a href="#"><?php echo $value['hotel_name'] ?></a></h4>
+                        <h4 class="title"><a href="#"><?php echo $data[0]['hotel_name'] ?></a></h4>
                         <p class="address"><i class="input-icon field-icon fa"><svg height="15px" width="15px">
                             <title>Ico_maps</title>
                             <desc>Created with Sketch.</desc>
                             <defs></defs>
                             <img src="libs/Images/gps.svg">
-                        </svg></i> <?php echo $value['city_name'] ?> , <?php echo $value['country'] ?> </p>
+                        </svg></i> <?php echo $data[0]['city_name'] ?> , <?php echo $data[0]['country'] ?> </p>
                     </div>
                     <div class="service-right">
-                        <img class="img-responsive" src="<?php echo $value['room_images'] ?> "style =" width: 150px; height: auto ">
+                        <img class="img-responsive" src="<?php echo $data[0]['room_images'] ?> "style =" width: 150px; height: auto ">
                     </div>
                 </div>
                 <div class="info-section">
                     <ul>
-                        <li><span class="lable_section">Room : </span><span class="value"><?php echo $value['room_name'] ?></span></li>
+                        <li><span class="lable_section">Room : </span><span class="value"><?php echo $data[0]['room_name'] ?></span></li>
                     <li>
                      <span class="lable_section">Date : </span>
                      <span class="value">
                         <?php echo $stss['start'].' --> '.$stss['end'] ?> &nbsp;    
-                        <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $value['room_id']?>">Edit</a>
+                        <a class="st-link" style="font-size: 12px;" href="?c=room&a=view&room_id=<?php echo $data[0]['room_id']?>">Edit</a>
                     </span>
                 </li>
 
@@ -55,10 +55,10 @@
                         <li><span class="label_section">Subtotal : </span><span class="value">€ <?php 
                              
                             if ($sl_night>1) {
-                                $price = $sl_night * $value['price'];
+                                $price = $sl_night * $data[0]['price'];
                              }
                             else {
-                                $price = $value['price'];
+                                $price = $data[0]['price'];
                              }
                              echo $price;
                             ?>
@@ -113,15 +113,7 @@
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
                                     <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
-                                    <span class="err">
-                                         <?php
-                                   if(!empty($err)){
-                                    foreach ($err as $key => $value) {
-                                        echo $value . '<br />';
-                                       }
-                                    }
-                                   ?>
-                                    </span>
+                                    
                                     <input class="form-control required" id="field-st_email" value="<?php echo $info['email'] ?>" name="st_email" placeholder="email@domain.com" type="text">
                                 </div>
                             </div>
@@ -243,15 +235,7 @@
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
                                     <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
-                                   <span class="err">
-                                        <?php
-                                   if(!empty($err)){
-                                    foreach ($err as $key => $value) {
-                                        echo $value . '<br />';
-                                       }
-                                    }
-                                   ?>
-                                   </span>
+                                  
                                     <input class="form-control required" id="field-st_email" value="" name="st_email" placeholder="email"  >
                                 </div>
                             </div>
