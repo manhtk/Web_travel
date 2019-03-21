@@ -6,13 +6,7 @@
  	{
  		//Khởi tạo đối tượng trong controll base
  		session_start();
-<<<<<<< HEAD
- 		$this->view = new View();
- 		
-=======
  		$this->view = new View($this->getCartData());
->>>>>>> b28394a224e4e39ec8a820a946e619f183187bcd
-
  	}
 
  	public function getSiteURL(){
@@ -34,10 +28,6 @@
  			}
  		}
  	}
-
-<<<<<<< HEAD
-  
-=======
  	public function getCartData(){
  		if(isset($_SESSION['st_cart'])){
  			$ss = $_SESSION['st_cart'];
@@ -47,9 +37,6 @@
  			return $dt_cart;
  		}
  		return '';
- 		
  	}
->>>>>>> b28394a224e4e39ec8a820a946e619f183187bcd
- 	
  }
- ?>
+?>
