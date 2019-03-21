@@ -656,20 +656,60 @@
                                                 <div class="info">
 
                                                     <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>"><?= $value['hotel_name'] ?> </a><br/>
-                                                    <p class="service-location"><i
-                                                                class="fas fa-map-marker-alt"></i><?php echo " " . $value['city_name'] ?>
-                                                        ,USA
-                                                    </p>
+                                                   <div class="wpb-slidebar-adress">
+                                                                
+                                                            <p class="service-location">
+                                                                
+                                                                <?php 
+                                                                if(!empty($value['city_name']) || !empty($value['country']))
+                                                                {
+                                                                    ?>
+                                                                    <i class="fas fa-map-marker-alt"></i>
+                                                                    <?php
+                                                                }
+
+                                                                ?>
+                                                                <?php 
+                                                                if (!empty(htmlspecialchars($value['city_name'])) || !empty($value['country'])) {
+
+                                                                }
+
+                                                                ?>
+                                                                <?php echo " ". $value['city_name'].", ". $value['country'] ?> 
+                                                            </p>
+                                                          </div>
 
 
-                                                    <p class="service-point"><?= $value['hotel_point'] . "  " . '/5 Excellent' ?> </p>
+                                                        <div class="service-review">
+                                                                <div class="service-point">
+                                                                    <p class="matchHeight"><?= $value['hotel_point']."  " .'/5 Excellent'?> </p>
+                                                                </div>
+
+                                                                <div class="evaluate">
+                                                                    <li>5 reviews</li>
+                                                                </div>
+                                                                
+                                                            </div>
+
+                                                            
+                                                            <div class="clear">
+                                                                
+                                                            </div>
 
 
-                                                    <div>
+                                                            <div class="service-all">
+                                                                
+                                                                    <span><i class="fas fa-bolt slide-icon"></i></span>
+                                                                    <span class="service-from"> From </span>
+                                                                    <span class="service-price">€<?php echo $value['hotel_price'] ?></span>
+                                                                    <span class="service-from">
+                                                                        /night
+                                                                    </span>
+                                                                    
 
-                                                        <span><i class="fas fa-bolt slide-icon"></i> from </span><span
-                                                                class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
-                                                    </div>
+                                                                
+                                                            </div>
+
                                                 </div>
                                             </div>
                                         </div>

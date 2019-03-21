@@ -610,8 +610,8 @@
 															<a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>"><?= $value['hotel_name'] ?> </a><br/>
 
 
-
-
+															<div class="wpb-slidebar-adress">
+																
 															<p class="service-location">
 																
 																<?php 
@@ -631,20 +631,42 @@
 																?>
 																<?php echo " ". $value['city_name'].", ". $value['country'] ?> 
 															</p>
+														  </div>
 
+															<div class="service-review">
+																<div class="service-point">
+																	<p class="matchHeight"><?= $value['hotel_point']."  " .'/5 Excellent'?> </p>
+																</div>
 
+																<div class="evaluate">
+																	<li>5 reviews</li>
+																</div>
+																
+															</div>
 
-
-															<p class="service-point"><?= $value['hotel_point']."  " .'/5 Excellent'?> </p>
-
+															
+															<div class="clear">
+																
+															</div>
 
 
 															<div class="service-all">
 																
-																<span><i class="fas fa-bolt slide-icon"></i> From </span><span class="service-price">€<?php echo $value['hotel_price'] ?></span>/night
+																	<span><i class="fas fa-bolt slide-icon"></i></span>
+																	<span class="service-from"> From </span>
+																	<span class="service-price">€<?php echo $value['hotel_price'] ?></span>
+																	<span class="service-from">
+																		/night
+																	</span>
+																	
+
+																
 															</div>
 
 
+
+
+															
 
 														</div>
 													</div>

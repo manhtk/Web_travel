@@ -1088,18 +1088,43 @@ i.fa.fa-bars.munu1{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.modern-search-result .info .wpb-slidebar-adress
+{
+	font-size: 14px;
+	color: #5E6D77;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+}
 .modern-search-result .info .service-location
 {
 	font-size: 13px;
 	margin-top: 4px;
     color: #5E6D77;
 }
-.modern-search-result .info .service-point
+.service-review
+{
+	width: 100%;
+	font-weight: 400;
+	height: 20px;
+	margin-top: 10px;
+}
+
+.modern-search-result .info .evaluate li
+{
+	font-size: 14px;
+	color: #6A7A84;
+	float: left;
+
+	width: 50%;
+}
+.modern-search-result .info .service-point p
 {
 	font-size: 14px;
     color: #5191FA;
+    width: 42%;
+    float: left;
     margin-right: 10px;
-    margin-top: 10px;
+   
 
 }
 .modern-search-result .info .service-price
@@ -1109,9 +1134,41 @@ i.fa.fa-bars.munu1{
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.clear
+{
+	clear: both;
+}
 .modern-search-result .info .service-all
 {
-	margin-top: -10px;
+	margin-bottom: 25px;
+	width: 100%;
+	line-height: 0px;
+}
+.modern-search-result .info .service-all i
+{
+	
+	color: #FFAB53;
+	
+}
+.modern-search-result .info .service-all .service-all i
+{
+	
+	font-size: 14px;
+	color: #5E6D77;
+}
+
+.modern-search-result .info .service-all .service-from
+{
+	font-size: 14px;
+	color: #5E6D77;
+
+}
+.modern-search-result .info .service-all .service-price
+{
+	font-size: 18px;
+	color: #1A2B50;
+	font-weight: 500;
 }
 .modern-search-result .icon-position
 {
@@ -1120,7 +1177,7 @@ i.fa.fa-bars.munu1{
 .modern-search-result a
 {
 	color: #1A2B50;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     text-decoration: none;
