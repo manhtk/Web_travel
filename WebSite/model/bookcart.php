@@ -71,6 +71,7 @@ class bookcart_model extends Model {
         // $sql="SELECT * from bill inner join user on bill.user_id = user.user_id inner join room on bill.room_id = room.room_id inner join promotion on bill.promotion_id = promotion.promotion_id";
         $sql="SELECT * from bill inner join user on bill.email = user.email inner join room on bill.room_id = room.room_id where bill.email = '$key' ";
         $res = $this->query($sql);
+
         $data = [];
         if($res&&$res->num_rows > 0){
             while($row = $res->fetch_assoc()){
@@ -88,6 +89,7 @@ class bookcart_model extends Model {
     {
         $user_info = implode(',', $user_info);
         $sql_user = "INSERT INTO user(user_id, username, password, role, first_name, last_name, address1, address2, city, email, regisdate, state_province_region, zipcode_or_postal_code, country, special) VALUES (null,$user_info)";
+        
         $data = $this->query($sql_user);
        
         return $data;
