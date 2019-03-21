@@ -216,7 +216,7 @@
 					<hr style="width: 100%;">
 
 					<!-- room -->
-					<!--  -->
+					<!-- Start Manh -->
 					<?php
 					$get_data = $_GET;
 
@@ -236,6 +236,8 @@
 					}
 
 					?>
+					<!-- end Manh -->
+					<!-- start Hoa -->
 					<div class="sroom">
 						<h2 class="st-heading-section">Rooms
 							<i  class="fa fa-angle-down down-icon2" aria-hidden="true" ></i>
@@ -345,7 +347,7 @@
 							
 						</div>
 					</div>
-					<!-- end room -->
+					<!-- end Hoa -->
 					<hr style="width: 100%;">
 					<!-- reviews -->
 					<div class="reviews">
@@ -681,6 +683,7 @@
 					<!-- end write -->
 					
 				</div>
+				<!-- start Manh -->
 				<div class="col-md-3"  >
 					<!-- widget -->
 					<div class="widget">
@@ -825,6 +828,7 @@
 					</div>					
 					<!-- end widget -->
 				</div>
+				<!-- end Manh -->
 			</div>
 		</div>
 	</div>
@@ -840,6 +844,7 @@
 					<div class="vc_column-inner wpb_wrapper">
 						<div class="wpb_text_column wpb_content_element  fs-28 fs-normal">	
 							<div class="services-grid">
+								<!-- start Manh -->
 								<div class="row">
                                     <?php
                                     foreach ($data as   $values) {
@@ -897,6 +902,7 @@
 								
                                 <?php } ?>
                                 </div>
+                                <!-- end Manh -->
 							</div>
 						</div>
 					</div>
