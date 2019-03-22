@@ -7,7 +7,7 @@ class bookcart extends Controller {
 			dd($post_data);
 			unset($_SESSION['st_cart']);			
 			$_SESSION['st_cart'] = $post_data;
-			header('location: '. $this->getSiteURL() .'?c=bookcart&a=view');
+			header('location: '.getSiteURL() .'?c=bookcart&a=view');
 		}
 		$cart_data = $_SESSION['st_cart'];
 		$key1=$cart_data['room_id'];
@@ -141,14 +141,14 @@ class bookcart extends Controller {
 	{
 		if(isset($_SESSION['currUser'])){
 			unset($_SESSION['currUser']);
-			header('location: '. $this->getSiteURL() .'index.php');
+			header('location: '.getSiteURL() .'index.php');
 		}
 	}
 	public function dtCart()
 	{
 		if(isset($_SESSION['st_cart'])){
 			unset($_SESSION['st_cart']);
-			header('location: '. $this->getSiteURL() .'index.php');
+			header('location: '.getSiteURL() .'index.php');
 		}
 	}
 }

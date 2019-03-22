@@ -8,11 +8,6 @@
  		session_start();
  		$this->view = new View($this->getCartData());
  	}
-
- 	public function getSiteURL(){
- 		$site_url = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/';
- 		return $site_url;
- 	}
  	//Phương thức load Model trong controller
  	public function loadModel($name, $return = false)
  	{

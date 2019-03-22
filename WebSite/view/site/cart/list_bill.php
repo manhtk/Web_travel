@@ -1,4 +1,6 @@
 <div class="container">
+	<?php if(isset($_SESSION['currUser']))
+	{ ?>
 	<div class="list_bill">
 		<h3>Booking History</h3>
 		<form class="" method="post" action="?c=bookcart&a=listBill">
@@ -48,4 +50,14 @@
 			</div>
 		</form>
 	</div>
+<?php }
+else{
+	echo "Please login now !!!";
+					echo "<br>";
+					echo '<a href="../../login">' . 'Login' .'</a>';
+					echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+					exit();
+
+				}
+?>
 </div>
