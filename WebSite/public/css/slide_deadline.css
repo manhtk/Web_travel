@@ -1320,7 +1320,7 @@ body{
 	position: relative;
 }
 .modern-search-result .text
-{
+{	
 	position: absolute;
 	/* left: 3px; */
 	bottom: 141px;
@@ -2233,9 +2233,9 @@ body{
 	{
 		font-size: 12px;
 		color: #5191FA;
-		width: 45%;
+		width: 50%;
 		float: left;
-		margin-right: 10px;
+		/* margin-right: 0px; */
 
 
 	}
@@ -2244,8 +2244,7 @@ body{
 		font-size: 12px;
 		color: #6A7A84;
 		float: left;
-
-		width: 45%;
+		width: 40%;
 	}
 	.modern-search-result .info .service-all .service-from
 	{
@@ -2327,7 +2326,7 @@ body{
 }
 
 
-@media (max-width: 439px)
+@media (max-width: 454px)
 {
 	.search-result-page .banner	.banner-item
 	{
@@ -2554,6 +2553,42 @@ body{
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	.modern-search-result .info .service-point p
+	{
+		font-size: 11px;
+		color: #5191FA;
+		width: 53%;
+		float: left;
+		/* margin-right: 0px; */
+
+
+	}
+	.modern-search-result .info .evaluate li
+	{
+		font-size: 11px;
+		color: #6A7A84;
+		float: left;
+		list-style-type: none;
+		width: 40%;
+	}
+	.modern-search-result .info .service-all .service-from
+	{
+		font-size: 11px;
+		color: #5E6D77;
+
+	}
+	.modern-search-result .info .service-all .service-price
+	{
+		font-size: 15px;
+		color: #1A2B50;
+		font-weight: 500;
+	}
+	.modern-search-result .info .service-location
+	{
+		font-size: 12px;
+		margin-top: 4px;
+		color: #5E6D77;
+	}
 	.modern-search-result .icon-position
 	{
 		position: relative;
@@ -2565,6 +2600,7 @@ body{
 	.modern-search-result a
 	{
 		color: #1A2B50;
+		font-size: 15px;
 	}
 
 	.modern-search-result .heart
