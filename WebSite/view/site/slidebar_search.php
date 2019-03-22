@@ -641,7 +641,7 @@
                                                 </div>
                                                 <div class="info">
 
-                                                    <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?>"><?= $value['hotel_name'] ?> </a><br/>
+                                                    <a href="?c=detailhotel&a=view&hotel_id=<?php echo $value['hotel_id'] ?> &start=<?=$start ?>&end=<?=$end ?>&date=<?=$date ?>"> <?= $value['hotel_name'] ?>  </a><br/>
                                                    <div class="wpb-slidebar-adress">
                                                                 
                                                             <p class="service-location">
