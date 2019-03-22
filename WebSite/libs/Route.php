@@ -25,6 +25,7 @@ class Route{
 	//Function gọi phương thức  của controller dựa vào $_GET
  	public function __callMethod()
  	{
+ 	
  		$action = isset($_GET['a']) ? $_GET['a'] :'view';
  		$this->c->$action();
 

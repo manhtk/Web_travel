@@ -489,7 +489,7 @@
 
                         <input type="hidden" name="start" id="start" value="<?php echo $start; ?>">
                         <input type="hidden" name="end" id="end" value="<?php echo $end; ?>">
-                        <input type="text" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
+                        <input type="text" autocomplete="off" name="date" id="date" value="<?php echo $start . ' - ' . $end; ?>">
 
                         <script type="text/javascript">
                           $(document).ready(function () {

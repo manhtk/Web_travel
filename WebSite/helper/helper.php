@@ -8,4 +8,10 @@ if(!function_exists('convert_date_format')){
 		return $date_format->format('Y-m-d');
  	}
 }
+if(!function_exists('getSiteURL')){
+	function getSiteURL(){
+ 		$site_url = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/';
+ 		return $site_url;
+ 	}
+ }
 ?>
