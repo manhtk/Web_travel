@@ -420,15 +420,18 @@
                                             </div>
                                             <div class="wpb-room-adress">
                                                 <p>
-                                                    <?php 
-                                                    if(!empty($values['city_name']) || !empty($values['country'])){ ?>
-                                                        <i class="fas fa-map-marker-alt"></i>
-                                                    <?php  }  ?>
-                                                    <?php echo htmlspecialchars($values['city_name']) ?>
-                                                    <?php if(!empty(htmlspecialchars($values['city_name'])) && !empty(htmlspecialchars($values['country']))){ ?>
-                                                       <span>, </span>
-                                                   <?php } ?>
-                                                   <?php echo htmlspecialchars($values['country']) ?></p>
+                                                 <?php 
+                                                 if(!empty($values['city_name']) || !empty($values['country']))
+                                                 {
+                                                    ?>
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <?php
+                                                }
+
+                                                ?>
+
+                                                <?php echo " ". $values['city_name'].", ". $values['country'] ?>
+                                                </p>
 
                                                </div>
                                                <div class="review">

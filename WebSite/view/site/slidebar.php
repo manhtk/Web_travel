@@ -623,12 +623,7 @@
 																}
 
 																?>
-																<?php 
-																if (!empty(htmlspecialchars($value['city_name'])) || !empty($value['country'])) {
-
-																}
-
-																?>
+																
 																<?php echo " ". $value['city_name'].", ". $value['country'] ?> 
 															</p>
 														  </div>

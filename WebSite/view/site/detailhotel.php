@@ -21,6 +21,9 @@
 					<li><a href="?c=homepage&a=view">Home</a></li>
 					<li><a href="#">United States</a></li>
 					<?php foreach ($data_hotel as $value) { ?>
+					<li class="active"> <?php echo $value['city_name']; ?></li> 
+				<?php } ?>
+					<?php foreach ($data_hotel as $value) { ?>
 					<li class="active"> <?php echo $value['hotel_name']; ?></li> 
 				<?php } ?>
 				</ul>
@@ -57,14 +60,17 @@
 						<?php foreach ($data_hotel as  $value) {
 							
 						 ?>
-						 <?php if(!empty($value['city_name']) || !empty($value['country'])) { ?>
-						<i class="fa fa-map-marker"  aria-hidden="true"></i>
-                    	<?php } ?>
-                        <span><?php echo htmlspecialchars($value['city_name']); ?>
-                         <?php if(!empty(htmlspecialchars($value['city_name'])) && !empty(htmlspecialchars($value['country']))){ ?>
-                                                         <span>, </span>
-                                                        <?php } ?>
-                         <?php echo htmlspecialchars($value['country']); ?></span>
+						<?php 
+						if(!empty($value['city_name']) || !empty($value['country']))
+						{
+							?>
+							<i class="fas fa-map-marker-alt"></i>
+							<?php
+						}
+
+						?>
+
+						<?php echo " ". $value['city_name'].", ". $value['country'] ?> 
                         <?php } ?>
 					</div>
 				</div>
