@@ -33,9 +33,9 @@
                     <ul>
                         <li><span class="lable_section">Number of Night : </span>
                             <span class="value"><?php
-                            $start = $this -> convertDateFormat($stss['start']);
+                            $start = convert_date_format($stss['start']);
                             $startday= strtotime($start);
-                            $end = $this -> convertDateFormat($stss['end']);
+                            $end = convert_date_format($stss['end']);
                             $endday= strtotime($end);
                             if($endday < $startday){
                                 echo 'Error';

@@ -1,4 +1,7 @@
 <?php 
+
+include 'helper/helper.php';
+
  function Loadlibs($class)
   {
   	include 'libs/'. $class . '.php';

@@ -177,9 +177,9 @@
                                     <div class="price-wrapper">Price:
                                         <span class="price">€ 
                                             <?php 
-                                                $start = $this -> convertDateFormat($ss['start']);
+                                                $start = convert_date_format($ss['start']);
                                                 $startday= strtotime($start);
-                                                $end = $this -> convertDateFormat($ss['end']);
+                                                $end = convert_date_format($ss['end']);
                                                 $endday= strtotime($end);
                                                 $night = abs($endday-$startday);
                                                 $sl_night = floor($night/(60*60*24));
