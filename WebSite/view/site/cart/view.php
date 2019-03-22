@@ -116,7 +116,7 @@
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
                                     <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
                                     
-                                    <input class="form-control required" id="field-st_email" value="<?php echo $info['email'] ?>" name="st_email" placeholder="email@domain.com" type="text">
+                                    <input class="form-control required" id="field-st_email" value="<?php echo $info['email'] ?>" name="st_email" placeholder="email@domain.com" type="text" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -238,7 +238,7 @@
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
                                     <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
                                   
-                                    <input class="form-control required" id="field-st_email" value="<?php echo isset($_POST['st_email'])  ? $_POST['st_email'] : ''; ?>" name="st_email" placeholder="email"  >
+                                    <input class="form-control required" id="field-st_email" value="<?php echo isset($_POST['st_email'])  ? $_POST['st_email'] : ''; ?>" name="st_email" placeholder="email" required >
                                 </div>
                             </div>
                             <div class="col-sm-6">
