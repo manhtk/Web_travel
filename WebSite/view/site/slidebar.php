@@ -689,18 +689,23 @@
 											
 
 
+											
 											<?php
 
-											
+											$current_page = isset($_GET['page']) ? $_GET['page'] : 1;
 											$get_data = $_GET;
 											$opt = '';
 											if(isset($get_data['optradio'])){
 												$opt = '&optradio=' . $get_data['optradio'];
 											}
-
+											
 											for ($i = 1;$i <= $total_page;$i++) {
-
-												echo '<li><a href="?c=slidebar&a=view&page='. $i . $opt .'">'. $i .'</a></li>';
+												$class_active = '';
+												if($current_page == $i){
+													$class_active = 'active';
+												}
+												echo '<li>
+												<a href="?c=slidebar&a=view&page='. $i . $opt .'" class='.$class_active.'>'. $i .'</a></li>';
 											}
 
 
@@ -708,11 +713,6 @@
 
 
 											?>
-
-
-											
-
-
 										</ul>
 
 
