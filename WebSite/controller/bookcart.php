@@ -49,10 +49,22 @@ class bookcart extends Controller {
 				
 				return;
 		    }
-
-
+		    
+			$money = 
 			$cart=(array_shift($cart_data));
-			$totalmoney = $cart['price']*110/100;
+			$start = convert_date_format($cart_checkout['start']);
+            $startday= strtotime($start);
+            $end = convert_date_format($cart_checkout['end']);
+            $endday= strtotime($end);
+            $night = abs($endday-$startday);
+			$sl_night = floor($night/(60*60*24));
+			if ($sl_night>1) {
+				$price = $sl_night * $cart['price']*$cart_checkout['number_room'];
+			}
+			else {
+				$price = $cart['price']*$cart_checkout['number_room'];
+			}
+			$totalmoney = $price + $price*0.1;;
 			$order_date = date('d-m-Y H:i:s');
 			$array_insert = array(
 				'"' .$data['st_email']. '"',

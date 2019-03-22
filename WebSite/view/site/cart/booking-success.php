@@ -75,13 +75,6 @@
 								<li><span class="label">Price:</span>
 									<span class="value">€ <?php echo $rooms['price'] ?></span>
 								</li>
-								<li><span class="label">Extra</span>
-									<span class="value"></span>
-								</li>
-								<li class="extra-value">
-								</li>
-								<li class="guest-value">
-								</li>
 							</ul>
 						</div>
 						<div class="total-section">
@@ -90,8 +83,10 @@
 									<span class="label">Subtotal</span>
 										<span class="value">
 										<?php
-										$endday= strtotime($check['end']);
-										$startday = strtotime($check['start']);
+										$start = convert_date_format($check['start']);
+			                            $startday= strtotime($start);
+			                            $end = convert_date_format($check['end']);
+			                            $endday= strtotime($end);
 										$night = abs($endday-$startday);
 										$sl_night = floor($night/(60*60*24));
 										if ($sl_night>1) {

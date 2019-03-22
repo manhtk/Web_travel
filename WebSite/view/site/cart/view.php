@@ -33,9 +33,9 @@
                     <ul>
                         <li><span class="lable_section">Number of Night : </span>
                             <span class="value"><?php
-                            $start = $this -> convertDateFormat($stss['start']);
+                            $start = convert_date_format($stss['start']);
                             $startday= strtotime($start);
-                            $end = $this -> convertDateFormat($stss['end']);
+                            $end = convert_date_format($stss['end']);
                             $endday= strtotime($end);
                             if($endday < $startday){
                                 echo 'Error';
@@ -223,14 +223,14 @@
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_first_name">First Name <span class="require">*</span> </label>
                                     <i class="fa fa-user input-icon"></i>
-                                    <input class="form-control required" id="field-st_first_name" value="" name="st_first_name" placeholder="First Name" type="text" required>
+                                    <input class="form-control required" id="field-st_first_name" value="<?php echo isset($_POST['st_first_name'])  ? $_POST['st_first_name'] : ''; ?>" name="st_first_name" placeholder="First Name" type="text" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_last_name">Last Name <span class="require">*</span> </label>
                                     <i class="fa fa-user input-icon"></i>
-                                    <input class="form-control required" id="field-st_last_name" value="" name="st_last_name" placeholder="Last Name" type="text" required>
+                                    <input class="form-control required" id="field-st_last_name" value="<?php echo isset($_POST['st_last_name'])  ? $_POST['st_last_name'] : ''; ?>" name="st_last_name" placeholder="Last Name" type="text" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -238,7 +238,7 @@
                                     <label for="field-st_email">Email <span class="require">*</span> </label>
                                     <i class="fa fa-envelope input-icon"></i>&nbsp;&nbsp;
                                   
-                                    <input class="form-control required" id="field-st_email" value="" name="st_email" placeholder="email"  >
+                                    <input class="form-control required" id="field-st_email" value="<?php echo isset($_POST['st_email'])  ? $_POST['st_email'] : ''; ?>" name="st_email" placeholder="email"  >
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -246,53 +246,53 @@
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_phone">Phone <span class="require">*</span> </label>
                                     <i class="fa fa-phone input-icon"></i>
-                                    <input class="form-control required" id="field-st_phone" value="" name="st_phone" placeholder="Your Phone" type="text" required>
+                                    <input class="form-control required" id="field-st_phone" value="<?php echo isset($_POST['st_phone'])  ? $_POST['st_phone'] : ''; ?>" name="st_phone" placeholder="Your Phone" type="text" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_address">Address Line 1  </label>
                                     <i class="fa fa-map-marker input-icon"></i>
-                                    <input class="form-control" id="field-st_address" value="" name="st_address" placeholder="Your Address Line 1" type="text">
+                                    <input class="form-control" id="field-st_address" value="<?php echo isset($_POST['st_address'])  ? $_POST['st_address'] : ''; ?>" name="st_address" placeholder="Your Address Line 1" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_address2">Address Line 2  </label>
                                     <i class="fa fa-map-marker input-icon"></i>
-                                    <input class="form-control" id="field-st_address2" value="" name="st_address2" placeholder="Your Address Line 2" type="text">
+                                    <input class="form-control" id="field-st_address2" value="<?php echo isset($_POST['st_address2'])  ? $_POST['st_address2'] : ''; ?>" name="st_address2" placeholder="Your Address Line 2" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_city">City  </label>
                                     <i class="fa fa-map-marker input-icon"></i>
-                                    <input class="form-control" id="field-st_city" value="" name="st_city" placeholder="Your City" type="text">
+                                    <input class="form-control" id="field-st_city" value="<?php echo isset($_POST['st_city'])  ? $_POST['st_city'] : ''; ?>" name="st_city" placeholder="Your City" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_province">State/Province/Region  </label>
-                                    <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="" name="st_province" placeholder="State/Province/Region" type="text">
+                                    <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_province" value="<?php echo isset($_POST['st_province'])  ? $_POST['st_province'] : ''; ?>" name="st_province" placeholder="State/Province/Region" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_zip_code">ZIP code/Postal code  </label>
-                                    <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_zip_code" value="" name="st_zip_code" placeholder="ZIP code/Postal code" type="text">
+                                    <i class="fa fa-map-marker input-icon"></i>                <input class="form-control" id="field-st_zip_code" value="<?php echo isset($_POST['st_zip_code'])  ? $_POST['st_zip_code'] : ''; ?>" name="st_zip_code" placeholder="ZIP code/Postal code" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-icon-left">                
                                     <label for="field-st_country">Country  </label>
                                     <i class="fa fa-globe input-icon"></i>                
-                                    <input class="form-control" id="field-st_country" value="" name="st_country" placeholder="Country" type="text">
+                                    <input class="form-control" id="field-st_country" value="<?php echo isset($_POST['st_country'])  ? $_POST['st_country'] : ''; ?>" name="st_country" placeholder="Country" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group ">
                                     <label for="field-st_note">Special Requirements  </label>
-                                    <textarea rows="6" class="form-control" id="field-st_note" name="st_note" placeholder="Special Requirements"></textarea>
+                                    <textarea rows="6" class="form-control" id="field-st_note" name="st_note" placeholder="Special Requirements"><?php echo isset($_POST['st_note'])  ? $_POST['st_note'] : ''; ?></textarea>
                                 </div>
                             </div>
                         </div>
