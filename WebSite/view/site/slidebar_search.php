@@ -722,7 +722,7 @@
                                          $i++) {
                                         $active='';
                                         if($currentpage==$i){
-                                            $active='not-active';
+                                            $active='active';
                                         }
                                         echo " <li><a href='$escaped_url&page=$i' class='$active'>$i</a></li>";
                                     }
