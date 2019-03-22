@@ -8,3 +8,4 @@ if(!function_exists('convert_date_format')){
 		return $date_format->format('Y-m-d');
  	}
 }
+?>
