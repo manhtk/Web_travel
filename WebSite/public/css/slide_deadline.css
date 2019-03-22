@@ -1338,16 +1338,16 @@ body{
 }
 .modern-search-result .info .evaluate li
 {
-	font-size: 12px;
+	font-size: 13px;
 	color: #6A7A84;
 	float: left;
-	width: 50%;
+	width: 41%;
 }
 .modern-search-result .info .service-point p
 {
-	font-size: 12px;
+	font-size: 13px;
 	color: #5191FA;
-	width: 45%;
+	width: 50%;
 	float: left;
 	margin-right: 10px;
 
@@ -1610,16 +1610,16 @@ body{
 
 	.modern-search-result .info .evaluate li
 	{
-		font-size: 12px;
+		font-size: 13px;
 		color: #6A7A84;
 		float: left;
 		width: 50%;
 	}
 	.modern-search-result .info .service-point p
 	{
-		font-size: 12px;
+		font-size: 13px;
 		color: #5191FA;
-		width: 42%;
+		width: 45%;
 		float: left;
 		margin-right: 10px;
 
@@ -1923,14 +1923,14 @@ body{
 	}
 	.modern-search-result .info .evaluate li
 	{
-		font-size: 12px;
+		font-size: 13px;
 		color: #6A7A84;
 		float: left;
 		width: 50%;
 	}
 	.modern-search-result .info .service-point p
 	{
-		font-size: 12px;
+		font-size: 13px;
 		color: #5191FA;
 		width: 40%;
 		float: left;
@@ -2231,7 +2231,7 @@ body{
 	}
 	.modern-search-result .info .service-point p
 	{
-		font-size: 11px;
+		font-size: 12px;
 		color: #5191FA;
 		width: 45%;
 		float: left;
@@ -2241,7 +2241,7 @@ body{
 	}
 	.modern-search-result .info .evaluate li
 	{
-		font-size: 11px;
+		font-size: 12px;
 		color: #6A7A84;
 		float: left;
 
